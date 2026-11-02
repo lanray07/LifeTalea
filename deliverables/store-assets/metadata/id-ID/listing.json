@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_NOT_SUBMISSION_READY",
+  "publisher": "O.Bankole",
+  "supportEmail": "banksmi@mail.com",
+  "title": "LifeTalea - Kisah dan kenangan keluarga",
+  "shortDescription": "Simpan cerita keluarga, foto dan kenangan suara bersama-sama dalam jurnal pribadi. Buat album, menjelajahi garis waktu dan simpan rancangan scrapbook pada perangkat Anda.",
+  "longDescription": "Tetaplah saat-saat Ingatlah suara-suara itu\n\nLifeTalea memberikan cerita keluarga tempat pribadi di tablet Anda. Mulai dengan satu foto, beberapa baris tertulis, atau rekaman suara. Tidak LifeTalea Akun yang diperlukan.\n\nMenyelamatkan cerita di belakang foto\nTambah foto, tag dan lokasi pilihan yang Anda masukkan sendiri. Pilih tahun, bulan, tanggal yang tepat atau tanggal yang tidak diketahui. Mengatur kenangan ke dalam album dan menandai favorit.\n\nMembuat kamar untuk suara Anda\nMencatat, istirahat, mengulangi dan memainkan cerita yang dibicarakan. Audio tetap dalam penyimpanan aplikasi pribadi. Tingkat gratis mendukung rakaman hingga tiga menit. Permohonan izin mikrofon diminta ketika Anda memilih untuk merekam. Komando frasa saat ini mendukung bahasa Inggris. Perintah suara dan pemutaran suara tergantung pada layanan perangkat yang terinstal; alternatif sentuhan dan teks tetap tersedia.\n\nIkuti bab keluarga Anda\nBrowse menyimpan kenangan dalam timeline. Cari cerita tertulis, tag dan transkrip yang diedit secara manual. Buat rancangan scrapbook, urutan halaman dan tambahkan captions.\n\nSimpan salinan yang Anda kontrol\nBuat backup lokal dan secara eksplisit pilih apakah untuk memasukkan foto dan rakaman. Restore validates file sebelum mengimpor. Pastikan ekspor dan frasa sandi aman di suatu tempat.\n\nopsi premium\nPremium dirancang sebagai pembelian satu kali untuk album tak terbatas, rekaman lebih lama, lokal PDF mengekspor dan membuat arsip terenkripsi. Harga lokal saat ini akan dibekali oleh Amazon. Cerita yang ada tetap dapat diakses tanpa Premium.\n\nStatus perkembangan\nDaftar ini adalah rancangan. Transisi otomatis tidak terkonfigurasi. terjemahan di seluruh dunia, ujian perangkat yang diperlukan dan Amazon Pemeriksaan pembelian tidak lengkap. Tidak ada cloud sync yang ditawarkan. Jangan menerbitkan rancangan ini sebagai daftar produk siap.\n\nPenerbit : O.Bankole\ndukungan : banksmi@mail.com",
+  "featureBullets": [
+    "Simpan cerita tertulis, foto dan rekaman suara lokal bersama-sama.",
+    "Mengatur album pribadi dengan tag, favorit dan tanggal yang dekat.",
+    "Temukan timeline keluarga dan buat rancangan scrapbook yang disimpan.",
+    "Buat backup lokal dengan foto dan audio yang dipilih secara eksplisit.",
+    "Gunakan alternatif sentuhan dan teks ketika layanan ucapan perangkat tidak tersedia."
+  ],
+  "keywords": [
+    "Jurnal Memori Keluarga",
+    "Jurnal suara",
+    "Rekor cerita keluarga",
+    "Buku digital scrapbook",
+    "Jurnal keluarga pribadi",
+    "Memori Timeline"
+  ],
+  "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
+  "categoryRecommendation": "Lifestyle > Diaries",
+  "releaseNotes": "Preview awal pengembangan. Tidak disetujui untuk penyerahan publik.",
+  "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
+  "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
+  "liveDownloadUrl": null,
+  "screenshotHeadlines": {
+    "home": "Simpan momen yang berarti",
+    "albums": "Koleksi untuk setiap bab kehidupan",
+    "timeline": "Telusuri perjalanan kisah keluarga",
+    "keepsakes": "Satukan kisah dalam buku kenangan",
+    "settings": "Simpan salinan yang Anda kendalikan",
+    "editor": "Tulis kisah di balik foto",
+    "voice": "Simpan suara orang tersayang",
+    "transcript": "Tambahkan transkrip dengan kata-kata sendiri"
+  },
+  "locale": "id-ID",
+  "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
+  "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
+  "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
+  "targetHash": "617caa331cf2eeffd0d6f2e86dfd59348f6892b9107927385ce0b9ba2ad2c96c"
+}

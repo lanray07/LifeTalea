@@ -1,0 +1,325 @@
+{
+  "ui": {
+    "skip": "Ke konten utama",
+    "mainNavigation": "Navigasi utama",
+    "features": "Fitur",
+    "privacy": "Privasi",
+    "support": "Bantuan",
+    "languages": "Bahasa",
+    "pricing": "Harga",
+    "faq": "Pertanyaan umum",
+    "contact": "Kontak",
+    "language": "Bahasa",
+    "deviceLanguage": "Gunakan bahasa browser",
+    "footerNote": "Dalam pengembangan. Tidak memerlukan akun.",
+    "brandNotice": "Nama merek sementara, masih perlu pemeriksaan hak",
+    "related": "Jelajahi bab berikutnya",
+    "previewNotice": "Draf terjemahan. Masih menunggu tinjauan penutur asli.",
+    "chooseLanguage": "Pilih Bahasa Anda",
+    "home": "rumah"
+  },
+  "home": {
+    "titleFirst": "Momen-momen kecil.",
+    "titleSecond": "Kisah yang selalu melekat.",
+    "subtitle": "Ruang pribadi untuk foto, suara, dan kisah keluarga.",
+    "explore": "Kenali LifeTalea",
+    "imageAlt": "Buku kenangan terbuka dengan pembatas buku keemasan dan ranting zaitun",
+    "waysLabel": "Cara menyimpan kenangan",
+    "personalTitle": "Jurnal keluarga dengan cara Anda",
+    "personalBody": "Satukan foto, rekaman, dan kisah dalam satu jurnal keluarga yang privat.",
+    "personalLink": "Mulai dari satu kenangan",
+    "voiceTitle": "Simpan suara orang tersayang",
+    "voiceBody": "Abadikan suara, kenangan, dan detail kecil yang menghidupkan sebuah kisah.",
+    "voiceLink": "Jelajahi kisah yang direkam",
+    "keepsakeTitle": "Buku kenangan untuk disimpan",
+    "keepsakeBody": "Kumpulkan kisah keluarga untuk dinikmati hari ini dan dibuka kembali di tahun-tahun mendatang.",
+    "keepsakeLink": "Kenali buku kenangan",
+    "privacyTitle": "Ada kisah yang hanya milik Anda.",
+    "privacyBody": "Tanpa linimasa publik atau akun wajib. Kenangan tetap di perangkat Anda kecuali Anda memilih untuk mengekspornya.",
+    "privacyLink": "Pendekatan privasi kami",
+    "storeLink": "Lihat di Amazon Appstore",
+    "releaseNote": "Belum diterbitkan. Pengujian perangkat, tinjauan penutur asli, dan verifikasi pembelian Amazon masih berlangsung.",
+    "metaTitle": "LifeTalea - Kisah dan kenangan keluarga",
+    "metaDescription": "Ruang pribadi untuk foto, suara, dan kisah keluarga. Jelajahi versi pengembangan LifeTalea."
+  },
+  "articles": {
+    "features": {
+      "title": "Rumah untuk cerita di balik foto Anda",
+      "summary": "Mengeksplorasi LifeTalea perkembangan preview: kenangan tertulis, foto pribadi, cerita suara, album dan keepsakes.",
+      "sections": [
+        {
+          "title": "Mulai dengan satu momen",
+          "body": "Tuliskan judul dan beberapa baris. Tambah tanggal yang tepat, tahun yang mendekati atau tidak ada tanggal sama sekali. Tags, favorit dan album membantu Anda menemukan cerita lagi."
+        },
+        {
+          "title": "Foto dan suara, bersama-sama",
+          "body": "Mengimpor foto dengan menggunakan piksel dokumen perangkat Anda. Mencatat cerita suara dan menyimpannya di samping memori tertulis. Media disalin ke penyimpanan aplikasi pribadi."
+        },
+        {
+          "title": "Buat koleksi sendiri",
+          "body": "Membuat scrapbook dari memori yang disimpan. Sediakan halaman, tambahkan captions dan preview koleksi Anda. PDF Eksport adalah fitur premium; pembelian masih membutuhkan Amazon Pemeriksaan Pemeriksaan"
+        }
+      ]
+    },
+    "family-memory-journal": {
+      "title": "Simpan detail hanya keluarga Anda yang tahu.",
+      "summary": "Sebuah jurnal memori keluarga memberikan konteks kepada foto: siapa yang ada di sana, apa yang terjadi, dan mengapa momen itu penting.",
+      "sections": [
+        {
+          "title": "Tanya sebuah pertanyaan kecil",
+          "body": "Daripada memulai dengan cerita hidup, tanyakan tentang satu hidangan, satu perjalanan atau satu tempat. Jawaban singkat adalah permulaan yang berharga. Biarkan pencerita memilih apa yang merasa nyaman."
+        },
+        {
+          "title": "Menjaga ketidakpastian dengan jujur",
+          "body": "Foto-foto lama jarang datang dengan tanggal yang sempurna. LifeTalea menerima tahun, bulan, tanggal yang tepat atau tanggal yang tidak diketahui. Anda dapat menambahkan lokasi sendiri tanpa memberikan akses lokasi."
+        },
+        {
+          "title": "Simpan salinan kedua",
+          "body": "Penyimpanan lokal menjaga memori tertutup, tetapi perangkat dapat hilang. Ekspor backup dan simpan di lokasi yang Anda kontrol. Periksa file sebelum menghapus original."
+        }
+      ]
+    },
+    "voice-story-recording": {
+      "title": "Buat ruang untuk suara mereka",
+      "summary": "Menangkap istirahat, ketawa, dan ungkapan kenalan yang tidak selalu dapat ditahan oleh cerita yang ditulis.",
+      "sections": [
+        {
+          "title": "Rekor dengan hati-hati",
+          "body": "Meminta izin dari pembicara. Temukan ruang yang tenang dan buat rekaman tes singkat. Simpan memori terlebih dahulu, kemudian pilih Mencatat sebuah cerita. Beristirahat atau kembali kapan saja Anda perlu."
+        },
+        {
+          "title": "Pada perangkat Anda",
+          "body": "LifeTalea Penyelamat AAC Audio dalam M4A File dalam penyimpanan aplikasi pribadi. Meninggalkan aplikasi berhenti dan menyimpan rekaman. Rekaman gratis terbatas hingga tiga menit; Premium memperpanjang batas itu, tertakluk pada penyimpanan."
+        },
+        {
+          "title": "Periksa Tablet Anda",
+          "body": "Rekaman membutuhkan mikrofon dan izin kerja. Perintah bicara menggunakan layanan pengenalan yang terinstal dan mungkin tidak tersedia di Fire dengan tablet. Kontrol sentuh tetap tersedia."
+        }
+      ]
+    },
+    "voice-transcription": {
+      "title": "Teman tertulis untuk memori yang diucapkan",
+      "summary": "Transisi tidak terkonfigurasi dalam LifeTalea dan membangun. Rekaman audio dan pengeditan transkrip manual tetap tersedia.",
+      "sections": [
+        {
+          "title": "Apa yang bekerja hari ini",
+          "body": "Buka memori dan mengedit medan transcriptnya. Anda dapat mengetikkan transkrip atau paste teks yang sudah Anda miliki. Koreksi disimpan secara lokal di samping rekaman asli."
+        },
+        {
+          "title": "Apa yang tersisa sebelum dibebaskan",
+          "body": "Transisi file yang tercatat membutuhkan mesin yang kompatibel, verifikasi bahasa yang didukung dan ujian akhir-ke-akhir. LifeTalea tidak menyajikan teks yang dicipta sebagai transkrip dan tidak mengirimkan rekaman kepada penyedia awan."
+        },
+        {
+          "title": "Layanan terpisah",
+          "body": "Android Pengenalan ucapan untuk perintah berbeda dari penulisan rekaman yang disimpan. Sebuah perangkat yang memiliki satu kapasitas tidak menetapkan dukungan untuk yang lain."
+        }
+      ]
+    },
+    "digital-scrapbook": {
+      "title": "Mengubah koleksi menjadi sebuah bab",
+      "summary": "Membawa kenangan tertulis dan foto ke dalam rancangan scrapbook yang disimpan.",
+      "sections": [
+        {
+          "title": "Pilih momen",
+          "body": "Buat scrapbook dan pilih kenangan dari perpustakaan Anda. Setiap halaman merujuk pada memori yang disimpan, menyimpan cerita dan foto bersama."
+        },
+        {
+          "title": "Temukan Ritme yang Tepat",
+          "body": "Memindahkan halaman ke atas atau ke bawah, pilih cerita atau layout foto, dan tambahkan catatan. Simpan catatan Anda sebelum preview. Memori sumber yang dihapus ditandai dengan jelas sehingga Anda dapat memperbaiki rancangan."
+        },
+        {
+          "title": "Tetaplah pribadi",
+          "body": "Rencana Scrapbook adalah lokal. Mencipta sebuah scrapbook tidak pernah menerbitkannya. Periksa dokumen yang diekspor sebelum Anda memutuskan untuk membagikannya."
+        }
+      ]
+    },
+    "family-timeline": {
+      "title": "Ingat bagaimana bab yang terhubung",
+      "summary": "Mengeksplorasi kenangan yang disimpan dalam urutan tanggal, termasuk yang memiliki tanggal yang mendekati dan tidak diketahui.",
+      "sections": [
+        {
+          "title": "Ikuti tahun-tahun",
+          "body": "Jenis timeline yang diketahui tanggal dari yang terbaru hingga yang tertua dan menempatkan cerita yang tidak diketahui kemudian. Cari frasa, pilih album atau filter per tahun."
+        },
+        {
+          "title": "Tanggal bisa berubah",
+          "body": "Penelitian keluarga sering mengungkapkan rincian baru. Mengedit tanggal dan ketepatan acara dalam editor memori; timeline menggunakan informasi yang diperbarui."
+        },
+        {
+          "title": "Sejarah yang tidak dicipta",
+          "body": "Timeline hanya menggunakan cerita yang Anda simpan. LifeTalea tidak mempopulerkan perpustakaan Anda dengan acara keluarga yang dibuat."
+        }
+      ]
+    },
+    "keepsake-books": {
+      "title": "Sebuah jembatan yang harus dipegang",
+      "summary": "Membangun Lokasi PDF dari memori, foto dan capsi yang dipilih dari scrapbook.",
+      "sections": [
+        {
+          "title": "Pilih apa yang harus dimasukkan",
+          "body": "Berikan buku judul cover. Pilih A4 atau surat kertas. Lokasi dan transkrip dikecualikan secara default dan dapat dimasukkan ketika sesuai."
+        },
+        {
+          "title": "Pertimbangkan sebelum berkongsi",
+          "body": "PDF dihasilkan di perangkat melalui Android“S” PDF api yang Cerita panjang terus berlanjut di halaman tambahan. Audio tidak terintegrasi dalam penyimpanan cetak. Pertimbangkan tipografi dan foto dalam Anda PDF Penglihatan sebelum cetak."
+        },
+        {
+          "title": "Status pengembangan",
+          "body": "PDF Generasi dilaksanakan dan di bawah validasi perangkat. Pemeriksaan ekspor premium membutuhkan verifikasi Amazon dengan hak. Akuntansi langsung belum disahkan."
+        }
+      ]
+    },
+    "offline-memory-journal": {
+      "title": "Memori Anda, bahkan tanpa koneksi",
+      "summary": "LifeTalea dirancang sekitar penyimpanan lokal dan kontrol sentuh, tanpa akun wajib.",
+      "sections": [
+        {
+          "title": "Lanjutkan pembuatan offline",
+          "body": "Memori tertulis, album, foto yang diimpor, rekaman yang disimpan, penjelajahan timeline dan rancangan scrapbook menggunakan data lokal. PDF Generasi tidak memerlukan layanan dokumen eksternal."
+        },
+        {
+          "title": "Ketahui batas",
+          "body": "Pembelian membutuhkan Amazon Layanan yang Pengenalan ucapan perangkat mungkin memerlukan internet. Transaksi file yang disimpan tidak tersedia di bangunan ini. Sinkronisasi awan tidak dilaksanakan."
+        },
+        {
+          "title": "Backup adalah pilihan Anda",
+          "body": "Gunakan dokumen picker untuk menyimpan arkib di mana Anda memilih. Jika Anda memilih penyedia dokumen yang didukung awan, penyedia tersebut mengendalikan file yang diekspor di bawah ketentuan privasi sendiri."
+        }
+      ]
+    },
+    "fire-tablet-compatibility": {
+      "title": "Dibangun dengan Fire Tablet dalam pikiran",
+      "summary": "Sebuah aplikasi Kotlin dan Jetpack Compose asli dengan tidak ada layanan Google Play yang diperlukan.",
+      "sections": [
+        {
+          "title": "Platform sasaran",
+          "body": "Minimum yang didukung Android Kebakaran adalah 26. Ini adalah minimum teknis, bukan janji bahwa setiap perangkat disertifikasi. Fire Televisi navigasi jarak jauh berada di luar jangkauan saat ini."
+        },
+        {
+          "title": "Ujian perangkat",
+          "body": "Sebuah yang terhubung KFTRWI Perangkat Laporan Android Kebakaran 28 tersedia untuk pengujian pengembangan. Laporan pengeluaran mencatat tes nyata; tambahan Fire Ukuran dan versi sistem operasi tetap diperiksa."
+        },
+        {
+          "title": "Suara bervariasi dari perangkat ke perangkat",
+          "body": "Mikrofon hanya mendukung rekaman ketika izin dan perangkat keras tersedia. Pengenalan dan feedback yang diucapkan juga membutuhkan layanan yang kompatibel yang dipasang. Alternatif sentuh dan teks selalu menjadi bagian dari desain."
+        }
+      ]
+    },
+    "languages": {
+      "title": "Sebuah buku yang bisa terasa seperti rumah",
+      "summary": "Aplikasi ini memiliki sebuah 22Matriks Terjemahan Lokal 17 bahasa prioritas. Pemeriksaan bahasa asli masih diperlukan.",
+      "sections": [
+        {
+          "title": "Rencana Bahasa",
+          "body": "Tujuan termasuk regional Inggris, Spanyol, Perancis dan Portugis, Jerman, Italia, Belanda, Polandia, Swedia, Jepang, Hindi, Arab, Turki, Indonesia, Korea dan Simplified dan Tradisional Cina."
+        },
+        {
+          "title": "Kualitas sebelum tuntutan bahasa",
+          "body": "Terjemahan harus melewati pemeriksaan lokasi, tes tataletak dan ulasan. Bahasa toko, bahasa aplikasi, negara distribusi, pengenalan ucapan, feedback berbahasa dan transkripsi masing-masing memiliki matriks dukungan yang berbeda."
+        },
+        {
+          "title": "Kata-kata Anda tetap milik Anda",
+          "body": "Mengubah bahasa interface tidak menerjemahkan kenangan pribadi atau rakaman. Terjemahan situs web yang tidak dipertimbangkan hanya tersedia dalam preview lokal; produksi membutuhkan review."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Tetaplah kenangan mereka. Pilih tambahan tersebut.",
+      "summary": "Sebuah jurnal gratis dengan pembelian satu kali premium pilihan. Pembelian tidak hidup dalam preview perkembangan ini.",
+      "sections": [
+        {
+          "title": "Gratis",
+          "body": "Sehingga tiga album, memori tertulis, foto, timeline, rancangan scrapbook dan rakaman suara hingga tiga menit. Memori tertulis yang disimpan tidak tercatat."
+        },
+        {
+          "title": "LifeTalea Premium",
+          "body": "Planned one-time entitlement: album tak terbatas, rekaman suara yang lebih lama, PDF mengekspor ekspor dan menyulitkan backup lokal. yang diusulkan UK Harga Ujian adalah £4.99Aplikasi ini akan menampilkan harga lokal dari Amazon Setelah dikonfigurasi."
+        },
+        {
+          "title": "Cerita Anda yang ada tetap dapat diakses",
+          "body": "Ketersediaan premium tidak mengunci Anda dari memori yang ada. Backup dasar dan pemulihan tetap tersedia. Cloud transcription dengan biaya tetap tidak termasuk dalam janji harga satu kali."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Beberapa hal yang patut diketahui",
+      "summary": "Jawaban praktis tentang privasi, rekaman, cerita keluarga dan pemeliharaan lokal.",
+      "sections": [
+        {
+          "title": "Apakah saya membutuhkan akun?",
+          "body": "Fitur-fitur lokal yang diperlukan tidak LifeTalea Akun yang Amazon Pembelian menggunakan akun dan layanan yang disediakan oleh Amazon Appstore yang"
+        },
+        {
+          "title": "Bagaimana cara membuat foto lama?",
+          "body": "Mulai dengan album kecil dan satu foto. Tambah nama dan konteks yang Anda ketahui, gunakan tanggal mendekati ketika diperlukan, dan tanyakan relatif tentang satu detail sekaligus."
+        },
+        {
+          "title": "Dapatkah saya mencatat kisah kehidupan orang tua saya?",
+          "body": "Ya, dengan izin mereka dan mikrofon yang kompatibel. Mulai dengan topik singkat dan periksa playback. Jangan bergantung pada satu perangkat sebagai satu-satunya salinan Anda."
+        },
+        {
+          "title": "Bisakah saya mendaftarkan rekaman?",
+          "body": "Transeksi file yang disimpan secara otomatis tidak tersedia dalam struktur saat ini. Anda dapat menambahkan dan mengedit transkrip secara manual."
+        },
+        {
+          "title": "Apakah LifeTalea Sinkronisasi antara perangkat?",
+          "body": "Tidak ada cloud sync yang diimplementasikan. Ekspor dan pemulihan arsip lokal adalah alat penyimpanan yang saat ini disediakan."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privasi dimulai dengan di mana sebuah cerita hidup",
+      "summary": "Pemberitahuan Privasi dari O.Bankole. kontak banksmi@mail.com. Pemeriksaan hukum masih diperlukan sebelum publikasi.",
+      "sections": [
+        {
+          "title": "Memori dan media",
+          "body": "Cerita, transkrip, foto, audio dan scrapbook diskon tetap dalam penyimpanan aplikasi pribadi secara default. LifeTalea tidak memerlukan akun, mengumpulkan lokasi secara otomatis atau mencakup iklan dan analisis SDKs. Android Backup otomatis tidak tersedia."
+        },
+        {
+          "title": "Pilihan yang melibatkan layanan lain",
+          "body": "Pengenalan ucapan menggunakan layanan ucapan Anda yang terinstal, yang dapat memproses ucapan melalui jaringan. Ini hanya diaktifkan melalui push-to-talk dengan pendedahan. Amazon Pembelian berkomunikasi dengan Amazon. Ekspor ke penyedia dokumen awan berbagi arsip yang dipilih dengan penyedia tersebut."
+        },
+        {
+          "title": "Penghapusan dan retensi",
+          "body": "Anda dapat menghapus memori dan lampiran individu atau semua data perpustakaan lokal di Settings. Uninstalling menghapus data aplikasi lokal. File yang diekspor adalah salinan yang terpisah yang Anda kendalikan sendiri. Rekor pembelian disimpan oleh Amazon di bawah kebijakan mereka."
+        },
+        {
+          "title": "batas keamanan",
+          "body": "Penyimpanan aplikasi pribadi bergantung pada perlindungan perangkat; database lokal tidak memiliki kunci enkripsi aplikasi yang terpisah. Arkib yang disulitkan secara opsional menggunakan kata sandi. Tidak ada tuntutan enkripsi akhir atau penilaian pematuhan hukum yang selesai."
+        }
+      ]
+    },
+    "support": {
+      "title": "sedikit bantuan dengan bab berikutnya.",
+      "summary": "LifeTalea sedang dalam pengembangan. Langkah-langkah ini mencakup alat lokal yang saat ini diimplementasikan.",
+      "sections": [
+        {
+          "title": "Rekaman tidak akan dimulai",
+          "body": "Periksa izin mikrofon dan penyimpanan gratis. Simpan memori sebelum menyertakan audio. Jika pengenalan tidak tersedia, gunakan kontrol tertulis; perintah ucapan dan rakaman audio adalah kemampuan terpisah."
+        },
+        {
+          "title": "Simpan salinan yang aman",
+          "body": "Buka Settings, pilih apakah untuk memasukkan foto dan audio, kemudian Buat sandaran. Simpan file di tempat yang aman. Restore mengevaluasi arkib dan menunjukkan preview sebelum mengimpor."
+        },
+        {
+          "title": "A PDF Arsip tidak akan menyelamatkan",
+          "body": "Cobalah folder yang dapat ditulis dengan penyimpanan gratis yang cukup. Pastikan bahwa penyedia dokumen yang Anda pilih tersedia. Eksport yang gagal harus meninggalkan ingatan sumber tidak lengkap."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Berhubung dengan",
+      "summary": "kontak O.Bankole Untuk LifeTalea dukungan pada banksmi@mail.com.",
+      "sections": [
+        {
+          "title": "Melindungi privasi keluarga Anda",
+          "body": "Ketika melaporkan masalah, jelaskan perangkat, sistem operasi, versi aplikasi dan langkah. Hindari mengirimkan cerita pribadi, foto, rakaman atau frasa sandi sandaran."
+        },
+        {
+          "title": "Dukungan ketersediaan",
+          "body": "Menulis untuk banksmi@mail.com."
+        }
+      ]
+    }
+  }
+}

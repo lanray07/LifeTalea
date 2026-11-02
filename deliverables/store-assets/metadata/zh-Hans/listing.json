@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_NOT_SUBMISSION_READY",
+  "publisher": "O.Bankole",
+  "supportEmail": "banksmi@mail.com",
+  "title": "LifeTalea - 家庭故事与回忆",
+  "shortDescription": "将家庭故事、照片和语音记忆放在私人杂志上。 创建专辑,探索时间线,并在您的设备上保存 scrapbook 草案。",
+  "longDescription": "保持时刻。 记住这些声音。\n\nLifeTalea 给家庭故事一个私人位置在你的平板电脑上。 从一张照片开始,几条写的线条,或者一张声音录制。 不 LifeTalea 需要账户。\n\n保存照片后的故事\n添加照片、标签和您自己输入的可选位置。 选择一年、月份、准确日期或未知日期。 将记忆安排在专辑中,并标记喜爱。\n\n为自己的声音做房间\n记录,休息,重复和播放讲话的故事。 音频存储在私人应用存储中。 免费级支持录制高达3分钟。 在您选择录制时,请求麦克风许可。 命令句子目前支持英语。 语音命令和语音播放取决于安装的设备服务;触摸和文本替代品仍然可用。\n\n跟随你的家庭章节\n浏览器在时间线上保存记忆。 搜索书面故事、标签和手动编辑的翻译。 创建 scrapbook 草案,安排页面,并添加字符串。\n\n保留您控制的副本\n创建一个本地备份,并明确选择是否包含照片和录音。 恢复在进口之前验证档案。 在某个地方保持出口和密码短语安全。\n\n优惠奖\n优惠设计为无限专辑、长时间录制、本地专辑的一次购买。 PDF 保留出口和加密档案创建。 现有本地价格将由 Amazon. 现有故事仍然可用,没有优惠。\n\n发展状态\n这个列表是一个草案。 自动转换不设置。 世界各地的翻译,所需的设备测试和 Amazon 购买检查不完整。 没有提供云同步。 不要将此草案作为完成产品列表发布。\n\n出版商: O.Bankole\n支持: banksmi@mail.com",
+  "featureBullets": [
+    "将书面故事、照片和本地语音录制保存在一起。",
+    "安排私人专辑标签、喜爱和约定日期。",
+    "探索家庭时间表,并创建保存的脚本草案。",
+    "创建本地备份与明确选择的照片和音频。",
+    "使用触摸和文本替代品,当设备语音服务不适用时。"
+  ],
+  "keywords": [
+    "家庭记忆日记",
+    "声音日记",
+    "记录家庭故事",
+    "数字 scrapbook",
+    "个人家庭日记",
+    "记忆时间线"
+  ],
+  "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
+  "categoryRecommendation": "Lifestyle > Diaries",
+  "releaseNotes": "初步发展预测。 未批准公开提交。",
+  "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
+  "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
+  "liveDownloadUrl": null,
+  "screenshotHeadlines": {
+    "home": "珍藏每个重要时刻",
+    "albums": "为每段人生留一本相册",
+    "timeline": "沿时间线重温家庭故事",
+    "keepsakes": "把故事收进回忆册",
+    "settings": "留一份由自己掌控的备份",
+    "editor": "写下照片背后的故事",
+    "voice": "留住亲人的声音",
+    "transcript": "用自己的话添加转写文本"
+  },
+  "locale": "zh-Hans",
+  "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
+  "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
+  "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
+  "targetHash": "3021f1dddb1cfc8f160efbc2c2930c982f3bcb8b1f0fa17a6b0cd118de53914d"
+}

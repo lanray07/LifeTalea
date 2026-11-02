@@ -82,7 +82,9 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
         else microphoneNotice = true
     }
     fun command(text: String) {
-        val result = CommandParser.parse(text, locale)
+        // The consent/help copy explicitly limits commands to English. Keep that
+        // command language available when the interface uses another locale.
+        val result = CommandParser.parse(text, Locale.ENGLISH)
         when (result.intent) {
             VoiceIntent.NEW_MEMORY -> newMemory()
             VoiceIntent.START_RECORDING -> record()
@@ -137,7 +139,7 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
                                 items(albums, key = { it.id }) { album -> OutlinedCard(onClick = { albumFilter = album.id; navigate("memories") }, modifier = Modifier.fillMaxWidth()) {
                                     Row(Modifier.padding(20.dp), verticalAlignment = Alignment.CenterVertically) {
                                         Icon(Icons.Outlined.CollectionsBookmark, null, Modifier.size(44.dp), tint = MaterialTheme.colorScheme.primary)
-                                        Column(Modifier.weight(1f).padding(horizontal = 16.dp)) { Text(album.title, style = MaterialTheme.typography.titleLarge); Text(java.text.NumberFormat.getIntegerInstance(locale).format(links.count { it.albumId == album.id })) }
+                                        Column(Modifier.weight(1f).padding(horizontal = 16.dp)) { Text(album.title, style = MaterialTheme.typography.titleLarge); val count = links.count { it.albumId == album.id }; Text(context.resources.getQuantityString(R.plurals.memory_count, count, count)) }
                                         IconButton(onClick = { albumDialog = album; albumName = album.title }) { Icon(Icons.Outlined.Edit, tr("edit")) }
                                         IconButton(onClick = { deletion = "delete_album" to { vm.run { vm.repo.dao.deleteAlbum(album.id) } } }) { Icon(Icons.Outlined.DeleteOutline, tr("delete")) }
                                     }
@@ -154,7 +156,7 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
                                     item { OutlinedTextField(query, { query = it }, label = { Text(tr("search")) }, leadingIcon = { Icon(Icons.Outlined.Search, null) }, modifier = Modifier.fillMaxWidth(), singleLine = true)
                                         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                             Choice(!favourites, tr("all")) { favourites = false }; Choice(favourites, tr("favourites")) { favourites = true }; Choice(albumFilter == null, tr("album_filter") + ": " + tr("all")) { albumFilter = null }; albums.forEach { a -> Choice(albumFilter == a.id, a.title) { albumFilter = a.id } }
-                                        }; if (isTimeline) Field("year_filter", year, { if (it.length <= 4 && it.all(Char::isDigit)) year = it })
+                                        }; if (isTimeline) Field("year_filter", year, { input -> val digits = MemoryRules.normaliseDateDigits(input); if (digits.length <= 4 && digits.all(Char::isDigit)) year = digits })
                                     }
                                     if (filtered.isEmpty()) item { EmptyState(if (memories.isEmpty()) tr("empty_title") else tr("no_results"), if (memories.isEmpty()) tr("empty_body") else null) }
                                     items(filtered, key = { it.id }) { m -> MemoryCard(m, media.firstOrNull { it.memoryId == m.id && it.kind == "photo" }, vm, { openMemory(m.id) }) }

@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_NOT_SUBMISSION_READY",
+  "publisher": "O.Bankole",
+  "supportEmail": "banksmi@mail.com",
+  "title": "LifeTalea - 家族の物語と思い出",
+  "shortDescription": "ファミリーストーリー、写真、音声メモリをプライベートジャーナルにまとめておく。 アルバムを作成し、タイムラインを探索し、デバイスにスクラップブックのデザインを保存します。",
+  "longDescription": "瞬間を守る。 声を覚えておく。\n\nLifeTalea ファミリーストーリーは、タブレットにプライベートな場所を提供します。 1枚の写真、数枚の文字、あるいは音声録音で始める。 ノー LifeTalea アカウントが必要です。\n\n写真の後で物語を保存する\n写真、タグ、およびあなた自身で入力するオプションの位置を追加します。 年、月、正確な日付、または未知の日付を選択します。 アルバムにメモリを整理し、お気に入りをマークします。\n\n自分の声のために部屋を作る\nレコーディング、休憩、再生、話されたストーリーを再生します。 オーディオはプライベートアプリストレージに残ります。 無料レベルは、最大3分間の録音をサポートします。 マイクロフォンライセンスは、レコーディングを選択するときに要求されます。 コマンドフレーズは現在英語をサポートしています。 音声コマンドとスピーチプレイバックは、インストールされたデバイスサービスに依存し、タッチとテキストの代替品が利用可能になります。\n\n家族の章をフォローする\nブラウザはタイムラインで記憶を保存しました。 書かれたストーリー、タグ、手動編集のトランスクリプトを検索する。 スクラップブックのデザインを作成し、ページを整理し、キャプションを追加します。\n\nコントロールするコピーを保存する\n地元のバックアップを作成し、写真や録音を含むかどうかを明確に選択します。 復元は、輸入前にアーカイブを確認します。 どこかで輸出やパスフレーズを安全に保つ\n\nオプション賞\nプレミアムは、無制限のアルバム、長い録音、地元の1回購入として設計されています。 PDF 輸出と暗号化されたアーカイブの作成。 現地価格は提供される。 Amazon. 既存のストーリーはプレミアムなしでアクセスできます。\n\n開発状況\nこのリストは草案です。 自動トランスクリプトは設定されていません。 世界中の翻訳、必要なデバイステスト、および Amazon 購入確認は不完全です。 クラウドシンクは提供されていません。 このプロジェクトを完成した製品リストとして公開しないでください。\n\n出版社 : O.Bankole\nサポート: banksmi@mail.com",
+  "featureBullets": [
+    "書かれたストーリー、写真、地元の音声録音を一緒に保存します。",
+    "タグ、お気に入り、近い日付を含むプライベートアルバムを開催します。",
+    "ファミリータイムラインを探索し、保存されたスクラップブックのデザインを作成します。",
+    "明示的に選択された写真とオーディオで地元のバックアップを作成します。",
+    "デバイスのスピーチサービスが利用できない場合にタッチとテキストの代替品を使用します。"
+  ],
+  "keywords": [
+    "ファミリーメモリ雑誌",
+    "音の日記",
+    "レコードファミリーストーリー",
+    "デジタルスクラップブック",
+    "プライベートファミリー雑誌",
+    "メモリタイムライン"
+  ],
+  "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
+  "categoryRecommendation": "Lifestyle > Diaries",
+  "releaseNotes": "初期開発予測 公的投票に承認されていません。",
+  "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
+  "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
+  "liveDownloadUrl": null,
+  "screenshotHeadlines": {
+    "home": "大切なひとときを残そう",
+    "albums": "ひとつひとつの章をアルバムに",
+    "timeline": "家族の歩みをたどる",
+    "keepsakes": "物語を思い出ブックにまとめる",
+    "settings": "自分で管理できるバックアップを",
+    "editor": "写真の向こうにある物語を綴る",
+    "voice": "大切な人の声を残す",
+    "transcript": "自分の言葉で書き起こしを追加"
+  },
+  "locale": "ja-JP",
+  "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
+  "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
+  "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
+  "targetHash": "6aeab42ec7439846ab8347f0d108c57ba57b9bb93168a028a37a8d85f4fb2ee5"
+}

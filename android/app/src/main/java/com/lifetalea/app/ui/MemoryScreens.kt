@@ -7,6 +7,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.ArrowBack
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -29,12 +30,7 @@ import java.util.Locale
 
 @Composable fun dateLabel(memory: Memory): String {
     val locale = LocalConfiguration.current.locales[0]
-    return runCatching { when(memory.precision) {
-        "DAY" -> LocalDate.parse(memory.date).format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).withLocale(locale))
-        "MONTH" -> YearMonth.parse(memory.date).format(DateTimeFormatter.ofPattern("LLLL yyyy", locale))
-        "YEAR" -> java.text.NumberFormat.getIntegerInstance(locale).apply { isGroupingUsed = false }.format(memory.date.toInt())
-        else -> tr("unknown_date")
-    } }.getOrDefault(memory.date)
+    return if (memory.precision == "UNKNOWN") tr("unknown_date") else MemoryRules.formattedDate(memory,locale)
 }
 @Composable fun MemoryCard(memory: Memory, photo: Attachment?, vm: LibraryViewModel, onOpen: () -> Unit) {
     OutlinedCard(onClick = onOpen, modifier = Modifier.fillMaxWidth()) {
@@ -66,7 +62,7 @@ import java.util.Locale
         Text(tr("precision")); Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             listOf("UNKNOWN" to "unknown", "YEAR" to "year", "MONTH" to "month", "DAY" to "day").forEach { (value, label) -> Choice(precision == value, tr(label)) { precision = value; date = "" } }
         }
-        if (precision != "UNKNOWN") { Field("date", date, { date = it.take(10) }); Text(tr("date_hint"), style = MaterialTheme.typography.bodySmall) }
+        if (precision != "UNKNOWN") { Field("date", date, { date = MemoryRules.normaliseDateDigits(it).take(10) }); Text(tr("date_hint"), style = MaterialTheme.typography.bodySmall) }
         Field("location", location, { location = it.take(300) }); Field("tags", tags, { tags = it.take(1000) })
         Field("transcript", transcript, { transcript = it.take(1000000) }, 3)
         if (albums.isNotEmpty()) { Text(tr("albums")); albums.forEach { a -> Row(verticalAlignment = Alignment.CenterVertically) { Checkbox(a.id in selected, { selected = if (it) selected + a.id else selected - a.id }); Text(a.title) } } }
@@ -89,7 +85,7 @@ import java.util.Locale
     var name by remember { mutableStateOf("") }
     LaunchedEffect(recording.active, recording.paused) { while(recording.active) { elapsed = vm.recorder.elapsed(); delay(250) } }
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(24.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        Row { TextButton(onClick = onBack, enabled = !recording.active) { Icon(Icons.Outlined.ArrowBack, null); Text(tr("back")) }; Spacer(Modifier.weight(1f)); TextButton(onClick = onEdit, enabled = !recording.active) { Text(tr("edit")) } }
+        Row { TextButton(onClick = onBack, enabled = !recording.active) { Icon(Icons.AutoMirrored.Outlined.ArrowBack, null); Text(tr("back")) }; Spacer(Modifier.weight(1f)); TextButton(onClick = onEdit, enabled = !recording.active) { Text(tr("edit")) } }
         Heading(memory.title, dateLabel(memory))
         if (memory.story.isNotBlank()) Text(memory.story, style = MaterialTheme.typography.bodyLarge)
         if (memory.location.isNotBlank()) Text(memory.location)
@@ -104,7 +100,7 @@ import java.util.Locale
         Text(tr("voice_story"), style = MaterialTheme.typography.titleLarge)
         Text(tr("recording_notice"), style = MaterialTheme.typography.bodySmall)
         if (recording.active) {
-            Text(tr(if (recording.paused) "recording_paused" else "recording") + " · " + duration(elapsed))
+            Text(tr(if (recording.paused) "recording_paused" else "recording") + " · " + duration(elapsed, LocalConfiguration.current.locales[0]))
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 OutlinedButton(onClick = { runCatching { if (recording.paused) vm.recorder.resume() else vm.recorder.pause() }.onFailure { vm.error.value = "recording_failed" } }) { Text(tr(if (recording.paused) "resume" else "pause")) }
                 Button(onClick = { vm.stopRecording() }) { Text(tr("stop_save")) }
@@ -120,7 +116,7 @@ import java.util.Locale
     if (transcription) AlertDialog(onDismissRequest = { transcription = false }, title = { Text(tr("transcription")) }, text = { Text(tr("transcription_unavailable")) }, confirmButton = { TextButton(onClick = { transcription = false; onEdit() }) { Text(tr("edit")) } })
     rename?.let { a -> AlertDialog(onDismissRequest = { rename = null }, title = { Text(tr("rename")) }, text = { Field("title", name, { name = it.take(200) }) }, confirmButton = { TextButton(enabled = name.isNotBlank(), onClick = { vm.run { vm.repo.dao.save(a.copy(name = name)) }; rename = null }) { Text(tr("save")) } }) }
 }
-fun duration(ms: Long): String = "%02d:%02d".format(Locale.ROOT, ms / 60000, ms / 1000 % 60)
+fun duration(ms: Long, locale: Locale = Locale.ROOT): String = "%02d:%02d".format(locale, ms / 60000, ms / 1000 % 60)
 @Composable fun AudioPlayer(path: String, name: String) {
     var player by remember(path) { mutableStateOf<MediaPlayer?>(null) }
     var playing by remember(path) { mutableStateOf(false) }
@@ -145,7 +141,7 @@ fun duration(ms: Long): String = "%02d:%02d".format(Locale.ROOT, ms / 60000, ms 
                 }.onFailure { failed = true; playing = false }
             }) { Icon(if (playing) Icons.Outlined.Pause else Icons.Outlined.PlayArrow, tr(if (playing) "pause" else "play")) }
             Slider(position.coerceIn(0f, length), { position = it; player?.seekTo(it.toInt()) }, valueRange = 0f..length, modifier = Modifier.weight(1f))
-            Text(duration(position.toLong()))
+            Text(duration(position.toLong(), LocalConfiguration.current.locales[0]))
         }
     } }
 }

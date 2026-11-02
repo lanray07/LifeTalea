@@ -8,6 +8,8 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.ArrowBack
+import androidx.compose.material.icons.automirrored.outlined.MenuBook
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -16,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
 import androidx.room.withTransaction
 import coil.compose.AsyncImage
@@ -30,12 +33,13 @@ import kotlinx.coroutines.withContext
     LazyColumn(Modifier.fillMaxSize().padding(horizontal = 24.dp), verticalArrangement = Arrangement.spacedBy(16.dp), contentPadding = PaddingValues(bottom = 24.dp)) {
         item { Heading(tr("keepsakes"), tr("no_books")); Button(onClick = { create = true }) { Icon(Icons.Outlined.Add, null); Text(tr("new_book")) } }
         if (books.isEmpty()) item { EmptyState(tr("no_books_body")) }
-        items(books, key = { it.id }) { book -> OutlinedCard(onClick = { onOpen(book.id) }, modifier = Modifier.fillMaxWidth()) { Row(Modifier.padding(24.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(20.dp)) { Icon(Icons.Outlined.MenuBook, null, Modifier.size(48.dp)); Column { Text(book.title, style = MaterialTheme.typography.titleLarge); Text(tr("draft")) } } } }
+        items(books, key = { it.id }) { book -> OutlinedCard(onClick = { onOpen(book.id) }, modifier = Modifier.fillMaxWidth()) { Row(Modifier.padding(24.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(20.dp)) { Icon(Icons.AutoMirrored.Outlined.MenuBook, null, Modifier.size(48.dp)); Column { Text(book.title, style = MaterialTheme.typography.titleLarge); Text(tr("draft")) } } } }
     }
     if (create) AlertDialog(onDismissRequest = { create = false }, title = { Text(tr("new_book")) }, text = { Field("book_title", title, { title = it.take(200) }) }, confirmButton = { TextButton(enabled = title.isNotBlank(), onClick = { val book = Scrapbook(title = title.trim()); vm.run { vm.repo.dao.save(book); onOpen(book.id) }; create = false; title = "" }) { Text(tr("save")) } }, dismissButton = { TextButton(onClick = { create = false }) { Text(tr("cancel")) } })
 }
 @Composable fun BookEditor(vm: LibraryViewModel, book: Scrapbook, pages: List<BookPage>, memories: List<Memory>, media: List<Attachment>, onBack: () -> Unit, premium: () -> Unit, onDelete: (Scrapbook) -> Unit) {
     val context = LocalContext.current
+    val locale = LocalConfiguration.current.locales[0]
     var add by remember { mutableStateOf(false) }; var options by remember { mutableStateOf(false) }
     var title by rememberSaveable(book.id) { mutableStateOf(book.title) }
     var includeLocation by rememberSaveable { mutableStateOf(false) }; var includeTranscript by rememberSaveable { mutableStateOf(false) }; var letter by rememberSaveable { mutableStateOf(false) }
@@ -43,13 +47,13 @@ import kotlinx.coroutines.withContext
     val export = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/pdf")) { uri -> if (uri != null) vm.run {
         withContext(Dispatchers.IO) {
             val selections = pages.sortedBy { it.position }.mapNotNull { p -> memories.find { it.id == p.memoryId }?.let { it.copy(story = it.story + if (p.caption.isNotBlank()) "\n\n${p.caption}" else "") } }
-            context.contentResolver.openOutputStream(uri)?.use { KeepsakePdf(vm.repo).write(title, selections, media, it, includeLocation, includeTranscript, letter) } ?: error("No output")
+            context.contentResolver.openOutputStream(uri)?.use { KeepsakePdf(vm.repo).write(title, selections, media, it, includeLocation, includeTranscript, letter, locale) } ?: error("No output")
         }; vm.error.value = "pdf_saved"
     } }
     fun move(page: BookPage, offset: Int) { val ordered = pages.sortedBy { it.position }; val index = ordered.indexOf(page); val target = ordered.getOrNull(index + offset) ?: return; vm.run { vm.repo.db.withTransaction { vm.repo.dao.save(page.copy(position = target.position)); vm.repo.dao.save(target.copy(position = page.position)) } } }
     LazyColumn(Modifier.fillMaxSize().padding(horizontal = 24.dp), verticalArrangement = Arrangement.spacedBy(20.dp), contentPadding = PaddingValues(bottom = 32.dp)) {
         item {
-            TextButton(onClick = onBack) { Icon(Icons.Outlined.ArrowBack, null); Text(tr("back")) }
+            TextButton(onClick = onBack) { Icon(Icons.AutoMirrored.Outlined.ArrowBack, null); Text(tr("back")) }
             Heading(book.title)
             if (!preview) { Field("book_title", title, { title = it.take(200) }); TextButton(enabled = title.isNotBlank(), onClick = { vm.run { vm.repo.dao.save(book.copy(title = title.trim())) } }) { Text(tr("save")) }
                 Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) { listOf("forest", "rose", "paper").forEach { t -> Choice(book.theme == t, tr(t)) { vm.run { vm.repo.dao.save(book.copy(theme = t)) } } } }

@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_NOT_SUBMISSION_READY",
+  "publisher": "O.Bankole",
+  "supportEmail": "banksmi@mail.com",
+  "title": "LifeTalea - Historias y recuerdos familiares",
+  "shortDescription": "Mantener historias familiares, fotografías y recuerdos de voz juntos en un periódico privado. Crea álbumes, explora una línea de tiempo y salve dibujos de scrapbook en su dispositivo.",
+  "longDescription": "Mantenga los momentos. Recuerda las voces.\n\nLifeTalea Dale historias familiares un lugar privado en su tableta. Comience con una foto, algunas líneas escritas o una grabación de voz. No LifeTalea La cuenta es necesaria.\n\nSalva la historia después de la fotografía\nAñadir fotos, etiquetas y una ubicación opcional que usted mismo entra. Seleccione un año, mes, fecha exacta o fecha desconocida. Organizar memorias en álbumes y marcar favoritos.\n\nHacer una habitación para su voz\nRecordar, descansar, resumir y jugar una historia hablada. Audio permanece en almacenamiento privado de aplicaciones. El nivel gratuito soporta grabaciones hasta tres minutos. Se solicita permiso de micrófono cuando elija grabar. Las frases de mando actualmente apoyan el inglés. Los comandos de voz y la reproducción hablada dependen de los servicios de los dispositivos instalados; las alternativas de toque y texto permanecen disponibles.\n\nSiga los capítulos de tu familia\nBrowse salvó recuerdos en una línea de tiempo. Buscar historias escritas, etiquetas y transcripciones editadas manualmente. Crear diseños de scrapbook, arreglar páginas y agregar capciones.\n\nConserva una copia que controla\nCrea una copia de seguridad local y seleccione explícitamente si incluir fotografías y grabaciones. La restauración valida el archivo antes de la importación. Mantener las exportaciones y frase de contraseñas en algún lugar seguros.\n\nPremios opcionales\nPremium está diseñado como una compra única para álbumes ilimitados, grabaciones más largas, locales PDF Exportación y creación de archivos cifrados. Los precios locales actuales serán suministrados por Amazon. Las historias existentes permanecen accesibles sin Premium.\n\nEstado de desarrollo\nEsta lista es un proyecto. La transcripción automática no está configurada. traducciones mundiales, las pruebas de dispositivos necesarias y Amazon La verificación de la compra es incompleta. No se ofrece ninguna sincronización de nube. No publique este proyecto como lista de productos terminados.\n\nEl editor: O.Bankole\nEl apoyo: banksmi@mail.com",
+  "featureBullets": [
+    "Salva historias escritas, fotografías y grabaciones de voz locales juntos.",
+    "Organizar álbumes privados con etiquetas, favoritos y fechas aproximadas.",
+    "Explore un timeline familiar y crea diseños de scrapbook salvados.",
+    "Crear backups locales con fotos y audio explicitamente seleccionados.",
+    "Utilice alternativas de toque y texto cuando los servicios de habla del dispositivo no están disponibles."
+  ],
+  "keywords": [
+    "Periódico Memoria Familiar",
+    "Periódico de voz",
+    "Historias familiares de registro",
+    "El digital scrapbook",
+    "Periódico familiar privado",
+    "Memoria Timeline"
+  ],
+  "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
+  "categoryRecommendation": "Lifestyle > Diaries",
+  "releaseNotes": "Previsiones de desarrollo inicial. No aprobado para la presentación pública.",
+  "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
+  "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
+  "liveDownloadUrl": null,
+  "screenshotHeadlines": {
+    "home": "Conserva los momentos que importan",
+    "albums": "Una colección para cada capítulo",
+    "timeline": "Recorre la historia de tu familia",
+    "keepsakes": "Reúne historias en un libro de recuerdos",
+    "settings": "Guarda una copia bajo tu control",
+    "editor": "Cuenta la historia detrás de la foto",
+    "voice": "Dales un lugar a sus voces",
+    "transcript": "Añade transcripciones con tus propias palabras"
+  },
+  "locale": "es-419",
+  "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
+  "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
+  "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
+  "targetHash": "8adde481fe962ab9272efa8ee512db17657ce5c57db60a333ca2451648ff4c82"
+}

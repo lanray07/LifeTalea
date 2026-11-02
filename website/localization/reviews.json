@@ -1,0 +1,219 @@
+{
+  "en-GB": {
+    "status": "SOURCE",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true
+  },
+  "en-US": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "0e4761e6bd10d1d1a7895b2e35dea3eca6a16d533f95c2ad6e20c6338ba3c873",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true
+  },
+  "en-AU": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "69334fa4cc39a32c235ac1374fcedf63597c21cacb088ed1b582ae553af1f354",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true
+  },
+  "es-ES": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "35f22f6654d893063c07dbb1a098c568720205b215820159b9f02aa5574cc0d7",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "es-419": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "35f22f6654d893063c07dbb1a098c568720205b215820159b9f02aa5574cc0d7",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "fr-FR": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "c6ddb06465ece775c9c9e78f967e8bb81735b4d91c64d476b77e424f9db69163",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "fr-CA": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "c6ddb06465ece775c9c9e78f967e8bb81735b4d91c64d476b77e424f9db69163",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "de-DE": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "0af01258e63783be1e393bdef0213927728f0f6b58d96f588ef2db49d470a71a",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "it-IT": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "802e4c7d5bf741fbed2dde84fc5d025fb5c21269f108010d7c6abbad85f5c99b",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "pt-BR": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "15471f76f90a2b22e67d0448cd1de6336cb71c450269332fdc34b03aef41ae0c",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "pt-PT": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "15471f76f90a2b22e67d0448cd1de6336cb71c450269332fdc34b03aef41ae0c",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "nl-NL": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "c7a6114e087f5db9a19e5eaea5a301e2c62d0aa51a27f18969d33bba88848d97",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "pl-PL": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "0fcbae8ea33c4ff480ec58f3bb198a4d4109cd7dfe491da5780db681b0a47639",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "sv-SE": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "6b54a5b3a8f4e92a0b0fd5cfa762f53f61478a53060f4545eba079bde2845943",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "ja-JP": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "b4e37ac5867ace94d1564b04f2d6b39c524d6edb5bfa7a67a44b375cbc753da8",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "hi-IN": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "a7cf4b0cddff41ba81f32dff8e65e1ff35a1b0d91a6ad1daf72e7637ae015a34",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "ar": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "dec4b43fbc2f33c51aa629dfd52b00babf93b935e5400c65f503bae289c633cc",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "tr-TR": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "27a4de67b9f7db231a98b67370adddad79988c062658d41ae283134cca6e9215",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "id-ID": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "e00fb83ad10e227fb5ca293c6d94e5599a177b7222d2880f67bccee112139dd6",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "ko-KR": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "77e6c4a35450be265b7d4faad719c3bfe53c0dfe4ec84e61c6ff0695b00a2398",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "zh-Hans": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "f9f6e7c8b41d4291ffe0be09c325c19e43a97dd35c7a0c2f89a0775bc7afee3f",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  },
+  "zh-Hant": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "7002f7dc5dba0b95f10669869e5c61457975d7b5f159192c246f97c63e737ebb",
+    "targetHash": "cdec4364f3a409a54f15a671f8e379b0204d0d4c4d665b6d09959dcf5db94a9d",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local inference; segmented prose",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex draft headlines, titles, review notice and passphrase terminology; not native approval"
+  }
+}

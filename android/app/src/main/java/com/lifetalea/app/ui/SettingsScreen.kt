@@ -40,7 +40,7 @@ import kotlinx.coroutines.withContext
         Text(tr("appearance"), style = MaterialTheme.typography.titleLarge)
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) { listOf("system", "light", "dark").forEach { theme -> Choice(preferences.theme == theme, tr(theme)) { vm.run { vm.settings.theme(theme) } } } }
         Text(tr("language"), style = MaterialTheme.typography.titleLarge); Text(tr("language_note"))
-        Row { TextButton(onClick = { AppCompatDelegate.setApplicationLocales(LocaleListCompat.getEmptyLocaleList()) }) { Text(tr("device_language")) }; TextButton(onClick = { AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("en-GB")) }) { Text("English") } }
+        LanguagePicker()
         Toggle("spoken_feedback", preferences.spoken) { vm.run { vm.settings.spoken(it) } }
         HorizontalDivider(); Text(tr("privacy"), style = MaterialTheme.typography.titleLarge); Text(tr("privacy_body"))
         HorizontalDivider(); Text(tr("backup"), style = MaterialTheme.typography.titleLarge); Text(tr("backup_notice"))

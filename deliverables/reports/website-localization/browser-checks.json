@@ -1,0 +1,14 @@
+{
+  "executedAt": "2026-11-02",
+  "environment": "Codex in-app browser; local static export on 127.0.0.1:3000",
+  "status": "PASS_WITH_DRAFT_LANGUAGE_LIMITATIONS",
+  "checks": [
+    {"check": "French homepage and features navigation", "result": "PASS", "path": "/fr-FR/features/"},
+    {"check": "French-to-German native language selector preserves article", "result": "PASS", "path": "/de-DE/features/"},
+    {"check": "Arabic mobile homepage", "result": "PASS", "lang": "ar", "dir": "rtl", "documentClientWidth": 375, "documentScrollWidth": 375, "requestedViewport": [390,844]},
+    {"check": "Use browser language control", "result": "PASS", "resultingPath": "/en-GB/"},
+    {"check": "Observed console warnings/errors", "result": "NONE", "scope": "The inspected tab session only"}
+  ],
+  "screenshots": ["fr-FR-desktop.jpg", "ar-mobile.jpg"],
+  "limitations": "Not a full cross-browser or accessibility audit. Article and store translations contain rough machine wording and require native editing/review. Zero native approvals. Screenshot assets were finally exported through Playwright after in-app capture clipping/blank-output diagnostics; JPEG dimensions and source-image pixel similarity were validated."
+}

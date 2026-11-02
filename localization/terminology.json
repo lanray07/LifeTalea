@@ -1,0 +1,319 @@
+{
+  "fr": {
+    "memories": "Souvenirs",
+    "albums": "Albums",
+    "timeline": "Chronologie",
+    "keepsakes": "Livres de souvenirs",
+    "settings": "Paramètres",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "back": "Retour",
+    "close": "Fermer",
+    "story": "Votre récit",
+    "favourite": "Favori",
+    "favourites": "Favoris",
+    "record": "Enregistrer un récit",
+    "language": "Langue",
+    "memory_count": {
+      "one": "%1$d souvenir",
+      "other": "%1$d souvenirs"
+    }
+  },
+  "es": {
+    "memories": "Recuerdos",
+    "albums": "Álbumes",
+    "timeline": "Cronología",
+    "keepsakes": "Libros de recuerdos",
+    "settings": "Ajustes",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "back": "Atrás",
+    "close": "Cerrar",
+    "story": "Tu historia",
+    "favourite": "Favorito",
+    "favourites": "Favoritos",
+    "record": "Grabar una historia",
+    "language": "Idioma",
+    "memory_count": {
+      "one": "%1$d recuerdo",
+      "other": "%1$d recuerdos"
+    }
+  },
+  "de": {
+    "memories": "Erinnerungen",
+    "albums": "Alben",
+    "timeline": "Zeitleiste",
+    "keepsakes": "Erinnerungsbücher",
+    "settings": "Einstellungen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "back": "Zurück",
+    "close": "Schließen",
+    "story": "Deine Geschichte",
+    "favourite": "Favorit",
+    "favourites": "Favoriten",
+    "record": "Eine Geschichte aufnehmen",
+    "language": "Sprache",
+    "memory_count": {
+      "one": "%1$d Erinnerung",
+      "other": "%1$d Erinnerungen"
+    }
+  },
+  "it": {
+    "memories": "Ricordi",
+    "albums": "Album",
+    "timeline": "Cronologia",
+    "keepsakes": "Libri dei ricordi",
+    "settings": "Impostazioni",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "back": "Indietro",
+    "close": "Chiudi",
+    "story": "La tua storia",
+    "favourite": "Preferito",
+    "favourites": "Preferiti",
+    "record": "Registra una storia",
+    "language": "Lingua",
+    "memory_count": {
+      "one": "%1$d ricordo",
+      "other": "%1$d ricordi"
+    }
+  },
+  "pt": {
+    "memories": "Memórias",
+    "albums": "Álbuns",
+    "timeline": "Linha do tempo",
+    "keepsakes": "Livros de memórias",
+    "settings": "Configurações",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "back": "Voltar",
+    "close": "Fechar",
+    "story": "Sua história",
+    "favourite": "Favorito",
+    "favourites": "Favoritos",
+    "record": "Gravar uma história",
+    "language": "Idioma",
+    "memory_count": {
+      "one": "%1$d memória",
+      "other": "%1$d memórias"
+    }
+  },
+  "nl": {
+    "memories": "Herinneringen",
+    "albums": "Albums",
+    "timeline": "Tijdlijn",
+    "keepsakes": "Herinneringsboeken",
+    "settings": "Instellingen",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "back": "Terug",
+    "close": "Sluiten",
+    "story": "Je verhaal",
+    "favourite": "Favoriet",
+    "favourites": "Favorieten",
+    "record": "Een verhaal opnemen",
+    "language": "Taal",
+    "memory_count": {
+      "one": "%1$d herinnering",
+      "other": "%1$d herinneringen"
+    }
+  },
+  "pl": {
+    "memories": "Wspomnienia",
+    "albums": "Albumy",
+    "timeline": "Oś czasu",
+    "keepsakes": "Księgi wspomnień",
+    "settings": "Ustawienia",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "back": "Wstecz",
+    "close": "Zamknij",
+    "story": "Twoja opowieść",
+    "favourite": "Ulubione",
+    "favourites": "Ulubione",
+    "record": "Nagraj opowieść",
+    "language": "Język",
+    "memory_count": {
+      "one": "%1$d wspomnienie",
+      "few": "%1$d wspomnienia",
+      "many": "%1$d wspomnień",
+      "other": "%1$d wspomnienia"
+    }
+  },
+  "sv": {
+    "memories": "Minnen",
+    "albums": "Album",
+    "timeline": "Tidslinje",
+    "keepsakes": "Minnesböcker",
+    "settings": "Inställningar",
+    "save": "Spara",
+    "cancel": "Avbryt",
+    "delete": "Ta bort",
+    "back": "Tillbaka",
+    "close": "Stäng",
+    "story": "Din berättelse",
+    "favourite": "Favorit",
+    "favourites": "Favoriter",
+    "record": "Spela in en berättelse",
+    "language": "Språk",
+    "memory_count": {
+      "one": "%1$d minne",
+      "other": "%1$d minnen"
+    }
+  },
+  "ar": {
+    "memories": "الذكريات",
+    "albums": "الألبومات",
+    "timeline": "التسلسل الزمني",
+    "keepsakes": "كتب الذكريات",
+    "settings": "الإعدادات",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "back": "رجوع",
+    "close": "إغلاق",
+    "story": "قصتك",
+    "favourite": "مفضلة",
+    "favourites": "المفضلة",
+    "record": "تسجيل قصة",
+    "language": "اللغة",
+    "memory_count": {
+      "zero": "%1$d ذكرى",
+      "one": "%1$d ذكرى",
+      "two": "%1$d ذكريان",
+      "few": "%1$d ذكريات",
+      "many": "%1$d ذكرى",
+      "other": "%1$d ذكرى"
+    }
+  },
+  "hi": {
+    "memories": "यादें",
+    "albums": "एल्बम",
+    "timeline": "समयरेखा",
+    "keepsakes": "यादों की किताबें",
+    "settings": "सेटिंग्स",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "मिटाएँ",
+    "back": "वापस",
+    "close": "बंद करें",
+    "story": "आपकी कहानी",
+    "favourite": "पसंदीदा",
+    "favourites": "पसंदीदा",
+    "record": "कहानी रिकॉर्ड करें",
+    "language": "भाषा",
+    "memory_count": {
+      "one": "%1$d याद",
+      "other": "%1$d यादें"
+    }
+  },
+  "ja": {
+    "memories": "思い出",
+    "albums": "アルバム",
+    "timeline": "タイムライン",
+    "keepsakes": "思い出ブック",
+    "settings": "設定",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "back": "戻る",
+    "close": "閉じる",
+    "story": "あなたの物語",
+    "favourite": "お気に入り",
+    "favourites": "お気に入り",
+    "record": "物語を録音",
+    "language": "言語",
+    "memory_count": {
+      "other": "%1$d 件の思い出"
+    }
+  },
+  "ko": {
+    "memories": "추억",
+    "albums": "앨범",
+    "timeline": "타임라인",
+    "keepsakes": "추억 책",
+    "settings": "설정",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "back": "뒤로",
+    "close": "닫기",
+    "story": "나의 이야기",
+    "favourite": "즐겨찾기",
+    "favourites": "즐겨찾기",
+    "record": "이야기 녹음",
+    "language": "언어",
+    "memory_count": {
+      "other": "추억 %1$d개"
+    }
+  },
+  "zh": {
+    "memories": "回忆",
+    "albums": "相册",
+    "timeline": "时间线",
+    "keepsakes": "回忆册",
+    "settings": "设置",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "back": "返回",
+    "close": "关闭",
+    "story": "你的故事",
+    "favourite": "收藏",
+    "favourites": "收藏",
+    "record": "录制故事",
+    "language": "语言",
+    "memory_count": {
+      "other": "回忆 %1$d 条"
+    }
+  },
+  "tr": {
+    "memories": "Anılar",
+    "albums": "Albümler",
+    "timeline": "Zaman çizelgesi",
+    "keepsakes": "Anı kitapları",
+    "settings": "Ayarlar",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "back": "Geri",
+    "close": "Kapat",
+    "story": "Hikâyeniz",
+    "favourite": "Favori",
+    "favourites": "Favoriler",
+    "record": "Bir hikâye kaydedin",
+    "language": "Dil",
+    "memory_count": {
+      "one": "%1$d anı",
+      "other": "%1$d anı"
+    }
+  },
+  "id": {
+    "memories": "Kenangan",
+    "albums": "Album",
+    "timeline": "Linimasa",
+    "keepsakes": "Buku kenangan",
+    "settings": "Pengaturan",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "back": "Kembali",
+    "close": "Tutup",
+    "story": "Kisah Anda",
+    "favourite": "Favorit",
+    "favourites": "Favorit",
+    "record": "Rekam kisah",
+    "language": "Bahasa",
+    "memory_count": {
+      "other": "%1$d kenangan"
+    }
+  }
+}

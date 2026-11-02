@@ -6,4 +6,6 @@ Push-to-talk uses Android SpeechRecognizer only when the device reports a recogn
 
 Spoken stories use Android TextToSpeech with runtime language availability checks. Spoken command feedback is off by default and can be disabled. Lifecycle stop cancels listening and speech. No continuous listening exists.
 
+The debug interface has 22 locale drafts. Recognition and command parsing explicitly request English regardless of interface language; localized notices disclose this. Story speech requests the selected locale and checks device availability. Locale selection does not certify multilingual recognition or TTS. Recorded-file transcription remains unavailable.
+
 A recognition service being installed does not prove recognition accuracy, language/accents support or offline availability. TTS service detection does not establish every locale works. The physical diagnostic report records the actual KFTRWI/Fire OS 7 environment and service availability when executed. See deliverables/reports/VOICE_TEST_REPORT.md; no untested language/device is certified.

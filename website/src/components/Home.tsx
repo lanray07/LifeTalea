@@ -1,6 +1,20 @@
 import Link from 'next/link';
-import { listingUrl, siteUrl, publisher } from '../content';
-export default function Home() {
-  const data = { '@context':'https://schema.org', '@type':'WebSite', name:'LifeTalea', url:siteUrl, description:'A private family memory journal in development.', ...(publisher ? {publisher:{'@type':'Organization',name:publisher}} : {}) };
-  return <main id="main"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data).replace(/</g,'\\u003c')}}/><section className="hero"><div><h1>The little moments.<br/>The stories that stay.</h1><p>A private place for photographs, voices and family stories.</p><Link className="button" href="/en-GB/features/">Explore LifeTalea</Link></div><img src="/hero-book.webp" alt="An open memory book with a golden bookmark and an olive branch" width="640" height="427" fetchPriority="high"/></section><section className="chapters" aria-label="Ways to preserve"><article><span className="chapter-number" aria-hidden="true">01</span><div><h2>Keep it personal</h2><p>Bring together photographs, recordings and stories in one private family journal.</p><Link href="/en-GB/family-memory-journal/">Start with one memory <span aria-hidden="true">→</span></Link></div></article><article><span className="chapter-number" aria-hidden="true">02</span><div><h2>Make room for their voice</h2><p>Capture voices, memories and the details that bring a story to life.</p><Link href="/en-GB/voice-story-recording/">Explore voice stories <span aria-hidden="true">→</span></Link></div></article><article><span className="chapter-number" aria-hidden="true">03</span><div><h2>A keepsake to hold onto</h2><p>Build a lasting collection of your family’s stories to enjoy now and in years to come.</p><Link href="/en-GB/keepsake-books/">Discover keepsakes <span aria-hidden="true">→</span></Link></div></article></section><section className="quiet"><h2>Some things are just for you.</h2><p>No public feed. No required account. Memories stay on your device unless you choose to export them.</p><Link href="/en-GB/privacy/">Read our privacy approach</Link>{listingUrl ? <a className="button" href={listingUrl}>View on Amazon Appstore</a> : <p className="release-note">Not yet published. Device validation, translations and Amazon purchasing verification are in progress.</p>}</section></main>;
+import {listingUrl,siteUrl,publisher} from '../content';
+import type {Dictionary,Locale} from '../i18n';
+
+export default function Home({locale,dictionary}:{locale:Locale;dictionary:Dictionary}) {
+  const t=dictionary.home;
+  const data={'@context':'https://schema.org','@type':'WebSite',name:'LifeTalea',url:`${siteUrl}/${locale}/`,inLanguage:locale,description:t.metaDescription,...(publisher?{publisher:{'@type':'Organization',name:publisher}}:{})};
+  const chapters=[
+    {title:t.personalTitle,body:t.personalBody,label:t.personalLink,slug:'family-memory-journal'},
+    {title:t.voiceTitle,body:t.voiceBody,label:t.voiceLink,slug:'voice-story-recording'},
+    {title:t.keepsakeTitle,body:t.keepsakeBody,label:t.keepsakeLink,slug:'keepsake-books'}
+  ];
+  const number=new Intl.NumberFormat(locale,{minimumIntegerDigits:2});
+  return <main id="main">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data).replace(/</g,'\\u003c')}}/>
+    <section className="hero"><div><h1>{t.titleFirst}<br/>{t.titleSecond}</h1><p>{t.subtitle}</p><Link className="button" href={`/${locale}/features/`}>{t.explore}</Link></div><img src="/hero-book.webp" alt={t.imageAlt} width="640" height="427" fetchPriority="high"/></section>
+    <section className="chapters" aria-label={t.waysLabel}>{chapters.map((chapter,index)=><article key={chapter.slug}><span className="chapter-number" aria-hidden="true">{number.format(index+1)}</span><div><h2>{chapter.title}</h2><p>{chapter.body}</p><Link href={`/${locale}/${chapter.slug}/`}>{chapter.label} <span className="direction-arrow" aria-hidden="true">→</span></Link></div></article>)}</section>
+    <section className="quiet"><h2>{t.privacyTitle}</h2><p>{t.privacyBody}</p><Link href={`/${locale}/privacy/`}>{t.privacyLink}</Link>{listingUrl?<a className="button" href={listingUrl}>{t.storeLink}</a>:<p className="release-note">{t.releaseNote}</p>}</section>
+  </main>;
 }

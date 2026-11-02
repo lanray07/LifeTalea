@@ -1,0 +1,1598 @@
+{
+  "status": "DRAFT_PENDING_NATIVE_REVIEW",
+  "count": 176,
+  "dimensions": [
+    1920,
+    1200
+  ],
+  "format": "JPEG",
+  "device": "KFTRWI / Fire OS 7 / landscape",
+  "debugApkSha256": "7e2bbaa96cf6fbbe932cd7a43c300702a94587cc2b952cf79e44a653b731b8e4",
+  "visualReview": "Sampled Arabic, Hindi, Japanese, Korean, Traditional Chinese, French and German; all files structurally checked. Full native review and other device sizes remain incomplete.",
+  "assets": [
+    {
+      "locale": "en-GB",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/home.jpg",
+      "sha256": "5db8fd6b9d1bf98b3d5c14fae3ac0c1c1e03f80ffb2c70ada2bfd32484518c75",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-home.png",
+      "captureSha256": "745529d9c523440b5fb51cc2d6eba850d730088813b4fa86629eb25236e5fe6d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-GB",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/albums.jpg",
+      "sha256": "d273354f97899d43ed8fda6d32b111e179bd59a29e95cdc9716a1dea3a084489",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-albums.png",
+      "captureSha256": "b712e864ddd5458ca7e156b8b6a633f8196de62a8d983c6df34a7374e047b47d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-GB",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/timeline.jpg",
+      "sha256": "1c56eb3d947269c5336067dcbe5c1cfb1fcda3e1e12fe6cef4e5bdcea41a22ce",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-timeline.png",
+      "captureSha256": "bc497ec37690d059bb7e5e10d8ca580be781386d12e5d78cf93701cb35b423a0",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-GB",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/keepsakes.jpg",
+      "sha256": "6f597068b22ca37a8a70cd6cef82a2b5da8598c9cf9a9e6ac9f2277aabb6bdb6",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-keepsakes.png",
+      "captureSha256": "3beeb686be403f5692f759af552f004dfa56fbe9fda90b326835c9275ee1f8b8",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-GB",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/settings.jpg",
+      "sha256": "d5f373b961b01100e067e4f2a8ae7b4cee6081b3c6fceef2ed3c6a1246ac8fe0",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-settings.png",
+      "captureSha256": "23294b1be8c4a610ce9dea57bbdce4a58a9b6cc741edc8f621758c642d8fc525",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-GB",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/editor.jpg",
+      "sha256": "34bb2dc7a04b8fc4c4812bac1f8ef1b321727333cb9345403918cea8725439c7",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-editor.png",
+      "captureSha256": "bddf177a68d6f9afce84bb6fb0e4b72e2112a4de0853d91f75d6bfa6d65fba23",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-GB",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/voice.jpg",
+      "sha256": "7eca1bb0cd757fb4025601e5e0e8835c68fc91ea1ffab18c878937deb3b0cc87",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-voice.png",
+      "captureSha256": "55a4be5e9252f848d2b7383c42d7443742e0ae97e374a5c1afb8ef3df4844df8",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-GB",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/transcript.jpg",
+      "sha256": "f138d4f226a5b9a7c52ba61fbd1a20a4640542e92a33a6cdd7eaab616f1c227c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-transcript.png",
+      "captureSha256": "4d897e723696a6beac983d8c226c1695796d816642ed71b100caecce55d23c9e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-US",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/home.jpg",
+      "sha256": "5db8fd6b9d1bf98b3d5c14fae3ac0c1c1e03f80ffb2c70ada2bfd32484518c75",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-US-home.png",
+      "captureSha256": "745529d9c523440b5fb51cc2d6eba850d730088813b4fa86629eb25236e5fe6d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-US",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/albums.jpg",
+      "sha256": "d273354f97899d43ed8fda6d32b111e179bd59a29e95cdc9716a1dea3a084489",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-US-albums.png",
+      "captureSha256": "b712e864ddd5458ca7e156b8b6a633f8196de62a8d983c6df34a7374e047b47d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-US",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/timeline.jpg",
+      "sha256": "9cba10c786b2c8e4bac789f081355592ce605a73f9eb3ea4b0728ed56b3db808",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-US-timeline.png",
+      "captureSha256": "ff15b82808b6b6b081c6e2f15235500da9f2d44fc9795e8bd081a0470b82c84b",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-US",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/keepsakes.jpg",
+      "sha256": "b4ccc341df3da8af7e7c23f5155b41f5ca5cba76c08cf4710f17d87a422ff65e",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-US-keepsakes.png",
+      "captureSha256": "9dce2d6925fc5464bf94c679600204afc6c3898c0a1cd3fab2ea679f7222020b",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-US",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/settings.jpg",
+      "sha256": "6a011fe08c64aee6de05c5ea815e7b54bc605db4ae51c57a9091dca3551ed60e",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-US-settings.png",
+      "captureSha256": "c5fd3a1a5968d304b94e09f5761701adac4b44a6616a0d9e1f6b4dd0e0035c3d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-US",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/editor.jpg",
+      "sha256": "34bb2dc7a04b8fc4c4812bac1f8ef1b321727333cb9345403918cea8725439c7",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-US-editor.png",
+      "captureSha256": "bddf177a68d6f9afce84bb6fb0e4b72e2112a4de0853d91f75d6bfa6d65fba23",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-US",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/voice.jpg",
+      "sha256": "7eca1bb0cd757fb4025601e5e0e8835c68fc91ea1ffab18c878937deb3b0cc87",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-US-voice.png",
+      "captureSha256": "55a4be5e9252f848d2b7383c42d7443742e0ae97e374a5c1afb8ef3df4844df8",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-US",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/transcript.jpg",
+      "sha256": "f138d4f226a5b9a7c52ba61fbd1a20a4640542e92a33a6cdd7eaab616f1c227c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-US-transcript.png",
+      "captureSha256": "4d897e723696a6beac983d8c226c1695796d816642ed71b100caecce55d23c9e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-AU",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/home.jpg",
+      "sha256": "5db8fd6b9d1bf98b3d5c14fae3ac0c1c1e03f80ffb2c70ada2bfd32484518c75",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-home.png",
+      "captureSha256": "745529d9c523440b5fb51cc2d6eba850d730088813b4fa86629eb25236e5fe6d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-AU",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/albums.jpg",
+      "sha256": "d273354f97899d43ed8fda6d32b111e179bd59a29e95cdc9716a1dea3a084489",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-albums.png",
+      "captureSha256": "b712e864ddd5458ca7e156b8b6a633f8196de62a8d983c6df34a7374e047b47d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-AU",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/timeline.jpg",
+      "sha256": "48c51942d87e845ce44568330318b8977acf8a6248332d5454fbd7c9674d6446",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-timeline.png",
+      "captureSha256": "793271c528f8a5dbf0b0dda61ec0ac288f50cd12036005abeb5deb02a1a9009e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-AU",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/keepsakes.jpg",
+      "sha256": "b4ccc341df3da8af7e7c23f5155b41f5ca5cba76c08cf4710f17d87a422ff65e",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-keepsakes.png",
+      "captureSha256": "9dce2d6925fc5464bf94c679600204afc6c3898c0a1cd3fab2ea679f7222020b",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-AU",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/settings.jpg",
+      "sha256": "d5f373b961b01100e067e4f2a8ae7b4cee6081b3c6fceef2ed3c6a1246ac8fe0",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-settings.png",
+      "captureSha256": "23294b1be8c4a610ce9dea57bbdce4a58a9b6cc741edc8f621758c642d8fc525",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-AU",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/editor.jpg",
+      "sha256": "34bb2dc7a04b8fc4c4812bac1f8ef1b321727333cb9345403918cea8725439c7",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-editor.png",
+      "captureSha256": "bddf177a68d6f9afce84bb6fb0e4b72e2112a4de0853d91f75d6bfa6d65fba23",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-AU",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/voice.jpg",
+      "sha256": "7eca1bb0cd757fb4025601e5e0e8835c68fc91ea1ffab18c878937deb3b0cc87",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-voice.png",
+      "captureSha256": "55a4be5e9252f848d2b7383c42d7443742e0ae97e374a5c1afb8ef3df4844df8",
+      "nativeApproved": false
+    },
+    {
+      "locale": "en-AU",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/transcript.jpg",
+      "sha256": "f138d4f226a5b9a7c52ba61fbd1a20a4640542e92a33a6cdd7eaab616f1c227c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-transcript.png",
+      "captureSha256": "4d897e723696a6beac983d8c226c1695796d816642ed71b100caecce55d23c9e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-ES",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/home.jpg",
+      "sha256": "3a5f60a1f8332c0e38a272d93f267aa57c3e23e51ccfb0cde902bcdab8f25878",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-home.png",
+      "captureSha256": "c935a384bc50416d2b03ce5092c804df0dbf1e1f95c8dc7575efab1ef5e94415",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-ES",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/albums.jpg",
+      "sha256": "8cd807d27a459801056596b5021fbcb102a656428965572beca45de6d7a21531",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-albums.png",
+      "captureSha256": "1c9990b37a2db0fe606e881f99294a2b151beef501420dba5665d583954a8d22",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-ES",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/timeline.jpg",
+      "sha256": "149702b5b9e826c9594970e17b386c13b3f21df683b5b7d276234ce776d4fa17",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-timeline.png",
+      "captureSha256": "63a240d1dca13e69d86c293175e5df32690d42ea2e6130f1004a5a667399ea57",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-ES",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/keepsakes.jpg",
+      "sha256": "bab6ef5602d8a0aa534307350ed64e8b40cee20da0974bebc73d7d9427d2b47c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-keepsakes.png",
+      "captureSha256": "b9e1c5d9b4d083b433f57559d0011cc170c88d0431c874541c19908dcb924889",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-ES",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/settings.jpg",
+      "sha256": "13d71ae4438035270e6d7362c2e85e3261c2ffded2b55c6cf7206e3af0cf5375",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-settings.png",
+      "captureSha256": "32742e86750926acccea2772fbabef139452e007dd9d92b0d0171afbe556ea18",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-ES",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/editor.jpg",
+      "sha256": "7e0916b9d94ce3f4bf701e3b8269271f1171868070ecc5c6eeea425e05ade5d1",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-editor.png",
+      "captureSha256": "b23b37ef74dd9354718350ee09f3247d47f9eb81ab16d3232618f145b46dd4ac",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-ES",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/voice.jpg",
+      "sha256": "0cd07168f9b0793552574d955b2816c501762c27993774cd1f7f0364a9431083",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-voice.png",
+      "captureSha256": "00ff187ecff297872e59166b2130d326a20cb16f924d0f71abe267f9f60632f9",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-ES",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/transcript.jpg",
+      "sha256": "6d043654775e44d42b3e7b5bb1c8dcba061c613753f515f3adab91b304d1375d",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-transcript.png",
+      "captureSha256": "1f232897b3bcc37a75ba9a573a6d63cd09f95dd39ee294a5686e932d2fabc2c9",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-419",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/home.jpg",
+      "sha256": "3a5f60a1f8332c0e38a272d93f267aa57c3e23e51ccfb0cde902bcdab8f25878",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-419-home.png",
+      "captureSha256": "c935a384bc50416d2b03ce5092c804df0dbf1e1f95c8dc7575efab1ef5e94415",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-419",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/albums.jpg",
+      "sha256": "dc5a5531456f4174a921874e5aba47b2177e9cb363526ea5ababf145aed3b89b",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-419-albums.png",
+      "captureSha256": "9251cbe27f2fd60ac02e1f90c5d5503a51a1054ebdd09060b2e7318ff9c964d9",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-419",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/timeline.jpg",
+      "sha256": "e5814c1eaac1566ae0b2a81e25dcdfbc08ab0cf055e0c897dfff4fc3bd073849",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-419-timeline.png",
+      "captureSha256": "1a347502efeb528c75ce5a93befd6823c292d5e79f433287526de16d23b249c5",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-419",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/keepsakes.jpg",
+      "sha256": "bab6ef5602d8a0aa534307350ed64e8b40cee20da0974bebc73d7d9427d2b47c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-419-keepsakes.png",
+      "captureSha256": "b9e1c5d9b4d083b433f57559d0011cc170c88d0431c874541c19908dcb924889",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-419",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/settings.jpg",
+      "sha256": "4ad9e5d150e7914bac06bc4d8a9647ed9e180ad9a40dd801a7aed17cd1e48908",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-419-settings.png",
+      "captureSha256": "c907acc4decfa799ce493ae3f99e6d0342c59024c7359236989bf804e38dcd86",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-419",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/editor.jpg",
+      "sha256": "7e0916b9d94ce3f4bf701e3b8269271f1171868070ecc5c6eeea425e05ade5d1",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-419-editor.png",
+      "captureSha256": "b23b37ef74dd9354718350ee09f3247d47f9eb81ab16d3232618f145b46dd4ac",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-419",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/voice.jpg",
+      "sha256": "0cd07168f9b0793552574d955b2816c501762c27993774cd1f7f0364a9431083",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-419-voice.png",
+      "captureSha256": "00ff187ecff297872e59166b2130d326a20cb16f924d0f71abe267f9f60632f9",
+      "nativeApproved": false
+    },
+    {
+      "locale": "es-419",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/transcript.jpg",
+      "sha256": "6d043654775e44d42b3e7b5bb1c8dcba061c613753f515f3adab91b304d1375d",
+      "actualCapture": "deliverables/reports/device-evidence/localization/es-419-transcript.png",
+      "captureSha256": "1f232897b3bcc37a75ba9a573a6d63cd09f95dd39ee294a5686e932d2fabc2c9",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-FR",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/home.jpg",
+      "sha256": "206f8c5a13173c58c061ad08fa085269643026d405270a84d890aa4b07eab1b1",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-home.png",
+      "captureSha256": "59787209ec530c171ed1d564bff8f2b9c7b641bba043a722e0119d3fffcb79c0",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-FR",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/albums.jpg",
+      "sha256": "0b4d0706d6acfadbb4a0122e12d25a1d6c5b82e451a38e4531c8c4a273bbba3c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-albums.png",
+      "captureSha256": "b64abe02bf6aaf5f58a58c4855888715eb41876532902e8fe28a2df6bbd49158",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-FR",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/timeline.jpg",
+      "sha256": "f524561c997485c9ea1d1cb4eadfd8221bc228e080e203db2008052af42e1b11",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-timeline.png",
+      "captureSha256": "f80794ba83c66d0db31847db9f1d1ab28da13494ce828ee830bb6f166b2097c7",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-FR",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/keepsakes.jpg",
+      "sha256": "6cfbfdd274857cb13632eb776d30ae073e366006f02f4b6f7385108a2d76462f",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-keepsakes.png",
+      "captureSha256": "6ee55e2dea348644e141e74fdef598b7aa820db48d68158ec37bedec729a2808",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-FR",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/settings.jpg",
+      "sha256": "da03f59b71c4e1ea7fd801fb80866d0828c464fb10510dbad87d078db612aea1",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-settings.png",
+      "captureSha256": "c1011c13a17614681a3c8ce9d05040b6f88f8e0f9e5ea7d6e1234b3c7d5402e3",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-FR",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/editor.jpg",
+      "sha256": "7c2c910ecb5af60f12f9e070803bdd289bd2334c5f9aec27cab3b55dbe9ebb81",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-editor.png",
+      "captureSha256": "89176f84523c9ccb5a4115beeb6ddb73ca71c7ee080294c5727c67bcec59cd60",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-FR",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/voice.jpg",
+      "sha256": "40822164ff931e7339d9989704abc854422bbea76e2b5d6cb0abb4aa3c767f36",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-voice.png",
+      "captureSha256": "a9fcf93acf033d6c4cba36174829afeee50a4ebc2f90f8e08c4e182ab8cd7e4d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-FR",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/transcript.jpg",
+      "sha256": "bb3ad31322b6db71228c18aae8cfb7f52a927447a52a6673813d6bda91ff39e7",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-transcript.png",
+      "captureSha256": "3979c35bdd54a976c0dea5100b68e3a5a967e82895b04a9dd4f18e207d023395",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-CA",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/home.jpg",
+      "sha256": "206f8c5a13173c58c061ad08fa085269643026d405270a84d890aa4b07eab1b1",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-home.png",
+      "captureSha256": "59787209ec530c171ed1d564bff8f2b9c7b641bba043a722e0119d3fffcb79c0",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-CA",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/albums.jpg",
+      "sha256": "0b4d0706d6acfadbb4a0122e12d25a1d6c5b82e451a38e4531c8c4a273bbba3c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-albums.png",
+      "captureSha256": "b64abe02bf6aaf5f58a58c4855888715eb41876532902e8fe28a2df6bbd49158",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-CA",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/timeline.jpg",
+      "sha256": "48f9585952e7f1cea995cdfc424d6e8e89340ddb1bf2187d3a8cde4e587316bf",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-timeline.png",
+      "captureSha256": "8207241a80ca6ecb0e114ccaf16b1a3b3dd37196b63a78e4f2c9aed38042eabb",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-CA",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/keepsakes.jpg",
+      "sha256": "3bec59432942426fcb9c6ab9f70aad83c9bbba765e26e08b3c8b7f16ce1c9f1d",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-keepsakes.png",
+      "captureSha256": "8a33229db51388826ef1bd00b5d5f9c2e628c10c5da130d68ac94b5d5fe139f5",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-CA",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/settings.jpg",
+      "sha256": "dc3acabec77f3f6a61f9bef32df9aebc92190048e9e2e5bcb808ae7ecc9ef5c5",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-settings.png",
+      "captureSha256": "453899089d8ed827c571b2d19638520d22db7ecc9da7ce63faf5e607e9c54632",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-CA",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/editor.jpg",
+      "sha256": "7c2c910ecb5af60f12f9e070803bdd289bd2334c5f9aec27cab3b55dbe9ebb81",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-editor.png",
+      "captureSha256": "89176f84523c9ccb5a4115beeb6ddb73ca71c7ee080294c5727c67bcec59cd60",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-CA",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/voice.jpg",
+      "sha256": "40822164ff931e7339d9989704abc854422bbea76e2b5d6cb0abb4aa3c767f36",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-voice.png",
+      "captureSha256": "a9fcf93acf033d6c4cba36174829afeee50a4ebc2f90f8e08c4e182ab8cd7e4d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "fr-CA",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/transcript.jpg",
+      "sha256": "bb3ad31322b6db71228c18aae8cfb7f52a927447a52a6673813d6bda91ff39e7",
+      "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-transcript.png",
+      "captureSha256": "3979c35bdd54a976c0dea5100b68e3a5a967e82895b04a9dd4f18e207d023395",
+      "nativeApproved": false
+    },
+    {
+      "locale": "de-DE",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/home.jpg",
+      "sha256": "b260a12217acb0983a618a1f7810da1e3aea431b59a897c002239b6c408ea0f8",
+      "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-home.png",
+      "captureSha256": "83ba30c503031be6db28b9d3c8e1aa886d793a125bb9bcf1f28b8817c655fa89",
+      "nativeApproved": false
+    },
+    {
+      "locale": "de-DE",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/albums.jpg",
+      "sha256": "f0596a2cb57deae159695623a305d7dc4005c8805842d03ce1ff75029f44d576",
+      "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-albums.png",
+      "captureSha256": "4fec80570afdfac5f7551e9b08e51c261a0161fc9e9a86205b42a043ec670ead",
+      "nativeApproved": false
+    },
+    {
+      "locale": "de-DE",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/timeline.jpg",
+      "sha256": "a4b89620d705bbe86e7437f378331a21f18169ef20dd0d2bd8675618671d9ebe",
+      "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-timeline.png",
+      "captureSha256": "606a36e47210b73f4b10d824ab7d6a8c1d5ff7b71c796a0aad083e00816b409e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "de-DE",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/keepsakes.jpg",
+      "sha256": "2e092e85e590a20593b18d49dd31643e1905c085b80a0657343eba82d3dcab30",
+      "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-keepsakes.png",
+      "captureSha256": "3322ed38685567fce332496acf9dbdadff8388a4dd28d3190aed4e0ed1a7acba",
+      "nativeApproved": false
+    },
+    {
+      "locale": "de-DE",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/settings.jpg",
+      "sha256": "472835b44064403dbbf037cb2101e813e298c81ff691634e5bdc63a1f882a4cb",
+      "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-settings.png",
+      "captureSha256": "2c9f65a9c919df34fe27c6afc91255d1f8279da2af7b3332211dd5da5d2fef36",
+      "nativeApproved": false
+    },
+    {
+      "locale": "de-DE",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/editor.jpg",
+      "sha256": "0f022c0567d9cae2565e2887366a8e8a2310d893a7e4dfc8bddab783e91d8f2c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-editor.png",
+      "captureSha256": "9314d7d041c7153a3bd96410f58f07085c93d46c65c3880dd9e6af45faee358c",
+      "nativeApproved": false
+    },
+    {
+      "locale": "de-DE",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/voice.jpg",
+      "sha256": "0ab0ed3c7493a0258cfa631c9ce5de638a3c737ac0538d71f23e335bf07fa2be",
+      "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-voice.png",
+      "captureSha256": "76dfe7bac780b91edaf39b040c55830c7672264beaf421b689cb33801242b52f",
+      "nativeApproved": false
+    },
+    {
+      "locale": "de-DE",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/transcript.jpg",
+      "sha256": "03dc74cb39ac41ade7b83a5204d8eb3b0b1fec70eefb49c20eac00366150dcdf",
+      "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-transcript.png",
+      "captureSha256": "2012af013981cf7183145650f1d8710891e4f531c5bfc157dabb32084e0296e4",
+      "nativeApproved": false
+    },
+    {
+      "locale": "it-IT",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/home.jpg",
+      "sha256": "79fc11bd6a20f794dd628eafcd126eac37bf8b1ac6f3696fdb1b9e191002254d",
+      "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-home.png",
+      "captureSha256": "0eb3af8dd71bd9eddbb815ed9213fa9887a0cb54430e05acabf4b7e967ea008e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "it-IT",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/albums.jpg",
+      "sha256": "e1a6a5c207e804bef255250a6f6dd6fe31b5b6e1c222b58d192bc9bc32fc91e6",
+      "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-albums.png",
+      "captureSha256": "2a8c6734be786a38ce499df61eb45523ff38bd18ffed615a55d866f48c513359",
+      "nativeApproved": false
+    },
+    {
+      "locale": "it-IT",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/timeline.jpg",
+      "sha256": "9b83f2222f6a7224b152ea05757f658e90cc6084b31c601da4fdf275e597072d",
+      "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-timeline.png",
+      "captureSha256": "ba3ea58e8db6dc68970b926bedf232ce05b601f38385e71577d20157a719c083",
+      "nativeApproved": false
+    },
+    {
+      "locale": "it-IT",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/keepsakes.jpg",
+      "sha256": "1c25823c611d11d0a6f01d53e46302e2ce988571ac35a7f0a00509ce8efd4ede",
+      "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-keepsakes.png",
+      "captureSha256": "41f7b3f1edbf6e9c35b7dfa54abd89107a29f926c5063a5d0918c92e9c3303be",
+      "nativeApproved": false
+    },
+    {
+      "locale": "it-IT",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/settings.jpg",
+      "sha256": "393215a981852e0b6175828b30bf4f0f5cb39ee265602429587c97dd7170c466",
+      "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-settings.png",
+      "captureSha256": "e5b73c0f6b0b118213454daff17ece3b5dc0768a9bdb464b7b52758d31bcc3be",
+      "nativeApproved": false
+    },
+    {
+      "locale": "it-IT",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/editor.jpg",
+      "sha256": "95be8cb6a8e43d892218b5a4b899bc7e1c9c5f2056d2a6f4479fbb02207baed8",
+      "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-editor.png",
+      "captureSha256": "17404c45775025c3175c145a2694bca706b405620006a1e0a79b69ca9ec65e15",
+      "nativeApproved": false
+    },
+    {
+      "locale": "it-IT",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/voice.jpg",
+      "sha256": "a3e664072dab80c90d0e557d93e5b2f62014cae44b48d87626b9f2d5ae42f892",
+      "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-voice.png",
+      "captureSha256": "06c5995878b0a772ad915654d7622679fa731e40af81be1bd49e9c24677ff4d8",
+      "nativeApproved": false
+    },
+    {
+      "locale": "it-IT",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/transcript.jpg",
+      "sha256": "5b6282dab4a729c33541ef8b21a5b1adb20d917b9fed44e00ecf21a42d9b3aac",
+      "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-transcript.png",
+      "captureSha256": "a5f8918d8916ce4fba258167dc177985dcac0b6f94f28201ffaccf24c77cabee",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-BR",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/home.jpg",
+      "sha256": "b34405941da8744d4d25ab8f07ff6c6a0f2cc77f8ad3a3b636bc4d06e803c131",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-home.png",
+      "captureSha256": "b40d2a81423a867be43693ede7e4ea8c71281ce21f236b4cf24945dd13c0b605",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-BR",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/albums.jpg",
+      "sha256": "c799878b7643a2b9f6255283bc087df95fcbeea742230608a95272b31943a915",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-albums.png",
+      "captureSha256": "657109ba55d6cbb6962c51ee4d3561331dbcd3f31eb29e88e48a964b3ad24307",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-BR",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/timeline.jpg",
+      "sha256": "2deea04b0a08f9947cc3d617697902eb91e8ed3f1731ce23866327a9fb12b217",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-timeline.png",
+      "captureSha256": "819aee6bd83cbd20a6105f8b33c5cfaa2a70cda5c2e79c9969991c4548a47830",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-BR",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/keepsakes.jpg",
+      "sha256": "c7a3c7800dd89ae63c55b7043e1c9201fac405560bbf37f2d024f6d65fba1a95",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-keepsakes.png",
+      "captureSha256": "73f3e5f2f2558d5c356d3e47afbc44e4906be35d4fdfefe50de0711557846f10",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-BR",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/settings.jpg",
+      "sha256": "8ec3070680fea6495177ea0af4ba8cefa155da8efa95a707fa6001576b36a5b6",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-settings.png",
+      "captureSha256": "3c0bd56f1b2d9a94fbd72a393ca08c354842267f952cb69ce2a84cf52a02c1ab",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-BR",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/editor.jpg",
+      "sha256": "d5db6623259eb7eb8e809719deaacc36c50a58832658332c53773c7453538916",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-editor.png",
+      "captureSha256": "43687c94abf516b4babb35c5a3bf01d50d6970005a81fd13f50d22c696a4fbc4",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-BR",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/voice.jpg",
+      "sha256": "e31b4ba370044db57983476a365b474a0b3516b3f4bc2cb48e3422431155efb5",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-voice.png",
+      "captureSha256": "745b0e7130176c791065c733513579b19017ba07cf13ddff7171763985d7ae92",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-BR",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/transcript.jpg",
+      "sha256": "0d2cc280e62c70b902bd336e00a8b43cf0437d99e11acfe71bb26cfb1eb9b3b7",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-transcript.png",
+      "captureSha256": "f9bc2ce8040fba87e9dbb0247c9f2e9ffbaafae69c8b3e28092de4fc314f8603",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-PT",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/home.jpg",
+      "sha256": "8977ac26c47aa36e2e4dfd889d97585c32f6a1379e28a56881e6a5d251ff7f52",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-home.png",
+      "captureSha256": "ae9f2b7a4ad91c3d6fcaaa88fb4b48abbcce7afcac1201574079336dc65aaca1",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-PT",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/albums.jpg",
+      "sha256": "c2dd2264d1f82a887018e00f177a47cf263ec876ff65a2748539227e4d8a87af",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-albums.png",
+      "captureSha256": "cc1118a5336e0f9c5984f710d2ea0f212c03e948698657016dc59f047478a2df",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-PT",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/timeline.jpg",
+      "sha256": "f3bddd93093ba2cd8167607cd1aae315e070c05b69a1515e6c9aed7cb3d37f93",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-timeline.png",
+      "captureSha256": "7fc96da5d2ab5b93a2ede59ea0dc9ed3c3292370594d7cfc0db92925a807e5fe",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-PT",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/keepsakes.jpg",
+      "sha256": "703a36ceec42a019dd83f4726052da44a69a38d05bb014c12c0b2ab34e036aff",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-keepsakes.png",
+      "captureSha256": "982791803f3a0e8302d2c1e71795720559fe919afec39e53df729a961c14950c",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-PT",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/settings.jpg",
+      "sha256": "03e4691e9b1cb7ad1263a4db35c9c44f4314e131f67e2dd914f185cc27da2c96",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-settings.png",
+      "captureSha256": "ba648beaadb9d70ea2fbd927dcc8c382fba88d1e096b3c8d01cd7015f7edf6b6",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-PT",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/editor.jpg",
+      "sha256": "38da138eeeba4d679deeb766b6c65402e85c18401b3fcefcd79d1522b0b29383",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-editor.png",
+      "captureSha256": "bb17e167c0223bb237baf2f73563e9e3bb8c9a03fcf281353848fbb86016b97e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-PT",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/voice.jpg",
+      "sha256": "514362fca54dc45160015b6bc16e0f99bd1394b6b088547e31d6d8b5c0000387",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-voice.png",
+      "captureSha256": "747e2a2479806007465f625b41a67530c693515546485c9745067273de61330d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pt-PT",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/transcript.jpg",
+      "sha256": "f42119a2ae2adafac711c6862d4747b40cba8a54ea07f3c8cc8bf38291ac11ec",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-transcript.png",
+      "captureSha256": "49248f26c5e9da40309717f4035eeb489a75a9e19c2b99540d0e27c4ff9f9133",
+      "nativeApproved": false
+    },
+    {
+      "locale": "nl-NL",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/home.jpg",
+      "sha256": "aac7f695523f58ccf0f60be3992d95e9fa0a5303bdd57df5323395bdcaca0429",
+      "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-home.png",
+      "captureSha256": "b1fb2acc438f783bc4bab1624e303c95b5bbd8dad4cb58c59324e797f7dae258",
+      "nativeApproved": false
+    },
+    {
+      "locale": "nl-NL",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/albums.jpg",
+      "sha256": "392aff54942c1ce3f99cdb0f381aecfead7450a9bc7813887acc0d23e874b797",
+      "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-albums.png",
+      "captureSha256": "26f7536aba0ba6083e39d737cf3149578b244145cbdd34be25e8f397ec38e482",
+      "nativeApproved": false
+    },
+    {
+      "locale": "nl-NL",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/timeline.jpg",
+      "sha256": "5b767b4436a289cdb139855adc7c543fe41cf7f9a3a213691bd0e3ddbe6a638c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-timeline.png",
+      "captureSha256": "0756969685020b794b1b94eb7c6d7e27f032a0d3951994550aba3dbc06d1f2df",
+      "nativeApproved": false
+    },
+    {
+      "locale": "nl-NL",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/keepsakes.jpg",
+      "sha256": "c1fb9644a85de8bf40f57ccd47aabee0c2e0ba094036001b48f3ebc2e7a75a33",
+      "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-keepsakes.png",
+      "captureSha256": "42832b51f7e05a7c0961988937be611fbf910a7ec251df3db02066eb8d7d2176",
+      "nativeApproved": false
+    },
+    {
+      "locale": "nl-NL",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/settings.jpg",
+      "sha256": "0eaa488b84f3ce3996037ecbeee3b9ccb9b3a9c6ff01ec7512ec6c5597f66f55",
+      "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-settings.png",
+      "captureSha256": "4a322c7857ad6e241b00513bcefc5faafb3845f0929679cb3a5949ad704da182",
+      "nativeApproved": false
+    },
+    {
+      "locale": "nl-NL",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/editor.jpg",
+      "sha256": "fb3522d95f20233a40270c3c0c8ec9eda61e8fe215f9e37b7892e2d94905f284",
+      "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-editor.png",
+      "captureSha256": "4485518827054397518b24fbd6aeb8793a4abef4dc05e57adc62b45c0a7eddc1",
+      "nativeApproved": false
+    },
+    {
+      "locale": "nl-NL",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/voice.jpg",
+      "sha256": "75241666a4dcfd2eb01ac1f50c730644c4631b0bf66b65815423083a313e2267",
+      "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-voice.png",
+      "captureSha256": "2557a1cdb31c242856fb790e0ce47377d296e4ff069c2a1f32654cfe4d58c0a7",
+      "nativeApproved": false
+    },
+    {
+      "locale": "nl-NL",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/transcript.jpg",
+      "sha256": "6033965e0ea98d710cb8e39985dc910a9102a51c28ec055f9702c8118e386add",
+      "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-transcript.png",
+      "captureSha256": "4b4b7d8d48a97a8b451126baf295bef0bae716b4ac25c9e49e2fa82974aaf38e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pl-PL",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/home.jpg",
+      "sha256": "deab44a5b539075f748b4749ceeb817bbfb8323dfb1f7ab7d91073ba0332e9bc",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-home.png",
+      "captureSha256": "30019cfa507458ebd4f3648331efde36edb9fd84f04980b392a65f459c627155",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pl-PL",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/albums.jpg",
+      "sha256": "7bab2ff35e41cc70043995db59f2988cfd01e86810512410048d6dfbc6ae234b",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-albums.png",
+      "captureSha256": "87600f2f640c8a642c142d72ca899a4c44158d57a088bcdfdf223995d091aeb5",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pl-PL",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/timeline.jpg",
+      "sha256": "0289c60df4f4a721eac8a4f916d365128b11349d5613fe418d08babad7ce57cf",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-timeline.png",
+      "captureSha256": "ce1239626a60687997cb719a93b0f794c63912a5e481bd0c971b48797b011eb8",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pl-PL",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/keepsakes.jpg",
+      "sha256": "f9d244e81313e588e3b9ead857d5dd3b3d891a2736879c82f9e1095c07f28331",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-keepsakes.png",
+      "captureSha256": "bdfdcfb60ae87303e215698b982db9f054fb02443e6670094a6ba018c0e69b55",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pl-PL",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/settings.jpg",
+      "sha256": "11588daa1cd4120b3753b54f5bee18cb55a3c747ccd0553713eb198e23bfb5fc",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-settings.png",
+      "captureSha256": "34d065053890d7693b516dfc3bccf4f9110b0d8b805b528e839407024ac0ddbd",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pl-PL",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/editor.jpg",
+      "sha256": "d343ce3d6385a09d1dcdb9c3ff6c1b2059de66076c5b75d4a215a47989a3236b",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-editor.png",
+      "captureSha256": "a81d119345f5ccd9a4ce5cbe938bd569574ebe4e4a0f112f461285c65e16d7c8",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pl-PL",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/voice.jpg",
+      "sha256": "f96e00c2144124b2cc63c6db004b8d15cb3f0070c40e7db9f92bf1c5c37beb4f",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-voice.png",
+      "captureSha256": "1077282286eff06fe07735aedad281901400af180b2eb9b9c626a5314330c714",
+      "nativeApproved": false
+    },
+    {
+      "locale": "pl-PL",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/transcript.jpg",
+      "sha256": "91f135fe17082678fab47e4510eecd9c6115a8dee865a31201758f2538603d88",
+      "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-transcript.png",
+      "captureSha256": "9580a4d428186ba507dcd20c9ed8599d40440152738bfc33a2dbb19acf4507c0",
+      "nativeApproved": false
+    },
+    {
+      "locale": "sv-SE",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/home.jpg",
+      "sha256": "bc7e7123ce0e12b0fb9d504aeede084520c0ad473c0a51a901a9b96541f8b660",
+      "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-home.png",
+      "captureSha256": "8d6f277088e99d10fd8d01fd202a5cbe9b099b9f1f4c2fd28faaf5b640133d79",
+      "nativeApproved": false
+    },
+    {
+      "locale": "sv-SE",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/albums.jpg",
+      "sha256": "64d0a8e35e0eda85ed8b22702c890fd8adaa1d4e65c4b66e740caa18d7abe14e",
+      "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-albums.png",
+      "captureSha256": "9a8ce3ff48e8ee8aeff6d1495ea8c08b2cf44979f1237eb15092218e9ab3196e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "sv-SE",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/timeline.jpg",
+      "sha256": "d0ba14cc6aaf3473fdd57fdc5b4a844ff91769e33caaad6a18019f04ef1b41d4",
+      "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-timeline.png",
+      "captureSha256": "00e366edfd8562bbb3a24835213800fbba633322e84b59d7c6d942b24cf9cb51",
+      "nativeApproved": false
+    },
+    {
+      "locale": "sv-SE",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/keepsakes.jpg",
+      "sha256": "2d611ac54ff1e35b1d5f9d104eaba5758fc0718680406c9457bb1a282e449a1e",
+      "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-keepsakes.png",
+      "captureSha256": "511c03cf93abf33983227d346e0641b72efb56f5ee74a80efb76d7679ce56fe0",
+      "nativeApproved": false
+    },
+    {
+      "locale": "sv-SE",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/settings.jpg",
+      "sha256": "999909ef22e200ea4d1d4dfda311f76bffa0ba049df859599c4a119f890b74a9",
+      "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-settings.png",
+      "captureSha256": "db72481cb1779b8065a085a8e44e9c6d15c706494c8c9d820c59b4f513c245b2",
+      "nativeApproved": false
+    },
+    {
+      "locale": "sv-SE",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/editor.jpg",
+      "sha256": "49c72d12f469f779f2f2c5ead573d0c18a9d8da7965e7128ab1bafd34ede6f47",
+      "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-editor.png",
+      "captureSha256": "2e80c539f7b6c36d4412890c95a1a14b72050f42ded2bc6f6b8f66502fbb6197",
+      "nativeApproved": false
+    },
+    {
+      "locale": "sv-SE",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/voice.jpg",
+      "sha256": "9badb9f098838343cabdb6ee5ea7b43dfeeb4b888fbe88c2055a3d0c77f32467",
+      "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-voice.png",
+      "captureSha256": "507d76a84f2b8b5118b24e1e1d7b974c65a870621302de8eab96b280b6af45a6",
+      "nativeApproved": false
+    },
+    {
+      "locale": "sv-SE",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/transcript.jpg",
+      "sha256": "8b51865aad4fbd5746864953d289506a3e677d5f6b776de2b03d5722d07589c8",
+      "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-transcript.png",
+      "captureSha256": "5737b412a79c36a3ce8856c2f0955757d35569c1074ecc99970221b3fcd13b06",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ja-JP",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/home.jpg",
+      "sha256": "ab71ae09960a9cdda2ce725a3375a074f810899b0cee86551cf82d0242c4451e",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-home.png",
+      "captureSha256": "6d3818f033b50c0ae6acee936cc6cac8ee03855f92e76dd52749c4a82f7ae82b",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ja-JP",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/albums.jpg",
+      "sha256": "f677a8ae1022efb791c13b95d79d87115507eb1db2a923a00059a2497dba4e01",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-albums.png",
+      "captureSha256": "b2486baae916c5d2bb8fbfc75f6a1e3458bb6757bd11a36b61e04e9f0ba04fa4",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ja-JP",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/timeline.jpg",
+      "sha256": "069da6bf35b635e8942f035c39f83517ceba371a4e1adc2f0ee22ee9969af454",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-timeline.png",
+      "captureSha256": "55e17bb74144cca63878ac032a9d4313e2b91c1815d5b363bd49f012ea0f57a1",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ja-JP",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/keepsakes.jpg",
+      "sha256": "79ea309de25b4c71f56e147bd919792b6d8923fc3d021747a70ddee5d8c055aa",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-keepsakes.png",
+      "captureSha256": "9ae61bcb9d6bd0fdea9bb94b47626f1e615dc9110e4f06543574169e0f9fb9a1",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ja-JP",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/settings.jpg",
+      "sha256": "d770133f63a36ce125130e0529d9142ba5e7fbaf9193c6726f94c88b6d0b62c1",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-settings.png",
+      "captureSha256": "a241a5d386e54c18e36d352e58a52bdfe5fa91afe029107b0169e96bc7d04a6e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ja-JP",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/editor.jpg",
+      "sha256": "ec53347f281e968026d32566cb82173d024ce7a1eb58668df7cc81f47d1545bf",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-editor.png",
+      "captureSha256": "f2fe067f1cb8a7fbb02fe105ee41359f4839be3d7406fdfc33372ae75282f510",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ja-JP",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/voice.jpg",
+      "sha256": "cd218a484988b865994b4be8ec19182f7c3750d5e63cf259ece935619f6a4ed7",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-voice.png",
+      "captureSha256": "77833d1b55d3384447109ed2b50264356e7ee541726e75caec624876bc3ed278",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ja-JP",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/transcript.jpg",
+      "sha256": "5493553600cb9120111ce508761f1ee80990fb7289e59ddb661164f24fa9f66f",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-transcript.png",
+      "captureSha256": "71a2b209c202387ef7ac215c7cab694c8d4ca139948615c316c2241718dffbbe",
+      "nativeApproved": false
+    },
+    {
+      "locale": "hi-IN",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/home.jpg",
+      "sha256": "3789eee50724552bcefc91cec06b21565711ff49d4ec5ee56f91599048fd3cce",
+      "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-home.png",
+      "captureSha256": "3ddd9890445676d7c1bc403a6c8a523fb75a0c2c323f12399d54e0bb653361c3",
+      "nativeApproved": false
+    },
+    {
+      "locale": "hi-IN",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/albums.jpg",
+      "sha256": "998f2467dcba148bf5dd978ecff90f886642c51a6c2fb5744344e7041344428e",
+      "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-albums.png",
+      "captureSha256": "6840cbe5fe69631384635e02c337aea4dafd4eaa6ad2a610e996f988c0abb6a9",
+      "nativeApproved": false
+    },
+    {
+      "locale": "hi-IN",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/timeline.jpg",
+      "sha256": "79faaf73ff61c57b96599af9c0ba2580a9047adb3a1a47032e2e52f1d20bb45f",
+      "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-timeline.png",
+      "captureSha256": "717bca612e369a6ecd3c5cd32d765fb5b04b8eef2f641643f79a419fbb8b79a0",
+      "nativeApproved": false
+    },
+    {
+      "locale": "hi-IN",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/keepsakes.jpg",
+      "sha256": "dadfd7a6571426387eea11611b0749e83ddc2545d9ef1b95acfe44c5507c3bae",
+      "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-keepsakes.png",
+      "captureSha256": "73a6862c5d9cfcc2e6639c86260fdff6a3e8f076d8ce4dd9ef81af2961dc9700",
+      "nativeApproved": false
+    },
+    {
+      "locale": "hi-IN",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/settings.jpg",
+      "sha256": "5ea537244c2b4dd6ced4bb21d8514e5ab7fbdcc99da684b8efda785ab5ec2573",
+      "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-settings.png",
+      "captureSha256": "96894908fabb4341d48091f6b62f603edd46955662392d8988e892d92d35a179",
+      "nativeApproved": false
+    },
+    {
+      "locale": "hi-IN",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/editor.jpg",
+      "sha256": "4711ff01145b54997ca41b104e0107e437a1503abf5737cae996472c73e0352f",
+      "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-editor.png",
+      "captureSha256": "04419b2a7b89ba120700889614801e63b32c2ac20dd80c7c2c54ef48fe97f1ff",
+      "nativeApproved": false
+    },
+    {
+      "locale": "hi-IN",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/voice.jpg",
+      "sha256": "2c20bd52becc3f23539cffd8f93fbb13d488c104f23f298e44b08f3198080dca",
+      "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-voice.png",
+      "captureSha256": "4f7d8dcf94e8cca25f044264b489c43fff2ae24f6019684f1501e61d2905252a",
+      "nativeApproved": false
+    },
+    {
+      "locale": "hi-IN",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/transcript.jpg",
+      "sha256": "0376e1b35fa6c0af54aee6c16e090c877ef88a54dd65df66edfd2b7596f6336b",
+      "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-transcript.png",
+      "captureSha256": "3a81eb728f620ffb9fc9246d5c70b4da7817e37da951b4ee7eea3be064453f00",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ar",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/home.jpg",
+      "sha256": "ff7ff17a8a23f12b6dc1623572ae49ca903a7ee98060455812d9c0e5aa23549b",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ar-home.png",
+      "captureSha256": "31ae78d7ff37646ee4b7397de4855e45c73ab25579a6d2883b1e024c2ba8fdbc",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ar",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/albums.jpg",
+      "sha256": "2d60fa0d9e5e3c883a75e63dfee494291cfd2fc66b5ed098663d99789fd613c3",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ar-albums.png",
+      "captureSha256": "668b3feeaa22a967965d7c3b0187e667b6c0f80298046bfc2e7ff544f671de80",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ar",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/timeline.jpg",
+      "sha256": "9375a975b6823b4a756ff31cc7481b19189d98681a5796a5e762304cec0490f7",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ar-timeline.png",
+      "captureSha256": "52e3b34c3765e5b4d51d9b3f4dd3c5355fb702e0694e80f315c9cab7e35955b2",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ar",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/keepsakes.jpg",
+      "sha256": "c6517255e3f6187605afee540addd65cf4ab00e26cef39ec15db4bd10d81786b",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ar-keepsakes.png",
+      "captureSha256": "11647602ef9c071f67ff134e00df16e17f056da4b77c0c6a9f7363e618f55b89",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ar",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/settings.jpg",
+      "sha256": "7c6f703d1a82cc9533b331ce35a276b3cbdb35c34d13bb79b0f9a06a0df9ba75",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ar-settings.png",
+      "captureSha256": "322fdbff2abbd8e7eac3a4dca5c74fb3fb1b15b760d7ecd5f36d7bb2ce7714ea",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ar",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/editor.jpg",
+      "sha256": "f348b8438348555b4c5e16e9527cf110fcdc3d60a5fbafc9c1a6990c8252d26b",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ar-editor.png",
+      "captureSha256": "4173f05ad357154300c419105914270dc323e64798d438162d97aeb71d526c92",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ar",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/voice.jpg",
+      "sha256": "a515c703e9f3db4282417f6c2fd461a52a6813aee8a4b3f2a7c581893888b568",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ar-voice.png",
+      "captureSha256": "1d2b3654ace8786880054fd777b0c73f0c0d155626f07e8a221a68ab4635f956",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ar",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/transcript.jpg",
+      "sha256": "24c233042c2c2b1e178b4046ab067ad4826fb31567a0cd99ac45632d73e219ec",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ar-transcript.png",
+      "captureSha256": "d810d767d2ffe030f214f1fb8a60faf56756c96e7f97c67e7e95d4343270d3d9",
+      "nativeApproved": false
+    },
+    {
+      "locale": "tr-TR",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/home.jpg",
+      "sha256": "d3f9518bd1d59394b9719c806e5b9aef425b63f1833e6f26688d47c2adc61b1b",
+      "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-home.png",
+      "captureSha256": "a4c4df9404bd72c6879c93bab9806cad7bbcbe723f90f2f05e74ff04fe6a4ebf",
+      "nativeApproved": false
+    },
+    {
+      "locale": "tr-TR",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/albums.jpg",
+      "sha256": "22aecca8f5a60f1080ec85bf35f4c01e8213ba17c229c9f1d1d8c8a63c87029c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-albums.png",
+      "captureSha256": "0c47a1d917260cce932caed4fbc029bffff10c8ffc50a4b3e41a90eb9263e32e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "tr-TR",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/timeline.jpg",
+      "sha256": "ff2840f28b01491e51095ac2d05f585999d3b26fefdec8f3515d9b146e0355cf",
+      "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-timeline.png",
+      "captureSha256": "93f9cea179a2129aebe530dfdd49e51de85318b71f88a23b39463caa99aefbbe",
+      "nativeApproved": false
+    },
+    {
+      "locale": "tr-TR",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/keepsakes.jpg",
+      "sha256": "2c0846290d3dc87e7403219f737eed85eb20faf91d214a4d40028950cbfa23bc",
+      "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-keepsakes.png",
+      "captureSha256": "92e3dcfbf0dd76bd4f117171b81e0383a0f47f5158bacef68daba3476add2a09",
+      "nativeApproved": false
+    },
+    {
+      "locale": "tr-TR",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/settings.jpg",
+      "sha256": "0f38ebc7a99d87e2009553eb16e46c993c7679947e205d736c549db2f29fb204",
+      "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-settings.png",
+      "captureSha256": "fb572f5343cb6b1debcac8a44686e74b8de73c7ae02334fa6a25026a4715101a",
+      "nativeApproved": false
+    },
+    {
+      "locale": "tr-TR",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/editor.jpg",
+      "sha256": "bb3834e995a7ecd8841ac1c184c57d97280c9f463562d947f2764c82b982a211",
+      "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-editor.png",
+      "captureSha256": "afc9b5c2595fad2d06cc485f3de7605529618f229d502c1ab75ad45d05bd2a4a",
+      "nativeApproved": false
+    },
+    {
+      "locale": "tr-TR",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/voice.jpg",
+      "sha256": "3ec4dc71807095dfaa310a26bc6f1a74aaee6780f3059423ca0c56dff9aaaca9",
+      "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-voice.png",
+      "captureSha256": "610b90a764d413fb49914299c330b32e32e2f5ba96b522b1945a90009edfcf02",
+      "nativeApproved": false
+    },
+    {
+      "locale": "tr-TR",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/transcript.jpg",
+      "sha256": "fe3f5ad429c5487ce34886e15a9fab352795acfd8a6b7b6466dcfb7b4beae09d",
+      "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-transcript.png",
+      "captureSha256": "e0c441200aec54b97f3dbebda7ad59f092e0e4f202b6d406dd5f30a252bb9a1f",
+      "nativeApproved": false
+    },
+    {
+      "locale": "id-ID",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/home.jpg",
+      "sha256": "cf9ce85f0b4b5d03923d5e4f5c69b6febd43cdec8f804cb604190edd89c48402",
+      "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-home.png",
+      "captureSha256": "745529d9c523440b5fb51cc2d6eba850d730088813b4fa86629eb25236e5fe6d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "id-ID",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/albums.jpg",
+      "sha256": "676e73154fac218b034965f68cee20e3f84d806d2e076603d52c8697d4587b71",
+      "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-albums.png",
+      "captureSha256": "8cc233d44e31449e2965b37e4934a3a9a28d5b0949f47989324fa1f24794d29d",
+      "nativeApproved": false
+    },
+    {
+      "locale": "id-ID",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/timeline.jpg",
+      "sha256": "8898833cb47b06b80f1fcb8a12cdf959fdf768a0dac36648bf09cac7e9437864",
+      "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-timeline.png",
+      "captureSha256": "4b0bed87d34253215be8108d80479dc3a47455a7aa970ed494ee98bb6e67ed80",
+      "nativeApproved": false
+    },
+    {
+      "locale": "id-ID",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/keepsakes.jpg",
+      "sha256": "42c7bf3312d0e3a1aff09b02dc2b91e3388729c52dc8d38cdc979a14a6023681",
+      "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-keepsakes.png",
+      "captureSha256": "9dce2d6925fc5464bf94c679600204afc6c3898c0a1cd3fab2ea679f7222020b",
+      "nativeApproved": false
+    },
+    {
+      "locale": "id-ID",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/settings.jpg",
+      "sha256": "12e51d81a7eda80aa1723766f258902eb4d18cf51b5888f50248c19ed1b0d8d2",
+      "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-settings.png",
+      "captureSha256": "d2217b2a0a43201359c3dffde8744c84ae6e568f99fd54337904878a6674879e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "id-ID",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/editor.jpg",
+      "sha256": "901002a3b7843c2150dd79b452905213a4ed7d4bb7531aa3e30c777b0b029f29",
+      "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-editor.png",
+      "captureSha256": "bddf177a68d6f9afce84bb6fb0e4b72e2112a4de0853d91f75d6bfa6d65fba23",
+      "nativeApproved": false
+    },
+    {
+      "locale": "id-ID",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/voice.jpg",
+      "sha256": "030a5489285ade3ae769ef74368c886224fada2748fcc53d74e6f43f73f1d400",
+      "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-voice.png",
+      "captureSha256": "55a4be5e9252f848d2b7383c42d7443742e0ae97e374a5c1afb8ef3df4844df8",
+      "nativeApproved": false
+    },
+    {
+      "locale": "id-ID",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/transcript.jpg",
+      "sha256": "b6eae8b3c62ad36c75acf571bfc39c6eda6ae80c9c60ac60025af6e51afafaed",
+      "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-transcript.png",
+      "captureSha256": "4d897e723696a6beac983d8c226c1695796d816642ed71b100caecce55d23c9e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ko-KR",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/home.jpg",
+      "sha256": "2392c19009421c99c5148a0b218742b8c990abcd7d4f9e8649d5f729472746ec",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-home.png",
+      "captureSha256": "81043d246fc22a1086e319afc0644c5dd49975813fd1d0091d3879b654ad5049",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ko-KR",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/albums.jpg",
+      "sha256": "acf3381952827210bd0211ac74d46f0bea5d5fdca3a1d5e57e510892bd1c370a",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-albums.png",
+      "captureSha256": "e4450f993b1be84208e217e2afc80067b24fc445cb3a0c6f4a477f8840f03078",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ko-KR",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/timeline.jpg",
+      "sha256": "086b7a0176988fa2066d8c802dad8dff01a4f1934a96651adccf464c1d6f7a53",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-timeline.png",
+      "captureSha256": "5e5e35a5de57e2c75a8e6a9cc8ffecdb3e3ec44027d803190b6e5e966e5067bb",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ko-KR",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/keepsakes.jpg",
+      "sha256": "d12f6b72ac431439461b60e4786fc9aacf8f736761dba12d3d9c445d6af5928e",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-keepsakes.png",
+      "captureSha256": "9f1c77d0dbf09476db0cab631bd8a8fbe1071dcfcb3f835a6077d074e2fccc4a",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ko-KR",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/settings.jpg",
+      "sha256": "f21570f634a106cd983b77f56abd3b4916e14cdbfa37255d413cd0b4ba2165f0",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-settings.png",
+      "captureSha256": "697a9fdd2c8554f7a654d7599ec4ca687d7b9756e7958de26ec54f7959ed54b0",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ko-KR",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/editor.jpg",
+      "sha256": "18bcc7d30b704132b0250478fe24d09e03fcc8ea5a24822da92f8250625e19a8",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-editor.png",
+      "captureSha256": "a9369da1d9fd4b01851be35234fd1906e985c294eb36d01247f7e70871894e10",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ko-KR",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/voice.jpg",
+      "sha256": "dc87971291cd5c5545c07780a4b1ec1a0a51a79755f7f3523615c9702ace4f71",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-voice.png",
+      "captureSha256": "0df76800f73f278b3bd7dbc171018bc65634eab4a7480890bfd333edfa052efd",
+      "nativeApproved": false
+    },
+    {
+      "locale": "ko-KR",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/transcript.jpg",
+      "sha256": "06b656ac6bda0bdc380ed8765ab30e8e30d19f7a4482a5242c2a95bd6077cb6c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-transcript.png",
+      "captureSha256": "91dfa7fe078471dad1a8efb5e06038977350a9013ab11422cc95a648c6e50b0a",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hans",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/home.jpg",
+      "sha256": "050c8fa007666a6a6a41b78ac7b386583e0270f9c89f99ecfdaf802ea3dd857a",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-home.png",
+      "captureSha256": "603040d83c477165d00fba1b9ea42b008e6a095163ca71db0f82db3eb9bd0944",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hans",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/albums.jpg",
+      "sha256": "db335ae0afbf18ebe67a9deee887a857ba6365fbd6f4897cc6d87b49990a386c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-albums.png",
+      "captureSha256": "4d205c3c0a850c3bdc10faa1ffb24cb868213ad537dba95b38e40f1101bff0d2",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hans",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/timeline.jpg",
+      "sha256": "a29e59f4e3082177091c468f5261941690d552be652c5c9c0481cd65ff830204",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-timeline.png",
+      "captureSha256": "ad6298e0e8e5d1f07f4f344d16b7097316e894df5795538dbce72fe73f2bf084",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hans",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/keepsakes.jpg",
+      "sha256": "1c26785fdb16846c7bad841a52fa7a469f44ea0ba3340d7102851e4b40060855",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-keepsakes.png",
+      "captureSha256": "77f39e44027c6ab7626b826a8709fbf49ec3a5744ec7c103f50f520c525d024e",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hans",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/settings.jpg",
+      "sha256": "5a030912c2829cae8fa69fcea140c11dc8f81cadaa84c9b28fb8f7e5679f6acc",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-settings.png",
+      "captureSha256": "bb1e2ba954b1c59cefb91bdd73ec4628eb42ddea944695040e42766d4c980643",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hans",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/editor.jpg",
+      "sha256": "d6e03c927a0e26831a6c3f8a2619be075f6f34d6327223b8a0dc3b9985fc6b91",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-editor.png",
+      "captureSha256": "2340091774b54a5db1bd96cb31d4a2b40b3563c83a22ae7b2da76d1078bf5587",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hans",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/voice.jpg",
+      "sha256": "6c5382013ac04d9bd8e547c6d53bc449c66ad9a9bfdf1545b40b415c2a437c27",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-voice.png",
+      "captureSha256": "ac7f44a275a43e2178b8a689ee90df3624b924b1b85dba78eb4ab03e71bd6f15",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hans",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/transcript.jpg",
+      "sha256": "fe63d6bf18a6f2f4f0ee8bb4423a8e7255aa99b96d03d11d14bf8c3770d3b41e",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-transcript.png",
+      "captureSha256": "46b5396f30c8a9091ec9b544a926533a9b283dbb070641f3ed22f04744f7772b",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hant",
+      "shot": "home",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/home.jpg",
+      "sha256": "510ec21004c6fd44409eddb38425ff52fcff49f9ac6a9326094de49bc7bc3d55",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-home.png",
+      "captureSha256": "b2c078c5ec0b354bf6f60a3967fd2fdfe8401cea05242275aa9d892a5109ed41",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hant",
+      "shot": "albums",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/albums.jpg",
+      "sha256": "866fbe3d9cae29486492919af14c295409a1cafab4341aa3cea1c1e1a06a63f1",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-albums.png",
+      "captureSha256": "6df954165685fa795db1bd181c04f7e3928540a27f987db5ee34d4b37f0ad15c",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hant",
+      "shot": "timeline",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/timeline.jpg",
+      "sha256": "a92c490c4d922c484c69d137b061ea4eea1cae334633d5963ddb4db5ec5a501c",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-timeline.png",
+      "captureSha256": "4f24dd2b212c2895998ac18982ad9e13f844dc47ea8af8cfcd3791cf17778259",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hant",
+      "shot": "keepsakes",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/keepsakes.jpg",
+      "sha256": "f890b0abef2e6c9701f45b3598e0dacce6ac4b7ae0d4a7f6d8cdb6d721dc12d0",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-keepsakes.png",
+      "captureSha256": "a488b6b1c3b763953696af029d53d6b3365e7bcc9411f45e5a2decb6239c1308",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hant",
+      "shot": "settings",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/settings.jpg",
+      "sha256": "52fab99000e53e681353c77324d3211c9e143129e39080cb98e30f44dcb77dc4",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-settings.png",
+      "captureSha256": "96ddf3cbc258d5a93c32d532b3070ee5eb426d0689e5ba8b905c44413037e4e3",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hant",
+      "shot": "editor",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/editor.jpg",
+      "sha256": "f52ec1e44f56dec2b889561e5ddcaceeac7a1bde5a4adadddaff326a752de69a",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-editor.png",
+      "captureSha256": "cc65440d3a26ee23760933303dc792ef9c7ccf40d76f1ed7079927f10dadc151",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hant",
+      "shot": "voice",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/voice.jpg",
+      "sha256": "69e352a14306d026598387f02fd11fda0771bff287c1943063a4084a3b9148c7",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-voice.png",
+      "captureSha256": "dd1cdf061d74fc2ac82fdc909b15683727e3e6ebc58c93cf3eceb7edf4973a27",
+      "nativeApproved": false
+    },
+    {
+      "locale": "zh-Hant",
+      "shot": "transcript",
+      "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/transcript.jpg",
+      "sha256": "0bfcebfcd4787cae00846ba95ed915929e8da8984668370ced096f5ac33b8470",
+      "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-transcript.png",
+      "captureSha256": "8836b95f8ef6d00a97e3668eaf7ec3cc3397d16d21dc7dc923d11001eda83341",
+      "nativeApproved": false
+    }
+  ]
+}

@@ -117,7 +117,7 @@
   "skip": "Skip for now",
   "language": "Language",
   "device_language": "Use device language",
-  "language_note": "English source resources are available in this development build. Other target languages and native-language review are pending.",
+  "language_note": "Choose a language or follow your device settings. Development translations still need native-language review. Your stories are not translated.",
   "purpose": "What would you like to preserve?",
   "family": "Family memories",
   "personal": "My life journal",
@@ -188,5 +188,9 @@
   "save_first": "Save your story before adding attachments.",
   "reminders": "Optional reminders",
   "reminders_pending": "Reminders are not implemented in this development build.",
-  "search_year_hint": "YYYY or blank for every year"
+  "search_year_hint": "YYYY or blank for every year",
+  "memory_count": {
+    "one": "%1$d memory",
+    "other": "%1$d memories"
+  }
 }

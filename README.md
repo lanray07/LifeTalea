@@ -16,9 +16,9 @@ Publisher: **O.Bankole** · Support: **banksmi@mail.com** · [Source repository]
 - Free/Premium boundaries and Amazon SDK adapter; purchasing remains disabled without the correct app authentication/product configuration.
 - Translation extraction, provider/cache/placeholder validation and review-gated Android resource generation.
 - Original book/waveform identity, generated editorial illustration, editable covers/backgrounds and screenshot source template.
-- Sixteen crawlable English website pages, structured data, metadata, sitemap, robots, privacy and support content.
+- Website preview with 352 localized pages across 22 locales, language switching, RTL, structured data, metadata, sitemap, privacy and support content.
 
-Automatic recorded-file transcription is **unavailable**. Only English source resources currently exist; worldwide translations, native review and localised screenshots remain incomplete. Voice service support varies by device. The archive implementation has a 32 MiB total/16 MiB per-item limit. See the reports for actual test scope and further limitations.
+Automatic recorded-file transcription is **unavailable**. All 22 app catalogues have 191/191 structurally valid keys; debug builds include translated drafts, while release builds retain English until native approval. Website/store drafts and 176 tablet screenshot drafts are prepared. Native review remains incomplete, and some machine-translated article wording is visibly rough. Voice commands remain English; speech services vary by device. Archives have a 32 MiB total/16 MiB per-item limit. See [localization delivery](docs/LOCALIZATION_DELIVERY.md) for evidence and limits.
 
 ## Run locally
 
@@ -51,6 +51,6 @@ Open http://localhost:3000/en-GB/. Debug installs use `com.lifetalea.app.debug`;
 
 ## Before publication
 
-Complete the configured transcription integration; translate and review every approved locale; finish actual-screen screenshot compositions; configure and verify Amazon purchases/receipts; broaden Fire/orientation/accessibility/offline tests; harden archive storage for larger libraries; complete the security/privacy assessment; confirm signing, package/product identity, marketplace availability and name clearance. Publication requires explicit authorisation.
+Complete the transcription integration; correct and natively review all locale drafts; finish other device-size screenshot variants; configure and verify Amazon purchases/receipts; broaden Fire/orientation/accessibility/offline tests; harden archive storage for larger libraries; complete the security/privacy assessment; confirm signing, package/product identity, marketplace availability and name clearance. Publication requires explicit authorisation.
 
 Amazon no longer distributes its Appstore on non-Amazon Android devices. A compatible phone APK needs a separate selected distribution and billing channel. No live store URL or website deployment is claimed. GitHub source, policy and support documentation are the current public destinations.

@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'deliverables/store-assets';(OUT/'metadata/en-GB').mkdir(parents=True,exist_ok=True);(OUT/'manifests').mkdir(exist_ok=True)
 metadata={
  'status':'DRAFT_NOT_SUBMISSION_READY', 'publisher':'O.Bankole','supportEmail':'banksmi@mail.com',
- 'title':'LifeTalea – Family Stories & Voice Journal',
+ 'title':'LifeTalea - Family Stories & Voice Journal',
  'shortDescription':'Keep family stories, photographs and voice memories together in a private journal. Create albums, explore a timeline and save scrapbook drafts on your device.',
  'longDescription':'''Keep the moments. Remember the voices.
 

@@ -9,7 +9,7 @@ import com.lifetalea.app.data.*
 import java.io.OutputStream
 
 class KeepsakePdf(private val repo: LibraryRepository) {
-    fun write(title: String, memories: List<Memory>, media: List<Attachment>, out: OutputStream, includeLocation: Boolean = false, includeTranscript: Boolean = false, letter: Boolean = false) {
+    fun write(title: String, memories: List<Memory>, media: List<Attachment>, out: OutputStream, includeLocation: Boolean = false, includeTranscript: Boolean = false, letter: Boolean = false, locale: java.util.Locale = java.util.Locale.getDefault()) {
         require(memories.isNotEmpty())
         val width = if (letter) 612 else 595; val height = if (letter) 792 else 842
         val paint = TextPaint(Paint.ANTI_ALIAS_FLAG).apply { color = Color.rgb(48, 47, 45); textSize = 12f }
@@ -21,7 +21,9 @@ class KeepsakePdf(private val repo: LibraryRepository) {
                 pageNo++
                 return pdf.startPage(PdfDocument.PageInfo.Builder(width, height, pageNo).create()).also {
                     it.canvas.drawColor(Color.WHITE)
-                    it.canvas.drawText(pageNo.toString(), width / 2f, height - 25f, footerPaint)
+                    val number = java.text.NumberFormat.getIntegerInstance(locale).apply { isGroupingUsed = false }.format(pageNo)
+                    footerPaint.textAlign = Paint.Align.CENTER
+                    it.canvas.drawText(number, width / 2f, height - 25f, footerPaint)
                 }
             }
             var page = page(); paint.textSize = 32f; paint.typeface = Typeface.create("serif", Typeface.NORMAL)
@@ -43,7 +45,7 @@ class KeepsakePdf(private val repo: LibraryRepository) {
                 }
                 paint.typeface = Typeface.create("serif", Typeface.NORMAL); text(memory.title, 24f)
                 paint.typeface = Typeface.create("sans-serif", Typeface.NORMAL)
-                if (memory.date.isNotBlank()) text(memory.date, 11f)
+                if (memory.date.isNotBlank()) text(MemoryRules.formattedDate(memory,locale), 11f)
                 media.firstOrNull { it.memoryId == memory.id && it.kind == "photo" }?.let { a ->
                     val opts = BitmapFactory.Options().apply { inJustDecodeBounds = true }; val f = repo.file(a.filename)
                     BitmapFactory.decodeFile(f.path, opts); var sample = 1

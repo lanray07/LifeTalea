@@ -1,0 +1,58 @@
+{
+  "status": "PENDING_NATIVE_REVIEW",
+  "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+  "entries": 4033,
+  "heuristicFlagCount": 7,
+  "flags": [
+    {
+      "locale": "fr-FR",
+      "key": "albums",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    },
+    {
+      "locale": "fr-FR",
+      "key": "transcription",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    },
+    {
+      "locale": "fr-FR",
+      "key": "rose",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    },
+    {
+      "locale": "fr-CA",
+      "key": "albums",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    },
+    {
+      "locale": "fr-CA",
+      "key": "transcription",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    },
+    {
+      "locale": "fr-CA",
+      "key": "rose",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    },
+    {
+      "locale": "nl-NL",
+      "key": "albums",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    }
+  ],
+  "limitations": "These checks cannot establish meaning, dialect, grammar, pronunciation or release approval."
+}

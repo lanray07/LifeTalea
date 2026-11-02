@@ -1,0 +1,26 @@
+<resources>
+<string-array name="supported_locale_tags" translatable="false">
+  <item>en-GB</item>
+  <item>en-US</item>
+  <item>en-AU</item>
+  <item>es-ES</item>
+  <item>es-419</item>
+  <item>fr-FR</item>
+  <item>fr-CA</item>
+  <item>de-DE</item>
+  <item>it-IT</item>
+  <item>pt-BR</item>
+  <item>pt-PT</item>
+  <item>nl-NL</item>
+  <item>pl-PL</item>
+  <item>sv-SE</item>
+  <item>ja-JP</item>
+  <item>hi-IN</item>
+  <item>ar</item>
+  <item>tr-TR</item>
+  <item>id-ID</item>
+  <item>ko-KR</item>
+  <item>zh-Hans</item>
+  <item>zh-Hant</item>
+</string-array>
+</resources>

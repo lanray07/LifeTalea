@@ -1,1 +1,212 @@
-{}
+{
+  "en-US": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "d4510df9ab1e4bfe7030d8b2006d2303b684087501e17d516d750d3abfc03c84",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "Codex English regional adaptation",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "en-AU": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "Codex English regional adaptation",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "es-ES": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "c9cb7c9376886955f5175709996dd3c65da7118fd5599cf9ce13b30bf1246591",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "es-419": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "c9cb7c9376886955f5175709996dd3c65da7118fd5599cf9ce13b30bf1246591",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "fr-FR": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "7869cb3f943dc9b0dd506e5443014032f327fc39d99da0165b563276c44dfad9",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "fr-CA": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "7869cb3f943dc9b0dd506e5443014032f327fc39d99da0165b563276c44dfad9",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "de-DE": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "f00ce542027d68325332c8a86b977f5b4743e77a46298e787920e4d9c2e829d5",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "it-IT": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "f329ac407e596f9d452010933561f4014d3fb1d98ed514db1559e7e1733e7c41",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "pt-BR": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "ad65b54cb32255b7bd8875ecbabbf2299e3d966de356341ac610ad2a3fb32ed2",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "pt-PT": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "b3985337c86cb047d75709367be1b09d39436a630705bdc3299f8064e2b31bbe",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "nl-NL": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "dd31e27c5b5462a99089434fb3150b598adc66002c94b2c75f46cbc4d1991027",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "pl-PL": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "ff70ee82b77837805d733e68022dca1bee6bcc88b13bc33d67a25dcd0d6af55c",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "sv-SE": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "156dee4aa18955254455fe7cfb13c4a3c05fa073ad50db3cf5a01c679b8155eb",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "ja-JP": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "2921c7434fce055323f6e676b05a7b7d3e6d209f28e3d27c85f2d8faa6d0ba2a",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "hi-IN": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "a0f5021c0443acb94a086418a519c308e69bb5bf100a09c942f065bd6f69a4be",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "ar": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "9eda08c982075b6e4c853c1d4aa5189081621d7361e0281e58cd6844bb2657bc",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "tr-TR": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "8c266c4da4c1ba1ec7aa09bc4db579c8c78f96af5db4793720a95a3a1c28cd5b",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "id-ID": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "6875cc4c8ee184ccfed801699cebdffc2fa8d329ab5999bfd4ab20cbdf2a9c42",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "ko-KR": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "6826a5f4814e7c5d3899c6707a6248970b13b0b4375ee7c949d2bcd7f2aed959",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "zh-Hans": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "ebbf9e88e0c4900a43b297419b9191ecb2a261536857e34aa950568f2684f81a",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  },
+  "zh-Hant": {
+    "status": "DRAFT_PENDING_NATIVE_REVIEW",
+    "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
+    "targetHash": "43914a4da3783c0ed0f71a849b4366b2e004bb52dab2ae95912aa502d963fe52",
+    "reviewer": "",
+    "reviewedAt": "",
+    "generator": "facebook/m2m100_418M@55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636; local int8; terminology corrections",
+    "regionalReviewRequired": true,
+    "editorialCorrections": "Codex drafts for privacy, archive limits, deletion and voice consent; not native approval"
+  }
+}

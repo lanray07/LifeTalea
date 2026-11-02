@@ -23,6 +23,7 @@ import java.util.Locale
             Text("LifeTalea", style = MaterialTheme.typography.headlineMedium)
             HeroArtwork(); Heading(tr("welcome"), tr("welcome_body"))
             Text(tr("language"), style = MaterialTheme.typography.titleLarge); Text(tr("language_note"))
+            LanguagePicker()
             Text(tr("purpose"), style = MaterialTheme.typography.titleLarge)
             listOf("family", "personal", "childhood", "history", "travel", "legacy").forEach { key -> Row(verticalAlignment = Alignment.CenterVertically) { RadioButton(purpose == key, { purpose = key }); Text(tr(key)) } }
             Button(onClick = onDone) { Text(tr("get_started")) }; TextButton(onClick = onDone) { Text(tr("skip")) }
@@ -33,7 +34,7 @@ import java.util.Locale
     var command by rememberSaveable { mutableStateOf("") }; var listening by remember { mutableStateOf(false) }
     var recognised by remember { mutableStateOf("") }
     val launcher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { allowed ->
-        if (!allowed) { listening = false; onError("microphone_denied") } else { listening = true; assistant.listen(Locale.getDefault(), { recognised = it; command = it; listening = false }, { listening = false; onError("voice_error") }) }
+        if (!allowed) { listening = false; onError("microphone_denied") } else { listening = true; assistant.listen(Locale.ENGLISH, { recognised = it; command = it; listening = false }, { listening = false; onError("voice_error") }) }
     }
     AlertDialog(onDismissRequest = onDismiss, title = { Text(tr("voice_commands")) }, text = {
         Column(Modifier.verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(16.dp)) {

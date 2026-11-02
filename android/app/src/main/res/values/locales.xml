@@ -1,0 +1,5 @@
+<resources>
+<string-array name="supported_locale_tags" translatable="false">
+  <item>en-GB</item>
+</string-array>
+</resources>

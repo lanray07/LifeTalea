@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "locale": "en-GB",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "en-US",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "en-AU",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "es-ES",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "es-419",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "fr-FR",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "fr-CA",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "de-DE",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "it-IT",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "pt-BR",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "pt-PT",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "nl-NL",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "pl-PL",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "sv-SE",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "ja-JP",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "hi-IN",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "ar",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "tr-TR",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "id-ID",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "ko-KR",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "zh-Hans",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    },
+    {
+      "locale": "zh-Hant",
+      "websiteKeys": 163,
+      "websiteIssues": [],
+      "storeIssues": [],
+      "screenshotHeadlineIssues": [],
+      "nativeApproval": false
+    }
+  ],
+  "errors": [],
+  "scope": "Structural checks and current Amazon form lengths; regional, legal, keyword and native-language review remain pending."
+}

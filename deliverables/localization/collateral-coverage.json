@@ -1,0 +1,310 @@
+[
+  {
+    "locale": "en-GB",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "en-US",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "en-AU",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "es-ES",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "es-419",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "fr-FR",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "fr-CA",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "de-DE",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "it-IT",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "pt-BR",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "pt-PT",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "nl-NL",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "pl-PL",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "sv-SE",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "ja-JP",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "hi-IN",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "ar",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "tr-TR",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "id-ID",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "ko-KR",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "zh-Hans",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  },
+  {
+    "locale": "zh-Hant",
+    "websiteStrings": 163,
+    "storeStrings": 23,
+    "structuralIssues": [],
+    "storeLimits": {
+      "title": true,
+      "shortDescription": true,
+      "longDescription": true,
+      "featureBullets": true
+    },
+    "review": "PENDING_NATIVE_REVIEW",
+    "releaseApproved": false
+  }
+]

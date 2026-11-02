@@ -1,0 +1,14 @@
+[
+  {
+    "path": "deliverables/android/debug/LifeTalea-0.1.0-localization-debug.apk",
+    "sha256": "7e2bbaa96cf6fbbe932cd7a43c300702a94587cc2b952cf79e44a653b731b8e4",
+    "bytes": 21202369,
+    "status": "DEBUG_DRAFT_22_LOCALES"
+  },
+  {
+    "path": "deliverables/android/release/LifeTalea-0.1.0-localization-release-unsigned.apk",
+    "sha256": "ad9c9a3f3c8548207f82a55d6819f0499707b6766a221ef387e26378565e3cdb",
+    "bytes": 13607331,
+    "status": "UNSIGNED_ENGLISH_RELEASE_NOT_SUBMISSION_READY"
+  }
+]

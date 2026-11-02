@@ -1,0 +1,77 @@
+{
+  "fr": {
+    "privacy_body": "Les souvenirs et les pièces jointes sont stockés dans l’espace privé de cette application sur cet appareil. Aucun SDK publicitaire ou d’analyse n’est intégré. La sauvegarde système Android est désactivée. Désinstaller l’application supprime ses données locales : conservez une sauvegarde en lieu sûr. La reconnaissance vocale utilise le service installé sur votre appareil ; consultez ses paramètres de confidentialité. Les achats Amazon communiquent avec Amazon. LifeTalea n’envoie pas vos souvenirs ni vos enregistrements.",
+    "backup_notice": "Les récits, transcriptions, albums et brouillons de livres sont inclus. Les photos et les enregistrements sont inclus uniquement si vous les sélectionnez. Les exports non chiffrés contiennent des informations privées lisibles. Conservez votre phrase secrète : elle ne peut pas être récupérée. Limites actuelles : 32 MiB par archive et 16 MiB par pièce jointe. Les bibliothèques plus volumineuses nécessitent une future version.",
+    "delete_all": "Supprimer tous les souvenirs, albums, enregistrements et brouillons de livres stockés sur cet appareil ? Cette action est irréversible."
+  },
+  "es": {
+    "privacy_body": "Los recuerdos y archivos adjuntos se guardan en el espacio privado de esta aplicación en el dispositivo. No se incluyen SDK de publicidad ni de análisis. La copia de seguridad del sistema Android está desactivada. Desinstalar la aplicación elimina sus datos locales: guarda una copia de seguridad en un lugar seguro. El reconocimiento de voz usa el servicio instalado en tu dispositivo; revisa sus ajustes de privacidad. Las compras de Amazon se comunican con Amazon. LifeTalea no envía tus recuerdos ni grabaciones.",
+    "backup_notice": "Se incluyen historias, transcripciones, álbumes y borradores de libros de recuerdos. Las fotos y grabaciones solo se incluyen si las seleccionas. Las copias exportadas sin cifrar contienen información privada legible. Guarda tu frase de contraseña: no se puede recuperar. Límites actuales: 32 MiB por archivo de copia de seguridad y 16 MiB por archivo adjunto. Las bibliotecas más grandes requieren una versión futura.",
+    "delete_all": "¿Eliminar todos los recuerdos, álbumes, grabaciones y borradores de libros guardados en este dispositivo? Esta acción no se puede deshacer."
+  },
+  "de": {
+    "privacy_body": "Erinnerungen und Anhänge werden im privaten Speicher dieser App auf diesem Gerät gespeichert. Es gibt keine Werbe- oder Analyse-SDKs. Die Android-Systemsicherung ist deaktiviert. Beim Deinstallieren der App werden ihre lokalen Daten gelöscht. Bewahre eine Sicherung an einem sicheren Ort auf. Die Spracherkennung nutzt den installierten Sprachdienst; prüfe dessen Datenschutzeinstellungen. Amazon-Käufe kommunizieren mit Amazon. LifeTalea überträgt keine Erinnerungen oder Aufnahmen.",
+    "backup_notice": "Geschichten, Transkripte, Alben und Buchentwürfe sind enthalten. Fotos und Aufnahmen werden nur auf Wunsch eingeschlossen. Unverschlüsselte Exporte enthalten lesbare private Informationen. Bewahre deine Passphrase sicher auf; sie kann nicht wiederhergestellt werden. Aktuelle Grenzen: 32 MiB pro Archiv und 16 MiB pro Anhang. Größere Bibliotheken benötigen eine zukünftige Version.",
+    "delete_all": "Alle lokalen Erinnerungen, Alben, Aufnahmen und Buchentwürfe löschen? Dies kann nicht rückgängig gemacht werden."
+  },
+  "it": {
+    "privacy_body": "Ricordi e allegati sono conservati nello spazio privato di questa app sul dispositivo. Non sono presenti SDK pubblicitari o di analisi. Il backup di sistema Android è disattivato. Disinstallare l’app elimina i suoi dati locali: conserva una copia di sicurezza in un luogo sicuro. Il riconoscimento vocale usa il servizio installato sul dispositivo; controllane le impostazioni di privacy. Gli acquisti Amazon comunicano con Amazon. LifeTalea non invia ricordi o registrazioni.",
+    "backup_notice": "Sono inclusi storie, trascrizioni, album e bozze di libri dei ricordi. Foto e registrazioni sono incluse solo se selezionate. Le esportazioni non cifrate contengono informazioni private leggibili. Conserva la frase segreta: non può essere recuperata. Limiti attuali: 32 MiB per archivio e 16 MiB per allegato. Le raccolte più grandi richiedono una versione futura.",
+    "delete_all": "Eliminare tutti i ricordi, album, registrazioni e bozze di libri salvati sul dispositivo? Questa azione non può essere annullata."
+  },
+  "pt": {
+    "privacy_body": "Memórias e anexos ficam no espaço privado deste aplicativo no dispositivo. Não há SDKs de publicidade ou análise. O backup do sistema Android está desativado. Desinstalar o aplicativo remove seus dados locais: guarde uma cópia de segurança em local seguro. O reconhecimento de voz usa o serviço instalado no dispositivo; consulte as configurações de privacidade desse serviço. As compras da Amazon se comunicam com a Amazon. O LifeTalea não envia memórias nem gravações.",
+    "backup_notice": "Histórias, transcrições, álbuns e rascunhos de livros estão incluídos. Fotos e gravações são incluídas apenas quando selecionadas. Exportações sem criptografia contêm informações privadas legíveis. Guarde sua frase secreta: ela não pode ser recuperada. Limites atuais: 32 MiB por arquivo de backup e 16 MiB por anexo. Bibliotecas maiores exigem uma versão futura.",
+    "delete_all": "Excluir todas as memórias, álbuns, gravações e rascunhos de livros salvos neste dispositivo? Esta ação não pode ser desfeita."
+  },
+  "nl": {
+    "privacy_body": "Herinneringen en bijlagen worden opgeslagen in de privéopslag van deze app op dit apparaat. Er zijn geen advertentie- of analyse-SDK’s. Android-systeemback-up is uitgeschakeld. Als je de app verwijdert, worden de lokale gegevens gewist. Bewaar een back-up op een veilige plek. Spraakherkenning gebruikt de geïnstalleerde dienst; controleer de privacyinstellingen daarvan. Amazon-aankopen communiceren met Amazon. LifeTalea verstuurt geen herinneringen of opnamen.",
+    "backup_notice": "Verhalen, transcripties, albums en boekconcepten worden opgenomen. Foto’s en opnamen worden alleen opgenomen als je ze selecteert. Onversleutelde exports bevatten leesbare privégegevens. Bewaar je wachtzin veilig: deze kan niet worden hersteld. Huidige limieten: 32 MiB per archief en 16 MiB per bijlage. Grotere bibliotheken vereisen een toekomstige versie.",
+    "delete_all": "Alle lokale herinneringen, albums, opnamen en boekconcepten verwijderen? Dit kan niet ongedaan worden gemaakt."
+  },
+  "pl": {
+    "privacy_body": "Wspomnienia i załączniki są przechowywane w prywatnej pamięci tej aplikacji na urządzeniu. Nie ma pakietów SDK reklam ani analityki. Systemowa kopia zapasowa Androida jest wyłączona. Odinstalowanie aplikacji usuwa jej lokalne dane. Zachowaj kopię zapasową w bezpiecznym miejscu. Rozpoznawanie mowy korzysta z zainstalowanej usługi; sprawdź jej ustawienia prywatności. Zakupy Amazon komunikują się z Amazon. LifeTalea nie wysyła wspomnień ani nagrań.",
+    "backup_notice": "Kopia zawiera opowieści, transkrypcje, albumy i wersje robocze ksiąg. Zdjęcia i nagrania są dołączane tylko po ich wybraniu. Niezaszyfrowane eksporty zawierają czytelne dane prywatne. Zachowaj hasło szyfrujące: nie można go odzyskać. Obecne limity: 32 MiB na archiwum i 16 MiB na załącznik. Większe biblioteki wymagają przyszłej wersji.",
+    "delete_all": "Usunąć wszystkie lokalne wspomnienia, albumy, nagrania i wersje robocze ksiąg? Tej czynności nie można cofnąć."
+  },
+  "sv": {
+    "privacy_body": "Minnen och bilagor lagras i appens privata utrymme på den här enheten. Inga SDK:er för annonser eller analys används. Androids systemsäkerhetskopiering är avstängd. Om appen avinstalleras tas dess lokala data bort. Förvara en säkerhetskopia på en säker plats. Taligenkänning använder den installerade tjänsten; granska dess sekretessinställningar. Amazon-köp kommunicerar med Amazon. LifeTalea skickar inte minnen eller inspelningar.",
+    "backup_notice": "Berättelser, transkriptioner, album och bokutkast ingår. Foton och inspelningar tas bara med om du väljer dem. Okrypterade exporter innehåller läsbara privata uppgifter. Förvara din lösenfras säkert: den kan inte återställas. Nuvarande gränser: 32 MiB per arkiv och 16 MiB per bilaga. Större bibliotek kräver en framtida version.",
+    "delete_all": "Ta bort alla lokala minnen, album, inspelningar och bokutkast? Det går inte att ångra."
+  },
+  "ar": {
+    "privacy_body": "تُحفظ الذكريات والمرفقات في مساحة التخزين الخاصة بهذا التطبيق على الجهاز. لا توجد حزم إعلانات أو تحليلات. النسخ الاحتياطي لنظام Android معطّل. تؤدي إزالة التطبيق إلى حذف بياناته المحلية، لذا احتفظ بنسخة احتياطية في مكان آمن. يستخدم التعرف على الكلام الخدمة المثبتة على جهازك؛ راجع إعدادات خصوصيتها. تتواصل مشتريات Amazon مع Amazon. لا يرسل LifeTalea الذكريات أو التسجيلات.",
+    "backup_notice": "تتضمن النسخة القصص والنصوص المكتوبة للتسجيلات والألبومات ومسودات كتب الذكريات. تُضمّن الصور والتسجيلات فقط عند اختيارها. تحتوي النسخ المصدّرة غير المشفّرة على معلومات خاصة قابلة للقراءة. احتفظ بعبارة المرور، إذ لا يمكن استعادتها. الحدود الحالية: 32 MiB لكل أرشيف و16 MiB لكل مرفق. تحتاج المكتبات الأكبر إلى إصدار مستقبلي.",
+    "delete_all": "هل تريد حذف جميع الذكريات والألبومات والتسجيلات ومسودات كتب الذكريات المحلية؟ لا يمكن التراجع عن هذا الإجراء."
+  },
+  "hi": {
+    "privacy_body": "यादें और संलग्न फ़ाइलें इस डिवाइस पर ऐप के निजी स्थान में सहेजी जाती हैं। विज्ञापन या विश्लेषण SDK शामिल नहीं हैं। Android का सिस्टम बैकअप बंद है। ऐप हटाने पर इसका स्थानीय डेटा मिट जाता है। बैकअप किसी सुरक्षित जगह रखें। वाक् पहचान डिवाइस पर स्थापित सेवा का उपयोग करती है; उसकी गोपनीयता सेटिंग्स देखें। Amazon की खरीदारी Amazon से संचार करती है। LifeTalea यादें या रिकॉर्डिंग अपलोड नहीं करता।",
+    "backup_notice": "कहानियाँ, प्रतिलिपियाँ, एल्बम और किताबों के मसौदे शामिल हैं। फ़ोटो और रिकॉर्डिंग केवल आपके चुनने पर शामिल की जाती हैं। बिना एन्क्रिप्शन के निर्यात में निजी जानकारी पढ़ी जा सकती है। अपना पासफ़्रेज़ सुरक्षित रखें; उसे वापस नहीं पाया जा सकता। मौजूदा सीमा: हर संग्रह के लिए 32 MiB और हर संलग्न फ़ाइल के लिए 16 MiB। बड़ी लाइब्रेरी के लिए भविष्य का संस्करण चाहिए।",
+    "delete_all": "इस डिवाइस की सभी स्थानीय यादें, एल्बम, रिकॉर्डिंग और किताबों के मसौदे मिटाएँ? यह कार्रवाई वापस नहीं की जा सकती।"
+  },
+  "ja": {
+    "privacy_body": "思い出と添付ファイルは、この端末のアプリ専用領域に保存されます。広告・分析用SDKは使用していません。Androidのシステムバックアップは無効です。アプリを削除すると端末内のアプリデータも削除されます。バックアップを安全な場所に保管してください。音声認識は端末にインストールされたサービスを使用します。そのサービスのプライバシー設定を確認してください。Amazonでの購入はAmazonと通信します。LifeTaleaが思い出や録音をアップロードすることはありません。",
+    "backup_notice": "物語、書き起こし、アルバム、ブックの下書きが含まれます。写真と録音は選択した場合のみ含まれます。暗号化していない書き出しには、読み取れる状態の個人情報が含まれます。パスフレーズは復元できないため、大切に保管してください。現在の上限はアーカイブ全体で32 MiB、添付ファイル1件あたり16 MiBです。より大きなライブラリには今後のバージョンが必要です。",
+    "delete_all": "この端末内のすべての思い出、アルバム、録音、ブックの下書きを削除しますか？この操作は取り消せません。"
+  },
+  "ko": {
+    "privacy_body": "추억과 첨부 파일은 이 기기의 앱 전용 저장 공간에 보관됩니다. 광고나 분석 SDK는 사용하지 않습니다. Android 시스템 백업은 비활성화되어 있습니다. 앱을 삭제하면 로컬 앱 데이터도 삭제됩니다. 백업을 안전한 곳에 보관하세요. 음성 인식은 기기에 설치된 서비스를 사용하므로 해당 서비스의 개인정보 설정을 확인하세요. Amazon 구매 기능은 Amazon과 통신합니다. LifeTalea는 추억이나 녹음을 업로드하지 않습니다.",
+    "backup_notice": "이야기, 녹음의 텍스트, 앨범과 책 초안이 포함됩니다. 사진과 녹음은 선택한 경우에만 포함됩니다. 암호화되지 않은 내보내기에는 읽을 수 있는 개인정보가 포함됩니다. 암호 문구는 복구할 수 없으므로 안전하게 보관하세요. 현재 한도는 전체 보관 파일당 32 MiB, 첨부 파일당 16 MiB입니다. 더 큰 라이브러리는 향후 버전이 필요합니다.",
+    "delete_all": "이 기기의 모든 추억, 앨범, 녹음과 책 초안을 삭제할까요? 이 작업은 되돌릴 수 없습니다."
+  },
+  "zh": {
+    "privacy_body": "回忆和附件保存在此设备的应用专用存储空间中。应用不含广告或分析 SDK。Android 系统备份已停用。卸载应用会删除其本地数据，请将备份保存在安全的地方。语音识别使用设备上安装的服务，请查看该服务的隐私设置。Amazon 购买功能会与 Amazon 通信。LifeTalea 不会上传回忆或录音。",
+    "backup_notice": "备份包含故事、转写文本、相册和回忆册草稿。只有选中时才包含照片和录音。未加密的导出文件包含可读取的私人信息。请妥善保管密码短语，丢失后无法找回。目前每个备份包的总大小上限为 32 MiB，每个附件上限为 16 MiB。更大的资料库需要等待未来版本支持。",
+    "delete_all": "删除此设备上的所有回忆、相册、录音和回忆册草稿？此操作无法撤销。"
+  },
+  "tr": {
+    "privacy_body": "Anılar ve ekler bu cihazda uygulamaya özel alanda saklanır. Reklam veya analiz SDK’sı kullanılmaz. Android sistem yedeklemesi devre dışıdır. Uygulamayı kaldırmak yerel uygulama verilerini siler. Güvenli bir yerde yedek bulundurun. Konuşma tanıma cihazdaki yüklü hizmeti kullanır; bu hizmetin gizlilik ayarlarını inceleyin. Amazon satın alma işlemleri Amazon ile iletişim kurar. LifeTalea anıları veya kayıtları yüklemez.",
+    "backup_notice": "Hikâyeler, konuşma metinleri, albümler ve kitap taslakları dahildir. Fotoğraf ve kayıtlar yalnızca seçildiğinde eklenir. Şifrelenmemiş dışa aktarmalar okunabilir özel bilgiler içerir. Parolanızı güvenli saklayın; geri alınamaz. Güncel sınırlar: arşiv başına 32 MiB ve ek başına 16 MiB. Daha büyük kitaplıklar için gelecekteki bir sürüm gereklidir.",
+    "delete_all": "Bu cihazdaki tüm anılar, albümler, kayıtlar ve kitap taslakları silinsin mi? Bu işlem geri alınamaz."
+  },
+  "id": {
+    "privacy_body": "Kenangan dan lampiran disimpan di ruang privat aplikasi ini pada perangkat. Tidak ada SDK iklan atau analitik. Pencadangan sistem Android dinonaktifkan. Menghapus aplikasi akan menghapus data lokalnya. Simpan cadangan di tempat yang aman. Pengenalan ucapan menggunakan layanan yang terpasang di perangkat; periksa pengaturan privasinya. Pembelian Amazon berkomunikasi dengan Amazon. LifeTalea tidak mengunggah kenangan atau rekaman.",
+    "backup_notice": "Kisah, transkrip, album, dan draf buku disertakan. Foto dan rekaman hanya disertakan jika dipilih. Ekspor yang tidak dienkripsi berisi informasi pribadi yang dapat dibaca. Simpan frasa sandi Anda dengan aman karena tidak dapat dipulihkan. Batas saat ini: 32 MiB per arsip dan 16 MiB per lampiran. Pustaka yang lebih besar memerlukan versi mendatang.",
+    "delete_all": "Hapus semua kenangan, album, rekaman, dan draf buku lokal di perangkat ini? Tindakan ini tidak dapat dibatalkan."
+  }
+}

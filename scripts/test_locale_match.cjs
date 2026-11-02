@@ -1,0 +1,14 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const ts=require(path.join(root,'website/node_modules/typescript'));
+const source=fs.readFileSync(path.join(root,'website/src/locale-match.ts'),'utf8');
+const compiled=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText;
+const exportsObject={};vm.runInNewContext(compiled,{exports:exportsObject,Intl});
+const available=['en-GB','en-US','en-AU','es-ES','es-419','fr-FR','fr-CA','pt-BR','pt-PT','de-DE','ar','hi-IN','ja-JP','zh-Hans','zh-Hant'];
+const cases=[['en-US','en-US'],['en-AU','en-AU'],['es-MX','es-419'],['es-ES','es-ES'],['fr-CA','fr-CA'],['fr-BE','fr-FR'],['pt-PT','pt-PT'],['pt','pt-BR'],['ar-EG','ar'],['hi','hi-IN'],['zh-TW','zh-Hant'],['zh-HK','zh-Hant'],['zh-CN','zh-Hans'],['zh-Hans','zh-Hans'],['../../private','en-GB'],['zu-ZA','en-GB']];
+for(const [preference,expected] of cases)assert.equal(exportsObject.matchLocale([preference],available),expected,preference);
+assert.equal(exportsObject.matchLocale(['zu-ZA','ja-JP'],available),'ja-JP');
+console.log(`${cases.length+1} browser-locale matching cases passed`);

@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_NOT_SUBMISSION_READY",
+  "publisher": "O.Bankole",
+  "supportEmail": "banksmi@mail.com",
+  "title": "LifeTalea - Familjens berättelser och minnen",
+  "shortDescription": "Håll familjehistorier, foton och röstminnen tillsammans i en privat tidning. Skapa album, utforska en tidslinje och spara scrapbook ritningar på din enhet.",
+  "longDescription": "Håll dina ögonblick. Kom ihåg rösterna.\n\nLifeTalea Ge familjehistorier en privat plats på din tablett. Börja med ett foto, några skriftliga linjer eller en röstinspelning. inte LifeTalea Konto krävs.\n\nRädda berättelsen efter fotograferingen\nLägg till bilder, taggar och en valfri plats du anger dig själv. Välj ett år, månad, exakt datum eller okänt datum. Organisera minnen i album och markera favoriter.\n\nGör rum för din röst\nRekord, paus, återuppta och spela en berättad historia. Audio förblir i privat app lagring. Den fria nivån stöder inspelningar upp till tre minuter. Mikrofon tillstånd krävs när du väljer att spela in. Ordfraser stödjer för närvarande engelska. Röstkommandon och talade återspelningar beror på installerade enhetstjänster; touch- och textalternativ förblir tillgängliga.\n\nFölj familjens kapitel\nBrowse sparar minnen i en tidslinje. Sök skriftliga berättelser, taggar och manuellt redigerade transkripter. Skapa scrapbook-design, ordna sidor och lägga till kaptioner.\n\nHåll en kopia du kontrollerar\nSkapa en lokal säkerhetskopia och uttryckligen välja om du ska inkludera foton och inspelningar. Återställer validerar arkivet innan importen. Håll export och passfraser någonstans säkra.\n\nOptionell premie\nPremium är utformad som en enskild inköp för obegränsade album, längre inspelningar, lokala PDF hållsake export och krypterad arkivskapande. Aktuella lokala priser kommer att levereras av Amazon. Existerande berättelser förblir tillgängliga utan Premium.\n\nUtvecklingsstatus\nDenna lista är ett utkast. Automatisk transkription är inte konfigurerad. världsomspännande översättningar, nödvändiga enhetstester och Amazon Inköpsverifiering är ofullständig. Ingen moln synkronisering erbjuds. Publicera inte detta förslag som en färdig produktlista.\n\nUtgivare : O.Bankole\nStöd för: banksmi@mail.com",
+  "featureBullets": [
+    "Spara skriftliga berättelser, foton och lokala ljudinspelningar tillsammans.",
+    "Organisera privata album med taggar, favoriter och närmaste datum.",
+    "Utforska en familjetidslinje och skapa sparade scrapbook utkast.",
+    "Skapa lokala säkerhetskopior med uttryckligen utvalda bilder och ljud.",
+    "Använd touch- och textalternativ när enhetsspråkstjänster inte är tillgängliga."
+  ],
+  "keywords": [
+    "Familjeminnesdagbok",
+    "Rösttidning",
+    "Rekord familjehistorier",
+    "digitala scrapbook",
+    "Privat familjetidning",
+    "minnestidslinjen"
+  ],
+  "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
+  "categoryRecommendation": "Lifestyle > Diaries",
+  "releaseNotes": "Initial utveckling förhandsgranskning. inte godkänts för offentlig upphandling.",
+  "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
+  "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
+  "liveDownloadUrl": null,
+  "screenshotHeadlines": {
+    "home": "Bevara stunderna som betyder något",
+    "albums": "En samling för varje kapitel",
+    "timeline": "Följ din familjs historia",
+    "keepsakes": "Samla berättelser i en minnesbok",
+    "settings": "Spara en kopia som du själv styr över",
+    "editor": "Berätta historien bakom fotot",
+    "voice": "Ge deras röster en plats",
+    "transcript": "Lägg till transkriptioner med egna ord"
+  },
+  "locale": "sv-SE",
+  "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
+  "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
+  "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
+  "targetHash": "1810ec87c5a3eacb2e4d4e002495547243b5d3c75e17dbf5b592096b9092b525"
+}

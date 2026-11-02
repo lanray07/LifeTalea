@@ -1,0 +1,5 @@
+# Inference only; prepare/convert the pinned model with translation-requirements.txt.
+setuptools==65.5.0
+ctranslate2==4.6.0
+sentencepiece==0.2.1
+opencc-python-reimplemented==0.1.7

@@ -24,8 +24,10 @@ class JourneyTest {
     @After fun captureFinalState() { runCatching { capture("qa-last-state") } }
     @Test fun writeFindEditAndOrganiseAFictionalStory() {
         compose.waitUntil(20000) { runCatching { compose.onRoot().fetchSemanticsNode() }.isSuccess }
-        if (compose.onAllNodesWithText("Skip for now").fetchSemanticsNodes().isNotEmpty()) compose.onNodeWithText("Skip for now").performScrollTo().performClick()
-        compose.waitUntil(15000) { compose.onAllNodesWithText("Add a memory").fetchSemanticsNodes().isNotEmpty() }
+        compose.waitUntil(20000) { runCatching { compose.onAllNodesWithText("Skip for now").fetchSemanticsNodes().isNotEmpty() || compose.onAllNodesWithText("Add a memory").fetchSemanticsNodes().isNotEmpty() }.getOrDefault(false) }
+        if (runCatching { compose.onAllNodesWithText("Skip for now").fetchSemanticsNodes().isNotEmpty() }.getOrDefault(false)) compose.onNodeWithText("Skip for now").performScrollTo().performClick()
+        compose.waitUntil(15000) { runCatching { compose.onAllNodesWithText("Add a memory").fetchSemanticsNodes().isNotEmpty() }.getOrDefault(false) }
+        val fullHeight=compose.onRoot().fetchSemanticsNode().boundsInRoot.height
         capture("01-home")
         compose.onNodeWithText("Add a memory").performClick()
         compose.onNodeWithText("Title").performTextInput("The orchard picnic — fictional demo")
@@ -34,7 +36,9 @@ class JourneyTest {
             val input = compose.activity.getSystemService(android.content.Context.INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager
             input.hideSoftInputFromWindow(compose.activity.window.decorView.windowToken, 0)
         }
+        compose.waitUntil(15000) { runCatching { compose.onRoot().fetchSemanticsNode().boundsInRoot.height >= fullHeight-1 }.getOrDefault(false) }
         compose.onNodeWithText("Year").performScrollTo().performClick()
+        compose.onNodeWithText("Year").assertIsSelected()
         compose.onNodeWithText("Event date").performScrollTo().performTextInput("1994")
         compose.onNodeWithText("Tags (comma separated)").performScrollTo().performTextInput("family, summer")
         compose.onNodeWithText("Editable transcript").performScrollTo().performTextInput("Manually entered fictional transcript. No automatic transcription has been performed.")

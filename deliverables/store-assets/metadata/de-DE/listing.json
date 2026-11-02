@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_NOT_SUBMISSION_READY",
+  "publisher": "O.Bankole",
+  "supportEmail": "banksmi@mail.com",
+  "title": "LifeTalea - Familiengeschichten und Erinnerungen",
+  "shortDescription": "Halten Sie familiäre Geschichten, Fotos und Stimmeninnern in einem privaten Zeitschrift zusammen. Erstellen Sie Albums, erkunden Sie eine Zeitraumlinie und speichern Sie Scrapbook-Designs auf Ihrem Gerät.",
+  "longDescription": "Halten Sie die Momente. Erinnern Sie sich an die Stimmen.\n\nLifeTalea Sie geben Familiengeschichten einen privaten Platz auf Ihrem Tablet. Beginnen Sie mit einem Foto, ein paar geschriebenen Zeilen oder einer Stimmenaufzeichnung. nicht LifeTalea Konto ist erforderlich.\n\nRettung der Geschichte nach der Fotografie\nFügen Sie Fotos, Tags und eine optionale Lage hinzuzufügen, die Sie selbst eingeben. Wählen Sie ein Jahr, Monat, genaue Datum oder unbekannte Datum aus. Organisieren Sie Erinnerungen in Albums und markieren Sie Favoriten.\n\nMachen Sie ein Zimmer für Ihre Stimme\nAufzeichnen, Pausen, Wiederholen und spielen eine erzählte Geschichte. Audio bleibt im privaten App-Speicher. Die kostenlose Etage unterstützt Aufnahmen bis zu drei Minuten. Microphone-Erlaubnis wird beantragt, wenn Sie sich für die Aufzeichnung entscheiden. Kommandofrasen unterstützen derzeit Englisch. Stimmkommando und sprachliche Wiedergabe hängen von den installierten Gerätdienste ab; Touch- und Textalternativen bleiben verfügbar.\n\nFolgen Sie den Kapitel Ihrer Familie\nBrowse hat Erinnerungen in einer Timeline gespeichert. Suchen Sie geschriebene Geschichten, Tags und manuell bearbeitete Transcripts. Erstellen Sie Scrapbook-Designs, sortieren Sie Seiten und fügen Sie Kaptionen hinzu.\n\nSpeichern Sie eine Kopie, die Sie kontrollieren\nErstellen Sie eine lokale Backup und wählen Sie ausdrücklich, ob Sie Fotos und Aufzeichnungen enthalten. Restore validiert das Archiv vor der Einfuhr. Halten Sie Exporte und Passformen irgendwo sicher.\n\nOptionspreis\nPremium ist als einmalige Einkauf für unbegrenzte Albums, längere Aufnahmen, lokale PDF bewahren Export und verschlüsselte Archiv-Erstellung. Aktuelle lokale Preise werden von Amazon. Bestehende Geschichten bleiben ohne Premium zugänglich.\n\nEntwicklungsstatus\nDiese Liste ist ein Entwurf. Die automatische Transcription ist nicht konfiguriert. weltweite Übersetzungen, erforderliche Geräte-Tests und Amazon Die Kaufüberprüfung ist unvollständig. Cloud Sync wird nicht angeboten. Veröffentlichen Sie dieses Entwurf nicht als fertige Produktliste.\n\nVeröffentlichung : O.Bankole\nDie Unterstützung : banksmi@mail.com",
+  "featureBullets": [
+    "Speichern Sie geschriebene Geschichten, Fotos und lokale Stimmenaufnahmen zusammen.",
+    "Organisieren Sie private Albums mit Tags, Favoriten und ungefähren Datums.",
+    "Entdecken Sie eine familiäre Timeline und erstellen Sie gespeicherte Scrapbook-Dreams.",
+    "Erstellen Sie lokale Backups mit ausdrücklich ausgewählten Fotos und Audio.",
+    "Verwenden Sie Touch- und Textalternativen, wenn Gerätsprecherdienste nicht verfügbar sind."
+  ],
+  "keywords": [
+    "Familienminneszeitung",
+    "Tageszeitung Voice",
+    "Rekordfamiliengeschichten",
+    "Digitale Scrapbook",
+    "Privater Familienzeitung",
+    "Gedächtnis Timeline"
+  ],
+  "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
+  "categoryRecommendation": "Lifestyle > Diaries",
+  "releaseNotes": "Erste Entwicklungsvorhersage. Nicht zugelassen für öffentliche Einreichung.",
+  "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
+  "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
+  "liveDownloadUrl": null,
+  "screenshotHeadlines": {
+    "home": "Bewahre die Momente, die zählen",
+    "albums": "Eine Sammlung für jedes Kapitel",
+    "timeline": "Folge der Geschichte deiner Familie",
+    "keepsakes": "Sammle Geschichten in einem Erinnerungsbuch",
+    "settings": "Bewahre eine Kopie unter deiner Kontrolle",
+    "editor": "Erzähle die Geschichte hinter dem Foto",
+    "voice": "Gib ihren Stimmen einen Platz",
+    "transcript": "Ergänze Transkripte in deinen eigenen Worten"
+  },
+  "locale": "de-DE",
+  "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
+  "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
+  "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
+  "targetHash": "ca9713f087c262afa1adc1922abac81fc8429ac57a5288e632547e20510ef610"
+}

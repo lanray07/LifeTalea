@@ -3,6 +3,22 @@ import com.lifetalea.app.data.*
 import org.junit.Assert.*
 import org.junit.Test
 class MemoryRulesTest {
+    @Test fun localizedDatesPreservePrecision() {
+        val year=Memory(date="1994",precision="YEAR")
+        assertEquals("١٩٩٤",MemoryRules.formattedDate(year,java.util.Locale.forLanguageTag("ar")))
+        assertEquals("février 2024",MemoryRules.formattedDate(Memory(date="2024-02",precision="MONTH"),java.util.Locale.FRANCE))
+        assertEquals("",MemoryRules.formattedDate(Memory(),java.util.Locale.FRANCE))
+        val day=MemoryRules.formattedDate(Memory(date="2024-02-29",precision="DAY"),java.util.Locale.forLanguageTag("ar"))
+        assertTrue(day.contains('٢'));assertFalse(day.contains('2'))
+    }
+    @Test fun localKeyboardDigitsBecomeCanonicalDates() {
+        listOf("٢٠٢٤-٠٢-٢٩", "۲۰۲۴-۰۲-۲۹", "२०२४-०२-२९", "２０２４-０２-２９").forEach {
+            val canonical = MemoryRules.normaliseDateDigits(it)
+            assertEquals("2024-02-29", canonical)
+            assertTrue(MemoryRules.validDate(canonical, "DAY"))
+        }
+        assertFalse(MemoryRules.validDate(MemoryRules.normaliseDateDigits("٢٠٢٣-٠٢-٢٩"), "DAY"))
+    }
     @Test fun datesDoNotInventPrecision() {
         assertTrue(MemoryRules.validDate("", "UNKNOWN"))
         assertFalse(MemoryRules.validDate("1994", "UNKNOWN"))

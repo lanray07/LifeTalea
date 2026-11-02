@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_NOT_SUBMISSION_READY",
+  "publisher": "O.Bankole",
+  "supportEmail": "banksmi@mail.com",
+  "title": "LifeTalea - Histoires de famille",
+  "shortDescription": "Gardez des histoires familiales, des photos et des souvenirs vocaux ensemble dans un journal privé. Créez des albums, explorez une timeline et sauvez des dessins scrapbook sur votre appareil.",
+  "longDescription": "Gardez les moments. Rappelez-vous les voix\n\nLifeTalea Donnez des histoires familiales un endroit privé sur votre tablette. Commencez par une photo, quelques lignes écrites ou un enregistrement vocal. pas LifeTalea Le compte est nécessaire.\n\nSauvez l'histoire après la photographie\nAjoutez des photos, des tags et un emplacement facultatif que vous entrez vous-même. Choisissez une année, un mois, une date précise ou une date inconnue. Organiser des souvenirs dans des albums et marquer les favoris.\n\nFaites une chambre pour votre voix\nEnregistrer, se reposer, revoir et jouer une histoire parlée. L'audio reste dans le stockage privé de l'application. Le niveau gratuit prend en charge les enregistrements jusqu'à trois minutes. L’autorisation de microphone est demandée lorsque vous choisissez d’enregistrer. Les phrases de commande soutiennent actuellement l'anglais. Les commandes vocales et la reproduction parue dépendent des services de l'appareil installés ; les alternatives touches et textes restent disponibles.\n\nSuivez les chapitres de votre famille\nBrowse a sauvé des souvenirs dans un timeline. Rechercher des histoires écrites, des tags et des transcripts manuellement édités. Créez des dessins scrapbook, arrêtez des pages et ajoutez des captions.\n\nConserver une copie que vous contrôlez\nCréez une sauvegarde locale et choisissez explicitement si vous devez inclure des photos et des enregistrements. La restauration valide l’archive avant l’importation. Gardez les exportations et les phrase secrètes en toute sécurité.\n\nLe prix optionnel\nPremium est conçu comme un achat unique pour des albums illimités, des enregistrements plus longs, local PDF Conserver l’exportation et la création d’archives cryptées. Les prix locaux actuels seront fournis par Amazon. Les histoires existantes restent accessibles sans Premium.\n\nStatut de développement\nCette liste est un projet. La transcription automatique n’est pas configurée. des traductions mondiales, des tests de dispositifs nécessaires et Amazon La vérification d’achat est incomplète. Aucune synchronisation cloud n’est proposée. Ne pas publier ce projet en tant que liste de produits finis.\n\nÉditeur : O.Bankole\nLe soutien : banksmi@mail.com",
+  "featureBullets": [
+    "Enregistrer des histoires écrites, des photos et des enregistrements vocaux locaux ensemble.",
+    "Organiser des albums privés avec des tags, des favorites et des dates approximatives.",
+    "Explorez une timeline familiale et créez des dessins scrapbook sauvés.",
+    "Créer des sauvegardes locales avec des photos et audio explicitement sélectionnées.",
+    "Utilisez des alternatives touches et texte lorsque les services de discours du dispositif ne sont pas disponibles."
+  ],
+  "keywords": [
+    "Journal de la mémoire familiale",
+    "Journal de la Voix",
+    "Les histoires familiales record",
+    "Le scrapbook numérique",
+    "Journal familial privé",
+    "Timeline mémoire"
+  ],
+  "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
+  "categoryRecommendation": "Lifestyle > Diaries",
+  "releaseNotes": "Prévisions de développement initiales. n’est pas approuvée pour la soumission publique.",
+  "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
+  "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
+  "liveDownloadUrl": null,
+  "screenshotHeadlines": {
+    "home": "Gardez les moments qui comptent",
+    "albums": "Une collection pour chaque chapitre",
+    "timeline": "Retrouvez le fil de votre histoire familiale",
+    "keepsakes": "Réunissez vos récits dans un livre de souvenirs",
+    "settings": "Gardez une copie que vous contrôlez",
+    "editor": "Racontez l’histoire derrière la photo",
+    "voice": "Faites une place à leur voix",
+    "transcript": "Ajoutez une transcription avec vos propres mots"
+  },
+  "locale": "fr-CA",
+  "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
+  "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
+  "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
+  "targetHash": "80ed225a8acf3a4ebd676a94f11e71d7a13bb006de92e83f90b118cecd090ff1"
+}

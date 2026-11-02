@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_NOT_SUBMISSION_READY",
+  "publisher": "O.Bankole",
+  "supportEmail": "banksmi@mail.com",
+  "title": "LifeTalea - Aile hikâyeleri ve anılar",
+  "shortDescription": "Aile hikayelerini, fotoğraflarını ve ses anılarını özel bir dergide bir araya getirin. Albümler oluşturun, bir zaman çizgisini keşfedin ve cihazınızda scrapbook çizimlerini kaydedin.",
+  "longDescription": "Bu anları tutun. Sesleri hatırlayın.\n\nLifeTalea Aile hikayeleri tabletinizde özel bir yer verin. Bir fotoğraf, birkaç yazılı çizgi veya bir ses kaydı ile başlayın. Hayır LifeTalea Hesap gerektirir.\n\nFotoğrafın arkasındaki hikayeyi kurtar\nFotoğraflar, etiketler ve kendiniz girdiğiniz seçmeli bir yer ekleyin. Bir yıl, ay, doğru tarih veya bilinmeyen tarih seçin. Anılarınızı albümlere yerleştirin ve favorileri işaretleyin.\n\nSesiniz için oda yapın\nKaydetmek, dinlenmek, tekrarlamak ve konuşulan bir hikaye oynamak. Audio özel uygulama depolama alanında kalır. Ücretsiz seviye, en fazla 3 dakikalık kayıtları destekler. Mikrofon izni kaydetmeyi seçtiğinizde talep edilir. Komut cümleleri şu anda İngilizce'yi destekler. Ses komutları ve konuşulan oynatma, yüklü cihaz hizmetlerine bağlıdır; dokunmatik ve metin alternatifleri mevcut kalır.\n\nAilenizdeki bölümleri takip edin\nBrowse bir zaman çizgisinde anıları kaydetti. Yazılı hikayeler, etiketler ve manuel olarak düzenlenmiş transcriptler aramak. Scrapbook çerçeveleri oluşturun, sayfaları düzenleyin ve kapaklar ekleyin.\n\nKontrol ettiğiniz bir kopyayı saklayın\nYerel bir yedekleme oluşturun ve açıkça fotoğrafları ve kayıtları içereceklerini seçin. Restore, ithalat öncesi dosyayı doğrulamaktadır. İhracat ve parolaları bir yerde güvende tutun.\n\nOpsiyonel Ödül\nPremium, sınırsız albümler, uzun kayıtlar, yerel kayıtlar için tek seferlik bir satın alma olarak tasarlanmıştır. PDF Giriş ve şifreli arşiv oluşturma. Mevcut yerel fiyatlar sağlanacak Amazon. Mevcut hikayeler Premium olmadan erişilebilir kalır.\n\nGelişme Durumu\nBu liste bir tasarıktır. Otomatik transcription yapılandırılmamıştır. Dünya çapında çeviriler, gerekli cihaz testleri ve Amazon Satın alma kontrolü eksiktir. Hiçbir bulut senkronizasyonu sunulmamaktadır. Bu projeyi bitmiş bir ürün listesi olarak yayınlamayın.\n\nYayıncı : O.Bankole\nDestek için : banksmi@mail.com",
+  "featureBullets": [
+    "Yazılı hikayeleri, fotoğrafları ve yerel ses kayıtlarını bir araya getirin.",
+    "Özel albümler, etiketler, favori ve yaklaşımlı tarihler ile düzenleyin.",
+    "Bir aile zaman çizgisini keşfedin ve kaydedilen scrapbook çerçeveleri oluşturun.",
+    "Açıkça seçilmiş fotoğraflar ve ses ile yerel yedekleme oluşturun.",
+    "Dokunmatik ve metin alternatifleri kullanın, cihaz konuşma hizmetleri mevcut değilse."
+  ],
+  "keywords": [
+    "Aile Anıtı Dergisi",
+    "Ses Gazetesi",
+    "Rekor Aile Hikayeleri",
+    "Digital Scrapbook Hakkında",
+    "Özel Aile Dergisi",
+    "Hafıza Zamanlama"
+  ],
+  "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
+  "categoryRecommendation": "Lifestyle > Diaries",
+  "releaseNotes": "Başlangıç geliştirme önizlemesi. Toplumsal başvuru için onaylanmamıştır.",
+  "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
+  "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
+  "liveDownloadUrl": null,
+  "screenshotHeadlines": {
+    "home": "Değer verdiğiniz anları saklayın",
+    "albums": "Her bölüm için bir koleksiyon",
+    "timeline": "Ailenizin zaman içindeki hikâyesini izleyin",
+    "keepsakes": "Hikâyeleri bir anı kitabında birleştirin",
+    "settings": "Kontrolü sizde olan bir kopya saklayın",
+    "editor": "Fotoğrafın ardındaki hikâyeyi yazın",
+    "voice": "Sevdiklerinizin sesine yer açın",
+    "transcript": "Kayıt metinlerini kendi sözlerinizle ekleyin"
+  },
+  "locale": "tr-TR",
+  "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
+  "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
+  "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
+  "targetHash": "585ee2867b7b5ca02f748cd5434c370cc75a0517599a1cb7d9dd5b98993cb651"
+}

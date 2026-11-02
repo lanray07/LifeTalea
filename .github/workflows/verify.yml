@@ -42,5 +42,11 @@ jobs:
         env:
           NEXT_TELEMETRY_DISABLED: '1'
       - run: python -m unittest discover -s tests -v
-      - run: python scripts/localize.py validate
+      - run: node scripts/test_locale_match.cjs
+      - run: node scripts/test_website_review_gate.cjs
+      - run: python scripts/localize.py validate --strict
+      - run: python scripts/localize.py check-release
+      - run: python scripts/validate_collateral.py
+      - run: python -m pip install Pillow==12.2.0
+      - run: python scripts/validate_localized_screenshots.py
       - run: python scripts/check_website.py

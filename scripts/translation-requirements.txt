@@ -1,0 +1,8 @@
+# Development-only local translation tools; never included in the app.
+setuptools==65.5.0
+ctranslate2==4.6.0
+transformers==4.51.3
+sentencepiece==0.2.1
+torch==2.6.0
+huggingface-hub==0.30.2
+opencc-python-reimplemented==0.1.7

@@ -76,6 +76,20 @@ abstract class LifeDatabase : RoomDatabase() {
 }
 
 object MemoryRules {
+    fun formattedDate(memory: Memory, locale: java.util.Locale): String = runCatching {
+        val decimal = java.time.format.DecimalStyle.of(locale)
+        when (memory.precision) {
+            "YEAR" -> java.text.NumberFormat.getIntegerInstance(locale).apply { isGroupingUsed = false }.format(memory.date.toInt())
+            "MONTH" -> java.time.YearMonth.parse(memory.date).format(java.time.format.DateTimeFormatter.ofPattern("LLLL yyyy",locale).withDecimalStyle(decimal))
+            "DAY" -> LocalDate.parse(memory.date).format(java.time.format.DateTimeFormatter.ofLocalizedDate(java.time.format.FormatStyle.MEDIUM).withLocale(locale).withDecimalStyle(decimal))
+            else -> ""
+        }
+    }.getOrDefault(memory.date)
+    /** Dates remain ISO in storage, while accepting decimal digits from local keyboards. */
+    fun normaliseDateDigits(input: String): String = input.map { character ->
+        val digit = Character.digit(character, 10)
+        if (digit >= 0) ('0'.code + digit).toChar() else character
+    }.joinToString("")
     fun validDate(date: String, precision: String): Boolean = runCatching {
         when (precision) {
             "UNKNOWN" -> require(date.isEmpty())

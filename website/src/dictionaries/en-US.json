@@ -1,0 +1,325 @@
+{
+  "ui": {
+    "skip": "Skip to content",
+    "mainNavigation": "Main navigation",
+    "features": "Features",
+    "privacy": "Privacy",
+    "support": "Support",
+    "languages": "Languages",
+    "pricing": "Pricing",
+    "faq": "Frequently asked questions",
+    "contact": "Contact",
+    "language": "Language",
+    "deviceLanguage": "Use browser language",
+    "footerNote": "In development. No account required.",
+    "brandNotice": "Working brand pending clearance",
+    "related": "Explore the next chapter",
+    "previewNotice": "Translation draft. Native-language review pending.",
+    "chooseLanguage": "Choose your language",
+    "home": "Home"
+  },
+  "home": {
+    "titleFirst": "The little moments.",
+    "titleSecond": "The stories that stay.",
+    "subtitle": "A private place for photographs, voices and family stories.",
+    "explore": "Explore LifeTalea",
+    "imageAlt": "An open memory book with a golden bookmark and an olive branch",
+    "waysLabel": "Ways to preserve",
+    "personalTitle": "Keep it personal",
+    "personalBody": "Bring together photographs, recordings and stories in one private family journal.",
+    "personalLink": "Start with one memory",
+    "voiceTitle": "Make room for their voice",
+    "voiceBody": "Capture voices, memories and the details that bring a story to life.",
+    "voiceLink": "Explore voice stories",
+    "keepsakeTitle": "A keepsake to hold onto",
+    "keepsakeBody": "Build a lasting collection of your family’s stories to enjoy now and in years to come.",
+    "keepsakeLink": "Discover keepsakes",
+    "privacyTitle": "Some things are just for you.",
+    "privacyBody": "No public feed. No required account. Memories stay on your device unless you choose to export them.",
+    "privacyLink": "Read our privacy approach",
+    "storeLink": "View on Amazon Appstore",
+    "releaseNote": "Not yet published. Device validation, native-language review and Amazon purchasing verification are in progress.",
+    "metaTitle": "LifeTalea — Family stories and voice memories",
+    "metaDescription": "A private place for photographs, voices and family stories. Explore the LifeTalea development preview."
+  },
+  "articles": {
+    "features": {
+      "title": "A home for the stories behind your photographs",
+      "summary": "Explore the LifeTalea development preview: written memories, private photographs, voice stories, albums and keepsakes.",
+      "sections": [
+        {
+          "title": "Start with one moment",
+          "body": "Write a title and a few lines. Add an exact date, an approximate year or no date at all. Tags, favorites and albums help you find the story again."
+        },
+        {
+          "title": "Photographs and voices, together",
+          "body": "Import photographs using your device’s document picker. Record a voice story and keep it beside the written memory. Media is copied into private app storage."
+        },
+        {
+          "title": "Make a collection your own",
+          "body": "Create scrapbook drafts from saved memories. Arrange pages, add captions and preview your collection. PDF export is a Premium feature; purchasing still needs Amazon test verification."
+        }
+      ]
+    },
+    "family-memory-journal": {
+      "title": "Preserve the details only your family knows",
+      "summary": "A family memory journal gives context to photographs: who was there, what happened, and why the moment mattered.",
+      "sections": [
+        {
+          "title": "Ask a small question",
+          "body": "Instead of starting with a whole life story, ask about one meal, one journey or one place. A short answer is a valuable beginning. Let the storyteller choose what feels comfortable."
+        },
+        {
+          "title": "Keep uncertainty honest",
+          "body": "Old photographs rarely come with perfect dates. LifeTalea accepts a year, month, exact date or unknown date. You can add a location yourself without granting location access."
+        },
+        {
+          "title": "Preserve a second copy",
+          "body": "Local storage keeps memories close, but a device can be lost. Export a backup and keep it in a location you control. Check the archive before deleting an original."
+        }
+      ]
+    },
+    "voice-story-recording": {
+      "title": "Make room for their voice",
+      "summary": "Capture the pauses, laughter and familiar expressions that a written story cannot always hold.",
+      "sections": [
+        {
+          "title": "Record with care",
+          "body": "Ask the speaker’s permission. Find a quiet space and make a short test recording. Save a memory first, then choose Record a story. Pause or resume whenever you need."
+        },
+        {
+          "title": "On your device",
+          "body": "LifeTalea saves AAC audio in M4A files in private app storage. Leaving the app stops and saves the recording. Free recordings are limited to three minutes; Premium extends that limit, subject to storage."
+        },
+        {
+          "title": "Check your tablet",
+          "body": "Recording requires a working microphone and permission. Speech commands use an installed recognition service and may not be available on Fire tablets. Touch controls remain available."
+        }
+      ]
+    },
+    "voice-transcription": {
+      "title": "A written companion to a spoken memory",
+      "summary": "Transcription is not configured in the current LifeTalea build. Audio recording and manual transcript editing remain available.",
+      "sections": [
+        {
+          "title": "What works today",
+          "body": "Open a memory and edit its transcript field. You can type a transcript or paste text you already have. Corrections are stored locally beside the original recording."
+        },
+        {
+          "title": "What remains before release",
+          "body": "Recorded-file transcription needs a compatible engine, supported-language verification and end-to-end testing. LifeTalea does not present invented text as a transcript and does not send recordings to a cloud provider."
+        },
+        {
+          "title": "Separate services",
+          "body": "Android speech recognition for commands is different from transcribing a saved recording. A device having one capability does not establish support for the other."
+        }
+      ]
+    },
+    "digital-scrapbook": {
+      "title": "Turn a collection into a chapter",
+      "summary": "Bring written memories and photographs into saved scrapbook drafts.",
+      "sections": [
+        {
+          "title": "Choose the moments",
+          "body": "Create a scrapbook and choose memories from your library. Each page refers to a saved memory, keeping its story and photographs together."
+        },
+        {
+          "title": "Find the right rhythm",
+          "body": "Move pages up or down, select a story or photograph layout, and add a caption. Save your captions before previewing. A deleted source memory is clearly marked so you can repair the draft."
+        },
+        {
+          "title": "Keep it private",
+          "body": "Scrapbook drafts are local. Creating a scrapbook never publishes it. Review any exported document before you decide to share it."
+        }
+      ]
+    },
+    "family-timeline": {
+      "title": "Remember how the chapters connect",
+      "summary": "Explore saved memories in date order, including those with approximate and unknown dates.",
+      "sections": [
+        {
+          "title": "Follow the years",
+          "body": "The timeline sorts known dates from newest to oldest and places undated stories afterwards. Search for a phrase, select an album or filter by year."
+        },
+        {
+          "title": "A date can change",
+          "body": "Family research often reveals a new detail. Edit the event date and precision in the memory editor; the timeline uses the updated information."
+        },
+        {
+          "title": "No invented history",
+          "body": "The timeline uses only stories you save. LifeTalea does not populate your library with fabricated family events."
+        }
+      ]
+    },
+    "keepsake-books": {
+      "title": "A keepsake to hold onto",
+      "summary": "Create a local PDF from a scrapbook’s selected memories, photographs and captions.",
+      "sections": [
+        {
+          "title": "Choose what to include",
+          "body": "Give the book a cover title. Select A4 or Letter paper. Locations and transcripts are excluded by default and can be included when appropriate."
+        },
+        {
+          "title": "Review before sharing",
+          "body": "PDFs are generated on the device through Android’s PDF API. Long stories continue onto extra pages. Audio is not embedded in printed keepsakes. Review typography and photographs in your PDF viewer before printing."
+        },
+        {
+          "title": "Development status",
+          "body": "PDF generation is implemented and under device validation. The Premium export control requires a verified Amazon entitlement. Live billing is not yet verified."
+        }
+      ]
+    },
+    "offline-memory-journal": {
+      "title": "Your memories, even without a connection",
+      "summary": "LifeTalea is designed around local storage and touch controls, without a mandatory account.",
+      "sections": [
+        {
+          "title": "Keep creating offline",
+          "body": "Written memories, albums, imported photographs, saved recordings, timeline browsing and scrapbook drafts use local data. PDF generation does not require an external document service."
+        },
+        {
+          "title": "Know the boundaries",
+          "body": "Purchasing requires Amazon services. Device speech recognition may require internet. Saved-file transcription is unavailable in this build. No cloud synchronisation is implemented."
+        },
+        {
+          "title": "Backups are your choice",
+          "body": "Use the document picker to save an archive where you choose. If you select a cloud-backed document provider, that provider handles the exported file under its own privacy terms."
+        }
+      ]
+    },
+    "fire-tablet-compatibility": {
+      "title": "Built with Fire tablets in mind",
+      "summary": "A native Kotlin and Jetpack Compose application with no required Google Play Services.",
+      "sections": [
+        {
+          "title": "Target platform",
+          "body": "The minimum supported Android API is 26. This is a technical minimum, not a promise that every device is certified. Fire TV remote navigation is outside the current scope."
+        },
+        {
+          "title": "Device testing",
+          "body": "A connected KFTRWI device reporting Android API 28 is available for development testing. The release report records actual tests; additional Fire sizes and operating-system versions remain to be checked."
+        },
+        {
+          "title": "Voice varies by device",
+          "body": "A microphone supports recording only when permission and hardware are available. Recognition and spoken feedback also need compatible installed services. Touch and text alternatives are always part of the design."
+        }
+      ]
+    },
+    "languages": {
+      "title": "A journal that can feel like home",
+      "summary": "The development app has a 22-locale translation matrix covering 17 priority languages. Native-language review is still required.",
+      "sections": [
+        {
+          "title": "The language plan",
+          "body": "Targets include regional English, Spanish, French and Portuguese, German, Italian, Dutch, Polish, Swedish, Japanese, Hindi, Arabic, Turkish, Indonesian, Korean and Simplified and Traditional Chinese."
+        },
+        {
+          "title": "Quality before a language claim",
+          "body": "Translations must pass placeholder checks, layout tests and review. Store languages, app languages, distribution countries, speech recognition, spoken feedback and transcription each have separate support matrices."
+        },
+        {
+          "title": "Your words stay yours",
+          "body": "Changing the interface language does not translate personal memories or recordings. Unreviewed website translations are available in local preview only; production requires review."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Keep the memories. Choose the extras.",
+      "summary": "A free journal with an optional one-time Premium purchase. Purchasing is not live in this development preview.",
+      "sections": [
+        {
+          "title": "Free",
+          "body": "Up to three albums, written memories, photographs, a timeline, scrapbook drafts and voice recordings up to three minutes. Saved written memories are not capped."
+        },
+        {
+          "title": "LifeTalea Premium",
+          "body": "Planned one-time entitlement: unlimited albums, longer voice recordings, PDF keepsake exports and encrypted local backup. The proposed UK test price is £4.99; the app will show the actual local price from Amazon when configured."
+        },
+        {
+          "title": "Your existing stories remain accessible",
+          "body": "Premium availability does not lock you out of existing memories. Basic backup and restore remain available. Cloud transcription with ongoing costs is not included in a one-time price promise."
+        }
+      ]
+    },
+    "faq": {
+      "title": "A few things worth knowing",
+      "summary": "Practical answers about privacy, recordings, family stories and local preservation.",
+      "sections": [
+        {
+          "title": "Do I need an account?",
+          "body": "Core local features require no LifeTalea account. Amazon purchasing uses the account and services provided by the Amazon Appstore."
+        },
+        {
+          "title": "How do I organize old photographs?",
+          "body": "Begin with a small album and one photograph. Add names and context you know, use approximate dates when needed, and ask a relative about one detail at a time."
+        },
+        {
+          "title": "Can I record my parents’ life stories?",
+          "body": "Yes, with their permission and a compatible microphone. Start with a brief topic and check playback. Do not rely on a single device as your only copy."
+        },
+        {
+          "title": "Can I transcribe recordings?",
+          "body": "Automatic saved-file transcription is unavailable in the current build. You can add and edit a transcript manually."
+        },
+        {
+          "title": "Does LifeTalea sync between devices?",
+          "body": "No cloud sync is implemented. Local archive export and restore are the preservation tools currently provided."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy starts with where a story lives",
+      "summary": "Development privacy notice from O.Bankole. Contact banksmi@mail.com. Legal review remains required before public release.",
+      "sections": [
+        {
+          "title": "Memories and media",
+          "body": "Stories, transcripts, photographs, audio and scrapbook drafts stay in private app storage by default. LifeTalea does not require an account, collect location automatically or include advertising and analytics SDKs. Android automatic backup is disabled."
+        },
+        {
+          "title": "Choices that involve other services",
+          "body": "Speech recognition uses your installed speech service, which may process speech over a network. It is activated only through push-to-talk with a disclosure. Amazon purchasing communicates with Amazon. Exporting to a cloud document provider shares the selected archive with that provider."
+        },
+        {
+          "title": "Deletion and retention",
+          "body": "You can delete individual memories and attachments or all local library data in Settings. Uninstalling removes local app data. Exported files are separate copies that you manage yourself. Purchase records are retained by Amazon under its policies."
+        },
+        {
+          "title": "Security limits",
+          "body": "Private app storage relies on device protections; the local database does not have a separate application encryption key. Optional encrypted archives use a passphrase. There is no claim of end-to-end encryption or a completed legal compliance assessment."
+        }
+      ]
+    },
+    "support": {
+      "title": "A little help with your next chapter",
+      "summary": "LifeTalea is in development. These steps cover the local tools currently implemented.",
+      "sections": [
+        {
+          "title": "A recording will not start",
+          "body": "Check microphone permission and free storage. Save the memory before attaching audio. If recognition is unavailable, use the written controls; speech commands and audio recording are separate capabilities."
+        },
+        {
+          "title": "Keep a safe copy",
+          "body": "Open Settings, choose whether to include photographs and audio, then Create backup. Store the archive somewhere safe. Restore validates the archive and shows a preview before importing."
+        },
+        {
+          "title": "A PDF or archive will not save",
+          "body": "Try a writable folder with enough free storage. Check that your chosen document provider is available. A failed export should leave source memories intact."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Get in touch",
+      "summary": "Contact O.Bankole for LifeTalea support at banksmi@mail.com.",
+      "sections": [
+        {
+          "title": "Protect your family’s privacy",
+          "body": "When reporting an issue, describe the device, operating system, app version and steps. Avoid sending private stories, photographs, recordings or backup passphrases."
+        },
+        {
+          "title": "Support availability",
+          "body": "Write to banksmi@mail.com."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fr":{"first":"Les petits instants.","second":"Les histoires qui restent.","notice":"Brouillon de traduction. Révision par des locuteurs natifs en attente.","title":"LifeTalea - Histoires de famille","passport":"passeport","passphrase":"phrase secrète"},
+  "es":{"first":"Los pequeños momentos.","second":"Las historias que perduran.","notice":"Traducción provisional. Pendiente de revisión lingüística.","title":"LifeTalea - Historias y recuerdos familiares","passport":"pasaporte","passphrase":"frase de contraseña"},
+  "de":{"first":"Die kleinen Momente.","second":"Die Geschichten, die bleiben.","notice":"Übersetzungsentwurf. Muttersprachliche Prüfung ausstehend.","title":"LifeTalea - Familiengeschichten und Erinnerungen","passport":"Reisepass","passphrase":"Passphrase"},
+  "it":{"first":"I piccoli momenti.","second":"Le storie che restano.","notice":"Bozza di traduzione. Revisione madrelingua in attesa.","title":"LifeTalea - Storie e ricordi di famiglia","passport":"passaporto","passphrase":"frase segreta"},
+  "pt":{"first":"Os pequenos momentos.","second":"As histórias que ficam.","notice":"Tradução provisória. Revisão por falantes nativos pendente.","title":"LifeTalea - Histórias e memórias da família","passport":"passaporte","passphrase":"frase secreta"},
+  "nl":{"first":"De kleine momenten.","second":"De verhalen die blijven.","notice":"Vertaalconcept. Controle door moedertaalsprekers volgt.","title":"LifeTalea - Familieherinneringen en verhalen","passport":"paspoort","passphrase":"wachtzin"},
+  "pl":{"first":"Małe chwile.","second":"Historie, które zostają.","notice":"Wersja robocza tłumaczenia. Oczekuje na weryfikację językową.","title":"LifeTalea - Rodzinne historie i wspomnienia","passport":"paszport","passphrase":"hasło szyfrujące"},
+  "sv":{"first":"De små stunderna.","second":"Berättelserna som stannar kvar.","notice":"Översättningsutkast. Språkgranskning återstår.","title":"LifeTalea - Familjens berättelser och minnen","passport":"passet","passphrase":"lösenfrasen"},
+  "ar":{"first":"اللحظات الصغيرة.","second":"والقصص التي تبقى.","notice":"مسودة ترجمة. المراجعة اللغوية لم تكتمل بعد.","title":"LifeTalea - قصص العائلة وذكرياتها","passport":"جواز السفر","passphrase":"عبارة المرور"},
+  "hi":{"first":"छोटे-छोटे पल।","second":"हमेशा साथ रहने वाली कहानियाँ।","notice":"अनुवाद का मसौदा। मातृभाषी समीक्षा अभी बाकी है।","title":"LifeTalea - परिवार की कहानियाँ और यादें","passport":"पासपोर्ट","passphrase":"पासफ़्रेज़"},
+  "ja":{"first":"何気ないひととき。","second":"いつまでも残る物語。","notice":"翻訳の下書きです。ネイティブによる確認は未完了です。","title":"LifeTalea - 家族の物語と思い出","passport":"パスポート","passphrase":"パスフレーズ"},
+  "ko":{"first":"작고 소중한 순간.","second":"오래도록 남는 이야기.","notice":"번역 초안입니다. 원어민 검토가 아직 필요합니다.","title":"LifeTalea - 가족의 이야기와 추억","passport":"여권","passphrase":"암호 문구"},
+  "zh":{"first":"珍藏点滴时光。","second":"留住动人故事。","notice":"翻译草稿，尚待母语审校。","title":"LifeTalea - 家庭故事与回忆","passport":"护照","passphrase":"密码短语"},
+  "tr":{"first":"Küçük anlar.","second":"Hep kalan hikâyeler.","notice":"Çeviri taslağı. Ana dil incelemesi bekleniyor.","title":"LifeTalea - Aile hikâyeleri ve anılar","passport":"pasaport","passphrase":"parola"},
+  "id":{"first":"Momen-momen kecil.","second":"Kisah yang selalu melekat.","notice":"Draf terjemahan. Masih menunggu tinjauan penutur asli.","title":"LifeTalea - Kisah dan kenangan keluarga","passport":"paspor","passphrase":"frasa sandi"}
+}
