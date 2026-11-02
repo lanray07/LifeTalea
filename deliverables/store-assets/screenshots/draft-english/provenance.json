@@ -1,0 +1,28 @@
+{
+  "status": "DRAFT_TECHNICAL_REVIEW_ONLY",
+  "source": "Actual physical KFTRWI Compose captures from the passed device suite",
+  "locale": "English source UI; UK spelling shared by the current binary",
+  "dimensions": [
+    1920,
+    1200
+  ],
+  "composition": "108px headline band plus unaltered 1920x1092 actual app capture",
+  "doesNotComplete": "Eight-shot catalogue, native linguistic approval, worldwide screenshots or release approval",
+  "shots": [
+    {
+      "name": "home",
+      "source": "01-home.png",
+      "headline": "Family memories, kept together"
+    },
+    {
+      "name": "albums",
+      "source": "02-albums.png",
+      "headline": "A collection for every chapter"
+    },
+    {
+      "name": "scrapbook",
+      "source": "06-scrapbook.png",
+      "headline": "Bring your stories into a keepsake"
+    }
+  ]
+}

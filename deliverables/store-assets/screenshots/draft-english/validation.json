@@ -1,0 +1,32 @@
+[
+  {
+    "file": "home.jpg",
+    "dimensions": [
+      1920,
+      1200
+    ],
+    "format": "JPEG",
+    "status": "TECHNICAL_AND_VISUAL_DRAFT_REVIEW_PASS",
+    "releaseApproved": false
+  },
+  {
+    "file": "albums.jpg",
+    "dimensions": [
+      1920,
+      1200
+    ],
+    "format": "JPEG",
+    "status": "TECHNICAL_AND_VISUAL_DRAFT_REVIEW_PASS",
+    "releaseApproved": false
+  },
+  {
+    "file": "scrapbook.jpg",
+    "dimensions": [
+      1920,
+      1200
+    ],
+    "format": "JPEG",
+    "status": "TECHNICAL_AND_VISUAL_DRAFT_REVIEW_PASS",
+    "releaseApproved": false
+  }
+]
