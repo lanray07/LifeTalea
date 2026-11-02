@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lifetalea.app.MemoryRulesTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-02T15:58:10.583Z" hostname="DESKTOP-MAKK9CA" time="0.063">
+  <properties/>
+  <testcase name="datesDoNotInventPrecision" classname="com.lifetalea.app.MemoryRulesTest" time="0.015"/>
+  <testcase name="unknownDatesAppearLast" classname="com.lifetalea.app.MemoryRulesTest" time="0.027"/>
+  <testcase name="searchIncludesTranscriptAndTags" classname="com.lifetalea.app.MemoryRulesTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

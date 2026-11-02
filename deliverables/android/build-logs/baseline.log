@@ -1,0 +1,138 @@
+> Task :wrapper
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugBuildConfig
+> Task :app:checkDebugAarMetadata
+> Task :app:generateDebugResValues
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:mergeDebugResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:javaPreCompileDebug
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeDebugJniLibFolders
+> Task :app:processDebugManifestForPackage
+> Task :app:mergeExtDexDebug
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugNativeLibs
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
+
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:processDebugResources
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/LibraryViewModel.kt:41:197 Unresolved reference 'voice_story'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:4:12 Unresolved reference 'amazon'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:5:12 Unresolved reference 'amazon'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:10:53 Unresolved reference 'PurchasingListener'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:20:9 Cannot infer type for this parameter. Specify it explicitly.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:20:23 Unresolved reference 'PurchasingService'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:20:94 Cannot infer type for this parameter. Specify it explicitly.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:20:94 Not enough information to infer type argument for 'T'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:24:9 Cannot infer type for this parameter. Specify it explicitly.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:24:23 Unresolved reference 'PurchasingService'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:24:56 Unresolved reference 'PurchasingService'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:24:102 Unresolved reference 'PurchasingService'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:25:14 Cannot infer type for this parameter. Specify it explicitly.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:25:14 Not enough information to infer type argument for 'T'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:27:67 Cannot infer type for this parameter. Specify it explicitly.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:27:81 Unresolved reference 'PurchasingService'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:27:115 Cannot infer type for this parameter. Specify it explicitly.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:27:115 Not enough information to infer type argument for 'T'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:31:9 Cannot infer type for this parameter. Specify it explicitly.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:31:23 Unresolved reference 'PurchasingService'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:31:68 Cannot infer type for this parameter. Specify it explicitly.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:31:68 Not enough information to infer type argument for 'T'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:35:13 Unresolved reference 'PurchasingService'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:39:5 'onUserDataResponse' overrides nothing.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:39:47 Unresolved reference 'UserDataResponse'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:40:22 Unresolved reference 'requestStatus'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:40:39 Unresolved reference 'UserDataResponse'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:41:31 Unresolved reference 'userData'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:45:5 'onProductDataResponse' overrides nothing.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:45:50 Unresolved reference 'ProductDataResponse'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:46:32 Unresolved reference 'productData'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:47:27 Unresolved reference 'requestStatus'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:47:44 Unresolved reference 'ProductDataResponse'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:47:101 Unresolved reference 'productType'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:47:116 Unresolved reference 'ProductType'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:48:65 Unresolved reference 'price'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:50:5 'onPurchaseResponse' overrides nothing.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:50:47 Unresolved reference 'PurchaseResponse'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:51:32 Unresolved reference 'receipt'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:52:22 Unresolved reference 'requestStatus'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:52:39 Unresolved reference 'PurchaseResponse'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:52:111 Unresolved reference 'sku'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:52:133 Unresolved reference 'productType'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:52:148 Unresolved reference 'ProductType'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:53:28 Unresolved reference 'isCanceled'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:53:49 Unresolved reference 'userData'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:54:38 Unresolved reference 'PurchasingService'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:54:82 Unresolved reference 'receiptId'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:54:93 Unresolved reference 'FulfillmentResult'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:57:5 'onPurchaseUpdatesResponse' overrides nothing.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:57:54 Unresolved reference 'PurchaseUpdatesResponse'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:58:22 Unresolved reference 'requestStatus'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:58:39 Unresolved reference 'PurchaseUpdatesResponse'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:59:18 Unresolved reference 'receipts'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:59:36 Unresolved reference 'it'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:59:53 Unresolved reference 'it'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:59:71 Unresolved reference 'ProductType'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:60:40 Unresolved reference 'it'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:60:66 Unresolved reference 'it'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:60:90 Unresolved reference 'userData'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:62:22 Unresolved reference 'hasMore'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:62:33 Unresolved reference 'PurchasingService'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/billing/AmazonBilling.kt:63:56 Unresolved reference 'userData'.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/features/KeepsakePdf.kt:16:23 Cannot infer type for this parameter. Specify it explicitly.
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/features/KeepsakePdf.kt:16:23 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
+fun <T : Closeable?, R> T.use(block: (T) -> R): R
+    [R|Contract description]
+     <
+        CallsInPlace(block, EXACTLY_ONCE)
+    >
+e: file:///D:/App%20Projects/LifeTalea/android/app/src/main/java/com/lifetalea/app/ui/Design.kt:21:52 Unresolved reference 'operation_failed'.
+
+> Task :app:compileDebugKotlin FAILED
+
+[Incubating] Problems report is available at: file:///D:/App%20Projects/LifeTalea/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 5m 38s
+31 actionable tasks: 31 executed

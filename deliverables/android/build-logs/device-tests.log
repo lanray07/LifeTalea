@@ -1,0 +1,186 @@
+Starting a Gradle Daemon, 3 busy Daemons could not be reused, use --status for details
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:processDebugAndroidTestManifest UP-TO-DATE
+> Task :app:generateDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:checkDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :app:mapDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugAndroidTestResources UP-TO-DATE
+> Task :app:mergeDebugAndroidTestResources UP-TO-DATE
+> Task :app:processDebugAndroidTestResources UP-TO-DATE
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:mergeDebugAndroidTestShaders
+> Task :app:compileDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:compressDebugAndroidTestAssets
+> Task :app:desugarDebugAndroidTestFileDependencies
+> Task :app:checkDebugAndroidTestDuplicateClasses
+ERROR: D:\App Projects\LifeTalea\android\app\build\intermediates\dex\debugAndroidTest\mergeExtDexDebugAndroidTest: D8: java.nio.file.FileSystemException: D:\App Projects\LifeTalea\android\app\build\intermediates\dex\debugAndroidTest\mergeExtDexDebugAndroidTest\classes.dex: The process cannot access the file because it is being used by another process
+
+> Task :app:mergeExtDexDebugAndroidTest
+com.android.builder.dexing.DexArchiveMergerException: Error while merging dex archives: 
+	at com.android.builder.dexing.D8DexArchiveMerger.getMergingExceptionToRethrow(D8DexArchiveMerger.java:235)
+	at com.android.builder.dexing.D8DexArchiveMerger.mergeDexArchives(D8DexArchiveMerger.java:223)
+	at com.android.build.gradle.internal.tasks.DexMergingWorkAction.merge(DexMergingTask.kt:914)
+	at com.android.build.gradle.internal.tasks.DexMergingWorkAction.run(DexMergingTask.kt:864)
+	at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.android.tools.r8.CompilationFailedException: Compilation failed to complete, origin: D:\App Projects\LifeTalea\android\app\build\intermediates\dex\debugAndroidTest\mergeExtDexDebugAndroidTest\classes.dex
+	at Version.fakeStackEntry(Version_8.9.35.java:0)
+	at com.android.tools.r8.S.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:5)
+	at com.android.tools.r8.internal.Nu.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:82)
+	at com.android.tools.r8.internal.Nu.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:32)
+	at com.android.tools.r8.internal.Nu.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:31)
+	at com.android.tools.r8.internal.Nu.b(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:2)
+	at com.android.tools.r8.D8.run(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:11)
+	at com.android.builder.dexing.D8DexArchiveMerger.mergeDexArchives(D8DexArchiveMerger.java:221)
+	... 37 more
+Caused by: java.nio.file.FileSystemException: D:\App Projects\LifeTalea\android\app\build\intermediates\dex\debugAndroidTest\mergeExtDexDebugAndroidTest\classes.dex: The process cannot access the file because it is being used by another process
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1152)
+	at com.android.tools.r8.DexIndexedConsumer$DirectoryConsumer.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:4)
+	at com.android.tools.r8.DexIndexedConsumer$DirectoryConsumer.accept(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:8)
+	at com.android.tools.r8.dex.k.b(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:62)
+	at com.android.tools.r8.internal.Xq0.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:2)
+	at com.android.tools.r8.internal.Xq0.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:17)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1428)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+	Suppressed: java.lang.RuntimeException: com.android.tools.r8.internal.g: java.nio.file.FileSystemException: D:\App Projects\LifeTalea\android\app\build\intermediates\dex\debugAndroidTest\mergeExtDexDebugAndroidTest\classes.dex: The process cannot access the file because it is being used by another process
+		at com.android.tools.r8.internal.Me0.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:27)
+		at com.android.tools.r8.dex.k.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:571)
+		at com.android.tools.r8.D8.d(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:154)
+		at com.android.tools.r8.D8.b(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:1)
+		at com.android.tools.r8.internal.Nu.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:28)
+		at com.android.tools.r8.internal.Nu.b(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:2)
+		at com.android.tools.r8.D8.run(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:11)
+		at com.android.builder.dexing.D8DexArchiveMerger.mergeDexArchives(D8DexArchiveMerger.java:221)
+		at com.android.build.gradle.internal.tasks.DexMergingWorkAction.merge(DexMergingTask.kt:914)
+		at com.android.build.gradle.internal.tasks.DexMergingWorkAction.run(DexMergingTask.kt:864)
+		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
+		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+		at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+		at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
+		at org.gradle.internal.Factories$1.create(Factories.java:31)
+		at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+		at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+		at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+		at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: com.android.tools.r8.internal.g: java.nio.file.FileSystemException: D:\App Projects\LifeTalea\android\app\build\intermediates\dex\debugAndroidTest\mergeExtDexDebugAndroidTest\classes.dex: The process cannot access the file because it is being used by another process
+		at com.android.tools.r8.internal.Me0.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:21)
+		at com.android.tools.r8.internal.Me0.error(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:1)
+		at com.android.tools.r8.DexIndexedConsumer$DirectoryConsumer.accept(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:11)
+		at com.android.tools.r8.dex.k.b(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:62)
+		at com.android.tools.r8.internal.Xq0.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:2)
+		at com.android.tools.r8.internal.Xq0.a(R8_8.9.35_b4dbea2f8bdfdf2cab3ae611558fd558945d3a458bfc50ef035fc9f5ad630d56:17)
+		at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1428)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+	Caused by: [CIRCULAR REFERENCE: java.nio.file.FileSystemException: D:\App Projects\LifeTalea\android\app\build\intermediates\dex\debugAndroidTest\mergeExtDexDebugAndroidTest\classes.dex: The process cannot access the file because it is being used by another process]
+
+
+> Task :app:kspDebugKotlin
+> Task :app:mergeExtDexDebugAndroidTest FAILED

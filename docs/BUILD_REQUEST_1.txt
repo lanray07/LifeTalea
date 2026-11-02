@@ -1,0 +1,869 @@
+# LIFETALEA — ULTIMATE CODEX MASTER BUILD PROMPT
+## Family Stories, Voice Memories & Digital Keepsakes
+### Amazon Appstore | Fire Tablets | Android | Worldwide Localisation | Multilingual Voice | SEO & AI Search Optimisation
+
+---
+
+# 1. ROLE AND EXECUTION MANDATE
+
+Act as an autonomous senior product engineering team consisting of:
+
+- Principal Android engineer
+- Kotlin and Jetpack Compose specialist
+- Premium UI/UX and brand designer
+- Audio recording and transcription engineer
+- Digital preservation specialist
+- Privacy and security engineer
+- International localisation architect
+- Amazon Appstore monetisation specialist
+- SEO, ASO and AI search optimisation specialist
+- Accessibility specialist
+- Quality assurance and release engineer
+
+Your assignment is to **design, implement, build, test, optimise and package a complete production-quality Android application called LifeTalea**.
+
+Do not stop at planning, wireframes, mockups, architectural documents, demonstration screens or partial source code.
+
+Create working files, implement actual functionality, run builds and tests, fix defects, generate original assets, and prepare Amazon Appstore submission materials.
+
+Work autonomously through the execution phases.
+
+Request input only for genuine blockers such as credentials, publishing permissions, commercial decisions, legal approvals, or irreversible actions.
+
+Preserve existing repository work.
+
+## Product identity
+
+**Official working brand:** LifeTalea
+
+**Proposed Amazon Appstore title:** LifeTalea – Family Stories & Voice Journal
+
+**Tagline:** Your memories. Their stories. Forever treasured.
+
+**Primary platform:** Amazon Fire tablets through the Amazon Appstore.
+
+**Secondary platform:** Compatible Android phones and tablets.
+
+**Core positioning:** A private, premium digital family-memory companion that helps people record spoken stories, preserve photographs, organise life events, create digital scrapbooks, and produce beautiful keepsake books.
+
+**Target users:**
+
+- Families preserving memories
+- Parents documenting milestones
+- Adults recording family histories
+- Older adults sharing life stories
+- People organising personal photographs
+- Families creating legacy books
+- People preserving spoken memories
+- Users who prefer a large tablet interface
+
+Treat LifeTalea as the selected working name, pending final trademark and Appstore clearance.
+
+---
+
+# 2. CORE PRODUCT PROMISE
+
+LifeTalea must help users:
+
+1. Capture important memories.
+2. Record spoken life stories.
+3. Convert supported recordings into editable transcripts.
+4. Organise photographs and stories.
+5. Explore memories through timelines.
+6. Create digital scrapbooks.
+7. Export printable keepsake books.
+8. Preserve personal content privately.
+
+The application must feel emotionally meaningful, calming, sophisticated, and easy to use.
+
+Avoid:
+
+- Public social feeds
+- Mandatory accounts
+- Public profiles
+- Intrusive advertising
+- Manipulative engagement mechanics
+- Unnecessary personal-data collection
+- Unauthorised cloud uploads
+
+Core functionality must work offline.
+
+# 3. TECHNICAL ARCHITECTURE
+
+Use:
+
+- Kotlin
+- Jetpack Compose
+- Material 3 with a custom design system
+- MVVM and Clean Architecture
+- Room database
+- DataStore preferences
+- Kotlin Coroutines and Flow
+- Hilt where appropriate
+- WorkManager where appropriate
+- Android MediaRecorder or a suitable supported audio API
+- Android Media3 for audio playback where compatible
+- Android SpeechRecognizer where available
+- Android TextToSpeech
+- Android Storage Access Framework
+- Android PDF generation
+- Amazon-compatible In-App Purchasing
+- Gradle Kotlin DSL
+- JUnit and Android UI testing
+
+Avoid mandatory Google Play Services.
+
+Separate modules for:
+
+- Memory library
+- Albums
+- Photo management
+- Audio recording
+- Audio playback
+- Transcription
+- Voice commands
+- Story editing
+- Timeline
+- Memory prompts
+- Scrapbook creation
+- PDF keepsakes
+- Search
+- Localisation
+- Premium entitlements
+- Backup and restore
+- Privacy and security
+
+Use local-first architecture.
+
+Implement database migrations and data-integrity checks.
+
+# 4. PREMIUM LIFETALEA BRAND IDENTITY
+
+Create a distinctive premium visual identity.
+
+## Brand personality
+
+- Warm
+- Elegant
+- Trustworthy
+- Personal
+- Timeless
+- Emotional
+- Welcoming
+
+## Suggested palette
+
+- Warm ivory: #FAF7F1
+- Forest green: #38584A
+- Muted gold: #C8A46B
+- Dusty rose: #C98F91
+- Charcoal: #302F2D
+
+Use accessible variations where required.
+
+## Design requirements
+
+- Elegant serif typography for story headings
+- Highly readable sans-serif navigation
+- Beautiful photo cards
+- Premium album covers
+- Subtle paper textures
+- Rounded surfaces
+- Generous spacing
+- Calm transitions
+- Light and dark themes
+- High contrast
+- Reduced-motion support
+- Screen reader support
+- Large touch targets
+
+Optimise for compatible 7–10-inch Fire tablets.
+
+Support portrait and landscape orientations.
+
+Use adaptive tablet layouts rather than stretched phone interfaces.
+
+Primary touch targets must be at least 48dp.
+
+# 5. ORIGINAL PREMIUM BRAND ASSETS
+
+Create:
+
+- High-resolution master app icon
+- Android adaptive icon foreground
+- Adaptive icon background
+- Monochrome icon
+- Splash-screen artwork
+- Onboarding illustrations
+- Album cover templates
+- Timeline illustrations
+- Voice recorder graphics
+- Memory prompt illustrations
+- Scrapbook backgrounds
+- Keepsake book templates
+- Empty-state illustrations
+- Premium upgrade artwork
+- Screenshot marketing templates
+- Promotional banners
+- Light and dark variants
+
+## App icon concept
+
+Create an elegant open memory book incorporating a subtle speech waveform and a small golden bookmark.
+
+The icon must be recognisable at small sizes.
+
+Avoid copying existing memory-journal app designs.
+
+All artwork must be original or appropriately licensed.
+
+Do not claim assets are complete unless actual files exist.
+
+# 6. ONBOARDING
+
+Create a short, optional onboarding experience.
+
+Allow users to:
+
+1. Select preferred language.
+2. Choose their primary purpose.
+3. Create their first album.
+4. Add a first memory.
+5. Try voice recording.
+6. Configure optional reminders.
+7. Review privacy settings.
+
+Suggested purposes:
+
+- Family Memories
+- Personal Life Journal
+- Childhood Milestones
+- Family History
+- Travel Memories
+- Legacy Stories
+
+No account required.
+
+Allow users to skip optional steps.
+
+# 7. HOME DASHBOARD
+
+Create a premium dashboard showing:
+
+- Recently added memories
+- Featured albums
+- Timeline preview
+- Continue recording shortcut
+- Add photo memory
+- Guided storytelling prompt
+- Recent voice recordings
+- Keepsake book shortcut
+- Quick search
+
+Use real stored data.
+
+Do not fabricate personal memories.
+
+Provide attractive empty states.
+
+# 8. MEMORY LIBRARY
+
+Implement:
+
+- Create memories
+- Edit memories
+- Delete memories
+- Add photographs
+- Add voice recordings
+- Add written stories
+- Add dates
+- Add optional manually entered locations
+- Add tags
+- Link memories to albums
+- Search memories
+- Filter by year, tag, or album
+- Mark favourites
+- Duplicate entries
+
+## Memory data model
+
+Include:
+
+- Unique ID
+- Title
+- Description
+- Event date
+- Date precision
+- Optional location
+- Photographs
+- Audio attachments
+- Transcript
+- Tags
+- Album references
+- Creation timestamp
+- Modification timestamp
+
+Support approximate or unknown dates.
+
+Do not force users to invent exact dates.
+
+# 9. PREMIUM VOICE STORY RECORDING
+
+Voice recording is a flagship feature.
+
+Implement:
+
+- Start recording
+- Pause
+- Resume
+- Stop
+- Playback
+- Rename
+- Attach recording to memory
+- Delete recording
+- Recording duration
+- Playback progress
+- Recording status indicator
+- Microphone permission handling
+
+Save recordings locally by default.
+
+Handle:
+
+- Incoming interruptions
+- Audio focus changes
+- App backgrounding
+- Device rotation
+- Low storage
+- Permission denial
+- Recording failure
+
+Do not silently record in the background.
+
+# 10. MULTILINGUAL TRANSCRIPTION
+
+Implement a real transcription workflow.
+
+Requirements:
+
+- Language selection
+- Supported transcription engine
+- Editable transcript
+- Manual correction
+- Transcript saving
+- Optional timestamps where supported
+- Clear processing state
+- Error handling
+- Transcription status
+
+Do not assume Android SpeechRecognizer can reliably transcribe previously recorded audio files.
+
+Use an appropriate transcription engine or a modular adapter.
+
+If cloud transcription is used:
+
+- Obtain explicit consent.
+- Disclose network usage.
+- Explain data processing.
+- Protect credentials.
+- Avoid unnecessary audio retention.
+- Provide a manual alternative.
+
+Do not claim offline transcription unless implemented and verified.
+
+# 11. VOICE COMMAND ASSISTANT
+
+Implement useful voice commands.
+
+Examples:
+
+- "Create a new memory."
+- "Start recording."
+- "Stop recording."
+- "Open family album."
+- "Show memories from last year."
+- "Read my latest story."
+- "Add a note to this memory."
+- "Open my timeline."
+- "Create a keepsake book."
+
+Implement:
+
+- Push-to-talk activation
+- Visible listening indicator
+- Locale-aware command dictionaries
+- Structured intent parsing
+- TextToSpeech feedback
+- Confirmation for destructive actions
+- Error handling
+- Touch and text alternatives
+
+Do not assume every Fire tablet supports speech recognition.
+
+Do not claim offline voice commands unless verified.
+
+Do not store raw microphone recordings beyond user-initiated saved stories.
+
+# 12. GUIDED MEMORY PROMPTS
+
+Create optional storytelling prompts.
+
+Categories:
+
+- Childhood
+- Family Traditions
+- School Memories
+- Favourite Celebrations
+- Life Lessons
+- Travel
+- Friendship
+- Career Milestones
+- Family Recipes
+- Important Achievements
+
+Example prompts:
+
+- "What is one childhood memory that still makes you smile?"
+- "What family tradition would you like to preserve?"
+- "What advice would you give your younger self?"
+- "What was your favourite family celebration?"
+
+Allow text or voice responses.
+
+Do not pressure users to disclose sensitive information.
+
+# 13. FAMILY TIMELINE
+
+Implement:
+
+- Chronological memory cards
+- Year filters
+- Album filters
+- Photo previews
+- Audio indicators
+- Search
+- Date editing
+- Milestone markers
+
+Support approximate dates.
+
+Use actual stored data.
+
+# 14. DIGITAL SCRAPBOOK CREATOR
+
+Create premium scrapbook functionality.
+
+Support:
+
+- Photo arrangements
+- Captions
+- Decorative backgrounds
+- Story blocks
+- Memory cards
+- Album themes
+- Page reordering
+- Preview mode
+- Save drafts
+
+Use original templates.
+
+Keep layouts readable and printable.
+
+Do not automatically publish private content.
+
+# 15. PRINTABLE KEEPSAKE BOOKS
+
+Implement local PDF keepsake generation.
+
+Support:
+
+- Album selection
+- Memory selection
+- Cover title
+- Photo layouts
+- Story text
+- Captions
+- Page numbering
+- Table of contents where appropriate
+- Print-friendly page sizes
+- Export preview
+
+Allow sensitive information to be excluded.
+
+Do not upload private memories to external PDF services without explicit consent.
+
+# 16. SEARCH AND ORGANISATION
+
+Implement search by:
+
+- Memory title
+- Story text
+- Tags
+- Album
+- Year
+- Transcript text where available
+
+Support favourites, recent memories, and sorting.
+
+# 17. OFFLINE-FIRST PRIVACY AND SECURITY
+
+Core features must work offline.
+
+Store locally:
+
+- Memories
+- Albums
+- Photographs
+- Audio recordings
+- Transcripts
+- Scrapbook projects
+- Settings
+
+Requirements:
+
+- No mandatory account
+- No third-party advertising SDKs
+- No public profiles
+- No social feeds
+- No silent cloud uploads
+- No unnecessary analytics
+- No automatic location collection
+- Explicit microphone permission
+- Private media storage
+- Optional app lock
+- Data export
+- Data deletion
+
+Use established encryption libraries where appropriate.
+
+Do not claim end-to-end encryption unless implemented and verified.
+
+# 18. BACKUP AND RESTORE
+
+Implement:
+
+- Local backup
+- Backup manifest
+- Data-integrity checks
+- Optional encrypted archive
+- Restore preview
+- Conflict handling
+- Duplicate detection
+- Import validation
+
+Include photos and audio only when explicitly selected.
+
+Cloud backup must be opt-in.
+
+Do not claim cloud sync is implemented unless a real provider integration exists and has been tested.
+
+# 19. PREMIUM MONETISATION
+
+Use a freemium model.
+
+## Free tier
+
+- Up to three albums
+- Basic memory entries
+- Photo attachments
+- Short voice recordings
+- Basic timeline
+- Starter memory prompts
+
+## LifeTalea Premium
+
+Proposed test price: £4.99 one-time purchase.
+
+Premium includes:
+
+- Unlimited albums
+- Unlimited memory entries
+- Extended voice recordings, subject to device storage
+- Advanced transcription where available
+- Premium scrapbook themes
+- Keepsake PDF exports
+- Advanced search
+- Data export
+- Encrypted backup
+
+Do not lock users out of existing memories when Premium is unavailable.
+
+Transcription services with recurring costs must have a sustainable pricing model.
+
+Use Amazon-compatible In-App Purchasing.
+
+Implement:
+
+- Store-provided localised pricing
+- Purchase verification
+- Restore purchases
+- Entitlement persistence
+- Offline entitlement handling
+- Purchase failure recovery
+
+Do not use Google Play Billing in the Amazon build.
+
+Do not simulate successful real purchases.
+
+# 20. MANDATORY WORLDWIDE LOCALISATION
+
+**Localisation is a non-negotiable release requirement.**
+
+The app, voice interactions, screenshots, Amazon Appstore descriptions, and marketing website must be localised.
+
+## Initial target locales
+
+- en-GB — English UK
+- en-US — English US
+- en-AU — English Australia
+- es-ES — Spanish Spain
+- es-419 — Spanish Latin America
+- fr-FR — French France
+- fr-CA — French Canada
+- de-DE — German
+- it-IT — Italian
+- pt-BR — Portuguese Brazil
+- pt-PT — Portuguese Portugal
+- nl-NL — Dutch
+- pl-PL — Polish
+- sv-SE — Swedish
+- ja-JP — Japanese
+- hi-IN — Hindi
+- ar — Arabic
+- tr-TR — Turkish
+- id-ID — Indonesian
+
+Verify current Amazon Appstore marketplace and listing-language requirements using official documentation.
+
+Maintain separate matrices for:
+
+1. App interface languages
+2. Store listing languages
+3. Distribution countries
+4. Voice recognition languages
+5. TextToSpeech languages
+6. Transcription languages
+
+Do not assume these are identical.
+
+## Localise all user-facing content
+
+Translate:
+
+- Onboarding
+- Navigation
+- Album categories
+- Memory prompts
+- Timeline labels
+- Voice prompts
+- Voice command dictionaries
+- Premium paywall
+- Settings
+- Notifications
+- Errors
+- Empty states
+- Accessibility labels
+- Privacy notices
+- Support content
+
+Support:
+
+- Pluralisation
+- Text expansion
+- Right-to-left layouts
+- Locale-aware dates
+- Regional number formatting
+- Culturally appropriate examples
+
+Do not automatically translate user-owned memories or transcripts without explicit consent.
+
+# 21. AUTOMATED LOCALISATION PIPELINE
+
+Create an executable development-time translation system.
+
+Use a configurable translation provider such as DeepL or another approved API.
+
+Implement:
+
+- Source-string extraction
+- Translation API integration
+- Translation caching
+- Terminology glossary
+- Placeholder protection
+- Plural validation
+- Missing-string detection
+- Android resource generation
+- Translation quality reports
+- Human review workflow
+- Right-to-left testing
+- Screenshot localisation
+- Store metadata localisation
+
+Never embed translation API keys in the APK.
+
+If translation credentials are unavailable, create the pipeline and mark translations as pending.
+
+Do not claim machine-translated content is human-reviewed.
+
+# 22. PREMIUM LOCALISED AMAZON APPSTORE SCREENSHOTS
+
+Generate eight premium screenshot compositions for every approved store-listing locale.
+
+Every screenshot must show the actual app in the target language.
+
+## Screenshot 1 — Hero
+
+**Family Memories & Voice Journal**
+
+"Preserve special moments and personal stories."
+
+Show the home dashboard.
+
+## Screenshot 2 — Albums
+
+**Private Family Photo Albums**
+
+"Organise memories into beautiful collections."
+
+Show album cards.
+
+## Screenshot 3 — Voice
+
+**Record Family Stories by Voice**
+
+"Capture personal stories in your own words."
+
+Show the audio recording interface.
+
+## Screenshot 4 — Transcription
+
+**Voice Notes & Story Transcription**
+
+"Turn supported recordings into editable stories."
+
+Show transcript editing.
+
+## Screenshot 5 — Timeline
+
+**Family Memory Timeline**
+
+"Explore treasured moments through the years."
+
+Show chronological memories.
+
+## Screenshot 6 — Scrapbook
+
+**Digital Scrapbook Creator**
+
+"Combine photos, captions and stories."
+
+Show scrapbook editing.
+
+## Screenshot 7 — Offline
+
+**Offline Memory Journal**
+
+"Access saved memories without internet."
+
+Show offline album access.
+
+## Screenshot 8 — Keepsakes
+
+**Printable Family Memory Books**
+
+"Create beautiful PDF keepsakes."
+
+Show a keepsake book preview.
+
+## Screenshot production rules
+
+- Capture real implemented application screens.
+- Use deterministic fictional demonstration content.
+- Create Fire tablet and phone variants.
+- Verify current Amazon screenshot dimensions.
+- Translate marketing headlines.
+- Translate supporting captions.
+- Capture the app in each target locale.
+- Use culturally appropriate fictional examples.
+- Validate typography and cropping.
+- Avoid keyword stuffing.
+- Avoid fabricated reviews or ratings.
+- Export production assets.
+- Include editable templates.
+- Generate a screenshot manifest.
+
+Never place translated headlines over English-language app screens.
+
+Do not claim screenshots are complete unless actual files exist.
+
+# 23. AMAZON APPSTORE SEO / ASO
+
+Proposed title:
+
+**LifeTalea – Family Stories & Voice Journal**
+
+Validate title length and current Amazon requirements.
+
+Primary keywords:
+
+- Family memory journal
+- Voice journal
+- Record family stories
+- Digital scrapbook
+- Family photo album
+- Memory keeper
+- Life story recorder
+
+Secondary keywords:
+
+- Family history journal
+- Audio memories
+- Photo journal
+- Story recorder
+- Memory timeline
+- Digital keepsake book
+- Private family journal
+- Offline memory journal
+
+Generate:
+
+- SEO-optimised title recommendations
+- Concise product summary
+- Full product description
+- Feature highlights
+- Localised keyword research
+- Localised listing copy
+- Screenshot captions
+- Release notes
+- Privacy policy draft
+- Support documentation
+
+Use natural keywords.
+
+Do not invent Amazon metadata fields.
+
+# 24. AI SEARCH OPTIMISATION
+
+Create a lightweight, crawlable LifeTalea marketing website.
+
+Required pages:
+
+- Home
+- Features
+- Family Memory Journal
+- Voice Story Recording
+- Digital Scrapbook
+- Family Timeline
+- Keepsake Books
+- Fire Tablet Compatibility
+- Pricing
+- FAQ
+- Privacy
+- Support
+
+Target genuine search questions:
+
+- How can I preserve family memories digitally?
+- What is a good family memory journal app?
+- Can I record family stories on a Fire tablet?
+- How do I turn family memories into

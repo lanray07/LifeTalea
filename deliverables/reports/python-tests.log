@@ -1,0 +1,8 @@
+test_format_specifiers_preserved (test_localization.LocalizationTest) ... ok
+test_missing_plural_and_brand_reported (test_localization.LocalizationTest) ... ok
+test_source_change_invalidates_review (test_localization.LocalizationTest) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

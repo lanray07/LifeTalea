@@ -1,0 +1,822 @@
+# LIFETALEA — MASTER BUILD PROMPT CONTINUATION
+## Sections 24–31: SEO, Execution, Deliverables & Acceptance Criteria
+
+# 24. AI SEARCH OPTIMISATION (AEO / GEO)
+
+Build a premium, multilingual, search-engine-accessible marketing website for LifeTalea.
+
+The website must accurately communicate the product's features, privacy protections, supported devices, voice capabilities, and available languages.
+
+Optimise for traditional search engines and AI-assisted discovery, including search experiences that retrieve and summarise publicly accessible web content.
+
+Do not promise search rankings, AI citations, recommendations, or guaranteed visibility.
+
+## 24.1 Website architecture
+
+Use Next.js with TypeScript, responsive layouts, and accessible components.
+
+Create these pages:
+
+1. Home
+2. Features
+3. Family Memory Journal
+4. Voice Story Recording
+5. Voice Transcription
+6. Digital Scrapbook
+7. Family Timeline
+8. Keepsake Books
+9. Offline Memory Journal
+10. Fire Tablet Compatibility
+11. Languages
+12. Pricing
+13. Frequently Asked Questions
+14. Privacy Policy
+15. Support
+16. Contact
+
+Include a clear download link to the official Amazon Appstore listing once the application is published.
+
+Do not invent a live Appstore URL.
+
+## 24.2 Search-intent content
+
+Create genuinely useful content answering questions such as:
+
+- How can I preserve family memories digitally?
+- What is a good family memory journal app?
+- Can I record family stories on a Fire tablet?
+- How do I turn family memories into a book?
+- Can I create a private digital scrapbook?
+- How do I organise old family photographs?
+- Can I record my parents' life stories?
+- What is the best way to preserve grandparents' memories?
+- Can I save voice recordings and photographs together?
+- Can I use a family memory journal without internet?
+- How do I create a printable family keepsake book?
+- Can I transcribe family voice recordings?
+
+Use clear, natural language.
+
+Provide practical examples.
+
+Only describe features that have actually been implemented.
+
+Avoid thin, repetitive, automatically generated pages.
+
+## 24.3 Technical SEO
+
+Implement:
+
+- Server-rendered or statically generated crawlable HTML
+- Unique page titles
+- Descriptive meta descriptions
+- Clear heading hierarchy
+- Canonical URLs
+- XML sitemap
+- Robots.txt
+- Appropriate hreflang annotations
+- Open Graph metadata
+- Social sharing previews
+- Responsive layouts
+- Accessible navigation
+- Optimised images
+- Internal linking
+- Fast page loading
+- Structured data
+
+Use appropriate Schema.org types where relevant:
+
+- SoftwareApplication
+- MobileApplication
+- Organization
+- WebSite
+- BreadcrumbList
+
+Use FAQPage markup only where appropriate and consistent with current search-engine guidance.
+
+Structured data must accurately match visible page content.
+
+Never fabricate ratings, reviews, awards, download counts, or testimonials.
+
+## 24.4 AI search readiness
+
+Make important product information available as crawlable HTML text.
+
+Clearly identify:
+
+- Product name
+- Developer or publisher
+- App purpose
+- Supported platforms
+- Main features
+- Offline capabilities
+- Privacy model
+- Voice functionality
+- Supported languages
+- Pricing model
+- Support contact
+- Official download location
+
+Provide concise, accurate answers to common user questions.
+
+Maintain consistent product facts across the website, Amazon listing, support pages, and structured data.
+
+Do not create speculative metadata or claim that special AI optimisation techniques guarantee recommendations.
+
+## 24.5 Worldwide website localisation
+
+Localise website content for every approved website locale.
+
+Use locale-specific URLs where appropriate.
+
+Translate:
+
+- Navigation
+- Headings
+- Feature descriptions
+- FAQ answers
+- Calls to action
+- Pricing explanations
+- Privacy summaries
+- Support content
+- SEO metadata
+- Structured-data text fields
+
+Use appropriate hreflang relationships.
+
+Do not automatically publish unreviewed machine translations.
+
+Maintain a localisation status report.
+
+## 24.6 Website acceptance criteria
+
+The website is complete only when:
+
+- Every required page exists.
+- Production build succeeds.
+- Navigation works.
+- Metadata is generated correctly.
+- Sitemap and robots.txt are valid.
+- Structured data passes available validation.
+- Approved translations are complete.
+- Locale switching works.
+- No fabricated product claims exist.
+- Broken links are identified and resolved.
+- Privacy and support pages are accessible.
+
+Do not claim deployment unless a real deployment has succeeded.
+
+---
+
+# 25. CONCRETE AUTONOMOUS CODEX EXECUTION WORKFLOW
+
+## Primary execution mandate
+
+You are responsible for implementing LifeTalea, not merely planning it.
+
+Execute development tasks in the repository.
+
+For each phase:
+
+1. Inspect existing code.
+2. Implement the required functionality.
+3. Run relevant build commands.
+4. Execute available tests.
+5. Identify failures.
+6. Fix defects.
+7. Rerun tests.
+8. Update documentation.
+9. Record evidence.
+10. Continue to the next phase.
+
+Do not stop after creating a README or development plan.
+
+Preserve existing files and Git history.
+
+Never overwrite unrelated work.
+
+## Phase 0 — Repository and environment inspection
+
+Inspect:
+
+- Repository structure
+- Git status
+- Java installation
+- Android SDK
+- Kotlin toolchain
+- Gradle
+- Available Android emulators
+- Available Fire OS devices
+- Build configuration
+- Existing assets
+
+If the repository is empty, initialise a complete Android project.
+
+Configure:
+
+- Gradle wrapper
+- Kotlin
+- Jetpack Compose
+- Room
+- DataStore
+- Dependency injection
+- Testing infrastructure
+- Release build configuration
+
+Establish a successful baseline build before implementing complex features.
+
+**Exit criteria:** The Android project is valid and the baseline debug build succeeds, or a specific environment blocker is documented.
+
+## Phase 1 — Premium application foundation
+
+Implement:
+
+- LifeTalea design system
+- App navigation
+- Onboarding
+- Home dashboard
+- Settings
+- Room database
+- DataStore preferences
+- Adaptive tablet layouts
+- Light and dark themes
+- Accessibility foundations
+
+Create realistic but fictional demonstration data for development.
+
+Do not populate production accounts with fabricated personal memories.
+
+**Exit criteria:** Users can navigate the core application and persistent settings survive restart.
+
+## Phase 2 — Memory and album management
+
+Implement:
+
+- Memory creation
+- Memory editing
+- Memory deletion
+- Album creation
+- Album editing
+- Album deletion
+- Photo import
+- Tags
+- Search
+- Favourites
+- Date handling
+- Local persistence
+
+Test database relationships and migrations.
+
+**Exit criteria:** Users can create, organise, retrieve, edit, and delete memories without data corruption.
+
+## Phase 3 — Audio recording and playback
+
+Implement:
+
+- Microphone permissions
+- Start recording
+- Pause recording
+- Resume recording
+- Stop recording
+- Playback
+- Audio progress
+- Recording attachment
+- Recording deletion
+- Audio interruption handling
+- Low-storage handling
+
+Save audio privately.
+
+Do not silently upload recordings.
+
+**Exit criteria:** Audio recordings survive application restart and play correctly on tested devices.
+
+## Phase 4 — Transcription and multilingual voice
+
+Implement:
+
+- Transcription adapter
+- Supported transcription engine
+- Editable transcript interface
+- Transcript persistence
+- Language selection
+- Voice command parser
+- TextToSpeech feedback
+- Recognition capability checks
+- Push-to-talk controls
+- Touch fallback
+
+Do not assume Android SpeechRecognizer can process previously recorded audio files.
+
+If a compatible transcription engine or service is unavailable, preserve recording and playback functionality and document transcription as blocked.
+
+**Exit criteria:** Supported voice functionality is tested, and unavailable capabilities fail gracefully.
+
+## Phase 5 — Family timeline and memory prompts
+
+Implement:
+
+- Chronological timeline
+- Year filters
+- Album filters
+- Approximate dates
+- Memory milestones
+- Storytelling prompts
+- Text responses
+- Audio responses
+
+**Exit criteria:** Timeline and prompt functionality operates using actual stored data.
+
+## Phase 6 — Scrapbook and keepsake creation
+
+Implement:
+
+- Scrapbook templates
+- Photo arrangements
+- Captions
+- Story blocks
+- Page reordering
+- Draft saving
+- Preview
+- PDF export
+- Print-friendly layouts
+
+Support appropriate page sizes.
+
+**Exit criteria:** Users can generate a valid, readable PDF keepsake from selected memories.
+
+## Phase 7 — Backup, restore and privacy
+
+Implement:
+
+- Local backup
+- Backup manifest
+- Integrity checks
+- Restore preview
+- Duplicate handling
+- Optional encrypted archives
+- Data export
+- Data deletion
+- Optional app lock
+
+Test backup restoration using photographs, audio, transcripts, and scrapbook records.
+
+**Exit criteria:** Backup and restore preserve selected data without silent loss.
+
+## Phase 8 — Amazon monetisation
+
+Implement:
+
+- Free and Premium feature boundaries
+- Premium paywall
+- Amazon-compatible purchasing adapter
+- Purchase state management
+- Entitlement verification
+- Restore purchases
+- Offline entitlement persistence
+- Purchase error handling
+
+Use store-provided localised pricing.
+
+Do not include Google Play Billing in the Amazon build.
+
+If required Amazon credentials or configuration are unavailable, complete the adapter and testable integration boundaries, then document the remaining blocker.
+
+**Exit criteria:** Billing logic passes available tests, with live purchasing verification accurately reported.
+
+## Phase 9 — Mandatory worldwide localisation
+
+Implement the complete localisation system.
+
+For every approved locale:
+
+- Translate app resources.
+- Translate onboarding.
+- Translate prompts.
+- Translate notifications.
+- Translate paywall.
+- Translate error messages.
+- Translate accessibility labels.
+- Implement right-to-left support where applicable.
+- Validate pluralisation.
+- Validate dates and regional formats.
+- Test text expansion.
+- Localise supported voice commands.
+- Localise supported spoken feedback.
+
+Do not automatically translate user-owned memories.
+
+Maintain separate statuses for:
+
+- App interface
+- Store listing
+- Screenshots
+- Voice recognition
+- TextToSpeech
+- Transcription
+- Website
+
+**Exit criteria:** Every release-approved locale passes the required translation, layout, and review checks.
+
+## Phase 10 — Original premium assets
+
+Generate:
+
+- Master app icon
+- Adaptive icon layers
+- Splash artwork
+- Onboarding illustrations
+- Album templates
+- Voice graphics
+- Timeline illustrations
+- Scrapbook backgrounds
+- Keepsake templates
+- Premium upgrade graphics
+
+Optimise image dimensions and file sizes.
+
+Document asset provenance and licensing.
+
+**Exit criteria:** Required original assets exist and render correctly in the application.
+
+## Phase 11 — Localised Amazon screenshot automation
+
+Build a repeatable screenshot pipeline.
+
+For each approved store-listing locale:
+
+1. Set application language.
+2. Load fictional demonstration memories.
+3. Navigate to each target screen.
+4. Capture actual application screenshots.
+5. Apply premium marketing compositions.
+6. Add localised keyword-rich headlines.
+7. Add translated supporting captions.
+8. Export phone and Fire tablet variants.
+9. Validate dimensions.
+10. Check language consistency.
+11. Generate screenshot manifest.
+12. Perform visual quality review.
+
+Produce all eight defined screenshot concepts.
+
+Do not use English-language UI underneath translated marketing text.
+
+Do not claim screenshots exist unless actual files have been generated.
+
+**Exit criteria:** All required localised screenshot assets exist and pass validation.
+
+## Phase 12 — Amazon ASO and AI search website
+
+Generate:
+
+- Localised Appstore titles
+- Product summaries
+- Full descriptions
+- Feature highlights
+- Screenshot captions
+- Release notes
+- Keyword matrices
+- Marketing website
+- Localised website pages
+- Structured data
+- Sitemap
+- FAQ content
+- Privacy and support pages
+
+Verify current Amazon listing requirements.
+
+**Exit criteria:** Approved store listings and website content are complete and accurate.
+
+## Phase 13 — Testing and repair
+
+Run:
+
+- Gradle compilation
+- Unit tests
+- Database tests
+- Memory CRUD tests
+- Album tests
+- Audio recording tests
+- Audio playback tests
+- Transcription tests where available
+- Voice command tests
+- Timeline tests
+- Scrapbook tests
+- PDF export tests
+- Backup and restore tests
+- Billing tests
+- Localisation validation
+- Screenshot validation
+- Accessibility tests
+- Offline tests
+- Release build checks
+
+Fix failures.
+
+Rerun affected tests.
+
+Do not claim tests passed unless executed.
+
+## Phase 14 — Fire tablet compatibility
+
+Test available representative Fire OS devices.
+
+Verify:
+
+- Portrait and landscape layouts
+- Touch interactions
+- Audio recording
+- Audio playback
+- Microphone permissions
+- Speech recognition availability
+- TextToSpeech behaviour
+- File import
+- PDF export
+- Offline storage
+- Performance
+- Purchasing integration
+
+Distinguish emulator testing from physical-device testing.
+
+**Exit criteria:** Required compatibility checks pass or outstanding hardware limitations are explicitly documented.
+
+## Phase 15 — Release preparation
+
+Prepare:
+
+- Debug APK
+- Release APK or AAB as supported
+- Release signing instructions
+- Package identifier
+- Version configuration
+- App icons
+- Localised screenshots
+- Localised metadata
+- Privacy documentation
+- Billing configuration
+- Compatibility report
+- Submission checklist
+
+Do not publish without explicit authorisation.
+
+---
+
+# 26. SIX-WEEK MVP BUILD PLAN
+
+Use the following as a target schedule, not a guaranteed delivery date.
+
+## Week 1 — Foundation
+
+- Android project setup
+- Premium design system
+- Navigation
+- Local database
+- Onboarding
+- Memory library foundation
+
+## Week 2 — Core memories
+
+- Albums
+- Photo import
+- Search
+- Tags
+- Timeline
+- Memory prompts
+
+## Week 3 — Voice and audio
+
+- Audio recording
+- Playback
+- Transcription integration
+- Voice commands
+- TextToSpeech
+- Compatibility handling
+
+## Week 4 — Premium features
+
+- Scrapbook editor
+- Keepsake PDF export
+- Backup and restore
+- Amazon billing
+- Premium entitlements
+
+## Week 5 — Localisation and marketing
+
+- Automated translation pipeline
+- Locale validation
+- Original premium assets
+- Localised screenshots
+- Amazon metadata
+- AI-search-ready website
+
+## Week 6 — Testing and release preparation
+
+- Functional testing
+- Accessibility testing
+- Offline testing
+- Fire tablet compatibility
+- Billing verification
+- Screenshot quality assurance
+- Release build
+- Submission documentation
+
+If the six-week target conflicts with security, data preservation, or localisation quality, prioritise correctness and report the schedule risk.
+
+---
+
+# 27. EXPLICIT BUILD DELIVERABLES
+
+Every deliverable must exist as a real file or verified repository artifact.
+
+Create the following structure, adapting it only when technically necessary:
+
+```text
+LifeTalea/
+├── android/
+│   ├── app/
+│   ├── core/
+│   ├── data/
+│   ├── domain/
+│   ├── features/
+│   ├── billing/
+│   ├── voice/
+│   └── localization/
+├── website/
+├── scripts/
+├── tests/
+├── docs/
+└── deliverables/
+    ├── android/
+    │   ├── debug/
+    │   ├── release/
+    │   └── build-logs/
+    ├── brand-assets/
+    ├── store-assets/
+    │   ├── screenshots/
+    │   ├── metadata/
+    │   └── manifests/
+    ├── localization/
+    ├── reports/
+    └── DELIVERABLES_MANIFEST.csv
+```
+
+## D01 — Android source project
+
+Deliver complete source code, Gradle configuration, Android manifest, resources, database schemas, and tests.
+
+## D02 — Build artifacts
+
+Deliver:
+
+- Debug APK
+- Release artifact where build tools permit
+- Build logs
+- Version information
+- Artifact checksums
+- Signing status
+
+Never label an artifact signed unless signing occurred.
+
+## D03 — Functional application
+
+Deliver working:
+
+- Memory library
+- Albums
+- Photo management
+- Audio recording
+- Audio playback
+- Story editor
+- Timeline
+- Memory prompts
+- Scrapbook editor
+- PDF keepsake export
+- Search
+- Settings
+- Local persistence
+
+## D04 — Voice and transcription
+
+Deliver:
+
+- Recording implementation
+- Voice command implementation
+- TextToSpeech implementation
+- Transcription adapter
+- Supported transcription integration
+- Voice locale matrix
+- Compatibility report
+
+## D05 — Localisation package
+
+Deliver:
+
+- Android language resources
+- Translation scripts
+- Terminology glossary
+- Translation reports
+- Marketplace-to-locale matrix
+- Voice-language matrix
+- Right-to-left validation report
+- Human-review status
+
+## D06 — Localised screenshots
+
+Deliver eight screenshot compositions for every approved store-listing locale.
+
+Include phone and Fire tablet variants where required.
+
+Deliver editable templates and a screenshot manifest.
+
+## D07 — Premium brand assets
+
+Deliver original app icons, illustrations, album templates, scrapbook graphics, and marketing materials.
+
+## D08 — Amazon listing package
+
+Deliver localised titles, descriptions, feature highlights, screenshot captions, release notes, and keyword research matrices.
+
+## D09 — Marketing website
+
+Deliver complete website source code, localised pages, SEO metadata, structured data, sitemap, and build instructions.
+
+## D10 — Billing implementation
+
+Deliver Amazon purchasing adapter, entitlement logic, purchase restoration, and billing test report.
+
+## D11 — Privacy and backup
+
+Deliver local data management, secure media handling, export, backup, restore, deletion, and privacy documentation.
+
+## D12 — Automated tests
+
+Deliver test source files, execution logs, results, and documented failures.
+
+## D13 — Fire tablet compatibility
+
+Deliver a device compatibility report identifying tested devices, configurations, and limitations.
+
+## D14 — Documentation
+
+Create:
+
+- README.md
+- ARCHITECTURE.md
+- BUILD_AND_RELEASE.md
+- AMAZON_SUBMISSION.md
+- LOCALIZATION.md
+- VOICE_COMPATIBILITY.md
+- TRANSCRIPTION.md
+- MONETIZATION.md
+- PRIVACY_AND_SECURITY.md
+- BACKUP_AND_RESTORE.md
+- TEST_REPORT.md
+- RELEASE_READINESS.md
+
+## D15 — Final deliverables manifest
+
+Create:
+
+`deliverables/DELIVERABLES_MANIFEST.csv`
+
+Columns:
+
+- Deliverable ID
+- Deliverable name
+- File path
+- Status
+- Verification method
+- Evidence path
+- Remaining blocker
+
+---
+
+# 28. MANDATORY ACCEPTANCE CRITERIA
+
+Use PASS, FAIL, BLOCKED, and NOT TESTED statuses.
+
+Never treat BLOCKED or NOT TESTED as PASS.
+
+## AC-01 — Android build
+
+- Debug build succeeds.
+- Release build succeeds when signing and build configuration permit.
+- No critical compilation errors remain.
+- Required project files exist.
+- No secrets are embedded in the application.
+
+## AC-02 — Memory management
+
+- Users can create, edit, delete, and retrieve memories.
+- Records survive application restart.
+- Album relationships remain valid.
+- Search returns appropriate results.
+- Database migrations preserve data.
+
+## AC-03 — Audio recording
+
+- Recording starts successfully.
+- Pause and resume work.
+- Recordings can be stopped and saved.
+- Saved recordings play correctly.

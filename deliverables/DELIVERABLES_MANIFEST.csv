@@ -1,0 +1,16 @@
+Deliverable ID,Deliverable name,File path,Status,Verification method,Evidence path,Remaining blocker
+D01,Android source,android/app/src,IMPLEMENTED,Gradle and device tests,deliverables/android/build-logs/build-tested.log,Some release gates remain
+D02,Build artifacts,deliverables/android/artifacts.json,VERIFIED,Build log / hashes,deliverables/android/build-logs/build-tested.log,Production signing pending
+D03,Functional application,android/app/src/main/java,PARTIALLY_VERIFIED,Instrumented journeys,deliverables/android/build-logs/instrumentation.log,Remaining acceptance checks
+D04,Voice and transcription,docs/VOICE_COMPATIBILITY.md,PARTIAL,Device diagnostic,deliverables/reports/VOICE_TEST_REPORT.md,Transcription engine and multilingual speech tests
+D05,Localisation,localization,BLOCKED,Coverage validator,deliverables/localization/coverage.json,Target translations/native approval
+D06,Localised screenshots,deliverables/store-assets/manifests/required-screenshots.csv,BLOCKED,Manifest/file validation,deliverables/reports/SCREENSHOT_VALIDATION_REPORT.md,Approved copy/actual locale captures/compositions
+D07,Brand assets,deliverables/brand-assets,PARTIAL,Asset files and visual review,docs/DESIGN_REVIEW.md,Complete promotional variants/visual signoff
+D08,Amazon listing,deliverables/store-assets/metadata,DRAFT,Official limits / draft validation,deliverables/store-assets/metadata/validation.json,Locale review / feature approval
+D09,Marketing website,website,ENGLISH_PREVIEW,Production build / browser / links,deliverables/reports/website-checks.json,Localisation / final domain / deployment
+D10,Amazon billing,android/app/src/main/java/com/lifetalea/app/billing,BLOCKED,Compile / mode policy unit test,deliverables/reports/AMAZON_BILLING_TEST_REPORT.md,Correct Amazon authentication/product/receipt tests
+D11,Privacy and backup,docs/BACKUP_AND_RESTORE.md,PARTIALLY_VERIFIED,Small-fixture tests,deliverables/reports/BACKUP_RESTORE_TEST_REPORT.md,Large-library/crash/security review
+D12,Tests,deliverables/reports/junit,PARTIALLY_VERIFIED,Executed logs and XML,docs/TEST_REPORT.md,Remaining device/provider scenarios
+D13,Fire compatibility,deliverables/reports/FIRE_DEVICE_COMPATIBILITY.md,PARTIAL,One physical device,deliverables/android/build-logs/instrumentation.log,Broader Fire/orientation/accessibility/billing
+D14,Documentation,docs,IMPLEMENTED,File inventory,README.md,Update as gates are completed
+D15,Deliverables manifest,deliverables/DELIVERABLES_MANIFEST.csv,IMPLEMENTED,Generated current inventory,scripts/collect_reports.py,Never interpret inventory as release approval

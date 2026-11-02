@@ -1,0 +1,16 @@
+[
+  {
+    "path": "deliverables\\android\\debug\\LifeTalea-0.1.0-debug.apk",
+    "sha256": "c02179c71788b672c60740bc32a671df8ff3294a4eef455ab1aeee39c14620ac",
+    "bytes": 20959289,
+    "signing": "debug key",
+    "verification": "Current build log required; existence alone is not a passed build"
+  },
+  {
+    "path": "deliverables\\android\\release\\LifeTalea-0.1.0-release-unsigned.apk",
+    "sha256": "005f0571f879292615976cf811c3f020ac2648e18cb85059f2f693fbfa5c9bd6",
+    "bytes": 13606399,
+    "signing": "UNSIGNED",
+    "verification": "Current build log required; existence alone is not a passed build"
+  }
+]

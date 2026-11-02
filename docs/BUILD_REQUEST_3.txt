@@ -1,0 +1,525 @@
+# LIFETALEA — FINAL ACCEPTANCE CRITERIA & RELEASE GATES
+## Continuation of Section 28 and Final Sections 29–31
+
+# 28. MANDATORY ACCEPTANCE CRITERIA — CONTINUED
+
+## AC-03 — Audio Recording and Playback
+
+Additional acceptance criteria:
+
+- [ ] Recordings are saved in private application storage.
+- [ ] Recordings remain available after application restart.
+- [ ] Playback, pause, resume, and seek controls work.
+- [ ] Recording interruptions are handled safely.
+- [ ] Microphone permission denial does not crash the application.
+- [ ] Low-storage conditions produce clear error messages.
+- [ ] Recording deletion removes the associated stored audio after confirmation.
+- [ ] No recording begins without an explicit user action.
+- [ ] No recording is silently uploaded.
+- [ ] Recording duration and playback position are accurate within the supported audio implementation.
+
+**Pass condition:** Recording, playback, persistence, interruption recovery, and deletion pass the required tests on supported devices.
+
+## AC-04 — Multilingual Voice Commands
+
+Voice input and spoken feedback are mandatory features, subject to device capabilities.
+
+- [ ] Push-to-talk activation works.
+- [ ] Microphone permission handling works.
+- [ ] Speech recognition availability is detected.
+- [ ] Recognised commands execute real application actions.
+- [ ] Transcribed commands are displayed where appropriate.
+- [ ] Spoken responses use a supported TextToSpeech engine.
+- [ ] Destructive commands require confirmation.
+- [ ] Unsupported commands produce understandable feedback.
+- [ ] Recognition errors do not crash the app.
+- [ ] All essential actions remain accessible through touch controls.
+- [ ] No continuous background listening occurs.
+- [ ] Raw voice-command recordings are not retained by default.
+
+Test at least:
+
+1. Create a new memory.
+2. Start recording.
+3. Stop recording.
+4. Open an album.
+5. Show memories from a selected year.
+6. Read a saved story.
+7. Open the timeline.
+8. Start a keepsake book.
+
+**Pass condition:** Supported commands function correctly on tested devices and unsupported voice environments have working fallbacks.
+
+## AC-05 — Voice Transcription
+
+- [ ] A genuine transcription engine is integrated where available.
+- [ ] Supported audio formats are documented.
+- [ ] Supported languages are documented.
+- [ ] Transcription produces editable text.
+- [ ] Users can correct transcription errors.
+- [ ] Corrected transcripts persist after restart.
+- [ ] Transcription failures do not delete original recordings.
+- [ ] Cloud transcription requires explicit consent before audio transmission.
+- [ ] Transcription processing states are visible.
+- [ ] Unavailable transcription is clearly explained.
+- [ ] No fabricated transcripts are displayed as genuine results.
+
+**Pass condition:** Recorded audio can be transcribed using a tested engine, with reliable editing, saving, and failure handling.
+
+If the engine or credentials are unavailable, mark transcription BLOCKED rather than complete.
+
+## AC-06 — Family Albums and Timeline
+
+- [ ] Albums can be created, edited, and deleted.
+- [ ] Memories can be assigned to albums.
+- [ ] Memories can belong to multiple albums where supported.
+- [ ] Timeline entries appear in the correct chronological order.
+- [ ] Approximate and unknown dates are handled.
+- [ ] Year and album filters work.
+- [ ] Photographs and audio indicators display correctly.
+- [ ] Deleting an album does not unintentionally delete unrelated memories.
+- [ ] Timeline data persists offline.
+
+**Pass condition:** Album organisation and timeline navigation work correctly with real stored data.
+
+## AC-07 — Digital Scrapbook
+
+- [ ] Users can create scrapbook projects.
+- [ ] Users can select layouts.
+- [ ] Photographs can be added and arranged.
+- [ ] Captions and story blocks can be edited.
+- [ ] Pages can be reordered.
+- [ ] Drafts can be saved.
+- [ ] Saved projects reopen correctly.
+- [ ] Layouts adapt to supported screen sizes.
+- [ ] Missing images are handled gracefully.
+- [ ] No private content is automatically published.
+
+**Pass condition:** Users can create, edit, save, reopen, and preview a scrapbook without data loss.
+
+## AC-08 — Keepsake PDF Export
+
+- [ ] Users can select memories for export.
+- [ ] Users can configure a cover title.
+- [ ] Photographs render correctly.
+- [ ] Story text remains readable.
+- [ ] Page numbers are correct.
+- [ ] Selected print-friendly page sizes work.
+- [ ] Sensitive fields can be excluded.
+- [ ] Exported PDF files open successfully.
+- [ ] Unicode and approved localised text render correctly.
+- [ ] Export failures are handled without corrupting original memories.
+- [ ] PDF generation does not require uploading private memories.
+
+**Pass condition:** Generated PDFs pass document validation and visual inspection.
+
+## AC-09 — Offline Functionality
+
+Test with internet connectivity disabled.
+
+- [ ] Users can create memories offline.
+- [ ] Users can edit memories offline.
+- [ ] Users can view saved albums offline.
+- [ ] Users can record audio offline.
+- [ ] Users can play saved audio offline.
+- [ ] Users can add photographs offline.
+- [ ] Users can use the timeline offline.
+- [ ] Users can edit scrapbooks offline.
+- [ ] Users can export keepsake PDFs offline.
+- [ ] Local data persists after restart.
+- [ ] Network-dependent transcription is clearly identified as unavailable offline.
+
+**Pass condition:** Every advertised offline feature works without network connectivity.
+
+## AC-10 — Worldwide Application Localisation
+
+**Critical release gate.**
+
+For every approved application locale:
+
+- [ ] All required interface strings are translated.
+- [ ] No unexpected English fallback appears.
+- [ ] Navigation is localised.
+- [ ] Onboarding is localised.
+- [ ] Memory prompts are localised.
+- [ ] Notifications are localised.
+- [ ] Paywall content is localised.
+- [ ] Error messages are localised.
+- [ ] Accessibility labels are localised.
+- [ ] Placeholders are preserved.
+- [ ] Plural rules work.
+- [ ] Date formats are appropriate.
+- [ ] Right-to-left layouts work where applicable.
+- [ ] Long translated text does not break layouts.
+- [ ] Required human review is recorded.
+- [ ] Voice capability information is accurate for that locale.
+
+**Pass condition:** Every release-approved locale passes translation validation, layout testing, and required review.
+
+Do not claim that a language is release-ready solely because machine-translated strings exist.
+
+## AC-11 — Fully Localised Amazon Screenshots
+
+**Critical release gate.**
+
+For every approved store-listing locale:
+
+- [ ] All eight required screenshot compositions exist.
+- [ ] Screenshots display the actual implemented application.
+- [ ] Visible interface text matches the target locale.
+- [ ] Marketing headlines are translated naturally.
+- [ ] Supporting captions are translated.
+- [ ] Search terms reflect local terminology.
+- [ ] Fire tablet variants exist.
+- [ ] Phone variants exist where required.
+- [ ] Current Amazon dimensions are satisfied.
+- [ ] Images are readable.
+- [ ] No important content is cropped.
+- [ ] Screenshots contain no fabricated testimonials or ratings.
+- [ ] Screenshots do not advertise unavailable features.
+- [ ] Screenshot manifest is complete.
+- [ ] Exported files pass image validation.
+
+**Automatic failure:** Translated marketing text placed over English-language application screenshots.
+
+**Pass condition:** Every required screenshot is present, correctly localised, technically valid, and visually reviewed.
+
+## AC-12 — Translation Automation Pipeline
+
+- [ ] Source strings can be extracted.
+- [ ] New and changed strings are detected.
+- [ ] Translation provider integration works when configured.
+- [ ] Translation caching works.
+- [ ] Protected terminology is preserved.
+- [ ] Placeholders are validated.
+- [ ] Missing translations are reported.
+- [ ] Resource generation succeeds.
+- [ ] Right-to-left validation is included.
+- [ ] Translation review status is tracked.
+- [ ] API keys are excluded from release artifacts.
+- [ ] Translation reports can be regenerated.
+
+**Pass condition:** New source strings can move through extraction, translation, validation, and review without manually rebuilding every locale.
+
+Provider-dependent checks remain BLOCKED if credentials are unavailable.
+
+## AC-13 — Amazon In-App Purchasing
+
+- [ ] Amazon-compatible billing integration exists.
+- [ ] Premium product details can be retrieved.
+- [ ] The paywall displays store-provided localised prices.
+- [ ] Successful verified purchases grant Premium.
+- [ ] Cancelled purchases do not grant Premium.
+- [ ] Failed purchases are handled.
+- [ ] Purchase restoration works.
+- [ ] Entitlements persist appropriately.
+- [ ] Offline entitlement handling is defined and tested.
+- [ ] Free-tier limits are enforced.
+- [ ] Premium features unlock correctly.
+- [ ] Test billing cannot grant production entitlements.
+- [ ] No Google Play Billing dependency exists in the Amazon build.
+
+**Pass condition:** Required purchase scenarios pass in an appropriate Amazon test environment.
+
+If Amazon credentials or store configuration are unavailable, mark live verification BLOCKED.
+
+## AC-14 — Premium Brand Assets
+
+- [ ] Master app icon exists.
+- [ ] Adaptive icon layers exist.
+- [ ] Monochrome icon exists.
+- [ ] Splash artwork exists.
+- [ ] Onboarding illustrations exist.
+- [ ] Album templates exist.
+- [ ] Voice recording graphics exist.
+- [ ] Scrapbook templates exist.
+- [ ] Keepsake book templates exist.
+- [ ] Premium upgrade graphics exist.
+- [ ] Marketing templates exist.
+- [ ] Assets are visually consistent.
+- [ ] Usage rights are documented.
+- [ ] No copied competitor assets remain.
+
+**Pass condition:** Required production assets exist and have been inspected.
+
+## AC-15 — Amazon Appstore SEO / ASO
+
+For every approved store-listing locale:
+
+- [ ] App title is prepared.
+- [ ] Product summary is prepared.
+- [ ] Full description is prepared.
+- [ ] Relevant search terminology is researched.
+- [ ] Feature descriptions match implemented functionality.
+- [ ] Screenshot captions are localised.
+- [ ] Release notes are prepared.
+- [ ] Metadata meets verified Amazon requirements.
+- [ ] No unsupported keyword fields are invented.
+- [ ] No keyword stuffing is present.
+- [ ] No fabricated reviews, awards, or ratings appear.
+
+**Pass condition:** Every approved locale has a complete, accurate, validated listing package.
+
+## AC-16 — AI Search Optimisation
+
+- [ ] Marketing website builds successfully.
+- [ ] Required pages exist.
+- [ ] Pages contain crawlable HTML.
+- [ ] Titles and descriptions are meaningful.
+- [ ] Canonical URLs are configured.
+- [ ] XML sitemap exists.
+- [ ] Robots.txt exists.
+- [ ] Structured data is valid.
+- [ ] Structured data matches visible content.
+- [ ] Localised pages use appropriate hreflang annotations.
+- [ ] Product facts are accurate.
+- [ ] FAQ content is useful and original.
+- [ ] Privacy and support pages exist.
+- [ ] Internal links work.
+- [ ] No fabricated testimonials or ratings appear.
+
+**Pass condition:** Website builds and passes available technical SEO checks.
+
+Do not claim guaranteed AI recommendations or rankings.
+
+## AC-17 — Privacy and Security
+
+- [ ] No account is required for core features.
+- [ ] Memories remain local by default.
+- [ ] Audio is not uploaded without consent.
+- [ ] Photographs are not uploaded without consent.
+- [ ] Microphone permissions are requested contextually.
+- [ ] Private media uses appropriate storage.
+- [ ] No API secrets are embedded in release builds.
+- [ ] Data deletion works.
+- [ ] Export permissions are appropriate.
+- [ ] Backup files are handled securely.
+- [ ] Privacy disclosures match implemented behaviour.
+- [ ] No unnecessary tracking SDKs are included.
+- [ ] No unresolved critical security findings remain.
+
+**Pass condition:** Privacy and security tests pass with no unresolved critical issues.
+
+## AC-18 — Backup and Restore
+
+- [ ] Local backup can be created.
+- [ ] Backup manifest is generated.
+- [ ] Selected photographs are included correctly.
+- [ ] Selected audio recordings are included correctly.
+- [ ] Selected transcripts are included correctly.
+- [ ] Scrapbook projects are preserved.
+- [ ] Backup integrity is validated.
+- [ ] Restore preview works.
+- [ ] Duplicate handling works.
+- [ ] Corrupt backups are rejected safely.
+- [ ] Encrypted backup works where implemented.
+- [ ] Restored data remains accessible after restart.
+
+**Pass condition:** Backup and restore tests preserve selected content without silent loss.
+
+## AC-19 — Accessibility
+
+- [ ] Primary controls meet the defined touch-target minimum.
+- [ ] Screen reader labels are meaningful.
+- [ ] Text scales correctly.
+- [ ] Colour is not the only status indicator.
+- [ ] High-contrast layouts remain usable.
+- [ ] Reduced-motion settings are respected.
+- [ ] Voice controls are optional.
+- [ ] Touch alternatives exist.
+- [ ] Error messages are understandable.
+- [ ] Navigation works without precise gestures.
+
+**Pass condition:** Required accessibility checks pass on representative devices.
+
+## AC-20 — Performance and Reliability
+
+- [ ] Core screens remain responsive.
+- [ ] Large photo albums do not cause avoidable crashes.
+- [ ] Audio recording does not unnecessarily block the UI.
+- [ ] Image loading is memory-conscious.
+- [ ] Database operations do not block the main thread.
+- [ ] Background work is appropriately scheduled.
+- [ ] No reproducible critical crashes remain.
+- [ ] Application restart preserves user data.
+- [ ] Storage errors are handled.
+- [ ] Performance measurements are recorded on available devices.
+
+Set numerical performance budgets after establishing a baseline on representative Fire hardware.
+
+Do not invent performance results.
+
+## AC-21 — Fire Tablet Compatibility
+
+- [ ] Supported Fire OS versions are documented.
+- [ ] Representative tablet screen sizes are tested.
+- [ ] Portrait layouts work.
+- [ ] Landscape layouts work.
+- [ ] Touch navigation works.
+- [ ] Microphone permission behaviour is tested.
+- [ ] Audio recording works on tested supported devices.
+- [ ] Audio playback works.
+- [ ] File import works.
+- [ ] PDF export works.
+- [ ] Offline persistence works.
+- [ ] Speech recognition limitations are documented.
+- [ ] TextToSpeech availability is documented.
+- [ ] Amazon billing compatibility is verified.
+
+**Pass condition:** Required device tests pass, and untested configurations are clearly identified.
+
+## AC-22 — Release Build and Submission Package
+
+- [ ] Debug build succeeds.
+- [ ] Release build succeeds.
+- [ ] Package identifier is confirmed.
+- [ ] Version information is configured.
+- [ ] Signing configuration is documented.
+- [ ] Required permissions are documented.
+- [ ] App icon is available.
+- [ ] Localised screenshots are complete.
+- [ ] Localised metadata is complete.
+- [ ] Privacy policy is prepared.
+- [ ] Amazon billing is verified.
+- [ ] Device compatibility report exists.
+- [ ] Submission checklist is complete.
+- [ ] No critical defects remain.
+- [ ] Outstanding blockers are documented.
+
+**Pass condition:** All mandatory submission requirements pass.
+
+Do not publish without explicit authorisation.
+
+---
+
+# 29. AUTOMATED ACCEPTANCE TEST REPORTING
+
+Create:
+
+- `ACCEPTANCE_CRITERIA.md`
+- `ACCEPTANCE_TEST_RESULTS.csv`
+- `LOCALIZATION_TEST_REPORT.md`
+- `VOICE_TEST_REPORT.md`
+- `TRANSCRIPTION_TEST_REPORT.md`
+- `SCREENSHOT_VALIDATION_REPORT.md`
+- `AMAZON_BILLING_TEST_REPORT.md`
+- `FIRE_DEVICE_COMPATIBILITY.md`
+- `SECURITY_AND_PRIVACY_REPORT.md`
+- `BACKUP_RESTORE_TEST_REPORT.md`
+- `RELEASE_READINESS.md`
+
+Each test result must include:
+
+- Requirement ID
+- Test name
+- Execution date
+- Device or environment
+- Expected result
+- Actual result
+- PASS / FAIL / BLOCKED / NOT TESTED
+- Evidence path
+- Corrective action
+- Responsible module
+
+Record actual command output, test logs, screenshots, and generated artifacts.
+
+Never fabricate evidence.
+
+# 30. FINAL RELEASE DECISION RULES
+
+Use the following release statuses.
+
+## READY FOR SUBMISSION
+
+All mandatory acceptance criteria pass.
+
+Required localised screenshots, metadata, privacy documentation, billing verification, and device compatibility checks are complete.
+
+No unresolved critical defects remain.
+
+## CONDITIONALLY READY
+
+Core functionality passes, but clearly identified non-critical work remains.
+
+Do not describe this state as fully production-ready.
+
+## BLOCKED
+
+One or more critical requirements are failed, incomplete, or unverified.
+
+Examples:
+
+- Android build fails.
+- Audio recording loses data.
+- Required translations are incomplete.
+- Localised screenshots are missing.
+- Amazon billing is unverified.
+- Backup restoration loses content.
+- Critical security issues remain.
+- Required Fire tablet testing has not been completed.
+
+Do not mark a BLOCKED application ready for submission.
+
+# 31. FINAL CODEX EXECUTION COMMAND
+
+Continue development until every mandatory deliverable is implemented, verified, or accurately identified as blocked.
+
+After each phase:
+
+1. Implement the required functionality.
+2. Execute relevant builds and tests.
+3. Record actual results.
+4. Fix failures.
+5. Rerun affected tests.
+6. Verify generated files.
+7. Update the acceptance matrix.
+8. Update the deliverables manifest.
+9. Continue to the next phase.
+
+Create:
+
+`deliverables/DELIVERABLES_MANIFEST.csv`
+
+Required columns:
+
+- Deliverable ID
+- Deliverable name
+- File path
+- Status
+- Verification method
+- Evidence path
+- Remaining blocker
+
+Calculate:
+
+**Verified acceptance rate = Passed mandatory criteria / Total mandatory criteria × 100**
+
+Treat BLOCKED and NOT TESTED criteria as incomplete.
+
+Never claim 100% completion unless every mandatory criterion has passed.
+
+At completion, provide:
+
+- Android build artifact paths
+- Source repository location
+- Test summary
+- Voice compatibility summary
+- Transcription compatibility summary
+- Localisation coverage
+- Screenshot coverage
+- Amazon billing status
+- Marketing website build status
+- Privacy and security status
+- Fire tablet compatibility
+- Outstanding blockers
+- Exact next actions required before publishing
+
+**FINAL OBJECTIVE**
+
+Deliver LifeTalea as a fully functioning, premium, multilingual, voice-enabled family memory application with reliable offline preservation, verified localised Amazon Appstore screenshots, accurate SEO and AI-search-ready marketing content, professional keepsake exports, and evidence-backed release readiness.
+
+Do not stop at documentation.
+
+Do not fabricate implementation results.
+
+Do not declare the application production-ready while mandatory acceptance criteria remain incomplete.

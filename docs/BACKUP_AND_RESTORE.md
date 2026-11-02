@@ -1,0 +1,11 @@
+# Backup and restore
+
+Settings lets users explicitly include photos and/or recordings. Written memories, transcripts, albums, links, scrapbook projects and pages are included automatically. Basic archive creation/restore is free; encrypted creation is Premium. Restoring an encrypted archive is never paywalled.
+
+Format v1: `manifest.json` plus `media/<validated-name>` entries in ZIP. The manifest contains format/version, record fields, UUIDs, relationships and SHA-256 media hashes. AES-GCM archives begin with LTALEA01, followed by random salt, IV and authenticated ciphertext. A passphrase needs at least ten characters. The passphrase is not persisted by the app.
+
+The current implementation bounds total archives at 32 MiB, each attachment at 16 MiB and record collections at 10,000 items. Creation also conservatively reserves half the total budget for manifest/encryption/working buffers. It uses in-memory buffers, so practical device limits can be lower. Large-library streaming and user-facing size estimates remain required hardening before broad release. A long Premium recording can exceed the current backup attachment limit; shorten recordings or retain a separate copy until streaming backup is implemented.
+
+Restore reads and validates the entire archive first, then displays counts and duplicate memories. Existing memories and scrapbook drafts win conflicts. Missing attachment bytes, wrong hashes, invalid dates/UUIDs/relationships, duplicate names and unsupported versions are rejected. Restored files receive fresh local filenames. Imported database work is transactional; new files are removed on a caught rollback. A process crash between filesystem and SQLite operations still needs recovery/journal hardening.
+
+Backups do not contain purchase entitlements. Restoring private content cannot grant Premium. Exported archives are user-controlled copies; deletion inside the app does not remove them. A binary audio fixture in backup tests verifies byte preservation only; microphone recording/playback has its own diagnostic.

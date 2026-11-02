@@ -1,0 +1,55 @@
+{
+  "releaseStatus": "BLOCKED",
+  "passedMandatoryStatements": 39,
+  "totalMandatoryStatements": 258,
+  "verifiedAcceptanceRate": 15.12,
+  "unitTests": [
+    {
+      "name": "datesDoNotInventPrecision",
+      "class": "com.lifetalea.app.MemoryRulesTest",
+      "status": "PASS",
+      "evidence": "deliverables\\reports\\junit\\TEST-com.lifetalea.app.MemoryRulesTest.xml"
+    },
+    {
+      "name": "unknownDatesAppearLast",
+      "class": "com.lifetalea.app.MemoryRulesTest",
+      "status": "PASS",
+      "evidence": "deliverables\\reports\\junit\\TEST-com.lifetalea.app.MemoryRulesTest.xml"
+    },
+    {
+      "name": "searchIncludesTranscriptAndTags",
+      "class": "com.lifetalea.app.MemoryRulesTest",
+      "status": "PASS",
+      "evidence": "deliverables\\reports\\junit\\TEST-com.lifetalea.app.MemoryRulesTest.xml"
+    },
+    {
+      "name": "wrongPasswordDoesNotReturnPlaintext",
+      "class": "com.lifetalea.app.CryptoTest",
+      "status": "PASS",
+      "evidence": "deliverables\\reports\\junit\\TEST-com.lifetalea.app.CryptoTest.xml"
+    },
+    {
+      "name": "authenticatedRoundTripAndTamperRejection",
+      "class": "com.lifetalea.app.CryptoTest",
+      "status": "PASS",
+      "evidence": "deliverables\\reports\\junit\\TEST-com.lifetalea.app.CryptoTest.xml"
+    },
+    {
+      "name": "commandsHaveRealStructuredIntents",
+      "class": "com.lifetalea.app.VoiceTest",
+      "status": "PASS",
+      "evidence": "deliverables\\reports\\junit\\TEST-com.lifetalea.app.VoiceTest.xml"
+    },
+    {
+      "name": "sandboxCannotGrantProductionEntitlements",
+      "class": "com.lifetalea.app.BillingPolicyTest",
+      "status": "PASS",
+      "evidence": "deliverables\\reports\\junit\\TEST-com.lifetalea.app.BillingPolicyTest.xml"
+    }
+  ],
+  "deviceSuitePass": true,
+  "deviceTestsPassed": 8,
+  "buildPass": true,
+  "websiteChecks": "PASS",
+  "staticChecks": "PASS"
+}

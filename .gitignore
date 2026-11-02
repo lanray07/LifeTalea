@@ -1,0 +1,17 @@
+.gradle/
+**/build/
+**/local.properties
+**/node_modules/
+**/.next/
+**/out/
+.env*
+!.env.example
+*.jks
+*.keystore
+__pycache__/
+*.log
+!deliverables/**/*.log
+*.apk
+*.aab
+*.tsbuildinfo
+*.tar

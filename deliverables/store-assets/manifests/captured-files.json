@@ -1,0 +1,65 @@
+[
+  {
+    "path": "deliverables\\reports\\device-evidence\\screenshots\\en-GB\\01-home.png",
+    "localeFolder": "en-GB",
+    "width": 1920,
+    "height": 1092,
+    "imageValid": true,
+    "rawCaptureMatchesAmazonDimensions": false,
+    "storeApproval": "NOT_APPROVED_REQUIRES_COMPOSITION_AND_REVIEW"
+  },
+  {
+    "path": "deliverables\\reports\\device-evidence\\screenshots\\en-GB\\02-albums.png",
+    "localeFolder": "en-GB",
+    "width": 1920,
+    "height": 1092,
+    "imageValid": true,
+    "rawCaptureMatchesAmazonDimensions": false,
+    "storeApproval": "NOT_APPROVED_REQUIRES_COMPOSITION_AND_REVIEW"
+  },
+  {
+    "path": "deliverables\\reports\\device-evidence\\screenshots\\en-GB\\03-story.png",
+    "localeFolder": "en-GB",
+    "width": 1920,
+    "height": 1092,
+    "imageValid": true,
+    "rawCaptureMatchesAmazonDimensions": false,
+    "storeApproval": "NOT_APPROVED_REQUIRES_COMPOSITION_AND_REVIEW"
+  },
+  {
+    "path": "deliverables\\reports\\device-evidence\\screenshots\\en-GB\\04-manual-transcript.png",
+    "localeFolder": "en-GB",
+    "width": 1920,
+    "height": 1092,
+    "imageValid": true,
+    "rawCaptureMatchesAmazonDimensions": false,
+    "storeApproval": "NOT_APPROVED_REQUIRES_COMPOSITION_AND_REVIEW"
+  },
+  {
+    "path": "deliverables\\reports\\device-evidence\\screenshots\\en-GB\\05-timeline.png",
+    "localeFolder": "en-GB",
+    "width": 1920,
+    "height": 564,
+    "imageValid": true,
+    "rawCaptureMatchesAmazonDimensions": false,
+    "storeApproval": "NOT_APPROVED_REQUIRES_COMPOSITION_AND_REVIEW"
+  },
+  {
+    "path": "deliverables\\reports\\device-evidence\\screenshots\\en-GB\\06-scrapbook.png",
+    "localeFolder": "en-GB",
+    "width": 1920,
+    "height": 1092,
+    "imageValid": true,
+    "rawCaptureMatchesAmazonDimensions": false,
+    "storeApproval": "NOT_APPROVED_REQUIRES_COMPOSITION_AND_REVIEW"
+  },
+  {
+    "path": "deliverables\\reports\\device-evidence\\screenshots\\en-GB\\qa-last-state.png",
+    "localeFolder": "en-GB",
+    "width": 1920,
+    "height": 1092,
+    "imageValid": true,
+    "rawCaptureMatchesAmazonDimensions": false,
+    "storeApproval": "NOT_APPROVED_REQUIRES_COMPOSITION_AND_REVIEW"
+  }
+]

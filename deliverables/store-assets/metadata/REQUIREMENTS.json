@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-11-02",
+  "source": "https://developer.amazon.com/docs/app-submission/appstore-details.html",
+  "verified": true,
+  "tabletScreenshots": {
+    "minimum": 3,
+    "maximum": 10,
+    "formats": ["PNG", "JPEG"],
+    "orientation": "landscape_or_portrait",
+    "sizes": [[800,480],[1024,600],[1280,720],[1280,800],[1920,1080],[1920,1200],[2560,1600]],
+    "useActualApp": true,
+    "dummyPersonalData": true
+  },
+  "icons": {"sizes": [[114,114],[512,512]], "format":"PNG", "transparent":true},
+  "metadata": {
+    "shortDescriptionMaxBytes": 2000,
+    "shortDescriptionConservativeMaxEnglishCharacters": 1200,
+    "longDescriptionMaxCharacters": 4000,
+    "featureBulletRecommendedMinimum": 3,
+    "featureBulletRecommendedMaximum": 5,
+    "plainTextOnly": true,
+    "optionalKeywordFieldExists": true,
+    "displayTitleMaxCharacters": 200,
+    "titleLimitSource": "https://developer.amazon.com/apps-and-games/blogs/2024/06/app-store-optimization",
+    "titleLimitRequiresConsoleRecheck": true
+  },
+  "storeLanguages": {
+    "source":"https://www.developer.amazon.com/docs/app-submission/distribute-your-app-internationally.html",
+    "documented":["Dutch","English (Australia)","English (India)","English (United States)","French","German","Italian","Japanese","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Spanish","Swedish"],
+    "consoleIllustrationAdditionalVariants":["English (United Kingdom)","Spanish (Mexico)"],
+    "exactRegionalMappingVerified":false,
+    "appLanguageSupportIndependent":true,
+    "distributionCountriesSelectedByPublisher":true
+  },
+  "distribution": {
+    "amazonNonAmazonAndroidAvailable":false,
+    "discontinuedDate":"2025-08-20",
+    "fireDevicesContinue":true,
+    "source":"https://developer.amazon.com/apps-and-games/blogs/2025/02/upcoming-changes-to-amazon-appstore-for-android-devices-and-coins-program"
+  },
+  "iap": {
+    "dependency":"com.amazon.device:amazon-appstore-sdk:3.0.9",
+    "authenticationAsset":"android/app/src/main/assets/AppstoreAuthenticationKey.pem",
+    "integrationSource":"https://developer.amazon.com/docs/appstore-sdk/integrate-appstore-sdk.html",
+    "modeApi":"LicensingService.getAppstoreSDKMode()",
+    "initializationRequired":"LicensingService.verifyLicense()",
+    "modeSource":"https://developer.amazon.com/docs/in-app-purchasing/transitioning-to-appstore-sdk.html",
+    "testTools":["App Tester","DevTest","Live App Testing","Receipt Verification Service"],
+    "testSource":"https://developer.amazon.com/docs/in-app-purchasing/iap-testing-overview.html",
+    "projectLiveVerificationStatus":"BLOCKED"
+  },
+  "nameClearance":{"name":"LifeTalea","status":"NOT_CLEARED","limitedWebQueryOnly":true},
+  "humanReviewStatus":"PENDING",
+  "submissionAuthorized":false
+}

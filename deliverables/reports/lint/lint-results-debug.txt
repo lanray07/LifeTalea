@@ -1,0 +1,752 @@
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:13: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 35
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application or sdk runs on a version of Android that is more
+   recent than your targetSdkVersion specifies that it has been tested with,
+   various compatibility modes kick in. This ensures that your application
+   continues to work, but it may look out of place. For example, if the
+   targetSdkVersion is less than 14, your app may get an option button in the
+   UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:30: Warning: A newer version of androidx.compose:compose-bom than 2025.04.01 is available: 2026.09.00 [GradleDependency]
+    implementation(platform("androidx.compose:compose-bom:2025.04.01"))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:31: Warning: A newer version of androidx.activity:activity-compose than 1.10.1 is available: 1.13.0 [GradleDependency]
+    implementation("androidx.activity:activity-compose:1.10.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:36: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:37: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:38: Warning: A newer version of androidx.room:room-runtime than 2.7.1 is available: 2.8.5 [GradleDependency]
+    implementation("androidx.room:room-runtime:2.7.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:39: Warning: A newer version of androidx.room:room-ktx than 2.7.1 is available: 2.8.5 [GradleDependency]
+    implementation("androidx.room:room-ktx:2.7.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:40: Warning: A newer version of androidx.room:room-compiler than 2.7.1 is available: 2.8.5 [GradleDependency]
+    ksp("androidx.room:room-compiler:2.7.1")
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:41: Warning: A newer version of androidx.datastore:datastore-preferences than 1.1.4 is available: 1.3.0 [GradleDependency]
+    implementation("androidx.datastore:datastore-preferences:1.1.4")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:42: Warning: A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.8.0 [GradleDependency]
+    implementation("androidx.appcompat:appcompat:1.7.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:46: Warning: A newer version of androidx.test:runner than 1.6.2 is available: 1.7.0 [GradleDependency]
+    androidTestImplementation("androidx.test:runner:1.6.2")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:47: Warning: A newer version of androidx.test.ext:junit than 1.2.1 is available: 1.3.0 [GradleDependency]
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:48: Warning: A newer version of androidx.room:room-testing than 2.7.1 is available: 2.8.5 [GradleDependency]
+    androidTestImplementation("androidx.room:room-testing:2.7.1")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\build.gradle.kts:49: Warning: A newer version of androidx.compose:compose-bom than 2025.04.01 is available: 2026.09.00 [GradleDependency]
+    androidTestImplementation(platform("androidx.compose:compose-bom:2025.04.01"))
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+D:\App Projects\LifeTalea\android\app\src\main\java\com\lifetalea\app\ui\Design.kt:20: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+    val id = context.resources.getIdentifier(key, "string", context.packageName)
+                               ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\java\com\lifetalea\app\ui\LifeApp.kt:179: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+    val context = LocalContext.current; val id = context.resources.getIdentifier("hero_book", "drawable", context.packageName)
+                                                                   ~~~~~~~~~~~~~
+
+   Explanation for issues of type "DiscouragedApi":
+   Discouraged APIs are allowed and are not deprecated, but they may be unfit
+   for common use (e.g. due to slow performance or subtle behavior).
+
+D:\App Projects\LifeTalea\android\app\src\main\AndroidManifest.xml:9: Warning: The attribute android:allowBackup is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute android:dataExtractionRules specifying an @xml resource which configures cloud backups and device transfers on Android 12 and higher. [DataExtractionRules]
+    <application android:theme="@style/Theme.LifeTalea" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:allowBackup="false" android:supportsRtl="true" android:usesCleartextTraffic="false">
+                                                                                                                                                 ~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+D:\App Projects\LifeTalea\android\app\src\main\res\mipmap-anydpi-v26: Warning: This folder configuration (v26) is unnecessary; minSdkVersion is 26. Merge all the resources in this folder into mipmap-anydpi. [ObsoleteSdkInt]
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+D:\App Projects\LifeTalea\android\app\src\main\res\drawable\hero_book.webp: Warning: The resource R.drawable.hero_book appears to be unused [UnusedResources]
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:3: Warning: The resource R.string.memories appears to be unused [UnusedResources]
+    <string name="memories">Memories</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:4: Warning: The resource R.string.albums appears to be unused [UnusedResources]
+    <string name="albums">Albums</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:5: Warning: The resource R.string.timeline appears to be unused [UnusedResources]
+    <string name="timeline">Timeline</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:6: Warning: The resource R.string.keepsakes appears to be unused [UnusedResources]
+    <string name="keepsakes">Keepsakes</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:7: Warning: The resource R.string.settings appears to be unused [UnusedResources]
+    <string name="settings">Settings</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:8: Warning: The resource R.string.add_memory appears to be unused [UnusedResources]
+    <string name="add_memory">Add a memory</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:9: Warning: The resource R.string.hero_title appears to be unused [UnusedResources]
+    <string name="hero_title">Every story deserves a place.</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:10: Warning: The resource R.string.hero_body appears to be unused [UnusedResources]
+    <string name="hero_body">Keep the moments. Remember the voices.</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:11: Warning: The resource R.string.recent_memories appears to be unused [UnusedResources]
+    <string name="recent_memories">Recent memories</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:12: Warning: The resource R.string.empty_title appears to be unused [UnusedResources]
+    <string name="empty_title">Your story starts here.</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:13: Warning: The resource R.string.empty_body appears to be unused [UnusedResources]
+    <string name="empty_body">Add a memory to begin your family journal.</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:14: Warning: The resource R.string.save appears to be unused [UnusedResources]
+    <string name="save">Save</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:15: Warning: The resource R.string.cancel appears to be unused [UnusedResources]
+    <string name="cancel">Cancel</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:16: Warning: The resource R.string.delete appears to be unused [UnusedResources]
+    <string name="delete">Delete</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:17: Warning: The resource R.string.edit appears to be unused [UnusedResources]
+    <string name="edit">Edit</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:18: Warning: The resource R.string.back appears to be unused [UnusedResources]
+    <string name="back">Back</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:19: Warning: The resource R.string.close appears to be unused [UnusedResources]
+    <string name="close">Close</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:21: Warning: The resource R.string.confirm appears to be unused [UnusedResources]
+    <string name="confirm">Confirm</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:22: Warning: The resource R.string.title appears to be unused [UnusedResources]
+    <string name="title">Title</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:23: Warning: The resource R.string.story appears to be unused [UnusedResources]
+    <string name="story">Your story</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:24: Warning: The resource R.string.date appears to be unused [UnusedResources]
+    <string name="date">Event date</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:25: Warning: The resource R.string.precision appears to be unused [UnusedResources]
+    <string name="precision">Date precision</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:26: Warning: The resource R.string.unknown appears to be unused [UnusedResources]
+    <string name="unknown">Unknown</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:27: Warning: The resource R.string.year appears to be unused [UnusedResources]
+    <string name="year">Year</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:28: Warning: The resource R.string.month appears to be unused [UnusedResources]
+    <string name="month">Month</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:29: Warning: The resource R.string.day appears to be unused [UnusedResources]
+    <string name="day">Exact date</string>
+            ~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:30: Warning: The resource R.string.date_hint appears to be unused [UnusedResources]
+    <string name="date_hint">YYYY, YYYY-MM or YYYY-MM-DD</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:31: Warning: The resource R.string.location appears to be unused [UnusedResources]
+    <string name="location">Location (optional)</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:32: Warning: The resource R.string.tags appears to be unused [UnusedResources]
+    <string name="tags">Tags (comma separated)</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:33: Warning: The resource R.string.transcript appears to be unused [UnusedResources]
+    <string name="transcript">Editable transcript</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:34: Warning: The resource R.string.favourite appears to be unused [UnusedResources]
+    <string name="favourite">Favourite</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:35: Warning: The resource R.string.duplicate appears to be unused [UnusedResources]
+    <string name="duplicate">Duplicate</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:36: Warning: The resource R.string.search appears to be unused [UnusedResources]
+    <string name="search">Search stories, tags, transcripts…</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:37: Warning: The resource R.string.all appears to be unused [UnusedResources]
+    <string name="all">All</string>
+            ~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:38: Warning: The resource R.string.favourites appears to be unused [UnusedResources]
+    <string name="favourites">Favourites</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:39: Warning: The resource R.string.new_album appears to be unused [UnusedResources]
+    <string name="new_album">New album</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:40: Warning: The resource R.string.album_title appears to be unused [UnusedResources]
+    <string name="album_title">Album title</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:41: Warning: The resource R.string.no_albums appears to be unused [UnusedResources]
+    <string name="no_albums">A collection for every chapter.</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:42: Warning: The resource R.string.no_albums_body appears to be unused [UnusedResources]
+    <string name="no_albums_body">Create an album, then add memories to it.</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:43: Warning: The resource R.string.delete_memory appears to be unused [UnusedResources]
+    <string name="delete_memory">Delete this memory and its attachments?</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:44: Warning: The resource R.string.delete_album appears to be unused [UnusedResources]
+    <string name="delete_album">Delete this album? Its memories will stay in your library.</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:45: Warning: The resource R.string.delete_attachment appears to be unused [UnusedResources]
+    <string name="delete_attachment">Delete this attachment from your device?</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:46: Warning: The resource R.string.delete_book appears to be unused [UnusedResources]
+    <string name="delete_book">Delete this scrapbook draft? Your memories will stay safe.</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:47: Warning: The resource R.string.delete_all appears to be unused [UnusedResources]
+    <string name="delete_all">Delete all local memories, albums, recordings and scrapbook drafts? This cannot be undone.</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:48: Warning: The resource R.string.photos appears to be unused [UnusedResources]
+    <string name="photos">Photographs</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:49: Warning: The resource R.string.add_photo appears to be unused [UnusedResources]
+    <string name="add_photo">Add photograph</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:51: Warning: The resource R.string.record appears to be unused [UnusedResources]
+    <string name="record">Record a story</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:52: Warning: The resource R.string.pause appears to be unused [UnusedResources]
+    <string name="pause">Pause</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:53: Warning: The resource R.string.resume appears to be unused [UnusedResources]
+    <string name="resume">Resume</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:54: Warning: The resource R.string.stop_save appears to be unused [UnusedResources]
+    <string name="stop_save">Stop and save</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:55: Warning: The resource R.string.recording appears to be unused [UnusedResources]
+    <string name="recording">Recording</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:56: Warning: The resource R.string.recording_paused appears to be unused [UnusedResources]
+    <string name="recording_paused">Recording paused</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:57: Warning: The resource R.string.recording_notice appears to be unused [UnusedResources]
+    <string name="recording_notice">Audio stays on this device. Leaving the app stops and saves this recording. Free recordings are limited to three minutes.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:58: Warning: The resource R.string.microphone_notice appears to be unused [UnusedResources]
+    <string name="microphone_notice">LifeTalea needs microphone access only while you record or use push-to-talk. You can always write instead.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:59: Warning: The resource R.string.microphone_denied appears to be unused [UnusedResources]
+    <string name="microphone_denied">Microphone access was declined. You can still write a story or add photographs.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:60: Warning: The resource R.string.recording_failed appears to be unused [UnusedResources]
+    <string name="recording_failed">Recording could not be saved. Check microphone access and free storage, then try again.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:62: Warning: The resource R.string.play appears to be unused [UnusedResources]
+    <string name="play">Play</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:63: Warning: The resource R.string.seek appears to be unused [UnusedResources]
+    <string name="seek">Playback position</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:64: Warning: The resource R.string.rename appears to be unused [UnusedResources]
+    <string name="rename">Rename</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:65: Warning: The resource R.string.transcription appears to be unused [UnusedResources]
+    <string name="transcription">Transcription</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:66: Warning: The resource R.string.transcription_unavailable appears to be unused [UnusedResources]
+    <string name="transcription_unavailable">Audio transcription is not configured in this build. Your recording is safe. You can type or paste a transcript below.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:67: Warning: The resource R.string.voice_commands appears to be unused [UnusedResources]
+    <string name="voice_commands">Voice commands</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:68: Warning: The resource R.string.voice_notice appears to be unused [UnusedResources]
+    <string name="voice_notice">Push to talk uses your device’s speech service, which may need internet and process speech externally. Only continue if you agree. Audio commands are not saved by LifeTalea. Command phrases currently support English.</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:69: Warning: The resource R.string.listen appears to be unused [UnusedResources]
+    <string name="listen">Push to talk</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:70: Warning: The resource R.string.listening appears to be unused [UnusedResources]
+    <string name="listening">Listening…</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:71: Warning: The resource R.string.voice_unavailable appears to be unused [UnusedResources]
+    <string name="voice_unavailable">Speech recognition is unavailable on this device. Use the touch controls or type a command.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:72: Warning: The resource R.string.voice_error appears to be unused [UnusedResources]
+    <string name="voice_error">Speech was not recognised. Try again or use the text command field.</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:73: Warning: The resource R.string.command appears to be unused [UnusedResources]
+    <string name="command">Type a command</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:74: Warning: The resource R.string.run_command appears to be unused [UnusedResources]
+    <string name="run_command">Run command</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:75: Warning: The resource R.string.unknown_command appears to be unused [UnusedResources]
+    <string name="unknown_command">Try: Create a new memory, Open my timeline, or Create a keepsake book.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:76: Warning: The resource R.string.read_story appears to be unused [UnusedResources]
+    <string name="read_story">Read story aloud</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:77: Warning: The resource R.string.tts_unavailable appears to be unused [UnusedResources]
+    <string name="tts_unavailable">Spoken audio is unavailable for this language or device. Your written story is still available.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:78: Warning: The resource R.string.stop_speaking appears to be unused [UnusedResources]
+    <string name="stop_speaking">Stop spoken audio</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:79: Warning: The resource R.string.prompt appears to be unused [UnusedResources]
+    <string name="prompt">A little inspiration</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:80: Warning: The resource R.string.prompt_childhood appears to be unused [UnusedResources]
+    <string name="prompt_childhood">What childhood memory still makes you smile?</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:81: Warning: The resource R.string.prompt_tradition appears to be unused [UnusedResources]
+    <string name="prompt_tradition">What family tradition would you like to preserve?</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:82: Warning: The resource R.string.prompt_lesson appears to be unused [UnusedResources]
+    <string name="prompt_lesson">What advice would you give your younger self?</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:83: Warning: The resource R.string.prompt_recipe appears to be unused [UnusedResources]
+    <string name="prompt_recipe">Which family recipe has a story behind it?</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:84: Warning: The resource R.string.answer_prompt appears to be unused [UnusedResources]
+    <string name="answer_prompt">Tell this story</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:85: Warning: The resource R.string.no_results appears to be unused [UnusedResources]
+    <string name="no_results">No memories found. Try another search or filter.</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:86: Warning: The resource R.string.unknown_date appears to be unused [UnusedResources]
+    <string name="unknown_date">Date unknown</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:87: Warning: The resource R.string.approximate appears to be unused [UnusedResources]
+    <string name="approximate">Approximate date</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:88: Warning: The resource R.string.new_book appears to be unused [UnusedResources]
+    <string name="new_book">Create a scrapbook</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:89: Warning: The resource R.string.book_title appears to be unused [UnusedResources]
+    <string name="book_title">Cover title</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:90: Warning: The resource R.string.no_books appears to be unused [UnusedResources]
+    <string name="no_books">A keepsake to hold onto.</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:91: Warning: The resource R.string.no_books_body appears to be unused [UnusedResources]
+    <string name="no_books_body">Bring saved memories together in a scrapbook. Arrange pages, add captions and keep a draft.</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:92: Warning: The resource R.string.select_memories appears to be unused [UnusedResources]
+    <string name="select_memories">Select memories</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:93: Warning: The resource R.string.theme appears to be unused [UnusedResources]
+    <string name="theme">Theme</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:94: Warning: The resource R.string.forest appears to be unused [UnusedResources]
+    <string name="forest">Forest</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:95: Warning: The resource R.string.rose appears to be unused [UnusedResources]
+    <string name="rose">Rose</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:96: Warning: The resource R.string.paper appears to be unused [UnusedResources]
+    <string name="paper">Paper</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:97: Warning: The resource R.string.caption appears to be unused [UnusedResources]
+    <string name="caption">Page caption</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:98: Warning: The resource R.string.layout appears to be unused [UnusedResources]
+    <string name="layout">Page layout</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:99: Warning: The resource R.string.story_layout appears to be unused [UnusedResources]
+    <string name="story_layout">Story</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:100: Warning: The resource R.string.photo_layout appears to be unused [UnusedResources]
+    <string name="photo_layout">Photograph</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:101: Warning: The resource R.string.move_up appears to be unused [UnusedResources]
+    <string name="move_up">Move page up</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:102: Warning: The resource R.string.move_down appears to be unused [UnusedResources]
+    <string name="move_down">Move page down</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:103: Warning: The resource R.string.remove_page appears to be unused [UnusedResources]
+    <string name="remove_page">Remove page</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:104: Warning: The resource R.string.add_page appears to be unused [UnusedResources]
+    <string name="add_page">Add page</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:105: Warning: The resource R.string.preview appears to be unused [UnusedResources]
+    <string name="preview">Preview</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:106: Warning: The resource R.string.export_pdf appears to be unused [UnusedResources]
+    <string name="export_pdf">Export PDF</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:107: Warning: The resource R.string.pdf_options appears to be unused [UnusedResources]
+    <string name="pdf_options">Keepsake export</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:108: Warning: The resource R.string.include_location appears to be unused [UnusedResources]
+    <string name="include_location">Include locations</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:109: Warning: The resource R.string.include_transcript appears to be unused [UnusedResources]
+    <string name="include_transcript">Include transcripts</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:110: Warning: The resource R.string.page_size appears to be unused [UnusedResources]
+    <string name="page_size">Page size</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:111: Warning: The resource R.string.pdf_note appears to be unused [UnusedResources]
+    <string name="pdf_note">PDF generation happens on your device. Review the file before sharing. Recordings are not embedded in printed keepsakes.</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:112: Warning: The resource R.string.empty_book appears to be unused [UnusedResources]
+    <string name="empty_book">Add a memory to create the first page.</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:113: Warning: The resource R.string.missing_memory appears to be unused [UnusedResources]
+    <string name="missing_memory">This memory has been deleted. Remove this page or choose another memory.</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:114: Warning: The resource R.string.welcome appears to be unused [UnusedResources]
+    <string name="welcome">Make space for the stories that matter.</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:115: Warning: The resource R.string.welcome_body appears to be unused [UnusedResources]
+    <string name="welcome_body">A private home for photographs, voices and family memories. No account required. Your memories stay on this device unless you choose to export them.</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:116: Warning: The resource R.string.get_started appears to be unused [UnusedResources]
+    <string name="get_started">Begin your story</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:117: Warning: The resource R.string.skip appears to be unused [UnusedResources]
+    <string name="skip">Skip for now</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:118: Warning: The resource R.string.language appears to be unused [UnusedResources]
+    <string name="language">Language</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:119: Warning: The resource R.string.device_language appears to be unused [UnusedResources]
+    <string name="device_language">Use device language</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:120: Warning: The resource R.string.language_note appears to be unused [UnusedResources]
+    <string name="language_note">English source resources are available in this development build. Other target languages and native-language review are pending.</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:121: Warning: The resource R.string.purpose appears to be unused [UnusedResources]
+    <string name="purpose">What would you like to preserve?</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:122: Warning: The resource R.string.family appears to be unused [UnusedResources]
+    <string name="family">Family memories</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:123: Warning: The resource R.string.personal appears to be unused [UnusedResources]
+    <string name="personal">My life journal</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:124: Warning: The resource R.string.childhood appears to be unused [UnusedResources]
+    <string name="childhood">Childhood milestones</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:125: Warning: The resource R.string.history appears to be unused [UnusedResources]
+    <string name="history">Family history</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:126: Warning: The resource R.string.travel appears to be unused [UnusedResources]
+    <string name="travel">Travel memories</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:127: Warning: The resource R.string.legacy appears to be unused [UnusedResources]
+    <string name="legacy">Legacy stories</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:128: Warning: The resource R.string.appearance appears to be unused [UnusedResources]
+    <string name="appearance">Appearance</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:129: Warning: The resource R.string.system appears to be unused [UnusedResources]
+    <string name="system">Device setting</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:130: Warning: The resource R.string.light appears to be unused [UnusedResources]
+    <string name="light">Light</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:131: Warning: The resource R.string.dark appears to be unused [UnusedResources]
+    <string name="dark">Dark</string>
+            ~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:132: Warning: The resource R.string.spoken_feedback appears to be unused [UnusedResources]
+    <string name="spoken_feedback">Spoken feedback</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:133: Warning: The resource R.string.privacy appears to be unused [UnusedResources]
+    <string name="privacy">Privacy</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:134: Warning: The resource R.string.privacy_body appears to be unused [UnusedResources]
+    <string name="privacy_body">Memories and attachments are stored privately on this device. There are no advertising or analytics SDKs. Android system backup is disabled. Deleting the app removes its local data. Keep a backup somewhere safe. Speech recognition is provided by your installed service; review its privacy settings. Amazon purchasing communicates with Amazon. LifeTalea does not upload memories or recordings.</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:135: Warning: The resource R.string.backup appears to be unused [UnusedResources]
+    <string name="backup">Backup &amp; restore</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:136: Warning: The resource R.string.create_backup appears to be unused [UnusedResources]
+    <string name="create_backup">Create backup</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:137: Warning: The resource R.string.restore_backup appears to be unused [UnusedResources]
+    <string name="restore_backup">Restore backup</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:138: Warning: The resource R.string.include_photos appears to be unused [UnusedResources]
+    <string name="include_photos">Include photographs</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:139: Warning: The resource R.string.include_audio appears to be unused [UnusedResources]
+    <string name="include_audio">Include recordings</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:140: Warning: The resource R.string.password appears to be unused [UnusedResources]
+    <string name="password">Backup passphrase (optional)</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:141: Warning: The resource R.string.password_hint appears to be unused [UnusedResources]
+    <string name="password_hint">At least 10 characters for encryption</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:142: Warning: The resource R.string.backup_notice appears to be unused [UnusedResources]
+    <string name="backup_notice">Stories, transcripts, albums and scrapbook drafts are included. Photos and recordings are included only when selected. Unencrypted exports contain readable private information. Keep your passphrase safe; it cannot be recovered. Current archive limits: 32 MiB total and 16 MiB per attachment. Larger libraries need a future streaming backup implementation.</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:143: Warning: The resource R.string.restore_notice appears to be unused [UnusedResources]
+    <string name="restore_notice">Choose a LifeTalea backup. Passphrase is needed only for encrypted files. Existing memories and drafts are kept on conflicts.</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:144: Warning: The resource R.string.restore_preview appears to be unused [UnusedResources]
+    <string name="restore_preview">Review backup before restoring</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:146: Warning: The resource R.string.restore_now appears to be unused [UnusedResources]
+    <string name="restore_now">Restore selected archive</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:147: Warning: The resource R.string.backup_saved appears to be unused [UnusedResources]
+    <string name="backup_saved">Backup saved</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:148: Warning: The resource R.string.restore_complete appears to be unused [UnusedResources]
+    <string name="restore_complete">Restore completed</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:149: Warning: The resource R.string.pdf_saved appears to be unused [UnusedResources]
+    <string name="pdf_saved">PDF saved</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:150: Warning: The resource R.string.delete_data appears to be unused [UnusedResources]
+    <string name="delete_data">Delete all local data</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:151: Warning: The resource R.string.premium appears to be unused [UnusedResources]
+    <string name="premium">LifeTalea Premium</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:152: Warning: The resource R.string.premium_body appears to be unused [UnusedResources]
+    <string name="premium_body">One purchase for unlimited albums, longer recordings, keepsake PDF exports and encrypted local backups. Your existing memories always stay accessible.</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:153: Warning: The resource R.string.free_tier appears to be unused [UnusedResources]
+    <string name="free_tier">Free tier</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:154: Warning: The resource R.string.free_limits appears to be unused [UnusedResources]
+    <string name="free_limits">Free: three albums, photographs, written stories, timeline and recordings up to three minutes. No limit on saved written memories.</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:155: Warning: The resource R.string.one_time appears to be unused [UnusedResources]
+    <string name="one_time">One-time purchase</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:156: Warning: The resource R.string.upgrade appears to be unused [UnusedResources]
+    <string name="upgrade">Get Premium</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:157: Warning: The resource R.string.restore_purchases appears to be unused [UnusedResources]
+    <string name="restore_purchases">Restore purchases</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:158: Warning: The resource R.string.premium_active appears to be unused [UnusedResources]
+    <string name="premium_active">Premium is active</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:159: Warning: The resource R.string.billing_unconfigured appears to be unused [UnusedResources]
+    <string name="billing_unconfigured">Purchases are unavailable: Amazon app authentication and product configuration are not installed. No payment will be taken.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:160: Warning: The resource R.string.billing_unavailable appears to be unused [UnusedResources]
+    <string name="billing_unavailable">Amazon product details are unavailable. Try again later.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:161: Warning: The resource R.string.purchase_failed appears to be unused [UnusedResources]
+    <string name="purchase_failed">Purchase or restore did not complete. No new Premium access was granted.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:162: Warning: The resource R.string.album_limit appears to be unused [UnusedResources]
+    <string name="album_limit">The free tier includes three albums. Upgrade to create more.</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:163: Warning: The resource R.string.premium_required appears to be unused [UnusedResources]
+    <string name="premium_required">This feature requires LifeTalea Premium.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:164: Warning: The resource R.string.refresh appears to be unused [UnusedResources]
+    <string name="refresh">Refresh</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:165: Warning: The resource R.string.saved appears to be unused [UnusedResources]
+    <string name="saved">Saved</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:166: Warning: The resource R.string.invalid_form appears to be unused [UnusedResources]
+    <string name="invalid_form">Add a title and a valid date matching the selected precision.</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:167: Warning: The resource R.string.support appears to be unused [UnusedResources]
+    <string name="support">Support</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:168: Warning: The resource R.string.support_body appears to be unused [UnusedResources]
+    <string name="support_body">Publisher: O.Bankole · Support: banksmi@mail.com · Build 0.1.0 development preview. Export a backup before uninstalling. For microphone issues, check device permissions. Source: github.com/lanray07/LifeTalea</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:169: Warning: The resource R.string.year_filter appears to be unused [UnusedResources]
+    <string name="year_filter">Filter by year</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:170: Warning: The resource R.string.album_filter appears to be unused [UnusedResources]
+    <string name="album_filter">Filter by album</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:171: Warning: The resource R.string.loading appears to be unused [UnusedResources]
+    <string name="loading">Loading…</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:172: Warning: The resource R.string.finish_recording appears to be unused [UnusedResources]
+    <string name="finish_recording">Stop the active recording before changing memories.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:173: Warning: The resource R.string.backup_busy appears to be unused [UnusedResources]
+    <string name="backup_busy">Please wait for the current operation to finish.</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:174: Warning: The resource R.string.draft appears to be unused [UnusedResources]
+    <string name="draft">Draft</string>
+            ~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:175: Warning: The resource R.string.export appears to be unused [UnusedResources]
+    <string name="export">Export</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:176: Warning: The resource R.string.select_all appears to be unused [UnusedResources]
+    <string name="select_all">Select all</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:177: Warning: The resource R.string.view_memory appears to be unused [UnusedResources]
+    <string name="view_memory">View memory</string>
+            ~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:178: Warning: The resource R.string.new_memory appears to be unused [UnusedResources]
+    <string name="new_memory">New memory</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:179: Warning: The resource R.string.album_members appears to be unused [UnusedResources]
+    <string name="album_members">Album memories</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:180: Warning: The resource R.string.no_photo appears to be unused [UnusedResources]
+    <string name="no_photo">No photograph</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:181: Warning: The resource R.string.new_page appears to be unused [UnusedResources]
+    <string name="new_page">Choose a memory for this page</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:182: Warning: The resource R.string.saved_locally appears to be unused [UnusedResources]
+    <string name="saved_locally">Saved on your device</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:183: Warning: The resource R.string.record_first appears to be unused [UnusedResources]
+    <string name="record_first">Create or open a memory before recording.</string>
+            ~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:184: Warning: The resource R.string.no_story appears to be unused [UnusedResources]
+    <string name="no_story">Open a saved story to read it aloud.</string>
+            ~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:185: Warning: The resource R.string.offline appears to be unused [UnusedResources]
+    <string name="offline">Available offline</string>
+            ~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:186: Warning: The resource R.string.permission appears to be unused [UnusedResources]
+    <string name="permission">Microphone permission</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:187: Warning: The resource R.string.remove appears to be unused [UnusedResources]
+    <string name="remove">Remove</string>
+            ~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:188: Warning: The resource R.string.save_first appears to be unused [UnusedResources]
+    <string name="save_first">Save your story before adding attachments.</string>
+            ~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:189: Warning: The resource R.string.reminders appears to be unused [UnusedResources]
+    <string name="reminders">Optional reminders</string>
+            ~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:190: Warning: The resource R.string.reminders_pending appears to be unused [UnusedResources]
+    <string name="reminders_pending">Reminders are not implemented in this development build.</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\App Projects\LifeTalea\android\app\src\main\res\values\strings.xml:191: Warning: The resource R.string.search_year_hint appears to be unused [UnusedResources]
+    <string name="search_year_hint">YYYY or blank for every year</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+D:\App Projects\LifeTalea\android\app\src\main\res\drawable\hero_book.webp: Warning: Found bitmap drawable res/drawable/hero_book.webp in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+D:\App Projects\LifeTalea\android\app\src\main\java\com\lifetalea\app\billing\AmazonBilling.kt:42: Warning: Use the KTX extension function SharedPreferences.edit instead? [UseKtx]
+        prefs.edit().putBoolean("premium", value).putString("user", user).apply()
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "UseKtx":
+   The Android KTX libraries decorates the Android platform SDK as well as
+   various libraries with more convenient extension functions available from
+   Kotlin, allowing you to use default parameters, named parameters, and
+   more.
+
+   Available options:
+
+   **remove-defaults** (default is true):
+   Whether to skip arguments that match the defaults provided by the extension.
+
+   Extensions often provide default values for some of the parameters. For example:
+   ```kotlin
+   fun Path.readLines(charset: Charset = Charsets.UTF_8): List<String> { return Files.readAllLines(this, charset) }
+   ```
+   This lint check will by default automatically omit parameters that match the default, so if your code was calling ```kotlin
+   Files.readAllLines(file, Charset.UTF_8)
+   ```
+   lint would replace this with
+   ```kotlin
+   file.readLines()
+   ```
+   rather than
+   ```kotlin
+   file.readLines(Charset.UTF_8
+   ```
+   You can turn this behavior off using this option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UseKtx">
+           <option name="remove-defaults" value="true" />
+       </issue>
+   </lint>
+   ```
+
+   **require-present** (default is true):
+   Whether to only offer extensions already available.
+
+   This option lets you only have lint suggest extension replacements if those extensions are already available on the class path (in other words, you're already depending on the library containing the extension method.)
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UseKtx">
+           <option name="require-present" value="true" />
+       </issue>
+   </lint>
+   ```
+
+0 errors, 206 warnings
