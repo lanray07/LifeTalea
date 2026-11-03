@@ -1,12 +1,12 @@
 {
   "path": "deliverables/amazon-submission/LifeTalea-0.1.0-Amazon-RVS-review-2026-11-03.zip",
-  "sha256": "317a9ca4db0e540fa3c135be595fcbcfe1e61b8e2d4b84fedc2257501112bf35",
-  "bytes": 34562054,
-  "entriesVerified": 127,
+  "sha256": "fde5610ff5f1a774c12e66b860b788a73592f0f7963b8e6b38f5ec96dfc2bc96",
+  "bytes": 75340542,
+  "entriesVerified": 491,
   "releaseStatus": "BLOCKED",
   "serverPackage": {
     "path": "deliverables/amazon-submission/LifeTalea-Amazon-RVS-server-2026-11-03.zip",
-    "sha256": "8f780e4412d283caa686db05a630bcd01fbc77be51a325c1e58552249f0dcd3c",
+    "sha256": "f502c098d48cc7eef2bba85525481adf4fc8899270d70be788252c43f1ae018b",
     "bytes": 18956,
     "entriesVerified": 14,
     "extractedSelfTests": "PASS",
