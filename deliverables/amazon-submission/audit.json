@@ -1,32 +1,113 @@
 {
   "releaseStatus": "BLOCKED",
   "packagePurpose": "LOCAL_REVIEW_ONLY_NOT_FOR_SUBMISSION",
-  "generatedAt": "2026-11-03T17:47:52.343151+00:00",
-  "baseCommit": "1cde1d3c87789daa7f6d9cb442454348b95286a7",
-  "workingTreeDirty": false,
+  "generatedAt": "2026-11-03T18:43:09.073142+00:00",
+  "baseCommit": "ff84912b251ac9aa467205ea6cb0f842faa97728",
+  "workingTreeDirty": true,
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "package": "com.lifetalea.app",
   "versionName": "0.1.0",
   "versionCode": 1,
-  "candidateSha256": "72251cfb3ca69314ec61b385bd71358c30993bee65ac8ba3da266005ac714c7f",
+  "candidateSha256": "8105c8c523d8c3f4c4fe829fa67d52a1f642bb08fefbb9def72db52775338481",
   "signing": "UNSIGNED; Amazon distribution signing/update identity unverified",
-  "kotlinUnitTestsPassed": 10,
-  "physicalDeviceTestsPassed": 13,
+  "kotlinUnitTestsPassed": 18,
+  "physicalDeviceTestsPassed": 16,
+  "uiChecksComplete": false,
+  "currentTestApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
+  "currentTestApkExecuted": false,
   "deviceRun": {
-    "executedAt": "2026-11-03T17:36:40.733295+00:00",
-    "status": "PASS",
-    "debugApkSha256": "97c89b2a6a6a2e88ab80df86c463bb49efc1fef7a02d1736390ba49c259723e6",
-    "testApkSha256": "44d91720ef9f4041f46606ed57820f8860f31a0e8a8489d5ce3f5eb1363fa05d",
-    "evidenceFiles": 187
+    "executedAt": "2026-11-03T18:28:57.619639+00:00",
+    "status": "FAIL",
+    "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
+    "testApkSha256": "2c9dc10404bb0b41587471ed66bffba05951384eec7c66d16fd691a355cf9286",
+    "evidenceFiles": 32,
+    "qaPowerSettings": {
+      "originalStayAwakeWhilePluggedIn": "7",
+      "restored": true
+    },
+    "qaRotationSettings": {
+      "original": {
+        "accelerometer_rotation": "1",
+        "user_rotation": "0"
+      },
+      "restored": true
+    },
+    "qaBatchPowerSettings": {
+      "originalStayAwakeWhilePluggedIn": "0",
+      "restored": true
+    }
   },
   "deviceScope": "KFTRWI / Fire HD 10 (2021) / Fire OS 7 / API 28 / landscape",
   "appDraftLocales": 22,
   "appKeysPerLocale": 191,
   "nativeReleaseApprovals": 0,
-  "screenshotDrafts": 176,
-  "screenshotSource": "Current debug APK, one physical tablet; release screenshot approval pending",
-  "productionBilling": "DISABLED: server RVS not implemented or tested; no Amazon in-app product exists; correct public PEM now bundled",
+  "screenshotDrafts": 0,
+  "screenshotSource": "OMITTED: fresh full locale run and capture validation required",
+  "productionBilling": "IMPLEMENTED_LOCALLY_NOT_CONFIGURED: signed server RVS and Android client; endpoint/pin unset and purchases off in default build. Deployment, real credentials, IAP product/prices and live Amazon transaction tests remain required.",
+  "receiptVerification": {
+    "executedAt": "2026-11-03T18:42:17.895428+00:00",
+    "status": "BILLING_EVIDENCE_PRESENT_UI_QA_INCOMPLETE_RELEASE_BLOCKED",
+    "uiChecksComplete": false,
+    "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
+    "testApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
+    "lastExecutedTestApkSha256": "2c9dc10404bb0b41587471ed66bffba05951384eec7c66d16fd691a355cf9286",
+    "currentTestApkExecuted": false,
+    "releaseApkSha256": "8105c8c523d8c3f4c4fe829fa67d52a1f642bb08fefbb9def72db52775338481",
+    "serverTests": {
+      "status": "PASS",
+      "tests": 20,
+      "passed": 20,
+      "log": "deliverables/android/build-logs/amazon-check-amazon-rvs-server.log",
+      "scope": "Fictional Amazon responses; real crypto/local HTTP/executable/key-helper tests; not live Amazon RVS"
+    },
+    "androidReceiptContractTests": {
+      "status": "PASS",
+      "passed": 4,
+      "tests": [
+        "legacyPremiumPreferenceCannotGrantAndMissingVerifierNeverStartsPurchaseFlow",
+        "nodeSignedReceiptsBindAccountReceiptAndLifetimeOnFire",
+        "sandboxAndUntrustedEndpointConfigurationCannotUnlockRelease",
+        "tamperedSignaturesAndEvenValidlySignedBadSchemasAreRejected"
+      ],
+      "scope": "Node-signed offline fixtures and actual Fire RSA/JSON/config behavior, not real SDK payment callbacks"
+    },
+    "kotlinUnitTestsPassed": 18,
+    "physicalDeviceTestsPassed": 16,
+    "physicalDeviceTestsRun": 17,
+    "physicalDeviceSuiteStatus": "FAIL",
+    "deviceSeconds": 66.895,
+    "lint": {
+      "Error": 0,
+      "Warning": 260
+    },
+    "layoutSmokeStatus": "NOT_VERIFIED_ON_CURRENT_APP",
+    "serverDeployed": false,
+    "liveAmazonRvsTested": false,
+    "livePurchaseTestsPassed": false,
+    "dockerImageBuilt": false,
+    "productionSigningIdentityCreated": false,
+    "defaultReleaseConfiguration": {
+      "endpointConfigured": false,
+      "signingPublicKeyConfigured": false,
+      "environment": "production",
+      "purchasesEnabled": false
+    },
+    "serverSourceSha256": {
+      "package.json": "11b329de830bc31855a2b100125af167f04f562034564d3ec1e785279af222f4",
+      "Dockerfile": "bad583bce8f91b3766b2cba56b5b5143b30eb2646df00db0624749801ea612b3",
+      ".dockerignore": "3845ada8733f5a074f54ef5ee040fa30294affb4bdcfff9550889737b38831f2",
+      ".env.example": "1459d0f02190a57ea7fa17a5a3acad487fb258f51fe753852d4242a251f21be6",
+      "README.md": "f94e4a27fae61a75dbe85b7b016dc2c59dfdbfa0e3c5fb361a2e152fc852fb10",
+      "src/main.mjs": "943e9d1704665b5bc35647e2e4fd062e7dad4fae05afc457a876445a321ab26b",
+      "src/http.mjs": "49c67f9c44c9d331092dc287b554ec63c9e2525e3d14f3d4c1c1d22b88d017c4",
+      "src/verifier.mjs": "9ae05bd80092e4e98e47c8ecb45ca06a3c38a707887c9d4bc0f0ab2fc1c50c06",
+      "scripts/generate-signing-key.mjs": "d8c131bd6f4c6b2398b0380b784a7e6e16462bdcb3edce8133b964a5117a6aa4",
+      "test/verifier.test.mjs": "819560de68e91d2a24fd74b08ed26658748cdd79e8f6304dd7ed2a813fcf00c4",
+      "test/export-contract-fixture.mjs": "7c67a41644dba2836080ecb9309becf39dc734702a125a64b01d1b3f5aad4ae0"
+    },
+    "remaining": "Deploy/configure a private HTTPS verifier and public app pin; create/approve IAP/prices; real Amazon transaction tests; independent security/privacy/legal/native and remaining product/device gates."
+  },
   "transcription": "UNCONFIGURED; manual editing only",
   "formalSecurityScan": "STARTUP_FAILED; no independent scan completed; static pattern checks are narrower evidence",
   "console": {
@@ -63,42 +144,24 @@
     "limitations": "Other listing locale variants, all device selections, privacy questionnaire and prices were not re-reviewed. Review page showed Compliance confirmation required. Native product acceptance gates remain independent."
   },
   "layoutSmoke": {
-    "status": "PASS",
-    "debugApkSha256": "97c89b2a6a6a2e88ab80df86c463bb49efc1fef7a02d1736390ba49c259723e6",
-    "originalSettingsRestored": true,
-    "originalSettings": {
-      "accelerometer_rotation": "1",
-      "user_rotation": "0",
-      "font_scale": "1.0"
-    },
-    "originalWifiState": "1",
-    "failure": null,
-    "cases": [
-      {
-        "case": "rotation-0-font-1.3",
-        "width": 1200,
-        "height": 1920,
-        "homeActionInAccessibilityTreeAndWithinDisplay": true
-      },
-      {
-        "case": "rotation-1-font-1.3",
-        "width": 1920,
-        "height": 1200,
-        "homeActionInAccessibilityTreeAndWithinDisplay": true
-      },
-      {
-        "case": "wifi-disabled-reopen",
-        "width": 1920,
-        "height": 1200,
-        "homeActionInAccessibilityTreeAndWithinDisplay": true
-      }
-    ],
-    "scope": "Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology."
+    "status": "NOT_VERIFIED_ON_CURRENT_APP"
   },
   "localChecks": {
-    "executedAt": "2026-11-03T17:37:20.499452+00:00",
+    "executedAt": "2026-11-03T18:42:09.187125+00:00",
     "status": "PASS",
     "checks": [
+      {
+        "check": "amazon-rvs-server",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "node",
+          "--test",
+          "--test-reporter=tap",
+          "server/receipt-verifier/test/verifier.test.mjs"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-amazon-rvs-server.log"
+      },
       {
         "check": "python-tests",
         "status": "PASS",
@@ -226,6 +289,15 @@
   },
   "fullAcceptanceChecklist": "Historical 258-statement report retained; no updated verified percentage claimed",
   "remainingGates": "See docs/AMAZON_OWNER_ACTIONS.md; account configuration alone will not clear engineering/QA gates",
-  "androidSourceFingerprint": "dcb15d9bc90c8fc8cc757f8fa955bcea38138033fbaf3d51b552e9c75a47adc7",
-  "androidSourceFingerprintMethod": "SHA-256 of the encoded per-file working-tree byte hashes, including local line endings; not a cross-platform reproducible-build claim."
+  "androidSourceFingerprint": "4cf56a6f3c9b46529173b8dd7bc6b28b324b2524cd2e3d4cde560d78d9800680",
+  "androidSourceFingerprintMethod": "SHA-256 of the encoded per-file working-tree byte hashes, including local line endings; not a cross-platform reproducible-build claim.",
+  "serverSourceFingerprint": "0d683d0e7ad9557aac94142647ca1a23fd2f63097220207bdf3aecc21830f68e",
+  "serverDeploymentPackage": {
+    "path": "deliverables/amazon-submission/LifeTalea-Amazon-RVS-server-2026-11-03.zip",
+    "sha256": "8f780e4412d283caa686db05a630bcd01fbc77be51a325c1e58552249f0dcd3c",
+    "bytes": 18956,
+    "entriesVerified": 14,
+    "extractedSelfTests": "PASS",
+    "deployed": false
+  }
 }
