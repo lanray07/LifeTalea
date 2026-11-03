@@ -2,7 +2,7 @@
   "status": "PENDING_NATIVE_REVIEW",
   "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
   "entries": 4033,
-  "heuristicFlagCount": 7,
+  "heuristicFlagCount": 10,
   "flags": [
     {
       "locale": "fr-FR",
@@ -47,8 +47,29 @@
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
+      "locale": "it-IT",
+      "key": "privacy",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    },
+    {
       "locale": "nl-NL",
       "key": "albums",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    },
+    {
+      "locale": "nl-NL",
+      "key": "privacy",
+      "form": "value",
+      "status": "NATIVE_REVIEW_REQUIRED",
+      "flags": "UNCHANGED_SOURCE_REVIEW"
+    },
+    {
+      "locale": "sv-SE",
+      "key": "support",
       "form": "value",
       "status": "NATIVE_REVIEW_REQUIRED",
       "flags": "UNCHANGED_SOURCE_REVIEW"

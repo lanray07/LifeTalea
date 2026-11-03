@@ -1,0 +1,25 @@
+test_all_fifteen_articles_are_authored_for_each_language (test_editorial_polish.EditorialPolishTest) ... ok
+test_english_commands_keep_boundaries_and_exact_supported_phrases (test_editorial_polish.EditorialPolishTest) ... ok
+test_every_language_has_complete_unique_app_corrections (test_editorial_polish.EditorialPolishTest) ... ok
+test_portuguese_regional_words_are_not_substring_replacements (test_editorial_polish.EditorialPolishTest) ... ok
+test_approval_binds_both_catalogues_and_reviewer_identity (test_localization.LocalizationTest) ... ok
+test_extra_keys_empty_text_and_duplicate_placeholders_fail (test_localization.LocalizationTest) ... ok
+test_format_specifiers_preserved (test_localization.LocalizationTest) ... ok
+test_locale_specific_plural_categories_validate_every_form (test_localization.LocalizationTest) ... ok
+test_missing_plural_and_brand_reported (test_localization.LocalizationTest) ... ok
+test_source_change_invalidates_review (test_localization.LocalizationTest) ... ok
+test_unreviewed_generation_is_debug_only (test_localization.LocalizationTest) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.903s
+
+OK
+Editorial draft regression check: PASS (native review remains pending)
+{"sourceKeys": 191, "targets": 22, "fullyTranslated": 22, "releaseApproved": 0}
+Release locale isolation: PASS
+{"sourceKeys": 191, "targets": 22, "fullyTranslated": 22, "releaseApproved": 0}
+{"status": "PASS", "locales": 22, "errors": []}
+17 browser-locale matching cases passed
+6 website review-gate cases passed; real review files unchanged
+4033 native-review entries; 10 heuristic flags; zero approvals inferred
+3906 website/store/headline review entries; zero approvals inferred

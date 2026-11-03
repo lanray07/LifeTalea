@@ -1,5 +1,7 @@
 # Release readiness — BLOCKED
 
+Translation editorial follow-up, refreshed device evidence and current browser checks: [TRANSLATION_POLISH.md](TRANSLATION_POLISH.md), 3 November 2026. Native approval remains pending.
+
 Updated 2026-11-02. Verified acceptance rate: **39/258 = 15.12%** of mandatory checklist statements. BLOCKED and NOT TESTED are incomplete. This is a conservative evidence metric, not a percentage of code written or a claim that all tests map one-to-one to requirements.
 
 Android build tasks: PASS. Release artifact is unsigned. Kotlin unit tests: 9/9 passed. Physical device suite: PASS (9 tests, including the 22-locale capture matrix). Website structural checks: PASS across 352 pages. Source static checks do not establish a complete security assessment. Localization details: LOCALIZATION_DELIVERY.md.

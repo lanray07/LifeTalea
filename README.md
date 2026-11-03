@@ -18,7 +18,7 @@ Publisher: **O.Bankole** · Support: **banksmi@mail.com** · [Source repository]
 - Original book/waveform identity, generated editorial illustration, editable covers/backgrounds and screenshot source template.
 - Website preview with 352 localized pages across 22 locales, language switching, RTL, structured data, metadata, sitemap, privacy and support content.
 
-Automatic recorded-file transcription is **unavailable**. All 22 app catalogues have 191/191 structurally valid keys; debug builds include translated drafts, while release builds retain English until native approval. Website/store drafts and 176 tablet screenshot drafts are prepared. Native review remains incomplete, and some machine-translated article wording is visibly rough. Voice commands remain English; speech services vary by device. Archives have a 32 MiB total/16 MiB per-item limit. See [localization delivery](docs/LOCALIZATION_DELIVERY.md) for evidence and limits.
+Automatic recorded-file transcription is **unavailable**. All 22 app catalogues have 191/191 structurally valid keys; debug builds include translated drafts, while release builds retain English until native approval. The app, complete website articles and store drafts received an authored editorial pass on 3 November; native review remains incomplete. Voice commands remain English; speech services vary by device. Archives have a 32 MiB total/16 MiB per-item limit. See [translation polish](docs/TRANSLATION_POLISH.md) and [localization delivery](docs/LOCALIZATION_DELIVERY.md) for evidence and limits.
 
 ## Run locally
 

@@ -1,0 +1,1207 @@
+{
+  "status": "PASS",
+  "date": "2026-11-03",
+  "environment": "Playwright Chromium; http://localhost:3000; in-app browser timeout fallback",
+  "pageChecks": 132,
+  "consoleErrors": [],
+  "failedRequests": [],
+  "nativeApproved": false,
+  "checks": [
+    {
+      "locale": "en-GB",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-GB",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-GB",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-GB",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-GB",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-GB",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-US",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-US",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-US",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-US",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-US",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-US",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-AU",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-AU",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-AU",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-AU",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-AU",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "en-AU",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-ES",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-ES",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-ES",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-ES",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-ES",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-ES",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-419",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-419",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-419",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-419",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-419",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "es-419",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-CA",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-CA",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-CA",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-CA",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-CA",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-CA",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "de-DE",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "de-DE",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "de-DE",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "de-DE",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "de-DE",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "de-DE",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "it-IT",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "it-IT",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "it-IT",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "it-IT",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "it-IT",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "it-IT",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-BR",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-BR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-BR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-BR",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-BR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-BR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pt-PT",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "nl-NL",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "nl-NL",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "nl-NL",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "nl-NL",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "nl-NL",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "nl-NL",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pl-PL",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pl-PL",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pl-PL",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pl-PL",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pl-PL",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "pl-PL",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "sv-SE",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "sv-SE",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "sv-SE",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "sv-SE",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "sv-SE",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "sv-SE",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ja-JP",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ja-JP",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ja-JP",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ja-JP",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ja-JP",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ja-JP",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "hi-IN",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "hi-IN",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "hi-IN",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "hi-IN",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "hi-IN",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "hi-IN",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ar",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ar",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ar",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ar",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ar",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ar",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "tr-TR",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "tr-TR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "tr-TR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "tr-TR",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "tr-TR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "tr-TR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "id-ID",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "id-ID",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "id-ID",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "id-ID",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "id-ID",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "id-ID",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ko-KR",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ko-KR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ko-KR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ko-KR",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ko-KR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "ko-KR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hans",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hans",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hans",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hans",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hans",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hans",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hant",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hant",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hant",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hant",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hant",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "zh-Hant",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "interaction": "French to German preserves /features/",
+      "status": "PASS"
+    },
+    {
+      "interaction": "German header navigation renders the privacy article",
+      "status": "PASS"
+    }
+  ]
+}

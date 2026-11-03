@@ -3,26 +3,26 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Historias y recuerdos familiares",
-  "shortDescription": "Mantener historias familiares, fotografías y recuerdos de voz juntos en un periódico privado. Crea álbumes, explora una línea de tiempo y salve dibujos de scrapbook en su dispositivo.",
-  "longDescription": "Mantenga los momentos. Recuerda las voces.\n\nLifeTalea Dale historias familiares un lugar privado en su tableta. Comience con una foto, algunas líneas escritas o una grabación de voz. No LifeTalea La cuenta es necesaria.\n\nSalva la historia después de la fotografía\nAñadir fotos, etiquetas y una ubicación opcional que usted mismo entra. Seleccione un año, mes, fecha exacta o fecha desconocida. Organizar memorias en álbumes y marcar favoritos.\n\nHacer una habitación para su voz\nRecordar, descansar, resumir y jugar una historia hablada. Audio permanece en almacenamiento privado de aplicaciones. El nivel gratuito soporta grabaciones hasta tres minutos. Se solicita permiso de micrófono cuando elija grabar. Las frases de mando actualmente apoyan el inglés. Los comandos de voz y la reproducción hablada dependen de los servicios de los dispositivos instalados; las alternativas de toque y texto permanecen disponibles.\n\nSiga los capítulos de tu familia\nBrowse salvó recuerdos en una línea de tiempo. Buscar historias escritas, etiquetas y transcripciones editadas manualmente. Crear diseños de scrapbook, arreglar páginas y agregar capciones.\n\nConserva una copia que controla\nCrea una copia de seguridad local y seleccione explícitamente si incluir fotografías y grabaciones. La restauración valida el archivo antes de la importación. Mantener las exportaciones y frase de contraseñas en algún lugar seguros.\n\nPremios opcionales\nPremium está diseñado como una compra única para álbumes ilimitados, grabaciones más largas, locales PDF Exportación y creación de archivos cifrados. Los precios locales actuales serán suministrados por Amazon. Las historias existentes permanecen accesibles sin Premium.\n\nEstado de desarrollo\nEsta lista es un proyecto. La transcripción automática no está configurada. traducciones mundiales, las pruebas de dispositivos necesarias y Amazon La verificación de la compra es incompleta. No se ofrece ninguna sincronización de nube. No publique este proyecto como lista de productos terminados.\n\nEl editor: O.Bankole\nEl apoyo: banksmi@mail.com",
+  "shortDescription": "Descubre la versión de desarrollo de LifeTalea: relatos, fotos privadas, grabaciones, álbumes y libros de recuerdos.",
+  "longDescription": "Un espacio privado para las fotos, las voces y las historias de tu familia.\n\nAñade un título, unas líneas y una fecha exacta, aproximada o desconocida. Encuentra tus relatos con etiquetas, favoritos y álbumes.\n\nImporta fotos con el selector de documentos y graba un relato de voz. Los archivos se copian al almacenamiento privado de la aplicación.\n\nEl audio permanece en este dispositivo. Al salir de la aplicación, la grabación se detiene y se guarda. Las grabaciones gratuitas duran hasta tres minutos.\n\nLa función pulsar para hablar usa el servicio de voz del dispositivo, que puede necesitar Internet y procesar la voz fuera del dispositivo. Continúa solo si estás de acuerdo. LifeTalea no guarda el audio de los comandos. Actualmente, los comandos solo están disponibles en inglés.\n\nCompra única prevista: álbumes ilimitados, grabaciones más largas, exportación PDF y copias locales cifradas. El precio de prueba británico propuesto es 4,99 £; Amazon facilitará el precio local real tras la configuración.\n\nSe incluyen historias, transcripciones, álbumes y borradores de libros de recuerdos. Las fotos y grabaciones solo se incluyen si las seleccionas. Las copias exportadas sin cifrar contienen información privada legible. Guarda tu frase de contraseña: no se puede recuperar. Límites actuales: 32 MiB por archivo de copia de seguridad y 16 MiB por archivo adjunto. Las bibliotecas más grandes requieren una versión futura.\n\nAún no publicada. Siguen en curso las pruebas de dispositivos, la revisión lingüística y la verificación de compras de Amazon.\n\nLa transcripción automática no está configurada en esta versión de LifeTalea. Puedes grabar audio y editar transcripciones manualmente.\n\nTraducción provisional. Pendiente de revisión lingüística.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
-    "Salva historias escritas, fotografías y grabaciones de voz locales juntos.",
-    "Organizar álbumes privados con etiquetas, favoritos y fechas aproximadas.",
-    "Explore un timeline familiar y crea diseños de scrapbook salvados.",
-    "Crear backups locales con fotos y audio explicitamente seleccionados.",
-    "Utilice alternativas de toque y texto cuando los servicios de habla del dispositivo no están disponibles."
+    "Un diario familiar da contexto a las fotos: quién estaba allí, qué ocurrió y por qué fue importante.",
+    "Conserva las pausas, las risas y las expresiones familiares que un texto no siempre puede transmitir.",
+    "Reúne relatos y fotos en borradores de libros guardados en tu dispositivo.",
+    "Recorre los recuerdos por fecha, incluidos los que tienen fechas aproximadas o desconocidas.",
+    "Grabar requiere permiso y un micrófono funcional. El reconocimiento y la lectura de voz necesitan servicios compatibles. Se ofrecen alternativas táctiles y de texto."
   ],
   "keywords": [
-    "Periódico Memoria Familiar",
-    "Periódico de voz",
-    "Historias familiares de registro",
-    "El digital scrapbook",
-    "Periódico familiar privado",
-    "Memoria Timeline"
+    "Recuerdos familiares",
+    "Relato de voz",
+    "Historia de la familia",
+    "Libros de recuerdos",
+    "Cronología",
+    "El diario de mi vida"
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Previsiones de desarrollo inicial. No aprobado para la presentación pública.",
+  "releaseNotes": "Traducción provisional. Pendiente de revisión lingüística. Aún no publicada. Siguen en curso las pruebas de dispositivos, la revisión lingüística y la verificación de compras de Amazon.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
@@ -40,5 +40,5 @@
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "8adde481fe962ab9272efa8ee512db17657ce5c57db60a333ca2451648ff4c82"
+  "targetHash": "bfef21618901a1b01fe8e28e21fac893c393798c528a6d876bc5761a429ac90a"
 }

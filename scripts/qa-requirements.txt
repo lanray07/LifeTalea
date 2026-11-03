@@ -1,0 +1,3 @@
+# Localized screenshot integrity and Simplified/Traditional Chinese draft checks.
+Pillow==12.2.0
+opencc-python-reimplemented==0.1.7

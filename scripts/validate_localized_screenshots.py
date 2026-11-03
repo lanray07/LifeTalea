@@ -26,7 +26,7 @@ def main():
     if len(rows)!=176:raise RuntimeError('Expected 22 locales × 8 real screens')
     with (folder/'manifest.csv').open('w',newline='',encoding='utf-8-sig') as stream:
         writer=csv.DictWriter(stream,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
-    write(folder/'provenance.json',{'status':'DRAFT_PENDING_NATIVE_REVIEW','count':len(rows),'dimensions':[1920,1200],'format':'JPEG','device':'KFTRWI / Fire OS 7 / landscape','debugApkSha256':read(ROOT/'deliverables/reports/device-test-run.json')['debugApkSha256'],'visualReview':'Sampled Arabic, Hindi, Japanese, Korean, Traditional Chinese, French and German; all files structurally checked. Full native review and other device sizes remain incomplete.','assets':provenance})
+    write(folder/'provenance.json',{'status':'DRAFT_PENDING_NATIVE_REVIEW','count':len(rows),'dimensions':[1920,1200],'format':'JPEG','device':'KFTRWI / Fire OS 7 / landscape','debugApkSha256':read(ROOT/'deliverables/reports/device-test-run.json')['debugApkSha256'],'visualReview':'Not established by this automated validator. Consult the dated delivery report for actual manual samples. Native review and other device sizes remain incomplete.','assets':provenance})
     print(f'{len(rows)} nonblank JPEG compositions validated at 1920 × 1200; native approval absent')
 
 if __name__=='__main__':main()

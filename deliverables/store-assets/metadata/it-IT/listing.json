@@ -3,26 +3,26 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Storie e ricordi di famiglia",
-  "shortDescription": "Mantenere storie di famiglia, foto e memorie vocali insieme in un giornale privato. Crea album, esplora un timeline e salva disegni scrapbook sul tuo dispositivo.",
-  "longDescription": "Mantieni i momenti. Ricordate le voci.\n\nLifeTalea Dai storie di famiglia un posto privato sul tuo tablet. Inizia con una foto, alcune righe scritte o una registrazione vocale. No LifeTalea Il conto è richiesto.\n\nSalva la storia dopo la fotografia\nAggiungi foto, tag e una posizione opzionale che inserisci. Scegli un anno, mese, data esatta o data sconosciuta. Organizzare i ricordi in album e segnalare i preferiti.\n\nFai la tua stanza per la tua voce\nRicordare, riposare, riprendere e giocare una storia raccontata. L'audio rimane in archiviazione app privata. Il piano gratuito supporta le registrazioni fino a 3 minuti. Il permesso per il microfono è richiesto quando si sceglie di registrare. Le frasi di comando attualmente supportano l'inglese. I comandi vocali e le riprese parlate dipendono dai servizi di dispositivi installati; le alternative di tatto e testo rimangono disponibili.\n\nSegui i capitoli della tua famiglia\nBrowse ha salvato i ricordi in un timeline. Cerca storie scritte, tag e transcrizioni modificate manualmente. Creare disegni scrapbook, organizzare pagine e aggiungere capzioni.\n\nConservare una copia che controlli\nCrea un backup locale e seleziona esplicitamente se includere foto e registrazioni. Ristrutturazione valida l'archivio prima dell'importazione. Mantenere le esportazioni e i passaporti in un luogo sicuro.\n\nIl premio opzionale\nPremium è progettato come acquisto a un'unica volta per album illimitati, registrazioni più lunghe, locale PDF Conservare l'esportazione e la creazione di archivi crittografati. I prezzi attuali saranno forniti da Amazon. Le storie esistenti rimangono accessibili senza Premium.\n\nLo stato di sviluppo\nQuesto elenco è un progetto. La transcrizione automatica non è configurata. traduzioni globali, test di dispositivi richiesti e Amazon La verifica dell’acquisto è incompleta. Non è offerta alcuna sincronizzazione cloud. Non pubblicare questo progetto come elenco di prodotti finiti.\n\neditoriale : O.Bankole\nIl sostegno: banksmi@mail.com",
+  "shortDescription": "Scopri la versione di sviluppo di LifeTalea: racconti, foto private, registrazioni, album e libri dei ricordi.",
+  "longDescription": "Uno spazio privato per fotografie, voci e storie di famiglia.\n\nAggiungi un titolo, qualche riga e una data precisa, approssimativa o sconosciuta. Ritrova i racconti con etichette, preferiti e album.\n\nImporta foto dal selettore di documenti e registra un racconto audio. I file vengono copiati nello spazio privato dell’app.\n\nL’audio rimane su questo dispositivo. Uscendo dall’app, la registrazione viene interrotta e salvata. Le registrazioni gratuite durano al massimo tre minuti.\n\nLa funzione premi per parlare usa il servizio vocale del dispositivo, che potrebbe richiedere Internet ed elaborare la voce al di fuori del dispositivo. Continua solo se acconsenti. LifeTalea non salva l’audio dei comandi. Al momento i comandi sono supportati solo in inglese.\n\nAcquisto unico previsto: album illimitati, registrazioni più lunghe, esportazione PDF e backup locali cifrati. Il prezzo di prova britannico proposto è 4,99 £; Amazon fornirà il prezzo locale effettivo dopo la configurazione.\n\nSono inclusi storie, trascrizioni, album e bozze di libri dei ricordi. Foto e registrazioni sono incluse solo se selezionate. Le esportazioni non cifrate contengono informazioni private leggibili. Conserva la frase segreta: non può essere recuperata. Limiti attuali: 32 MiB per archivio e 16 MiB per allegato. Le raccolte più grandi richiedono una versione futura.\n\nNon ancora pubblicata. I test dei dispositivi, la revisione madrelingua e la verifica degli acquisti Amazon sono in corso.\n\nLa trascrizione automatica non è configurata in questa versione di LifeTalea. Registrazioni e trascrizioni manuali sono disponibili.\n\nBozza di traduzione. Revisione madrelingua in attesa.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
-    "Salva storie scritte, foto e registrazioni vocali locali insieme.",
-    "Organizzare album privati con tag, preferiti e date approfondite.",
-    "Esplora un timeline familiare e crea disegni scrapbook salvati.",
-    "Creare backup locali con foto e audio esplicitamente selezionati.",
-    "Utilizzare alternative a tatto e testo quando i servizi di discorso del dispositivo non sono disponibili."
+    "Un diario di famiglia racconta chi c’era, cosa è successo e perché quel momento conta.",
+    "Conserva pause, risate ed espressioni familiari che un testo non sempre riesce a trasmettere.",
+    "Riunisci racconti e foto in bozze di libri salvate sul dispositivo.",
+    "Esplora i ricordi in ordine di data, anche quando la data è approssimativa o sconosciuta.",
+    "La registrazione richiede microfono e permesso. Riconoscimento e lettura vocale necessitano di servizi compatibili. Sono previste alternative touch e testuali."
   ],
   "keywords": [
-    "Giornale di memoria familiare",
-    "Il giornale vocale",
-    "Storie familiari record",
-    "Il Digital Scrapbook",
-    "Giornale familiare privato",
-    "Il timeline della memoria"
+    "Ricordi di famiglia",
+    "Racconto audio",
+    "Storia della famiglia",
+    "Libri dei ricordi",
+    "Cronologia",
+    "Il mio giornale della vita"
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Previsioni di sviluppo iniziale. Non approvata per la presentazione pubblica.",
+  "releaseNotes": "Bozza di traduzione. Revisione madrelingua in attesa. Non ancora pubblicata. I test dei dispositivi, la revisione madrelingua e la verifica degli acquisti Amazon sono in corso.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
@@ -40,5 +40,5 @@
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "e889f44a7ad25868709cfea0c65f409ff1c971e35f2d451f302fe28c85cee10f"
+  "targetHash": "eb643319abd6c5c86347c057c6fa255c7224174c1bc10b2c2975f50bfefacb7b"
 }

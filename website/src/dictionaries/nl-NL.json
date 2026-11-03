@@ -44,279 +44,279 @@
   },
   "articles": {
     "features": {
-      "title": "Een huis voor de verhalen achter je foto's",
-      "summary": "Ontdek de LifeTalea ontwikkeling voorbeeld: geschreven herinneringen, privéfoto's, stemverhalen, albums en keepsakes.",
+      "title": "Een thuis voor de verhalen achter je foto’s",
+      "summary": "Ontdek de ontwikkelversie van LifeTalea: verhalen, privéfoto’s, opnamen, albums en herinneringsboeken.",
       "sections": [
         {
-          "title": "Begin met een moment",
-          "body": "Schrijf een titel en een paar lijnen. Voeg een nauwkeurige datum, een jaar of geen datum toe. Tags, favorieten en albums helpen je het verhaal weer te vinden."
+          "title": "Begin met één moment",
+          "body": "Voeg een titel, tekst en een exacte, geschatte of onbekende datum toe. Vind verhalen terug met tags, favorieten en albums."
         },
         {
-          "title": "Foto's en stemmen, samen",
-          "body": "Importeer foto's met behulp van de document picker van uw apparaat. Schrijf een stemverhaal op en houd het naast het geschreven geheugen. Media wordt gecopieerd in privé-app-opslag."
+          "title": "Foto’s en stemmen samen",
+          "body": "Importeer foto’s via de bestandskiezer en neem een verhaal op. De bestanden worden naar de privéopslag van de app gekopieerd."
         },
         {
-          "title": "Maak een collectie zelf",
-          "body": "Creëer scrapbook ontwerpen uit bewaard geheugen. Maak pagina's, voeg capties toe en voeg uw collectie voor. PDF Export is een Premium-functie; de aankoop is nog steeds nodig Amazon De testverificatie."
+          "title": "Maak er je eigen boek van",
+          "body": "Orden pagina’s en bijschriften en bekijk het voorbeeld. PDF-export vereist Premium; Amazon-aankopen moeten nog in de testomgeving worden gecontroleerd."
         }
       ]
     },
     "family-memory-journal": {
-      "title": "Bewaar de details alleen uw familie weet",
-      "summary": "Een familie geheugenjournal geeft context aan foto's: wie er was, wat er gebeurd was en waarom het moment belangrijk was.",
+      "title": "Bewaar de details die alleen je familie kent",
+      "summary": "Een familiedagboek vertelt wie er op de foto staat, wat er gebeurde en waarom het moment belangrijk was.",
       "sections": [
         {
-          "title": "Vraag een kleine vraag",
-          "body": "In plaats van te beginnen met een hele levensverhaal, vraag een maaltijd, een reis of een plek. Een korte antwoord is een waardevol begin. Laat de schrijver kiezen wat comfortabel voelt."
+          "title": "Stel een kleine vraag",
+          "body": "Begin met een maaltijd, reis of plek. Een kort antwoord is genoeg. Laat iedereen zelf kiezen wat prettig voelt om te vertellen."
         },
         {
-          "title": "Houd onzekerheid eerlijk",
-          "body": "Oude foto's komen zelden met perfecte data. LifeTalea accepteert een jaar, maand, exacte datum of onbekende datum. U kunt zelf een locatie toevoegen zonder toegang tot de locatie te verlenen."
+          "title": "Wees eerlijk over onzekere datums",
+          "body": "LifeTalea accepteert een jaar, maand, exacte of onbekende datum. Je kunt zelf een locatie invullen zonder locatietoegang te geven."
         },
         {
           "title": "Bewaar een tweede kopie",
-          "body": "Lokale opslag houdt geheugen dicht, maar een apparaat kan verloren gaan. Exporteer een back-up en houd het op een locatie waar je controleert. Controleer het archief voordat u een origineel verwijdert."
+          "body": "Een apparaat kan zoekraken. Exporteer een back-up naar een plek die je beheert en controleer die voordat je het origineel verwijdert."
         }
       ]
     },
     "voice-story-recording": {
-      "title": "Maak ruimte voor je stem",
-      "summary": "Ontdek de pauzes, lachen en bekende uitdrukkingen die een geschreven verhaal niet altijd kan houden.",
+      "title": "Bewaar hun vertrouwde stem",
+      "summary": "Leg pauzes, gelach en vertrouwde uitdrukkingen vast die geschreven tekst niet altijd kan overbrengen.",
       "sections": [
         {
-          "title": "Record met zorg",
-          "body": "Vraag de toestemming van de spreker. Vind een rustige ruimte en maak een korte testrecord. Speel eerst een geheugen en selecteer vervolgens Record een verhaal. Pauze of herhaal wanneer je nodig hebt."
+          "title": "Neem zorgvuldig op",
+          "body": "Vraag toestemming en maak een korte proefopname op een rustige plek. Sla eerst de herinnering op. Je kunt de opname pauzeren en hervatten."
         },
         {
-          "title": "Op uw apparaat",
-          "body": "LifeTalea redding AAC Audio in M4A bestanden in privé app opslag. Het verlaten van de app stopt en slaat de opname op. Gratis opnamen zijn beperkt tot drie minuten; Premium verlengt die limiet, onder voorwaarde van opslag."
+          "title": "Op je apparaat",
+          "body": "LifeTalea bewaart AAC-audio in privé-M4A-bestanden. De app verlaten stopt en bewaart de opname. Gratis opnamen duren drie minuten; Premium verlengt dit afhankelijk van de opslagruimte."
         },
         {
-          "title": "Controleer uw tablet",
-          "body": "De opname vereist een microfoon en toestemming. Speechcommandes gebruiken een geïnstalleerde herkenningsservice en kunnen niet beschikbaar zijn op Fire De tabletten. Touch controls blijven beschikbaar."
+          "title": "Controleer je tablet",
+          "body": "Een werkende microfoon en toestemming zijn nodig. Spraakopdrachten vereisen een geïnstalleerde dienst, die op Fire-tablets kan ontbreken. Aanraakbediening blijft beschikbaar."
         }
       ]
     },
     "voice-transcription": {
-      "title": "Een geschreven medewerker voor een gesproken geheugen",
-      "summary": "Transcription is niet geconfigureerd in de huidige LifeTalea opbouw . Audio-opname en handmatige transcriptediting blijven beschikbaar.",
+      "title": "Woorden naast je gesproken herinnering",
+      "summary": "Automatische transcriptie is niet ingesteld in deze LifeTalea-versie. Opnemen en handmatig transcripties bewerken kan wel.",
       "sections": [
         {
-          "title": "Wat werkt vandaag",
-          "body": "Open een geheugen en bewerken het transcript veld. U kunt een transcript of paste tekst invoeren die u al hebt. Correcties worden lokaal opgeslagen naast de oorspronkelijke opname."
+          "title": "Wat nu werkt",
+          "body": "Open een herinnering en typ of plak de transcriptie. Wijzigingen blijven lokaal bij de oorspronkelijke opname bewaard."
         },
         {
-          "title": "Wat is er nog voor vrijlating",
-          "body": "Het opgenomen bestandtranscriptie vereist een compatibele motor, ondersteunde taalverificatie en end-to-end testen. LifeTalea presenteert niet de uitgevonden tekst als een transcript en stuurt geen opnamen naar een cloudprovider."
+          "title": "Voor de openbare release",
+          "body": "Een geschikte dienst en taaltests zijn nog nodig. LifeTalea verzint geen transcripties en stuurt opnamen niet naar een cloudaanbieder."
         },
         {
-          "title": "Afzonderlijke diensten",
-          "body": "Android spreekerkennis voor bestellingen is anders dan het transcrieren van een opgeslagen opname. Een apparaat met één capaciteit biedt geen ondersteuning voor de andere."
+          "title": "Verschillende functies",
+          "body": "Android-spraakopdrachten herkennen is iets anders dan opgeslagen opnamen transcriberen. Ondersteuning voor de ene functie garandeert de andere niet."
         }
       ]
     },
     "digital-scrapbook": {
-      "title": "Verwijder een collectie in een hoofdstuk",
-      "summary": "Breng geschreven herinneringen en foto's in gered scrapbook ontwerpen.",
+      "title": "Maak van herinneringen een nieuw hoofdstuk",
+      "summary": "Breng verhalen en foto’s samen in lokaal opgeslagen boekconcepten.",
       "sections": [
         {
           "title": "Kies de momenten",
-          "body": "Maak een scrapbook en kies herinneringen uit uw bibliotheek. Elke pagina verwijst naar een opgeslagen geheugen, het houden van zijn verhaal en foto's samen."
+          "body": "Maak een boek met herinneringen uit je bibliotheek. Elke pagina verwijst naar een opgeslagen herinnering met verhaal en foto’s."
         },
         {
           "title": "Vind het juiste ritme",
-          "body": "Verplaats pagina's naar boven of naar beneden, selecteer een verhaal of foto layout en voeg een opname toe. Zorg voor uw capties voordat u voorziet. Een verwijderde brongeheugen is duidelijk gemarkeerd, zodat u het ontwerp kunt herstellen."
+          "body": "Verplaats pagina’s, kies een indeling en sla bijschriften op vóór het voorbeeld. Verwijderde herinneringen worden gemarkeerd zodat je het concept kunt herstellen."
         },
         {
-          "title": "Houd het privé",
-          "body": "Scrapbook ontwerpen zijn lokaal. Het creëren van een scrapbook publiceert het nooit. Bekijk elk geëxporteerd document voordat u besluit om het te delen."
+          "title": "Houd de regie",
+          "body": "Een boek maken publiceert het niet. Concepten blijven lokaal. Controleer elk geëxporteerd document voordat je het deelt."
         }
       ]
     },
     "family-timeline": {
-      "title": "Onthoud hoe de hoofdstukken verbinden",
-      "summary": "Ontdek opgeslagen herinneringen in datumorde, met inbegrip van die met nadere en onbekende data.",
+      "title": "Volg de rode draad van je verhaal",
+      "summary": "Bekijk herinneringen op datum, ook bij geschatte of onbekende datums.",
       "sections": [
         {
-          "title": "Volg de jaren",
-          "body": "De bekende tijdlijnsoorten dateren van nieuwste tot oudste en plaatsen onbekende verhalen daarna. Zoek naar een zin, selecteer een album of filter per jaar."
+          "title": "Door de jaren heen",
+          "body": "Bekende datums staan van nieuw naar oud, gevolgd door ongedateerde verhalen. Zoek op tekst, album of jaar."
         },
         {
           "title": "Een datum kan veranderen",
-          "body": "Gezinsonderzoek onthult vaak een nieuw detail. Edit de gebeurtenisdatum en nauwkeurigheid in de geheugeneditor; de timeline gebruikt de bijgewerkte informatie."
+          "body": "Familieonderzoek kan nieuwe details opleveren. Pas datum en nauwkeurigheid aan in de herinnering; de tijdlijn wordt bijgewerkt."
         },
         {
-          "title": "Geen uitgevonden geschiedenis",
-          "body": "De tijdlijn gebruikt alleen verhalen die u opslaat. LifeTalea niet bevolen uw bibliotheek met geproduceerde familie evenementen."
+          "title": "Jouw geschiedenis zonder verzinsels",
+          "body": "De tijdlijn gebruikt alleen opgeslagen herinneringen. LifeTalea voegt geen verzonnen familiegebeurtenissen toe."
         }
       ]
     },
     "keepsake-books": {
-      "title": "Een houder om op te houden",
-      "summary": "Maak een lokale PDF van de geselecteerde geheugen, foto's en capties van een scrapbook.",
+      "title": "Een herinneringsboek om te bewaren",
+      "summary": "Maak lokaal een PDF met gekozen herinneringen, foto’s en bijschriften.",
       "sections": [
         {
-          "title": "Kies wat je moet opnemen",
-          "body": "Geef het boek een cover titel. Selecteer A4 Of een brief papier. Locaties en transcripten worden door standaard uitgesloten en kunnen indien nodig worden opgenomen."
+          "title": "Kies de inhoud",
+          "body": "Geef de omslag een titel en kies A4 of Letter. Locaties en transcripties zijn standaard uitgesloten; je kunt ze toevoegen."
         },
         {
-          "title": "Overzicht voor het delen",
-          "body": "PDF's worden op het apparaat via Android‘s PDF Het vuur. Lange verhalen blijven op extra pagina's. Audio is niet ingebouwd in gedrukte keepsakes. Overzicht typografie en foto's in uw PDF Vervolgens voor het afdrukken."
+          "title": "Controleer vóór het delen",
+          "body": "De PDF wordt met Android op het apparaat gemaakt. Lange verhalen lopen door op volgende pagina’s; audio wordt niet ingesloten. Controleer tekst en foto’s voor het afdrukken."
         },
         {
-          "title": "Ontwikkelingsstatus",
-          "body": "PDF generatie wordt uitgevoerd en onder toestelvalidatie. De premium exportcontrole vereist een gecontroleerd Amazon De rechtvaardigheid. Live facturering is nog niet gecontroleerd."
+          "title": "Ontwikkelstatus",
+          "body": "PDF-aanmaak wordt op apparaten getest. Export vereist een gecontroleerd Amazon-Premium-recht. Echte aankopen zijn nog niet geverifieerd."
         }
       ]
     },
     "offline-memory-journal": {
-      "title": "Uw herinneringen, zelfs zonder verbinding",
-      "summary": "LifeTalea is ontworpen rond lokale opslag en touch controles, zonder een verplichte account.",
+      "title": "Je herinneringen, ook zonder verbinding",
+      "summary": "LifeTalea werkt met lokale opslag en aanraakbediening, zonder verplicht account.",
       "sections": [
         {
-          "title": "Blijf offline maken",
-          "body": "Schreven herinneringen, albums, geïmporteerde foto's, opgeslagen opnamen, timeline browsing en scrapbook ontwerpen gebruiken lokale gegevens. PDF generatie vereist geen externe documentendienst."
+          "title": "Ga offline verder",
+          "body": "Verhalen, albums, geïmporteerde foto’s, opnamen, tijdlijn en concepten gebruiken lokale gegevens. PDF-aanmaak vereist geen externe documentendienst."
         },
         {
-          "title": "Kennen de grenzen",
-          "body": "Aankoop vereist Amazon dienstverlening . Speelrecognitie kan internet vereisen. Speelde bestandtranscriptie is niet beschikbaar in dit gebouw. Er wordt geen cloud synchronisatie uitgevoerd."
+          "title": "Ken de grenzen",
+          "body": "Aankopen vereisen Amazon. Spraakherkenning kan internet nodig hebben. Automatische transcriptie en cloudsynchronisatie zijn niet beschikbaar."
         },
         {
-          "title": "Backups zijn jouw keuze",
-          "body": "Gebruik de document picker om een archief op te slaan waar u kiest. Als u een cloud-ondersteunde documentleverancier kiest, behandelt die leverancier de geëxporteerde bestand onder zijn eigen privacyvoorwaarden."
+          "title": "Kies je back-uplocatie",
+          "body": "Kies waar je exporteert. Bij een clouddocumentenaanbieder verwerkt die aanbieder het bestand volgens zijn eigen privacyvoorwaarden."
         }
       ]
     },
     "fire-tablet-compatibility": {
-      "title": "Gebouwd met Fire Tabletten in gedachten",
-      "summary": "Een inheemse Kotlin en Jetpack Compose applicatie met geen vereiste Google Play Services.",
+      "title": "Ontworpen voor Fire-tablets",
+      "summary": "Een native app met Kotlin en Jetpack Compose, zonder verplichte Google Play-services.",
       "sections": [
         {
           "title": "Doelplatform",
-          "body": "Minimum ondersteund Android Het vuur is 26. Dit is een technisch minimum, niet een belofte dat elk apparaat is gecertificeerd. Fire Televisie afstandsnavigatie is buiten het huidige bereik."
+          "body": "Android-API 26 is het technische minimum, geen certificering van elk apparaat. Bediening met een Fire TV-afstandsbediening valt buiten deze versie."
         },
         {
-          "title": "Device testen",
-          "body": "Een verbonden KFTRWI Gerelateerde rapportage Android Vuur 28 beschikbaar voor ontwikkelingstests. Het verslag van de release registreert feitelijke tests; extra Fire De grootte en de versies van het besturingssysteem worden nog steeds gecontroleerd."
+          "title": "Apparaattests",
+          "body": "Ontwikkeltests gebruiken een KFTRWI-tablet met Android-API 28. Het rapport vermeldt echte resultaten; andere Fire-formaten en systeemversies moeten nog worden getest."
         },
         {
-          "title": "De stem varieert per apparaat",
-          "body": "Een microfoon ondersteunt de opname alleen wanneer toestemming en hardware beschikbaar zijn. Herkenning en gesproken feedback vereisen ook compatibele geïnstalleerde diensten. Touch en tekst alternatieven zijn altijd onderdeel van het ontwerp."
+          "title": "Spraak verschilt per apparaat",
+          "body": "Opnemen vereist een werkende microfoon en toestemming. Herkenning en voorlezen vereisen geschikte diensten. Aanraak- en tekstalternatieven blijven onderdeel van de app."
         }
       ]
     },
     "languages": {
-      "title": "Een tijdschrift die kan voelen als thuis",
-      "summary": "De ontwikkeling van de app heeft een 22- Lokale vertaling matrix bedekking 17 De prioriteit van de talen. Native language review is nog steeds nodig.",
+      "title": "Een dagboek in jouw taal",
+      "summary": "De ontwikkelapp bevat 22 regionale varianten voor 17 prioriteitstalen. Controle door moedertaalsprekers blijft nodig.",
       "sections": [
         {
-          "title": "Het taalplan",
-          "body": "Doelstellingen omvatten regionale Engels, Spaans, Frans en Portugese, Duits, Italiaans, Nederlandse, Poolse, Zweedse, Japanse, Hindi, Arabische, Turkse, Indonesië, Koreaanse en Simplified en Traditionele Chinese."
+          "title": "Geplande talen",
+          "body": "Engels, Spaans, Frans, Portugees, Duits, Italiaans, Nederlands, Pools, Zweeds, Japans, Hindi, Arabisch, Turks, Indonesisch, Koreaans en vereenvoudigd en traditioneel Chinees."
         },
         {
-          "title": "Kwaliteit vóór een taal claim",
-          "body": "Vertalen moeten plaatshouderschecks, layout tests en beoordelingen doorbrengen. Store talen, app talen, distributielanden, spreekerkennis, gesproken feedback en transcriptie hebben elk afzonderlijke ondersteunende matrices."
+          "title": "Kwaliteit vóór publicatie",
+          "body": "Vertalingen vereisen controles van variabelen, indeling en taal. App, winkels, landen en spraakdiensten hebben ieder eigen ondersteuningsmatrices."
         },
         {
-          "title": "Uw woorden blijven uw",
-          "body": "Het wijzigen van de interface taal vertelt geen persoonlijke herinneringen of opnamen. Onbeoordelde websitevertalingen zijn alleen beschikbaar in lokale voorbeeld; productie vereist een beoordeling."
+          "title": "Jouw woorden blijven van jou",
+          "body": "Een taalwissel vertaalt geen persoonlijke verhalen of opnamen. Ongecontroleerde websitevertalingen zijn alleen in de lokale preview beschikbaar."
         }
       ]
     },
     "pricing": {
-      "title": "Houd de herinneringen vast. Kies de extra.",
-      "summary": "Een gratis tijdschrift met een optionele eenmalige Premium aankoop. De aankoop is niet levend in deze ontwikkeling vooruitzicht.",
+      "title": "Bewaar de herinneringen. Kies de extra’s.",
+      "summary": "Een gratis dagboek met een optionele eenmalige Premium-aankoop. Aankopen zijn niet actief in deze ontwikkelversie.",
       "sections": [
         {
-          "title": "Vrije",
-          "body": "Tot drie albums, geschreven herinneringen, foto's, een timeline, scrapbook ontwerpen en stemopnamen tot drie minuten. De geschreven herinneringen worden niet opgeslagen."
+          "title": "Gratis",
+          "body": "Drie albums, onbeperkt geschreven herinneringen, foto’s, tijdlijn, boekconcepten en opnamen tot drie minuten."
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Planned one-time entitlement: onbeperkte albums, langere stemrecordingen, PDF behoud de export en gecodeerde lokale back-up. De voorgestelde UK De testprijs is £4.99; de app zal de werkelijke lokale prijs van Amazon wanneer geconfigureerd is."
+          "body": "Geplande eenmalige aankoop: onbeperkte albums, langere opnamen, PDF-export en versleutelde lokale back-ups. De voorgestelde Britse testprijs is £4,99; Amazon levert na configuratie de echte lokale prijs."
         },
         {
-          "title": "Uw bestaande verhalen blijven toegankelijk",
-          "body": "Premium beschikbaarheid sluit je niet uit bestaande herinneringen. Basic backup en herstel blijven beschikbaar. Cloud transcription met lopende kosten is niet opgenomen in een eenmalige prijsverbintenis."
+          "title": "Bestaande verhalen blijven toegankelijk",
+          "body": "Premium blokkeert bestaande herinneringen niet. Basisback-up en herstel blijven beschikbaar. Cloudtranscriptie met terugkerende kosten wordt niet als eenmalige aankoop beloofd."
         }
       ]
     },
     "faq": {
-      "title": "Een paar dingen die het waard is om te weten",
-      "summary": "Praktische antwoorden over privacy, opnamen, familieverhalen en lokale behoud.",
+      "title": "Handig om te weten",
+      "summary": "Praktische antwoorden over privacy, opnamen en het bewaren van familieverhalen.",
       "sections": [
         {
           "title": "Heb ik een account nodig?",
-          "body": "Core lokale kenmerken vereisen geen LifeTalea Het account. Amazon de aankoop gebruikt het account en de diensten die door de Amazon De Appstore."
+          "body": "Lokale functies vereisen geen LifeTalea-account. Aankopen gebruiken het account en de diensten van de Amazon Appstore."
         },
         {
-          "title": "Hoe maak ik oude foto’s?",
-          "body": "Begin met een klein album en een foto. Voeg namen en contexten toe die je kent, gebruik omstreeks datums wanneer nodig is en vraag een relatie over één detail tegelijk."
+          "title": "Hoe orden ik oude foto’s?",
+          "body": "Begin met een klein album en één foto. Voeg bekende namen en details toe, gebruik geschatte datums en stel familieleden één vraag tegelijk."
         },
         {
-          "title": "Kan ik de levensverhalen van mijn ouders opnemen?",
-          "body": "Ja, met hun toestemming en een compatibele microfoon. Begin met een kort onderwerp en bekijk de playback. Vertrouw niet op één apparaat als je enige kopie."
+          "title": "Kan ik de verhalen van mijn ouders opnemen?",
+          "body": "Ja, met toestemming en een geschikte microfoon. Begin met een kort onderwerp en controleer de weergave. Bewaar niet je enige kopie op één apparaat."
         },
         {
-          "title": "Kan ik de opnames overschrijden?",
-          "body": "De automatische bewaard-bestandtranscriptie is niet beschikbaar in de huidige bouw. U kunt een transcript handmatig toevoegen en bewerken."
+          "title": "Kan ik opnamen transcriberen?",
+          "body": "Automatische transcriptie is niet beschikbaar. Je kunt een transcriptie handmatig toevoegen en bewerken."
         },
         {
-          "title": "Het doet LifeTalea Synchronisatie tussen apparaten?",
-          "body": "Er wordt geen cloud synchronisatie uitgevoerd. Lokale archief-export en restauratie zijn de bewaringsinstrumenten die momenteel beschikbaar zijn."
+          "title": "Synchroniseert LifeTalea apparaten?",
+          "body": "Cloudsynchronisatie is niet geïmplementeerd. Je kunt lokale archieven exporteren en herstellen."
         }
       ]
     },
     "privacy": {
-      "title": "Privacy begint met waar een verhaal leeft",
-      "summary": "Privacyverklaring van de O.Bankole. Contact banksmi@mail.com. Een juridische herziening is nog steeds vereist voordat het publiek wordt vrijgegeven.",
+      "title": "Privacy begint bij waar een verhaal wordt bewaard",
+      "summary": "Privacyverklaring voor de ontwikkeling door O.Bankole. Contact: banksmi@mail.com. Juridische beoordeling is nodig vóór publicatie.",
       "sections": [
         {
-          "title": "Herinneringen en media",
-          "body": "Geschichten, transcripten, foto's, audio en scrapbook ontwerpen blijven privé-app opgeslagen door standaard. LifeTalea geen account vereist, plaats automatisch verzamelt of advertenties en analyses bevat SDKs. Android De automatische backup is uitgeschakeld."
+          "title": "Herinneringen en bestanden",
+          "body": "Verhalen, transcripties, foto’s, audio en concepten blijven standaard privé opgeslagen. LifeTalea vereist geen account, verzamelt geen automatische locatie en bevat geen advertentie- of analyse-SDKs. Android-back-up is uitgeschakeld."
         },
         {
-          "title": "Opties die andere diensten omvatten",
-          "body": "Speech Recognition maakt gebruik van uw geïnstalleerde speech service, die speech via een netwerk kan verwerken. Het wordt alleen geactiveerd via push-to-talk met een openbaring. Amazon De aankoop communiceren met Amazon. Exporteer naar een clouddocument provider de geselecteerde archief met die provider delen."
+          "title": "Externe diensten",
+          "body": "De geïnstalleerde spraakdienst kan spraak online verwerken, na uitdrukkelijke activering met uitleg. Aankopen communiceren met Amazon. Een cloudexport geeft het gekozen archief aan die aanbieder."
         },
         {
-          "title": "Verwijdering en behoud",
-          "body": "U kunt individuele herinneringen en bijlagen of alle lokale bibliotheekgegevens in Settings verwijderen. Het verwijderen verwijdert de lokale app-gegevens. Exporteerde bestanden zijn afzonderlijke kopieën die u zelf beheert. De aankopen worden bewaard door Amazon onder zijn beleid."
+          "title": "Verwijderen en bewaren",
+          "body": "Verwijder losse onderdelen of de hele bibliotheek in Instellingen. Verwijderen van de app wist lokale gegevens. Exports beheer je afzonderlijk; Amazon bewaart aankoopgegevens volgens eigen beleid."
         },
         {
-          "title": "Veiligheidsgrens",
-          "body": "Privé-app-opslag hangt af van apparaatbeschermingen; de lokale database heeft geen afzonderlijke applicatie encryptie sleutel. Optieel geencrypteerde archieven gebruiken een paswoord. Er is geen claim van end-to-end encryptie of een voltooide evaluatie van de wettelijke naleving."
+          "title": "Veiligheidsgrenzen",
+          "body": "Privéopslag steunt op apparaatbeveiliging; de lokale database heeft geen aparte appsleutel. Archieven kunnen met een wachtzin worden versleuteld. Er wordt geen end-to-endversleuteling of voltooide juridische beoordeling geclaimd."
         }
       ]
     },
     "support": {
-      "title": "Een beetje hulp met je volgende hoofdstuk",
-      "summary": "LifeTalea is in ontwikkeling. Deze stappen omvatten de momenteel geïmplementeerde lokale tools.",
+      "title": "Hulp bij je volgende hoofdstuk",
+      "summary": "LifeTalea is in ontwikkeling. Deze tips gaan over de al geïmplementeerde lokale functies.",
       "sections": [
         {
-          "title": "Een opname zal niet beginnen",
-          "body": "Check de microfoon toestemming en gratis opslag. Speel het geheugen voordat je audio toevoegt. Als de herkenning niet beschikbaar is, gebruik dan de schriftelijke controles; spreekbevelingen en audio-opname zijn afzonderlijke capaciteiten."
+          "title": "Een opname start niet",
+          "body": "Controleer microfoontoestemming en vrije opslag. Sla de herinnering op voordat je audio toevoegt. Ontbreekt herkenning, gebruik dan de knoppen: opnemen en herkennen zijn afzonderlijke functies."
         },
         {
-          "title": "Houd een veilige kopie",
-          "body": "Open Settings, selecteer of u foto's en audio wilt opnemen, en Create backup. Bewaar het archief ergens veilig. Restore valideert het archief en toont een voorbeeld voor de invoer."
+          "title": "Bewaar een veilige kopie",
+          "body": "Kies in Instellingen of foto’s en audio meegaan en maak een back-up. Bewaar die veilig. Herstel controleert het archief en toont vóór import een voorbeeld."
         },
         {
-          "title": "A A PDF Het archief zal niet worden gered",
-          "body": "Probeer een schrijfbare map met voldoende gratis opslag. Zorg ervoor dat uw gekozen documentleverancier beschikbaar is. Een mislukte export moet de oorspronkelijke herinneringen intact laten."
+          "title": "Een PDF of archief wordt niet opgeslagen",
+          "body": "Kies een beschrijfbare map met voldoende ruimte en controleer de documentenaanbieder. Een exportfout hoort bronherinneringen niet te wijzigen."
         }
       ]
     },
     "contact": {
-      "title": "Ga in touch",
-      "summary": "Contact O.Bankole Voor LifeTalea Ondersteuning bij banksmi@mail.com.",
+      "title": "Neem contact op",
+      "summary": "Voor hulp bij LifeTalea bereik je O.Bankole via banksmi@mail.com.",
       "sections": [
         {
-          "title": "Bescherm de privacy van je gezin",
-          "body": "Bij het rapporteren van een probleem beschrijft u het apparaat, het besturingssysteem, de app-versie en de stappen. Vermijd privéverhalen, foto's, opnamen of back-up wachtzinen te sturen."
+          "title": "Bescherm de privacy van je familie",
+          "body": "Noem apparaat, systeem, appversie en stappen bij het probleem. Stuur geen privéverhalen, foto’s, opnamen of back-upwachtzinnen mee."
         },
         {
-          "title": "Ondersteuning beschikbaarheid",
+          "title": "Contact met ondersteuning",
           "body": "Schrijf naar banksmi@mail.com."
         }
       ]

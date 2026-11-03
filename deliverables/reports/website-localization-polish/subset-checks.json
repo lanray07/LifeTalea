@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "date": "2026-11-03",
+  "environment": "Playwright Chromium; http://localhost:3000; in-app browser timeout fallback",
+  "pageChecks": 6,
+  "consoleErrors": [],
+  "failedRequests": [],
+  "nativeApproved": false,
+  "checks": [
+    {
+      "locale": "fr-FR",
+      "slug": "features",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "features",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "voice-transcription",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "locale": "fr-FR",
+      "slug": "privacy",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "interaction": "French to German preserves /features/",
+      "status": "PASS"
+    }
+  ]
+}

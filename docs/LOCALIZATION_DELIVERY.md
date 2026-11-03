@@ -1,5 +1,7 @@
 # Localization delivery — 2 November 2026
 
+Historical initial delivery. The 3 November editorial follow-up and current checks are in [TRANSLATION_POLISH.md](TRANSLATION_POLISH.md).
+
 App, website and store drafts cover 22 locales. All translations remain pending native review. This is a tested localization implementation and review package, not a production-release approval.
 
 ## Delivered

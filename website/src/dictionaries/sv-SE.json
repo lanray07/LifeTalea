@@ -44,279 +44,279 @@
   },
   "articles": {
     "features": {
-      "title": "Ett hem för berättelserna bakom dina bilder",
-      "summary": "Utforska den LifeTalea utveckling förhandsvisning: skriftliga minnen, privata foton, rösthistorier, album och keepsakes.",
+      "title": "Ett hem för berättelserna bakom dina foton",
+      "summary": "Upptäck utvecklingsversionen av LifeTalea: berättelser, privata foton, inspelningar, album och minnesböcker.",
       "sections": [
         {
           "title": "Börja med ett ögonblick",
-          "body": "Skriv en titel och några rader. Lägg till ett exakt datum, ett ungefärligt år eller inget datum alls. Taggar, favoriter och album hjälper dig att hitta historien igen."
+          "body": "Lägg till titel, text och ett exakt, ungefärligt eller okänt datum. Hitta berättelser med taggar, favoriter och album."
         },
         {
-          "title": "Bilder och röster, tillsammans",
-          "body": "Importera foton med hjälp av enhetens dokumentpickare. Registrera en rösthistoria och hålla den bredvid det skriftliga minnet. Media kopieras till privat app lagring."
+          "title": "Foton och röster tillsammans",
+          "body": "Importera foton med dokumentväljaren och spela in en berättelse. Filerna kopieras till appens privata lagring."
         },
         {
-          "title": "Gör en samling själv",
-          "body": "Skapa scrapbook ritningar från sparade minnen. Ordna sidor, lägga till kaptioner och förhandsgranska din samling. PDF Export är en Premium-funktion; inköp behöver fortfarande Amazon Test av verifiering."
+          "title": "Gör boken till din egen",
+          "body": "Ordna sidor och bildtexter och granska förhandsvisningen. PDF-export kräver Premium; Amazon-köp behöver fortfarande verifieras i testmiljö."
         }
       ]
     },
     "family-memory-journal": {
-      "title": "Håll detaljerna bara din familj vet",
-      "summary": "En familjeminnesdagbok ger sammanhang till bilderna: vem som var där, vad som hände och varför ögonblicket var viktigt.",
+      "title": "Bevara detaljerna som bara din familj känner till",
+      "summary": "En familjedagbok ger foton sammanhang: vilka som var där, vad som hände och varför stunden var viktig.",
       "sections": [
         {
-          "title": "Fråga en liten fråga",
-          "body": "Istället för att börja med en hel livshistoria, fråga om en måltid, en resa eller en plats. Ett kort svar är en värdefull början. Låt berättaren välja vad som känns bekvämt."
+          "title": "Ställ en liten fråga",
+          "body": "Börja med en måltid, resa eller plats. Ett kort svar räcker. Låt berättaren själv välja vad som känns bra att dela."
         },
         {
-          "title": "Håll osäkerheten ärlig",
-          "body": "Gamla bilder kommer sällan med perfekta datum. LifeTalea accepterar ett år, en månad, exakt datum eller okänd datum. Du kan lägga till en plats själv utan att ge platsåtkomst."
+          "title": "Var ärlig med osäkra datum",
+          "body": "LifeTalea accepterar år, månad, exakt eller okänt datum. Du kan skriva in en plats utan att ge platsbehörighet."
         },
         {
-          "title": "Håll en andra kopia",
-          "body": "Lokal lagring håller minnen stängda, men en enhet kan förlora. Exportera en säkerhetskopia och hålla den på en plats du kontrollerar. Kontrollera arkivet innan du tar bort en original."
+          "title": "Behåll en andra kopia",
+          "body": "En enhet kan försvinna. Exportera en säkerhetskopia till en plats du kontrollerar och granska den innan originalet tas bort."
         }
       ]
     },
     "voice-story-recording": {
-      "title": "Gör plats för din röst",
-      "summary": "Fånga pauserna, skratt och bekanta uttryck som en skriven historia inte alltid kan hålla.",
+      "title": "Bevara deras välbekanta röster",
+      "summary": "Fånga pauser, skratt och uttryck som en skriven berättelse inte alltid kan förmedla.",
       "sections": [
         {
-          "title": "Rekord med omsorg",
-          "body": "Fråga talarens tillåtelse. Hitta ett lugnt utrymme och gör en kort testinspelning. Spara ett minne först, välj sedan Spara en historia. Ta en paus eller återställ när du behöver."
+          "title": "Spela in med omtanke",
+          "body": "Be om lov och gör en kort provinspelning i lugn miljö. Spara minnet först. Du kan pausa och återuppta inspelningen."
         },
         {
           "title": "På din enhet",
-          "body": "LifeTalea Rädda AAC Audio i M4A filer i privat app lagring. Att lämna appen stoppar och sparar inspelningen. Gratis inspelningar är begränsade till tre minuter; Premium förlänger den gränsen, förutsatt lagring."
+          "body": "LifeTalea sparar AAC-ljud i privata M4A-filer. När du lämnar appen stoppas och sparas inspelningen. Gratisgränsen är tre minuter; Premium utökar den om lagringsutrymmet räcker."
         },
         {
-          "title": "Kontrollera din tablett",
-          "body": "För inspelning krävs ett fungerande mikrofon och tillstånd. Speech Commands använder en installerad upptäckttjänst och kan inte vara tillgänglig på Fire och tabletter. Touch-kontrollerna är fortfarande tillgängliga."
+          "title": "Kontrollera din surfplatta",
+          "body": "Inspelning kräver mikrofon och behörighet. Röstkommandon behöver installerade tjänster som kan saknas på Fire-surfplattor. Pekskärmskontroller finns kvar."
         }
       ]
     },
     "voice-transcription": {
-      "title": "En skriven följeslagare till ett talat minne",
-      "summary": "Transcription är inte konfigurerad i den aktuella LifeTalea och bygga. Ljudinspelning och manuell transkriptionsredigering förblir tillgängliga.",
+      "title": "Ord bredvid det inspelade minnet",
+      "summary": "Automatisk transkription är inte konfigurerad i den här versionen av LifeTalea. Inspelning och manuell redigering av transkriptioner fungerar.",
       "sections": [
         {
-          "title": "Vad fungerar idag",
-          "body": "Öppna ett minne och redigera dess transcript-fält. Du kan skriva in en transkription eller paste text du redan har. Korrigeringar lagras lokalt bredvid den ursprungliga inspelningen."
+          "title": "Det som fungerar nu",
+          "body": "Öppna ett minne och skriv eller klistra in transkriptionen. Ändringarna sparas lokalt bredvid originalinspelningen."
         },
         {
-          "title": "Vad är kvar innan släpps",
-          "body": "Registrerad filtranscription kräver en kompatibel motor, stödd språkverifiering och slut-till-änd testning. LifeTalea inte presenterar uppfinnat text som en transkription och skickar inte inspelningar till en molnleverantör."
+          "title": "Före lanseringen",
+          "body": "En kompatibel tjänst och språktester behövs fortfarande. LifeTalea hittar inte på transkriptioner och skickar inte inspelningar till en molnleverantör."
         },
         {
-          "title": "separata tjänster",
-          "body": "Android Talkkänning för kommandon är annorlunda än att skriva över en sparad inspelning. En enhet som har en kapacitet ger inte stöd för den andra."
+          "title": "Olika funktioner",
+          "body": "Att känna igen Android-kommandon är inte samma sak som att transkribera sparade filer. Den ena funktionen garanterar inte den andra."
         }
       ]
     },
     "digital-scrapbook": {
-      "title": "Omvandla en samling till ett kapitel",
-      "summary": "Ta med skriftliga minnen och foton i sparade scrapbook utkast.",
+      "title": "Gör minnena till ett nytt kapitel",
+      "summary": "Samla berättelser och foton i lokalt sparade bokutkast.",
       "sections": [
         {
-          "title": "Välj ögonblicket",
-          "body": "Skapa en scrapbook och välj minnen från ditt bibliotek. Varje sida hänvisar till ett sparat minne, håller sin historia och fotografier tillsammans."
+          "title": "Välj ögonblicken",
+          "body": "Skapa en bok med minnen från biblioteket. Varje sida hänvisar till ett sparat minne med berättelse och foton."
         },
         {
           "title": "Hitta rätt rytm",
-          "body": "Flytta sidor upp eller ner, välj en berättelse eller bild layout och lägg till en anteckning. Spara dina captions innan förhandsgranskning. Ett raderat källminnet är tydligt markerat så att du kan reparera utkastet."
+          "body": "Flytta sidor, välj layout och spara bildtexter före förhandsvisningen. Borttagna minnen markeras så att utkastet kan rättas."
         },
         {
-          "title": "Håll den privat",
-          "body": "Scrapbook projekt är lokala. Att skapa en scrapbook publicerar aldrig den. Se över något exporterat dokument innan du bestämmer dig för att dela det."
+          "title": "Behåll kontrollen",
+          "body": "Att skapa en bok publicerar den inte. Utkast stannar lokalt. Granska exporterade dokument innan du delar dem."
         }
       ]
     },
     "family-timeline": {
-      "title": "Kom ihåg hur kapiteln ansluter",
-      "summary": "Utforska spara minnen i datumordning, inklusive de med ungefärliga och okända datum.",
+      "title": "Se hur kapitlen hänger ihop",
+      "summary": "Utforska minnen i datumordning, även med ungefärliga eller okända datum.",
       "sections": [
         {
           "title": "Följ åren",
-          "body": "De kända tidslinjerna daterar från nyaste till äldsta och placerar oönskade berättelser senare. Sök efter en fras, välj ett album eller filter per år."
+          "body": "Kända datum visas från nyast till äldst, följt av odaterade berättelser. Sök efter text, album eller år."
         },
         {
           "title": "Ett datum kan ändras",
-          "body": "Familjeforskning avslöjar ofta en ny detalj. Redigera händelsedatum och precision i minnesredigeraren; tidslinjen använder den uppdaterade informationen."
+          "body": "Släktforskning kan ge nya detaljer. Ändra datum och noggrannhet i minnet så uppdateras tidslinjen."
         },
         {
-          "title": "Ingen uppfinningsrik historia",
-          "body": "Timeline använder endast berättelser som du sparar. LifeTalea inte populera din bibliotek med tillverkade familjeevenemang."
+          "title": "Din historia utan påhitt",
+          "body": "Tidslinjen använder bara sparade minnen. LifeTalea lägger inte till påhittade familjehändelser."
         }
       ]
     },
     "keepsake-books": {
-      "title": "En väska att hålla på",
-      "summary": "Skapa en lokal PDF från en scrapbooks valda minnen, foton och kaptioner.",
+      "title": "En minnesbok att behålla",
+      "summary": "Skapa en lokal PDF med valda minnen, foton och bildtexter.",
       "sections": [
         {
-          "title": "Välj vad som ska inkluderas",
-          "body": "Ge boken en cover titel. Välj A4 Eller brev papper. Placeringar och transkripter utesluts enligt standard och kan inkluderas vid behov."
+          "title": "Välj innehåll",
+          "body": "Ange en omslagstitel och välj A4 eller Letter. Platser och transkriptioner är uteslutna som standard men kan läggas till."
         },
         {
-          "title": "Översikt före delning",
-          "body": "PDF-filer genereras på enheten genom Android”S” PDF och eld. Långa berättelser fortsätter på extra sidor. Audio är inte inbäddat i tryckta keepsakes. Översikt typografi och foton i din PDF Visor före utskrift."
+          "title": "Granska före delning",
+          "body": "PDF skapas med Android på enheten. Långa berättelser fortsätter på fler sidor; ljud bäddas inte in. Kontrollera text och foton före utskrift."
         },
         {
           "title": "Utvecklingsstatus",
-          "body": "PDF generationen genomförs och under enhet validation. Exportkontrollen kräver en verifierad Amazon rättigheterna . Live fakturering är ännu inte verifierad."
+          "body": "PDF-funktionen valideras på enheter. Export kräver verifierad Amazon-Premium-behörighet. Riktiga köp är ännu inte verifierade."
         }
       ]
     },
     "offline-memory-journal": {
-      "title": "Dina minnen, även utan koppling",
-      "summary": "LifeTalea Den är utformad runt lokala lagrings- och beröringskontroller, utan ett obligatoriskt konto.",
+      "title": "Dina minnen, även utan uppkoppling",
+      "summary": "LifeTalea bygger på lokal lagring och pekskärmskontroller, utan obligatoriskt konto.",
       "sections": [
         {
-          "title": "Fortsätt skapa offline",
-          "body": "Skriftliga minnen, album, importerade foton, sparade inspelningar, tidslinje-browsing och scrapbook-design använder lokala data. PDF Generationen kräver inte en extern dokumenttjänst."
+          "title": "Fortsätt offline",
+          "body": "Berättelser, album, importerade foton, inspelningar, tidslinje och utkast använder lokala data. PDF kräver ingen extern dokumenttjänst."
         },
         {
-          "title": "Känn gränserna",
-          "body": "Köp kräver Amazon Tjänster . En enhetsspråkigenkänning kan kräva internet. Spara filtranscription är inte tillgänglig i denna byggnad. Ingen molnsynkronisering genomförs."
+          "title": "Känn till gränserna",
+          "body": "Köp kräver Amazon. Taligenkänning kan behöva internet. Automatisk transkription och molnsynkronisering är inte tillgängliga."
         },
         {
-          "title": "Backups är ditt val",
-          "body": "Använd dokumentpickaren för att spara ett arkiv där du väljer. Om du väljer en molnbaserad dokumentleverantör hanterar leverantören den exporterade filen enligt sina egna sekretessvillkor."
+          "title": "Välj var kopian sparas",
+          "body": "Välj exportplats. Om du använder en molnbaserad dokumentleverantör hanterar den filen enligt sina egna integritetsvillkor."
         }
       ]
     },
     "fire-tablet-compatibility": {
-      "title": "Byggd med Fire Tabletter i åtanke",
-      "summary": "En inhemska Kotlin och Jetpack Compose app med inga krävande Google Play-tjänster.",
+      "title": "Utformad för Fire-surfplattor",
+      "summary": "En native-app i Kotlin och Jetpack Compose, utan krav på Google Play-tjänster.",
       "sections": [
         {
           "title": "Målplattform",
-          "body": "Minimalt stödjande Android Branden är 26. Detta är ett tekniskt minimum, inte ett löfte att varje enhet är certifierad. Fire TV:s fjärrnavigering är utanför den nuvarande räckvidden."
+          "body": "Android-API 26 är det tekniska minimikravet, ingen certifiering av alla enheter. Fire TV-fjärrkontroll ingår inte i nuvarande omfattning."
         },
         {
-          "title": "Enhetsprovning",
-          "body": "En ansluten KFTRWI Enheten rapporterar Android eld 28 är tillgänglig för utvecklingstest. Utgivningsrapporten registrerar faktiska tester; ytterligare Fire Storlekar och operativsystemversioner kvarstår att kontrolleras."
+          "title": "Enhetstester",
+          "body": "Utvecklingstester använder en KFTRWI med Android-API 28. Rapporten visar faktiska resultat; fler Fire-storlekar och systemversioner behöver testas."
         },
         {
-          "title": "Röst varierar beroende på enhet",
-          "body": "En mikrofon stöder inspelning endast när tillstånd och hårdvara är tillgängliga. Recognition och talade feedback kräver också kompatibla installerade tjänster. Touch- och textalternativ är alltid en del av designen."
+          "title": "Röst varierar mellan enheter",
+          "body": "Inspelning kräver fungerande mikrofon och behörighet. Igenkänning och uppläsning behöver kompatibla tjänster. Pek- och textalternativ finns med i designen."
         }
       ]
     },
     "languages": {
-      "title": "En tidning som kan känna sig som hemma",
-      "summary": "Utvecklingsprogrammet har en 22- Lokala översättningsmatrix täckning 17 prioriterade språk. Det är fortfarande nödvändigt att granska det ursprungliga språket.",
+      "title": "En dagbok på ditt språk",
+      "summary": "Utvecklingsappen omfattar 22 regionala varianter för 17 prioriterade språk. Granskning av modersmålstalare behövs fortfarande.",
       "sections": [
         {
-          "title": "Språkplanen",
-          "body": "Mål inkluderar regional engelska, spanska, franska och portugisiska, tyska, italienska, nederländska, polska, svenska, japanska, hindi, arabiska, turkiska, indonesiska, koreanska och förenklade och traditionella kinesiska."
+          "title": "Planerade språk",
+          "body": "Engelska, spanska, franska, portugisiska, tyska, italienska, nederländska, polska, svenska, japanska, hindi, arabiska, turkiska, indonesiska, koreanska samt förenklad och traditionell kinesiska."
         },
         {
-          "title": "Kvalitet före ett språk krav",
-          "body": "Översättningar måste genomgå platsinnehavarekontroll, layouttest och granskning. Store-språk, appspråk, distributionsländer, taligenkänning, talade feedback och transkription har var och en separata stödmatriser."
+          "title": "Kvalitet före publicering",
+          "body": "Översättningar behöver kontroller av variabler, layout och språk. App, butiker, länder och rösttjänster har egna stödmatriser."
         },
         {
           "title": "Dina ord förblir dina",
-          "body": "Att ändra gränsspråket översätter inte personliga minnen eller inspelningar. Oreviewed webbplats översättningar är endast tillgängliga i lokal förhandsgranskning; produktionen kräver granskning."
+          "body": "Språkbyte översätter inte personliga berättelser eller inspelningar. Ogranskade webböversättningar finns bara i lokal förhandsvisning."
         }
       ]
     },
     "pricing": {
-      "title": "Håll dina minnen. Välj de extra.",
-      "summary": "En gratis tidning med ett valfritt enstaka Premium-köp. Inköp är inte levande i denna utveckling förhandsvisning.",
+      "title": "Behåll minnena. Välj tilläggen.",
+      "summary": "En gratis dagbok med ett valfritt engångsköp av Premium. Köp är inte aktiva i utvecklingsversionen.",
       "sections": [
         {
           "title": "Gratis",
-          "body": "Upp till tre album, skriftliga minnen, foton, en tidslinje, scrapbook ritningar och ljudinspelningar upp till tre minuter. Spara skriftliga minnen är inte kapade."
+          "body": "Tre album, obegränsat antal skrivna minnen, foton, tidslinje, bokutkast och inspelningar upp till tre minuter."
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Planerad entidsbetyg: obegränsade album, längre ljudinspelningar, PDF bevarar export och krypterad lokal säkerhetskopiering. Den föreslagna UK Priset är £4.99Appen visar det faktiska lokala priset från Amazon När det är konfigurerat."
+          "body": "Planerat engångsköp: obegränsade album, längre inspelningar, PDF-export och krypterade lokala säkerhetskopior. Föreslaget brittiskt testpris är 4,99 £; Amazon visar det riktiga lokala priset efter konfiguration."
         },
         {
-          "title": "Dina befintliga berättelser förblir tillgängliga",
-          "body": "Premium tillgänglighet blockerar inte dig från befintliga minnen. Grundläggande säkerhetskopiering och återställning förblir tillgängliga. Cloud transcription med löpande kostnader ingår inte i ett enhetligt prislåtande."
+          "title": "Befintliga berättelser förblir tillgängliga",
+          "body": "Premium låser inte befintliga minnen. Grundläggande säkerhetskopiering och återställning finns kvar. Molntranskription med löpande kostnader utlovas inte som engångsköp."
         }
       ]
     },
     "faq": {
-      "title": "Några saker värda att veta",
-      "summary": "Praktiska svar om integritet, inspelningar, familjehistorier och lokal bevarande.",
+      "title": "Bra att veta",
+      "summary": "Praktiska svar om integritet, inspelningar och bevarande av familjeberättelser.",
       "sections": [
         {
           "title": "Behöver jag ett konto?",
-          "body": "Grundläggande lokala funktioner kräver inte LifeTalea och konto. Amazon inköp använder konto och tjänster som tillhandahålls av Amazon och Appstore."
+          "body": "Lokala funktioner kräver inget LifeTalea-konto. Köp använder Amazon Appstores konto och tjänster."
         },
         {
-          "title": "Hur organiserar jag gamla bilder?",
-          "body": "Börja med ett litet album och en bild. Lägg till namn och sammanhang du känner till, använd ungefärliga datum när det behövs, och fråga en relativ om en detalj på en gång."
+          "title": "Hur ordnar jag gamla foton?",
+          "body": "Börja med ett litet album och ett foto. Lägg till kända namn, detaljer och ungefärliga datum. Fråga släktingar om en detalj i taget."
         },
         {
-          "title": "Kan jag spela in mina föräldrars livshistorier?",
-          "body": "Ja, med deras tillstånd och en kompatibel mikrofon. Börja med ett kort ämne och kolla på playback. Lita inte på en enda enhet som din enda kopia."
+          "title": "Kan jag spela in mina föräldrars berättelser?",
+          "body": "Ja, med deras samtycke och en kompatibel mikrofon. Börja med ett kort ämne och kontrollera uppspelningen. Behåll en extra kopia på annan plats."
         },
         {
-          "title": "Kan jag skriva över inspelningar?",
-          "body": "Den automatiska spara filtranscription är inte tillgänglig i den aktuella byggnaden. Du kan lägga till och redigera en transcript manuellt."
+          "title": "Kan jag transkribera inspelningar?",
+          "body": "Automatisk transkription är inte tillgänglig. Du kan lägga till och redigera en transkription manuellt."
         },
         {
-          "title": "Gör det LifeTalea Synkronisera mellan enheter?",
-          "body": "Ingen moln synkroniseras. Lokala arkivexport och återställning är bevarandeverktygen som för närvarande tillhandahålls."
+          "title": "Synkroniserar LifeTalea mellan enheter?",
+          "body": "Molnsynkronisering är inte implementerad. Lokala arkiv kan exporteras och återställas."
         }
       ]
     },
     "privacy": {
-      "title": "Privatlivet börjar där en historia lever",
-      "summary": "Utveckling av sekretessmeddelande från O.Bankole. Kontakt banksmi@mail.com. Juridisk granskning är fortfarande nödvändig före offentliggörande.",
+      "title": "Integritet börjar där berättelsen förvaras",
+      "summary": "Integritetsinformation för utvecklingsversionen från O.Bankole. Kontakt: banksmi@mail.com. Juridisk granskning krävs före publicering.",
       "sections": [
         {
-          "title": "Minnen och media",
-          "body": "Storier, transkripter, foton, ljud- och scrapbook-utskrifter förblir i privat app lagring som standard. LifeTalea kräver inte ett konto, samlar platsen automatiskt eller inkluderar reklam och analys SDKs. Android Automatisk backup är inaktiverad."
+          "title": "Minnen och filer",
+          "body": "Berättelser, transkriptioner, foton, ljud och utkast stannar som standard i privat applagring. LifeTalea kräver inget konto, samlar inte plats automatiskt och saknar reklam- och analys-SDK:er. Android-säkerhetskopiering är avstängd."
         },
         {
-          "title": "Val som involverar andra tjänster",
-          "body": "Speech Recognition använder din installerade taltjänst, som kan behandla tal över ett nätverk. Den aktiveras endast via push-to-talk med en avslöjande. Amazon Inköp kommunicerar med Amazon. Exportera till en molndokumentleverantör delar den valda arkivet med den leverantören."
+          "title": "Externa tjänster",
+          "body": "Installerad taligenkänning kan behandla tal online efter uttrycklig aktivering med information. Köp kommunicerar med Amazon. Molnexport lämnar det valda arkivet till leverantören."
         },
         {
-          "title": "Avlägsnande och behållning",
-          "body": "Du kan ta bort enskilda minnen och bilagor eller alla lokala bibliotekdata i Inställningar. Avinstallation tar bort lokala appdata. Exporterade filer är separata kopior som du själv hanterar. Uppgifter om inköp bevaras av Amazon under sin politik."
+          "title": "Radering och lagring",
+          "body": "Radera enskilda objekt eller biblioteket i Inställningar. Avinstallation tar bort lokala data. Exporter hanterar du separat; Amazon sparar köpdata enligt sina regler."
         },
         {
           "title": "Säkerhetsgränser",
-          "body": "Privat lagring av appar beror på enhetens skydd; den lokala databasen har inte en separat program krypteringsnyckel. Optionellt krypterade arkiv använder ett pass. Det finns inga krav på slutgiltig kryptering eller en fullständig lagstadgad överensstämmelsebedömning."
+          "body": "Privat lagring bygger på enhetens skydd; databasen har ingen separat appkrypteringsnyckel. Arkiv kan krypteras med lösenfras. Ingen totalsträckskryptering eller färdig juridisk bedömning hävdas."
         }
       ]
     },
     "support": {
-      "title": "Få lite hjälp med nästa kapitel",
-      "summary": "LifeTalea är i utveckling. Dessa steg täcker de lokala verktygen som för närvarande implementeras.",
+      "title": "Hjälp med nästa kapitel",
+      "summary": "LifeTalea är under utveckling. Råden gäller de lokala verktyg som redan är implementerade.",
       "sections": [
         {
-          "title": "En inspelning kommer inte att börja",
-          "body": "Kontrollera mikrofon tillstånd och fri lagring. Spara minnet innan du lägger till ljud. Om erkännande inte är tillgängligt, använd de skriftliga kontrollerna; talkommandon och ljudinspelning är separata möjligheter."
+          "title": "En inspelning startar inte",
+          "body": "Kontrollera mikrofonbehörighet och ledigt utrymme. Spara minnet innan ljud läggs till. Saknas taligenkänning, använd knapparna; igenkänning och inspelning är olika funktioner."
         },
         {
-          "title": "Håll en säker kopia",
-          "body": "Öppna Inställningar, välj om du vill inkludera foton och ljud, sedan Skapa backup. Håll arkivet säkert någonstans. Restore validerar arkivet och visar en förhandsvisning innan import."
+          "title": "Behåll en säker kopia",
+          "body": "Välj i Inställningar om foton och ljud ska ingå och skapa säkerhetskopian. Förvara den säkert. Återställning validerar arkivet och visar en förhandsvisning före import."
         },
         {
-          "title": "a a PDF eller arkivet kommer inte att spara",
-          "body": "Försök en skribar mapp med tillräckligt med gratis lagring. Kontrollera att din valda dokumentleverantör är tillgänglig. En misslyckad export bör lämna källminnen intakta."
+          "title": "PDF eller arkiv sparas inte",
+          "body": "Välj en skrivbar mapp med tillräckligt utrymme och kontrollera dokumentleverantören. En misslyckad export ska lämna originalminnen oförändrade."
         }
       ]
     },
     "contact": {
-      "title": "Kom i kontakt",
-      "summary": "Kontakt O.Bankole För LifeTalea Stöd till banksmi@mail.com.",
+      "title": "Kontakta oss",
+      "summary": "Kontakta O.Bankole om LifeTalea på banksmi@mail.com.",
       "sections": [
         {
           "title": "Skydda familjens integritet",
-          "body": "När du rapporterar ett problem beskriver du enheten, operativsystemet, appversionen och stegen. Undvik att skicka privata berättelser, foton, inspelningar eller säkerhetskopierade pass."
+          "body": "Beskriv enhet, system, appversion och stegen som ger problemet. Skicka inte privata berättelser, foton, inspelningar eller lösenfraser till säkerhetskopior."
         },
         {
-          "title": "Stöd tillgänglighet",
+          "title": "Skriv till supporten",
           "body": "Skriv till banksmi@mail.com."
         }
       ]

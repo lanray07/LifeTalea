@@ -1,0 +1,41 @@
+
+> lifetalea-website@0.1.0 build
+> next build
+
+▲ Next.js 16.4.4 (Turbopack)
+✓ Running next.config.ts took 1433ms
+- Experiments (use with caution):
+  · cpus: 2
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 26.5s
+  Running TypeScript ...
+  Finished TypeScript in 14.2s ...
+  Collecting page data using 2 workers ...
+  Generating static pages using 2 workers (0/357) ...
+  Generating static pages using 2 workers (89/357) 
+  Generating static pages using 2 workers (178/357) 
+  Generating static pages using 2 workers (267/357) 
+✓ Generating static pages using 2 workers (357/357) in 111s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├   /[locale]
+│ ├ ● /en-GB
+│ ├ ● /en-US
+│ ├ ● /en-AU
+│ └ ● [+19 more paths]
+├   /[locale]/[slug]
+│ ├ ● /en-GB/features
+│ ├ ● /en-GB/family-memory-journal
+│ ├ ● /en-GB/voice-story-recording
+│ └ ● [+327 more paths]
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

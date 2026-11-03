@@ -1,8 +1,8 @@
 {
   "device": "KFTRWI",
   "sdk": 28,
-  "recordedDurationMs": 2404,
-  "encodedDurationMs": 2327,
+  "recordedDurationMs": 2402,
+  "encodedDurationMs": 2330,
   "playbackCompleted": true,
   "rawAudioRetained": false,
   "speechRecognitionAvailable": false,

@@ -3,26 +3,26 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Rodzinne historie i wspomnienia",
-  "shortDescription": "Utrzymuj opowieści rodzinne, zdjęcia i wspomnienia głosowe razem w prywatnym dzienniku. Stwórz albumy, odkryj linię czasową i zaoszczędź pliki scrapbook na swoim urządzeniu.",
-  "longDescription": "Trzymajcie się chwil. Pamiętajcie o głosach.\n\nLifeTalea Daj historię rodzinną prywatne miejsce na tabletie. Zacznij od jednej fotografii, kilku pisemnych linii lub nagrywania głosu. Nie LifeTalea Konto jest wymagane.\n\nZachowaj historię po zdjęciu\nDodaj zdjęcia, etykiety i opcjonalne miejsce, które wpiszesz. Wybierz rok, miesiąc, dokładną datę lub nieznaną datę. Zorganizuj wspomnienia w albume i oznacz ulubione.\n\nMieszkanie dla Twojego głosu\nZapisz, odpocznij, odtwarzaj i odtwarzasz wypowiedzianą historię. Audio pozostaje w prywatnym magazynie aplikacji. Bezpłatny poziom obsługuje nagrania do 3 minut. Pozwolenie na mikrofon jest wymagane, gdy wybierasz nagrywanie. Słowa komendowe obecnie obsługują język angielski. Komandy głosowe i odtwarzanie mówione zależą od zainstalowanych usług urządzeń; alternatywy dotykowe i tekstowe pozostają dostępne.\n\nŚledź rozdziały swojej rodziny\nBrowse zaoszczędził wspomnienia w harmonogramie. Szukaj opowieści pisemnych, etykiet i ręcznie edytowane transkrypcje. Tworzenie projektów scrapbook, uporządkowanie stron i dodanie kapsułek.\n\nUtrzymuj kopię, którą kontrolujesz\nTworzenie lokalnej kopii zapasowej i wyraźnie wybrać, czy dodać zdjęcia i nagrania. Przywrócenie potwierdza archiwum przed importowaniem. Wywozy i hasło szyfrującey są gdzieś bezpieczne.\n\nOpcjonalna premia\nPremium jest zaprojektowany jako jednorazowy zakup na nieograniczone albumy, dłuższe nagrania, lokalne PDF Eksportowanie i tworzenie szyfrowanego archiwum. Aktualne ceny lokalne zostaną dostarczone przez Amazon. Istniejące historie pozostają dostępne bez Premium.\n\nstatus rozwoju\nTa lista jest projektem. Automatyczna transkrypcja nie jest konfigurowana. Światowe tłumaczenia, wymagane testy urządzeń i Amazon Kontrola zakupu jest niekompletna. Nie oferuje się synchronizacji chmury. Nie publikuj tego projektu jako wykazu produktów.\n\nWydawnictwo : O.Bankole\nWsparcie dla: banksmi@mail.com",
+  "shortDescription": "Poznaj rozwojową wersję LifeTalea: opowieści, prywatne zdjęcia, nagrania, albumy i książki wspomnień.",
+  "longDescription": "Prywatne miejsce na zdjęcia, głosy i rodzinne opowieści.\n\nDodaj tytuł, kilka zdań i datę dokładną, przybliżoną lub nieznaną. Tagi, ulubione i albumy pomogą odnaleźć opowieść.\n\nImportuj zdjęcia przez systemowy wybór plików i nagrywaj opowieści. Pliki są kopiowane do prywatnej pamięci aplikacji.\n\nNagranie pozostaje na tym urządzeniu. Po opuszczeniu aplikacji zostanie zatrzymane i zapisane. Bezpłatne nagrania mogą trwać do trzech minut.\n\nFunkcja naciśnij i mów korzysta z usługi rozpoznawania mowy urządzenia. Może ona wymagać Internetu i przetwarzać mowę poza urządzeniem. Kontynuuj tylko, jeśli wyrażasz zgodę. LifeTalea nie zapisuje nagrań poleceń. Polecenia są obecnie obsługiwane tylko w języku angielskim.\n\nPlanowany zakup jednorazowy: nielimitowane albumy, dłuższe nagrania, eksport PDF i szyfrowane kopie lokalne. Proponowana brytyjska cena testowa to 4,99 £; po konfiguracji Amazon poda rzeczywistą cenę lokalną.\n\nKopia zawiera opowieści, transkrypcje, albumy i wersje robocze ksiąg. Zdjęcia i nagrania są dołączane tylko po ich wybraniu. Niezaszyfrowane eksporty zawierają czytelne dane prywatne. Zachowaj hasło szyfrujące: nie można go odzyskać. Obecne limity: 32 MiB na archiwum i 16 MiB na załącznik. Większe biblioteki wymagają przyszłej wersji.\n\nAplikacja nie została jeszcze opublikowana. Trwają testy urządzeń, weryfikacja językowa i sprawdzanie zakupów Amazon.\n\nAutomatyczna transkrypcja nie jest skonfigurowana w tej wersji LifeTalea. Dostępne są nagrania i ręczna edycja transkrypcji.\n\nWersja robocza tłumaczenia. Oczekuje na weryfikację językową.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
-    "Zapisz pisemne historie, zdjęcia i lokalne nagrania głosowe razem.",
-    "Organizuj prywatne albumy z tagami, ulubionymi i zbliżonymi datami.",
-    "Odkryj rodzinną linię czasową i utwórz zapisane rysunki scrapbook.",
-    "Tworzenie lokalnych kopii zapasowych za pomocą wyraźnie wybranych zdjęć i audio.",
-    "Użyj alternatyw dotykowych i tekstowych, gdy usługi mowy urządzenia nie są dostępne."
+    "Rodzinny pamiętnik uzupełnia zdjęcia: kto na nich jest, co się wydarzyło i dlaczego to ważne.",
+    "Utrwal pauzy, śmiech i znajome zwroty, których tekst nie zawsze potrafi oddać.",
+    "Połącz opowieści i zdjęcia w szkicach książek przechowywanych lokalnie.",
+    "Przeglądaj wspomnienia według dat, również przybliżonych i nieznanych.",
+    "Nagrywanie wymaga mikrofonu i zgody. Rozpoznawanie mowy i odczyt potrzebują zgodnych usług. Dostępne są alternatywy dotykowe i tekstowe."
   ],
   "keywords": [
-    "Dziennik pamięci rodzinnej",
-    "Dziennik głosowy",
-    "Rekord rodzinny",
-    "cyfrowy scrapbook",
-    "Dziennik Rodziny prywatnej",
-    "Okres pamięci"
+    "Rodzinne wspomnienia",
+    "Opowieść głosowa",
+    "Historia rodziny",
+    "Księgi wspomnień",
+    "Oś czasu",
+    "Dziennik mojego życia"
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Początkowy przegląd rozwoju. Nie zatwierdzone do składania przez publiczność.",
+  "releaseNotes": "Wersja robocza tłumaczenia. Oczekuje na weryfikację językową. Aplikacja nie została jeszcze opublikowana. Trwają testy urządzeń, weryfikacja językowa i sprawdzanie zakupów Amazon.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
@@ -40,5 +40,5 @@
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "a0caad5c4377e29e22558bfec46998462dea1f0a64905250a769598caa320b9d"
+  "targetHash": "d441a3031825d902b4cb421ece43b6b89a1fe82834d853ef0d6bc0705b7ce714"
 }

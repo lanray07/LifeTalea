@@ -1,0 +1,736 @@
+# Values follow APP_KEYS in scripts/polish_translations.py. Editorial drafts, not native approval.
+[fr]
+Souvenirs récents
+Confirmer
+Date de l’événement
+Précision de la date
+Inconnue
+Mois
+Lieu (facultatif)
+Étiquettes (séparées par des virgules)
+Rechercher dans les récits, les étiquettes et les transcriptions…
+Tous
+Supprimer ce souvenir et ses pièces jointes ?
+Supprimer cet album ? Les souvenirs resteront dans votre bibliothèque.
+Supprimer cette pièce jointe de votre appareil ?
+Supprimer ce brouillon de livre ? Vos souvenirs seront conservés.
+Récit audio
+L’enregistrement reste sur cet appareil. Si vous quittez l’application, il est arrêté et enregistré. La version gratuite permet des enregistrements de trois minutes maximum.
+LifeTalea utilise le microphone uniquement pour enregistrer ou activer les commandes vocales. Vous pouvez toujours écrire à la place.
+L’accès au microphone a été refusé. Vous pouvez écrire un récit ou ajouter des photos.
+Impossible d’enregistrer le fichier audio. Vérifiez l’autorisation du microphone et l’espace disponible, puis réessayez.
+L’opération n’a pas abouti. Vérifiez le fichier, les autorisations et l’espace disponible, puis réessayez. Vos souvenirs existants sont inchangés.
+Position de lecture
+La transcription automatique n’est pas configurée dans cette version. Votre enregistrement est conservé. Vous pouvez saisir ou coller une transcription ci-dessous.
+La reconnaissance vocale n’est pas disponible sur cet appareil. Utilisez les commandes tactiles ou saisissez une commande.
+Votre commande vocale n’a pas été reconnue. Réessayez ou saisissez-la dans le champ de texte.
+Saisir une commande
+Exécuter la commande
+Essayez une commande en anglais : « Create a new memory », « Open my timeline » ou « Create a keepsake book ».
+Lire le récit à voix haute
+La lecture vocale n’est pas disponible pour cette langue ou cet appareil. Votre récit écrit reste accessible.
+Arrêter la lecture vocale
+Quel conseil donneriez-vous à la personne que vous étiez plus jeune ?
+Raconter ce souvenir
+Aucun souvenir trouvé. Essayez une autre recherche ou un autre filtre.
+Rassemblez vos souvenirs dans un livre. Organisez les pages, ajoutez des légendes et enregistrez votre brouillon.
+Le PDF est créé sur votre appareil. Vérifiez-le avant de le partager. Les enregistrements audio ne sont pas intégrés au livre imprimé.
+Ce souvenir a été supprimé. Retirez cette page ou choisissez un autre souvenir.
+Réponses vocales
+Filtrer par année
+Filtrer par album
+Arrêtez l’enregistrement en cours avant de changer de souvenir.
+Veuillez attendre la fin de l’opération en cours.
+Voir le souvenir
+Enregistré sur votre appareil
+Créez ou ouvrez un souvenir avant de lancer un enregistrement.
+Ouvrez un récit enregistré pour l’écouter à voix haute.
+Enregistrez votre récit avant d’ajouter des pièces jointes.
+Les rappels ne sont pas encore disponibles dans cette version de développement.
+YYYY, ou laissez vide pour afficher toutes les années
+[es]
+Recuerdos recientes
+Confirmar
+Fecha del acontecimiento
+Precisión de la fecha
+Desconocida
+Mes
+Lugar (opcional)
+Etiquetas (separadas por comas)
+Buscar relatos, etiquetas y transcripciones…
+Todos
+¿Eliminar este recuerdo y sus archivos adjuntos?
+¿Eliminar este álbum? Sus recuerdos permanecerán en la biblioteca.
+¿Eliminar este archivo adjunto del dispositivo?
+¿Eliminar este borrador del libro? Tus recuerdos se conservarán.
+Relato de voz
+El audio permanece en este dispositivo. Al salir de la aplicación, la grabación se detiene y se guarda. Las grabaciones gratuitas duran hasta tres minutos.
+LifeTalea solo necesita el micrófono para grabar o usar los comandos de voz. También puedes escribir.
+Se ha denegado el acceso al micrófono. Puedes escribir un relato o añadir fotos.
+No se ha podido guardar la grabación. Comprueba el permiso del micrófono y el espacio disponible e inténtalo de nuevo.
+No se ha completado la operación. Comprueba el archivo, los permisos y el espacio disponible. Tus recuerdos existentes no han cambiado.
+Posición de reproducción
+La transcripción automática no está configurada en esta versión. Tu grabación se conserva. Puedes escribir o pegar una transcripción a continuación.
+El reconocimiento de voz no está disponible en este dispositivo. Usa los controles táctiles o escribe un comando.
+No se ha reconocido el comando de voz. Inténtalo de nuevo o escríbelo en el campo de texto.
+Escribe un comando
+Ejecutar comando
+Prueba un comando en inglés: «Create a new memory», «Open my timeline» o «Create a keepsake book».
+Leer el relato en voz alta
+La lectura en voz alta no está disponible para este idioma o dispositivo. Tu relato escrito sigue disponible.
+Detener la lectura en voz alta
+¿Qué consejo le darías a tu yo más joven?
+Contar este recuerdo
+No se han encontrado recuerdos. Prueba otra búsqueda o filtro.
+Reúne tus recuerdos en un libro. Ordena las páginas, añade textos y guarda el borrador.
+El PDF se crea en tu dispositivo. Revísalo antes de compartirlo. Los libros impresos no incluyen las grabaciones de audio.
+Este recuerdo se ha eliminado. Quita esta página o elige otro recuerdo.
+Respuestas de voz
+Filtrar por año
+Filtrar por álbum
+Detén la grabación en curso antes de cambiar de recuerdo.
+Espera a que termine la operación actual.
+Ver recuerdo
+Guardado en tu dispositivo
+Crea o abre un recuerdo antes de grabar.
+Abre un relato guardado para escucharlo en voz alta.
+Guarda el relato antes de añadir archivos adjuntos.
+Los recordatorios aún no están disponibles en esta versión de desarrollo.
+YYYY, o deja el campo vacío para ver todos los años
+[de]
+Neueste Erinnerungen
+Bestätigen
+Datum des Ereignisses
+Genauigkeit des Datums
+Unbekannt
+Monat
+Ort (optional)
+Schlagwörter (durch Kommas getrennt)
+Geschichten, Schlagwörter und Transkripte durchsuchen…
+Alle
+Diese Erinnerung und ihre Anhänge löschen?
+Dieses Album löschen? Die Erinnerungen bleiben in Ihrer Bibliothek erhalten.
+Diesen Anhang vom Gerät löschen?
+Diesen Buchentwurf löschen? Ihre Erinnerungen bleiben erhalten.
+Erzählung als Audio
+Die Aufnahme bleibt auf diesem Gerät. Beim Verlassen der App wird sie beendet und gespeichert. Kostenlose Aufnahmen sind auf drei Minuten begrenzt.
+LifeTalea benötigt das Mikrofon nur für Aufnahmen und Sprachbefehle. Sie können stattdessen jederzeit schreiben.
+Der Mikrofonzugriff wurde verweigert. Sie können weiterhin Geschichten schreiben und Fotos hinzufügen.
+Die Aufnahme konnte nicht gespeichert werden. Prüfen Sie die Mikrofonberechtigung und den freien Speicherplatz und versuchen Sie es erneut.
+Der Vorgang konnte nicht abgeschlossen werden. Prüfen Sie Datei, Berechtigungen und freien Speicherplatz. Ihre vorhandenen Erinnerungen bleiben unverändert.
+Wiedergabeposition
+Die automatische Transkription ist in dieser Version nicht eingerichtet. Ihre Aufnahme bleibt erhalten. Unten können Sie ein Transkript eingeben oder einfügen.
+Die Spracherkennung ist auf diesem Gerät nicht verfügbar. Nutzen Sie die Touch-Bedienung oder geben Sie einen Befehl ein.
+Der Sprachbefehl wurde nicht erkannt. Versuchen Sie es erneut oder geben Sie ihn als Text ein.
+Befehl eingeben
+Befehl ausführen
+Versuchen Sie einen englischen Befehl: „Create a new memory“, „Open my timeline“ oder „Create a keepsake book“.
+Geschichte vorlesen
+Die Sprachausgabe ist für diese Sprache oder dieses Gerät nicht verfügbar. Ihre geschriebene Geschichte bleibt zugänglich.
+Vorlesen beenden
+Welchen Rat würden Sie Ihrem jüngeren Ich geben?
+Diese Geschichte erzählen
+Keine Erinnerungen gefunden. Versuchen Sie eine andere Suche oder einen anderen Filter.
+Gestalten Sie aus Ihren Erinnerungen ein Buch. Ordnen Sie die Seiten, ergänzen Sie Bildunterschriften und speichern Sie den Entwurf.
+Die PDF-Datei wird auf Ihrem Gerät erstellt. Prüfen Sie sie vor dem Teilen. Audioaufnahmen werden nicht in gedruckte Erinnerungsbücher eingebettet.
+Diese Erinnerung wurde gelöscht. Entfernen Sie die Seite oder wählen Sie eine andere Erinnerung.
+Gesprochene Rückmeldungen
+Nach Jahr filtern
+Nach Album filtern
+Beenden Sie die laufende Aufnahme, bevor Sie eine andere Erinnerung öffnen.
+Bitte warten Sie, bis der aktuelle Vorgang abgeschlossen ist.
+Erinnerung ansehen
+Auf Ihrem Gerät gespeichert
+Erstellen oder öffnen Sie eine Erinnerung, bevor Sie aufnehmen.
+Öffnen Sie eine gespeicherte Geschichte, um sie vorlesen zu lassen.
+Speichern Sie die Geschichte, bevor Sie Anhänge hinzufügen.
+Erinnerungen per Benachrichtigung sind in dieser Entwicklungsversion noch nicht verfügbar.
+YYYY oder leer lassen, um alle Jahre anzuzeigen
+[it]
+Ricordi recenti
+Conferma
+Data dell’evento
+Precisione della data
+Sconosciuta
+Mese
+Luogo (facoltativo)
+Etichette (separate da virgole)
+Cerca racconti, etichette e trascrizioni…
+Tutti
+Eliminare questo ricordo e i suoi allegati?
+Eliminare questo album? I ricordi rimarranno nella raccolta.
+Eliminare questo allegato dal dispositivo?
+Eliminare questa bozza del libro? I ricordi verranno conservati.
+Racconto audio
+L’audio rimane su questo dispositivo. Uscendo dall’app, la registrazione viene interrotta e salvata. Le registrazioni gratuite durano al massimo tre minuti.
+LifeTalea usa il microfono solo per registrare o attivare i comandi vocali. Puoi sempre scrivere in alternativa.
+L’accesso al microfono è stato negato. Puoi comunque scrivere un racconto o aggiungere foto.
+Impossibile salvare la registrazione. Controlla il permesso del microfono e lo spazio disponibile, poi riprova.
+L’operazione non è stata completata. Controlla il file, i permessi e lo spazio disponibile. I ricordi esistenti non sono stati modificati.
+Posizione di riproduzione
+La trascrizione automatica non è configurata in questa versione. La registrazione è conservata. Puoi digitare o incollare una trascrizione qui sotto.
+Il riconoscimento vocale non è disponibile su questo dispositivo. Usa i comandi touch o digita un comando.
+Il comando vocale non è stato riconosciuto. Riprova o digitalo nel campo di testo.
+Digita un comando
+Esegui comando
+Prova un comando in inglese: «Create a new memory», «Open my timeline» o «Create a keepsake book».
+Leggi il racconto ad alta voce
+La lettura vocale non è disponibile per questa lingua o questo dispositivo. Il racconto scritto rimane accessibile.
+Interrompi la lettura vocale
+Quale consiglio daresti alla persona che eri da giovane?
+Racconta questo ricordo
+Nessun ricordo trovato. Prova un’altra ricerca o un altro filtro.
+Riunisci i ricordi in un libro. Ordina le pagine, aggiungi didascalie e salva la bozza.
+Il PDF viene creato sul dispositivo. Controllalo prima di condividerlo. Le registrazioni audio non sono incluse nei libri stampati.
+Questo ricordo è stato eliminato. Rimuovi la pagina o scegli un altro ricordo.
+Risposte vocali
+Filtra per anno
+Filtra per album
+Interrompi la registrazione in corso prima di cambiare ricordo.
+Attendi il completamento dell’operazione in corso.
+Visualizza ricordo
+Salvato sul dispositivo
+Crea o apri un ricordo prima di registrare.
+Apri un racconto salvato per ascoltarlo ad alta voce.
+Salva il racconto prima di aggiungere allegati.
+I promemoria non sono ancora disponibili in questa versione di sviluppo.
+YYYY, oppure lascia vuoto per visualizzare tutti gli anni
+[pt]
+Memórias recentes
+Confirmar
+Data do acontecimento
+Precisão da data
+Desconhecida
+Mês
+Local (opcional)
+Etiquetas (separadas por vírgulas)
+Buscar relatos, etiquetas e transcrições…
+Todas
+Excluir esta memória e seus anexos?
+Excluir este álbum? As memórias permanecerão na biblioteca.
+Excluir este anexo do dispositivo?
+Excluir este rascunho do livro? Suas memórias serão preservadas.
+Relato em áudio
+O áudio permanece neste dispositivo. Ao sair do aplicativo, a gravação é encerrada e salva. As gravações gratuitas duram até três minutos.
+LifeTalea usa o microfone apenas para gravar ou ativar comandos de voz. Você também pode escrever.
+O acesso ao microfone foi negado. Você ainda pode escrever um relato ou adicionar fotos.
+Não foi possível salvar a gravação. Verifique a permissão do microfone e o espaço disponível e tente novamente.
+A operação não foi concluída. Verifique o arquivo, as permissões e o espaço disponível. Suas memórias existentes não foram alteradas.
+Posição de reprodução
+A transcrição automática não está configurada nesta versão. Sua gravação está preservada. Você pode digitar ou colar uma transcrição abaixo.
+O reconhecimento de voz não está disponível neste dispositivo. Use os controles de toque ou digite um comando.
+O comando de voz não foi reconhecido. Tente novamente ou digite-o no campo de texto.
+Digite um comando
+Executar comando
+Experimente um comando em inglês: “Create a new memory”, “Open my timeline” ou “Create a keepsake book”.
+Ler o relato em voz alta
+A leitura em voz alta não está disponível para este idioma ou dispositivo. Seu relato escrito continua acessível.
+Parar a leitura em voz alta
+Que conselho você daria a si mesmo quando era mais jovem?
+Contar esta história
+Nenhuma memória encontrada. Tente outra busca ou filtro.
+Reúna suas memórias em um livro. Organize as páginas, adicione legendas e salve o rascunho.
+O PDF é criado no dispositivo. Revise-o antes de compartilhar. As gravações de áudio não são incluídas nos livros impressos.
+Esta memória foi excluída. Remova a página ou escolha outra memória.
+Respostas faladas
+Filtrar por ano
+Filtrar por álbum
+Encerre a gravação em andamento antes de mudar de memória.
+Aguarde a conclusão da operação atual.
+Ver memória
+Salvo no dispositivo
+Crie ou abra uma memória antes de gravar.
+Abra um relato salvo para ouvi-lo em voz alta.
+Salve o relato antes de adicionar anexos.
+Os lembretes ainda não estão disponíveis nesta versão de desenvolvimento.
+YYYY, ou deixe em branco para ver todos os anos
+[nl]
+Recente herinneringen
+Bevestigen
+Datum van de gebeurtenis
+Nauwkeurigheid van de datum
+Onbekend
+Maand
+Locatie (optioneel)
+Tags (gescheiden door komma’s)
+Zoek in verhalen, tags en transcripties…
+Alle
+Deze herinnering en de bijlagen verwijderen?
+Dit album verwijderen? De herinneringen blijven in je bibliotheek staan.
+Deze bijlage van je apparaat verwijderen?
+Dit boekconcept verwijderen? Je herinneringen blijven bewaard.
+Gesproken verhaal
+De opname blijft op dit apparaat. Als je de app verlaat, wordt de opname gestopt en opgeslagen. Gratis opnamen duren maximaal drie minuten.
+LifeTalea gebruikt de microfoon alleen voor opnamen en spraakopdrachten. Je kunt ook altijd schrijven.
+Toegang tot de microfoon is geweigerd. Je kunt nog wel een verhaal schrijven of foto’s toevoegen.
+De opname kon niet worden opgeslagen. Controleer de microfoontoestemming en vrije opslagruimte en probeer het opnieuw.
+De bewerking is niet voltooid. Controleer het bestand, de toestemmingen en de vrije opslagruimte. Je bestaande herinneringen zijn niet gewijzigd.
+Afspeelpositie
+Automatische transcriptie is niet ingesteld in deze versie. Je opname blijft bewaard. Je kunt hieronder een transcriptie typen of plakken.
+Spraakherkenning is niet beschikbaar op dit apparaat. Gebruik de aanraakbediening of typ een opdracht.
+De spraakopdracht is niet herkend. Probeer het opnieuw of typ de opdracht in het tekstveld.
+Typ een opdracht
+Opdracht uitvoeren
+Probeer een Engelse opdracht: ‘Create a new memory’, ‘Open my timeline’ of ‘Create a keepsake book’.
+Verhaal voorlezen
+Voorlezen is niet beschikbaar voor deze taal of dit apparaat. Je geschreven verhaal blijft toegankelijk.
+Voorlezen stoppen
+Welk advies zou je je jongere zelf geven?
+Vertel dit verhaal
+Geen herinneringen gevonden. Probeer een andere zoekterm of filter.
+Breng je herinneringen samen in een boek. Orden de pagina’s, voeg bijschriften toe en sla het concept op.
+De PDF wordt op je apparaat gemaakt. Controleer het bestand voordat je het deelt. Audio-opnamen worden niet opgenomen in gedrukte herinneringsboeken.
+Deze herinnering is verwijderd. Verwijder de pagina of kies een andere herinnering.
+Gesproken reacties
+Filteren op jaar
+Filteren op album
+Stop de lopende opname voordat je een andere herinnering opent.
+Wacht tot de huidige bewerking is voltooid.
+Herinnering bekijken
+Opgeslagen op je apparaat
+Maak of open een herinnering voordat je opneemt.
+Open een opgeslagen verhaal om het te laten voorlezen.
+Sla je verhaal op voordat je bijlagen toevoegt.
+Herinneringsmeldingen zijn nog niet beschikbaar in deze ontwikkelversie.
+YYYY, of laat leeg om alle jaren te tonen
+[pl]
+Ostatnie wspomnienia
+Potwierdź
+Data wydarzenia
+Dokładność daty
+Nieznana
+Miesiąc
+Miejsce (opcjonalnie)
+Tagi (oddzielone przecinkami)
+Szukaj w opowieściach, tagach i transkrypcjach…
+Wszystkie
+Usunąć to wspomnienie i jego załączniki?
+Usunąć ten album? Wspomnienia pozostaną w bibliotece.
+Usunąć ten załącznik z urządzenia?
+Usunąć ten szkic książki? Twoje wspomnienia zostaną zachowane.
+Opowieść głosowa
+Nagranie pozostaje na tym urządzeniu. Po opuszczeniu aplikacji zostanie zatrzymane i zapisane. Bezpłatne nagrania mogą trwać do trzech minut.
+LifeTalea używa mikrofonu tylko podczas nagrywania lub wydawania poleceń głosowych. Zawsze możesz wybrać pisanie.
+Odmówiono dostępu do mikrofonu. Nadal możesz napisać opowieść lub dodać zdjęcia.
+Nie udało się zapisać nagrania. Sprawdź uprawnienie mikrofonu i wolne miejsce, a następnie spróbuj ponownie.
+Nie udało się ukończyć operacji. Sprawdź plik, uprawnienia i wolne miejsce. Istniejące wspomnienia nie zostały zmienione.
+Pozycja odtwarzania
+Automatyczna transkrypcja nie jest skonfigurowana w tej wersji. Nagranie zostało zachowane. Poniżej możesz wpisać lub wkleić transkrypcję.
+Rozpoznawanie mowy jest niedostępne na tym urządzeniu. Użyj przycisków lub wpisz polecenie.
+Nie rozpoznano polecenia głosowego. Spróbuj ponownie lub wpisz je w polu tekstowym.
+Wpisz polecenie
+Wykonaj polecenie
+Wypróbuj polecenie po angielsku: „Create a new memory”, „Open my timeline” lub „Create a keepsake book”.
+Przeczytaj opowieść na głos
+Odczytywanie na głos jest niedostępne dla tego języka lub urządzenia. Opowieść pisana nadal jest dostępna.
+Zatrzymaj czytanie
+Jaką radę dałbyś swojemu młodszemu ja?
+Opowiedz tę historię
+Nie znaleziono wspomnień. Zmień wyszukiwanie lub filtr.
+Zbierz wspomnienia w książce. Uporządkuj strony, dodaj podpisy i zapisz szkic.
+PDF powstaje na Twoim urządzeniu. Sprawdź plik przed udostępnieniem. Nagrania nie są osadzane w drukowanych książkach wspomnień.
+To wspomnienie zostało usunięte. Usuń stronę lub wybierz inne wspomnienie.
+Odpowiedzi głosowe
+Filtruj według roku
+Filtruj według albumu
+Zatrzymaj nagranie przed otwarciem innego wspomnienia.
+Poczekaj na zakończenie bieżącej operacji.
+Zobacz wspomnienie
+Zapisano na urządzeniu
+Utwórz lub otwórz wspomnienie przed nagrywaniem.
+Otwórz zapisaną opowieść, aby odczytać ją na głos.
+Zapisz opowieść przed dodaniem załączników.
+Przypomnienia nie są jeszcze dostępne w tej wersji rozwojowej.
+YYYY lub pozostaw puste, aby wyświetlić wszystkie lata
+[sv]
+Senaste minnen
+Bekräfta
+Datum för händelsen
+Datumets noggrannhet
+Okänt
+Månad
+Plats (valfritt)
+Taggar (separerade med kommatecken)
+Sök i berättelser, taggar och transkriptioner…
+Alla
+Ta bort det här minnet och dess bilagor?
+Ta bort det här albumet? Minnena finns kvar i biblioteket.
+Ta bort den här bilagan från enheten?
+Ta bort det här bokutkastet? Dina minnen bevaras.
+Inspelad berättelse
+Inspelningen stannar på den här enheten. När du lämnar appen stoppas och sparas den. Gratis inspelningar kan vara upp till tre minuter långa.
+LifeTalea använder mikrofonen bara när du spelar in eller använder röstkommandon. Du kan alltid skriva i stället.
+Åtkomst till mikrofonen nekades. Du kan fortfarande skriva en berättelse eller lägga till foton.
+Inspelningen kunde inte sparas. Kontrollera mikrofonbehörigheten och ledigt lagringsutrymme och försök igen.
+Åtgärden kunde inte slutföras. Kontrollera filen, behörigheterna och ledigt lagringsutrymme. Dina befintliga minnen är oförändrade.
+Uppspelningsposition
+Automatisk transkription är inte konfigurerad i den här versionen. Inspelningen finns kvar. Du kan skriva eller klistra in en transkription nedan.
+Taligenkänning är inte tillgänglig på den här enheten. Använd pekskärmen eller skriv ett kommando.
+Röstkommandot kändes inte igen. Försök igen eller skriv det i textfältet.
+Skriv ett kommando
+Utför kommandot
+Prova ett kommando på engelska: ”Create a new memory”, ”Open my timeline” eller ”Create a keepsake book”.
+Läs upp berättelsen
+Uppläsning är inte tillgänglig för det här språket eller den här enheten. Din skrivna berättelse finns kvar.
+Stoppa uppläsningen
+Vilket råd skulle du ge ditt yngre jag?
+Berätta den här historien
+Inga minnen hittades. Prova en annan sökning eller ett annat filter.
+Samla dina minnen i en bok. Ordna sidorna, lägg till bildtexter och spara utkastet.
+PDF-filen skapas på din enhet. Granska den innan du delar den. Ljudinspelningar ingår inte i tryckta minnesböcker.
+Det här minnet har tagits bort. Ta bort sidan eller välj ett annat minne.
+Talade svar
+Filtrera efter år
+Filtrera efter album
+Stoppa den pågående inspelningen innan du öppnar ett annat minne.
+Vänta tills den pågående åtgärden är klar.
+Visa minne
+Sparat på din enhet
+Skapa eller öppna ett minne innan du spelar in.
+Öppna en sparad berättelse för att få den uppläst.
+Spara berättelsen innan du lägger till bilagor.
+Påminnelser är ännu inte tillgängliga i den här utvecklingsversionen.
+YYYY, eller lämna tomt för att visa alla år
+[ja]
+最近の思い出
+確認
+出来事の日付
+日付の詳しさ
+不明
+月
+場所（任意）
+タグ（カンマ区切り）
+物語、タグ、文字起こしを検索…
+すべて
+この思い出と添付ファイルを削除しますか？
+このアルバムを削除しますか？思い出はライブラリに残ります。
+この添付ファイルを端末から削除しますか？
+この本の下書きを削除しますか？思い出は残ります。
+音声の物語
+録音はこの端末に保存されます。アプリを離れると録音を停止して保存します。無料プランでは最長3分間録音できます。
+LifeTalea がマイクを使うのは、録音や音声コマンドを利用するときだけです。文字入力も利用できます。
+マイクへのアクセスが許可されていません。物語の入力や写真の追加は引き続き利用できます。
+録音を保存できませんでした。マイクの権限と空き容量を確認して、もう一度お試しください。
+操作を完了できませんでした。ファイル、権限、空き容量を確認してください。保存済みの思い出は変更されていません。
+再生位置
+このバージョンでは自動文字起こしを設定していません。録音は保存されています。下の欄に文字起こしを入力または貼り付けできます。
+この端末では音声認識を利用できません。画面のボタンを使うか、コマンドを入力してください。
+音声コマンドを認識できませんでした。もう一度試すか、テキスト欄に入力してください。
+コマンドを入力
+コマンドを実行
+英語のコマンドをお試しください：「Create a new memory」「Open my timeline」「Create a keepsake book」。
+物語を読み上げる
+この言語または端末では読み上げを利用できません。書かれた物語は引き続き読めます。
+読み上げを停止
+若い頃の自分に、どんなアドバイスを伝えたいですか？
+この思い出を書く
+思い出が見つかりません。検索語や絞り込み条件を変えてみてください。
+保存した思い出を一冊の本に。ページを並べ替え、説明文を添えて、下書きを保存できます。
+PDFは端末上で作成されます。共有する前に内容を確認してください。印刷用の本には音声は含まれません。
+この思い出は削除されています。このページを削除するか、別の思い出を選んでください。
+音声による応答
+年で絞り込む
+アルバムで絞り込む
+別の思い出を開く前に、録音を停止してください。
+現在の処理が完了するまでお待ちください。
+思い出を見る
+端末に保存済み
+録音する前に思い出を作成するか、保存済みの思い出を開いてください。
+読み上げるには保存済みの物語を開いてください。
+添付ファイルを追加する前に物語を保存してください。
+この開発版ではリマインダーはまだ利用できません。
+YYYY。すべての年を表示するには空欄にしてください
+[hi]
+हाल की यादें
+पुष्टि करें
+घटना की तारीख
+तारीख की सटीकता
+अज्ञात
+महीना
+स्थान (वैकल्पिक)
+टैग (कॉमा से अलग करें)
+कहानियाँ, टैग और लिखित प्रतिलिपियाँ खोजें…
+सभी
+यह याद और इससे जुड़ी फ़ाइलें मिटाएँ?
+यह एल्बम मिटाएँ? इसकी यादें लाइब्रेरी में रहेंगी।
+यह संलग्न फ़ाइल डिवाइस से मिटाएँ?
+किताब का यह मसौदा मिटाएँ? आपकी यादें बनी रहेंगी।
+आवाज़ में कहानी
+रिकॉर्डिंग इसी डिवाइस पर रहती है। ऐप से बाहर जाने पर रिकॉर्डिंग रुककर सेव हो जाती है। मुफ़्त रिकॉर्डिंग अधिकतम तीन मिनट की हो सकती है।
+LifeTalea माइक्रोफ़ोन का इस्तेमाल केवल रिकॉर्डिंग या वॉइस कमांड के समय करता है। आप इसके बजाय लिख भी सकते हैं।
+माइक्रोफ़ोन की अनुमति नहीं मिली। आप फिर भी कहानी लिख सकते हैं या तस्वीरें जोड़ सकते हैं।
+रिकॉर्डिंग सेव नहीं हो सकी। माइक्रोफ़ोन की अनुमति और खाली जगह जाँचकर फिर कोशिश करें।
+कार्रवाई पूरी नहीं हुई। फ़ाइल, अनुमतियाँ और खाली जगह जाँचें। आपकी मौजूदा यादों में कोई बदलाव नहीं हुआ है।
+प्लेबैक की स्थिति
+इस संस्करण में अपने-आप लिखित प्रतिलिपि बनाने की सुविधा कॉन्फ़िगर नहीं है। आपकी रिकॉर्डिंग सुरक्षित है। नीचे प्रतिलिपि लिख या पेस्ट कर सकते हैं।
+इस डिवाइस पर वाक् पहचान उपलब्ध नहीं है। स्क्रीन के बटन इस्तेमाल करें या कमांड लिखें।
+वॉइस कमांड पहचाना नहीं गया। फिर कोशिश करें या टेक्स्ट फ़ील्ड में कमांड लिखें।
+कमांड लिखें
+कमांड चलाएँ
+अंग्रेज़ी में कमांड आज़माएँ: “Create a new memory”, “Open my timeline” या “Create a keepsake book”।
+कहानी सुनें
+इस भाषा या डिवाइस पर पढ़कर सुनाने की सुविधा उपलब्ध नहीं है। आपकी लिखी कहानी अब भी उपलब्ध है।
+पढ़कर सुनाना रोकें
+आप अपने कम उम्र वाले रूप को क्या सलाह देना चाहेंगे?
+यह कहानी लिखें
+कोई याद नहीं मिली। कोई और खोज या फ़िल्टर आज़माएँ।
+अपनी यादों को एक किताब में सँजोएँ। पन्नों का क्रम बदलें, विवरण जोड़ें और मसौदा सेव करें।
+PDF इसी डिवाइस पर बनता है। साझा करने से पहले उसे जाँचें। छपी हुई किताब में ऑडियो रिकॉर्डिंग शामिल नहीं होती।
+यह याद मिटा दी गई है। यह पन्ना हटाएँ या कोई दूसरी याद चुनें।
+बोलकर जवाब
+साल के अनुसार फ़िल्टर करें
+एल्बम के अनुसार फ़िल्टर करें
+दूसरी याद खोलने से पहले चल रही रिकॉर्डिंग रोकें।
+मौजूदा कार्रवाई पूरी होने तक इंतज़ार करें।
+याद देखें
+आपके डिवाइस पर सेव है
+रिकॉर्ड करने से पहले कोई याद बनाएँ या खोलें।
+सुनने के लिए सेव की हुई कहानी खोलें।
+फ़ाइलें जोड़ने से पहले कहानी सेव करें।
+इस विकास संस्करण में रिमाइंडर अभी उपलब्ध नहीं हैं।
+YYYY लिखें, या सभी साल देखने के लिए खाली छोड़ें
+[ar]
+أحدث الذكريات
+تأكيد
+تاريخ الحدث
+دقة التاريخ
+غير معروف
+الشهر
+المكان (اختياري)
+الوسوم (افصل بينها بفواصل)
+ابحث في القصص والوسوم والنصوص المفرّغة…
+الكل
+هل تريد حذف هذه الذكرى ومرفقاتها؟
+هل تريد حذف هذا الألبوم؟ ستبقى الذكريات في مكتبتك.
+هل تريد حذف هذا المرفق من الجهاز؟
+هل تريد حذف مسودة هذا الكتاب؟ ستبقى ذكرياتك محفوظة.
+قصة صوتية
+يبقى التسجيل على هذا الجهاز. عند مغادرة التطبيق، يتوقف التسجيل ويُحفظ. مدة التسجيل المجاني ثلاث دقائق كحد أقصى.
+يستخدم LifeTalea الميكروفون فقط عند التسجيل أو تفعيل الأوامر الصوتية. يمكنك الكتابة بدلًا من ذلك.
+لم يُسمح بالوصول إلى الميكروفون. ما زال بإمكانك كتابة قصة أو إضافة صور.
+تعذّر حفظ التسجيل. تحقّق من إذن الميكروفون ومساحة التخزين المتاحة، ثم حاول مجددًا.
+لم تكتمل العملية. تحقّق من الملف والأذونات ومساحة التخزين المتاحة. لم تتغير ذكرياتك الحالية.
+موضع التشغيل
+لم تُعدّ ميزة التفريغ التلقائي في هذا الإصدار. تسجيلك محفوظ. يمكنك كتابة النص أو لصقه أدناه.
+التعرّف على الكلام غير متاح على هذا الجهاز. استخدم أزرار الشاشة أو اكتب أمرًا.
+لم يُتعرّف على الأمر الصوتي. حاول مجددًا أو اكتبه في حقل النص.
+اكتب أمرًا
+تنفيذ الأمر
+جرّب أمرًا بالإنجليزية: «Create a new memory» أو «Open my timeline» أو «Create a keepsake book».
+قراءة القصة بصوت عالٍ
+القراءة الصوتية غير متاحة لهذه اللغة أو لهذا الجهاز. تبقى قصتك المكتوبة متاحة.
+إيقاف القراءة الصوتية
+ما النصيحة التي تود تقديمها لنفسك في سن أصغر؟
+اكتب هذه القصة
+لم يُعثر على ذكريات. جرّب بحثًا أو مرشحًا آخر.
+اجمع ذكرياتك في كتاب. رتّب الصفحات وأضف تعليقات واحفظ المسودة.
+يُنشأ ملف PDF على جهازك. راجعه قبل مشاركته. لا تتضمن الكتب المطبوعة التسجيلات الصوتية.
+حُذفت هذه الذكرى. أزل هذه الصفحة أو اختر ذكرى أخرى.
+الردود الصوتية
+تصفية حسب السنة
+تصفية حسب الألبوم
+أوقف التسجيل الجاري قبل فتح ذكرى أخرى.
+يرجى الانتظار حتى تكتمل العملية الحالية.
+عرض الذكرى
+محفوظ على جهازك
+أنشئ ذكرى أو افتح ذكرى محفوظة قبل التسجيل.
+افتح قصة محفوظة للاستماع إلى قراءتها.
+احفظ القصة قبل إضافة المرفقات.
+التذكيرات غير متاحة بعد في هذا الإصدار التطويري.
+YYYY، أو اترك الحقل فارغًا لعرض جميع السنوات
+[tr]
+Son anılar
+Onayla
+Olay tarihi
+Tarihin kesinliği
+Bilinmiyor
+Ay
+Yer (isteğe bağlı)
+Etiketler (virgülle ayırın)
+Hikâyelerde, etiketlerde ve dökümlerde ara…
+Tümü
+Bu anı ve ekleri silinsin mi?
+Bu albüm silinsin mi? Anılar kitaplığınızda kalır.
+Bu ek cihazdan silinsin mi?
+Bu kitap taslağı silinsin mi? Anılarınız korunur.
+Sesli hikâye
+Kayıt bu cihazda kalır. Uygulamadan çıktığınızda kayıt durdurulur ve kaydedilir. Ücretsiz kayıtlar en fazla üç dakika olabilir.
+LifeTalea, mikrofonu yalnızca kayıt yaparken veya sesli komutları kullanırken açar. İsterseniz her zaman yazabilirsiniz.
+Mikrofon erişimine izin verilmedi. Yine de hikâye yazabilir veya fotoğraf ekleyebilirsiniz.
+Kayıt kaydedilemedi. Mikrofon iznini ve boş depolama alanını kontrol edip yeniden deneyin.
+İşlem tamamlanamadı. Dosyayı, izinleri ve boş depolama alanını kontrol edin. Mevcut anılarınız değiştirilmedi.
+Oynatma konumu
+Bu sürümde otomatik ses dökümü yapılandırılmamıştır. Kaydınız korunur. Dökümü aşağıya yazabilir veya yapıştırabilirsiniz.
+Bu cihazda konuşma tanıma kullanılamıyor. Dokunmatik kontrolleri kullanın veya komut yazın.
+Sesli komut anlaşılamadı. Yeniden deneyin veya komutu metin alanına yazın.
+Komut yazın
+Komutu çalıştır
+İngilizce bir komut deneyin: “Create a new memory”, “Open my timeline” veya “Create a keepsake book”.
+Hikâyeyi sesli oku
+Bu dilde veya cihazda sesli okuma kullanılamıyor. Yazılı hikâyenize erişebilirsiniz.
+Sesli okumayı durdur
+Gençliğinize hangi öğüdü vermek isterdiniz?
+Bu hikâyeyi anlat
+Anı bulunamadı. Başka bir arama veya filtre deneyin.
+Anılarınızı bir kitapta birleştirin. Sayfaları sıralayın, açıklamalar ekleyin ve taslağı kaydedin.
+PDF cihazınızda oluşturulur. Paylaşmadan önce kontrol edin. Basılı anı kitapları ses kayıtlarını içermez.
+Bu anı silinmiş. Sayfayı kaldırın veya başka bir anı seçin.
+Sesli yanıtlar
+Yıla göre filtrele
+Albüme göre filtrele
+Başka bir anıyı açmadan önce devam eden kaydı durdurun.
+Lütfen mevcut işlemin tamamlanmasını bekleyin.
+Anıyı görüntüle
+Cihazınıza kaydedildi
+Kayda başlamadan önce bir anı oluşturun veya açın.
+Sesli dinlemek için kaydedilmiş bir hikâye açın.
+Ek eklemeden önce hikâyenizi kaydedin.
+Hatırlatıcılar bu geliştirme sürümünde henüz kullanılamıyor.
+YYYY yazın veya tüm yıllar için boş bırakın
+[id]
+Kenangan terbaru
+Konfirmasi
+Tanggal peristiwa
+Ketepatan tanggal
+Tidak diketahui
+Bulan
+Lokasi (opsional)
+Tag (pisahkan dengan koma)
+Cari cerita, tag, dan transkrip…
+Semua
+Hapus kenangan ini beserta lampirannya?
+Hapus album ini? Kenangannya tetap tersimpan di pustaka.
+Hapus lampiran ini dari perangkat?
+Hapus draf buku ini? Kenangan Anda tetap tersimpan.
+Cerita suara
+Rekaman tetap tersimpan di perangkat ini. Saat Anda meninggalkan aplikasi, rekaman dihentikan dan disimpan. Rekaman gratis dibatasi hingga tiga menit.
+LifeTalea hanya menggunakan mikrofon saat merekam atau memakai perintah suara. Anda selalu dapat memilih untuk menulis.
+Akses mikrofon ditolak. Anda masih dapat menulis cerita atau menambahkan foto.
+Rekaman tidak dapat disimpan. Periksa izin mikrofon dan ruang penyimpanan yang tersedia, lalu coba lagi.
+Tindakan belum selesai. Periksa berkas, izin, dan ruang penyimpanan yang tersedia. Kenangan yang sudah ada tidak berubah.
+Posisi pemutaran
+Transkripsi otomatis belum dikonfigurasi dalam versi ini. Rekaman Anda tetap tersimpan. Anda dapat mengetik atau menempelkan transkrip di bawah.
+Pengenalan ucapan tidak tersedia di perangkat ini. Gunakan kontrol sentuh atau ketik perintah.
+Perintah suara tidak dikenali. Coba lagi atau ketik perintah di kolom teks.
+Ketik perintah
+Jalankan perintah
+Coba perintah dalam bahasa Inggris: “Create a new memory”, “Open my timeline”, atau “Create a keepsake book”.
+Bacakan cerita
+Pembacaan suara tidak tersedia untuk bahasa atau perangkat ini. Cerita tertulis Anda tetap dapat dibaca.
+Hentikan pembacaan
+Nasihat apa yang ingin Anda berikan kepada diri Anda yang lebih muda?
+Ceritakan kenangan ini
+Tidak ada kenangan yang ditemukan. Coba pencarian atau filter lain.
+Satukan kenangan Anda dalam sebuah buku. Atur halaman, tambahkan keterangan, lalu simpan drafnya.
+PDF dibuat di perangkat Anda. Periksa sebelum dibagikan. Buku cetak tidak menyertakan rekaman suara.
+Kenangan ini telah dihapus. Hapus halaman ini atau pilih kenangan lain.
+Tanggapan suara
+Filter berdasarkan tahun
+Filter berdasarkan album
+Hentikan rekaman yang sedang berjalan sebelum membuka kenangan lain.
+Tunggu hingga tindakan saat ini selesai.
+Lihat kenangan
+Tersimpan di perangkat Anda
+Buat atau buka kenangan sebelum merekam.
+Buka cerita yang tersimpan untuk mendengarkannya dibacakan.
+Simpan cerita sebelum menambahkan lampiran.
+Pengingat belum tersedia dalam versi pengembangan ini.
+YYYY, atau kosongkan untuk menampilkan semua tahun
+[ko]
+최근 추억
+확인
+사건 날짜
+날짜의 정확도
+알 수 없음
+월
+장소(선택 사항)
+태그(쉼표로 구분)
+이야기, 태그, 녹취록 검색…
+전체
+이 추억과 첨부 파일을 삭제할까요?
+이 앨범을 삭제할까요? 추억은 라이브러리에 남습니다.
+이 첨부 파일을 기기에서 삭제할까요?
+이 책 초안을 삭제할까요? 추억은 그대로 보관됩니다.
+음성 이야기
+녹음은 이 기기에 저장됩니다. 앱을 벗어나면 녹음이 중지되고 저장됩니다. 무료 녹음은 최대 3분까지 가능합니다.
+LifeTalea는 녹음하거나 음성 명령을 사용할 때만 마이크를 사용합니다. 대신 글을 입력할 수도 있습니다.
+마이크 접근이 허용되지 않았습니다. 이야기를 쓰거나 사진을 추가할 수는 있습니다.
+녹음을 저장하지 못했습니다. 마이크 권한과 저장 공간을 확인한 후 다시 시도해 주세요.
+작업을 완료하지 못했습니다. 파일, 권한, 저장 공간을 확인해 주세요. 기존 추억은 변경되지 않았습니다.
+재생 위치
+이 버전에는 자동 녹취 기능이 설정되어 있지 않습니다. 녹음은 보관됩니다. 아래에 녹취록을 직접 입력하거나 붙여 넣을 수 있습니다.
+이 기기에서는 음성 인식을 사용할 수 없습니다. 화면 버튼을 사용하거나 명령을 입력해 주세요.
+음성 명령을 인식하지 못했습니다. 다시 시도하거나 텍스트 입력란에 명령을 입력해 주세요.
+명령 입력
+명령 실행
+영어 명령을 사용해 보세요: “Create a new memory”, “Open my timeline”, “Create a keepsake book”.
+이야기 읽어 주기
+이 언어나 기기에서는 음성 읽기를 사용할 수 없습니다. 작성한 이야기는 계속 볼 수 있습니다.
+읽어 주기 중지
+어린 시절의 자신에게 어떤 조언을 해 주고 싶으신가요?
+이 이야기 쓰기
+추억을 찾지 못했습니다. 다른 검색어나 필터를 사용해 보세요.
+저장한 추억을 책으로 모아 보세요. 페이지를 정렬하고 설명을 추가한 뒤 초안을 저장할 수 있습니다.
+PDF는 기기에서 만들어집니다. 공유하기 전에 내용을 확인해 주세요. 인쇄용 추억 책에는 음성 녹음이 포함되지 않습니다.
+이 추억은 삭제되었습니다. 페이지를 제거하거나 다른 추억을 선택해 주세요.
+음성 응답
+연도로 필터링
+앨범으로 필터링
+다른 추억을 열기 전에 진행 중인 녹음을 중지해 주세요.
+현재 작업이 끝날 때까지 기다려 주세요.
+추억 보기
+기기에 저장됨
+녹음하기 전에 추억을 만들거나 열어 주세요.
+저장된 이야기를 열면 소리 내어 읽어 줍니다.
+첨부 파일을 추가하기 전에 이야기를 저장해 주세요.
+이 개발 버전에서는 알림 기능이 아직 제공되지 않습니다.
+YYYY를 입력하세요. 모든 연도를 보려면 비워 두세요
+[zh]
+最近的回忆
+确认
+事件日期
+日期精确度
+未知
+月
+地点（可选）
+标签（用逗号分隔）
+搜索故事、标签和文字稿…
+全部
+删除这段回忆及其附件？
+删除这个相册？其中的回忆仍会保留在资料库中。
+从设备中删除这个附件？
+删除这份回忆册草稿？您的回忆仍会保留。
+语音故事
+录音保存在此设备上。离开应用时，录音会停止并保存。免费版每段录音最长三分钟。
+LifeTalea 仅在录音或使用语音命令时访问麦克风。您也可以随时改用文字输入。
+麦克风访问未获允许。您仍然可以撰写故事或添加照片。
+无法保存录音。请检查麦克风权限和可用存储空间，然后重试。
+操作未完成。请检查文件、权限和可用存储空间。现有回忆未被更改。
+播放位置
+此版本尚未配置自动转写功能。您的录音已保留。您可以在下方输入或粘贴文字稿。
+此设备无法使用语音识别。请使用触控按钮或输入命令。
+未能识别语音命令。请重试，或在文本框中输入命令。
+输入命令
+执行命令
+请尝试英语命令：“Create a new memory”、“Open my timeline”或“Create a keepsake book”。
+朗读故事
+此语言或设备无法使用朗读功能。您仍可阅读已写好的故事。
+停止朗读
+您想对年轻时的自己说些什么建议？
+写下这个故事
+未找到回忆。请尝试其他关键词或筛选条件。
+将保存的回忆汇成一本回忆册。排列页面、添加说明，再保存草稿。
+PDF在设备上生成。分享前请检查内容。印刷版回忆册不包含录音。
+这段回忆已被删除。请移除此页或选择其他回忆。
+语音反馈
+按年份筛选
+按相册筛选
+打开其他回忆前，请先停止正在进行的录音。
+请等待当前操作完成。
+查看回忆
+已保存到您的设备
+录音前请先创建或打开一段回忆。
+打开已保存的故事即可使用朗读功能。
+添加附件前请先保存故事。
+此开发版本尚未提供提醒功能。
+请输入YYYY；留空可显示所有年份

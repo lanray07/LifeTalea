@@ -3,26 +3,26 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Kisah dan kenangan keluarga",
-  "shortDescription": "Simpan cerita keluarga, foto dan kenangan suara bersama-sama dalam jurnal pribadi. Buat album, menjelajahi garis waktu dan simpan rancangan scrapbook pada perangkat Anda.",
-  "longDescription": "Tetaplah saat-saat Ingatlah suara-suara itu\n\nLifeTalea memberikan cerita keluarga tempat pribadi di tablet Anda. Mulai dengan satu foto, beberapa baris tertulis, atau rekaman suara. Tidak LifeTalea Akun yang diperlukan.\n\nMenyelamatkan cerita di belakang foto\nTambah foto, tag dan lokasi pilihan yang Anda masukkan sendiri. Pilih tahun, bulan, tanggal yang tepat atau tanggal yang tidak diketahui. Mengatur kenangan ke dalam album dan menandai favorit.\n\nMembuat kamar untuk suara Anda\nMencatat, istirahat, mengulangi dan memainkan cerita yang dibicarakan. Audio tetap dalam penyimpanan aplikasi pribadi. Tingkat gratis mendukung rakaman hingga tiga menit. Permohonan izin mikrofon diminta ketika Anda memilih untuk merekam. Komando frasa saat ini mendukung bahasa Inggris. Perintah suara dan pemutaran suara tergantung pada layanan perangkat yang terinstal; alternatif sentuhan dan teks tetap tersedia.\n\nIkuti bab keluarga Anda\nBrowse menyimpan kenangan dalam timeline. Cari cerita tertulis, tag dan transkrip yang diedit secara manual. Buat rancangan scrapbook, urutan halaman dan tambahkan captions.\n\nSimpan salinan yang Anda kontrol\nBuat backup lokal dan secara eksplisit pilih apakah untuk memasukkan foto dan rakaman. Restore validates file sebelum mengimpor. Pastikan ekspor dan frasa sandi aman di suatu tempat.\n\nopsi premium\nPremium dirancang sebagai pembelian satu kali untuk album tak terbatas, rekaman lebih lama, lokal PDF mengekspor dan membuat arsip terenkripsi. Harga lokal saat ini akan dibekali oleh Amazon. Cerita yang ada tetap dapat diakses tanpa Premium.\n\nStatus perkembangan\nDaftar ini adalah rancangan. Transisi otomatis tidak terkonfigurasi. terjemahan di seluruh dunia, ujian perangkat yang diperlukan dan Amazon Pemeriksaan pembelian tidak lengkap. Tidak ada cloud sync yang ditawarkan. Jangan menerbitkan rancangan ini sebagai daftar produk siap.\n\nPenerbit : O.Bankole\ndukungan : banksmi@mail.com",
+  "shortDescription": "Kenali versi pengembangan LifeTalea: cerita, foto pribadi, rekaman, album, dan buku kenangan.",
+  "longDescription": "Ruang pribadi untuk foto, suara, dan kisah keluarga.\n\nTambahkan judul, teks, serta tanggal pasti, perkiraan, atau tidak diketahui. Temukan cerita dengan tag, favorit, dan album.\n\nImpor foto melalui pemilih dokumen dan rekam cerita suara. Berkas disalin ke penyimpanan pribadi aplikasi.\n\nRekaman tetap tersimpan di perangkat ini. Saat Anda meninggalkan aplikasi, rekaman dihentikan dan disimpan. Rekaman gratis dibatasi hingga tiga menit.\n\nFitur tekan untuk bicara menggunakan layanan suara perangkat Anda. Layanan ini mungkin memerlukan internet dan memproses ucapan di luar perangkat. Lanjutkan hanya jika Anda setuju. LifeTalea tidak menyimpan rekaman perintah suara. Saat ini, perintah hanya didukung dalam bahasa Inggris.\n\nRencana pembelian satu kali: album tak terbatas, rekaman lebih panjang, ekspor PDF, dan cadangan lokal terenkripsi. Usulan harga uji Inggris £4.99; Amazon akan memberikan harga lokal sebenarnya setelah konfigurasi.\n\nKisah, transkrip, album, dan draf buku disertakan. Foto dan rekaman hanya disertakan jika dipilih. Ekspor yang tidak dienkripsi berisi informasi pribadi yang dapat dibaca. Simpan frasa sandi Anda dengan aman karena tidak dapat dipulihkan. Batas saat ini: 32 MiB per arsip dan 16 MiB per lampiran. Pustaka yang lebih besar memerlukan versi mendatang.\n\nBelum diterbitkan. Pengujian perangkat, tinjauan penutur asli, dan verifikasi pembelian Amazon masih berlangsung.\n\nTranskripsi otomatis belum dikonfigurasi dalam versi LifeTalea ini. Perekaman dan penyuntingan transkrip manual tersedia.\n\nDraf terjemahan. Masih menunggu tinjauan penutur asli.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
-    "Simpan cerita tertulis, foto dan rekaman suara lokal bersama-sama.",
-    "Mengatur album pribadi dengan tag, favorit dan tanggal yang dekat.",
-    "Temukan timeline keluarga dan buat rancangan scrapbook yang disimpan.",
-    "Buat backup lokal dengan foto dan audio yang dipilih secara eksplisit.",
-    "Gunakan alternatif sentuhan dan teks ketika layanan ucapan perangkat tidak tersedia."
+    "Jurnal keluarga memberi konteks pada foto: siapa yang hadir, apa yang terjadi, dan mengapa momen itu berarti.",
+    "Abadikan jeda, tawa, dan ungkapan akrab yang tidak selalu tersampaikan lewat tulisan.",
+    "Satukan cerita dan foto dalam draf buku yang tersimpan di perangkat.",
+    "Jelajahi kenangan menurut tanggal, termasuk tanggal perkiraan dan yang tidak diketahui.",
+    "Merekam membutuhkan mikrofon dan izin. Pengenalan serta pembacaan suara membutuhkan layanan kompatibel. Alternatif sentuh dan teks tetap tersedia."
   ],
   "keywords": [
-    "Jurnal Memori Keluarga",
-    "Jurnal suara",
-    "Rekor cerita keluarga",
-    "Buku digital scrapbook",
-    "Jurnal keluarga pribadi",
-    "Memori Timeline"
+    "Kenangan keluarga",
+    "Cerita suara",
+    "Sejarah keluarga",
+    "Buku kenangan",
+    "Linimasa",
+    "Jurnal Kehidupan Saya"
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Preview awal pengembangan. Tidak disetujui untuk penyerahan publik.",
+  "releaseNotes": "Draf terjemahan. Masih menunggu tinjauan penutur asli. Belum diterbitkan. Pengujian perangkat, tinjauan penutur asli, dan verifikasi pembelian Amazon masih berlangsung.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
@@ -40,5 +40,5 @@
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "617caa331cf2eeffd0d6f2e86dfd59348f6892b9107927385ce0b9ba2ad2c96c"
+  "targetHash": "3f8e072ac4bf05680fee9c997e48c52e6b0ba41a78c9b858400be2fa1e540ad2"
 }

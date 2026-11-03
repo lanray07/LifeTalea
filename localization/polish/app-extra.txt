@@ -1,0 +1,855 @@
+[fr]
+Un livre de souvenirs à garder.
+Papier
+Légende de la page
+Mise en page
+Récit
+Photo
+Monter la page
+Descendre la page
+Aperçu
+Exporter en PDF
+Exporter le livre
+Inclure les lieux
+Inclure les transcriptions
+Format de page
+Ajoutez un souvenir pour créer la première page.
+Faites une place aux histoires qui comptent.
+Un espace privé pour vos photos, vos voix et vos souvenirs de famille. Aucun compte requis. Les souvenirs restent sur cet appareil, sauf si vous les exportez.
+Passer pour le moment
+Utiliser la langue de l’appareil
+Choisissez une langue ou utilisez celle de l’appareil. Les traductions de développement nécessitent une révision par des locuteurs natifs. Vos récits ne sont pas traduits.
+Souvenirs de famille
+Étapes de l’enfance
+Histoires à transmettre
+Apparence
+Réglage de l’appareil
+Clair
+Sombre
+Confidentialité
+Sauvegarde et restauration
+Choisissez une sauvegarde LifeTalea. La phrase secrète n’est requise que pour les fichiers chiffrés. En cas de conflit, les souvenirs et brouillons existants sont conservés.
+Souvenirs : %1$d · Albums : %2$d · Pièces jointes : %3$d · Livres : %4$d · Souvenirs existants conservés : %5$d
+Restaurer l’archive sélectionnée
+Sauvegarde enregistrée
+PDF enregistré
+Un achat unique pour des albums illimités, des enregistrements plus longs, l’export PDF et les sauvegardes locales chiffrées. Vos souvenirs existants restent accessibles.
+Version gratuite
+Gratuit : trois albums, photos, récits, chronologie et enregistrements de trois minutes maximum. Le nombre de récits écrits enregistrés est illimité.
+Achat unique
+Obtenir Premium
+Premium est actif
+Achats indisponibles : l’authentification Amazon et le produit ne sont pas configurés. Aucun paiement ne sera effectué.
+Les informations du produit Amazon sont indisponibles. Réessayez plus tard.
+L’achat ou la restauration n’a pas abouti. Aucun nouvel accès Premium n’a été accordé.
+La version gratuite comprend trois albums. Passez à Premium pour en créer davantage.
+Actualiser
+Enregistré
+Assistance
+Éditeur : O.Bankole · Assistance : banksmi@mail.com · Version de développement 0.1.0. Exportez une sauvegarde avant la désinstallation. Vérifiez les autorisations en cas de problème de microphone. Source : github.com/lanray07/LifeTalea
+Brouillon
+Tout sélectionner
+Souvenirs de l’album
+Aucune photo
+Choisissez un souvenir pour cette page
+Disponible hors ligne
+Autorisation du microphone
+Rappels facultatifs
+[es]
+Un libro de recuerdos para conservar.
+Papel
+Texto de la página
+Diseño de página
+Relato
+Foto
+Subir página
+Bajar página
+Vista previa
+Exportar PDF
+Exportar libro
+Incluir lugares
+Incluir transcripciones
+Tamaño de página
+Añade un recuerdo para crear la primera página.
+Haz sitio para las historias que importan.
+Un espacio privado para fotos, voces y recuerdos familiares. Sin cuenta obligatoria. Los recuerdos permanecen en este dispositivo salvo que decidas exportarlos.
+Omitir por ahora
+Usar el idioma del dispositivo
+Elige un idioma o usa el del dispositivo. Las traducciones de desarrollo requieren revisión por hablantes nativos. Tus relatos no se traducen.
+Recuerdos familiares
+Etapas de la infancia
+Historias para el futuro
+Apariencia
+Ajuste del dispositivo
+Claro
+Oscuro
+Privacidad
+Copia de seguridad y restauración
+Elige una copia de LifeTalea. La contraseña solo se necesita para archivos cifrados. En caso de conflicto, se conservan los recuerdos y borradores existentes.
+Recuerdos: %1$d · Álbumes: %2$d · Archivos adjuntos: %3$d · Libros: %4$d · Recuerdos existentes conservados: %5$d
+Restaurar archivo seleccionado
+Copia de seguridad guardada
+PDF guardado
+Una compra única para álbumes ilimitados, grabaciones más largas, exportación PDF y copias locales cifradas. Tus recuerdos existentes siguen accesibles.
+Versión gratuita
+Gratis: tres álbumes, fotos, relatos, cronología y grabaciones de hasta tres minutos. Sin límite en la cantidad de relatos escritos guardados.
+Compra única
+Obtener Premium
+Premium está activo
+Compras no disponibles: faltan la autenticación de Amazon y la configuración del producto. No se realizará ningún cobro.
+Los detalles del producto de Amazon no están disponibles. Inténtalo más tarde.
+La compra o restauración no se ha completado. No se ha concedido un nuevo acceso Premium.
+La versión gratuita incluye tres álbumes. Consigue Premium para crear más.
+Actualizar
+Guardado
+Ayuda
+Editor: O.Bankole · Ayuda: banksmi@mail.com · Versión de desarrollo 0.1.0. Exporta una copia antes de desinstalar. Si falla el micrófono, revisa los permisos. Código: github.com/lanray07/LifeTalea
+Borrador
+Seleccionar todo
+Recuerdos del álbum
+Sin foto
+Elige un recuerdo para esta página
+Disponible sin conexión
+Permiso del micrófono
+Recordatorios opcionales
+[de]
+Ein Erinnerungsbuch zum Behalten.
+Papier
+Bildunterschrift
+Seitenlayout
+Geschichte
+Foto
+Seite nach oben
+Seite nach unten
+Vorschau
+PDF exportieren
+Buch exportieren
+Orte einbeziehen
+Transkripte einbeziehen
+Papierformat
+Fügen Sie eine Erinnerung für die erste Seite hinzu.
+Platz für die Geschichten, die zählen.
+Ein privater Ort für Fotos, Stimmen und Familienerinnerungen. Kein Konto nötig. Die Erinnerungen bleiben auf diesem Gerät, sofern Sie sie nicht exportieren.
+Vorerst überspringen
+Gerätesprache verwenden
+Wählen Sie eine Sprache oder die Geräteeinstellung. Entwicklungsübersetzungen benötigen muttersprachliche Prüfung. Ihre Geschichten werden nicht übersetzt.
+Familienerinnerungen
+Meilensteine der Kindheit
+Geschichten für kommende Generationen
+Darstellung
+Geräteeinstellung
+Hell
+Dunkel
+Datenschutz
+Sichern und wiederherstellen
+Wählen Sie eine LifeTalea-Sicherung. Die Passphrase ist nur bei verschlüsselten Dateien nötig. Bei Konflikten bleiben vorhandene Erinnerungen und Entwürfe erhalten.
+Erinnerungen: %1$d · Alben: %2$d · Anhänge: %3$d · Bücher: %4$d · Beibehaltene Erinnerungen: %5$d
+Gewähltes Archiv wiederherstellen
+Sicherung gespeichert
+PDF gespeichert
+Ein Einmalkauf für unbegrenzte Alben, längere Aufnahmen, PDF-Export und verschlüsselte lokale Sicherungen. Vorhandene Erinnerungen bleiben zugänglich.
+Kostenlose Version
+Kostenlos: drei Alben, Fotos, Geschichten, Zeitleiste und Aufnahmen bis drei Minuten. Die Anzahl gespeicherter geschriebener Erinnerungen ist unbegrenzt.
+Einmaliger Kauf
+Premium erhalten
+Premium ist aktiv
+Käufe sind nicht verfügbar: Amazon-Authentifizierung und Produkt sind nicht eingerichtet. Es wird kein Betrag abgebucht.
+Amazon-Produktinformationen sind nicht verfügbar. Versuchen Sie es später erneut.
+Kauf oder Wiederherstellung wurde nicht abgeschlossen. Es wurde kein neuer Premium-Zugang gewährt.
+Die kostenlose Version umfasst drei Alben. Mit Premium können Sie weitere erstellen.
+Aktualisieren
+Gespeichert
+Hilfe
+Herausgeber: O.Bankole · Hilfe: banksmi@mail.com · Entwicklungsversion 0.1.0. Vor der Deinstallation eine Sicherung exportieren. Bei Mikrofonproblemen die Berechtigungen prüfen. Quellcode: github.com/lanray07/LifeTalea
+Entwurf
+Alle auswählen
+Erinnerungen im Album
+Kein Foto
+Wählen Sie eine Erinnerung für diese Seite
+Offline verfügbar
+Mikrofonberechtigung
+Optionale Erinnerungsbenachrichtigungen
+[it]
+Un libro dei ricordi da conservare.
+Carta
+Didascalia della pagina
+Impaginazione
+Racconto
+Foto
+Sposta pagina in alto
+Sposta pagina in basso
+Anteprima
+Esporta PDF
+Esporta il libro
+Includi luoghi
+Includi trascrizioni
+Formato pagina
+Aggiungi un ricordo per creare la prima pagina.
+Fai spazio alle storie che contano.
+Uno spazio privato per foto, voci e ricordi di famiglia. Nessun account necessario. I ricordi restano sul dispositivo, a meno che tu scelga di esportarli.
+Salta per ora
+Usa la lingua del dispositivo
+Scegli una lingua o segui il dispositivo. Le traduzioni di sviluppo richiedono una revisione madrelingua. I tuoi racconti non vengono tradotti.
+Ricordi di famiglia
+Tappe dell’infanzia
+Storie da tramandare
+Aspetto
+Impostazione del dispositivo
+Chiaro
+Scuro
+Privacy
+Backup e ripristino
+Scegli un backup LifeTalea. La passphrase serve solo per i file cifrati. In caso di conflitto vengono conservati ricordi e bozze esistenti.
+Ricordi: %1$d · Album: %2$d · Allegati: %3$d · Libri: %4$d · Ricordi esistenti conservati: %5$d
+Ripristina l’archivio selezionato
+Backup salvato
+PDF salvato
+Un acquisto unico per album illimitati, registrazioni più lunghe, esportazione PDF e backup locali cifrati. I ricordi esistenti restano accessibili.
+Versione gratuita
+Gratis: tre album, foto, racconti, cronologia e registrazioni fino a tre minuti. Nessun limite al numero di ricordi scritti salvati.
+Acquisto unico
+Ottieni Premium
+Premium è attivo
+Acquisti non disponibili: autenticazione Amazon e prodotto non configurati. Non verrà addebitato alcun importo.
+I dettagli del prodotto Amazon non sono disponibili. Riprova più tardi.
+L’acquisto o il ripristino non è stato completato. Non è stato concesso un nuovo accesso Premium.
+La versione gratuita include tre album. Passa a Premium per crearne altri.
+Aggiorna
+Salvato
+Assistenza
+Editore: O.Bankole · Assistenza: banksmi@mail.com · Versione di sviluppo 0.1.0. Esporta un backup prima di disinstallare. Controlla i permessi in caso di problemi al microfono. Codice: github.com/lanray07/LifeTalea
+Bozza
+Seleziona tutto
+Ricordi dell’album
+Nessuna foto
+Scegli un ricordo per questa pagina
+Disponibile offline
+Permesso del microfono
+Promemoria facoltativi
+[pt]
+Um livro de memórias para guardar.
+Papel
+Legenda da página
+Layout da página
+Relato
+Foto
+Mover página para cima
+Mover página para baixo
+Prévia
+Exportar PDF
+Exportar livro
+Incluir locais
+Incluir transcrições
+Tamanho da página
+Adicione uma memória para criar a primeira página.
+Abra espaço para as histórias que importam.
+Um espaço privado para fotos, vozes e memórias familiares. Nenhuma conta obrigatória. As memórias ficam neste dispositivo, a menos que escolha exportá-las.
+Pular por enquanto
+Usar o idioma do dispositivo
+Escolha um idioma ou siga o dispositivo. As traduções de desenvolvimento precisam de revisão por falantes nativos. Seus relatos não são traduzidos.
+Memórias da família
+Marcos da infância
+Histórias para transmitir
+Aparência
+Configuração do dispositivo
+Claro
+Escuro
+Privacidade
+Cópia de segurança e restauração
+Escolha uma cópia do LifeTalea. A frase secreta só é necessária em arquivos criptografados. Em conflitos, memórias e rascunhos existentes são preservados.
+Memórias: %1$d · Álbuns: %2$d · Anexos: %3$d · Livros: %4$d · Memórias existentes preservadas: %5$d
+Restaurar arquivo selecionado
+Cópia de segurança salva
+PDF salvo
+Uma compra única para álbuns ilimitados, gravações mais longas, exportação PDF e cópias locais criptografadas. Suas memórias existentes continuam acessíveis.
+Versão gratuita
+Grátis: três álbuns, fotos, relatos, linha do tempo e gravações até três minutos. Sem limite na quantidade de memórias escritas salvas.
+Compra única
+Obter Premium
+Premium está ativo
+Compras indisponíveis: autenticação Amazon e produto não configurados. Nenhum pagamento será cobrado.
+Os detalhes do produto Amazon estão indisponíveis. Tente novamente mais tarde.
+A compra ou restauração não foi concluída. Nenhum novo acesso Premium foi concedido.
+A versão gratuita inclui três álbuns. Obtenha Premium para criar mais.
+Atualizar
+Salvo
+Suporte
+Editor: O.Bankole · Suporte: banksmi@mail.com · Versão de desenvolvimento 0.1.0. Exporte uma cópia antes de desinstalar. Em problemas de microfone, confira as permissões. Código: github.com/lanray07/LifeTalea
+Rascunho
+Selecionar tudo
+Memórias do álbum
+Sem foto
+Escolha uma memória para esta página
+Disponível offline
+Permissão do microfone
+Lembretes opcionais
+[nl]
+Een herinneringsboek om te bewaren.
+Papier
+Bijschrift
+Pagina-indeling
+Verhaal
+Foto
+Pagina omhoog
+Pagina omlaag
+Voorbeeld
+PDF exporteren
+Boek exporteren
+Locaties opnemen
+Transcripties opnemen
+Papierformaat
+Voeg een herinnering toe voor de eerste pagina.
+Maak ruimte voor verhalen die ertoe doen.
+Een privéplek voor foto’s, stemmen en familieherinneringen. Geen account nodig. Herinneringen blijven op dit apparaat, tenzij je ze exporteert.
+Voorlopig overslaan
+Apparaattaal gebruiken
+Kies een taal of volg je apparaat. Ontwikkelvertalingen moeten nog door moedertaalsprekers worden gecontroleerd. Je verhalen worden niet vertaald.
+Familieherinneringen
+Mijlpalen uit de kindertijd
+Verhalen om door te geven
+Weergave
+Apparaatinstelling
+Licht
+Donker
+Privacy
+Back-up en herstel
+Kies een LifeTalea-back-up. Alleen versleutelde bestanden vereisen een wachtzin. Bij conflicten blijven bestaande herinneringen en concepten behouden.
+Herinneringen: %1$d · Albums: %2$d · Bijlagen: %3$d · Boeken: %4$d · Bestaande herinneringen behouden: %5$d
+Gekozen archief herstellen
+Back-up opgeslagen
+PDF opgeslagen
+Eén aankoop voor onbeperkte albums, langere opnamen, PDF-export en versleutelde lokale back-ups. Bestaande herinneringen blijven toegankelijk.
+Gratis versie
+Gratis: drie albums, foto’s, verhalen, tijdlijn en opnamen tot drie minuten. Geen limiet op het aantal opgeslagen geschreven herinneringen.
+Eenmalige aankoop
+Premium aanschaffen
+Premium is actief
+Aankopen niet beschikbaar: Amazon-authenticatie en product zijn niet ingesteld. Er wordt niets in rekening gebracht.
+Amazon-productgegevens zijn niet beschikbaar. Probeer het later opnieuw.
+Aankoop of herstel is niet voltooid. Er is geen nieuwe Premium-toegang verleend.
+De gratis versie bevat drie albums. Neem Premium om er meer te maken.
+Vernieuwen
+Opgeslagen
+Ondersteuning
+Uitgever: O.Bankole · Ondersteuning: banksmi@mail.com · Ontwikkelversie 0.1.0. Exporteer een back-up voordat je verwijdert. Controleer bij microfoonproblemen de toestemmingen. Bron: github.com/lanray07/LifeTalea
+Concept
+Alles selecteren
+Herinneringen in het album
+Geen foto
+Kies een herinnering voor deze pagina
+Offline beschikbaar
+Microfoontoestemming
+Optionele herinneringsmeldingen
+[pl]
+Książka wspomnień na lata.
+Papier
+Podpis strony
+Układ strony
+Opowieść
+Zdjęcie
+Przesuń stronę w górę
+Przesuń stronę w dół
+Podgląd
+Eksportuj PDF
+Eksportuj książkę
+Dołącz miejsca
+Dołącz transkrypcje
+Rozmiar strony
+Dodaj wspomnienie, aby utworzyć pierwszą stronę.
+Zrób miejsce na ważne historie.
+Prywatne miejsce na zdjęcia, głosy i rodzinne wspomnienia. Konto nie jest wymagane. Wspomnienia pozostają na urządzeniu, chyba że je wyeksportujesz.
+Pomiń na razie
+Użyj języka urządzenia
+Wybierz język lub ustawienie urządzenia. Tłumaczenia rozwojowe wymagają weryfikacji przez rodzimych użytkowników. Twoje opowieści nie są tłumaczone.
+Rodzinne wspomnienia
+Ważne chwile dzieciństwa
+Historie dla następnych pokoleń
+Wygląd
+Ustawienie urządzenia
+Jasny
+Ciemny
+Prywatność
+Kopia zapasowa i przywracanie
+Wybierz kopię LifeTalea. Hasło jest potrzebne tylko do zaszyfrowanych plików. W razie konfliktu istniejące wspomnienia i szkice zostają zachowane.
+Wspomnienia: %1$d · Albumy: %2$d · Załączniki: %3$d · Książki: %4$d · Zachowane istniejące wspomnienia: %5$d
+Przywróć wybrane archiwum
+Zapisano kopię zapasową
+Zapisano PDF
+Jednorazowy zakup: nielimitowane albumy, dłuższe nagrania, eksport PDF i szyfrowane kopie lokalne. Istniejące wspomnienia pozostają dostępne.
+Wersja bezpłatna
+Bezpłatnie: trzy albumy, zdjęcia, opowieści, oś czasu i nagrania do trzech minut. Bez limitu liczby zapisanych pisanych wspomnień.
+Zakup jednorazowy
+Uzyskaj Premium
+Premium jest aktywne
+Zakupy są niedostępne: brak konfiguracji uwierzytelniania Amazon i produktu. Żadna płatność nie zostanie pobrana.
+Dane produktu Amazon są niedostępne. Spróbuj później.
+Zakup lub przywrócenie nie zostało ukończone. Nie przyznano nowego dostępu Premium.
+Wersja bezpłatna obejmuje trzy albumy. Wybierz Premium, aby tworzyć więcej.
+Odśwież
+Zapisano
+Pomoc
+Wydawca: O.Bankole · Pomoc: banksmi@mail.com · Wersja rozwojowa 0.1.0. Wyeksportuj kopię przed odinstalowaniem. Przy problemach z mikrofonem sprawdź uprawnienia. Kod: github.com/lanray07/LifeTalea
+Szkic
+Zaznacz wszystko
+Wspomnienia w albumie
+Brak zdjęcia
+Wybierz wspomnienie na tę stronę
+Dostępne offline
+Uprawnienie mikrofonu
+Opcjonalne przypomnienia
+[sv]
+En minnesbok att behålla.
+Papper
+Bildtext
+Sidlayout
+Berättelse
+Foto
+Flytta sidan uppåt
+Flytta sidan nedåt
+Förhandsvisa
+Exportera PDF
+Exportera boken
+Ta med platser
+Ta med transkriptioner
+Sidstorlek
+Lägg till ett minne för att skapa första sidan.
+Gör plats för berättelserna som betyder något.
+En privat plats för foton, röster och familjeminnen. Inget konto krävs. Minnena stannar på enheten om du inte väljer att exportera dem.
+Hoppa över tills vidare
+Använd enhetens språk
+Välj ett språk eller följ enheten. Utvecklingsöversättningar behöver modersmålsgranskning. Dina berättelser översätts inte.
+Familjeminnen
+Barndomens milstolpar
+Berättelser att föra vidare
+Utseende
+Enhetens inställning
+Ljust
+Mörkt
+Integritet
+Säkerhetskopiering och återställning
+Välj en LifeTalea-säkerhetskopia. Lösenfras behövs bara för krypterade filer. Vid konflikter behålls befintliga minnen och utkast.
+Minnen: %1$d · Album: %2$d · Bilagor: %3$d · Böcker: %4$d · Befintliga minnen som behålls: %5$d
+Återställ valt arkiv
+Säkerhetskopia sparad
+PDF sparad
+Ett engångsköp för obegränsade album, längre inspelningar, PDF-export och krypterade lokala säkerhetskopior. Befintliga minnen förblir tillgängliga.
+Gratisversion
+Gratis: tre album, foton, berättelser, tidslinje och inspelningar upp till tre minuter. Ingen gräns för antalet sparade skrivna minnen.
+Engångsköp
+Skaffa Premium
+Premium är aktivt
+Köp är inte tillgängliga: Amazon-autentisering och produkt är inte konfigurerade. Ingen betalning dras.
+Amazons produktuppgifter är inte tillgängliga. Försök senare.
+Köp eller återställning slutfördes inte. Ingen ny Premium-åtkomst har beviljats.
+Gratisversionen innehåller tre album. Skaffa Premium för att skapa fler.
+Uppdatera
+Sparat
+Support
+Utgivare: O.Bankole · Support: banksmi@mail.com · Utvecklingsversion 0.1.0. Exportera en säkerhetskopia före avinstallation. Kontrollera behörigheter vid mikrofonproblem. Källa: github.com/lanray07/LifeTalea
+Utkast
+Markera alla
+Albumets minnen
+Inget foto
+Välj ett minne för sidan
+Tillgängligt offline
+Mikrofonbehörighet
+Valfria påminnelser
+[ja]
+手元に残す思い出の本。
+紙
+ページの説明文
+ページレイアウト
+物語
+写真
+ページを上へ
+ページを下へ
+プレビュー
+PDFを出力
+本を出力
+場所を含める
+文字稿を含める
+用紙サイズ
+最初のページにする思い出を追加してください。
+大切な物語の居場所を。
+写真、声、家族の思い出のための非公開の場所。アカウントは不要です。出力を選ばない限り、思い出はこの端末に残ります。
+今はスキップ
+端末の言語を使う
+言語を選ぶか端末設定に合わせられます。開発中の翻訳には母語話者の確認が必要です。個人の物語は翻訳されません。
+家族の思い出
+子どもの成長の記録
+次の世代に伝える物語
+外観
+端末の設定
+ライト
+ダーク
+プライバシー
+バックアップと復元
+LifeTaleaのバックアップを選んでください。パスフレーズは暗号化ファイルにのみ必要です。競合時は既存の思い出や下書きを維持します。
+思い出：%1$d · アルバム：%2$d · 添付：%3$d · 本：%4$d · 維持する既存の思い出：%5$d
+選んだアーカイブを復元
+バックアップを保存しました
+PDFを保存しました
+買い切りで、無制限のアルバム、長時間録音、PDF出力、暗号化したローカルバックアップを利用できます。既存の思い出は引き続き読めます。
+無料プラン
+無料：アルバム3つ、写真、物語、タイムライン、最長3分の録音。保存する文章の思い出に件数制限はありません。
+買い切り
+Premiumを入手
+Premiumは有効です
+購入できません。Amazonの認証と商品設定が未構成です。料金は請求されません。
+Amazonの商品情報を取得できません。後でもう一度お試しください。
+購入または復元が完了しませんでした。新しいPremium利用権は付与されていません。
+無料プランではアルバムを3つ作れます。追加するにはPremiumをご利用ください。
+更新
+保存済み
+サポート
+発行者：O.Bankole · サポート：banksmi@mail.com · 開発版0.1.0。削除前にバックアップを出力してください。マイクの問題は権限を確認してください。ソース：github.com/lanray07/LifeTalea
+下書き
+すべて選択
+アルバムの思い出
+写真なし
+このページの思い出を選ぶ
+オフラインで利用可能
+マイクの権限
+任意のリマインダー
+[hi]
+सँभालकर रखने वाली यादों की किताब।
+कागज़
+पन्ने का विवरण
+पन्ने का लेआउट
+कहानी
+तस्वीर
+पन्ना ऊपर करें
+पन्ना नीचे करें
+पूर्वावलोकन
+PDF निर्यात करें
+किताब निर्यात करें
+स्थान शामिल करें
+प्रतिलिपियाँ शामिल करें
+पन्ने का आकार
+पहला पन्ना बनाने के लिए याद जोड़ें।
+ज़रूरी कहानियों के लिए जगह बनाएँ।
+तस्वीरों, आवाज़ों और पारिवारिक यादों का निजी ठिकाना। खाता ज़रूरी नहीं। जब तक आप निर्यात न करें, यादें इसी डिवाइस पर रहती हैं।
+अभी छोड़ें
+डिवाइस की भाषा इस्तेमाल करें
+भाषा चुनें या डिवाइस की सेटिंग अपनाएँ। विकास अनुवादों की मातृभाषी समीक्षा ज़रूरी है। आपकी कहानियाँ अनूदित नहीं होतीं।
+पारिवारिक यादें
+बचपन के अहम पड़ाव
+अगली पीढ़ी के लिए कहानियाँ
+रूप-रंग
+डिवाइस की सेटिंग
+हल्का
+गहरा
+गोपनीयता
+बैकअप और रिस्टोर
+LifeTalea बैकअप चुनें। पासफ़्रेज़ केवल एन्क्रिप्टेड फ़ाइलों के लिए चाहिए। टकराव होने पर मौजूदा यादें और मसौदे बने रहते हैं।
+यादें: %1$d · एल्बम: %2$d · संलग्न फ़ाइलें: %3$d · किताबें: %4$d · सुरक्षित रखी मौजूदा यादें: %5$d
+चुना संग्रह रिस्टोर करें
+बैकअप सेव हुआ
+PDF सेव हुआ
+एकमुश्त खरीद से असीमित एल्बम, लंबी रिकॉर्डिंग, PDF निर्यात और एन्क्रिप्टेड लोकल बैकअप पाएँ। मौजूदा यादें उपलब्ध रहती हैं।
+मुफ़्त प्लान
+मुफ़्त: तीन एल्बम, तस्वीरें, कहानियाँ, समयरेखा और तीन मिनट तक रिकॉर्डिंग। सेव की हुई लिखित यादों की संख्या पर सीमा नहीं है।
+एकमुश्त खरीद
+Premium पाएँ
+Premium सक्रिय है
+खरीदारी उपलब्ध नहीं: Amazon प्रमाणीकरण और उत्पाद कॉन्फ़िगर नहीं हैं। कोई भुगतान नहीं लिया जाएगा।
+Amazon उत्पाद की जानकारी उपलब्ध नहीं है। बाद में कोशिश करें।
+खरीद या रिस्टोर पूरा नहीं हुआ। नया Premium एक्सेस नहीं दिया गया है।
+मुफ़्त प्लान में तीन एल्बम हैं। और बनाने के लिए Premium लें।
+रीफ़्रेश करें
+सेव हो गया
+सहायता
+प्रकाशक: O.Bankole · सहायता: banksmi@mail.com · विकास संस्करण 0.1.0। ऐप हटाने से पहले बैकअप निर्यात करें। माइक्रोफ़ोन की समस्या में अनुमतियाँ जाँचें। स्रोत: github.com/lanray07/LifeTalea
+मसौदा
+सभी चुनें
+एल्बम की यादें
+कोई तस्वीर नहीं
+इस पन्ने के लिए याद चुनें
+ऑफ़लाइन उपलब्ध
+माइक्रोफ़ोन की अनुमति
+वैकल्पिक रिमाइंडर
+[ar]
+كتاب ذكريات تحتفظ به.
+ورق
+تعليق الصفحة
+تخطيط الصفحة
+قصة
+صورة
+نقل الصفحة لأعلى
+نقل الصفحة لأسفل
+معاينة
+تصدير PDF
+تصدير الكتاب
+تضمين الأماكن
+تضمين النصوص المفرّغة
+حجم الصفحة
+أضف ذكرى لإنشاء الصفحة الأولى.
+افسح مكانًا للقصص المهمة.
+مساحة خاصة للصور والأصوات وذكريات العائلة. لا يلزم حساب. تبقى الذكريات على هذا الجهاز ما لم تختر تصديرها.
+التخطي الآن
+استخدام لغة الجهاز
+اختر لغة أو اتبع إعدادات الجهاز. تحتاج ترجمات التطوير إلى مراجعة متحدثين أصليين. لا تُترجم قصصك الشخصية.
+ذكريات العائلة
+محطات الطفولة
+قصص للأجيال القادمة
+المظهر
+إعداد الجهاز
+فاتح
+داكن
+الخصوصية
+النسخ الاحتياطي والاستعادة
+اختر نسخة LifeTalea احتياطية. تلزم عبارة المرور للملفات المشفرة فقط. عند التعارض، تُحفظ الذكريات والمسودات الحالية.
+الذكريات: %1$d · الألبومات: %2$d · المرفقات: %3$d · الكتب: %4$d · الذكريات الحالية المحفوظة: %5$d
+استعادة الأرشيف المحدد
+حُفظت النسخة الاحتياطية
+حُفظ PDF
+شراء لمرة واحدة يتيح ألبومات غير محدودة وتسجيلات أطول وتصدير PDF ونسخًا محلية مشفرة. تبقى ذكرياتك الحالية متاحة.
+النسخة المجانية
+مجانًا: ثلاثة ألبومات وصور وقصص وتسلسل زمني وتسجيلات حتى ثلاث دقائق. لا حد لعدد الذكريات المكتوبة المحفوظة.
+شراء لمرة واحدة
+الحصول على Premium
+Premium مفعل
+الشراء غير متاح: لم يُعدّ توثيق Amazon والمنتج. لن يُحصّل أي مبلغ.
+تفاصيل منتج Amazon غير متاحة. حاول لاحقًا.
+لم يكتمل الشراء أو الاستعادة. لم يُمنح وصول Premium جديد.
+تشمل النسخة المجانية ثلاثة ألبومات. احصل على Premium لإنشاء المزيد.
+تحديث
+محفوظ
+الدعم
+الناشر: O.Bankole · الدعم: banksmi@mail.com · إصدار تطويري 0.1.0. صدّر نسخة احتياطية قبل إزالة التطبيق. لمشكلات الميكروفون، تحقق من الأذونات. المصدر: github.com/lanray07/LifeTalea
+مسودة
+تحديد الكل
+ذكريات الألبوم
+لا توجد صورة
+اختر ذكرى لهذه الصفحة
+متاح دون اتصال
+إذن الميكروفون
+تذكيرات اختيارية
+[tr]
+Saklanacak bir anı kitabı.
+Kâğıt
+Sayfa açıklaması
+Sayfa düzeni
+Hikâye
+Fotoğraf
+Sayfayı yukarı taşı
+Sayfayı aşağı taşı
+Önizleme
+PDF dışa aktar
+Kitabı dışa aktar
+Yerleri dahil et
+Dökümleri dahil et
+Sayfa boyutu
+İlk sayfayı oluşturmak için bir anı ekleyin.
+Önemli hikâyelere yer açın.
+Fotoğraflar, sesler ve aile anıları için özel bir alan. Hesap gerekmez. Siz dışa aktarmadıkça anılar bu cihazda kalır.
+Şimdilik atla
+Cihaz dilini kullan
+Bir dil seçin veya cihaz ayarını izleyin. Geliştirme çevirileri ana dili konuşanların incelemesini gerektirir. Hikâyeleriniz çevrilmez.
+Aile anıları
+Çocukluğun dönüm noktaları
+Gelecek nesillere hikâyeler
+Görünüm
+Cihaz ayarı
+Açık
+Koyu
+Gizlilik
+Yedekleme ve geri yükleme
+Bir LifeTalea yedeği seçin. Parola yalnızca şifreli dosyalarda gerekir. Çakışmalarda mevcut anılar ve taslaklar korunur.
+Anılar: %1$d · Albümler: %2$d · Ekler: %3$d · Kitaplar: %4$d · Korunan mevcut anılar: %5$d
+Seçili arşivi geri yükle
+Yedek kaydedildi
+PDF kaydedildi
+Sınırsız albüm, uzun kayıtlar, PDF dışa aktarma ve şifreli yerel yedekler için tek seferlik satın alım. Mevcut anılarınız erişilebilir kalır.
+Ücretsiz sürüm
+Ücretsiz: üç albüm, fotoğraflar, hikâyeler, zaman çizelgesi ve üç dakikaya kadar kayıt. Kaydedilen yazılı anıların sayısı sınırsızdır.
+Tek seferlik satın alım
+Premium al
+Premium etkin
+Satın alımlar kullanılamıyor: Amazon kimlik doğrulaması ve ürün yapılandırılmamış. Ödeme alınmayacaktır.
+Amazon ürün ayrıntıları kullanılamıyor. Daha sonra yeniden deneyin.
+Satın alım veya geri yükleme tamamlanmadı. Yeni Premium erişimi verilmedi.
+Ücretsiz sürüm üç albüm içerir. Daha fazlası için Premium alın.
+Yenile
+Kaydedildi
+Destek
+Yayıncı: O.Bankole · Destek: banksmi@mail.com · Geliştirme sürümü 0.1.0. Kaldırmadan önce yedek aktarın. Mikrofon sorunlarında izinleri kontrol edin. Kaynak: github.com/lanray07/LifeTalea
+Taslak
+Tümünü seç
+Albümdeki anılar
+Fotoğraf yok
+Bu sayfa için bir anı seçin
+Çevrimdışı kullanılabilir
+Mikrofon izni
+İsteğe bağlı hatırlatıcılar
+[id]
+Buku kenangan untuk disimpan.
+Kertas
+Keterangan halaman
+Tata letak halaman
+Cerita
+Foto
+Pindahkan halaman ke atas
+Pindahkan halaman ke bawah
+Pratinjau
+Ekspor PDF
+Ekspor buku
+Sertakan lokasi
+Sertakan transkrip
+Ukuran halaman
+Tambahkan kenangan untuk membuat halaman pertama.
+Beri tempat bagi cerita yang berarti.
+Tempat pribadi untuk foto, suara, dan kenangan keluarga. Tidak perlu akun. Kenangan tetap di perangkat ini kecuali Anda memilih mengekspornya.
+Lewati untuk sekarang
+Gunakan bahasa perangkat
+Pilih bahasa atau ikuti perangkat. Terjemahan pengembangan masih memerlukan tinjauan penutur asli. Cerita Anda tidak diterjemahkan.
+Kenangan keluarga
+Momen penting masa kecil
+Cerita untuk generasi berikutnya
+Tampilan
+Pengaturan perangkat
+Terang
+Gelap
+Privasi
+Cadangan dan pemulihan
+Pilih cadangan LifeTalea. Frasa sandi hanya diperlukan untuk berkas terenkripsi. Saat terjadi konflik, kenangan dan draf yang sudah ada tetap disimpan.
+Kenangan: %1$d · Album: %2$d · Lampiran: %3$d · Buku: %4$d · Kenangan lama dipertahankan: %5$d
+Pulihkan arsip pilihan
+Cadangan tersimpan
+PDF tersimpan
+Satu pembelian untuk album tak terbatas, rekaman lebih panjang, ekspor PDF, dan cadangan lokal terenkripsi. Kenangan yang sudah ada tetap dapat diakses.
+Versi gratis
+Gratis: tiga album, foto, cerita, linimasa, dan rekaman hingga tiga menit. Jumlah kenangan tertulis yang tersimpan tidak dibatasi.
+Pembelian satu kali
+Dapatkan Premium
+Premium aktif
+Pembelian tidak tersedia: autentikasi Amazon dan produk belum dikonfigurasi. Tidak ada pembayaran yang akan ditagih.
+Detail produk Amazon tidak tersedia. Coba lagi nanti.
+Pembelian atau pemulihan tidak selesai. Tidak ada akses Premium baru yang diberikan.
+Versi gratis mencakup tiga album. Dapatkan Premium untuk membuat lebih banyak.
+Muat ulang
+Tersimpan
+Dukungan
+Penerbit: O.Bankole · Dukungan: banksmi@mail.com · Versi pengembangan 0.1.0. Ekspor cadangan sebelum mencopot aplikasi. Periksa izin saat mikrofon bermasalah. Sumber: github.com/lanray07/LifeTalea
+Draf
+Pilih semua
+Kenangan dalam album
+Tidak ada foto
+Pilih kenangan untuk halaman ini
+Tersedia offline
+Izin mikrofon
+Pengingat opsional
+[ko]
+오래 간직할 추억 책.
+종이
+페이지 설명
+페이지 레이아웃
+이야기
+사진
+페이지 위로 이동
+페이지 아래로 이동
+미리 보기
+PDF 내보내기
+책 내보내기
+장소 포함
+녹취록 포함
+용지 크기
+첫 페이지를 만들려면 추억을 추가하세요.
+소중한 이야기를 위한 공간.
+사진, 목소리, 가족 추억을 위한 비공개 공간입니다. 계정은 필요 없습니다. 직접 내보내지 않는 한 추억은 이 기기에 남습니다.
+지금은 건너뛰기
+기기 언어 사용
+언어를 선택하거나 기기 설정을 따르세요. 개발 중인 번역은 원어민 검토가 필요합니다. 개인 이야기는 번역되지 않습니다.
+가족 추억
+어린 시절의 중요한 순간
+다음 세대에 전할 이야기
+화면 모드
+기기 설정
+라이트
+다크
+개인정보 보호
+백업 및 복원
+LifeTalea 백업을 선택하세요. 암호문구는 암호화된 파일에만 필요합니다. 충돌 시 기존 추억과 초안이 유지됩니다.
+추억: %1$d · 앨범: %2$d · 첨부 파일: %3$d · 책: %4$d · 유지되는 기존 추억: %5$d
+선택한 아카이브 복원
+백업 저장됨
+PDF 저장됨
+한 번의 구매로 무제한 앨범, 긴 녹음, PDF 내보내기, 암호화된 로컬 백업을 이용할 수 있습니다. 기존 추억은 계속 볼 수 있습니다.
+무료 플랜
+무료: 앨범 3개, 사진, 이야기, 타임라인, 최대 3분 녹음. 저장하는 글로 쓴 추억의 개수는 제한이 없습니다.
+일회성 구매
+Premium 이용하기
+Premium 활성화됨
+구매할 수 없습니다. Amazon 인증과 상품이 설정되지 않았습니다. 결제 금액은 청구되지 않습니다.
+Amazon 상품 정보를 사용할 수 없습니다. 나중에 다시 시도해 주세요.
+구매 또는 복원이 완료되지 않았습니다. 새 Premium 이용 권한은 부여되지 않았습니다.
+무료 플랜에는 앨범 3개가 포함됩니다. 더 만들려면 Premium을 이용해 주세요.
+새로 고침
+저장됨
+도움말
+발행자: O.Bankole · 지원: banksmi@mail.com · 개발 버전 0.1.0. 앱 삭제 전에 백업을 내보내세요. 마이크 문제는 권한을 확인하세요. 소스: github.com/lanray07/LifeTalea
+초안
+모두 선택
+앨범의 추억
+사진 없음
+이 페이지의 추억 선택
+오프라인 사용 가능
+마이크 권한
+선택적 알림
+[zh]
+一本值得珍藏的回忆册。
+纸张
+页面说明
+页面版式
+故事
+照片
+上移页面
+下移页面
+预览
+导出PDF
+导出回忆册
+包含地点
+包含文字稿
+纸张大小
+添加一段回忆以创建第一页。
+为重要的故事留出空间。
+照片、声音和家族回忆的私人空间。无需账户。除非您选择导出，回忆会一直保存在此设备上。
+暂时跳过
+使用设备语言
+选择语言或跟随设备设置。开发版翻译仍需母语使用者审核。个人故事不会被翻译。
+家族回忆
+童年成长记录
+传给下一代的故事
+外观
+设备设置
+浅色
+深色
+隐私
+备份与恢复
+请选择LifeTalea备份。只有加密文件需要密码短语。发生冲突时会保留现有回忆和草稿。
+回忆：%1$d · 相册：%2$d · 附件：%3$d · 回忆册：%4$d · 保留的现有回忆：%5$d
+恢复选定的归档
+备份已保存
+PDF已保存
+一次购买，即可使用不限数量的相册、更长录音、PDF导出和加密本地备份。现有回忆始终可读。
+免费版
+免费：三个相册、照片、故事、时间线和最长三分钟的录音。已保存的文字回忆数量不限。
+一次性购买
+获取Premium
+Premium已启用
+暂时无法购买：尚未配置Amazon认证和商品。不会收取任何费用。
+暂时无法获取Amazon商品信息，请稍后重试。
+购买或恢复未完成，未授予新的Premium使用权限。
+免费版包含三个相册。需要更多相册时可选择Premium。
+刷新
+已保存
+支持
+发布者：O.Bankole · 支持：banksmi@mail.com · 开发版0.1.0。卸载前请先导出备份。麦克风有问题时请检查权限。源码：github.com/lanray07/LifeTalea
+草稿
+全选
+相册中的回忆
+暂无照片
+为此页选择一段回忆
+可离线使用
+麦克风权限
+可选提醒

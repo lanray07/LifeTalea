@@ -44,280 +44,280 @@
   },
   "articles": {
     "features": {
-      "title": "Dom dla opowieści za zdjęciami",
-      "summary": "Odkryj to LifeTalea Preview rozwoju: wspomnienia pisemne, prywatne zdjęcia, opowieści głosowe, albumy i keepsakes.",
+      "title": "Miejsce na historie ukryte za zdjęciami",
+      "summary": "Poznaj rozwojową wersję LifeTalea: opowieści, prywatne zdjęcia, nagrania, albumy i książki wspomnień.",
       "sections": [
         {
           "title": "Zacznij od jednej chwili",
-          "body": "Napisz tytuł i kilka linii. Dodaj dokładną datę, przybliżony rok lub żadną datę. Tagi, ulubione i albumy pomogą Ci odnaleźć historię ponownie."
+          "body": "Dodaj tytuł, kilka zdań i datę dokładną, przybliżoną lub nieznaną. Tagi, ulubione i albumy pomogą odnaleźć opowieść."
         },
         {
-          "title": "Zdjęcia i głosy, razem",
-          "body": "Importowanie zdjęć za pomocą piksela dokumentowego urządzenia. Zapisz historię głosową i trzymaj ją obok pisemnej pamięci. Media są kopiowane do prywatnego magazynu aplikacji."
+          "title": "Zdjęcia i głosy razem",
+          "body": "Importuj zdjęcia przez systemowy wybór plików i nagrywaj opowieści. Pliki są kopiowane do prywatnej pamięci aplikacji."
         },
         {
-          "title": "Zrób własną kolekcję",
-          "body": "Tworzenie projektów scrapbook z zapisanych wspomnień. Zorganizuj strony, dodaj wpisy i przewiduj swoją kolekcję. PDF Eksport jest funkcją Premium; zakupy nadal potrzebne Amazon Testowe weryfikacje ."
+          "title": "Stwórz własną książkę",
+          "body": "Uporządkuj strony i podpisy, a potem sprawdź podgląd. Eksport PDF wymaga Premium; zakupy Amazon nadal wymagają weryfikacji w środowisku testowym."
         }
       ]
     },
     "family-memory-journal": {
-      "title": "Utrzymuj szczegóły tylko Twoja rodzina wie",
-      "summary": "Dziennik pamięci rodzinnej daje kontekst do zdjęć: kto tam był, co się stało i dlaczego moment miał znaczenie.",
+      "title": "Zachowaj szczegóły znane tylko Twojej rodzinie",
+      "summary": "Rodzinny pamiętnik uzupełnia zdjęcia: kto na nich jest, co się wydarzyło i dlaczego to ważne.",
       "sections": [
         {
-          "title": "Zadaj małe pytanie",
-          "body": "Zamiast zacząć od całej historii życia, zapytaj o jeden posiłek, jedną podróż lub jedno miejsce. Krótka odpowiedź to cenny początek. Niech opowiadacz wybiera to, co czuje się komfortowo."
+          "title": "Zadaj proste pytanie",
+          "body": "Zacznij od posiłku, podróży lub miejsca. Krótka odpowiedź wystarczy. Niech rozmówca sam wybierze, co chce opowiedzieć."
         },
         {
-          "title": "Utrzymuj niepewność szczerą",
-          "body": "Stare zdjęcia rzadko przychodzą z doskonałymi datami. LifeTalea Przyjmuje rok, miesiąc, dokładną datę lub nieznaną datę. Możesz dodać lokalizację samodzielnie bez udzielania dostępu do lokalizacji."
+          "title": "Zachowaj niepewne daty",
+          "body": "LifeTalea pozwala podać rok, miesiąc, dokładną lub nieznaną datę. Miejsce możesz wpisać bez udzielania dostępu do lokalizacji."
         },
         {
           "title": "Zachowaj drugą kopię",
-          "body": "Lokalne przechowywanie utrzymuje pamięć zamknięta, ale urządzenie może zostać utracone. Eksportuj kopię zapasową i przechowuj ją w miejscu, które kontrolujesz. Sprawdź archiwum przed usunięciem oryginału."
+          "body": "Urządzenie może zaginąć. Wyeksportuj kopię w wybrane, kontrolowane miejsce i sprawdź ją przed usunięciem oryginału."
         }
       ]
     },
     "voice-story-recording": {
-      "title": "Zrób miejsce dla swojego głosu",
-      "summary": "Zatrzymaj przerwy, śmiech i znane wyrażenia, które pisemna historia nie zawsze może trzymać.",
+      "title": "Zachowaj bliskie głosy",
+      "summary": "Utrwal pauzy, śmiech i znajome zwroty, których tekst nie zawsze potrafi oddać.",
       "sections": [
         {
-          "title": "Rekord z opieką",
-          "body": "Zapytaj o pozwolenie mówcy. Znajdź spokojne miejsce i wykonaj krótkie nagranie testowe. Zapisz pamięć najpierw, a następnie wybierz pozycję Zapisz historię. Odpocznij lub powtórz, kiedy to potrzebujesz."
+          "title": "Nagrywaj uważnie",
+          "body": "Poproś o zgodę i zrób próbę w cichym miejscu. Najpierw zapisz wspomnienie. Nagranie możesz wstrzymywać i wznawiać."
         },
         {
           "title": "Na Twoim urządzeniu",
-          "body": "LifeTalea Zbawienie AAC Audio w M4A pliki w prywatnym magazynie aplikacji. Aplikacja zatrzymuje się i przechowuje nagranie. Darmowe nagrania są ograniczone do trzech minut; Premium przedłuża ten limit, pod warunkiem przechowywania."
+          "body": "LifeTalea zapisuje dźwięk AAC w prywatnych plikach M4A. Opuszczenie aplikacji zatrzymuje i zapisuje nagranie. Bezpłatny limit to trzy minuty; Premium wydłuża go zależnie od wolnego miejsca."
         },
         {
           "title": "Sprawdź tablet",
-          "body": "Nagrywanie wymaga mikrofonu i pozwolenia. Komandy mowy korzystają z zainstalowanej usługi rozpoznawania i mogą nie być dostępne na Fire i tabletek . Kontrole dotykowe pozostają dostępne."
+          "body": "Nagrywanie wymaga sprawnego mikrofonu i uprawnienia. Polecenia głosowe zależą od zainstalowanych usług, których może brakować na tabletach Fire. Przyciski pozostają dostępne."
         }
       ]
     },
     "voice-transcription": {
-      "title": "Wpisane towarzysze do wypowiedzianej pamięci",
-      "summary": "Transpozycja nie jest skonfigurowana w bieżącej LifeTalea i budować . Nagrywanie audio i ręczne edycje transkrypcji pozostają dostępne.",
+      "title": "Dodaj słowa do nagranych wspomnień",
+      "summary": "Automatyczna transkrypcja nie jest skonfigurowana w tej wersji LifeTalea. Dostępne są nagrania i ręczna edycja transkrypcji.",
       "sections": [
         {
-          "title": "Co działa dzisiaj",
-          "body": "Otwórz pamięć i edytuj pole transkrypcyjne. Możesz wpisać transkrypcję lub wkleić tekst, który już masz. Korekty są przechowywane lokalnie obok oryginalnego nagrania."
+          "title": "Co działa już teraz",
+          "body": "Otwórz wspomnienie i wpisz lub wklej transkrypcję. Zmiany są przechowywane lokalnie obok oryginalnego nagrania."
         },
         {
-          "title": "Co pozostało przed uwolnieniem",
-          "body": "Transpozycja plików rejestrowanych wymaga kompatybilnego silnika, popartej weryfikacji języka i testów końcowych do końca. LifeTalea nie przedstawia wynalezionego tekstu jako transkrypcji i nie wysyła nagrań do dostawcy chmury."
+          "title": "Przed publikacją",
+          "body": "Potrzebny jest zgodny silnik i testy językowe. LifeTalea nie wymyśla transkrypcji ani nie wysyła nagrań do dostawcy chmury."
         },
         {
-          "title": "oddzielne usługi",
-          "body": "Android Rozpoznawanie mowy dla poleceń różni się od transkrypcji zapisów zapisanych. Urządzenie posiadające jedną zdolność nie ustanawia wsparcia dla drugiej."
+          "title": "Dwie różne funkcje",
+          "body": "Rozpoznawanie poleceń Androida nie jest transkrypcją zapisanych plików. Obsługa jednej funkcji nie gwarantuje drugiej."
         }
       ]
     },
     "digital-scrapbook": {
-      "title": "Zmień kolekcję w rozdział",
-      "summary": "Wprowadź pisemne wspomnienia i zdjęcia do zapisanych projektów scrapbook.",
+      "title": "Zamień wspomnienia w nowy rozdział",
+      "summary": "Połącz opowieści i zdjęcia w szkicach książek przechowywanych lokalnie.",
       "sections": [
         {
-          "title": "Wybierz momenty",
-          "body": "Stwórz scrapbook i wybierz pamięć z biblioteki. Każda strona odnosi się do zapisanej pamięci, przechowując swoją historię i zdjęcia razem."
+          "title": "Wybierz chwile",
+          "body": "Stwórz książkę ze wspomnień w bibliotece. Każda strona odwołuje się do zapisanego wspomnienia z opowieścią i zdjęciami."
         },
         {
-          "title": "Znajdź odpowiedni rytm",
-          "body": "Przenieś strony w górę lub w dół, wybierz opcję opowieści lub układu zdjęć i dodaj napis. Zapisz swoje wpisy przed przewidywaniem. Wymazana pamięć źródłowa jest wyraźnie oznaczona, dzięki czemu można naprawić projekt."
+          "title": "Znajdź właściwy rytm",
+          "body": "Przestawiaj strony, wybierz układ i zapisz podpisy przed podglądem. Usunięte wspomnienia są oznaczone, aby można było poprawić szkic."
         },
         {
-          "title": "Trzymaj się prywatnie",
-          "body": "Projekty Scrapbook są lokalne. Tworzenie scrapbook nigdy go nie publikuje. Przeglądaj dowolny eksportowany dokument, zanim zdecydujesz się go udostępnić."
+          "title": "Zachowaj kontrolę",
+          "body": "Utworzenie książki niczego nie publikuje. Szkice pozostają lokalne. Sprawdź eksportowany dokument przed udostępnieniem."
         }
       ]
     },
     "family-timeline": {
-      "title": "Pamiętaj, jak rozdziały łączą",
-      "summary": "Odkryj zapisane wspomnienia w porządku datowym, w tym te z przybliżonymi i nieznanymi datami.",
+      "title": "Odkryj, jak łączą się rozdziały",
+      "summary": "Przeglądaj wspomnienia według dat, również przybliżonych i nieznanych.",
       "sections": [
         {
-          "title": "Śledź lata",
-          "body": "Znane odmiany czasopisma datują od najnowszych do najstarszych i umieszczają nieznane historie później. Szukaj frazy, wybierz album lub filtrować rocznie."
+          "title": "Przez kolejne lata",
+          "body": "Znane daty są sortowane od najnowszej, a historie bez daty pojawiają się później. Szukaj według tekstu, albumu lub roku."
         },
         {
-          "title": "Data może się zmienić",
-          "body": "Badania rodzinne często odkrywają nowe szczegóły. Ustaw datę zdarzenia i dokładność w edytorze pamięci; linia czasowa wykorzystuje zaktualizowane informacje."
+          "title": "Daty mogą się zmieniać",
+          "body": "Badania rodzinne mogą ujawnić szczegóły. Edytuj datę i jej dokładność we wspomnieniu, aby zaktualizować oś czasu."
         },
         {
-          "title": "Nie wymyślona historia",
-          "body": "Linia czasowa wykorzystuje tylko historie, które zapisujesz. LifeTalea Nie zamieszkuje Twojej biblioteki z fabrycznymi wydarzeniami rodzinnymi."
+          "title": "Historia bez zmyślonych wydarzeń",
+          "body": "Oś czasu używa tylko zapisanych wspomnień. LifeTalea nie dodaje fikcyjnych wydarzeń rodzinnych."
         }
       ]
     },
     "keepsake-books": {
-      "title": "Książka, którą trzeba trzymać",
-      "summary": "Stwórz lokalny PDF z wybranych wspomnień, zdjęć i wykresów scrapbook.",
+      "title": "Książka wspomnień na lata",
+      "summary": "Utwórz lokalny PDF z wybranymi wspomnieniami, zdjęciami i podpisami.",
       "sections": [
         {
-          "title": "Wybierz co do uwzględnienia",
-          "body": "Daj książce tytuł pokrycia. Wybierz A4 lub papieru pisemnego. Lokalizacje i transkrypcje są zwykle wykluczone i mogą być uwzględnione w stosownych przypadkach."
+          "title": "Wybierz zawartość",
+          "body": "Dodaj tytuł okładki i wybierz A4 lub Letter. Miejsca i transkrypcje są domyślnie wyłączone; możesz je dołączyć."
         },
         {
-          "title": "Przegląd przed udostępnianiem",
-          "body": "PDF są generowane na urządzeniu przez Android„S” PDF Ogień . Długie historie trwają na dodatkowych stronach. Dźwięk nie jest wbudowany w drukowane przesyłki. Przegląd typografii i zdjęć w Twoim PDF Widok przed drukowaniem."
+          "title": "Sprawdź przed udostępnieniem",
+          "body": "PDF powstaje na urządzeniu przez Androida. Długie opowieści zajmują kolejne strony; dźwięk nie jest osadzany. Sprawdź tekst i zdjęcia przed drukowaniem."
         },
         {
-          "title": "Status rozwoju",
-          "body": "PDF generacja jest wdrażana i w ramach weryfikacji urządzenia. Kontrola eksportu Premium wymaga weryfikacji Amazon z prawem . Faktura na żywo nie została jeszcze potwierdzona."
+          "title": "Stan prac",
+          "body": "Tworzenie PDF jest testowane na urządzeniach. Eksport wymaga zweryfikowanego uprawnienia Premium Amazon. Rzeczywiste zakupy nie zostały jeszcze zweryfikowane."
         }
       ]
     },
     "offline-memory-journal": {
-      "title": "Twoje wspomnienia, nawet bez połączenia",
-      "summary": "LifeTalea jest zaprojektowany wokół lokalnego przechowywania i kontrolki dotykowej, bez obowiązkowego konta.",
+      "title": "Twoje wspomnienia także bez internetu",
+      "summary": "LifeTalea stawia na dane lokalne i obsługę dotykową, bez obowiązkowego konta.",
       "sections": [
         {
-          "title": "Stwórz offline",
-          "body": "Napisane wspomnienia, albumy, importowane zdjęcia, zapisane nagrania, przeglądanie czasowe i projekty scrapbook wykorzystują dane lokalne. PDF Generacja nie wymaga zewnętrznej usługi dokumentów."
+          "title": "Twórz dalej offline",
+          "body": "Opowieści, albumy, importowane zdjęcia, nagrania, oś czasu i szkice korzystają z lokalnych danych. PDF nie wymaga zewnętrznej usługi dokumentów."
         },
         {
-          "title": "Poznaj granice",
-          "body": "Zakup wymaga Amazon i usług . Rozpoznawanie mowy urządzenia może wymagać Internetu. Transpozycja przechowywanych plików nie jest dostępna w tym budynku. Nie ma synchronizacji w chmurze."
+          "title": "Poznaj ograniczenia",
+          "body": "Zakupy wymagają Amazon. Rozpoznawanie mowy może potrzebować internetu. Automatyczna transkrypcja i synchronizacja w chmurze są niedostępne."
         },
         {
-          "title": "Backupy to Twój wybór",
-          "body": "Użyj pika dokumentu, aby zapisać archiwum, w którym wybierzesz. Jeśli wybierzesz dostawcę dokumentów obsługiwanego w chmurze, ten dostawca obsługuje wyeksportowany plik zgodnie z własnymi warunkami prywatności."
+          "title": "Wybierz miejsce kopii",
+          "body": "Wskaż miejsce eksportu. Jeśli wybierzesz dostawcę dokumentów w chmurze, przetwarza on plik według własnych zasad prywatności."
         }
       ]
     },
     "fire-tablet-compatibility": {
-      "title": "Zbudowany z Fire Tabletki w umyśle",
-      "summary": "Native Kotlin i Jetpack Compose aplikacja bez wymaganych usług Google Play.",
+      "title": "Z myślą o tabletach Fire",
+      "summary": "Natywna aplikacja w Kotlin i Jetpack Compose, bez obowiązkowych usług Google Play.",
       "sections": [
         {
           "title": "Platforma docelowa",
-          "body": "Minimalne wsparcie Android Ogień jest 26. Jest to minimalne techniczne, a nie obietnica, że każde urządzenie jest certyfikowane. Fire Odległa nawigacja telewizyjna jest poza bieżącym zakresem."
+          "body": "Minimalne API Androida to 26; nie oznacza to certyfikacji każdego urządzenia. Obsługa pilotem Fire TV jest poza obecnym zakresem."
         },
         {
-          "title": "Testowanie urządzeń",
-          "body": "Związanego KFTRWI Wykaz urządzenia Android Ogień 28 Dostępne do testowania rozwoju. Sprawozdanie z wydania rejestruje rzeczywiste testy; dodatkowe Fire Rozmiary i wersje systemu operacyjnego pozostają sprawdzane."
+          "title": "Testy urządzeń",
+          "body": "Testy rozwojowe korzystają z tabletu KFTRWI z API Androida 28. Raport opisuje rzeczywiste wyniki; inne rozmiary i wersje Fire wymagają sprawdzenia."
         },
         {
-          "title": "Głos różni się od urządzenia",
-          "body": "Mikrofon obsługuje nagrywanie tylko wtedy, gdy dostępna jest pozwolenie i sprzęt. Rozpoznawanie i wypowiedziane opinie wymagają również kompatybilnych zainstalowanych usług. Alternatywy do dotyku i tekstu są zawsze częścią projektu."
+          "title": "Głos zależy od urządzenia",
+          "body": "Nagrywanie wymaga mikrofonu i zgody. Rozpoznawanie mowy i odczyt potrzebują zgodnych usług. Dostępne są alternatywy dotykowe i tekstowe."
         }
       ]
     },
     "languages": {
-      "title": "Dziennik, który może czuć się jak w domu",
-      "summary": "Aplikacja rozwojowa posiada 22- lokalne tłumaczenie matrycy pokrywa 17 Języki priorytetowe. Wciąż potrzebny jest przegląd języka ojczystego.",
+      "title": "Pamiętnik w Twoim języku",
+      "summary": "Wersja rozwojowa obejmuje 22 warianty regionalne dla 17 priorytetowych języków. Weryfikacja przez rodzimych użytkowników pozostaje konieczna.",
       "sections": [
         {
-          "title": "Plan językowy",
-          "body": "Cele obejmują regionalny angielski, hiszpański, francuski i portugalski, niemiecki, włoski, holenderski, polski, szwedzki, japoński, hindi, arabski, tureckie, indonezyjski, koreański i po prostu i tradycyjny chiński."
+          "title": "Planowane języki",
+          "body": "Angielski, hiszpański, francuski, portugalski, niemiecki, włoski, niderlandzki, polski, szwedzki, japoński, hindi, arabski, turecki, indonezyjski, koreański i chiński uproszczony oraz tradycyjny."
         },
         {
-          "title": "Jakość przed roszczeniem językowym",
-          "body": "Tłumaczenia muszą przejść kontrolę lokatorów, testy układu i przegląd. Języki magazynowe, języki aplikacji, kraje dystrybucji, rozpoznawanie mowy, mówione opinie i transkrypcja każdy ma oddzielne matryce wsparcia."
+          "title": "Jakość przed publikacją",
+          "body": "Tłumaczenia wymagają kontroli zmiennych, układu i języka. Aplikacja, sklepy, kraje i usługi głosowe mają odrębne zakresy obsługi."
         },
         {
           "title": "Twoje słowa pozostają Twoje",
-          "body": "Zmiana języka interfejsu nie tłumaczy osobistych wspomnień ani nagrań. Tłumaczenia nieprzeglądanych stron internetowych są dostępne tylko w lokalnym przeglądzie; produkcja wymaga przeglądu."
+          "body": "Zmiana języka nie tłumaczy osobistych opowieści ani nagrań. Niezatwierdzone tłumaczenia strony są dostępne tylko w lokalnym podglądzie."
         }
       ]
     },
     "pricing": {
-      "title": "Utrzymuj wspomnienia. Wybierz dodatek.",
-      "summary": "Darmowy dziennik z opcjonalnym jednorazowym zakupem Premium. Zakup nie jest żywy w tym rozwojowym przeglądzie.",
+      "title": "Zachowaj wspomnienia. Wybierz dodatki.",
+      "summary": "Bezpłatny pamiętnik z opcjonalnym jednorazowym zakupem Premium. Zakupy nie są aktywne w wersji rozwojowej.",
       "sections": [
         {
-          "title": "darmowe",
-          "body": "Do trzech albumów, wspomnień pisemnych, zdjęć, linii czasowej, projektów scrapbook i nagrań głosowych do trzech minut. Zapisane wspomnienia nie są przechowywane."
+          "title": "Wersja bezpłatna",
+          "body": "Trzy albumy, nieograniczona liczba pisanych wspomnień, zdjęcia, oś czasu, szkice książek i nagrania do trzech minut."
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Planowane jednorazowe uprawnienia: nieograniczone albumy, dłuższe nagrywania głosowe, PDF przechowywanie eksportu i szyfrowanie lokalnej kopii zapasowej. Proponowane UK Cena testów wynosi £4.99· aplikacja wyświetli rzeczywistą lokalną cenę od Amazon Kiedy jest konfigurowany."
+          "body": "Planowany zakup jednorazowy: nielimitowane albumy, dłuższe nagrania, eksport PDF i szyfrowane kopie lokalne. Proponowana brytyjska cena testowa to 4,99 £; po konfiguracji Amazon poda rzeczywistą cenę lokalną."
         },
         {
-          "title": "Twoje istniejące historie pozostają dostępne",
-          "body": "Dostępność Premium nie zamyka Cię z istniejących pamięci. Podstawowe kopie zapasowe i odzyskiwanie pozostają dostępne. Transpozycja w chmurze z bieżącym kosztem nie jest zawarta w obietnicy jednorazowej ceny."
+          "title": "Historie pozostają dostępne",
+          "body": "Dostępność Premium nie blokuje istniejących wspomnień. Podstawowe kopie i przywracanie pozostają dostępne. Nie obiecujemy transkrypcji chmurowej z kosztami cyklicznymi."
         }
       ]
     },
     "faq": {
-      "title": "Kilka rzeczy, które warto wiedzieć",
-      "summary": "Praktyczne odpowiedzi na temat prywatności, nagrań, opowieści rodzinnych i lokalnej ochrony.",
+      "title": "Warto wiedzieć",
+      "summary": "Praktyczne odpowiedzi o prywatności, nagraniach i zachowaniu rodzinnych historii.",
       "sections": [
         {
-          "title": "Potrzebuję konta?",
-          "body": "Główne lokalne funkcje wymagają nie LifeTalea z rachunku . Amazon Kupujący korzysta z konta i usług świadczonych przez Amazon w Appstore."
+          "title": "Czy potrzebuję konta?",
+          "body": "Funkcje lokalne nie wymagają konta LifeTalea. Zakupy korzystają z konta i usług Amazon Appstore."
         },
         {
-          "title": "Jak zorganizować stare zdjęcia?",
-          "body": "Zacznij od małego albumu i jednego zdjęcia. Dodaj nazwiska i kontekst, który znasz, użyj przybliżonych dat, kiedy to konieczne, i zapytaj relacji o jeden szczegół naraz."
+          "title": "Jak uporządkować stare zdjęcia?",
+          "body": "Zacznij od małego albumu i jednego zdjęcia. Dodaj znane nazwiska, szczegóły i przybliżone daty. Pytaj bliskich o jeden szczegół naraz."
         },
         {
-          "title": "Czy mogę zarejestrować historię życia moich rodziców?",
-          "body": "Tak, z ich pozwoleniem i kompatybilnym mikrofonem. Zacznij od krótkiej tematyki i sprawdź playback. Nie polegaj na jednym urządzeniu jako jedynej kopii."
+          "title": "Czy mogę nagrywać historie rodziców?",
+          "body": "Tak, za ich zgodą i ze zgodnym mikrofonem. Zacznij od krótkiego tematu i sprawdź odtwarzanie. Zachowaj kopię również poza tym urządzeniem."
         },
         {
-          "title": "Czy mogę przetłumaczyć nagrania?",
-          "body": "Automatyczna transkrypcja przechowywanych plików nie jest dostępna w bieżącym budowie. Możesz dodać i edytować transkrypcję ręcznie."
+          "title": "Czy mogę transkrybować nagrania?",
+          "body": "Automatyczna transkrypcja jest niedostępna. Możesz ręcznie dodać i edytować transkrypcję."
         },
         {
-          "title": "Czyli LifeTalea Synchronizacja między urządzeniami?",
-          "body": "Synchronizacja w chmurze nie jest realizowana. Eksport i restauracja lokalnych archiwów to obecnie dostępne narzędzia konserwacyjne."
+          "title": "Czy LifeTalea synchronizuje urządzenia?",
+          "body": "Synchronizacja chmurowa nie jest wdrożona. Możesz eksportować i przywracać lokalne archiwa."
         }
       ]
     },
     "privacy": {
-      "title": "Prywatność zaczyna się od miejsca, w którym żyje historia",
-      "summary": "Informacja o prywatności od O.Bankole. Kontakt banksmi@mail.com. Przegląd prawny pozostaje wymagany przed publikacją.",
+      "title": "Prywatność zaczyna się od miejsca przechowywania historii",
+      "summary": "Rozwojowa informacja o prywatności od O.Bankole. Kontakt: banksmi@mail.com. Przed publikacją wymagana jest ocena prawna.",
       "sections": [
         {
-          "title": "Pamięć i media",
-          "body": "Opowieści, transkrypcje, zdjęcia, projekty audio i scrapbook pozostają w prywatnym przechowywaniu aplikacji pod standardem. LifeTalea nie wymaga konta, automatycznie gromadzi lokalizację lub zawiera reklamę i analizę SDKs. Android Automatyczna kopia zapasów jest wyłączona."
+          "title": "Wspomnienia i pliki",
+          "body": "Opowieści, transkrypcje, zdjęcia, dźwięk i szkice domyślnie pozostają w prywatnej pamięci. LifeTalea nie wymaga konta, nie zbiera automatycznej lokalizacji ani nie zawiera SDK reklamowych i analitycznych. Kopia Androida jest wyłączona."
         },
         {
-          "title": "Wybory, które obejmują inne usługi",
-          "body": "Rozpoznawanie mowy wykorzystuje zainstalowaną usługę mowy, która może przetwarzać mowę w sieci. Jest on aktywowany tylko poprzez push-to-talk z ujawnieniem. Amazon Zakupy komunikują się z Amazon. Eksportowanie do dostawcy dokumentów w chmurze dzieli wybrany archiwum z tym dostawcą."
+          "title": "Usługi zewnętrzne",
+          "body": "Zainstalowana usługa mowy może przetwarzać głos online po świadomym włączeniu. Zakupy komunikują się z Amazon. Eksport do chmury przekazuje wybrane archiwum dostawcy."
         },
         {
-          "title": "Usunięcie i utrzymanie",
-          "body": "Możesz usunąć indywidualne pamięci i załączniki lub wszystkie dane lokalnej biblioteki w ustawieniach. Odinstalowanie usuwa lokalne dane aplikacji. Eksportowane pliki to oddzielne kopie, które samodzielnie zarządza. Rejestracje zakupów są przechowywane przez Amazon pod jego polityką."
+          "title": "Usuwanie i przechowywanie",
+          "body": "Usuwaj elementy lub całą bibliotekę w ustawieniach. Odinstalowanie usuwa dane lokalne. Eksportami zarządzasz osobno; Amazon zachowuje dane zakupów zgodnie ze swoimi zasadami."
         },
         {
           "title": "Ograniczenia bezpieczeństwa",
-          "body": "Prywatne przechowywanie aplikacji polega na zabezpieczeniu urządzenia; lokalna baza danych nie ma oddzielnego klucza szyfrowania aplikacji. Opcjonalnie szyfrowane archiwum używa paszpasu. Nie ma żadnych roszczeń dotyczących kryptowania końcowego lub zakończonej oceny zgodności z prawem."
+          "body": "Prywatna pamięć opiera się na ochronie urządzenia; lokalna baza nie ma osobnego klucza szyfrującego aplikacji. Archiwa można szyfrować hasłem. Nie deklarujemy szyfrowania end-to-end ani pełnej oceny zgodności prawnej."
         }
       ]
     },
     "support": {
-      "title": "Trochę pomocy w następnym rozdziale",
-      "summary": "LifeTalea Jest w rozwoju. Te kroki obejmują lokalne narzędzia obecnie wdrażane.",
+      "title": "Pomoc przy kolejnym rozdziale",
+      "summary": "LifeTalea jest w rozwoju. Te porady dotyczą już wdrożonych narzędzi lokalnych.",
       "sections": [
         {
-          "title": "Nagrywanie nie rozpocznie się",
-          "body": "Sprawdź pozwolenie na mikrofon i bezpłatne przechowywanie. Zapisz pamięć przed załączeniem audio. Jeśli rozpoznawanie nie jest dostępne, użyj pisemnych kontrol; polecenia mowy i nagrywanie dźwięku są oddzielnymi zdolnościami."
+          "title": "Nagrywanie się nie rozpoczyna",
+          "body": "Sprawdź uprawnienie mikrofonu i wolne miejsce. Zapisz wspomnienie przed dodaniem dźwięku. Bez rozpoznawania mowy użyj przycisków; nagrywanie i rozpoznawanie to różne funkcje."
         },
         {
-          "title": "Utrzymuj bezpieczną kopię",
-          "body": "Otwórz ustawienia, wybierz, czy dodać zdjęcia i dźwięk, a następnie utworzyć kopię zapasową. Archiwum przechowuj gdzieś bezpiecznie. Restore potwierdza archiwum i pokazuje przegląd przed importowaniem."
+          "title": "Zachowaj bezpieczną kopię",
+          "body": "W ustawieniach wybierz zdjęcia i dźwięk, a potem utwórz kopię. Przechowuj ją bezpiecznie. Przywracanie sprawdza archiwum i pokazuje podgląd przed importem."
         },
         {
-          "title": "A PDF Archiwum nie przechowuje",
-          "body": "Spróbuj pisać folder z wystarczającą ilością darmowego przechowywania. Sprawdź, czy Twój wybrany dostawca dokumentów jest dostępny. Niepowodzony eksport powinien pozostawić pamięć źródłową nieuczciwą."
+          "title": "PDF lub archiwum się nie zapisuje",
+          "body": "Wybierz zapisywalny folder z wolnym miejscem i sprawdź dostawcę dokumentów. Nieudany eksport nie powinien zmieniać oryginalnych wspomnień."
         }
       ]
     },
     "contact": {
-      "title": "Zostań w kontakcie",
-      "summary": "Kontakt O.Bankole Dla LifeTalea Wsparcie dla banksmi@mail.com.",
+      "title": "Skontaktuj się z nami",
+      "summary": "W sprawach LifeTalea napisz do O.Bankole na banksmi@mail.com.",
       "sections": [
         {
-          "title": "Chroń prywatność swojej rodziny",
-          "body": "Podczas zgłaszania problemu opisuj urządzenie, system operacyjny, wersję aplikacji i kroki. Unikaj wysyłania prywatnych opowieści, zdjęć, nagrań lub kopii zapasowych hasło szyfrująceów."
+          "title": "Chroń prywatność rodziny",
+          "body": "Podaj urządzenie, system, wersję aplikacji i kroki odtworzenia problemu. Nie wysyłaj prywatnych opowieści, zdjęć, nagrań ani haseł do kopii."
         },
         {
-          "title": "Dostępność wsparcia",
-          "body": "Napisz do banksmi@mail.com."
+          "title": "Kontakt z pomocą",
+          "body": "Napisz na banksmi@mail.com."
         }
       ]
     }

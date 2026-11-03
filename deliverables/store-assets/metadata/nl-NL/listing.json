@@ -3,26 +3,26 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Familieherinneringen en verhalen",
-  "shortDescription": "Houd familieverhalen, foto's en stemmen herinneringen samen in een privé tijdschrift. Creëer albums, verkennen een tijdlijn en bewaar scrapbook ontwerpen op uw apparaat.",
-  "longDescription": "Houd de momenten vast. Denk aan de stemmen.\n\nLifeTalea Geef familieverhalen een privé plek op je tablet. Begin met een foto, een paar geschreven lijnen of een stemrecord. niet LifeTalea Het account is vereist.\n\nDe geschiedenis achter de foto's redden\nVoeg foto's, tags en een optionele locatie toe die u zelf invoert. Kies een jaar, maand, exacte datum of onbekende datum. Organiseren van herinneringen in albums en markeren van favorieten.\n\nMaak een kamer voor je stem\nRecord, pauze, herhaal en speel een gesproken verhaal. Audio blijft in privé app opslag. De gratis laag ondersteunt opnames tot 3 minuten. Microfoon toestemming wordt gevraagd wanneer u kiest om te opnemen. Command uitdrukkingen ondersteunen momenteel het Engels. Voice-commandes en gesproken afhankelijk van de geïnstalleerde apparaatdiensten; touch- en tekstalternatieven blijven beschikbaar.\n\nVolg de hoofdstukken van je familie\nBrowse heeft herinneringen opgeslagen in een tijdlijn. Zoek geschreven verhalen, tags en handmatig bewerkte transcripten. Maak scrapbook ontwerpen, volg pagina's en voeg capties toe.\n\nBewaar een kopie die je controleert\nMaak een lokale back-up en kies uitdrukkelijk of je foto's en opnamen moet opnemen. Restore valideren het archief vóór de invoer. Zorg ervoor dat export en wachtzinen ergens veilig blijven.\n\nOptionele premie\nPremium is ontworpen als een eenmalige aankoop voor onbeperkte albums, langer opnamen, lokaal PDF behoudsake export en versleutelde archief creatie. De huidige lokale prijzen worden geleverd door Amazon. De bestaande verhalen blijven toegankelijk zonder Premium.\n\nOntwikkelingsstatus\nDeze lijst is een ontwerp. De automatische transcriptie is niet geconfigureerd. wereldwijde vertalingen, vereiste apparatuurtests en Amazon De aankoopbevestiging is onvolledig. Geen cloud synchronisatie wordt aangeboden. Vergeet dit ontwerp niet als een eindproductlijst te publiceren.\n\nUitgeverij : O.Bankole\nOndersteuning : banksmi@mail.com",
+  "shortDescription": "Ontdek de ontwikkelversie van LifeTalea: verhalen, privéfoto’s, opnamen, albums en herinneringsboeken.",
+  "longDescription": "Een privéplek voor foto’s, stemmen en familieverhalen.\n\nVoeg een titel, tekst en een exacte, geschatte of onbekende datum toe. Vind verhalen terug met tags, favorieten en albums.\n\nImporteer foto’s via de bestandskiezer en neem een verhaal op. De bestanden worden naar de privéopslag van de app gekopieerd.\n\nDe opname blijft op dit apparaat. Als je de app verlaat, wordt de opname gestopt en opgeslagen. Gratis opnamen duren maximaal drie minuten.\n\nDrukken om te spreken gebruikt de spraakdienst van je apparaat. Die kan internet nodig hebben en spraak buiten het apparaat verwerken. Ga alleen verder als je hiermee instemt. LifeTalea slaat geen audiocommando’s op. Spraakcommando’s zijn momenteel alleen beschikbaar in het Engels.\n\nGeplande eenmalige aankoop: onbeperkte albums, langere opnamen, PDF-export en versleutelde lokale back-ups. De voorgestelde Britse testprijs is £4,99; Amazon levert na configuratie de echte lokale prijs.\n\nVerhalen, transcripties, albums en boekconcepten worden opgenomen. Foto’s en opnamen worden alleen opgenomen als je ze selecteert. Onversleutelde exports bevatten leesbare privégegevens. Bewaar je wachtzin veilig: deze kan niet worden hersteld. Huidige limieten: 32 MiB per archief en 16 MiB per bijlage. Grotere bibliotheken vereisen een toekomstige versie.\n\nNog niet gepubliceerd. Apparaattests, taalcontrole en verificatie van Amazon-aankopen lopen nog.\n\nAutomatische transcriptie is niet ingesteld in deze LifeTalea-versie. Opnemen en handmatig transcripties bewerken kan wel.\n\nVertaalconcept. Controle door moedertaalsprekers volgt.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
-    "Speel geschreven verhalen, foto's en lokale stemrecords samen.",
-    "Organiseren van privé albums met tags, favorieten en nadere data.",
-    "Ontdek een familie timeline en creëer gereserveerde scrapbook ontwerpen.",
-    "Maak lokale backups met uitdrukkelijk geselecteerde foto's en audio.",
-    "Gebruik touch- en tekstalternatieven wanneer de spreekdiensten van het apparaat niet beschikbaar zijn."
+    "Een familiedagboek vertelt wie er op de foto staat, wat er gebeurde en waarom het moment belangrijk was.",
+    "Leg pauzes, gelach en vertrouwde uitdrukkingen vast die geschreven tekst niet altijd kan overbrengen.",
+    "Breng verhalen en foto’s samen in lokaal opgeslagen boekconcepten.",
+    "Bekijk herinneringen op datum, ook bij geschatte of onbekende datums.",
+    "Opnemen vereist een werkende microfoon en toestemming. Herkenning en voorlezen vereisen geschikte diensten. Aanraak- en tekstalternatieven blijven onderdeel van de app."
   ],
   "keywords": [
-    "Familiaal geheugenjournal",
-    "Dagboek van stem",
-    "Recorde familieverhalen",
-    "Digitale scrapbook",
-    "Privé gezinsdagboek",
-    "Tijdlijn geheugen"
+    "Familieherinneringen",
+    "Gesproken verhaal",
+    "Familie geschiedenis",
+    "Herinneringsboeken",
+    "Tijdlijn",
+    "Mijn levensdagboek"
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Eerste ontwikkelingsvoorziening. Niet goedgekeurd voor openbare indiening.",
+  "releaseNotes": "Vertaalconcept. Controle door moedertaalsprekers volgt. Nog niet gepubliceerd. Apparaattests, taalcontrole en verificatie van Amazon-aankopen lopen nog.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
@@ -40,5 +40,5 @@
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "71ac9ca26c4e442754fb69bc40304cfdf665e213fec08879ca624887abcdb85b"
+  "targetHash": "2ca93af84978ce9f69081f583fe9b9edec901d25f0bd6def2fea24a8aadb25b7"
 }

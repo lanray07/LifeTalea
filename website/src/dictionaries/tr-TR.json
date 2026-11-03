@@ -44,280 +44,280 @@
   },
   "articles": {
     "features": {
-      "title": "Fotoğraflarınızın arkasındaki hikayeler için bir ev",
-      "summary": "keşfetmek için LifeTalea geliştirme önizlemesi: yazılı anılar, özel fotoğraflar, ses hikayeleri, albümler ve keepsakes.",
+      "title": "Fotoğraflarınızın ardındaki hikâyelere bir yuva",
+      "summary": "LifeTalea geliştirme sürümünü keşfedin: yazılı anılar, özel fotoğraflar, ses kayıtları, albümler ve anı kitapları.",
       "sections": [
         {
           "title": "Bir anla başlayın",
-          "body": "Bir başlık ve birkaç satır yazın. Tam bir tarih, yaklaşık bir yıl veya hiçbir tarih ekleyin. Etiketler, favoriler ve albümler hikayeyi tekrar bulmanıza yardımcı olur."
+          "body": "Başlık, birkaç satır ve kesin, yaklaşık ya da bilinmeyen bir tarih ekleyin. Hikâyeleri etiketler, favoriler ve albümlerle bulun."
         },
         {
-          "title": "Fotoğraflar ve sesler, birlikte",
-          "body": "Fotoğraflarınızı cihazınızın belge picker'ını kullanarak ithal edin. Bir ses hikayesini kaydedin ve yazılı hafızanın yanında tutun. Medya özel uygulama depolama alanına kopyalanır."
+          "title": "Fotoğraflar ve sesler bir arada",
+          "body": "Belge seçiciyle fotoğraf alın ve sesli hikâye kaydedin. Dosyalar uygulamanın özel depolama alanına kopyalanır."
         },
         {
-          "title": "Kendi koleksiyonunu oluşturun",
-          "body": "Kaydetilmiş anılardan scrapbook çerçeveleri oluşturun. Sayfaları düzenleyin, kapakları ekleyin ve koleksiyonunuzu önceden görüntüleyin. PDF ihracat bir Premium özelliktir; satın alma hala ihtiyacı Amazon Test doğrulama için."
+          "title": "Kendi kitabınızı oluşturun",
+          "body": "Sayfaları ve açıklamaları düzenleyip önizlemeyi kontrol edin. PDF dışa aktarma Premium gerektirir; Amazon satın alımlarının test doğrulaması henüz tamamlanmamıştır."
         }
       ]
     },
     "family-memory-journal": {
-      "title": "Detayları yalnızca aileniz biliyor",
-      "summary": "Bir aile anı dergisi fotoğraflara bağlam verir: kim orada, ne oldu ve neden an önemli.",
+      "title": "Yalnızca ailenizin bildiği ayrıntıları koruyun",
+      "summary": "Aile günlüğü fotoğraflara bağlam katar: orada kim vardı, ne oldu ve o an neden önemliydi?",
       "sections": [
         {
-          "title": "Küçük bir soru sor",
-          "body": "Hayat hikayesi ile başlamak yerine, bir yemek, bir yolculuk veya bir yer hakkında sor. Kısa bir cevap değerli bir başlangıçtır. Öykücü, neyi rahat hissettiğini seçmesine izin verin."
+          "title": "Küçük bir soru sorun",
+          "body": "Bir yemek, yolculuk ya da yerle başlayın. Kısa bir yanıt da değerlidir. Anlatıcının paylaşmak istediklerini seçmesine izin verin."
         },
         {
-          "title": "belirsizliği dürüst tutun",
-          "body": "Eski fotoğraflar nadiren mükemmel tarihlerle gelir. LifeTalea Bir yıl, ay, tam tarih veya bilinmeyen tarih kabul edilir. Konumu kendiniz yerleştirmeden yerleşim yeri ekleyebilirsiniz."
+          "title": "Belirsiz tarihleri olduğu gibi bırakın",
+          "body": "LifeTalea yıl, ay, kesin veya bilinmeyen tarih kabul eder. Konum izni vermeden bir yeri kendiniz yazabilirsiniz."
         },
         {
-          "title": "İkinci kopyasını saklayın",
-          "body": "Yerel depolama anıları kapalı tutar, ancak bir cihaz kaybolabilir. Bir yedeklemeyi ihraç edin ve kontrol ettiğiniz bir yerde tutun. Orijinalini silmeden önce arşivini kontrol edin."
+          "title": "İkinci bir kopya saklayın",
+          "body": "Cihaz kaybolabilir. Kontrol ettiğiniz bir yere yedek aktarın ve aslı silmeden önce yedeği kontrol edin."
         }
       ]
     },
     "voice-story-recording": {
-      "title": "Sesiniz için yer verin",
-      "summary": "Bir yazı hikayesinin her zaman tutamayacağı durakları, gülüşleri ve tanıdık ifadeleri yakalayın.",
+      "title": "Sevdiklerinizin sesine yer açın",
+      "summary": "Yazının her zaman aktaramadığı duraksamaları, kahkahaları ve tanıdık ifadeleri saklayın.",
       "sections": [
         {
-          "title": "Notlar dikkatle",
-          "body": "Konuşmacıdan izin isteyin. Sessiz bir yer bul ve kısa bir test kaydı yapın. Önce bir hafıza kaydet, sonra bir hikaye kaydet seçeneğini seçin. İhtiyacınız olduğunda durun veya tekrarlayın."
+          "title": "Özenle kaydedin",
+          "body": "İzin isteyin ve sessiz bir yerde kısa deneme yapın. Önce anıyı kaydedin. Ses kaydını duraklatıp sürdürebilirsiniz."
         },
         {
-          "title": "cihazınızda",
-          "body": "LifeTalea kurtarma AAC Audio içinde M4A Özel uygulama depolama alanında dosyalar. Uygulamayı bırakmak durur ve kayıtları kaydeder. Ücretsiz kayıtlar üç dakikaya sınırlıdır; Premium bu sınırı, depolama şartıyla uzatır."
+          "title": "Cihazınızda saklanır",
+          "body": "LifeTalea, AAC sesi özel M4A dosyalarında tutar. Uygulamadan çıkınca kayıt durur ve kaydedilir. Ücretsiz sınır üç dakikadır; Premium, boş alana bağlı olarak süreyi uzatır."
         },
         {
           "title": "Tabletinizi kontrol edin",
-          "body": "Kayıt için mikrofon ve izin gerektirir. Konuşma komutları yüklü bir tanıma hizmeti kullanır ve kullanılamaz Fire Tabletler için Dokunmatik kontroller mevcuttur."
+          "body": "Kayıt için çalışan mikrofon ve izin gerekir. Sesli komutlar kurulu hizmetlere bağlıdır; Fire tabletlerde bulunmayabilir. Dokunmatik kontroller kullanılabilir."
         }
       ]
     },
     "voice-transcription": {
-      "title": "Konuşulan bir hafızaya yazılı bir eşlik",
-      "summary": "Geçerli bölümde kayıt yapılmamıştır LifeTalea İnşaat için. Ses kaydı ve manuel transcript düzenleme mevcut kalır.",
+      "title": "Sesli anılara yazılı bir eşlikçi",
+      "summary": "Bu LifeTalea sürümünde otomatik ses dökümü yapılandırılmamıştır. Kayıt ve elle döküm düzenleme kullanılabilir.",
       "sections": [
         {
-          "title": "Bugün ne işe yarıyor",
-          "body": "Bir hafıza açın ve çeviri alanını düzenleyin. Şimdiden sahip olduğunuz bir transcript veya pastayı yazabilirsiniz. Düzeltmeler orijinal kayıtların yanında yerel olarak kaydedilir."
+          "title": "Bugün kullanılabilenler",
+          "body": "Bir anıyı açıp dökümünü yazın veya yapıştırın. Değişiklikler asıl kaydın yanında cihazda tutulur."
         },
         {
-          "title": "Serbest bırakılmadan önce ne kaldı",
-          "body": "Kayıtlı dosya çevirisi, uyumlu bir motor, destekli dil doğrulaması ve end-to-end test gerektirir. LifeTalea icat edilmiş metni bir transcript olarak sunmuyor ve bir bulut sağlayıcısına kayıt göndermiyor."
+          "title": "Yayımdan önce gerekenler",
+          "body": "Uyumlu bir motor ve dil testleri hâlâ gereklidir. LifeTalea uydurma döküm üretmez ve kayıtları bulut sağlayıcısına göndermez."
         },
         {
-          "title": "ayrı hizmetler",
-          "body": "Android Komutlar için konuşma tanıma, kaydedilen bir kayıtın geçişinden farklıdır. Bir cihazın bir kapasiteye sahip olması, diğerine destek sağlamaz."
+          "title": "Ayrı işlevler",
+          "body": "Android sesli komut tanıma, kayıtlı dosyaların dökümüyle aynı değildir. Birinin bulunması diğerini garanti etmez."
         }
       ]
     },
     "digital-scrapbook": {
-      "title": "Bir koleksiyonu bir bölümde dönüştürün",
-      "summary": "Yazılı anıları ve fotoğrafları kaydedilen scrapbook çerçevelerine getirin.",
+      "title": "Anıları yeni bir bölüme dönüştürün",
+      "summary": "Hikâyeleri ve fotoğrafları cihazda saklanan kitap taslaklarında birleştirin.",
       "sections": [
         {
           "title": "Anları seçin",
-          "body": "Bir scrapbook oluşturun ve kütüphanenizden anılar seçin. Her sayfa kaydedilen bir hafıza ile ilgilidir, hikayesini ve fotoğraflarını bir araya getirir."
+          "body": "Kitaplığınızdaki anılardan bir kitap oluşturun. Her sayfa, hikâye ve fotoğraflarıyla birlikte kayıtlı bir anıya başvurur."
         },
         {
-          "title": "Doğru ritmi bul",
-          "body": "Sayfaları yukarı veya aşağı hareket edin, bir hikaye veya fotoğraf düzenini seçin ve bir not ekleyin. Önceki Önceki yazı: Önceki Yazıları Kaydet! Kaldırılan kaynak hafızası açıkça işaretlenir, böylece tasarıyı tamir edebilirsiniz."
+          "title": "Doğru akışı bulun",
+          "body": "Sayfaları sıralayın, düzen seçin ve önizlemeden önce açıklamaları kaydedin. Silinen anılar işaretlenir; böylece taslağı düzeltebilirsiniz."
         },
         {
-          "title": "Gizli tutun",
-          "body": "Scrapbook tasarımları yerel. Bir scrapbook oluşturmak onu asla yayınlamaz. Herhangi bir ihraç edilen belgeyi paylaşmaya karar vermeden önce gözden geçirin."
+          "title": "Kontrol sizde kalsın",
+          "body": "Kitap oluşturmak onu yayımlamaz. Taslaklar cihazda kalır. Dışa aktarılan belgeleri paylaşmadan önce kontrol edin."
         }
       ]
     },
     "family-timeline": {
-      "title": "Bölümlerin nasıl bağlandığını hatırlayın",
-      "summary": "Tarih sırasındaki kaydedilen anıları keşfedin, yaklaşık ve bilinmeyen tarihleri olanları da içerir.",
+      "title": "Bölümler arasındaki bağı keşfedin",
+      "summary": "Yaklaşık veya bilinmeyen tarihliler dâhil, anıları tarih sırasıyla keşfedin.",
       "sections": [
         {
           "title": "Yılları takip edin",
-          "body": "Tanıdık zaman çizgisi türleri en yeni tarihlerden en eski tarihlere kadar ve daha sonra istenmeyen hikayeleri yerleştirir. Bir cümleyi arayın, yılda bir albüm veya filtre seçin."
+          "body": "Bilinen tarihler yeniden eskiye sıralanır; tarihsiz hikâyeler sonra gelir. Metin, albüm veya yılla arayın."
         },
         {
-          "title": "Bir Tarih Değişebilir",
-          "body": "Aile araştırmaları genellikle yeni bir ayrıntı ortaya çıkar. Hafıza editöründe olay tarihini ve doğruluğunu düzenleyin; zaman çizgisi güncellenmiş bilgileri kullanır."
+          "title": "Tarih değişebilir",
+          "body": "Aile araştırması yeni ayrıntılar getirebilir. Anının tarihini ve kesinliğini düzenlediğinizde zaman çizelgesi güncellenir."
         },
         {
-          "title": "Keşfedilmemiş Tarih",
-          "body": "Zaman çizgisi yalnızca kaydettiğiniz hikayeleri kullanır. LifeTalea Kütüphanenizi yapılmış aile etkinlikleri ile nüfuz etmez."
+          "title": "Uydurma geçmiş yok",
+          "body": "Zaman çizelgesi yalnızca kaydettiğiniz anıları kullanır. LifeTalea uydurma aile olayları eklemez."
         }
       ]
     },
     "keepsake-books": {
-      "title": "tutmak için bir tutucu",
-      "summary": "Bir yerel oluşturmak PDF bir scrapbook'un seçilmiş anıları, fotoğrafları ve çekimleri.",
+      "title": "Saklanacak bir anı kitabı",
+      "summary": "Seçtiğiniz anılardan, fotoğraflardan ve açıklamalardan yerel PDF oluşturun.",
       "sections": [
         {
-          "title": "Neyi içereceğinizi seçin",
-          "body": "Kitabı bir kapak başlığı verin. A seçeneği4 ya da mektup kağıdı. Yerler ve transkripsiyonlar varsayılan olarak hariç tutulur ve gerektiğinde dahil edilebilir."
+          "title": "İçeriği seçin",
+          "body": "Kapak başlığı ekleyin, A4 veya Letter seçin. Yerler ve dökümler varsayılan olarak hariçtir; isterseniz ekleyebilirsiniz."
         },
         {
-          "title": "Paylaşmadan Önce İnceleme",
-          "body": "PDF'ler cihazda oluşturulur Android* S PDF Ateş Uzun hikayeler ek sayfalarda devam ediyor. Ses baskılı tutucu içine yerleştirilmez. Tipografisi ve fotoğrafları inceleyin PDF Yazdırmadan önce görülecek."
+          "title": "Paylaşmadan önce inceleyin",
+          "body": "PDF, Android ile cihazda hazırlanır. Uzun hikâyeler sonraki sayfalarda sürer; ses eklenmez. Yazdırmadan önce metin ve fotoğrafları kontrol edin."
         },
         {
-          "title": "Geliştirme Durumu",
-          "body": "PDF üretim uygulanır ve cihaz validasyonu altında. Premium ihracat kontrolü doğrulanmış bir kontrol gerektirir Amazon hakları için. Canlı faturalar henüz doğrulanmadı."
+          "title": "Geliştirme durumu",
+          "body": "PDF oluşturma cihazlarda doğrulanıyor. Dışa aktarma, doğrulanmış Amazon Premium hakkı gerektirir. Gerçek satın alımlar henüz doğrulanmamıştır."
         }
       ]
     },
     "offline-memory-journal": {
-      "title": "Hatıralarınız, bağlantı olmadan bile",
-      "summary": "LifeTalea Yerel depolama ve dokunmatik kontroller etrafında tasarlanmıştır, zorunlu bir hesap olmadan.",
+      "title": "Bağlantı olmadan da anılarınız yanınızda",
+      "summary": "LifeTalea, zorunlu hesap olmadan yerel depolamayı ve dokunmatik kontrolleri temel alır.",
       "sections": [
         {
-          "title": "Offline oluşturmaya devam edin",
-          "body": "Yazılı anılar, albümler, ithal fotoğraflar, kaydedilen kayıtlar, zaman çizelgesi tarama ve scrapbook tasarımları yerel verileri kullanır. PDF Üretimi dış belge hizmeti gerektirmez."
+          "title": "Çevrimdışı devam edin",
+          "body": "Hikâyeler, albümler, içe alınan fotoğraflar, kayıtlar, zaman çizelgesi ve taslaklar yerel veri kullanır. PDF için dış belge hizmeti gerekmez."
         },
         {
-          "title": "Sınırları bilmek",
-          "body": "Alışveriş gerektirir Amazon Hizmetler için. Konuşma bilgisayarı internet gerektirir. Kaydetilmiş dosya çevirisi bu yapıda mevcut değildir. Hiçbir bulut senkronizasyonu yapılmamıştır."
+          "title": "Sınırları bilin",
+          "body": "Satın alımlar Amazon gerektirir. Konuşma tanıma internet isteyebilir. Otomatik döküm ve bulut eşitleme sunulmamaktadır."
         },
         {
-          "title": "Backups sizin seçiminizdir",
-          "body": "Seçtiğiniz bir arşivi kaydetmek için belge picker'ı kullanın. Bulut desteklenen bir belge sağlayıcısı seçerseniz, bu sağlayıcı, ihraç edilen dosyayı kendi gizlilik koşulları altında yönetir."
+          "title": "Yedek yerini siz seçin",
+          "body": "Dışa aktarma konumunu seçin. Bulut belge sağlayıcısı kullanırsanız dosyayı o sağlayıcı kendi gizlilik koşullarıyla işler."
         }
       ]
     },
     "fire-tablet-compatibility": {
-      "title": "ile inşa edilmiş Fire Tabletler aklına",
-      "summary": "Bir yerli Kotlin ve Jetpack Compose uygulaması, gerekli Google Play Hizmetleri olmadan.",
+      "title": "Fire tabletler düşünülerek tasarlandı",
+      "summary": "Google Play Hizmetleri zorunlu olmayan, Kotlin ve Jetpack Compose ile geliştirilmiş yerel uygulama.",
       "sections": [
         {
-          "title": "Hedef Platform",
-          "body": "Desteklenen minimum Android Ateş 26. Bu bir teknik minimum, her cihazın sertifikalı olması için bir söz değil. Fire Televizyon uzaktan kumanda mevcut kapsamın dışındadır."
+          "title": "Hedef platform",
+          "body": "En düşük Android API sürümü 26’dır; bu, her cihaz için sertifika değildir. Fire TV kumanda gezintisi mevcut kapsam dışındadır."
         },
         {
-          "title": "cihaz testleri",
-          "body": "Bir bağlantı KFTRWI cihaz raporlama Android Ateş 28 Geliştirme testleri için kullanılabilir. Raporda gerçek testler kaydedilir; ek Fire İşletim sisteminin boyutları ve sürümleri kontrol edilmelidir."
+          "title": "Cihaz testleri",
+          "body": "Geliştirme testlerinde Android API 28 kullanan KFTRWI bulunur. Rapor gerçek sonuçları içerir; diğer Fire boyutları ve sürümleri henüz doğrulanmalıdır."
         },
         {
-          "title": "Sesler cihazdan farklıdır",
-          "body": "Bir mikrofon, kayıtları yalnızca izin ve donanım mevcut olduğunda destekler. Tanımlama ve konuşulan geribildirim aynı zamanda uyumlu yüklü hizmetler gerektirir. Dokunmatik ve metin alternatifleri her zaman tasarımın bir parçasıdır."
+          "title": "Ses cihazdan cihaza değişir",
+          "body": "Kayıt mikrofon ve izin gerektirir. Tanıma ve sesli okuma uyumlu hizmetlere bağlıdır. Dokunmatik ve metin alternatifleri mevcuttur."
         }
       ]
     },
     "languages": {
-      "title": "Ev gibi hissedebilecek bir gazete",
-      "summary": "Geliştirme uygulaması bir 22- Yerel çeviri matris kaplama 17 Öncelikli diller Yerli dil incelemesi hala gerekli.",
+      "title": "Kendi dilinizde bir günlük",
+      "summary": "Geliştirme uygulamasında 17 öncelikli dil için 22 bölgesel seçenek bulunur. Ana dili konuşanların incelemesi gereklidir.",
       "sections": [
         {
-          "title": "Dil Planı",
-          "body": "Hedefler bölgesel İngilizce, İspanyolca, Fransızca ve Portekizce, Almanca, İtalyanca, Hollanda, Polonyalı, İsveççe, Japonca, Hintçe, Arapça, Türkçe, Endonezya, Kore ve Basitleştirilmiş ve Geleneksel Çince içerir."
+          "title": "Planlanan diller",
+          "body": "İngilizce, İspanyolca, Fransızca, Portekizce, Almanca, İtalyanca, Hollandaca, Lehçe, İsveççe, Japonca, Hintçe, Arapça, Türkçe, Endonezce, Korece, Basitleştirilmiş ve Geleneksel Çince."
         },
         {
-          "title": "Bir dil talepleri öncesinde kalite",
-          "body": "Çeviriler yer sahibi kontrolleri, düzen testleri ve incelemeleri geçmelidir. Mağaza dilleri, uygulama dilleri, dağıtım ülkeleri, konuşma tanıma, konuşulan geribildirim ve transcription her biri ayrı destek matrisleri vardır."
+          "title": "Yayımdan önce kalite",
+          "body": "Çeviriler değişken, düzen ve dil kontrollerinden geçmelidir. Uygulama, mağaza, ülkeler ve ses hizmetlerinin destek kapsamları ayrıdır."
         },
         {
-          "title": "Sözleriniz sizin kalsın",
-          "body": "Karşılaştırma dilini değiştirmek kişisel anıları veya kayıtları tercüme etmez. İncelememiş web sitesi çevirileri sadece yerel önizlemede mevcuttur; üretim inceleme gerektirir."
+          "title": "Sözleriniz size ait kalır",
+          "body": "Arayüz dilini değiştirmek kişisel hikâyeleri veya kayıtları çevirmez. İncelenmemiş web çevirileri yalnızca yerel önizlemededir."
         }
       ]
     },
     "pricing": {
-      "title": "Hatıralarınızı tutun. Ekstra seçenekleri seçin.",
-      "summary": "Ücretsiz bir günlük, tek seferlik bir Premium satın alma seçeneği ile. Satın alma bu gelişme önizlemesinde canlı değildir.",
+      "title": "Anıları koruyun. Ekstraları seçin.",
+      "summary": "İsteğe bağlı, tek seferlik Premium satın alımı olan ücretsiz günlük. Geliştirme sürümünde satın alımlar etkin değildir.",
       "sections": [
         {
           "title": "Ücretsiz",
-          "body": "En fazla üç albüm, yazılı anılar, fotoğraflar, bir zaman çizgisi, scrapbook çizimleri ve ses kayıtları en fazla üç dakika. Kurtarılan yazılı anılar kaydedilmez."
+          "body": "Üç albüm, sınırsız sayıda yazılı anı, fotoğraflar, zaman çizelgesi, kitap taslakları ve üç dakikaya kadar kayıt."
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Planlanan tek seferlik haklar: sınırsız albümler, uzun ses kayıtları, PDF İhracat ve şifreli yerel yedekleme. Önerilen UK Test Fiyatı £4.99; uygulama gerçek yerel fiyatı gösterecektir Amazon Konfigürasyon yapıldığında"
+          "body": "Planlanan tek seferlik satın alım: sınırsız albüm, uzun kayıtlar, PDF ve şifreli yerel yedekler. Önerilen Birleşik Krallık test fiyatı £4.99’dur; yapılandırma sonrası gerçek yerel fiyatı Amazon sağlar."
         },
         {
-          "title": "Mevcut hikayeleriniz erişilebilir",
-          "body": "Premium kullanılabilirlik sizi mevcut anılardan kilitlemez. Temel yedekleme ve kurtarma mevcut kalır. Gelişmiş maliyetler ile bulut geçiş tek seferlik bir fiyat sözünde dahil değildir."
+          "title": "Mevcut hikâyeler erişilebilir kalır",
+          "body": "Premium durumu kayıtlı anıları kilitlemez. Temel yedekleme ve geri yükleme kullanılabilir. Sürekli maliyetli bulut dökümü tek seferlik fiyata dâhil diye vaat edilmez."
         }
       ]
     },
     "faq": {
-      "title": "Bilmeye değer birkaç şey",
-      "summary": "Gizlilik, kayıtlar, aile hikayeleri ve yerel koruma ile ilgili pratik cevaplar.",
+      "title": "Bilmeniz gerekenler",
+      "summary": "Gizlilik, kayıtlar ve aile hikâyelerini korumak hakkında pratik yanıtlar.",
       "sections": [
         {
-          "title": "Hesabım gerekiyor mu?",
-          "body": "Temel yerel özellikler gerektirmez LifeTalea Hesap için . Amazon Satın alıcısı hesabı ve sağlanan hizmetleri kullanır. Amazon Appstore için."
+          "title": "Hesap gerekli mi?",
+          "body": "Yerel özellikler LifeTalea hesabı gerektirmez. Satın alımlar Amazon Appstore hesabını ve hizmetlerini kullanır."
         },
         {
-          "title": "Eski Fotoğraflar Nasıl Yapılır?",
-          "body": "Bir küçük albüm ve bir fotoğrafla başlayın. Bildiğiniz isimleri ve bağlamı ekleyin, gerektiğinde yaklaşımlı tarihleri kullanın ve aynı anda bir ayrıntı hakkında bir rakibi isteyin."
+          "title": "Eski fotoğrafları nasıl düzenlerim?",
+          "body": "Küçük bir albüm ve bir fotoğrafla başlayın. Bilinen isimleri, ayrıntıları ve yaklaşık tarihleri ekleyin. Yakınlarınıza her defasında bir ayrıntıyı sorun."
         },
         {
-          "title": "Ebeveynlerimin hayat hikayelerini kaydedebilir miyim?",
-          "body": "Evet, izinleri ve uyumlu bir mikrofon ile. Kısa bir konu ile başlayın ve playback kontrol edin. Tek bir cihazın tek kopyası olarak güvenmeyin."
+          "title": "Anne babamın hikâyelerini kaydedebilir miyim?",
+          "body": "Evet, rızaları ve uyumlu mikrofonla. Kısa bir konuyla başlayıp oynatmayı kontrol edin. Tek kopyanızı yalnızca bir cihazda tutmayın."
         },
         {
-          "title": "Kayıtları geçebilir miyim?",
-          "body": "Otomatik kaydedilen dosya çevirisi mevcut yapılarda mevcut değildir. Bir transcript'i manuel olarak ekleyebilir ve düzenleyebilirsiniz."
+          "title": "Kayıtların dökümünü çıkarabilir miyim?",
+          "body": "Otomatik döküm mevcut değildir. Metni elle ekleyebilir ve düzenleyebilirsiniz."
         },
         {
-          "title": "Ne yapıyor LifeTalea Cihazlar arasındaki senkronizasyon?",
-          "body": "Hiçbir bulut senkronizasyonu yapılmıyor. Yerel arşiv ihracatı ve restorasyonu şu anda sağlanan muhafaza araçlarıdır."
+          "title": "LifeTalea cihazları eşitler mi?",
+          "body": "Bulut eşitleme uygulanmamıştır. Yerel arşivleri dışa aktarabilir ve geri yükleyebilirsiniz."
         }
       ]
     },
     "privacy": {
-      "title": "Gizlilik, bir hikâyenin yaşadığı yerle başlar.",
-      "summary": "Geliştirme Gizlilik Bilgileri O.Bankole. İletişim banksmi@mail.com. Yasal inceleme, yayınlanmadan önce gereklidir.",
+      "title": "Gizlilik, hikâyenin saklandığı yerde başlar",
+      "summary": "O.Bankole tarafından geliştirme gizlilik bildirimi. İletişim: banksmi@mail.com. Yayımdan önce hukuki inceleme gereklidir.",
       "sections": [
         {
-          "title": "Anılar ve Medya",
-          "body": "Hikayeler, transcriptler, fotoğraflar, ses ve scrapbook çerçeveleri varsayılan olarak özel uygulama depolama alanında kalır. LifeTalea bir hesap gerektirmez, otomatik olarak konum toplamak veya reklam ve analiz içerir SDKs. Android Otomatik yedekleme devre dışı bırakılır."
+          "title": "Anılar ve dosyalar",
+          "body": "Hikâyeler, dökümler, fotoğraflar, ses ve taslaklar varsayılan olarak özel depodadır. LifeTalea hesap istemez, konumu otomatik toplamaz, reklam ve analiz SDK’ları içermez. Android yedeklemesi kapalıdır."
         },
         {
-          "title": "Diğer hizmetleri içeren seçenekler",
-          "body": "Konuşma tanıma, bir ağ üzerinden konuşmayı işleyebilecek yüklü konuşma hizmeti kullanır. Sadece bir açıklama ile push-to-talk aracılığıyla etkinleştirilir. Amazon Satın almak ile iletişim kurmak Amazon. Bulut belge sağlayıcısı, seçilen arşivi bu sağlayıcıyla paylaşır."
+          "title": "Dış hizmetler",
+          "body": "Kurulu konuşma hizmeti, açıklama sonrası açıkça etkinleştirildiğinde sesi ağ üzerinden işleyebilir. Satın alımlar Amazon ile iletişim kurar. Bulut dışa aktarımı seçili arşivi sağlayıcıya verir."
         },
         {
-          "title": "kaldırma ve tutma",
-          "body": "Bireysel anılar ve eklentileri veya yerel kütüphane verilerini Ayarlar'da silebilirsiniz. Uninstalling, yerel uygulama verilerini kaldırır. İhracat dosyaları, kendiniz yönettiğiniz ayrı kopyalardır. Satın alma kayıtları tutuluyor Amazon kendi politikaları altında."
+          "title": "Silme ve saklama",
+          "body": "Ayarlar’dan tekil öğeleri veya tüm kitaplığı silin. Uygulamayı kaldırmak yerel verileri siler. Dışa aktarımları ayrı yönetirsiniz; Amazon satın alma kayıtlarını kendi politikalarına göre tutar."
         },
         {
-          "title": "Güvenlik Sınırları",
-          "body": "Özel uygulama depolama cihaz korumalarına dayanır; yerel veritabanı ayrı bir uygulama şifreleme anahtarına sahip değildir. Seçmeli şifreli arşivler bir parola kullanır. Son şifreleme veya tamamlanmış bir yasal uyumluluk değerlendirmesi için hiçbir talep yoktur."
+          "title": "Güvenlik sınırları",
+          "body": "Özel depo cihaz korumasına dayanır; yerel veritabanının ayrı uygulama şifreleme anahtarı yoktur. Arşivler parola ile şifrelenebilir. Uçtan uca şifreleme veya tamamlanmış hukuki uyumluluk incelemesi iddiası yoktur."
         }
       ]
     },
     "support": {
-      "title": "Biraz yardımcı olacak bir sonraki bölümde",
-      "summary": "LifeTalea Gelişmekte olanlar var. Bu adımlar şu anda uygulanan yerel araçları kapsamaktadır.",
+      "title": "Sonraki bölüm için yardım",
+      "summary": "LifeTalea geliştirme aşamasındadır. Bu öneriler uygulanmış yerel araçları kapsar.",
       "sections": [
         {
-          "title": "Bir kayıt başlatmayacak",
-          "body": "Mikrofon izni ve ücretsiz depolama. Audio eklemeden önce hafızayı kaydedin. Tanımlanma mevcut değilse, yazılı kontrolleri kullanın; konuşma komutları ve ses kaydı ayrı yeteneklerdir."
+          "title": "Kayıt başlamıyor",
+          "body": "Mikrofon iznini ve boş alanı kontrol edin. Ses eklemeden önce anıyı kaydedin. Tanıma yoksa düğmeleri kullanın; kayıt ve tanıma farklı işlevlerdir."
         },
         {
           "title": "Güvenli bir kopya tutun",
-          "body": "Ayarları açın, fotoğrafları ve sesleri dahil etmek için seçin, sonra yedekleme oluşturun. Arşivleri güvenli bir yerde saklayın. Restore, arşivi doğrulamaktadır ve ithal etmeden önce bir önizleme gösterir."
+          "body": "Ayarlar’da fotoğraf ve sesin eklenip eklenmeyeceğini seçip yedek oluşturun. Güvenle saklayın. Geri yükleme arşivi doğrular ve içe aktarmadan önce önizleme gösterir."
         },
         {
-          "title": "A PDF Arşiv kaydetmeyecek",
-          "body": "Yeterli ücretsiz depolama ile yazılabilir bir klasör deneyin. Seçtiğiniz belge sağlayıcısının mevcut olduğundan emin olun. Başarısız bir ihracat kaynağı anıları boş bırakmalıdır."
+          "title": "PDF veya arşiv kaydedilemiyor",
+          "body": "Yeterli alanı olan yazılabilir klasör seçin ve belge sağlayıcısını kontrol edin. Başarısız dışa aktarma asıl anıları değiştirmemelidir."
         }
       ]
     },
     "contact": {
-      "title": "dokunmak için",
-      "summary": "İletişim O.Bankole için LifeTalea Destek için banksmi@mail.com.",
+      "title": "Bize ulaşın",
+      "summary": "LifeTalea desteği için O.Bankole’ye banksmi@mail.com adresinden yazın.",
       "sections": [
         {
           "title": "Ailenizin gizliliğini koruyun",
-          "body": "Bir sorunu bildirirken, cihazı, işletim sistemini, uygulama sürümünü ve adımlarını açıklayın. Özel hikayeler, fotoğraflar, kayıtlar veya yedekleme parolaları göndermekten kaçının."
+          "body": "Cihazı, sistemi, uygulama sürümünü ve sorunun adımlarını belirtin. Özel hikâye, fotoğraf, kayıt veya yedek parolası göndermeyin."
         },
         {
-          "title": "Destek Kullanılabilirliği",
-          "body": "yazmak için banksmi@mail.com."
+          "title": "Destek iletişimi",
+          "body": "banksmi@mail.com adresine yazın."
         }
       ]
     }

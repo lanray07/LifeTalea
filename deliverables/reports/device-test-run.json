@@ -1,7 +1,7 @@
 {
-  "executedAt": "2026-11-02T18:23:59.116679+00:00",
+  "executedAt": "2026-11-03T16:44:51.418603+00:00",
   "status": "PASS",
-  "debugApkSha256": "7e2bbaa96cf6fbbe932cd7a43c300702a94587cc2b952cf79e44a653b731b8e4",
+  "debugApkSha256": "01f25141a0ce2fbdcecfeb162db248506775c67a14701616de29e2069c1d3258",
   "testApkSha256": "68ab8327229907c1292fca571d3b4f881ca04bcb50ab20f39ae9d4672248f58a",
   "evidenceFiles": 187
 }
