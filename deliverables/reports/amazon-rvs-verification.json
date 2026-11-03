@@ -1,0 +1,63 @@
+{
+  "executedAt": "2026-11-03T18:42:17.895428+00:00",
+  "status": "BILLING_EVIDENCE_PRESENT_UI_QA_INCOMPLETE_RELEASE_BLOCKED",
+  "uiChecksComplete": false,
+  "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
+  "testApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
+  "lastExecutedTestApkSha256": "2c9dc10404bb0b41587471ed66bffba05951384eec7c66d16fd691a355cf9286",
+  "currentTestApkExecuted": false,
+  "releaseApkSha256": "8105c8c523d8c3f4c4fe829fa67d52a1f642bb08fefbb9def72db52775338481",
+  "serverTests": {
+    "status": "PASS",
+    "tests": 20,
+    "passed": 20,
+    "log": "deliverables/android/build-logs/amazon-check-amazon-rvs-server.log",
+    "scope": "Fictional Amazon responses; real crypto/local HTTP/executable/key-helper tests; not live Amazon RVS"
+  },
+  "androidReceiptContractTests": {
+    "status": "PASS",
+    "passed": 4,
+    "tests": [
+      "legacyPremiumPreferenceCannotGrantAndMissingVerifierNeverStartsPurchaseFlow",
+      "nodeSignedReceiptsBindAccountReceiptAndLifetimeOnFire",
+      "sandboxAndUntrustedEndpointConfigurationCannotUnlockRelease",
+      "tamperedSignaturesAndEvenValidlySignedBadSchemasAreRejected"
+    ],
+    "scope": "Node-signed offline fixtures and actual Fire RSA/JSON/config behavior, not real SDK payment callbacks"
+  },
+  "kotlinUnitTestsPassed": 18,
+  "physicalDeviceTestsPassed": 16,
+  "physicalDeviceTestsRun": 17,
+  "physicalDeviceSuiteStatus": "FAIL",
+  "deviceSeconds": 66.895,
+  "lint": {
+    "Error": 0,
+    "Warning": 260
+  },
+  "layoutSmokeStatus": "NOT_VERIFIED_ON_CURRENT_APP",
+  "serverDeployed": false,
+  "liveAmazonRvsTested": false,
+  "livePurchaseTestsPassed": false,
+  "dockerImageBuilt": false,
+  "productionSigningIdentityCreated": false,
+  "defaultReleaseConfiguration": {
+    "endpointConfigured": false,
+    "signingPublicKeyConfigured": false,
+    "environment": "production",
+    "purchasesEnabled": false
+  },
+  "serverSourceSha256": {
+    "package.json": "11b329de830bc31855a2b100125af167f04f562034564d3ec1e785279af222f4",
+    "Dockerfile": "bad583bce8f91b3766b2cba56b5b5143b30eb2646df00db0624749801ea612b3",
+    ".dockerignore": "3845ada8733f5a074f54ef5ee040fa30294affb4bdcfff9550889737b38831f2",
+    ".env.example": "1459d0f02190a57ea7fa17a5a3acad487fb258f51fe753852d4242a251f21be6",
+    "README.md": "f94e4a27fae61a75dbe85b7b016dc2c59dfdbfa0e3c5fb361a2e152fc852fb10",
+    "src/main.mjs": "943e9d1704665b5bc35647e2e4fd062e7dad4fae05afc457a876445a321ab26b",
+    "src/http.mjs": "49c67f9c44c9d331092dc287b554ec63c9e2525e3d14f3d4c1c1d22b88d017c4",
+    "src/verifier.mjs": "9ae05bd80092e4e98e47c8ecb45ca06a3c38a707887c9d4bc0f0ab2fc1c50c06",
+    "scripts/generate-signing-key.mjs": "d8c131bd6f4c6b2398b0380b784a7e6e16462bdcb3edce8133b964a5117a6aa4",
+    "test/verifier.test.mjs": "819560de68e91d2a24fd74b08ed26658748cdd79e8f6304dd7ed2a813fcf00c4",
+    "test/export-contract-fixture.mjs": "7c67a41644dba2836080ecb9309becf39dc734702a125a64b01d1b3f5aad4ae0"
+  },
+  "remaining": "Deploy/configure a private HTTPS verifier and public app pin; create/approve IAP/prices; real Amazon transaction tests; independent security/privacy/legal/native and remaining product/device gates."
+}

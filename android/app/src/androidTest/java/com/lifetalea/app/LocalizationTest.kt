@@ -26,13 +26,30 @@ import android.view.inputmethod.InputMethodManager
 @RunWith(AndroidJUnit4::class)
 class LocalizationTest {
     @get:Rule val compose = createAndroidComposeRule<MainActivity>()
+    private fun waitForText(text: String, minimum: Int = 1) {
+        compose.waitUntil(20000) {
+            try { compose.onAllNodesWithText(text).fetchSemanticsNodes().size >= minimum }
+            catch (error: IllegalStateException) { if (error.message?.contains("No compose hierarchies") == true) false else throw error }
+        }
+    }
     private fun capture(folder:File, tag:String, name:String) {
         compose.runOnIdle {
             (compose.activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager)
                 .hideSoftInputFromWindow(compose.activity.window.decorView.windowToken,0)
         }
-        compose.waitForIdle()
-        compose.onRoot().captureToImage().asAndroidBitmap().let { image ->
+        var captured: Bitmap? = null
+        compose.waitUntil(20000) {
+            try {
+                val correctLocale = tag == "diagnostic" || compose.activity.resources.configuration.locales[0].toLanguageTag() == tag
+                if (!correctLocale) false else {
+                    captured = compose.onRoot().captureToImage().asAndroidBitmap()
+                    true
+                }
+            } catch (error: IllegalStateException) {
+                if (error.message?.contains("No compose hierarchies") == true) false else throw error
+            }
+        }
+        requireNotNull(captured).let { image ->
             File(folder,"$tag-$name.png").outputStream().use { image.compress(Bitmap.CompressFormat.PNG,100,it) }
         }
     }
@@ -103,7 +120,14 @@ class LocalizationTest {
                 capture(evidence,tag,"home")
                 fun navigate(resource:Int) {
                     compose.onAllNodesWithText(localized.getString(resource)).onFirst().performClick()
-                    compose.waitForIdle()
+                    val marker = when(resource) {
+                        R.string.albums -> R.string.new_album
+                        R.string.keepsakes -> R.string.new_book
+                        R.string.settings -> R.string.create_backup
+                        R.string.memories -> R.string.hero_title
+                        else -> resource
+                    }
+                    waitForText(localized.getString(marker), if(resource == R.string.timeline) 2 else 1)
                 }
                 navigate(R.string.albums)
                 compose.onNodeWithText(localized.getString(R.string.new_album)).assertIsDisplayed()
@@ -115,17 +139,23 @@ class LocalizationTest {
                 capture(evidence,tag,"settings")
                 navigate(R.string.memories)
                 compose.onNodeWithText(localized.getString(R.string.add_memory)).performClick()
+                waitForText(localized.getString(R.string.save_first))
                 capture(evidence,tag,"editor")
                 compose.onNodeWithText(localized.getString(R.string.cancel)).performScrollTo().performClick()
+                waitForText(fixture.title)
                 run {
                     compose.onNodeWithText(fixture.title).performScrollTo().performClick()
+                    waitForText(localized.getString(R.string.record))
                     compose.onNodeWithText(localized.getString(R.string.record)).performScrollTo()
                     capture(evidence,tag,"voice")
                     compose.onNodeWithText(localized.getString(R.string.edit)).performScrollTo().performClick()
+                    waitForText(localized.getString(R.string.transcript))
                     compose.onNodeWithText(localized.getString(R.string.transcript)).performScrollTo()
                     capture(evidence,tag,"transcript")
                     compose.onNodeWithText(localized.getString(R.string.cancel)).performScrollTo().performClick()
+                    waitForText(localized.getString(R.string.back))
                     compose.onNodeWithText(localized.getString(R.string.back)).performScrollTo().performClick()
+                    waitForText(localized.getString(R.string.hero_title))
                 }
             }
             // Unavailable languages fall back to complete English resources.

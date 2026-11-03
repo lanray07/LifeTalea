@@ -1,8 +1,23 @@
+import java.security.KeyFactory
+import java.security.interfaces.RSAPublicKey
+import java.security.spec.X509EncodedKeySpec
+import java.util.Base64
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
     id("com.google.devtools.ksp")
+}
+val receiptUrl = providers.gradleProperty("lifetaleaRvsUrl").getOrElse("")
+val receiptPublicKey = providers.gradleProperty("lifetaleaRvsPublicKey").getOrElse("")
+val receiptEnvironment = providers.gradleProperty("lifetaleaRvsEnvironment").getOrElse("production")
+val purchasesEnabled = providers.gradleProperty("lifetaleaPurchasesEnabled").getOrElse("false")
+require(receiptUrl.isEmpty() || (receiptUrl.length <= 512 && receiptUrl.matches(Regex("https://[A-Za-z0-9.-]+(?::[0-9]{1,5})?/[A-Za-z0-9/_-]*v1/verify")))) { "Use a public HTTPS verifier URL without credentials, query or fragment" }
+require(receiptEnvironment in listOf("production", "sandbox") && purchasesEnabled in listOf("true", "false")) { "Invalid public billing build configuration" }
+if (receiptPublicKey.isNotEmpty()) {
+    val publicKey = runCatching { KeyFactory.getInstance("RSA").generatePublic(X509EncodedKeySpec(Base64.getDecoder().decode(receiptPublicKey))) as RSAPublicKey }.getOrNull()
+    require(publicKey != null && publicKey.modulus.bitLength() >= 2048) { "Supply only the verifier RSA SPKI public key (base64), never private signing material" }
 }
 android {
     namespace = "com.lifetalea.app"
@@ -14,13 +29,16 @@ android {
         versionCode = 1
         versionName = "0.1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "RVS_URL", "\"$receiptUrl\"")
+        buildConfigField("String", "RVS_PUBLIC_KEY", "\"$receiptPublicKey\"")
+        buildConfigField("boolean", "AMAZON_PURCHASES_ENABLED", purchasesEnabled)
     }
     buildFeatures { compose = true; buildConfig = true }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
     kotlinOptions { jvmTarget = "17" }
     buildTypes {
-        debug { applicationIdSuffix = ".debug" }
-        release { isMinifyEnabled = false }
+        debug { applicationIdSuffix = ".debug"; buildConfigField("String", "RVS_ENVIRONMENT", "\"$receiptEnvironment\"") }
+        release { isMinifyEnabled = false; buildConfigField("String", "RVS_ENVIRONMENT", "\"production\"") }
     }
     packaging { resources.excludes += "/META-INF/{AL2.0,LGPL2.1}" }
     testOptions { unitTests.isReturnDefaultValues = true }

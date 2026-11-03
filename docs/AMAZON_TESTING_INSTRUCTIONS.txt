@@ -16,9 +16,9 @@ Core walkthrough:
 8. Close and reopen the app and confirm saved content. Delete test records through the app and delete any exported copies separately.
 
 Billing / release caveat:
-Production purchases are disabled, with the correct public app key now bundled, until server receipt verification is implemented and tested. SDK-only entitlements are permitted solely in the separate debug App Tester package. No account credentials, live payment, sandbox result, LAT approval or Premium activation code is supplied or claimed. The live console contains zero in-app products. Configure and test the real Amazon ENTITLED product before submission; do not submit these incomplete billing instructions as a successful monetization test.
+Production purchases are disabled, with the correct public app key now bundled, until the locally implemented verifier is deployed, its public URL/signing pin are configured and real Amazon transaction tests pass. SDK-only callbacks never grant access; sandbox assertions are accepted only in the separate debug package. No account credentials, live payment, sandbox result, LAT approval or Premium activation code is supplied or claimed. The live console contains zero in-app products. Configure and test the real Amazon ENTITLED product before submission; do not submit these incomplete billing instructions as a successful monetization test.
 
 Language / screenshots:
 The unsigned candidate contains English source UI. The separate debug QA APK supports 22 draft locales. The 176 localized compositions come from that debug package on KFTRWI, landscape 1920x1200. They require native and visual approval and matching release captures before publication. Do not upload a debug/test APK as the store binary.
 
-See AMAZON_OWNER_ACTIONS.md and audit.json for the full blocker list and the exact local verification scope. These instructions are prepared locally; the console was rechecked and its testing-instructions field is currently empty (0/4000). No form was saved.
+See AMAZON_RVS_IMPLEMENTATION.md, AMAZON_OWNER_ACTIONS.md and audit.json for the full blocker list and the exact local verification scope. These instructions are prepared locally; the console was rechecked and its testing-instructions field is currently empty (0/4000). No form was saved.

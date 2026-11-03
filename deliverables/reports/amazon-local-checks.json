@@ -1,7 +1,19 @@
 {
-  "executedAt": "2026-11-03T17:37:20.499452+00:00",
+  "executedAt": "2026-11-03T18:42:09.187125+00:00",
   "status": "PASS",
   "checks": [
+    {
+      "check": "amazon-rvs-server",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "--test",
+        "--test-reporter=tap",
+        "server/receipt-verifier/test/verifier.test.mjs"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-amazon-rvs-server.log"
+    },
     {
       "check": "python-tests",
       "status": "PASS",

@@ -21,3 +21,6 @@ __pycache__/
 localization/local-cache.json
 localization/collateral-cache.json
 deliverables/amazon-submission/*.zip
+*.private.pem
+*.private.key
+**/.kotlin/

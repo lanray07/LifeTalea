@@ -1,82 +1,198 @@
 package com.lifetalea.app.billing
 
 import android.content.Context
+import android.os.SystemClock
+import android.provider.Settings
 import com.amazon.device.iap.*
 import com.amazon.device.iap.model.*
 import com.amazon.device.drm.LicensingService
 import com.lifetalea.app.BuildConfig
+import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 
 data class BillingState(val premium: Boolean = false, val price: String? = null, val available: Boolean = false, val message: String = "billing_unconfigured")
-class AmazonBilling(private val context: Context) : PurchasingListener {
-    companion object { const val SKU = "com.lifetalea.premium" }
+
+class AmazonBilling(private val context: Context, private val gateway: ReceiptGateway = HttpsReceiptGateway(BuildConfig.RVS_URL, BuildConfig.RVS_PUBLIC_KEY, BuildConfig.RVS_ENVIRONMENT, BuildConfig.DEBUG)) : PurchasingListener {
+    companion object { const val SKU = BillingPolicy.SKU }
     private val prefs = context.getSharedPreferences(if (BuildConfig.DEBUG) "iap_debug" else "iap_production", Context.MODE_PRIVATE)
-    // A legacy SDK callback or cached flag is not proof of a verified production purchase.
+    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
+    private val clock = VerifiedClock(System::currentTimeMillis, SystemClock::elapsedRealtime)
+    private val session = BillingSession(BuildConfig.DEBUG, gateway.environment) { clock.now }
+    private val bootCount get() = runCatching { Settings.Global.getInt(context.contentResolver, "boot_count", -1) }.getOrDefault(-1)
     val state = MutableStateFlow(BillingState())
-    private var userId: String? = null
-    private var restoring = false
-    private var restored = false
-    private val configured = runCatching { context.assets.open("AppstoreAuthenticationKey.pem").use { it.read() }; true }.getOrDefault(false)
+    private val publicKeyPresent = runCatching { context.assets.open("AppstoreAuthenticationKey.pem").use { require(it.read() >= 0) }; true }.getOrDefault(false)
+    private var initialized = false
+    private var productReady = false
+    private var refreshing = false
+    private var userRequest: Pair<Long, RequestId>? = null
+    private var productRequest: Pair<Long, RequestId>? = null
+    private var updatesRequest: Pair<Long, RequestId>? = null
+    private var purchaseRequest: Pair<String, RequestId>? = null
+    private var pendingPurchase: Pair<String, String>? = null
+    private var timeout: Job? = null
+    private var expiry: Job? = null
+    private val history = linkedMapOf<String, Receipt>()
+    private var pages = 0
+    private val verificationMutex = Mutex()
+    private val newPurchases = mutableSetOf<String>()
+
+    private fun modeMatches() = runCatching { BillingPolicy.sdkMatches(BuildConfig.DEBUG, gateway.environment, LicensingService.getAppstoreSDKMode()) }.getOrDefault(false)
+    private fun cached(user: String): VerifiedReceipt? {
+        val assertion = prefs.getString("assertion", null) ?: return null
+        val boot = bootCount
+        if (boot < 0 || prefs.getInt("assertion_boot", -2) != boot) return null
+        val observed = prefs.getLong("assertion_elapsed", -1)
+        val serverTime = prefs.getLong("assertion_issued", -1)
+        val delta = SystemClock.elapsedRealtime() - observed
+        if (observed < 0 || serverTime < 0 || delta !in 0..BillingPolicy.MAX_TTL) return null
+        val receipt = gateway.cached(assertion, user, serverTime + delta) ?: return null
+        if (receipt.claims.issuedAt != serverTime) return null
+        clock.anchor(serverTime, observed)
+        return receipt
+    }
+    private fun publish(message: String = "free_tier") {
+        val active = session.current
+        state.value = state.value.copy(premium = active != null, available = initialized && gateway.configured && BuildConfig.AMAZON_PURCHASES_ENABLED && modeMatches() && productReady && session.user != null && !refreshing && purchaseRequest == null,
+            message = if (active != null) "premium_active" else message)
+        prefs.edit().remove("premium").remove("user").apply {
+            if (active != null && prefs.getString("assertion", null) != active.assertion) {
+                putString("assertion", active.assertion); putLong("assertion_issued", active.claims.issuedAt)
+                putLong("assertion_elapsed", SystemClock.elapsedRealtime()); putInt("assertion_boot", bootCount)
+            } else if (active == null && session.user != null) remove("assertion")
+        }.apply()
+        expiry?.cancel()
+        if (active != null) expiry = scope.launch { delay((active.claims.expiresAt - clock.now).coerceIn(1, 30000)); publish() }
+    }
     fun initialize() {
-        if (!configured) return
+        if (!publicKeyPresent || !gateway.configured) return
         runCatching {
-            LicensingService.verifyLicense(context.applicationContext) { _ ->
-                // Initialises SDK mode; a licence failure never locks the local library.
-            }
             PurchasingService.registerListener(context.applicationContext, this)
+            initialized = true
+            LicensingService.verifyLicense(context.applicationContext) { _ -> scope.launch { refresh() } }
         }.onFailure { state.value = state.value.copy(message = "billing_unavailable") }
     }
+    private fun watch(epoch: Long) {
+        timeout?.cancel()
+        timeout = scope.launch { delay(20000); if (session.generation == epoch) { refreshing = false; userRequest = null; updatesRequest = null; publish("billing_unavailable") } }
+    }
     fun refresh() {
-        if (!configured) return
-        if (restoring) return
-        restoring = true; restored = false
-        runCatching { PurchasingService.getUserData() }
-            .onFailure { restoring = false; state.value = state.value.copy(available = false, message = "billing_unavailable") }
+        if (!initialized || !gateway.configured) { state.value = state.value.copy(premium = false, available = false, message = "billing_unconfigured"); return }
+        val epoch = session.beginIdentityCheck()
+        expiry?.cancel()
+        refreshing = true; productReady = false; history.clear(); newPurchases.clear(); pages = 0
+        state.value = state.value.copy(premium = false, available = false)
+        runCatching { userRequest = epoch to PurchasingService.getUserData(); watch(epoch) }
+            .onFailure { refreshing = false; publish("billing_unavailable") }
     }
-    fun purchase() { if (state.value.available && userId != null) runCatching { PurchasingService.purchase(SKU) }.onFailure { state.value = state.value.copy(message = "purchase_failed") } }
-    fun restore() {
-        if (!configured) { state.value = state.value.copy(message = "billing_unconfigured"); return }
-        refresh()
+    fun purchase() {
+        val user = session.user ?: return
+        if (!state.value.available || state.value.premium) return
+        runCatching { purchaseRequest = user to PurchasingService.purchase(SKU); publish("one_time") }
+            .onFailure { purchaseRequest = null; publish("purchase_failed") }
     }
-    private fun grant(value: Boolean, user: String) {
-        // Sandbox entitlements live only in debug storage and can never grant production access.
-        if (value && !BillingPolicy.canGrant(BuildConfig.DEBUG, LicensingService.getAppstoreSDKMode())) return
-        prefs.edit().putBoolean("premium", value).putString("user", user).apply()
-        state.value = state.value.copy(premium = value, message = if (value) "premium_active" else "free_tier")
-    }
+    fun restore() = refresh()
     override fun onUserDataResponse(response: UserDataResponse) {
-        if (response.requestStatus == UserDataResponse.RequestStatus.SUCCESSFUL) {
-            userId = response.userData.userId
-            if (prefs.getString("user", null) != userId) grant(false, userId!!)
-            runCatching { PurchasingService.getProductData(setOf(SKU)); PurchasingService.getPurchaseUpdates(true) }
-                .onFailure { restoring = false; state.value = state.value.copy(available = false, message = "billing_unavailable") }
-        } else { restoring = false; userId = null; state.value = state.value.copy(premium = false, available = false, message = "billing_unavailable") }
+        val request = userRequest ?: return
+        if (request.second != response.requestId || request.first != session.generation) return
+        userRequest = null
+        if (response.requestStatus != UserDataResponse.RequestStatus.SUCCESSFUL || !modeMatches()) {
+            refreshing = false; timeout?.cancel(); publish("billing_unavailable"); return
+        }
+        val user = response.userData.userId
+        if (purchaseRequest?.first != null && purchaseRequest?.first != user) { purchaseRequest = null; pendingPurchase = null }
+        if (!session.identify(request.first, user, cached(user))) { refreshing = false; timeout?.cancel(); publish("billing_unavailable"); return }
+        publish()
+        runCatching {
+            productRequest = request.first to PurchasingService.getProductData(setOf(SKU))
+            updatesRequest = request.first to PurchasingService.getPurchaseUpdates(true)
+            watch(request.first)
+        }.onFailure { refreshing = false; publish("billing_unavailable") }
+        pendingPurchase?.let { pending -> pendingPurchase = null; if (pending.first == user) verifyPurchase(request.first, user, pending.second) }
     }
     override fun onProductDataResponse(response: ProductDataResponse) {
+        val request = productRequest ?: return
+        if (request.second != response.requestId || request.first != session.generation) return
+        productRequest = null
         val product = response.productData?.get(SKU)
-        val ok = response.requestStatus == ProductDataResponse.RequestStatus.SUCCESSFUL && product?.productType == ProductType.ENTITLED
-        // Server RVS is not integrated yet. Do not charge production customers before fulfillment is verifiable.
-        val canPurchase = ok && BillingPolicy.canGrant(BuildConfig.DEBUG, LicensingService.getAppstoreSDKMode())
-        state.value = state.value.copy(price = if (ok) product?.price else null, available = canPurchase, message = if (canPurchase) "one_time" else "billing_unconfigured")
+        productReady = response.requestStatus == ProductDataResponse.RequestStatus.SUCCESSFUL && product?.productType == ProductType.ENTITLED
+        state.value = state.value.copy(price = if (productReady) product?.price else null)
+        publish(if (productReady) "one_time" else "billing_unavailable")
     }
     override fun onPurchaseResponse(response: PurchaseResponse) {
+        val request = purchaseRequest ?: return
+        if (request.second != response.requestId) return
+        purchaseRequest = null
         val receipt = response.receipt
-        if (response.requestStatus == PurchaseResponse.RequestStatus.SUCCESSFUL && response.userData.userId == userId && receipt != null && receipt.sku == SKU && receipt.productType == ProductType.ENTITLED) {
-            grant(!receipt.isCanceled, response.userData.userId)
-            if (state.value.premium) PurchasingService.notifyFulfillment(receipt.receiptId, FulfillmentResult.FULFILLED)
-        } else state.value = state.value.copy(message = "purchase_failed")
+        if (response.requestStatus != PurchaseResponse.RequestStatus.SUCCESSFUL || response.userData.userId != request.first || receipt == null || receipt.sku != SKU || receipt.productType != ProductType.ENTITLED) {
+            publish("purchase_failed"); return
+        }
+        if (session.user == request.first) verifyPurchase(session.generation, request.first, receipt.receiptId)
+        else { pendingPurchase = request.first to receipt.receiptId; if (!refreshing) refresh() }
+    }
+    private fun verifyPurchase(epoch: Long, user: String, receiptId: String) = scope.launch {
+        try {
+            val verified = verifyBound(epoch, user, receiptId)
+            if (session.record(epoch, user, verified)) {
+                if (verified.claims.active) newPurchases.add(receiptId) else newPurchases.remove(receiptId)
+                publish()
+                if (verified.claims.active) runCatching { PurchasingService.notifyFulfillment(receiptId, FulfillmentResult.FULFILLED) }
+            }
+        } catch (error: Exception) { if (error is CancellationException && error !is TimeoutCancellationException) throw error; if (epoch == session.generation && user == session.user) publish("purchase_failed") }
+    }
+    private suspend fun verifyBound(epoch: Long, user: String, receiptId: String) = verificationMutex.withLock {
+        if (epoch != session.generation || user != session.user) throw CancellationException("Stale billing identity")
+        gateway.verify(user, receiptId).also {
+            if (epoch != session.generation || user != session.user) throw CancellationException("Stale billing identity")
+            clock.anchor(it.claims.issuedAt, SystemClock.elapsedRealtime())
+        }
     }
     override fun onPurchaseUpdatesResponse(response: PurchaseUpdatesResponse) {
-        if (response.requestStatus != PurchaseUpdatesResponse.RequestStatus.SUCCESSFUL || response.userData.userId != userId) { restoring = false; state.value = state.value.copy(message = "purchase_failed"); return }
-        response.receipts.filter { it.sku == SKU && it.productType == ProductType.ENTITLED }.forEach {
-            if (restoring) restored = restored || !it.isCanceled else grant(!it.isCanceled, response.userData.userId)
+        val request = updatesRequest ?: return
+        if (request.second != response.requestId || request.first != session.generation) return
+        updatesRequest = null
+        val user = session.user
+        if (response.requestStatus != PurchaseUpdatesResponse.RequestStatus.SUCCESSFUL || user == null || response.userData.userId != user) {
+            refreshing = false; timeout?.cancel(); publish("billing_unavailable"); return
         }
-        if (response.hasMore()) PurchasingService.getPurchaseUpdates(false)
-        else if (restoring) { grant(restored, response.userData.userId); restoring = false }
+        response.receipts.filter { it.sku == SKU && it.productType == ProductType.ENTITLED }.forEach { history[it.receiptId] = it }
+        if (++pages > 100 || history.size > 100) { refreshing = false; timeout?.cancel(); publish("billing_unavailable"); return }
+        if (response.hasMore()) {
+            runCatching { updatesRequest = request.first to PurchasingService.getPurchaseUpdates(false); watch(request.first) }
+                .onFailure { refreshing = false; publish("billing_unavailable") }
+            return
+        }
+        timeout?.cancel()
+        val receipts = history.keys.toList()
+        scope.launch {
+            var unavailable = false
+            try {
+                withTimeout(30000) {
+                    for (id in receipts) {
+                        if (request.first != session.generation || user != session.user) return@withTimeout
+                        try {
+                            val verified = verifyBound(request.first, user, id)
+                            if (session.record(request.first, user, verified)) {
+                                publish()
+                                if (verified.claims.active) runCatching { PurchasingService.notifyFulfillment(id, FulfillmentResult.FULFILLED) }
+                            }
+                        } catch (error: Exception) { if (error is CancellationException) throw error; unavailable = true }
+                    }
+                }
+            } catch (_: TimeoutCancellationException) { unavailable = true }
+            finally {
+                if (scope.isActive && request.first == session.generation && user == session.user) {
+                    session.finishSnapshot(request.first, user, receipts.toSet() + newPurchases)
+                    if (session.current != null) purchaseRequest = null
+                    refreshing = false; publish(if (unavailable) "billing_unavailable" else "free_tier")
+                }
+            }
+        }
     }
-}
-object BillingPolicy {
-    // Only App Tester in the isolated debug package may trust SDK-only receipts.
-    // Replace the production path with server-verified receipts, not a configuration bypass.
-    fun canGrant(debug: Boolean, sdkMode: String) = debug && sdkMode == "SANDBOX"
+    fun close() {
+        initialized = false; session.beginIdentityCheck()
+        userRequest = null; productRequest = null; updatesRequest = null; purchaseRequest = null; pendingPurchase = null
+        scope.cancel()
+    }
 }

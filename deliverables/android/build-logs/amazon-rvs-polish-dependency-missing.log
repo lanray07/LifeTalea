@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "D:\App Projects\LifeTalea\scripts\polish_translations.py", line 113, in <module>
+    if __name__=='__main__':main()
+  File "D:\App Projects\LifeTalea\scripts\polish_translations.py", line 70, in main
+    app.update({key:adapt(value,locale) for key,value in zip(APP_KEYS,lines)})
+  File "D:\App Projects\LifeTalea\scripts\polish_translations.py", line 70, in <dictcomp>
+    app.update({key:adapt(value,locale) for key,value in zip(APP_KEYS,lines)})
+  File "D:\App Projects\LifeTalea\scripts\polish_translations.py", line 36, in adapt
+    text=traditional_converter().convert(text)
+  File "D:\App Projects\LifeTalea\scripts\polish_translations.py", line 31, in traditional_converter
+    from opencc import OpenCC
+ModuleNotFoundError: No module named 'opencc'

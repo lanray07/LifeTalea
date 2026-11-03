@@ -7,6 +7,7 @@ from pathlib import Path
 import hashlib, io, json, os, subprocess, time
 import xml.etree.ElementTree as ET
 from PIL import Image
+from fire_qa_session import awake_device
 
 ROOT = Path(__file__).resolve().parents[1]
 SDK = Path(os.environ.get('ANDROID_HOME', str(Path.home() / 'AppData/Local/Android/Sdk')))
@@ -93,4 +94,8 @@ def main():
         (OUT / 'result.json').write_text(json.dumps({'status': 'PASS' if completed else 'INCOMPLETE', 'debugApkSha256': apk_sha, 'originalSettingsRestored': restored, 'originalSettings': original, 'originalWifiState': wifi, 'failure': failure, 'cases': rows, 'scope': 'Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology.'}, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'status': 'PASS', 'cases': len(rows), 'originalSettingsRestored': restored}))
 
-if __name__ == '__main__': main()
+if __name__ == '__main__':
+    with awake_device(ADB) as qa_power:
+        main()
+    report=json.loads((OUT/'result.json').read_text(encoding='utf-8'));report['qaPowerSettings']=qa_power
+    (OUT/'result.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')

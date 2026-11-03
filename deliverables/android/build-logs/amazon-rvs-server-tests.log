@@ -1,0 +1,28 @@
+✔ real RSA signature binds active entitlement, identity, receipt, SKU, environment and expiry (35.9001ms)
+✔ sandbox has a fixed distinct upstream and signed environment (6.4603ms)
+✔ cancelDate, including zero, revokes entitlement (12.845ms)
+✔ Amazon invalid, canceled and mismatched-user statuses produce signed inactive decisions (15.8263ms)
+✔ throttling, secret failure, server errors and redirects fail closed without leaking upstream errors (7.6962ms)
+✔ wrong receipt, SKU/type, malformed cancellation, missing flags and future purchase cannot grant (27.7391ms)
+✔ production publishing/LAT test receipts require explicit server opt-in; sandbox is still distinct (10.8875ms)
+✔ oversized, absent and malformed Amazon JSON is rejected (9.0372ms)
+✔ transport exceptions are redacted; cancellation signal is propagated (12.095ms)
+✔ request cannot select environment, SKU, upstream host or secret; path-dot and whitespace rejected (96.6111ms)
+✔ assertion lifetime and missing configuration are bounded (7.7462ms)
+✔ global and per-client quotas are bounded and refill; forwarded headers are not trusted (2.0602ms)
+✔ HTTP boundary verifies real JSON requests and returns a signed token with no-store headers (314.2014ms)
+✔ HTTP quota prevents upstream verification (13.8654ms)
+✔ committed Android contract fixtures have valid Node signatures and no private key (25.0718ms)
+✔ upstream timeout aborts an actual pending verification (42.982ms)
+✔ HTTP concurrency cap rejects extra work while an upstream request is pending (19.314ms)
+✔ executable rejects missing or invalid secret/key/bind configuration without printing secrets (3143.7683ms)
+✔ configured executable starts a real local readiness endpoint (483.784ms)
+✔ signing-key helper writes a matching public pair and refuses to replace an existing identity (1757.5227ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7393.968

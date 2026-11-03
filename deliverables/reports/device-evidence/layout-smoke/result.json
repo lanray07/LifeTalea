@@ -29,5 +29,9 @@
       "homeActionInAccessibilityTreeAndWithinDisplay": true
     }
   ],
-  "scope": "Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology."
+  "scope": "Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology.",
+  "qaBatchPowerSettings": {
+    "originalStayAwakeWhilePluggedIn": "0",
+    "restored": true
+  }
 }

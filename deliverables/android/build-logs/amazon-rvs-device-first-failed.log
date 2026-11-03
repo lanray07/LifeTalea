@@ -1,0 +1,290 @@
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+Reset dedicated debug QA fixtures only:
+Success
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.JourneyTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.JourneyTest:
+INSTRUMENTATION_STATUS: test=writeFindEditAndOrganiseAFictionalStory
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.JourneyTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=writeFindEditAndOrganiseAFictionalStory
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.LocalizationTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.LocalizationTest:
+INSTRUMENTATION_STATUS: test=everyDraftLocaleResolvesAndRendersWithMirroredNavigation
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.LocalizationTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stack=java.lang.IllegalStateException: No compose hierarchies found in the app. Possible reasons include: (1) the Activity that calls setContent did not launch; (2) setContent was not called; (3) setContent was called before the ComposeTestRule ran. If setContent is called by the Activity, make sure the Activity is launched after the ComposeTestRule runs
+	at androidx.compose.ui.test.TestOwnerKt.getAllSemanticsNodes(TestOwner.kt:82)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNodes$ui_test_release(SemanticsNodeInteraction.kt:64)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:157)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.AndroidImageHelpers_androidKt.captureToImage(AndroidImageHelpers.android.kt:51)
+	at com.lifetalea.app.LocalizationTest.capture(LocalizationTest.kt:35)
+	at com.lifetalea.app.LocalizationTest.everyDraftLocaleResolvesAndRendersWithMirroredNavigation(LocalizationTest.kt:111)
+
+INSTRUMENTATION_STATUS: stream=
+Error in everyDraftLocaleResolvesAndRendersWithMirroredNavigation(com.lifetalea.app.LocalizationTest):
+java.lang.IllegalStateException: No compose hierarchies found in the app. Possible reasons include: (1) the Activity that calls setContent did not launch; (2) setContent was not called; (3) setContent was called before the ComposeTestRule ran. If setContent is called by the Activity, make sure the Activity is launched after the ComposeTestRule runs
+	at androidx.compose.ui.test.TestOwnerKt.getAllSemanticsNodes(TestOwner.kt:82)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNodes$ui_test_release(SemanticsNodeInteraction.kt:64)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:157)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.AndroidImageHelpers_androidKt.captureToImage(AndroidImageHelpers.android.kt:51)
+	at com.lifetalea.app.LocalizationTest.capture(LocalizationTest.kt:35)
+	at com.lifetalea.app.LocalizationTest.everyDraftLocaleResolvesAndRendersWithMirroredNavigation(LocalizationTest.kt:111)
+
+INSTRUMENTATION_STATUS: test=everyDraftLocaleResolvesAndRendersWithMirroredNavigation
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.PreservationTest:
+INSTRUMENTATION_STATUS: test=exportRejectsManifestTooLargeForRestoreWithoutChangingLibrary
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=exportRejectsManifestTooLargeForRestoreWithoutChangingLibrary
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=restoringPageIdCollisionPreservesExistingKeepsake
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=restoringPageIdCollisionPreservesExistingKeepsake
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=encryptedBackupRoundTripPreservesMediaAndDrafts
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=encryptedBackupRoundTripPreservesMediaAndDrafts
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=pdfHasMultipleReadablePagesAndImages
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=pdfHasMultipleReadablePagesAndImages
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=databaseReopenPreservesDataAndForeignKeys
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=databaseReopenPreservesDataAndForeignKeys
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=duplicateKeepsIndependentAttachmentsAndAlbumLinks
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=duplicateKeepsIndependentAttachmentsAndAlbumLinks
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=failedDuplicateRollsBackRowsLinksAndCopiedFiles
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=failedDuplicateRollsBackRowsLinksAndCopiedFiles
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=corruptArchiveCannotMutateLibrary
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=corruptArchiveCannotMutateLibrary
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=crudRelationshipsAndDeletion
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=crudRelationshipsAndDeletion
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=photoImportIsPrivateAndRejectsInvalidInput
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.PreservationTest
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=photoImportIsPrivateAndRejectsInvalidInput
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.ReceiptVerificationTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.ReceiptVerificationTest:
+INSTRUMENTATION_STATUS: test=sandboxAndUntrustedEndpointConfigurationCannotUnlockRelease
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.ReceiptVerificationTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=sandboxAndUntrustedEndpointConfigurationCannotUnlockRelease
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.ReceiptVerificationTest
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=legacyPremiumPreferenceCannotGrantAndMissingVerifierNeverStartsPurchaseFlow
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.ReceiptVerificationTest
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=legacyPremiumPreferenceCannotGrantAndMissingVerifierNeverStartsPurchaseFlow
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.ReceiptVerificationTest
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=tamperedSignaturesAndEvenValidlySignedBadSchemasAreRejected
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.ReceiptVerificationTest
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=tamperedSignaturesAndEvenValidlySignedBadSchemasAreRejected
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.ReceiptVerificationTest
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=nodeSignedReceiptsBindAccountReceiptAndLifetimeOnFire
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.ReceiptVerificationTest
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=nodeSignedReceiptsBindAccountReceiptAndLifetimeOnFire
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.VoiceDeviceTest
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.VoiceDeviceTest:
+INSTRUMENTATION_STATUS: test=foregroundRecordingPauseResumeAndPlayback
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.VoiceDeviceTest
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=foregroundRecordingPauseResumeAndPlayback
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 60.806
+There was 1 failure:
+1) everyDraftLocaleResolvesAndRendersWithMirroredNavigation(com.lifetalea.app.LocalizationTest)
+java.lang.IllegalStateException: No compose hierarchies found in the app. Possible reasons include: (1) the Activity that calls setContent did not launch; (2) setContent was not called; (3) setContent was called before the ComposeTestRule ran. If setContent is called by the Activity, make sure the Activity is launched after the ComposeTestRule runs
+	at androidx.compose.ui.test.TestOwnerKt.getAllSemanticsNodes(TestOwner.kt:82)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNodes$ui_test_release(SemanticsNodeInteraction.kt:64)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:157)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.AndroidImageHelpers_androidKt.captureToImage(AndroidImageHelpers.android.kt:51)
+	at com.lifetalea.app.LocalizationTest.capture(LocalizationTest.kt:35)
+	at com.lifetalea.app.LocalizationTest.everyDraftLocaleResolvesAndRendersWithMirroredNavigation(LocalizationTest.kt:111)
+
+FAILURES!!!
+Tests run: 17,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

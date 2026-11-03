@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.lifetalea.app.BillingPolicyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-03T17:17:30.503Z" hostname="DESKTOP-MAKK9CA" time="0.009">
+<testsuite name="com.lifetalea.app.BillingPolicyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-03T18:25:01.374Z" hostname="DESKTOP-MAKK9CA" time="0.111">
   <properties/>
-  <testcase name="sandboxCannotGrantProductionEntitlements" classname="com.lifetalea.app.BillingPolicyTest" time="0.009"/>
+  <testcase name="sandboxCannotGrantProductionEntitlements" classname="com.lifetalea.app.BillingPolicyTest" time="0.007"/>
+  <testcase name="verifiedTimeDoesNotFollowWallClockRollbackOrForwardChanges" classname="com.lifetalea.app.BillingPolicyTest" time="0.011"/>
+  <testcase name="cachesRequireIdentityAndExpireWithoutRestart" classname="com.lifetalea.app.BillingPolicyTest" time="0.079"/>
+  <testcase name="staleSnapshotCannotRevokeNewAccount" classname="com.lifetalea.app.BillingPolicyTest" time="0.005"/>
+  <testcase name="environmentSkuAndTimeBoundsCannotBeOverriddenByAnAssertion" classname="com.lifetalea.app.BillingPolicyTest" time="0.0"/>
+  <testcase name="completedRestoreRemovesAbsentReceiptsButNetworkFailureCanKeepSeenSignedCache" classname="com.lifetalea.app.BillingPolicyTest" time="0.001"/>
+  <testcase name="malformedSdkUserCannotStartAVerifiedSession" classname="com.lifetalea.app.BillingPolicyTest" time="0.003"/>
+  <testcase name="cancellationRemovesOnlyItsOwnReceiptRegardlessOfOrder" classname="com.lifetalea.app.BillingPolicyTest" time="0.002"/>
+  <testcase name="accountChangeRejectsLateVerificationAndWrongUser" classname="com.lifetalea.app.BillingPolicyTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

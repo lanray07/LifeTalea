@@ -12,6 +12,7 @@ LOGS = ROOT / 'deliverables/android/build-logs'
 
 def main():
     checks = [
+        ('amazon-rvs-server', ['node', '--test', '--test-reporter=tap', 'server/receipt-verifier/test/verifier.test.mjs']),
         ('python-tests', [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v']),
         ('app-locales', [sys.executable, 'scripts/localize.py', 'validate', '--strict']),
         ('release-locales', [sys.executable, 'scripts/localize.py', 'check-release']),

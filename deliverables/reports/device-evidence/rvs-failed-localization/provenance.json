@@ -1,0 +1,99 @@
+{
+  "status": "FAILED_RUN_PARTIAL_CAPTURES",
+  "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
+  "scope": "Only changed captures retained from failed runs; not a complete or approved screenshot set. Original historical capture bytes restored in the draft composition source directory.",
+  "files": [
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/diagnostic-last-state.png",
+      "sha256": "723fcdf1bc7cdc4e947e0a437a6b6b4f11325c9d578e7f525ae1e93028287133"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-AU-albums.png",
+      "sha256": "8d4005b6a191dd641a72659cb0bc1155391bc3c139573d8d997bfd4a5272965d"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-AU-editor.png",
+      "sha256": "41e42a8a3585126e20a9cd3ba7502d5a32aca12c628903fb29de683d5618128f"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-AU-home.png",
+      "sha256": "463965948341b01dba4872979d634fc5c02dfc491e7aacf3e7d2b2fc52826135"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-AU-keepsakes.png",
+      "sha256": "09fc51e51596c326a9edce69201a2eabdcb4184d39712f0e3c58ecb18fa36ac8"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-AU-settings.png",
+      "sha256": "e63a7a7de9549d734b6d2aed4da529855dae070209aaf5549f7e8ab8fbacaf9e"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-AU-timeline.png",
+      "sha256": "6e2c4adb501921359b844d4b0c0e3285f69aaeeb101201cb825b8169e56b7b86"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-GB-albums.png",
+      "sha256": "3d0b1af697599b5393db06070d34c2656ed4fb3288a9ac9697e66ffe0258ff24"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-GB-editor.png",
+      "sha256": "41e42a8a3585126e20a9cd3ba7502d5a32aca12c628903fb29de683d5618128f"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-GB-home.png",
+      "sha256": "463965948341b01dba4872979d634fc5c02dfc491e7aacf3e7d2b2fc52826135"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-GB-keepsakes.png",
+      "sha256": "b1af5d86286cc9d552f91e1ce193c5dc6c6613e8dd32423ab0b80c461f81f45e"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-GB-settings.png",
+      "sha256": "079952b584f8fa842617addd27a8c5dd8899c22245ff1bb522ee0ef7c37d3767"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-GB-timeline.png",
+      "sha256": "b6df4765402986aa4b0cbcc83a82ce41a6c7723bb25a116995a8ecfb9bf4dbfc"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-GB-transcript.png",
+      "sha256": "40a5599413406eeed58c592fcf96cf90f3e0e23062c8a3dbea5aa43e1adb6302"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-GB-voice.png",
+      "sha256": "723fcdf1bc7cdc4e947e0a437a6b6b4f11325c9d578e7f525ae1e93028287133"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-US-albums.png",
+      "sha256": "8d4005b6a191dd641a72659cb0bc1155391bc3c139573d8d997bfd4a5272965d"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-US-editor.png",
+      "sha256": "41e42a8a3585126e20a9cd3ba7502d5a32aca12c628903fb29de683d5618128f"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-US-home.png",
+      "sha256": "463965948341b01dba4872979d634fc5c02dfc491e7aacf3e7d2b2fc52826135"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-US-keepsakes.png",
+      "sha256": "09fc51e51596c326a9edce69201a2eabdcb4184d39712f0e3c58ecb18fa36ac8"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-US-settings.png",
+      "sha256": "0e175983281eaf3932ae9556c7e0443f302d07f10f6812bbbf226f310191d21b"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-US-timeline.png",
+      "sha256": "5ccfa4f8a20c8708c825e5a23306b1b01628aa4c47266f48160e7e0937600f88"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-US-transcript.png",
+      "sha256": "40a5599413406eeed58c592fcf96cf90f3e0e23062c8a3dbea5aa43e1adb6302"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/rvs-failed-localization/en-US-voice.png",
+      "sha256": "723fcdf1bc7cdc4e947e0a437a6b6b4f11325c9d578e7f525ae1e93028287133"
+    }
+  ]
+}

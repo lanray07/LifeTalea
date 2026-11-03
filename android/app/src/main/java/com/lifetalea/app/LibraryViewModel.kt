@@ -43,5 +43,5 @@ class LibraryViewModel(app: Application) : AndroidViewModel(app) {
         else if (id != null) error.value = "recording_failed"
     }
     fun importPhoto(id: String, uri: Uri) = run { repo.importPhoto(id, uri) }
-    override fun onCleared() { stopRecording(); super.onCleared() }
+    override fun onCleared() { stopRecording(); billing.close(); super.onCleared() }
 }

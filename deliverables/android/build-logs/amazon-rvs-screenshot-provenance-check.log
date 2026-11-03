@@ -1,0 +1,12 @@
+Command: validate_localized_screenshots.py 
+176 nonblank JPEG compositions validated at 1920 × 1200; native approval absent
+
+Command: validate_localized_screenshots.py --refresh
+Traceback (most recent call last):
+  File "D:\App Projects\LifeTalea\scripts\validate_localized_screenshots.py", line 50, in <module>
+    if __name__=='__main__':main()
+  File "D:\App Projects\LifeTalea\scripts\validate_localized_screenshots.py", line 17, in main
+    if run.get('status')!='PASS':raise RuntimeError('A passing full device run is required before refreshing screenshot provenance')
+RuntimeError: A passing full device run is required before refreshing screenshot provenance
+
+PASS: historical 176-asset set validated without relabeling; refresh from failed run rejected.

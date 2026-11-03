@@ -1,7 +1,22 @@
 {
-  "executedAt": "2026-11-03T17:36:40.733295+00:00",
-  "status": "PASS",
-  "debugApkSha256": "97c89b2a6a6a2e88ab80df86c463bb49efc1fef7a02d1736390ba49c259723e6",
-  "testApkSha256": "44d91720ef9f4041f46606ed57820f8860f31a0e8a8489d5ce3f5eb1363fa05d",
-  "evidenceFiles": 187
+  "executedAt": "2026-11-03T18:28:57.619639+00:00",
+  "status": "FAIL",
+  "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
+  "testApkSha256": "2c9dc10404bb0b41587471ed66bffba05951384eec7c66d16fd691a355cf9286",
+  "evidenceFiles": 32,
+  "qaPowerSettings": {
+    "originalStayAwakeWhilePluggedIn": "7",
+    "restored": true
+  },
+  "qaRotationSettings": {
+    "original": {
+      "accelerometer_rotation": "1",
+      "user_rotation": "0"
+    },
+    "restored": true
+  },
+  "qaBatchPowerSettings": {
+    "originalStayAwakeWhilePluggedIn": "0",
+    "restored": true
+  }
 }

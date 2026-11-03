@@ -20,6 +20,8 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Website review gate failed' }
     node scripts/test_static_export.cjs
     if ($LASTEXITCODE -ne 0) { throw 'Static-export prefetch check failed' }
+    node --test server/receipt-verifier/test/verifier.test.mjs
+    if ($LASTEXITCODE -ne 0) { throw 'Amazon server receipt verification tests failed' }
     & .\android\gradlew.bat -p android --no-daemon testDebugUnitTest assembleDebug assembleRelease lintDebug
     if ($LASTEXITCODE -ne 0) { throw 'Android verification failed' }
     npm ci --prefix website

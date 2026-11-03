@@ -2,7 +2,7 @@
 
 Private family stories, photographs, voice memories and keepsakes. Native Kotlin/Jetpack Compose for Fire tablets, with a Next.js marketing website.
 
-**Development preview — release BLOCKED.** Current Amazon gates and local review-package instructions: [Amazon owner actions](docs/AMAZON_OWNER_ACTIONS.md). This repository is not an approved or production-ready Amazon Appstore release. The evidence and remaining gates are recorded in [Release readiness](docs/RELEASE_READINESS.md) and [Test report](docs/TEST_REPORT.md).
+**Development preview — release BLOCKED.** Billing implementation: [server verifier](server/receipt-verifier/README.md). Current Amazon gates and local review-package instructions: [Amazon owner actions](docs/AMAZON_OWNER_ACTIONS.md). This repository is not an approved or production-ready Amazon Appstore release. The evidence and remaining gates are recorded in [Release readiness](docs/RELEASE_READINESS.md) and [Test report](docs/TEST_REPORT.md).
 
 Publisher: **O.Bankole** · Support: **banksmi@mail.com** · [Source repository](https://github.com/lanray07/LifeTalea)
 
@@ -13,7 +13,7 @@ Publisher: **O.Bankole** · Support: **banksmi@mail.com** · [Source repository]
 - English command parser, optional device SpeechRecognizer and TextToSpeech with touch/text alternatives.
 - Scrapbook drafts, page ordering, captions, layout choices and local PDF generation.
 - Local archive export, integrity validation, restore preview, duplicate preservation and optional AES-GCM archive encryption.
-- Free/Premium boundaries and Amazon SDK adapter; production purchasing remains disabled until server receipt verification and Amazon authentication/product configuration are completed.
+- Free/Premium boundaries and Amazon SDK adapter; signed server receipt verification is implemented locally, with production purchases off pending deployment, public pin, Amazon product/prices and real transaction testing.
 - Translation extraction, provider/cache/placeholder validation and review-gated Android resource generation.
 - Original book/waveform identity, generated editorial illustration, editable covers/backgrounds and screenshot source template.
 - Website preview with 352 localized pages across 22 locales, language switching, RTL, structured data, metadata, sitemap, privacy and support content.

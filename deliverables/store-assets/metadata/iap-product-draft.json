@@ -4,7 +4,7 @@
   "sku": "com.lifetalea.premium",
   "productType": "ENTITLED",
   "title": "LifeTalea Premium",
-  "description": "Planned one-time upgrade: additional albums, longer recordings, local PDF keepsake export and encrypted archive creation. Production purchase flow remains disabled pending server receipt verification and Amazon testing.",
+  "description": "Planned one-time upgrade: additional albums, longer recordings, local PDF keepsake export and encrypted archive creation. Production purchase flow remains disabled pending verifier deployment/public pin, real account configuration and Amazon testing.",
   "marketplacePrices": null,
   "pricingApprovalRequired": true,
   "testPriceHypothesisOnly": {
@@ -15,7 +15,7 @@
   "requiredBeforeSubmit": [
     "Confirm SKU and benefits",
     "Approve marketplace prices",
-    "Implement and deploy server RVS; keep shared secret server-only",
+    "Deploy the locally implemented server RVS with real credentials and trusted HTTPS; pin only the server public key in Android",
     "Configure correct Amazon product and run device purchase/restore/refund/account-change tests",
     "Native review of all intended product listing languages"
   ]
