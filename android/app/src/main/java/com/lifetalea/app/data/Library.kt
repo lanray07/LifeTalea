@@ -94,8 +94,8 @@ object MemoryRules {
         when (precision) {
             "UNKNOWN" -> require(date.isEmpty())
             "YEAR" -> require(date.matches(Regex("[0-9]{4}")) && date.toInt() in 1..9999)
-            "MONTH" -> java.time.YearMonth.parse(date)
-            "DAY" -> LocalDate.parse(date)
+            "MONTH" -> { require(date.matches(Regex("[0-9]{4}-[0-9]{2}"))); require(java.time.YearMonth.parse(date).year in 1..9999) }
+            "DAY" -> { require(date.matches(Regex("[0-9]{4}-[0-9]{2}-[0-9]{2}"))); require(LocalDate.parse(date).year in 1..9999) }
             else -> error("Invalid precision")
         }; true
     }.getOrDefault(false)
@@ -127,6 +127,27 @@ class LibraryRepository(val context: Context, val db: LifeDatabase) {
             require(options.outWidth > 0 && options.outHeight > 0)
             dao.save(Attachment(memoryId = id, filename = filename, kind = "photo", name = "Photo"))
         } catch (e: Exception) { target.delete(); throw e }
+    }
+    /** Each duplicate owns its files so deleting either memory cannot damage the other. */
+    suspend fun duplicate(id: String): Memory = withContext(Dispatchers.IO) {
+        val createdFiles = mutableListOf<File>()
+        try {
+            db.withTransaction {
+                val original = dao.allMemories().first { it.id == id }
+                val now = System.currentTimeMillis()
+                val duplicate = original.copy(id = UUID.randomUUID().toString(), createdAt = now, updatedAt = now)
+                dao.save(duplicate)
+                dao.allLinks().filter { it.memoryId == id }.forEach { dao.link(it.copy(memoryId = duplicate.id)) }
+                dao.allMedia().filter { it.memoryId == id }.forEach { attachment ->
+                    val name = UUID.randomUUID().toString() + if (attachment.kind == "audio") ".m4a" else ".photo"
+                    val target = file(name)
+                    createdFiles.add(target)
+                    file(attachment.filename).copyTo(target)
+                    dao.save(attachment.copy(id = UUID.randomUUID().toString(), memoryId = duplicate.id, filename = name))
+                }
+                duplicate
+            }
+        } catch (e: Exception) { createdFiles.forEach { it.delete() }; throw e }
     }
     suspend fun removeMemory(id: String) = withContext(Dispatchers.IO) {
         val files = dao.allMedia().filter { it.memoryId == id }.map { file(it.filename) }

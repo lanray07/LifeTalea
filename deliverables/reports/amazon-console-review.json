@@ -1,0 +1,33 @@
+{
+  "observedAt": "2026-11-03T17:28:22.992494+00:00",
+  "method": "Read-only signed-in in-app browser review; no fields saved, uploads, account changes or submission",
+  "appId": "amzn1.devportal.mobileapp.035a0c55782f4cd68dd2453e79fd420e",
+  "releaseId": "amzn1.devportal.apprelease.103d2ab34c5f43a6b6ba6133db46f7c8",
+  "title": "LifeTalea - Family Stories & Voice Journal",
+  "status": "Incomplete",
+  "submitButtonEnabled": false,
+  "uploadedApkName": "LifeTalea-0.1.0-release-unsigned.apk",
+  "uploadedVersionCode": 1,
+  "uploadedApkSha256": "NOT_OBTAINED; uploaded binary is not established as the current local candidate",
+  "drmAppliedToUploadedApk": true,
+  "languageSupport": [
+    "English"
+  ],
+  "inAppItems": 0,
+  "testingInstructionsCharacters": 0,
+  "exportComplianceCertified": false,
+  "selectedFireTablets": 12,
+  "listedFireTablets": 40,
+  "selectedFireTv": 0,
+  "selectedAutomotive": 0,
+  "countryRegions": "All countries and regions where Amazon sells apps",
+  "targetAudience": "18+",
+  "contentRating": "Complete",
+  "appPricing": "Free",
+  "displayedListingLocale": "English (U.S.)",
+  "tabletIcons": "114 and 512 px present",
+  "displayedScreenshotCount": 3,
+  "publicAuthenticationPemDownloaded": true,
+  "publicKeySha256": "056a8be292f26e52de2b81951b3b51c762c02879dd94fbd35ffad56e994ba40b",
+  "limitations": "Other listing locale variants, all device selections, privacy questionnaire and prices were not re-reviewed. Review page showed Compliance confirmation required. Native product acceptance gates remain independent."
+}

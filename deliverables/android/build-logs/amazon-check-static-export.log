@@ -1,0 +1,1 @@
+Static-export regression: exact browser-request filename, payload preservation, idempotence, HTML preservation and conflict refusal passed

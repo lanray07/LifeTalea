@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.lifetalea.app.MemoryRulesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-02T17:49:32.017Z" hostname="DESKTOP-MAKK9CA" time="0.113">
+<testsuite name="com.lifetalea.app.MemoryRulesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-03T17:17:33.978Z" hostname="DESKTOP-MAKK9CA" time="0.138">
   <properties/>
-  <testcase name="datesDoNotInventPrecision" classname="com.lifetalea.app.MemoryRulesTest" time="0.021"/>
-  <testcase name="localizedDatesPreservePrecision" classname="com.lifetalea.app.MemoryRulesTest" time="0.064"/>
-  <testcase name="unknownDatesAppearLast" classname="com.lifetalea.app.MemoryRulesTest" time="0.023"/>
+  <testcase name="datesDoNotInventPrecision" classname="com.lifetalea.app.MemoryRulesTest" time="0.034"/>
+  <testcase name="localizedDatesPreservePrecision" classname="com.lifetalea.app.MemoryRulesTest" time="0.077"/>
+  <testcase name="unknownDatesAppearLast" classname="com.lifetalea.app.MemoryRulesTest" time="0.02"/>
   <testcase name="localKeyboardDigitsBecomeCanonicalDates" classname="com.lifetalea.app.MemoryRulesTest" time="0.001"/>
-  <testcase name="searchIncludesTranscriptAndTags" classname="com.lifetalea.app.MemoryRulesTest" time="0.003"/>
+  <testcase name="searchIncludesTranscriptAndTags" classname="com.lifetalea.app.MemoryRulesTest" time="0.002"/>
+  <testcase name="allPrecisionsUseCanonicalYears" classname="com.lifetalea.app.MemoryRulesTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

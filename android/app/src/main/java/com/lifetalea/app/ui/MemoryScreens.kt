@@ -111,7 +111,7 @@ import java.util.Locale
             Row { TextButton(onClick = { rename = a; name = a.name }) { Text(tr("rename")) }; TextButton(onClick = { onRemoveAttachment(a) }) { Text(tr("delete")) }; TextButton(onClick = { transcription = true }) { Text(tr("transcription")) } }
         }
         if (memory.transcript.isNotBlank()) { Text(tr("transcript"), style = MaterialTheme.typography.titleLarge); Text(memory.transcript) }
-        Row { TextButton(onClick = { vm.run { vm.repo.save(memory.copy(id = java.util.UUID.randomUUID().toString(), createdAt = System.currentTimeMillis()), vm.links.value.filter { it.memoryId == memory.id }.map { it.albumId }.toSet()); vm.error.value = "saved" } }) { Text(tr("duplicate")) }; TextButton(onClick = onDelete, enabled = !recording.active) { Text(tr("delete"), color = MaterialTheme.colorScheme.error) } }
+        Row { TextButton(enabled = !recording.active, onClick = { vm.run { vm.repo.duplicate(memory.id); vm.error.value = "saved" } }) { Text(tr("duplicate")) }; TextButton(onClick = onDelete, enabled = !recording.active) { Text(tr("delete"), color = MaterialTheme.colorScheme.error) } }
     }
     if (transcription) AlertDialog(onDismissRequest = { transcription = false }, title = { Text(tr("transcription")) }, text = { Text(tr("transcription_unavailable")) }, confirmButton = { TextButton(onClick = { transcription = false; onEdit() }) { Text(tr("edit")) } })
     rename?.let { a -> AlertDialog(onDismissRequest = { rename = null }, title = { Text(tr("rename")) }, text = { Field("title", name, { name = it.take(200) }) }, confirmButton = { TextButton(enabled = name.isNotBlank(), onClick = { vm.run { vm.repo.dao.save(a.copy(name = name)) }; rename = null }) { Text(tr("save")) } }) }

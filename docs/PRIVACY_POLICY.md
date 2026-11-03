@@ -1,6 +1,6 @@
 # LifeTalea development privacy notice
 
-Publisher: O.Bankole. Contact: banksmi@mail.com. Effective draft: 2 November 2026. Source: https://github.com/lanray07/LifeTalea.
+Publisher: O.Bankole. Contact: banksmi@mail.com. Effective draft: 3 November 2026. Source: https://github.com/lanray07/LifeTalea.
 
 LifeTalea is in development. This notice describes current implementation and needs legal review against the final release. It is not a claim of compliance certification.
 
@@ -8,7 +8,7 @@ Memories, transcripts, tags, manually entered locations, imported photographs, a
 
 Microphone access is requested for user-initiated recording or push-to-talk. Saved stories remain local. LifeTalea does not retain raw audio commands. Your installed speech-recognition service may process speech externally and may need internet. Review that service's privacy terms before choosing voice commands. Text and touch controls are available instead. Spoken playback uses your installed TextToSpeech engine; its behaviour depends on that service.
 
-Amazon purchasing communicates with Amazon and uses Amazon account/product/receipt information to determine Premium access. LifeTalea stores a local entitlement and Amazon user identifier for this purpose. Amazon retains its transaction records under its own policies. Memories and media are not sent as part of purchasing.
+The Amazon Appstore SDK may contact Amazon when the app opens to initialise licensing and refresh account/product information, as well as during a purchase or restore. Amazon purchasing uses Amazon account/product/receipt information to determine Premium access. Production purchasing is currently disabled pending server receipt verification and testing. LifeTalea stores a local entitlement and Amazon user identifier for this purpose. Amazon retains its transaction records under its own policies. Memories and media are not sent as part of purchasing.
 
 Automatic file transcription and cloud sync are not configured. LifeTalea does not currently upload stories to a transcription provider.
 

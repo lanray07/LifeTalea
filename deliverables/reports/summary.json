@@ -51,5 +51,7 @@
   "deviceTestsPassed": 8,
   "buildPass": true,
   "websiteChecks": "PASS",
-  "staticChecks": "PASS"
+  "staticChecks": "PASS",
+  "snapshotStatus": "HISTORICAL_NOT_CURRENT",
+  "currentAudit": "deliverables/amazon-submission/audit.json"
 }

@@ -1,0 +1,13 @@
+{
+  "sha256": "72251cfb3ca69314ec61b385bd71358c30993bee65ac8ba3da266005ac714c7f",
+  "package": "com.lifetalea.app",
+  "versionCode": 1,
+  "versionName": "0.1.0",
+  "minSdk": 26,
+  "targetSdk": 35,
+  "debuggable": false,
+  "publicAuthenticationPemBundled": true,
+  "publicAuthenticationPemSha256": "056a8be292f26e52de2b81951b3b51c762c02879dd94fbd35ffad56e994ba40b",
+  "signing": "UNSIGNED / apksigner verify rejected the candidate as expected",
+  "limitations": "Badging and signing inspection do not verify runtime compatibility, Amazon DRM transformation or release approval."
+}

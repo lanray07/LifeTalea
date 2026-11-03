@@ -1,3 +1,5 @@
+> Historical snapshot. Use docs/RELEASE_READINESS.md, docs/TEST_REPORT.md and deliverables/amazon-submission/audit.json for the current audit. The original acceptance statements remain in scope; this snapshot is not a refreshed readiness score.
+
 # Actual test report
 
 Updated 2026-11-02. Final results must be interpreted with their scope.

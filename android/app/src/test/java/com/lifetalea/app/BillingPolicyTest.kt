@@ -5,6 +5,7 @@ import org.junit.Test
 class BillingPolicyTest {
     @Test fun sandboxCannotGrantProductionEntitlements() {
         assertFalse(BillingPolicy.canGrant(false, "SANDBOX")); assertFalse(BillingPolicy.canGrant(false, "UNKNOWN"))
-        assertTrue(BillingPolicy.canGrant(true, "SANDBOX")); assertTrue(BillingPolicy.canGrant(false, "PRODUCTION"))
+        assertTrue(BillingPolicy.canGrant(true, "SANDBOX"))
+        assertFalse(BillingPolicy.canGrant(false, "PRODUCTION")); assertFalse(BillingPolicy.canGrant(true, "PRODUCTION"))
     }
 }

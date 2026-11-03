@@ -20,3 +20,4 @@ __pycache__/
 .translation-models/
 localization/local-cache.json
 localization/collateral-cache.json
+deliverables/amazon-submission/*.zip

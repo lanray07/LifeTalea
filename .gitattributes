@@ -19,3 +19,4 @@
 *.webp binary
 *.pdf binary
 *.jar binary
+android/app/src/main/assets/AppstoreAuthenticationKey.pem -text

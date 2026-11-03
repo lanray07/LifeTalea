@@ -1,0 +1,129 @@
+{
+  "executedAt": "2026-11-03T17:37:20.499452+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "python-tests",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "log": "deliverables/android/build-logs/amazon-audit-python-tests.log"
+    },
+    {
+      "check": "app-locales",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "python.exe",
+        "scripts/localize.py",
+        "validate",
+        "--strict"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-app-locales.log"
+    },
+    {
+      "check": "release-locales",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "python.exe",
+        "scripts/localize.py",
+        "check-release"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-release-locales.log"
+    },
+    {
+      "check": "collateral",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "python.exe",
+        "scripts/validate_collateral.py"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-collateral.log"
+    },
+    {
+      "check": "polish",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "python.exe",
+        "scripts/polish_translations.py",
+        "--check"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-polish.log"
+    },
+    {
+      "check": "browser-locales",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "scripts/test_locale_match.cjs"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-browser-locales.log"
+    },
+    {
+      "check": "website-gate",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "scripts/test_website_review_gate.cjs"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-website-gate.log"
+    },
+    {
+      "check": "static-export",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "scripts/test_static_export.cjs"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-static-export.log"
+    },
+    {
+      "check": "website-typecheck",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "website/node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--project",
+        "website/tsconfig.json"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-website-typecheck.log"
+    },
+    {
+      "check": "website-structure",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "python.exe",
+        "scripts/check_website.py"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-website-structure.log"
+    },
+    {
+      "check": "source-patterns",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "python.exe",
+        "scripts/static_checks.py"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-source-patterns.log"
+    }
+  ],
+  "scope": "Structural, type, editorial regression and narrow source-pattern checks; no native linguistic, live billing, device or independent security approval."
+}

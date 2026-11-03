@@ -1,3 +1,5 @@
+> Historical snapshot. Use docs/RELEASE_READINESS.md, docs/TEST_REPORT.md and deliverables/amazon-submission/audit.json for the current audit. The original acceptance statements remain in scope; this snapshot is not a refreshed readiness score.
+
 # Release readiness — BLOCKED
 
 Updated 2026-11-02. Verified acceptance rate: **39/258 = 15.12%** of mandatory checklist statements. BLOCKED and NOT TESTED are incomplete. This is a conservative evidence metric, not a percentage of code written or a claim that all tests map one-to-one to requirements.

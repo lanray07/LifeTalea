@@ -32,6 +32,14 @@ class MemoryRulesTest {
         val m = Memory(title = "Sunday", tags = "recipe", transcript = "Grandma's kitchen")
         assertTrue(MemoryRules.matches(m, "GRANDMA")); assertTrue(MemoryRules.matches(m, "recipe")); assertFalse(MemoryRules.matches(m, "holiday"))
     }
+    @Test fun allPrecisionsUseCanonicalYears() {
+        listOf("0000", "+10000", "-0001", "24").forEach { year ->
+            assertFalse(MemoryRules.validDate("$year-02", "MONTH"))
+            assertFalse(MemoryRules.validDate("$year-02-28", "DAY"))
+        }
+        assertTrue(MemoryRules.validDate("0001-01-01", "DAY"))
+        assertTrue(MemoryRules.validDate("9999-12", "MONTH"))
+    }
     @Test fun unknownDatesAppearLast() {
         val old = Memory(date = "1990", precision = "YEAR"); val recent = Memory(date = "2024-01-01", precision = "DAY"); val unknown = Memory()
         assertEquals(listOf(recent, old, unknown), MemoryRules.timeline(listOf(unknown, old, recent)))

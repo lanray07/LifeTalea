@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "debugApkSha256": "97c89b2a6a6a2e88ab80df86c463bb49efc1fef7a02d1736390ba49c259723e6",
+  "originalSettingsRestored": true,
+  "originalSettings": {
+    "accelerometer_rotation": "1",
+    "user_rotation": "0",
+    "font_scale": "1.0"
+  },
+  "originalWifiState": "1",
+  "failure": null,
+  "cases": [
+    {
+      "case": "rotation-0-font-1.3",
+      "width": 1200,
+      "height": 1920,
+      "homeActionInAccessibilityTreeAndWithinDisplay": true
+    },
+    {
+      "case": "rotation-1-font-1.3",
+      "width": 1920,
+      "height": 1200,
+      "homeActionInAccessibilityTreeAndWithinDisplay": true
+    },
+    {
+      "case": "wifi-disabled-reopen",
+      "width": 1920,
+      "height": 1200,
+      "homeActionInAccessibilityTreeAndWithinDisplay": true
+    }
+  ],
+  "scope": "Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology."
+}

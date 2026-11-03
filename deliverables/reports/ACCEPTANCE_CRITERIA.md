@@ -1,3 +1,5 @@
+> Historical snapshot. Use docs/RELEASE_READINESS.md, docs/TEST_REPORT.md and deliverables/amazon-submission/audit.json for the current audit. The original acceptance statements remain in scope; this snapshot is not a refreshed readiness score.
+
 # Acceptance criteria and evidence
 
 Statements are preserved from the supplied release gates. PASS requires current evidence; BLOCKED and NOT TESTED remain incomplete. The release has 22 groups; individual checklist statements form the denominator below.

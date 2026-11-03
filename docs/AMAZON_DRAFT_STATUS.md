@@ -1,3 +1,5 @@
+> Read-only recheck on 3 November: see deliverables/reports/amazon-console-review.json and AMAZON_PUBLIC_KEY.md. The public PEM is now bundled locally; the console still has zero IAP items, empty testing instructions and unchecked export certification. The historical saved draft below was not modified.
+
 # Amazon submission draft — 2 November 2026
 
 Status: draft filled; **not submitted or published**. Production release remains blocked by the engineering and verification gates in RELEASE_READINESS.md.

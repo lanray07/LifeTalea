@@ -37,7 +37,7 @@ data class RestorePreview(val memories: Int, val albums: Int, val media: Int, va
 data class ValidatedArchive(val manifest: JSONObject, val files: Map<String, ByteArray>, val preview: RestorePreview)
 class BackupService(private val repo: LibraryRepository) {
     // Keep bounded working copies within tablet heaps. Larger libraries need a streaming format.
-    companion object { const val MAX_ARCHIVE = 32 * 1024 * 1024; const val MAX_ITEM = 16 * 1024 * 1024 }
+    companion object { const val MAX_ARCHIVE = 32 * 1024 * 1024; const val MAX_ITEM = 16 * 1024 * 1024; const val MAX_MANIFEST = 8 * 1024 * 1024 }
     private fun hash(bytes: ByteArray) = MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
     private fun <T> array(items: List<T>, transform: (T) -> JSONObject) = JSONArray().also { a -> items.forEach { a.put(transform(it)) } }
     suspend fun create(includePhotos: Boolean, includeAudio: Boolean, password: CharArray = charArrayOf()): ByteArray = withContext(Dispatchers.IO) {
@@ -57,10 +57,15 @@ class BackupService(private val repo: LibraryRepository) {
                 JSONObject().put("id", it.id).put("memoryId", it.memoryId).put("filename", it.filename).put("kind", it.kind).put("name", it.name).put("durationMs", it.durationMs).put("sha256", hash(bytes))
             })
         }
+        // Never export an archive that our own importer will refuse.
+        val manifestBytes = manifest.toString().toByteArray(Charsets.UTF_8)
+        require(manifestBytes.size <= MAX_MANIFEST)
+        listOf("memories", "albums", "links", "books", "pages", "media").forEach { objects(manifest, it) }
         val result = ByteArrayOutputStream().also { buffer -> ZipOutputStream(buffer).use { zip ->
-            zip.putNextEntry(ZipEntry("manifest.json")); zip.write(manifest.toString().toByteArray(Charsets.UTF_8)); zip.closeEntry()
+            zip.putNextEntry(ZipEntry("manifest.json")); zip.write(manifestBytes); zip.closeEntry()
             blobs.forEach { (name, bytes) -> zip.putNextEntry(ZipEntry("media/$name")); zip.write(bytes); zip.closeEntry() }
         } }.toByteArray()
+        require(result.size <= MAX_ARCHIVE - if (password.isNotEmpty()) 52 else 0)
         if (password.isNotEmpty()) ArchiveCrypto.encrypt(result, password) else result
     }
     private fun objects(m: JSONObject, key: String): List<JSONObject> = m.getJSONArray(key).let { a -> require(a.length() <= 10000); (0 until a.length()).map { a.getJSONObject(it) } }
@@ -74,14 +79,14 @@ class BackupService(private val repo: LibraryRepository) {
                 require(entries.size < 10001 && !entry.isDirectory)
                 require(entry.name == "manifest.json" || entry.name.matches(Regex("media/[a-zA-Z0-9._-]{1,100}")))
                 require(!entries.containsKey(entry.name))
-                val data = readLimited(zip, if (entry.name == "manifest.json") 8 * 1024 * 1024 else MAX_ITEM)
+                val data = readLimited(zip, if (entry.name == "manifest.json") MAX_MANIFEST else MAX_ITEM)
                 size += data.size; require(size <= MAX_ARCHIVE); entries[entry.name] = data
             }
         }
         val manifest = JSONObject(String(entries["manifest.json"] ?: error("No manifest"), Charsets.UTF_8))
         require(manifest.getString("format") == "lifetalea" && manifest.getInt("version") == 1)
         val memories = objects(manifest, "memories"); val albums = objects(manifest, "albums"); val media = objects(manifest, "media"); val books = objects(manifest, "books"); val pages = objects(manifest, "pages"); val links = objects(manifest, "links")
-        fun ids(items: List<JSONObject>): Set<String> = items.map { UUID.fromString(it.getString("id")).toString() }.toSet().also { require(it.size == items.size) }
+        fun ids(items: List<JSONObject>): Set<String> = items.map { it.getString("id").also { id -> require(UUID.fromString(id).toString() == id) } }.toSet().also { require(it.size == items.size) }
         val memoryIds = ids(memories); val albumIds = ids(albums); val bookIds = ids(books); ids(media); ids(pages)
         memories.forEach { require(it.getString("title").isNotBlank() && it.getString("title").length <= 300); require(MemoryRules.validDate(it.getString("date"), it.getString("precision"))); require(it.getString("story").length <= 1000000 && it.getString("transcript").length <= 1000000) }
         links.forEach { require(it.getString("albumId") in albumIds && it.getString("memoryId") in memoryIds) }
@@ -105,7 +110,8 @@ class BackupService(private val repo: LibraryRepository) {
                 objects(m, "albums").filter { it.getString("id") !in existingAlbums }.forEach { dao.save(Album(it.getString("id"), it.getString("title"), it.getString("theme"))) }
                 objects(m, "links").filter { it.getString("memoryId") !in existingMemories }.forEach { dao.link(AlbumMemory(it.getString("albumId"), it.getString("memoryId"))) }
                 objects(m, "books").filter { it.getString("id") !in existingBooks }.forEach { dao.save(Scrapbook(it.getString("id"), it.getString("title"), it.getString("theme"), it.getLong("updatedAt"))) }
-                objects(m, "pages").filter { it.getString("bookId") !in existingBooks }.forEach { dao.save(BookPage(it.getString("id"), it.getString("bookId"), it.getString("memoryId"), it.getInt("position"), it.getString("caption"), it.getString("layout"))) }
+                // Page IDs have no external references: assign fresh IDs to protect existing books.
+                objects(m, "pages").filter { it.getString("bookId") !in existingBooks }.forEach { dao.save(BookPage(UUID.randomUUID().toString(), it.getString("bookId"), it.getString("memoryId"), it.getInt("position"), it.getString("caption"), it.getString("layout"))) }
                 objects(m, "media").filter { it.getString("memoryId") !in existingMemories }.forEach { x ->
                     val name = UUID.randomUUID().toString() + if (x.getString("kind") == "audio") ".m4a" else ".photo"
                     val target = repo.file(name); createdFiles.add(target); target.writeBytes(archive.files.getValue("media/${x.getString("filename")}"))

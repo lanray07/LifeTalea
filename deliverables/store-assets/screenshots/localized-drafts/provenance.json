@@ -7,7 +7,7 @@
   ],
   "format": "JPEG",
   "device": "KFTRWI / Fire OS 7 / landscape",
-  "debugApkSha256": "01f25141a0ce2fbdcecfeb162db248506775c67a14701616de29e2069c1d3258",
+  "debugApkSha256": "97c89b2a6a6a2e88ab80df86c463bb49efc1fef7a02d1736390ba49c259723e6",
   "visualReview": "Not established by this automated validator. Consult the dated delivery report for actual manual samples. Native review and other device sizes remain incomplete.",
   "assets": [
     {
@@ -23,36 +23,36 @@
       "locale": "en-GB",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/albums.jpg",
-      "sha256": "8babaf866a746f415cd7f848f10a851e65c02eb612d1a75330c69023b2d92375",
+      "sha256": "d273354f97899d43ed8fda6d32b111e179bd59a29e95cdc9716a1dea3a084489",
       "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-albums.png",
-      "captureSha256": "2d1102910ab6eae7ff4e49ffe492e31dbfb28a24b541245c99dada982f89380c",
+      "captureSha256": "b712e864ddd5458ca7e156b8b6a633f8196de62a8d983c6df34a7374e047b47d",
       "nativeApproved": false
     },
     {
       "locale": "en-GB",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/timeline.jpg",
-      "sha256": "94308b263029663e2895c743c96278bb9dff232de30d187b1381b0a2fb5c3fd9",
+      "sha256": "311668fa3a7729cbe8a22fed259c4752d8bacb39acbd2b4b6085052d5379aa83",
       "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-timeline.png",
-      "captureSha256": "ab25bcb72e94ad2e737e6dfa1e73299f33fbd16e984a13929c1bd07d2bf14bd8",
+      "captureSha256": "14a7f385b4c9ae60630db7dc56ba13db25803bb5b293d5e0bf5d1f4662c2480d",
       "nativeApproved": false
     },
     {
       "locale": "en-GB",
       "shot": "keepsakes",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/keepsakes.jpg",
-      "sha256": "adf2081039ed0a7c3253b6812a7cc7234502ca25d770cd428855a7bc88af77c9",
+      "sha256": "b4ccc341df3da8af7e7c23f5155b41f5ca5cba76c08cf4710f17d87a422ff65e",
       "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-keepsakes.png",
-      "captureSha256": "8ac79f8044bb3cb7248cb25a1dd91622113a6f5cf9a72ec46fcd3adea1e00b53",
+      "captureSha256": "9dce2d6925fc5464bf94c679600204afc6c3898c0a1cd3fab2ea679f7222020b",
       "nativeApproved": false
     },
     {
       "locale": "en-GB",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/en-GB/settings.jpg",
-      "sha256": "d5f373b961b01100e067e4f2a8ae7b4cee6081b3c6fceef2ed3c6a1246ac8fe0",
+      "sha256": "6a011fe08c64aee6de05c5ea815e7b54bc605db4ae51c57a9091dca3551ed60e",
       "actualCapture": "deliverables/reports/device-evidence/localization/en-GB-settings.png",
-      "captureSha256": "23294b1be8c4a610ce9dea57bbdce4a58a9b6cc741edc8f621758c642d8fc525",
+      "captureSha256": "c5fd3a1a5968d304b94e09f5761701adac4b44a6616a0d9e1f6b4dd0e0035c3d",
       "nativeApproved": false
     },
     {
@@ -104,9 +104,9 @@
       "locale": "en-US",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/timeline.jpg",
-      "sha256": "5ab4db4a6c12464b59b97d8f461fa89e9b1cf83b6ad09bc48ccd9393f50249fe",
+      "sha256": "94308b263029663e2895c743c96278bb9dff232de30d187b1381b0a2fb5c3fd9",
       "actualCapture": "deliverables/reports/device-evidence/localization/en-US-timeline.png",
-      "captureSha256": "d924cb335eeb66eaed592339bda4cbeb47853dccac3ed587edff36671a8191f2",
+      "captureSha256": "ab25bcb72e94ad2e737e6dfa1e73299f33fbd16e984a13929c1bd07d2bf14bd8",
       "nativeApproved": false
     },
     {
@@ -122,9 +122,9 @@
       "locale": "en-US",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/en-US/settings.jpg",
-      "sha256": "e1d1a117be7d164712c5938c4fa2701806ad9f6683e56272a5a86bf369057f0f",
+      "sha256": "30e96eb2f903fe6a57825a76cde08f24cb31d74fc73ef00e9a9c8c385b9e61cd",
       "actualCapture": "deliverables/reports/device-evidence/localization/en-US-settings.png",
-      "captureSha256": "a6e919af35abf1d1fa47dc621c62989ec6c494c8d1b77ad747feb0c4f2269b56",
+      "captureSha256": "f84711096d757ad889ad1cbd726e16ada01b3828dda8630689e7ff61b7da79e1",
       "nativeApproved": false
     },
     {
@@ -167,9 +167,9 @@
       "locale": "en-AU",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/albums.jpg",
-      "sha256": "8babaf866a746f415cd7f848f10a851e65c02eb612d1a75330c69023b2d92375",
+      "sha256": "d273354f97899d43ed8fda6d32b111e179bd59a29e95cdc9716a1dea3a084489",
       "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-albums.png",
-      "captureSha256": "2d1102910ab6eae7ff4e49ffe492e31dbfb28a24b541245c99dada982f89380c",
+      "captureSha256": "b712e864ddd5458ca7e156b8b6a633f8196de62a8d983c6df34a7374e047b47d",
       "nativeApproved": false
     },
     {
@@ -194,9 +194,9 @@
       "locale": "en-AU",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/en-AU/settings.jpg",
-      "sha256": "d5f373b961b01100e067e4f2a8ae7b4cee6081b3c6fceef2ed3c6a1246ac8fe0",
+      "sha256": "42fd1e84e7e8a709a6ceabaf9b3d8c872fb5ce43d66bb3573aab4a540ca1277c",
       "actualCapture": "deliverables/reports/device-evidence/localization/en-AU-settings.png",
-      "captureSha256": "23294b1be8c4a610ce9dea57bbdce4a58a9b6cc741edc8f621758c642d8fc525",
+      "captureSha256": "9d2a19f7453e95347c95676792bb1628e0117855ae1c399757bc3871281778df",
       "nativeApproved": false
     },
     {
@@ -248,27 +248,27 @@
       "locale": "es-ES",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/timeline.jpg",
-      "sha256": "d41135a23bc9a72c6e224d04ce5fa15bbcc333d5b843a5ff245bd5b1776aaeaa",
+      "sha256": "5001ba9ae2ffc3e0000dcd654f8aa717e2b84525134f9ea07067a4a4fbcd06ed",
       "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-timeline.png",
-      "captureSha256": "ec979ef6dfb336888538f6c430974cb135f9a3ed9d2799257673e6b748f1d6ff",
+      "captureSha256": "f786176083172d9a4e5ee61c971ed55a0a0fe8488066e27790c8f6abb0d3d741",
       "nativeApproved": false
     },
     {
       "locale": "es-ES",
       "shot": "keepsakes",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/keepsakes.jpg",
-      "sha256": "678273f41e292d13bd231eb1c88410929916d576c35053073a50916f333c026b",
+      "sha256": "db8a57bfbcabb8c7302aeaabfada132580e189399708f84188efaee4f26c288a",
       "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-keepsakes.png",
-      "captureSha256": "1a27ff15ac9305bae43f461ef3952d30335cd4a505a1b3be465fbda3f0762a04",
+      "captureSha256": "b7877d2f077e018e3a1bf8b4a70be3b274e30a6ebdf13b973cfcda3ca2aa417c",
       "nativeApproved": false
     },
     {
       "locale": "es-ES",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/es-ES/settings.jpg",
-      "sha256": "aa221e49442c8ebd4745e9cf56babd5785a40c5393fb354fd234098674f585f8",
+      "sha256": "4f627d363b6f26c70cc6e5ee9e3958d286ba6e30e53c4348a96a476ac8bbf479",
       "actualCapture": "deliverables/reports/device-evidence/localization/es-ES-settings.png",
-      "captureSha256": "27b33cd4227957c92f162f4ac0256455266c87a489487f3fa565c7f444478ad7",
+      "captureSha256": "5ea04d1e71971b6aa6c45ccb7cb5ec868ae3292d04ee20d45eb6e0b926091091",
       "nativeApproved": false
     },
     {
@@ -311,36 +311,36 @@
       "locale": "es-419",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/albums.jpg",
-      "sha256": "441698e12d6845f43a848e0648343a352f30b7b834bb97e1b93a233b869e586c",
+      "sha256": "49083b4ac0220d4d1e3b3a751667f5d96205aae3610a3377d0f190ec56db3ed5",
       "actualCapture": "deliverables/reports/device-evidence/localization/es-419-albums.png",
-      "captureSha256": "b4087e0a2926dd10a1a94e31e7e55f7a2be878757b2d962149212d07bf6c3e4b",
+      "captureSha256": "c152e8d62295c69cf293dbe64e244f9fca3eb32c9fe079d29bfb90662c01d53f",
       "nativeApproved": false
     },
     {
       "locale": "es-419",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/timeline.jpg",
-      "sha256": "f947e4afed1864d88ba7ee70abbe73d0a72aea0382b068cd197aa6c40b99bda2",
+      "sha256": "5001ba9ae2ffc3e0000dcd654f8aa717e2b84525134f9ea07067a4a4fbcd06ed",
       "actualCapture": "deliverables/reports/device-evidence/localization/es-419-timeline.png",
-      "captureSha256": "6daa785f716903c0d4f42dffb7d6b1647a7e02f6b1f4fa9e377ef546e863165a",
+      "captureSha256": "f786176083172d9a4e5ee61c971ed55a0a0fe8488066e27790c8f6abb0d3d741",
       "nativeApproved": false
     },
     {
       "locale": "es-419",
       "shot": "keepsakes",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/keepsakes.jpg",
-      "sha256": "678273f41e292d13bd231eb1c88410929916d576c35053073a50916f333c026b",
+      "sha256": "db8a57bfbcabb8c7302aeaabfada132580e189399708f84188efaee4f26c288a",
       "actualCapture": "deliverables/reports/device-evidence/localization/es-419-keepsakes.png",
-      "captureSha256": "1a27ff15ac9305bae43f461ef3952d30335cd4a505a1b3be465fbda3f0762a04",
+      "captureSha256": "b7877d2f077e018e3a1bf8b4a70be3b274e30a6ebdf13b973cfcda3ca2aa417c",
       "nativeApproved": false
     },
     {
       "locale": "es-419",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/es-419/settings.jpg",
-      "sha256": "e45405df7db95d1b6145a5283f927fdaf852e59d1980e78dc20ac732a25c4978",
+      "sha256": "a9f636652ceda944581acfb544a8b6cab4ccb581599e0cb8f7765eda551b6542",
       "actualCapture": "deliverables/reports/device-evidence/localization/es-419-settings.png",
-      "captureSha256": "348998736958500f6cb4693c965256f8369040ee495ab9102355c345e8066617",
+      "captureSha256": "baf69c6a1191c8cb3ddf4debcf142fc1fa940dddadd75c88be067bab03972293",
       "nativeApproved": false
     },
     {
@@ -383,27 +383,27 @@
       "locale": "fr-FR",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/albums.jpg",
-      "sha256": "e0350a2f08101d4845219bbd9a22b7272f448ea57b5451339e227ea177ff2850",
+      "sha256": "00b161d25299a875a5679e7d0bbbaed0863a1772dee75e816f20d50829f5d958",
       "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-albums.png",
-      "captureSha256": "212e1a1fb6da54a36b49e8b89bb3a4d6c5b107765eb7f2c2c5eca08af8fc6b0c",
+      "captureSha256": "28d47c61becc376adc08d22b7bc6c06eac5372e0c9b3fa4d8689156d371a2257",
       "nativeApproved": false
     },
     {
       "locale": "fr-FR",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/timeline.jpg",
-      "sha256": "c154270fe49aa9476136d364d79c8a33bcf93d8cc89c90e32b66a700965269d9",
+      "sha256": "40dc1dd0c5891677a901c4833b3a19b85cd667abd4277ca91876718be452ff3e",
       "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-timeline.png",
-      "captureSha256": "578b81f8e1ce3b7239baaf254d1038845170220cf171a8ef23c7a4c1562b7405",
+      "captureSha256": "f521c27955d10a9b62b70b81286f4ed0dff7dd0da4cb80eca8bb4551158eff6f",
       "nativeApproved": false
     },
     {
       "locale": "fr-FR",
       "shot": "keepsakes",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-FR/keepsakes.jpg",
-      "sha256": "8695e67e01106187881dc83d59cc7ba888851d22b1b65201d3ba7fc658db2a47",
+      "sha256": "b9133771d5b6d37260cc2b01fca44c5cafd40af90c2648319824f04b91d8da7c",
       "actualCapture": "deliverables/reports/device-evidence/localization/fr-FR-keepsakes.png",
-      "captureSha256": "a56a4d481e70d77296e1114518791aa03dd6a2c4e39228b59d05a156ca3505e8",
+      "captureSha256": "653104684affaef929ef0daad35400bbc50ca98e3d44608c088df10114feb0dc",
       "nativeApproved": false
     },
     {
@@ -455,9 +455,9 @@
       "locale": "fr-CA",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/albums.jpg",
-      "sha256": "9bc96591114864f4636d2d0272ad38e8057ceb14b30dd8fb6cd3bf0f1cc33989",
+      "sha256": "0bf332f667b055ebb440679a1ea336638fc58df7c9305faca5dfe53a44085616",
       "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-albums.png",
-      "captureSha256": "4c0285aac72b11d5aeb7d860865dcbbf67f1953bcff172d45fe476fd7cfaa091",
+      "captureSha256": "d0cca05ea1ca87e256d30ce9c8f0987b75efd1dcb982b6f691ca4b5253f4e1fd",
       "nativeApproved": false
     },
     {
@@ -473,18 +473,18 @@
       "locale": "fr-CA",
       "shot": "keepsakes",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/keepsakes.jpg",
-      "sha256": "a1ef6e1efbed6a19ecae62d1b7a02034c762a7c8ae5622a744d793d76e0b4085",
+      "sha256": "b9133771d5b6d37260cc2b01fca44c5cafd40af90c2648319824f04b91d8da7c",
       "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-keepsakes.png",
-      "captureSha256": "a25280e88513f20ebcc54fa95112bbe9cb798278dbd8973a915f4253b64646b4",
+      "captureSha256": "653104684affaef929ef0daad35400bbc50ca98e3d44608c088df10114feb0dc",
       "nativeApproved": false
     },
     {
       "locale": "fr-CA",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/fr-CA/settings.jpg",
-      "sha256": "79eef1f2433fc55d74ee00f45af424ec18ff890d0fa359b3fc1000933ff92030",
+      "sha256": "69d0920de8b60c9c8d5169a69fe2a9605fb71d42b356addf1b738309fddecac2",
       "actualCapture": "deliverables/reports/device-evidence/localization/fr-CA-settings.png",
-      "captureSha256": "25a743dda859cb05a0346e337ebb14bf148e23e369caa85f9aff76c9698347f1",
+      "captureSha256": "6591df4683a63fa3cc036fec352471705d875b3d727f4b75da803652dae7c3dc",
       "nativeApproved": false
     },
     {
@@ -536,9 +536,9 @@
       "locale": "de-DE",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/timeline.jpg",
-      "sha256": "00068c979fb35c368dd5cc6546909f7d1ab4d5fcacb1e83c7528a5a5ce52db50",
+      "sha256": "40ce3b1a9dbb95bf31d231589c906132b2a3d37c78581ab0e4a413ef74625502",
       "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-timeline.png",
-      "captureSha256": "b39d2af77f0e2ed66e21a1d90b51a653e33fda59242cb11caea5b0d4b705f8e5",
+      "captureSha256": "3458e538a6c653d3c8f4adce6d6a6a0af6ed543728a0f7b6d7268dbee766134d",
       "nativeApproved": false
     },
     {
@@ -554,9 +554,9 @@
       "locale": "de-DE",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/de-DE/settings.jpg",
-      "sha256": "233eb8e6745f477503a09a69d1686f4d39fa33052a4a4f37add714498c452399",
+      "sha256": "daaf2c1605245315fa59badb27a3af513caede93c935e74e27e78ccb08fb48db",
       "actualCapture": "deliverables/reports/device-evidence/localization/de-DE-settings.png",
-      "captureSha256": "5ff97eafe7fdb16dd2d20f0be11052a986d0e2d9b31c3ae707adb7674f3151db",
+      "captureSha256": "8441b08ec23ae34e062353203ac6a3f9266596033e96736ca5bc153be85d5466",
       "nativeApproved": false
     },
     {
@@ -599,18 +599,18 @@
       "locale": "it-IT",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/albums.jpg",
-      "sha256": "39767eb0945c1558176bfa0901be174ff9524e34b127afecb34d0adefc97f5e7",
+      "sha256": "2b6d4c112d22e5c5256171d9c6383619d334e6bc65f2a909259dcc2bc73dfe61",
       "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-albums.png",
-      "captureSha256": "e9be00d267e15f88114ac35381e99f3df51ebf6e2fa1578da31951f7ef74cb50",
+      "captureSha256": "bf2716856a1e28a855d9f230d22fd0979fb34352ca295d48c3373d03c2fdd747",
       "nativeApproved": false
     },
     {
       "locale": "it-IT",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/timeline.jpg",
-      "sha256": "5d09a9f8973bdb2ecef54b22c82f8fcef6236f796d67e10ab9152d7342ca203b",
+      "sha256": "5bc3f4c899c0e01185ff9a7c97ebc61ad8fbfdaf288e02a19e7be59b6ec77e4f",
       "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-timeline.png",
-      "captureSha256": "3400050cc3c63f99b530b248799b4b41d20dd903398bf3b15b7b540dca02d172",
+      "captureSha256": "e4cd4cf808908303b3cabee34b9c65c1db3b004045653c88e7875bdd526741a8",
       "nativeApproved": false
     },
     {
@@ -626,9 +626,9 @@
       "locale": "it-IT",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/it-IT/settings.jpg",
-      "sha256": "de86d23155c29a597562ed7b41f1c92e2a747f3c9149658a2ffcf1c1480e6844",
+      "sha256": "663cdf3e99c24351fca5fbf1ddf0e13180332c226d82533703d5b170484112ac",
       "actualCapture": "deliverables/reports/device-evidence/localization/it-IT-settings.png",
-      "captureSha256": "ce93d991932fb4c47c98c4e3fc9ecce18738263a1a5981c6d21087e388f1011f",
+      "captureSha256": "b3a2cc5ec5ae3d51f5d4d4a396f103347e68403750d462eff4bd5b318f2cae08",
       "nativeApproved": false
     },
     {
@@ -671,18 +671,18 @@
       "locale": "pt-BR",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/albums.jpg",
-      "sha256": "14095a6d142d14da9dc05c81363d1d96e056be1b347438901dc0d96c78be5668",
+      "sha256": "493a8526bbfe9d82f4c9a921eecd9c2166b2ddff9ec243ccaa2b7e934d9d8414",
       "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-albums.png",
-      "captureSha256": "ebcff150f512c72b8124a6829bbbafb7c28900d19e5ec0cf565e8006f183eef4",
+      "captureSha256": "cfa4a86c39ed1a649e6b9a7da7ea0a71a410a4ff4b7b1b84195bf404488b4fc8",
       "nativeApproved": false
     },
     {
       "locale": "pt-BR",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/timeline.jpg",
-      "sha256": "0aec685eedf07db9495271b38f990f87de7526b66875b1f8136acd84fdfece01",
+      "sha256": "1e8c0e58d1cbfff9882ae2d82992a5b20e893d59c6d8aa47859e36c71062f432",
       "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-timeline.png",
-      "captureSha256": "969d3f703139516fcb1697825bc738548f600ad01406e9807aaea9df4a9709d9",
+      "captureSha256": "6b5d42ca13cc8c5c38504fac7d44ee90d3aaa4cb3af9db831037c8bb07fde8f6",
       "nativeApproved": false
     },
     {
@@ -698,9 +698,9 @@
       "locale": "pt-BR",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-BR/settings.jpg",
-      "sha256": "7f33c3a736dbb7752ec6bf85c715eda33ec1e54bf40e93c097695838c0a83f61",
+      "sha256": "e267551ec2b4427167e8ca775d6cf86ce22768f7cb40f3567f1e35aae7e0fad9",
       "actualCapture": "deliverables/reports/device-evidence/localization/pt-BR-settings.png",
-      "captureSha256": "65b49676b8612cb590c145d9329ed98c9862ea320bcbe88dc61720d9ecce88b8",
+      "captureSha256": "4594f71860d1f77d04913fb0320bb0367cfca19c19912dd1c78802d01c9c9684",
       "nativeApproved": false
     },
     {
@@ -752,9 +752,9 @@
       "locale": "pt-PT",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/timeline.jpg",
-      "sha256": "78089e9a2e9bd97ceb4632a3a834c7be1c53cf1f5cce699c17428eeeed31cfa3",
+      "sha256": "75ec9a03a3699e6a12d8c635dde3c3583a5223bbda72d4d33ed3e77754e78fd7",
       "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-timeline.png",
-      "captureSha256": "1bb278288f62ae60574e47304d7375b6cf6940d3116f25f88180c46b44485cd8",
+      "captureSha256": "fe9cad4be806af677ee93fa07a21cb95597bf82b053e963f1630faeab803d32e",
       "nativeApproved": false
     },
     {
@@ -770,9 +770,9 @@
       "locale": "pt-PT",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/pt-PT/settings.jpg",
-      "sha256": "c61580f603e617e6c8237144eb1beaed606515870f408043a943bff5ab632eda",
+      "sha256": "9aa780f8b27d6d30c21f1ea6992ac28bab61f3d97b1071a79119c18ba1ad9935",
       "actualCapture": "deliverables/reports/device-evidence/localization/pt-PT-settings.png",
-      "captureSha256": "69f7b4b0f411a5d3b94df74b8dfc3b6deff8c9d88bafdeea4d3bd1bb4fedade9",
+      "captureSha256": "ff52b552f99d83d4f94229a4573f61ceca85292f9853b64c13d4d4b50b6e055c",
       "nativeApproved": false
     },
     {
@@ -815,18 +815,18 @@
       "locale": "nl-NL",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/albums.jpg",
-      "sha256": "00a4ead90fb2d835af6ab8e5b72d893ec93dcedc5ee2f65ff2418b97396f33ed",
+      "sha256": "e3d9b7f6a449ae6eddb040c8e9beffd6213b5f620bf717cde663f1beed2381d2",
       "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-albums.png",
-      "captureSha256": "df28a0fc0f07f120ffb45c37a99cf8d878f9b5ef53a12e37f3d8899f7ced68c4",
+      "captureSha256": "90d7ca5fe6cdd4639c23f248c23d51280692702799e9192fc06669fd5a2b4f48",
       "nativeApproved": false
     },
     {
       "locale": "nl-NL",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/nl-NL/timeline.jpg",
-      "sha256": "508cb14c68b9799629eb3a153c7e10a0dc2d8df15b3e547338e72f67bc867c32",
+      "sha256": "3884b3f67090bb1882cfc5362463ec918ea40a44f84a181d3c14d23153423f57",
       "actualCapture": "deliverables/reports/device-evidence/localization/nl-NL-timeline.png",
-      "captureSha256": "8afe1b13e286d1d426ebdb8902c2bc8baa975091685be36fca3cffe1fcc4f08c",
+      "captureSha256": "9909a7abd2c52649863516b5a848852395700469b26d0e6a6aefb54f911f6f68",
       "nativeApproved": false
     },
     {
@@ -887,18 +887,18 @@
       "locale": "pl-PL",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/albums.jpg",
-      "sha256": "553fb52bdafa8c0052bdf575706f3093dbb29cddf5bdf3f30f60f208c812ad21",
+      "sha256": "daf412b993eb57992e19442389d0da1a32ee81bcf91e01bc7d03ecdc00589360",
       "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-albums.png",
-      "captureSha256": "69c4ebddc5a69033440d8aafc85a646e9470bd27f7129a5efb57538310178914",
+      "captureSha256": "81179e5c13da913fbbc910b9afe8c01f36e92f4ab653557e3c01e7e64b7b1e29",
       "nativeApproved": false
     },
     {
       "locale": "pl-PL",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/timeline.jpg",
-      "sha256": "5f35b94712b4f4dc6185febe375b7d0ad0ad70b5414a41d7138178892fe344f3",
+      "sha256": "7d87d4018ce8180dffddb008054fcdab3d8f73850d64dea48e489ae11b40d0eb",
       "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-timeline.png",
-      "captureSha256": "0fc1c8436a781258972ce29152ffee029644747238a73e53a5077346daa3cfa3",
+      "captureSha256": "cf71374a19cd1f8f34afee29ad8dd503b5050ec2a48d17456eecfd7388517a01",
       "nativeApproved": false
     },
     {
@@ -914,9 +914,9 @@
       "locale": "pl-PL",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/pl-PL/settings.jpg",
-      "sha256": "d6934bf4f5329e49e3583d5f76c73af195cbb9455ac07b796133d584f9bb5793",
+      "sha256": "c28e61a50513e4f192f4552e056397df4ac3e446aecc8887f17d7c41ed91c3c1",
       "actualCapture": "deliverables/reports/device-evidence/localization/pl-PL-settings.png",
-      "captureSha256": "b60dfacf2eb19e0a6836b321bf3875b7fc7353911274af0c35d19e1d6a2b52b1",
+      "captureSha256": "5bc29a5a6915be40cb83608dbebce7dd83474cf26fc96e2d4dd0dc63a0e06223",
       "nativeApproved": false
     },
     {
@@ -959,9 +959,9 @@
       "locale": "sv-SE",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/albums.jpg",
-      "sha256": "c9bec876bc86352e66f966dce2552ea6f91d50601fe2a3e81841f03028145866",
+      "sha256": "33e5f3f086c6910125c559814ca3aa6201d720755a8c67a22b16cce008504921",
       "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-albums.png",
-      "captureSha256": "e7a4b8640f18af4020f2c9bdd7af81a7d7e8562be7575693dbf3eb66faed0bee",
+      "captureSha256": "700c750004d1e979600ac31aae61b7d2f2fe72397684a991a8a1423cfbcb943a",
       "nativeApproved": false
     },
     {
@@ -986,18 +986,18 @@
       "locale": "sv-SE",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/settings.jpg",
-      "sha256": "7582d3bc3bd68af7213a983fecaa6f6aabebab42858c36fbcec43fdf80795437",
+      "sha256": "51f8900b7a3006c4e3871a216fdf2f0a55c2326f809bc7279116070090c963d2",
       "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-settings.png",
-      "captureSha256": "ee350f2fcfe0fbf3445fd92a392290626ac824eb6c0b4973183c8099f28cbf28",
+      "captureSha256": "0bd62ef9b0cc8c3373d901280628631c146d22dbb6ac3ae5cc4b43d737338cfd",
       "nativeApproved": false
     },
     {
       "locale": "sv-SE",
       "shot": "editor",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/sv-SE/editor.jpg",
-      "sha256": "a24e6eb572a6693a38d4661daa0bd2d8552bccd73912935032b2ab5e0db19081",
+      "sha256": "d49919e5878bd191e51df9467eda00307e8a1d8356715d0362fd28900c3df9b0",
       "actualCapture": "deliverables/reports/device-evidence/localization/sv-SE-editor.png",
-      "captureSha256": "fb7be41d06db7e7806fef06c6053f9f32e9b55e5edcab940e56604f4e4dc88fe",
+      "captureSha256": "6ef162400d7a6f79466f14ebf6272ce0f3636cd65cf93105a6314495f734b85b",
       "nativeApproved": false
     },
     {
@@ -1031,18 +1031,18 @@
       "locale": "ja-JP",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/albums.jpg",
-      "sha256": "90f1310bcc2e1db0cc3b2ec1d1f7638724f7565d622c53954e81cedc8f3fe8dc",
+      "sha256": "04b2659909de392f06d25dffeb60c4ffd4d65007f308b42db1c018bd104d75b3",
       "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-albums.png",
-      "captureSha256": "3a2a095e6b994433b99eff38748dea93b8e1597b22ee7955431213a6a864da94",
+      "captureSha256": "1727ac3cf4731dfd73cff17039a34ba60553ff09047c026827bc861b4480e056",
       "nativeApproved": false
     },
     {
       "locale": "ja-JP",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/timeline.jpg",
-      "sha256": "59889231693cbbe73fa5a5b86421e88500c658beb1c2dd6caebad64d8a5f4054",
+      "sha256": "dc0e6e87aa44b362241184b2de8860ecea3a68a664971a243244021a599f5e83",
       "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-timeline.png",
-      "captureSha256": "2779319f19b8befeeb42e4654391edb98109a16d9ad3ed60297beb2da71be038",
+      "captureSha256": "bda62c3b2c7ba7743e31dc63ef6067da11832562c6725358cbca1f7a0b7fc100",
       "nativeApproved": false
     },
     {
@@ -1058,9 +1058,9 @@
       "locale": "ja-JP",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/ja-JP/settings.jpg",
-      "sha256": "fb9f556c64ed0e933c6a64ab0b898b5e7382546882e8bbb0e5c2df083243b608",
+      "sha256": "383d47f7eb84edf8767406a1ced8021571b9a1c71bb10d875d392a51debdb45c",
       "actualCapture": "deliverables/reports/device-evidence/localization/ja-JP-settings.png",
-      "captureSha256": "6c7227e6ed4596270b661e94e7b7c01689b7f5fb5441ce2fb356641059f5fc4b",
+      "captureSha256": "8bde0112fcbde1be6863387ad4430645f9479c3dbb5a99409993007871c2e036",
       "nativeApproved": false
     },
     {
@@ -1103,18 +1103,18 @@
       "locale": "hi-IN",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/albums.jpg",
-      "sha256": "a25f42b4acc97c1542ae3e65272eef21d5d3c249bf2070e63401dba782e77397",
+      "sha256": "fb19813f31b2a85681c616f007eb2c7c8006844b16bf25fa9993f8551cbe7c0e",
       "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-albums.png",
-      "captureSha256": "204721aa4d1b7be3182b08e2895e793ee5ca37e09197b038f688944fc38820fd",
+      "captureSha256": "e99b2e7fdc2f8b529bd1cdfa848717904075581a35b0d76dc99d4005be342d52",
       "nativeApproved": false
     },
     {
       "locale": "hi-IN",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/timeline.jpg",
-      "sha256": "7a801b9a64f2f9046cb277a85edcba960aaed4c7601ee3093ec8f4e53f370f9e",
+      "sha256": "ead315cbfb0dbc84e835057157589df28656de895bb132e3a8f51796727c217a",
       "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-timeline.png",
-      "captureSha256": "a020b93693ab0a152c9d96fadeeaf8363afaf440f168ebb20acf53f638cdac97",
+      "captureSha256": "830ae1ee4f56ee19505cd0f225989757f17d968648258393cce05bf0525c93be",
       "nativeApproved": false
     },
     {
@@ -1130,9 +1130,9 @@
       "locale": "hi-IN",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/hi-IN/settings.jpg",
-      "sha256": "4d1c6acaf6e910a2c53b229f86600aca972b8215e71a39d32b7b8b8f147d89ee",
+      "sha256": "abadad3e45a0b11c4fcc596bcf3efdae67375c532919ae6aa9c94315af0dbf06",
       "actualCapture": "deliverables/reports/device-evidence/localization/hi-IN-settings.png",
-      "captureSha256": "e28bfb768deb4a8ae8b8d24de179df9b7a13063e7d884a4ac002ce23432b33cf",
+      "captureSha256": "76e23edca6aa8ba3cd71a1400b36a88cf1054f9fb0eade0729df72a715cb35f8",
       "nativeApproved": false
     },
     {
@@ -1175,9 +1175,9 @@
       "locale": "ar",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/albums.jpg",
-      "sha256": "41e6c3dff8afba6add9471aac7f7e8754fd58576315a005ba8a3a57667084f80",
+      "sha256": "7bc00345ef49d5031295c24ad781b2ae972672ae582d0a822298541ff94a054d",
       "actualCapture": "deliverables/reports/device-evidence/localization/ar-albums.png",
-      "captureSha256": "6bbb17236412d2e6c22fd034285fa1ce9abb83b12c017d78c33a6f398166c090",
+      "captureSha256": "08e54ff7a38cccee4ecf839c919b91523109761ceb7012dfd1701a1c5f726702",
       "nativeApproved": false
     },
     {
@@ -1193,18 +1193,18 @@
       "locale": "ar",
       "shot": "keepsakes",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/keepsakes.jpg",
-      "sha256": "621ac92c328c23cfebe274a5f9ba42f30ef7d3e656ce1c3ff4536417a61a6ab7",
+      "sha256": "7a90314d79604a87a60a8100f97774504cba0158f7951a4549f953a442bce2ec",
       "actualCapture": "deliverables/reports/device-evidence/localization/ar-keepsakes.png",
-      "captureSha256": "316010e3947650ed4e046881672a0facce123ee74992beb8b89d35332fd7b9f6",
+      "captureSha256": "844d235a9b3212aa9c6d4b7846faec1ac0e1a8379f582f5c1edbd34048c251b6",
       "nativeApproved": false
     },
     {
       "locale": "ar",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/ar/settings.jpg",
-      "sha256": "d65aada1c10a7abc8588942dae1e061993748dabef2f385feb4d38167851f727",
+      "sha256": "1c6e669435c733f96a48c33a62c0c0420ef2c3403bcc62262027ad63e31474ea",
       "actualCapture": "deliverables/reports/device-evidence/localization/ar-settings.png",
-      "captureSha256": "4a8f3033370123dfdf8f30596830c0a4346b2092be1e3a6528cc072c7da10a23",
+      "captureSha256": "e668840bd1e38df30ac0215fe69a032c1b4088242d81e6ae11751cf2f0a197d0",
       "nativeApproved": false
     },
     {
@@ -1247,18 +1247,18 @@
       "locale": "tr-TR",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/albums.jpg",
-      "sha256": "654f1249a139b7c9b276dd46817adb3babdd357d2ab28a6126758c24a1ec0c5e",
+      "sha256": "20796b53bfa95e6d5c0985bb72abb4f20d4fc54c277277fcff666a29503ac15b",
       "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-albums.png",
-      "captureSha256": "90713c1b96c43886aa30c45b3c766c869227e5ac2bf36e6ba1f23b8b7ebadd03",
+      "captureSha256": "9407c6a2e08c7bb87556ba34b25f8e18862afe658428848207a27f0741a19b46",
       "nativeApproved": false
     },
     {
       "locale": "tr-TR",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/timeline.jpg",
-      "sha256": "f815b82a9596dc6d7003f3600472ff0e38abb22ef0f97da8c283829d8c4e3351",
+      "sha256": "aa8c545373543ecead3539ef1c587da78aea105b0a27f3ab4782b4f585ee83e7",
       "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-timeline.png",
-      "captureSha256": "efe90df18e422596f608cd1d20761c745b4f3d67cd91efa3e1bde77580993ff6",
+      "captureSha256": "73c8a9579f764754b6ad5e29f9dd124b3ebc3541550d8079f5092820a1b57878",
       "nativeApproved": false
     },
     {
@@ -1274,9 +1274,9 @@
       "locale": "tr-TR",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/tr-TR/settings.jpg",
-      "sha256": "142451bc10da0b7a7454e21f4da6be4736392adb632a16c6d20b7079eec5360f",
+      "sha256": "89898204faeb789b483791830d597435a560ec7ad4a0b50c39de4e21769815c5",
       "actualCapture": "deliverables/reports/device-evidence/localization/tr-TR-settings.png",
-      "captureSha256": "d6bf40fb6fc104af4a20321cdb8f2e73e3b55aa2f3a190815c61354a449eda3e",
+      "captureSha256": "6f0ea55db83b2d4800fa6b325597770e76ad019dab00db3b849314a66cfc7312",
       "nativeApproved": false
     },
     {
@@ -1319,36 +1319,36 @@
       "locale": "id-ID",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/albums.jpg",
-      "sha256": "5c853e21a4c14ac160011378bb4202e2ac8d32b5cb9614b2a26b3718826ae2d9",
+      "sha256": "676e73154fac218b034965f68cee20e3f84d806d2e076603d52c8697d4587b71",
       "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-albums.png",
-      "captureSha256": "0d90675ab2b9bde524beca6990aec00c66ac1485eff110c0a4cf5cd9035c5e55",
+      "captureSha256": "8cc233d44e31449e2965b37e4934a3a9a28d5b0949f47989324fa1f24794d29d",
       "nativeApproved": false
     },
     {
       "locale": "id-ID",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/timeline.jpg",
-      "sha256": "17ec342b296e22e4139458c1b1cdd66cbae755187f8042373dc64ab542e2d62d",
+      "sha256": "8898833cb47b06b80f1fcb8a12cdf959fdf768a0dac36648bf09cac7e9437864",
       "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-timeline.png",
-      "captureSha256": "48447793bbcb770a048abfb463ab77de18ea0f4d8ab1cd2ecc1990c7c72b31d0",
+      "captureSha256": "4b0bed87d34253215be8108d80479dc3a47455a7aa970ed494ee98bb6e67ed80",
       "nativeApproved": false
     },
     {
       "locale": "id-ID",
       "shot": "keepsakes",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/keepsakes.jpg",
-      "sha256": "ffdcb1ae04376da0e988638579190f8c38f78d1b4e660a246cf037ff8b3ce6c8",
+      "sha256": "42c7bf3312d0e3a1aff09b02dc2b91e3388729c52dc8d38cdc979a14a6023681",
       "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-keepsakes.png",
-      "captureSha256": "e88ce1bf4d2b6a98fc3e6d7631817c71d564e03d2affde224f4fb442ca2568d4",
+      "captureSha256": "9dce2d6925fc5464bf94c679600204afc6c3898c0a1cd3fab2ea679f7222020b",
       "nativeApproved": false
     },
     {
       "locale": "id-ID",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/id-ID/settings.jpg",
-      "sha256": "f66ea887d09a51dcb434f0f30ab5a24c9eeec8831114a3046182a6fb0553878c",
+      "sha256": "dcd3c2fae1aaabdf5b8b5e598dcc766d9749524bd7be6e33f803ac022e793881",
       "actualCapture": "deliverables/reports/device-evidence/localization/id-ID-settings.png",
-      "captureSha256": "4abbac27813c915f338272c03687b1a614f98ff04c6c357836d46a0f409a0a84",
+      "captureSha256": "3c53a6ed6199d03b63a677acbf55ddc05fba85494836a9ed10ec413cb83a111e",
       "nativeApproved": false
     },
     {
@@ -1391,18 +1391,18 @@
       "locale": "ko-KR",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/albums.jpg",
-      "sha256": "cfe0a854f84136a9a946b89a9e040881208d7d69d86a169b7ec85b953e942efe",
+      "sha256": "d3dcf1926363c40c482b1cd4625728f54d8b79c29af78adbf86ab772dbc8eb6b",
       "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-albums.png",
-      "captureSha256": "61c53ed360e811207d5acd3174c65c7ecd225813ce4a6f97725a89d9639dd3e8",
+      "captureSha256": "7d119f61705c858db481bb75a7129a07fdd0528e6bbc26df4d3bb974584eb3a8",
       "nativeApproved": false
     },
     {
       "locale": "ko-KR",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/timeline.jpg",
-      "sha256": "75ba3f5fb56b348449690de50a6de6ff9902851a379c4fe388a74cc4bcdc8750",
+      "sha256": "6c0c579337c41e8eb457939d4d2d1677212214ffbccd2849f8d2837c11d0abdd",
       "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-timeline.png",
-      "captureSha256": "649f62929276eea4051e6d5b2541180a538b9163b7ffd84169bfd4112ce21188",
+      "captureSha256": "1c2d10664ca3ffdbc3729fbb4a029a684f38b5af2a3ea418ed07de53a5f7d38a",
       "nativeApproved": false
     },
     {
@@ -1418,9 +1418,9 @@
       "locale": "ko-KR",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/ko-KR/settings.jpg",
-      "sha256": "da38b7bc5889fb81f1f0fc28d3ed9441614daffae99a1e2e33a40c98c7197e9f",
+      "sha256": "f2b19b8977adee485ba624cd3971af5494d3cbf2b5fa76e74e70f0475aa6826a",
       "actualCapture": "deliverables/reports/device-evidence/localization/ko-KR-settings.png",
-      "captureSha256": "fdcb75b6af4bd93a0bd0f3667dcd032a34d36cd1017bf0fc6977292f0a2de912",
+      "captureSha256": "2d58cda6d7749dd7cb4ddc91308fe7f8abb522628578a62354b7a548e19492ba",
       "nativeApproved": false
     },
     {
@@ -1463,18 +1463,18 @@
       "locale": "zh-Hans",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/albums.jpg",
-      "sha256": "e99db005adfe8bf79498ba370e06417a6042cfd6f348dca9ebc5a13c7d489c94",
+      "sha256": "d8e99a10d4ed0bb4c7ad2387893ea95ccb33116b4358607457c722b41f30f730",
       "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-albums.png",
-      "captureSha256": "e3e417a3a6875edbdac8ab9e32a81178454e48db63f0bdc1b295bbc3aa254aa8",
+      "captureSha256": "6cf324152ccdc3765b1c8cc5a3aa5b9627c2e2500d2a0a1d2ea0390e8d366062",
       "nativeApproved": false
     },
     {
       "locale": "zh-Hans",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/timeline.jpg",
-      "sha256": "2f9ac3fb76fb49e17375a0fc6cb938f9447dd944416182850a932ce87354b58f",
+      "sha256": "57ed4b2c1296b54ffe55f135e7867cbe74a7c53243caab2cc078fd917ecaf956",
       "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-timeline.png",
-      "captureSha256": "fde9661a72e4148fa9a820edb313a10704e345af1d2d77e0ef8beae1a98c8261",
+      "captureSha256": "30e58958e200cfd7d46ffc5f9cafdd878ed0dac2c3d67fc2a21d10380790dab2",
       "nativeApproved": false
     },
     {
@@ -1490,9 +1490,9 @@
       "locale": "zh-Hans",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hans/settings.jpg",
-      "sha256": "ad2f0d4b65e3b4c647a09f634b9d5e37ec47f4ac80923e88fe7479a35d4782b1",
+      "sha256": "99ccb87f65708c9ca8eb489fc790b70b626ba08d9de27adc67f0104cd3fdedd1",
       "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hans-settings.png",
-      "captureSha256": "c4bf43afb89b082f603fed310d3b4949079d9ee0aa94a4bb68d621c46cb71b85",
+      "captureSha256": "396a6207e9183957a7360552cc119ff81445e53dc9547d185d7ce4ddf24d7d70",
       "nativeApproved": false
     },
     {
@@ -1535,18 +1535,18 @@
       "locale": "zh-Hant",
       "shot": "albums",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/albums.jpg",
-      "sha256": "9a0b7647dfd9b2d19d14f36148f5ecdeaedf510a506449193e61d9446078a2c5",
+      "sha256": "ae70dfc1f0a77d0145f2440b4d2199d1258dc59c53e17bb6885c871423f2c0cf",
       "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-albums.png",
-      "captureSha256": "8da517e2d723df3f9d9355952e1c02d846edb11046ad38a94ca6946aa64d6fef",
+      "captureSha256": "74410252365bd27c807d6ebe9d7b4c661b10900fa8f61fcc326a2700a6d9a3a8",
       "nativeApproved": false
     },
     {
       "locale": "zh-Hant",
       "shot": "timeline",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/timeline.jpg",
-      "sha256": "244375a8bdbfdf936791523b52fdb5de653420ef8055424faaa6d2a9caf49ed0",
+      "sha256": "86db3eed09f7f46fd558301b09d4ea2448ea8ace0ef0ba4fe5cb6484a31798ce",
       "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-timeline.png",
-      "captureSha256": "d6c693b3805b22eadedb10843abb0a65b511d4f1e785c631404cb92c0d1bc4e4",
+      "captureSha256": "0a8c4e53c4c9ec17d6a7c8e227b6c27b82dfb76d6297df97f3ebee56ab56696b",
       "nativeApproved": false
     },
     {
@@ -1562,9 +1562,9 @@
       "locale": "zh-Hant",
       "shot": "settings",
       "asset": "deliverables/store-assets/screenshots/localized-drafts/zh-Hant/settings.jpg",
-      "sha256": "36d5860f98101511bdb0250f23b5ec327711458fccb650c609bcb02db449bcb3",
+      "sha256": "a3d0dcecac8ec099b1df1b001089655aa86c35712d8ce2272beddbaa51aebb74",
       "actualCapture": "deliverables/reports/device-evidence/localization/zh-Hant-settings.png",
-      "captureSha256": "9c6c6b2d1babc8f6013b7a4cf8aa9d3c365fc33a2a077821c9cdfc0a3e38e694",
+      "captureSha256": "0d388cd27af0a61b2a72fb7189263e6696a5757f015ce70dd55746547f48149e",
       "nativeApproved": false
     },
     {

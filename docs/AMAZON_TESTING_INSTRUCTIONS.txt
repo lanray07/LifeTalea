@@ -1,0 +1,24 @@
+LifeTalea 0.1.0 (version code 1) — DEVELOPMENT REVIEW ONLY / NOT READY TO SUBMIT
+Publisher: O.Bankole
+Support: banksmi@mail.com
+Package: com.lifetalea.app (unsigned candidate)
+
+No LifeTalea login is required. Use fictional demonstration content on a dedicated Fire tablet. Microphone permission is requested only after choosing to record. The application has touch and text alternatives to installed speech services.
+
+Core walkthrough:
+1. Open LifeTalea. Complete or skip onboarding. Add a memory with a title and written story; optionally enter tags, location and a year/month/day/unknown date. Save, reopen and edit it.
+2. Import a photograph with the system file picker. Create an album and add the memory. Search its story/tags/manual transcript, mark it as a favourite and find it in the timeline.
+3. Open the memory and choose Record. Review the microphone notice, grant permission, record a short fictional story, pause/resume and stop. Play it and use the seek control. Free recordings are limited to three minutes. Do not record private conversations for testing.
+4. Edit the transcript manually. Automatic recorded-file transcription is NOT configured. Installed speech recognition and spoken playback vary by device; command phrases currently support English only.
+5. Duplicate the memory. The copy should have independent photograph/audio files and the same album membership. Deleting the original must leave the copy playable/readable.
+6. Create a keepsake draft, add a memory, reorder pages and edit a caption. Premium PDF export is not available to production users in this candidate.
+7. In Settings, create an unencrypted backup to a location you control, explicitly selecting whether to include photos/audio. Preview and restore it. Existing memories/books are retained. The importer is bounded to 32 MiB total, 16 MiB per attachment and 8 MiB manifest; exports can fail above those limits. This is not a streaming large-library implementation.
+8. Close and reopen the app and confirm saved content. Delete test records through the app and delete any exported copies separately.
+
+Billing / release caveat:
+Production purchases are disabled, with the correct public app key now bundled, until server receipt verification is implemented and tested. SDK-only entitlements are permitted solely in the separate debug App Tester package. No account credentials, live payment, sandbox result, LAT approval or Premium activation code is supplied or claimed. The live console contains zero in-app products. Configure and test the real Amazon ENTITLED product before submission; do not submit these incomplete billing instructions as a successful monetization test.
+
+Language / screenshots:
+The unsigned candidate contains English source UI. The separate debug QA APK supports 22 draft locales. The 176 localized compositions come from that debug package on KFTRWI, landscape 1920x1200. They require native and visual approval and matching release captures before publication. Do not upload a debug/test APK as the store binary.
+
+See AMAZON_OWNER_ACTIONS.md and audit.json for the full blocker list and the exact local verification scope. These instructions are prepared locally; the console was rechecked and its testing-instructions field is currently empty (0/4000). No form was saved.

@@ -36,8 +36,17 @@ class VoiceDeviceTest {
                 assertTrue(encodedDuration >= 1800)
                 val complete = CountDownLatch(1); var failed = false
                 val player = MediaPlayer()
-                try { player.setDataSource(audio.path); player.setOnCompletionListener { complete.countDown() }; player.setOnErrorListener { _, _, _ -> failed = true; complete.countDown(); true }; player.prepare(); player.start(); assertTrue(complete.await(8, TimeUnit.SECONDS)); assertFalse(failed) } finally { player.release() }
+                try {
+                    player.setDataSource(audio.path); player.setOnCompletionListener { complete.countDown() }; player.setOnErrorListener { _, _, _ -> failed = true; complete.countDown(); true }; player.prepare()
+                    val sought = CountDownLatch(1); player.setOnSeekCompleteListener { sought.countDown() }
+                    player.seekTo(1000); assertTrue(sought.await(5, TimeUnit.SECONDS))
+                    // AAC seeking may round to a sync frame; playback must still complete afterward.
+                    assertTrue(player.currentPosition in 0..encodedDuration.toInt()); player.start()
+                    Thread.sleep(100); player.pause(); assertFalse(player.isPlaying); player.start()
+                    assertTrue(complete.await(8, TimeUnit.SECONDS)); assertFalse(failed)
+                } finally { player.release() }
                 val report = JSONObject().put("device", android.os.Build.MODEL).put("sdk", android.os.Build.VERSION.SDK_INT).put("recordedDurationMs", duration).put("encodedDurationMs", encodedDuration).put("playbackCompleted", true).put("rawAudioRetained", false).put("speechRecognitionAvailable", SpeechRecognizer.isRecognitionAvailable(context))
+                report.put("seekCallbackCompleted", true).put("playbackPauseResume", true)
                 report.put("recognitionServices", context.packageManager.queryIntentServices(Intent(RecognitionService.SERVICE_INTERFACE), 0).map { it.serviceInfo.packageName }.joinToString(","))
                 report.put("ttsServices", context.packageManager.queryIntentServices(Intent(TextToSpeech.Engine.INTENT_ACTION_TTS_SERVICE), 0).map { it.serviceInfo.packageName }.joinToString(","))
                 File(folder,"voice-device.json").writeText(report.toString(2))

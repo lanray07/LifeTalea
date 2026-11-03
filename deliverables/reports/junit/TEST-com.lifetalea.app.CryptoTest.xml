@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.lifetalea.app.CryptoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-02T17:49:29.601Z" hostname="DESKTOP-MAKK9CA" time="2.412">
+<testsuite name="com.lifetalea.app.CryptoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-03T17:17:30.520Z" hostname="DESKTOP-MAKK9CA" time="3.451">
   <properties/>
-  <testcase name="wrongPasswordDoesNotReturnPlaintext" classname="com.lifetalea.app.CryptoTest" time="1.144"/>
-  <testcase name="authenticatedRoundTripAndTamperRejection" classname="com.lifetalea.app.CryptoTest" time="1.268"/>
+  <testcase name="wrongPasswordDoesNotReturnPlaintext" classname="com.lifetalea.app.CryptoTest" time="1.482"/>
+  <testcase name="authenticatedRoundTripAndTamperRejection" classname="com.lifetalea.app.CryptoTest" time="1.968"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
