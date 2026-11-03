@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\App Projects\LifeTalea\scripts\check_fire_layouts.py", line 100, in <module>
+    with awake_device(ADB) as qa_power:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "D:\App Projects\LifeTalea\scripts\fire_qa_session.py", line 12, in awake_device
+    raise RuntimeError('Unlock the connected QA tablet on the device, then rerun. Never send or script its PIN.')
+RuntimeError: Unlock the connected QA tablet on the device, then rerun. Never send or script its PIN.

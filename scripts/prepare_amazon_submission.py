@@ -78,12 +78,12 @@ def main():
     release = ROOT / 'android/app/build/outputs/apk/release/app-release-unsigned.apk'
     run = read('deliverables/reports/device-test-run.json')
     assert run['debugApkSha256'] == sha(apk.read_bytes()), 'Device evidence must match the current app'
-    ui_complete = run['status'] == 'PASS' and run['testApkSha256'] == sha(test_apk.read_bytes())
-    assert ui_complete or args.allow_incomplete_ui, 'Rerun physical QA on the current APKs'
+    native_complete = run['status'] == 'PASS' and run['testApkSha256'] == sha(test_apk.read_bytes())
+    assert native_complete or args.allow_incomplete_ui, 'Rerun physical QA on the current APKs'
     native = (ROOT / 'deliverables/android/build-logs/instrumentation.log').read_text(encoding='utf-8')
     device_count = re.search(r'OK \((\d+) tests?\)', native)
     assert (device_count and 'FAILURES!!!' not in native) or args.allow_incomplete_ui
-    device_passed = int(device_count.group(1)) if ui_complete else len(re.findall(r'^INSTRUMENTATION_STATUS_CODE: 0$',native,re.M))
+    device_passed = int(device_count.group(1)) if native_complete else len(re.findall(r'^INSTRUMENTATION_STATUS_CODE: 0$',native,re.M))
     units = [ET.parse(path).getroot() for path in sorted((ROOT / 'android/app/build/test-results/testDebugUnitTest').glob('TEST-*.xml'))]
     assert units and all(int(s.get('failures', 0)) == int(s.get('errors', 0)) == int(s.get('skipped', 0)) == 0 for s in units)
     unit_count = sum(int(s.get('tests', 0)) for s in units)
@@ -91,11 +91,13 @@ def main():
     assert len(coverage) == 22 and all(row['coverage'] == 100 and not row['issues'] for row in coverage)
     for report in ['deliverables/localization/collateral-validation.json', 'deliverables/reports/static-checks.json', 'deliverables/reports/website-checks.json']:
         assert read(report)['status'] == 'PASS', report
-    captures = read('deliverables/store-assets/screenshots/localized-drafts/provenance.json') if ui_complete else {'assets':[]}
-    if ui_complete: assert captures['debugApkSha256'] == run['debugApkSha256'] and len(captures['assets']) == 176, 'Refresh screenshot compositions on this APK'
+    captures = read('deliverables/store-assets/screenshots/localized-drafts/provenance.json') if native_complete else {'assets':[]}
+    if native_complete: assert captures['debugApkSha256'] == run['debugApkSha256'] and len(captures['assets']) == 176, 'Refresh screenshot compositions on this APK'
+    fresh_evidence = {row['path']:row['sha256'] for row in run.get('evidence',[])}
     for row in captures['assets']:
         assert sha((ROOT / row['asset']).read_bytes()) == row['sha256']
         assert sha((ROOT / row['actualCapture']).read_bytes()) == row['captureSha256']
+        assert fresh_evidence.get(row['actualCapture']) == row['captureSha256'], 'Capture is not from this passing device run'
     inspection = read('deliverables/reports/amazon-release-apk-inspection.json')
     assert inspection['sha256'] == sha(release.read_bytes()) and inspection['package'] == 'com.lifetalea.app'
     assert inspection['debuggable'] is False and inspection['minSdk'] == 26 and inspection['targetSdk'] == 35
@@ -107,14 +109,16 @@ def main():
     assert any(row['check'] == 'amazon-rvs-server' and row['exitCode'] == 0 for row in local_checks['checks'])
     rvs = read('deliverables/reports/amazon-rvs-verification.json')
     assert rvs['debugApkSha256'] == run['debugApkSha256'] and rvs['serverTests']['status'] == 'PASS'
-    assert rvs['testApkSha256'] == sha(test_apk.read_bytes()) and rvs['uiChecksComplete'] == ui_complete
+    assert all(rvs['serverSourceSha256'][name] == sha((ROOT/f'server/receipt-verifier/{name}').read_bytes()) for name in SERVER_FILES), 'Rerun receipt evidence after server changes'
+    assert rvs['testApkSha256'] == sha(test_apk.read_bytes())
     assert console['appId'] == 'amzn1.devportal.mobileapp.035a0c55782f4cd68dd2453e79fd420e'
     assert inspection['publicAuthenticationPemSha256'] == console['publicKeySha256'], 'Public key provenance changed'
     assert len((ROOT / 'docs/AMAZON_TESTING_INSTRUCTIONS.txt').read_text(encoding='utf-8')) <= 4000
     layout = read('deliverables/reports/device-evidence/layout-smoke/result.json')
     layout_current = layout.get('status') == 'PASS' and layout.get('debugApkSha256') == run['debugApkSha256'] and layout.get('originalSettingsRestored') is True
     assert layout_current or args.allow_incomplete_ui, 'Complete the current device layout smoke and restore its settings'
-    assert not ui_complete or layout_current, 'Complete the full batch before generating a passing UI package'
+    ui_complete = native_complete and layout_current
+    assert rvs['uiChecksComplete'] == ui_complete
     audit = {
         'releaseStatus': 'BLOCKED', 'packagePurpose': 'LOCAL_REVIEW_ONLY_NOT_FOR_SUBMISSION',
         'generatedAt': datetime.now(timezone.utc).isoformat(),
@@ -128,13 +132,13 @@ def main():
         'currentTestApkExecuted': run['testApkSha256'] == sha(test_apk.read_bytes()),
         'deviceRun': run, 'deviceScope': 'KFTRWI / Fire HD 10 (2021) / Fire OS 7 / API 28 / landscape',
         'appDraftLocales': 22, 'appKeysPerLocale': 191, 'nativeReleaseApprovals': 0,
-        'screenshotDrafts': len(captures['assets']), 'screenshotSource': 'Current debug APK, one physical tablet; release screenshot approval pending' if ui_complete else 'OMITTED: fresh full locale run and capture validation required',
+        'screenshotDrafts': len(captures['assets']), 'screenshotSource': 'Current debug APK, one physical tablet; release screenshot approval pending' if native_complete else 'OMITTED: fresh full locale run and capture validation required',
         'productionBilling': 'IMPLEMENTED_LOCALLY_NOT_CONFIGURED: signed server RVS and Android client; endpoint/pin unset and purchases off in default build. Deployment, real credentials, IAP product/prices and live Amazon transaction tests remain required.',
         'receiptVerification': rvs,
         'transcription': 'UNCONFIGURED; manual editing only',
         'formalSecurityScan': 'STARTUP_FAILED; no independent scan completed; static pattern checks are narrower evidence',
         'console': console,
-        'layoutSmoke': layout if layout_current else {'status':'NOT_VERIFIED_ON_CURRENT_APP'},
+        'layoutSmoke': layout if layout.get('debugApkSha256') == run['debugApkSha256'] else {'status':'NOT_VERIFIED_ON_CURRENT_APP'},
         'localChecks': local_checks,
         'fullAcceptanceChecklist': 'Historical 258-statement report retained; no updated verified percentage claimed',
         'remainingGates': 'See docs/AMAZON_OWNER_ACTIONS.md; account configuration alone will not clear engineering/QA gates',
@@ -180,14 +184,15 @@ def main():
         row['actualCapture'] = f'evidence/original-captures/{row["locale"]}-{row["shot"]}.png'
         row['repositoryAsset'], row['repositoryCapture'] = source_asset, source_capture
         add(source_asset, row['asset']); add(source_capture, row['actualCapture'])
-    if ui_complete: entries['screenshot-drafts/provenance.json'] = encoded(package_captures)
-    for path in sorted((ROOT / 'deliverables/reports/device-evidence/layout-smoke').glob('*')) if layout_current else []:
-        if path.suffix in {'.png', '.xml', '.json'}:
+    if native_complete: entries['screenshot-drafts/provenance.json'] = encoded(package_captures)
+    layout_names = {'result.json','first-incomplete-result.json'} | {row['case']+suffix for row in layout.get('cases',[]) for suffix in ['.png','.xml']}
+    for path in sorted((ROOT / 'deliverables/reports/device-evidence/layout-smoke').glob('*')) if layout.get('debugApkSha256') == run['debugApkSha256'] else []:
+        if path.name in layout_names:
             add(path.relative_to(ROOT).as_posix(), f'evidence/layout-smoke/{path.name}')
     if not ui_complete:
         for path in sorted((ROOT/'deliverables/reports/device-evidence/rvs-failed-localization').glob('*')):
             if path.suffix in {'.png','.json'}: add(path.relative_to(ROOT).as_posix(),f'evidence/failed-locale-run/{path.name}')
-    for report in ['device-test-run.json', 'amazon-release-apk-inspection.json', 'amazon-console-review.json', 'amazon-local-checks.json', 'amazon-rvs-verification.json', 'static-checks.json', 'website-checks.json']:
+    for report in ['device-test-run.json', 'amazon-release-apk-inspection.json', 'amazon-console-review.json', 'amazon-local-checks.json', 'amazon-rvs-verification.json', 'amazon-rvs-visual-samples.json', 'static-checks.json', 'website-checks.json']:
         add(f'deliverables/reports/{report}', f'evidence/{report}')
     for report in ['coverage.json', 'collateral-validation.json']:
         add(f'deliverables/localization/{report}', f'evidence/localization/{report}')
@@ -198,9 +203,13 @@ def main():
     for row in local_checks['checks']:
         name = f'evidence/logs/{Path(row["log"]).name}'
         if name not in entries: add(row['log'], name)
+    for name in ['amazon-rvs-layout-first-failed.log','amazon-rvs-layout-rerun.log','amazon-rvs-packaging-python-tests.log','amazon-rvs-current-screenshot-check.log']:
+        add('deliverables/android/build-logs/'+name,'evidence/logs/'+name)
     entries['READ-ME-FIRST.txt'] = b'BLOCKED - LOCAL REVIEW PACKAGE ONLY\nDo not upload QA APK or draft screenshots.\nRead audit.json and docs/AMAZON_OWNER_ACTIONS.md.\nEnglish candidate binary is unsigned; 22-locale screenshots are debug drafts, not approved release assets.\nNo Amazon console changes or submission were made.\n'
     if not ui_complete:
         entries['READ-ME-FIRST.txt'] = b'BLOCKED - PARTIAL LOCAL REVIEW PACKAGE; UI QA INCOMPLETE\nRead audit.json and docs/RELEASE_READINESS.md. The last device run failed a locale UI test.\nThe subsequent test-only fix has not been executed; current screenshots and layout certification are omitted.\nThe candidate is unsigned and billing is not configured. No deployment or Amazon submission occurred.\n'
+        if native_complete:
+            entries['READ-ME-FIRST.txt'] = b'BLOCKED - LOCAL REVIEW PACKAGE; OFFLINE SMOKE INCOMPLETE\nAll 17 instrumentation tests passed on the current app and 176 current screenshot drafts are included.\nThe separate layout smoke stopped at its offline UI capture; see the incomplete result and retained failure log.\nRead audit.json and docs/AMAZON_OWNER_ACTIONS.md. Candidate unsigned; billing unconfigured. No deployment or submission occurred.\n'
     entries['evidence/android-source-hashes.json'] = encoded(source_hashes)
     entries['evidence/server-source-hashes.json'] = encoded(server_hashes)
     add('deliverables/android/build-logs/amazon-rvs-deployment-smoke.log','evidence/logs/amazon-rvs-deployment-smoke.log')

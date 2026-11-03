@@ -43,13 +43,16 @@ def main():
     issues=ET.parse(ROOT/'android/app/build/reports/lint-results-debug.xml').getroot().findall('issue')
     lint={level:sum(issue.get('severity')==level for issue in issues) for level in ['Error','Warning']}
     layout=read('deliverables/reports/device-evidence/layout-smoke/result.json')
-    layout_current=layout.get('status')=='PASS' and layout.get('debugApkSha256')==run['debugApkSha256'] and layout.get('qaBatchPowerSettings',{}).get('restored')
+    layout_current=layout.get('status')=='PASS' and layout.get('debugApkSha256')==run['debugApkSha256'] and (layout.get('qaBatchPowerSettings',{}).get('restored') or layout.get('qaPowerSettings',{}).get('restored'))
     if not layout_current and not args.allow_incomplete_ui:raise SystemExit('Current layout/offline smoke incomplete')
+    captures=read('deliverables/store-assets/screenshots/localized-drafts/provenance.json')
+    captures_current=captures.get('debugApkSha256')==run['debugApkSha256'] and len(captures.get('assets',[]))==176 and all(sha(ROOT/row['asset'])==row['sha256'] and sha(ROOT/row['actualCapture'])==row['captureSha256'] for row in captures['assets'])
+    screenshot_note='All 176 current-APK screenshot compositions were refreshed and byte-validated; they remain drafts with zero native approvals.' if captures_current and complete else 'Refresh and validate the 176 screenshot compositions against this APK before packaging; the package builder enforces the hashes.'
     inspection=read('deliverables/reports/amazon-release-apk-inspection.json')
     result={'executedAt':datetime.now(timezone.utc).isoformat(),'status':'LOCAL_CHECKS_PASS_RELEASE_BLOCKED' if complete and layout_current else 'BILLING_EVIDENCE_PRESENT_UI_QA_INCOMPLETE_RELEASE_BLOCKED','uiChecksComplete':complete and layout_current,'debugApkSha256':run['debugApkSha256'],'testApkSha256':sha(test),'lastExecutedTestApkSha256':run['testApkSha256'],'currentTestApkExecuted':run['testApkSha256']==sha(test),'releaseApkSha256':inspection['sha256'],
         'serverTests':{'status':'PASS','tests':node_count,'passed':node_pass,'log':row['log'],'scope':'Fictional Amazon responses; real crypto/local HTTP/executable/key-helper tests; not live Amazon RVS'},
         'androidReceiptContractTests':{'status':'PASS','passed':len(contract),'tests':sorted(contract),'scope':'Node-signed offline fixtures and actual Fire RSA/JSON/config behavior, not real SDK payment callbacks'},
-        'kotlinUnitTestsPassed':units,'physicalDeviceTestsPassed':device_count,'physicalDeviceTestsRun':total,'physicalDeviceSuiteStatus':run['status'],'deviceSeconds':float(seconds),'lint':lint,'layoutSmokeStatus':layout['status'] if layout_current else 'NOT_VERIFIED_ON_CURRENT_APP',
+        'kotlinUnitTestsPassed':units,'physicalDeviceTestsPassed':device_count,'physicalDeviceTestsRun':total,'physicalDeviceSuiteStatus':run['status'],'deviceSeconds':float(seconds),'lint':lint,'layoutSmokeStatus':layout['status'] if layout.get('debugApkSha256')==run['debugApkSha256'] else 'NOT_VERIFIED_ON_CURRENT_APP','currentScreenshotDraftsValidated':176 if captures_current and complete else 0,
         'serverDeployed':False,'liveAmazonRvsTested':False,'livePurchaseTestsPassed':False,'dockerImageBuilt':False,'productionSigningIdentityCreated':False,
         'defaultReleaseConfiguration':inspection['generatedReleaseBillingConfiguration'],
         'serverSourceSha256':{name:sha(ROOT/f'server/receipt-verifier/{name}') for name in SERVER_FILES},
@@ -61,7 +64,7 @@ Updated 3 November 2026. [Current billing implementation](AMAZON_RVS_IMPLEMENTAT
 
 Server RVS and the signed Android client are implemented and tested locally. The default release still has no verifier endpoint/public pin and purchases are off. The server has not been deployed, no real Amazon secret/deployment signing identity was configured, and no real purchase/refund/restore/LAT result is claimed. The last console inspection found zero IAP products; no account fields, prices or uploads were changed during this local phase.
 
-Current evidence: **{node_pass} server tests, {units} Kotlin unit tests, {device_count} physical Fire tests** passed; the Fire suite includes {len(contract)} receipt/signature/config tests. Lint: {lint['Error']} errors, {lint['Warning']} warnings. Portrait/landscape at 1.3× text and Wi-Fi-disabled home reopen passed, with all original QA settings restored. Resource/catalogue, website/type and metadata/editorial checks passed; native approvals remain zero. Refresh and validate the 176 screenshot compositions against this APK before packaging; the package builder enforces the hashes.
+Current evidence: **{node_pass} server tests, {units} Kotlin unit tests, {device_count} physical Fire tests** passed; the Fire suite includes {len(contract)} receipt/signature/config tests. Lint: {lint['Error']} errors, {lint['Warning']} warnings. Portrait/landscape at 1.3× text and Wi-Fi-disabled home reopen passed, with all original QA settings restored. Resource/catalogue, website/type and metadata/editorial checks passed; native approvals remain zero. {screenshot_note}
 
 Two RVS physical attempts passed the new receipt tests but failed the locale test with a detached Compose hierarchy, first at capture and then after opening a story. Both failed logs are retained. The corrected test adds bounded waits after destination navigation as well as before capture, and fixes the test orientation. These changes address observed readiness preconditions; broader device/test reliability remains open.
 
@@ -80,14 +83,19 @@ Remaining gates: real backend/credential/TLS/public-pin and Amazon product/price
 
 Two RVS device attempts each ran 17 tests and passed all four new receipt tests, but failed the locale test with No compose hierarchies, first at capture and then at the record control after navigation. Both failed logs are retained as amazon-rvs-device-first-failed.log and amazon-rvs-device-navigation-failed.log. The corrected test adds bounded destination/current-locale/root readiness waits and a stable landscape precondition; functional assertions still fail normally. Its incremental test-only build is recorded in amazon-rvs-test-readiness-build.log. Earlier pre-RVS startup timeout logs are retained and are not declared fixed by a successful retry.
 
+The first layout batch after the 17-test pass completed both larger-text orientations, then UI Automator returned an error while dumping the offline screen. The failed log/result are retained. The dump operation now participates in the existing three-attempt readiness loop; local regression tests check transient-error recovery and the hard three-attempt bound. No missing tree or failed bounds assertion is accepted as a pass. Consult the current layout result for the executed device outcome. Four current visual samples are recorded in amazon-rvs-visual-samples.json; they are not native approval or a full visual audit.
+
 These results do not certify real Amazon RVS credentials, SDK transaction callbacks, deployed HTTPS behavior, marketplace products/prices, live purchase/refund/restore, LAT approval, native linguistic quality, a full device/security assessment or legal approval. See AMAZON_RVS_IMPLEMENTATION.md and AMAZON_OWNER_ACTIONS.md.
 '''
     if not complete or not layout_current:
+        fire_note='All current instrumentation tests passed, including the corrected full 22-locale capture test.' if complete else 'The locale UI test failed, and the later test-only readiness update has not been executed.'
+        asset_note=screenshot_note if captures_current and complete else 'Current screenshot assets are omitted until the full capture run and byte validation pass.'
+        layout_note=f"The separate current-app layout smoke is {layout.get('status')}: {len(layout.get('cases',[]))} cases completed; failure: {layout.get('failure')}." if layout.get('debugApkSha256')==run['debugApkSha256'] else 'The layout smoke has not been verified on the current app.'
         warning=f'''# Current RVS evidence — UI QA INCOMPLETE / release BLOCKED
 
-{node_pass} server tests and {units} unit tests passed. The last physical run on the current debug app passed {device_count}/{total}, including all {len(contract)} receipt tests, but the locale UI test failed. The subsequent test-only navigation-readiness update is built but has not been executed on the locked tablet. The current test APK must not be described as fully verified. The layout smoke was not rerun on this app. Power/rotation settings from the failed run were restored.
+{node_pass} server tests and {units} unit tests passed. The last physical run on the current debug app passed {device_count}/{total}, including all {len(contract)} receipt tests. {fire_note} {layout_note} Original QA settings were restored.
 
-No validated current screenshot set is included in the partial review package. Older screenshots and earlier passing runs are historical evidence. A fresh unlocked-device batch and full capture validation remain required. This report is a deliberate incomplete-QA disposition, not a waiver or a passing release gate.
+{asset_note} A fresh unlocked-device layout/offline check remains required. This report records incomplete QA; it does not waive a release gate.
 
 Server RVS/client implementation and local tests are complete enough to review; deployment, real credentials/TLS/public pin, product/prices, live Amazon transactions and independent security/privacy/legal/native/remaining product gates remain open. No deployment or submission occurred. See AMAZON_RVS_IMPLEMENTATION.md and amazon-rvs-verification.json for exact hashes and scope.
 '''
@@ -96,12 +104,13 @@ Server RVS/client implementation and local tests are complete enough to review; 
 
 - Node server: {node_pass}/{node_count} local contract/crypto/HTTP/startup/key-helper tests. No real Amazon receipts or credentials.
 - Kotlin unit tests: {units} passing, current JUnit XML retained.
-- Fire: {device_count}/{total} passed on the current debug app, including all {len(contract)} signed-receipt tests; the full suite failed its locale navigation test. The subsequent test-only readiness build has not run.
+- Fire: {device_count}/{total} passed on the current debug app, including all {len(contract)} signed-receipt tests. {fire_note}
 - Android build: debug/release/test APKs and lint completed in amazon-rvs-build.log; the later test-only build is amazon-rvs-test-readiness-build.log. Lint: {lint['Error']} errors and {lint['Warning']} warnings. Release is unsigned, verifier URL/pin empty, and purchases off.
 - All {len(checks['checks'])} non-device collateral groups passed: server/Python tests, locale resources/isolation, authored-copy checks, metadata, browser locale/review/static-export regressions, TypeScript, exported website structure and narrow source patterns. These are not independent security or native linguistic approval.
-- Historical screenshot bytes retain their original APK provenance. The validator now refuses to relabel them as current and requires a passing full run plus capture-byte hashes before a refresh. No current screenshot set or layout smoke is certified.
+- Screenshots: {asset_note} The validator requires a passing current full run and per-capture byte hashes for a refresh. Native approvals remain zero.
+- Layout/offline: {layout_note}
 
-Current raw failure evidence: instrumentation.log, amazon-rvs-device-first-failed.log and amazon-rvs-device-navigation-failed.log. The latest locked-device preflight stopped before installing, clearing QA data or changing power settings. Original power/rotation settings from the executed runs were restored. Docker execution and independent security assessment remain unverified.
+Current instrumentation evidence is in instrumentation.log. Historical locale failures are retained in amazon-rvs-device-first-failed.log and amazon-rvs-device-navigation-failed.log. The layout capture failure is retained in amazon-rvs-layout-first-failed.log. The follow-up locked-device preflight changed no settings; the corrected capture retry has not completed on the tablet. Original power/rotation/font/Wi-Fi settings from the executed runs were restored. Docker execution and independent security assessment remain unverified.
 '''
     (ROOT/'docs/TEST_REPORT.md').write_text(text,encoding='utf-8')
     print(json.dumps({key:result[key] for key in ['status','kotlinUnitTestsPassed','physicalDeviceTestsPassed','lint']}))

@@ -1,11 +1,11 @@
 {
-  "executedAt": "2026-11-03T18:42:17.895428+00:00",
+  "executedAt": "2026-11-03T20:40:26.391354+00:00",
   "status": "BILLING_EVIDENCE_PRESENT_UI_QA_INCOMPLETE_RELEASE_BLOCKED",
   "uiChecksComplete": false,
   "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
   "testApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
-  "lastExecutedTestApkSha256": "2c9dc10404bb0b41587471ed66bffba05951384eec7c66d16fd691a355cf9286",
-  "currentTestApkExecuted": false,
+  "lastExecutedTestApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
+  "currentTestApkExecuted": true,
   "releaseApkSha256": "8105c8c523d8c3f4c4fe829fa67d52a1f642bb08fefbb9def72db52775338481",
   "serverTests": {
     "status": "PASS",
@@ -26,15 +26,16 @@
     "scope": "Node-signed offline fixtures and actual Fire RSA/JSON/config behavior, not real SDK payment callbacks"
   },
   "kotlinUnitTestsPassed": 18,
-  "physicalDeviceTestsPassed": 16,
+  "physicalDeviceTestsPassed": 17,
   "physicalDeviceTestsRun": 17,
-  "physicalDeviceSuiteStatus": "FAIL",
-  "deviceSeconds": 66.895,
+  "physicalDeviceSuiteStatus": "PASS",
+  "deviceSeconds": 183.095,
   "lint": {
     "Error": 0,
     "Warning": 260
   },
-  "layoutSmokeStatus": "NOT_VERIFIED_ON_CURRENT_APP",
+  "layoutSmokeStatus": "INCOMPLETE",
+  "currentScreenshotDraftsValidated": 176,
   "serverDeployed": false,
   "liveAmazonRvsTested": false,
   "livePurchaseTestsPassed": false,

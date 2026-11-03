@@ -38,8 +38,8 @@ def launch():
 def capture(name):
     for _ in range(3):
         adb('shell', 'rm', '-f', '/sdcard/lifetalea-qa-layout.xml')
-        adb('shell', 'uiautomator', 'dump', '/sdcard/lifetalea-qa-layout.xml')
         try:
+            adb('shell', 'uiautomator', 'dump', '/sdcard/lifetalea-qa-layout.xml')
             xml = adb('shell', 'cat', '/sdcard/lifetalea-qa-layout.xml')
             tree = ET.fromstring(xml)
         except (RuntimeError, ET.ParseError):
@@ -95,7 +95,11 @@ def main():
     print(json.dumps({'status': 'PASS', 'cases': len(rows), 'originalSettingsRestored': restored}))
 
 if __name__ == '__main__':
-    with awake_device(ADB) as qa_power:
-        main()
-    report=json.loads((OUT/'result.json').read_text(encoding='utf-8'));report['qaPowerSettings']=qa_power
-    (OUT/'result.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+    qa_power={}
+    try:
+        with awake_device(ADB) as qa_power:
+            main()
+    finally:
+        if qa_power and (OUT/'result.json').exists():
+            report=json.loads((OUT/'result.json').read_text(encoding='utf-8'));report['qaPowerSettings']=qa_power
+            (OUT/'result.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
