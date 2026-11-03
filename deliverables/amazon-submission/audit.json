@@ -1,0 +1,231 @@
+{
+  "releaseStatus": "BLOCKED",
+  "packagePurpose": "LOCAL_REVIEW_ONLY_NOT_FOR_SUBMISSION",
+  "generatedAt": "2026-11-03T17:47:52.343151+00:00",
+  "baseCommit": "1cde1d3c87789daa7f6d9cb442454348b95286a7",
+  "workingTreeDirty": false,
+  "publisher": "O.Bankole",
+  "supportEmail": "banksmi@mail.com",
+  "package": "com.lifetalea.app",
+  "versionName": "0.1.0",
+  "versionCode": 1,
+  "candidateSha256": "72251cfb3ca69314ec61b385bd71358c30993bee65ac8ba3da266005ac714c7f",
+  "signing": "UNSIGNED; Amazon distribution signing/update identity unverified",
+  "kotlinUnitTestsPassed": 10,
+  "physicalDeviceTestsPassed": 13,
+  "deviceRun": {
+    "executedAt": "2026-11-03T17:36:40.733295+00:00",
+    "status": "PASS",
+    "debugApkSha256": "97c89b2a6a6a2e88ab80df86c463bb49efc1fef7a02d1736390ba49c259723e6",
+    "testApkSha256": "44d91720ef9f4041f46606ed57820f8860f31a0e8a8489d5ce3f5eb1363fa05d",
+    "evidenceFiles": 187
+  },
+  "deviceScope": "KFTRWI / Fire HD 10 (2021) / Fire OS 7 / API 28 / landscape",
+  "appDraftLocales": 22,
+  "appKeysPerLocale": 191,
+  "nativeReleaseApprovals": 0,
+  "screenshotDrafts": 176,
+  "screenshotSource": "Current debug APK, one physical tablet; release screenshot approval pending",
+  "productionBilling": "DISABLED: server RVS not implemented or tested; no Amazon in-app product exists; correct public PEM now bundled",
+  "transcription": "UNCONFIGURED; manual editing only",
+  "formalSecurityScan": "STARTUP_FAILED; no independent scan completed; static pattern checks are narrower evidence",
+  "console": {
+    "observedAt": "2026-11-03T17:28:22.992494+00:00",
+    "method": "Read-only signed-in in-app browser review; no fields saved, uploads, account changes or submission",
+    "appId": "amzn1.devportal.mobileapp.035a0c55782f4cd68dd2453e79fd420e",
+    "releaseId": "amzn1.devportal.apprelease.103d2ab34c5f43a6b6ba6133db46f7c8",
+    "title": "LifeTalea - Family Stories & Voice Journal",
+    "status": "Incomplete",
+    "submitButtonEnabled": false,
+    "uploadedApkName": "LifeTalea-0.1.0-release-unsigned.apk",
+    "uploadedVersionCode": 1,
+    "uploadedApkSha256": "NOT_OBTAINED; uploaded binary is not established as the current local candidate",
+    "drmAppliedToUploadedApk": true,
+    "languageSupport": [
+      "English"
+    ],
+    "inAppItems": 0,
+    "testingInstructionsCharacters": 0,
+    "exportComplianceCertified": false,
+    "selectedFireTablets": 12,
+    "listedFireTablets": 40,
+    "selectedFireTv": 0,
+    "selectedAutomotive": 0,
+    "countryRegions": "All countries and regions where Amazon sells apps",
+    "targetAudience": "18+",
+    "contentRating": "Complete",
+    "appPricing": "Free",
+    "displayedListingLocale": "English (U.S.)",
+    "tabletIcons": "114 and 512 px present",
+    "displayedScreenshotCount": 3,
+    "publicAuthenticationPemDownloaded": true,
+    "publicKeySha256": "056a8be292f26e52de2b81951b3b51c762c02879dd94fbd35ffad56e994ba40b",
+    "limitations": "Other listing locale variants, all device selections, privacy questionnaire and prices were not re-reviewed. Review page showed Compliance confirmation required. Native product acceptance gates remain independent."
+  },
+  "layoutSmoke": {
+    "status": "PASS",
+    "debugApkSha256": "97c89b2a6a6a2e88ab80df86c463bb49efc1fef7a02d1736390ba49c259723e6",
+    "originalSettingsRestored": true,
+    "originalSettings": {
+      "accelerometer_rotation": "1",
+      "user_rotation": "0",
+      "font_scale": "1.0"
+    },
+    "originalWifiState": "1",
+    "failure": null,
+    "cases": [
+      {
+        "case": "rotation-0-font-1.3",
+        "width": 1200,
+        "height": 1920,
+        "homeActionInAccessibilityTreeAndWithinDisplay": true
+      },
+      {
+        "case": "rotation-1-font-1.3",
+        "width": 1920,
+        "height": 1200,
+        "homeActionInAccessibilityTreeAndWithinDisplay": true
+      },
+      {
+        "case": "wifi-disabled-reopen",
+        "width": 1920,
+        "height": 1200,
+        "homeActionInAccessibilityTreeAndWithinDisplay": true
+      }
+    ],
+    "scope": "Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology."
+  },
+  "localChecks": {
+    "executedAt": "2026-11-03T17:37:20.499452+00:00",
+    "status": "PASS",
+    "checks": [
+      {
+        "check": "python-tests",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "python.exe",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "log": "deliverables/android/build-logs/amazon-audit-python-tests.log"
+      },
+      {
+        "check": "app-locales",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "python.exe",
+          "scripts/localize.py",
+          "validate",
+          "--strict"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-app-locales.log"
+      },
+      {
+        "check": "release-locales",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "python.exe",
+          "scripts/localize.py",
+          "check-release"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-release-locales.log"
+      },
+      {
+        "check": "collateral",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "python.exe",
+          "scripts/validate_collateral.py"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-collateral.log"
+      },
+      {
+        "check": "polish",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "python.exe",
+          "scripts/polish_translations.py",
+          "--check"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-polish.log"
+      },
+      {
+        "check": "browser-locales",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "node",
+          "scripts/test_locale_match.cjs"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-browser-locales.log"
+      },
+      {
+        "check": "website-gate",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "node",
+          "scripts/test_website_review_gate.cjs"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-website-gate.log"
+      },
+      {
+        "check": "static-export",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "node",
+          "scripts/test_static_export.cjs"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-static-export.log"
+      },
+      {
+        "check": "website-typecheck",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "node",
+          "website/node_modules/typescript/bin/tsc",
+          "--noEmit",
+          "--project",
+          "website/tsconfig.json"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-website-typecheck.log"
+      },
+      {
+        "check": "website-structure",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "python.exe",
+          "scripts/check_website.py"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-website-structure.log"
+      },
+      {
+        "check": "source-patterns",
+        "status": "PASS",
+        "exitCode": 0,
+        "command": [
+          "python.exe",
+          "scripts/static_checks.py"
+        ],
+        "log": "deliverables/android/build-logs/amazon-check-source-patterns.log"
+      }
+    ],
+    "scope": "Structural, type, editorial regression and narrow source-pattern checks; no native linguistic, live billing, device or independent security approval."
+  },
+  "fullAcceptanceChecklist": "Historical 258-statement report retained; no updated verified percentage claimed",
+  "remainingGates": "See docs/AMAZON_OWNER_ACTIONS.md; account configuration alone will not clear engineering/QA gates",
+  "androidSourceFingerprint": "dcb15d9bc90c8fc8cc757f8fa955bcea38138033fbaf3d51b552e9c75a47adc7",
+  "androidSourceFingerprintMethod": "SHA-256 of the encoded per-file working-tree byte hashes, including local line endings; not a cross-platform reproducible-build claim."
+}
