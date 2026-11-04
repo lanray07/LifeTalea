@@ -1,0 +1,23 @@
+OLD three-attempt bound: dump exits successfully but three null roots produce no XML; must fail
+F
+======================================================================
+FAIL: test_transient_dump_failure_still_requires_a_valid_home_tree_and_bounds (test_fire_layout_capture.FireLayoutCaptureTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\App Projects\LifeTalea\tests\test_fire_layout_capture.py", line 28, in test_transient_dump_failure_still_requires_a_valid_home_tree_and_bounds
+    result=layouts.capture('synthetic-test-only')
+  File "D:\App Projects\LifeTalea\scripts\check_fire_layouts.py", line 54, in capture
+    else: raise AssertionError(f'{name}: home action not available in accessibility tree')
+AssertionError: synthetic-test-only: home action not available in accessibility tree
+
+----------------------------------------------------------------------
+Ran 1 test in 0.050s
+
+FAILED (failures=1)
+
+CURRENT eight-attempt bound: valid fourth tree must pass all bounds assertions
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+OK

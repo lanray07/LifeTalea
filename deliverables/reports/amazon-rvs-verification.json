@@ -1,7 +1,7 @@
 {
-  "executedAt": "2026-11-03T20:40:26.391354+00:00",
-  "status": "BILLING_EVIDENCE_PRESENT_UI_QA_INCOMPLETE_RELEASE_BLOCKED",
-  "uiChecksComplete": false,
+  "executedAt": "2026-11-04T08:15:52.141177+00:00",
+  "status": "LOCAL_CHECKS_PASS_RELEASE_BLOCKED",
+  "uiChecksComplete": true,
   "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
   "testApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
   "lastExecutedTestApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
@@ -34,7 +34,7 @@
     "Error": 0,
     "Warning": 260
   },
-  "layoutSmokeStatus": "INCOMPLETE",
+  "layoutSmokeStatus": "PASS",
   "currentScreenshotDraftsValidated": 176,
   "serverDeployed": false,
   "liveAmazonRvsTested": false,

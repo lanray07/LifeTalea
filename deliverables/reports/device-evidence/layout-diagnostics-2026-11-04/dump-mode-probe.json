@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "default",
+    "returncode": 0,
+    "homePresent": false,
+    "message": "ERROR: null root node returned by UiTestAutomationBridge."
+  },
+  {
+    "mode": "compressed",
+    "returncode": 0,
+    "homePresent": false,
+    "message": "ERROR: null root node returned by UiTestAutomationBridge."
+  },
+  {
+    "mode": "default",
+    "returncode": 0,
+    "homePresent": true,
+    "message": "UI hierchary dumped to: /sdcard/lifetalea-qa-probe.xml"
+  },
+  {
+    "mode": "compressed",
+    "returncode": 0,
+    "homePresent": false,
+    "message": "ERROR: null root node returned by UiTestAutomationBridge."
+  }
+]

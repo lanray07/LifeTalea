@@ -1,8 +1,8 @@
 {
-  "executedAt": "2026-11-03T20:39:15.456983+00:00",
-  "status": "FOUR_VISUAL_SAMPLES_REVIEWED",
+  "executedAt": "2026-11-04T08:15:40.562639+00:00",
+  "status": "FIVE_VISUAL_SAMPLES_REVIEWED",
   "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
-  "scope": "Manual visual spot checks only: Arabic RTL editor, French settings, Traditional Chinese keepsakes and portrait home at 1.3x text. Sampled headlines and the portrait home action are visible. Not a review of all screenshots, all controls/scrolling, assistive technology or native linguistic quality. Fictional personal-content titles remain in their original language.",
+  "scope": "Three locale draft samples reviewed on 3 November remain unchanged. Portrait home and Wi-Fi-disabled home at 1.3x text were visually reviewed on 4 November, with the home action visible. This is not a full-screen, scrolling, assistive-technology or native-language certification.",
   "nativeApprovals": 0,
   "files": [
     {
@@ -19,7 +19,12 @@
     },
     {
       "path": "deliverables/reports/device-evidence/layout-smoke/rotation-0-font-1.3.png",
-      "sha256": "692459eeac402d0fe4cc8b508d041ab8a123a90ddd6f43764aceff1def6f9d33"
+      "sha256": "40c8a59c374c1ebbb95c71fe527fabef73c8026003ce29f1babc304c8eb45482"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/layout-smoke/wifi-disabled-reopen.png",
+      "sha256": "e5b3bcdb31f1af93deb9edbfdf6cff303d4d7eb4d7ae06e99e9e37e238d2ff0e"
     }
-  ]
+  ],
+  "draftSamplesReviewedAt": "2026-11-03T20:39:15.456983+00:00"
 }

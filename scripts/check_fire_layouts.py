@@ -6,6 +6,7 @@ clears app data, or records audio. Run after instrumentation has completed onboa
 from pathlib import Path
 import hashlib, io, json, os, subprocess, time
 import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
 from PIL import Image
 from fire_qa_session import awake_device
 
@@ -14,6 +15,7 @@ SDK = Path(os.environ.get('ANDROID_HOME', str(Path.home() / 'AppData/Local/Andro
 ADB = SDK / 'platform-tools/adb.exe'
 OUT = ROOT / 'deliverables/reports/device-evidence/layout-smoke'
 PACKAGE = 'com.lifetalea.app.debug'
+CAPTURE_ATTEMPTS = 8
 
 def adb(*args, binary=False):
     result = subprocess.run([str(ADB), *args], capture_output=True, timeout=40)
@@ -36,7 +38,9 @@ def launch():
     adb('shell', 'am', 'start', '-W', '-n', f'{PACKAGE}/com.lifetalea.app.MainActivity')
 
 def capture(name):
-    for _ in range(3):
+    # Fire's automation bridge can return a null root repeatedly even when the
+    # app is visibly ready. Wait for a real tree; never substitute screenshot text.
+    for _ in range(CAPTURE_ATTEMPTS):
         adb('shell', 'rm', '-f', '/sdcard/lifetalea-qa-layout.xml')
         try:
             adb('shell', 'uiautomator', 'dump', '/sdcard/lifetalea-qa-layout.xml')
@@ -91,7 +95,7 @@ def main():
         assert setting('wifi_on', table='global') == wifi
         restored = True
         adb('shell', 'rm', '-f', '/sdcard/lifetalea-qa-layout.xml')
-        (OUT / 'result.json').write_text(json.dumps({'status': 'PASS' if completed else 'INCOMPLETE', 'debugApkSha256': apk_sha, 'originalSettingsRestored': restored, 'originalSettings': original, 'originalWifiState': wifi, 'failure': failure, 'cases': rows, 'scope': 'Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology.'}, indent=2) + '\n', encoding='utf-8')
+        (OUT / 'result.json').write_text(json.dumps({'executedAt':datetime.now(timezone.utc).isoformat(),'status': 'PASS' if completed else 'INCOMPLETE', 'debugApkSha256': apk_sha, 'originalSettingsRestored': restored, 'originalSettings': original, 'originalWifiState': wifi, 'failure': failure, 'cases': rows, 'scope': 'Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology.'}, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'status': 'PASS', 'cases': len(rows), 'originalSettingsRestored': restored}))
 
 if __name__ == '__main__':

@@ -60,7 +60,7 @@ def main():
     (REPORTS/'amazon-rvs-verification.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     readiness=f'''# Release readiness — BLOCKED
 
-Updated 3 November 2026. [Current billing implementation](AMAZON_RVS_IMPLEMENTATION.md) and [remaining gates](AMAZON_OWNER_ACTIONS.md). The original 258-statement acceptance checklist remains in scope; no new completion percentage is inferred from test counts.
+Updated 4 November 2026. [Current billing implementation](AMAZON_RVS_IMPLEMENTATION.md) and [remaining gates](AMAZON_OWNER_ACTIONS.md). The original 258-statement acceptance checklist remains in scope; no new completion percentage is inferred from test counts.
 
 Server RVS and the signed Android client are implemented and tested locally. The default release still has no verifier endpoint/public pin and purchases are off. The server has not been deployed, no real Amazon secret/deployment signing identity was configured, and no real purchase/refund/restore/LAT result is claimed. The last console inspection found zero IAP products; no account fields, prices or uploads were changed during this local phase.
 
@@ -71,7 +71,7 @@ Two RVS physical attempts passed the new receipt tests but failed the locale tes
 Remaining gates: real backend/credential/TLS/public-pin and Amazon product/price configuration plus actual purchase/refund/account/offline tests; real recorded-file transcription; native review/matching release assets; remaining product/streaming/crash recovery, device/accessibility/performance work; independent server/client security assessment and privacy/legal/export/signing approval. Docker image execution is not verified because no Docker CLI was available. The new identifier-processing flow also needs final questionnaire/legal review. No Amazon submission occurred.
 '''
     (ROOT/'docs/RELEASE_READINESS.md').write_text(readiness,encoding='utf-8')
-    text=f'''# Actual test report — Amazon RVS follow-up, 3 November 2026
+    text=f'''# Actual test report — Amazon RVS follow-up, 4 November 2026
 
 - Server: **{node_pass}/{node_count} passing** local contract/crypto/HTTP/startup/rate/timeout/key-helper tests. Actual TAP log: {row['log']}. No live Amazon call or real credential is used. The deployment package also runs this suite after extracting its verified contents into an isolated temporary directory; see package-index.json.
 - Android build: current amazon-rvs-build.log passed debug/release/test builds, unit tests and lint. Gradle can reuse unchanged tasks/results. Actual release inspection verifies package/version/API, non-debuggable unsigned state, existing Amazon public PEM, both Amazon visibility declarations and absence of test receipt fixtures in the release APK. Generated default release configuration has no verifier URL/pin and purchases off.
@@ -83,7 +83,7 @@ Remaining gates: real backend/credential/TLS/public-pin and Amazon product/price
 
 Two RVS device attempts each ran 17 tests and passed all four new receipt tests, but failed the locale test with No compose hierarchies, first at capture and then at the record control after navigation. Both failed logs are retained as amazon-rvs-device-first-failed.log and amazon-rvs-device-navigation-failed.log. The corrected test adds bounded destination/current-locale/root readiness waits and a stable landscape precondition; functional assertions still fail normally. Its incremental test-only build is recorded in amazon-rvs-test-readiness-build.log. Earlier pre-RVS startup timeout logs are retained and are not declared fixed by a successful retry.
 
-The first layout batch after the 17-test pass completed both larger-text orientations, then UI Automator returned an error while dumping the offline screen. The failed log/result are retained. The dump operation now participates in the existing three-attempt readiness loop; local regression tests check transient-error recovery and the hard three-attempt bound. No missing tree or failed bounds assertion is accepted as a pass. Consult the current layout result for the executed device outcome. Four current visual samples are recorded in amazon-rvs-visual-samples.json; they are not native approval or a full visual audit.
+The first layout batch after the 17-test pass completed both larger-text orientations, then UI Automator returned an error while dumping the offline screen. The failed log/result are retained. The dump operation now participates in an eight-attempt readiness loop after repeated null roots were reproduced on 4 November in both dump modes; regression tests reproduce failure at the old three-attempt bound and recovery with a valid fourth tree. No missing tree or failed bounds assertion is accepted as a pass. Consult the current layout result for the executed device outcome. Five recorded visual samples are recorded in amazon-rvs-visual-samples.json; they are not native approval or a full visual audit.
 
 These results do not certify real Amazon RVS credentials, SDK transaction callbacks, deployed HTTPS behavior, marketplace products/prices, live purchase/refund/restore, LAT approval, native linguistic quality, a full device/security assessment or legal approval. See AMAZON_RVS_IMPLEMENTATION.md and AMAZON_OWNER_ACTIONS.md.
 '''

@@ -18,18 +18,19 @@ class FireLayoutCaptureTest(unittest.TestCase):
         def adb(*args,binary=False):
             if args[:3]==('shell','uiautomator','dump'):
                 dumps.append(args)
-                if len(dumps)==1:raise RuntimeError('Transient dump failure')
+                return 'ERROR: null root node returned by UiTestAutomationBridge.' if len(dumps)<=3 else 'UI hierarchy dumped'
             if args[:2]==('shell','cat'):
+                if len(dumps)<=3:raise RuntimeError('Dump returned success but produced no XML file')
                 return '<hierarchy><node package="com.lifetalea.app.debug" text="Add a memory" bounds="[1,2][10,20]"/></hierarchy>'
             if args[:2]==('exec-out','screencap'):return buffer.getvalue()
             return ''
         with tempfile.TemporaryDirectory() as directory,patch.object(layouts,'OUT',Path(directory)),patch.object(layouts,'adb',side_effect=adb),patch.object(layouts.time,'sleep'):
             result=layouts.capture('synthetic-test-only')
-            self.assertEqual(2,len(dumps))
+            self.assertEqual(4,len(dumps))
             self.assertTrue(result['homeActionInAccessibilityTreeAndWithinDisplay'])
             self.assertTrue((Path(directory)/'synthetic-test-only.xml').exists())
 
-    def test_repeated_dump_failures_stop_after_three_attempts(self):
+    def test_repeated_dump_failures_stop_after_eight_attempts(self):
         dumps=[]
         def adb(*args,binary=False):
             if args[:3]==('shell','uiautomator','dump'):
@@ -38,7 +39,7 @@ class FireLayoutCaptureTest(unittest.TestCase):
         with patch.object(layouts,'adb',side_effect=adb),patch.object(layouts.time,'sleep'):
             with self.assertRaisesRegex(AssertionError,'home action not available'):
                 layouts.capture('synthetic-test-only')
-        self.assertEqual(3,len(dumps))
+        self.assertEqual(8,len(dumps))
 
 
 if __name__=='__main__':unittest.main()

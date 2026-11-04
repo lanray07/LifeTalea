@@ -11,10 +11,10 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'deliverables/amazon-submission'
-NAME = 'LifeTalea-0.1.0-Amazon-RVS-review-2026-11-03.zip'
+NAME = 'LifeTalea-0.1.0-Amazon-RVS-review-2026-11-04.zip'
 BUILD = 'deliverables/android/build-logs/amazon-rvs-build.log'
 SERVER_FILES = ['package.json','Dockerfile','.dockerignore','.env.example','README.md','src/main.mjs','src/http.mjs','src/verifier.mjs','scripts/generate-signing-key.mjs','test/verifier.test.mjs','test/export-contract-fixture.mjs']
-SERVER_NAME = 'LifeTalea-Amazon-RVS-server-2026-11-03.zip'
+SERVER_NAME = 'LifeTalea-Amazon-RVS-server-2026-11-04.zip'
 
 def sha(data): return hashlib.sha256(data).hexdigest()
 def read(path): return json.loads((ROOT / path).read_text(encoding='utf-8'))
@@ -192,6 +192,8 @@ def main():
     if not ui_complete:
         for path in sorted((ROOT/'deliverables/reports/device-evidence/rvs-failed-localization').glob('*')):
             if path.suffix in {'.png','.json'}: add(path.relative_to(ROOT).as_posix(),f'evidence/failed-locale-run/{path.name}')
+    for path in sorted((ROOT/'deliverables/reports/device-evidence/layout-diagnostics-2026-11-04').glob('*')):
+        if path.suffix in {'.png','.xml','.json'}:add(path.relative_to(ROOT).as_posix(),f'evidence/layout-diagnostics-2026-11-04/{path.name}')
     for report in ['device-test-run.json', 'amazon-release-apk-inspection.json', 'amazon-console-review.json', 'amazon-local-checks.json', 'amazon-rvs-verification.json', 'amazon-rvs-visual-samples.json', 'static-checks.json', 'website-checks.json']:
         add(f'deliverables/reports/{report}', f'evidence/{report}')
     for report in ['coverage.json', 'collateral-validation.json']:
@@ -203,7 +205,7 @@ def main():
     for row in local_checks['checks']:
         name = f'evidence/logs/{Path(row["log"]).name}'
         if name not in entries: add(row['log'], name)
-    for name in ['amazon-rvs-layout-first-failed.log','amazon-rvs-layout-rerun.log','amazon-rvs-packaging-python-tests.log','amazon-rvs-current-screenshot-check.log']:
+    for name in ['amazon-rvs-layout-first-failed.log','amazon-rvs-layout-2026-11-04-first-failed.log','amazon-layout-retry-regression.log','amazon-rvs-layout-rerun.log','amazon-rvs-packaging-python-tests.log','amazon-rvs-current-screenshot-check.log']:
         add('deliverables/android/build-logs/'+name,'evidence/logs/'+name)
     entries['READ-ME-FIRST.txt'] = b'BLOCKED - LOCAL REVIEW PACKAGE ONLY\nDo not upload QA APK or draft screenshots.\nRead audit.json and docs/AMAZON_OWNER_ACTIONS.md.\nEnglish candidate binary is unsigned; 22-locale screenshots are debug drafts, not approved release assets.\nNo Amazon console changes or submission were made.\n'
     if not ui_complete:
@@ -217,7 +219,7 @@ def main():
     entries['manifest.json'] = encoded(manifest)
     with zipfile.ZipFile(package, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for name, data in sorted(entries.items()):
-            info = zipfile.ZipInfo(name, date_time=(2026, 11, 3, 0, 0, 0)); info.compress_type = zipfile.ZIP_DEFLATED
+            info = zipfile.ZipInfo(name, date_time=(2026, 11, 4, 0, 0, 0)); info.compress_type = zipfile.ZIP_DEFLATED
             archive.writestr(info, data)
     count = check_bundle(package)
     index = {'path': package.relative_to(ROOT).as_posix(), 'sha256': sha(package.read_bytes()), 'bytes': package.stat().st_size, 'entriesVerified': count, 'releaseStatus': 'BLOCKED','serverPackage':deployment}

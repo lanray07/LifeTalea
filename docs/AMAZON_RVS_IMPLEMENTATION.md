@@ -29,7 +29,7 @@ Local engineering completed:
 
 The exact executed counts and current APK hashes belong to `deliverables/reports/amazon-rvs-verification.json`, `device-test-run.json`, current JUnit files and `amazon-local-checks.json`. Those reports distinguish local contracts from live Amazon behavior; an older passing device run does not verify a rebuilt APK. Historical startup timeouts remain documented unless a specific cause/fix is demonstrated.
 
-Deployment candidate: `deliverables/amazon-submission/LifeTalea-Amazon-RVS-server-2026-11-03.zip`. It contains only allowlisted source, runtime templates, tests and public fixtures. The package builder extracts its own checksum-verified ZIP into an isolated temporary folder and executes the server tests there. No private signing key, Amazon secret, filled env file or real receipt is included. The full updated review ZIP is `LifeTalea-0.1.0-Amazon-RVS-review-2026-11-03.zip`; neither archive is permission to submit or deploy. Docker execution is not claimed where Docker is unavailable.
+Deployment candidate: `deliverables/amazon-submission/LifeTalea-Amazon-RVS-server-2026-11-04.zip`. It contains only allowlisted source, runtime templates, tests and public fixtures. The package builder extracts its own checksum-verified ZIP into an isolated temporary folder and executes the server tests there. No private signing key, Amazon secret, filled env file or real receipt is included. The full updated review ZIP is `LifeTalea-0.1.0-Amazon-RVS-review-2026-11-04.zip`; neither archive is permission to submit or deploy. Docker execution is not claimed where Docker is unavailable.
 
 Next integration gates:
 
