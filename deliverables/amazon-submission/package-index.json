@@ -1,12 +1,12 @@
 {
   "path": "deliverables/amazon-submission/LifeTalea-0.1.0-Amazon-billing-review-2026-11-04.zip",
-  "sha256": "27a55d2de6086789e07b894e3fea34376d67cf492ed60f3a9546606bc78764c2",
-  "bytes": 87013683,
+  "sha256": "49059aa095524a18f8a41c07e4b0a2d0fac72bd9fde7e9d61b5ff7a9261b3f69",
+  "bytes": 87013839,
   "entriesVerified": 515,
   "releaseStatus": "BLOCKED",
   "serverPackage": {
     "path": "deliverables/amazon-submission/LifeTalea-Amazon-Supabase-server-2026-11-04.zip",
-    "sha256": "6fa12aa1fef4cdca84463af4167e4f4b406bfa00e1ed624b68c13498ecbb09a4",
+    "sha256": "8496c973ad9570aa67cadb5b6c983e435e7879f253ce8bf5eefba3c1d6c88223",
     "bytes": 26453,
     "entriesVerified": 21,
     "extractedSelfTests": "PASS",
