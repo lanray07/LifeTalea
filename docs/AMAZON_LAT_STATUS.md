@@ -1,6 +1,6 @@
 # Amazon LAT status — 4 November 2026
 
-The console now shows **Test in-progress** for “LifeTalea billing verification 2026-11-04”. Amazon reports the assigned tester invitation **Delivered**. These are publication/delivery observations, not proof of installation or payment verification.
+The console now shows **Test in-progress** for “LifeTalea billing verification 2026-11-04”. The original invitation was assigned to a mistyped address. The owner corrected the address; the existing correct tester profile is now assigned and the mistyped profile was removed from this LAT. Amazon reports the new invitation **Pending**. Inbox receipt has not been confirmed. These are publication/invitation observations, not proof of email receipt, installation or payment verification.
 
 The connected Fire HD 10 is USB-authorized and unlocked. Amazon SDK sandbox mode is `none`. Before invitation redemption, the Appstore library search for LifeTalea returned no entry, and package-manager inspection found only the debug and Billing QA packages. The canonical `com.lifetalea.app` LAT package was not installed. No LAT purchase was attempted or charged.
 

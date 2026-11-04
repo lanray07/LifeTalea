@@ -56,4 +56,4 @@ For current Fire QA, prefer `python scripts/run_fire_release_checks.py --reset-q
 
 Without `--refresh`, screenshot validation checks the established asset/capture hashes and retains their original APK provenance. A refresh requires a passing current full device run and its per-capture byte hashes. For an explicitly incomplete review disposition, run the reporter and packager with `--allow-incomplete-ui`; they omit current screenshot/layout claims and preserve the failed run. This does not waive any release gate.
 
-Current LAT follow-up: the Supabase adapter is deployed, the connected unsigned candidate was submitted, and Amazon now shows Test in-progress with invitation Delivered. Install via that invitation before real LAT purchase testing; see AMAZON_LAT_STATUS.md. This does not approve a public launch.
+Current LAT follow-up: the Supabase adapter is deployed, the connected unsigned candidate was submitted, and Amazon now shows Test in-progress with corrected invitation Pending (inbox receipt unconfirmed). Install via that invitation before real LAT purchase testing; see AMAZON_LAT_STATUS.md. This does not approve a public launch.

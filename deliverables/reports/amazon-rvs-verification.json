@@ -1,5 +1,5 @@
 {
-  "executedAt": "2026-11-04T16:49:09.035259+00:00",
+  "executedAt": "2026-11-04T17:20:47.780264+00:00",
   "status": "LOCAL_CHECKS_PASS_RELEASE_BLOCKED",
   "uiChecksComplete": true,
   "debugApkSha256": "16dab173edae40ff70ecade6e2faed3959ffc948a2790b8e3a5fa3ed299e1ac9",
@@ -127,19 +127,22 @@
     "copiedOldBinaryNotTested": false,
     "status": "Test in-progress",
     "exportCertificationPerformedByOwner": true,
-    "testerGroup": "LifeTalea billing LAT",
     "uploadedApk": "app-amazonTest-unsigned.apk",
     "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
     "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
     "realPurchaseTested": false,
-    "invitationStatus": "Delivered",
-    "latInstallationVerified": false
+    "invitationStatus": "Pending",
+    "latInstallationVerified": false,
+    "invitationAddressCorrected": true,
+    "invitationReceiptConfirmed": false,
+    "mistypedTesterRemovedFromLat": true,
+    "testerAssignment": "Existing corrected tester profile, selected individually"
   },
   "latPurchaseTests": {
-    "observedAt": "2026-11-04T16:43:48.613995+00:00",
+    "observedAt": "2026-11-04T17:20:47.090272+00:00",
     "status": "BLOCKED_LAT_INSTALLATION_PENDING",
     "latStatus": "Test in-progress",
-    "invitationStatus": "Delivered",
+    "invitationStatus": "Pending",
     "deviceAuthorization": "USB authorized; device unlocked",
     "installedProductionPackage": false,
     "sdkSandboxMode": "none",
@@ -172,7 +175,9 @@
         "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
       }
     ],
-    "nextAction": "Tester must redeem the invitation for the Fire tablet, then verify the Amazon-distributed install and run zero-cost LAT transactions. Do not substitute the local unsigned or App Tester build."
+    "nextAction": "Wait for the corrected-account LAT invitation, redeem it for the Fire tablet, then verify the Amazon-distributed install and run zero-cost LAT transactions. The earlier delivery indicator belonged to a mistyped address and was not inbox confirmation.",
+    "invitationAddressCorrected": true,
+    "invitationReceiptConfirmed": false
   },
   "defaultReleaseConfiguration": {
     "endpointConfigured": false,

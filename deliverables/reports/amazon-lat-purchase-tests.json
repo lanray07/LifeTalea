@@ -1,8 +1,8 @@
 {
-  "observedAt": "2026-11-04T16:43:48.613995+00:00",
+  "observedAt": "2026-11-04T17:20:47.090272+00:00",
   "status": "BLOCKED_LAT_INSTALLATION_PENDING",
   "latStatus": "Test in-progress",
-  "invitationStatus": "Delivered",
+  "invitationStatus": "Pending",
   "deviceAuthorization": "USB authorized; device unlocked",
   "installedProductionPackage": false,
   "sdkSandboxMode": "none",
@@ -35,5 +35,7 @@
       "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
     }
   ],
-  "nextAction": "Tester must redeem the invitation for the Fire tablet, then verify the Amazon-distributed install and run zero-cost LAT transactions. Do not substitute the local unsigned or App Tester build."
+  "nextAction": "Wait for the corrected-account LAT invitation, redeem it for the Fire tablet, then verify the Amazon-distributed install and run zero-cost LAT transactions. The earlier delivery indicator belonged to a mistyped address and was not inbox confirmation.",
+  "invitationAddressCorrected": true,
+  "invitationReceiptConfirmed": false
 }

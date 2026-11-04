@@ -1,8 +1,8 @@
 {
   "releaseStatus": "BLOCKED",
   "packagePurpose": "LOCAL_REVIEW_ONLY_NOT_FOR_SUBMISSION",
-  "generatedAt": "2026-11-04T16:49:09.924333+00:00",
-  "baseCommit": "0aa37e128d55bca1813f71510b641b65ddc4368c",
+  "generatedAt": "2026-11-04T17:20:48.446401+00:00",
+  "baseCommit": "05ec91d91f12d1b1d2e66770b5ae1072fb5ef61a",
   "workingTreeDirty": true,
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
@@ -804,16 +804,19 @@
     "copiedOldBinaryNotTested": false,
     "status": "Test in-progress",
     "exportCertificationPerformedByOwner": true,
-    "testerGroup": "LifeTalea billing LAT",
     "uploadedApk": "app-amazonTest-unsigned.apk",
     "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
     "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
     "realPurchaseTested": false,
-    "invitationStatus": "Delivered",
-    "latInstallationVerified": false
+    "invitationStatus": "Pending",
+    "latInstallationVerified": false,
+    "invitationAddressCorrected": true,
+    "invitationReceiptConfirmed": false,
+    "mistypedTesterRemovedFromLat": true,
+    "testerAssignment": "Existing corrected tester profile, selected individually"
   },
   "receiptVerification": {
-    "executedAt": "2026-11-04T16:49:09.035259+00:00",
+    "executedAt": "2026-11-04T17:20:47.780264+00:00",
     "status": "LOCAL_CHECKS_PASS_RELEASE_BLOCKED",
     "uiChecksComplete": true,
     "debugApkSha256": "16dab173edae40ff70ecade6e2faed3959ffc948a2790b8e3a5fa3ed299e1ac9",
@@ -941,19 +944,22 @@
       "copiedOldBinaryNotTested": false,
       "status": "Test in-progress",
       "exportCertificationPerformedByOwner": true,
-      "testerGroup": "LifeTalea billing LAT",
       "uploadedApk": "app-amazonTest-unsigned.apk",
       "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
       "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
       "realPurchaseTested": false,
-      "invitationStatus": "Delivered",
-      "latInstallationVerified": false
+      "invitationStatus": "Pending",
+      "latInstallationVerified": false,
+      "invitationAddressCorrected": true,
+      "invitationReceiptConfirmed": false,
+      "mistypedTesterRemovedFromLat": true,
+      "testerAssignment": "Existing corrected tester profile, selected individually"
     },
     "latPurchaseTests": {
-      "observedAt": "2026-11-04T16:43:48.613995+00:00",
+      "observedAt": "2026-11-04T17:20:47.090272+00:00",
       "status": "BLOCKED_LAT_INSTALLATION_PENDING",
       "latStatus": "Test in-progress",
-      "invitationStatus": "Delivered",
+      "invitationStatus": "Pending",
       "deviceAuthorization": "USB authorized; device unlocked",
       "installedProductionPackage": false,
       "sdkSandboxMode": "none",
@@ -986,7 +992,9 @@
           "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
         }
       ],
-      "nextAction": "Tester must redeem the invitation for the Fire tablet, then verify the Amazon-distributed install and run zero-cost LAT transactions. Do not substitute the local unsigned or App Tester build."
+      "nextAction": "Wait for the corrected-account LAT invitation, redeem it for the Fire tablet, then verify the Amazon-distributed install and run zero-cost LAT transactions. The earlier delivery indicator belonged to a mistyped address and was not inbox confirmation.",
+      "invitationAddressCorrected": true,
+      "invitationReceiptConfirmed": false
     },
     "defaultReleaseConfiguration": {
       "endpointConfigured": false,
@@ -1118,15 +1126,18 @@
       "copiedOldBinaryNotTested": false,
       "status": "Test in-progress",
       "exportCertificationPerformedByOwner": true,
-      "testerGroup": "LifeTalea billing LAT",
       "uploadedApk": "app-amazonTest-unsigned.apk",
       "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
       "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
       "realPurchaseTested": false,
-      "invitationStatus": "Delivered",
-      "latInstallationVerified": false
+      "invitationStatus": "Pending",
+      "latInstallationVerified": false,
+      "invitationAddressCorrected": true,
+      "invitationReceiptConfirmed": false,
+      "mistypedTesterRemovedFromLat": true,
+      "testerAssignment": "Existing corrected tester profile, selected individually"
     },
-    "latReviewObservedAt": "2026-11-04T16:43:48.613995+00:00"
+    "latReviewObservedAt": "2026-11-04T17:20:47.090272+00:00"
   },
   "layoutSmoke": {
     "executedAt": "2026-11-04T10:22:04.309733+00:00",
@@ -1330,7 +1341,7 @@
   "serverSourceFingerprint": "bc549bac8b9c02cb83a68bf2dc26acfeb584e5c7f929e6075cf652d7922adb32",
   "serverDeploymentPackage": {
     "path": "deliverables/amazon-submission/LifeTalea-Amazon-Supabase-server-2026-11-04.zip",
-    "sha256": "3a925034231a1923cc9bbc52424a95949b2c5dd5b367856353d9589f219afbe5",
+    "sha256": "f224f0919744277a4aa530da4e9511014aa91726cd9a06ac20fac358f0fa2571",
     "bytes": 26453,
     "entriesVerified": 21,
     "extractedSelfTests": "PASS",
