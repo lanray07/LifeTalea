@@ -1,7 +1,7 @@
 {
-  "executedAt": "2026-11-04T08:15:03.316523+00:00",
+  "executedAt": "2026-11-04T10:22:04.309733+00:00",
   "status": "PASS",
-  "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
+  "debugApkSha256": "16dab173edae40ff70ecade6e2faed3959ffc948a2790b8e3a5fa3ed299e1ac9",
   "originalSettingsRestored": true,
   "originalSettings": {
     "accelerometer_rotation": "1",
@@ -32,7 +32,11 @@
   ],
   "scope": "Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology.",
   "qaPowerSettings": {
-    "originalStayAwakeWhilePluggedIn": "0",
+    "originalStayAwakeWhilePluggedIn": "7",
+    "restored": true
+  },
+  "qaBatchPowerSettings": {
+    "originalStayAwakeWhilePluggedIn": "7",
     "restored": true
   }
 }

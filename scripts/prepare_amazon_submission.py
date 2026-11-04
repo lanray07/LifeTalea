@@ -11,10 +11,11 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'deliverables/amazon-submission'
-NAME = 'LifeTalea-0.1.0-Amazon-RVS-review-2026-11-04.zip'
+NAME = 'LifeTalea-0.1.0-Amazon-billing-review-2026-11-04.zip'
 BUILD = 'deliverables/android/build-logs/amazon-rvs-build.log'
 SERVER_FILES = ['package.json','Dockerfile','.dockerignore','.env.example','README.md','src/main.mjs','src/http.mjs','src/verifier.mjs','scripts/generate-signing-key.mjs','test/verifier.test.mjs','test/export-contract-fixture.mjs']
-SERVER_NAME = 'LifeTalea-Amazon-RVS-server-2026-11-04.zip'
+SERVER_FILES += ['supabase/index.ts','supabase/handler.mjs','supabase/deno.json','supabase/public-signing-key.json','test/edge.test.mjs']
+SERVER_NAME = 'LifeTalea-Amazon-Supabase-server-2026-11-04.zip'
 
 def sha(data): return hashlib.sha256(data).hexdigest()
 def read(path): return json.loads((ROOT / path).read_text(encoding='utf-8'))
@@ -47,7 +48,10 @@ def server_package():
     for key in ['AMAZON_SHARED_SECRET','RVS_SIGNING_PRIVATE_KEY_FILE','RVS_SIGNING_PRIVATE_KEY_PEM_B64']:
         assert re.search(rf'^{key}=\s*$',template,re.M), 'Never fill the tracked env template with secrets'
     payload['android/app/src/androidTest/assets/rvs-contract.json'] = (ROOT/'android/app/src/androidTest/assets/rvs-contract.json').read_bytes()
-    payload['READ-ME-FIRST.txt'] = b'LOCAL DEPLOYMENT CANDIDATE; NOT DEPLOYED OR LIVE-AMAZON-VERIFIED.\nRead server/receipt-verifier/README.md. Node 24, private server secrets and trusted HTTPS are required.\nRun: node --test server/receipt-verifier/test/verifier.test.mjs\nNo production private keys or real purchase receipts are included.\n'
+    payload['docs/AMAZON_SUPABASE_DEPLOYMENT.md'] = (ROOT/'docs/AMAZON_SUPABASE_DEPLOYMENT.md').read_bytes()
+    for migration in (ROOT/'supabase/migrations').glob('*lifetalea_receipt_quota.sql'):
+        payload[migration.relative_to(ROOT).as_posix()]=migration.read_bytes()
+    payload['READ-ME-FIRST.txt'] = b'SUPABASE ADAPTER DEPLOYED; REAL LAT PURCHASE VERIFICATION PENDING.\nRead docs/AMAZON_SUPABASE_DEPLOYMENT.md. Do not reapply the existing remote migration.\nRun: node --test server/receipt-verifier/test/verifier.test.mjs server/receipt-verifier/test/edge.test.mjs\nNo production private keys, shared secret or real purchase receipts are included.\n'
     payload['manifest.json'] = encoded({'releaseStatus':'BLOCKED','files':[{'path':name,'bytes':len(data),'sha256':sha(data)} for name,data in sorted(payload.items())]})
     archive_path = OUT/SERVER_NAME
     with zipfile.ZipFile(archive_path,'w',compression=zipfile.ZIP_DEFLATED) as archive:
@@ -57,10 +61,10 @@ def server_package():
     with tempfile.TemporaryDirectory(prefix='server-bundle-check-',dir=OUT) as temporary:
         assert Path(temporary).resolve().parent == OUT.resolve()
         with zipfile.ZipFile(archive_path) as archive: archive.extractall(temporary)
-        result=subprocess.run(['node','--test','--test-reporter=tap','server/receipt-verifier/test/verifier.test.mjs'],cwd=temporary,capture_output=True,timeout=60)
+        result=subprocess.run(['node','--test','--test-reporter=tap','server/receipt-verifier/test/verifier.test.mjs','server/receipt-verifier/test/edge.test.mjs'],cwd=temporary,capture_output=True,timeout=60)
         (ROOT/'deliverables/android/build-logs/amazon-rvs-deployment-smoke.log').write_bytes(result.stdout+result.stderr)
         assert result.returncode == 0, 'Standalone deployment ZIP self-test failed'
-    return {'path':archive_path.relative_to(ROOT).as_posix(),'sha256':sha(archive_path.read_bytes()),'bytes':archive_path.stat().st_size,'entriesVerified':count,'extractedSelfTests':'PASS','deployed':False}
+    return {'path':archive_path.relative_to(ROOT).as_posix(),'sha256':sha(archive_path.read_bytes()),'bytes':archive_path.stat().st_size,'entriesVerified':count,'extractedSelfTests':'PASS','deployed':'SUPABASE_ADAPTER_ONLY','realLatPurchaseVerified':False}
 
 def main():
     parser = argparse.ArgumentParser(); parser.add_argument('--check', action='store_true'); parser.add_argument('--allow-incomplete-ui', action='store_true'); args = parser.parse_args()
@@ -133,7 +137,8 @@ def main():
         'deviceRun': run, 'deviceScope': 'KFTRWI / Fire HD 10 (2021) / Fire OS 7 / API 28 / landscape',
         'appDraftLocales': 22, 'appKeysPerLocale': 191, 'nativeReleaseApprovals': 0,
         'screenshotDrafts': len(captures['assets']), 'screenshotSource': 'Current debug APK, one physical tablet; release screenshot approval pending' if native_complete else 'OMITTED: fresh full locale run and capture validation required',
-        'productionBilling': 'IMPLEMENTED_LOCALLY_NOT_CONFIGURED: signed server RVS and Android client; endpoint/pin unset and purchases off in default build. Deployment, real credentials, IAP product/prices and live Amazon transaction tests remain required.',
+        'productionBilling': 'SUPABASE_DEPLOYED: signed production negative-receipt smoke passed; App Tester sandbox cases passed after cancellation fix. Premium approved for TEST at GBP4.99; connected LAT binary/tester group submitted. Standard release purchases off; real LAT purchase verification and public launch gates remain open.',
+        'amazonLatSubmission':console.get('latDraft'),
         'receiptVerification': rvs,
         'transcription': 'UNCONFIGURED; manual editing only',
         'formalSecurityScan': 'STARTUP_FAILED; no independent scan completed; static pattern checks are narrower evidence',
@@ -170,6 +175,19 @@ def main():
     add(deployment['path'], 'server-deployment/'+SERVER_NAME)
     add('android/app/src/androidTest/assets/rvs-contract.json')
     add('docs/AMAZON_RVS_IMPLEMENTATION.md')
+    add('docs/AMAZON_SUPABASE_DEPLOYMENT.md')
+    for name in ['setup_billing_qa.py','local_billing_qa_session.py','setup_production_rvs_identity.py','build_amazon_test.py','inspect_amazon_test.py','check_deployed_rvs.mjs','billing-qa-requirements.txt']:
+        add('scripts/'+name)
+    add('server/receipt-verifier/scripts/local-sandbox-server.mjs')
+    for path in sorted((ROOT/'deliverables/reports/device-evidence/amazon-billing-sandbox').glob('*')):
+        if path.suffix in {'.png','.json'}:add(path.relative_to(ROOT).as_posix(),'evidence/amazon-billing-sandbox/'+path.name)
+    for name in ['amazon-billing-sandbox-tests.json','amazon-app-tester-session.json','amazon-supabase-deployment.json','amazon-supabase-source-verification.json','amazon-lat-apk-inspection.json','amazon-iap-premium-pricing.png','amazon-iap-test-submitted.png','amazon-lat-test-submitted.png']:
+        add('deliverables/reports/'+name,'evidence/'+name)
+    lat=read('deliverables/reports/amazon-lat-apk-inspection.json')
+    assert lat['sha256']==sha((ROOT/lat['path']).read_bytes())
+    add(lat['path'],'amazon-lat-only/LifeTalea-0.1.0-amazonTest-unsigned.apk')
+    for name in ['amazon-lat-build.log','amazon-billing-qa-sdk-cancellations.log','amazon-cancellation-regression-red.log','amazon-fire-post-cancellation.log']:
+        add('deliverables/android/build-logs/'+name,'evidence/logs/'+name)
     for filename in ['app-icon-114.png', 'app-icon-512.png']:
         add(f'deliverables/brand-assets/{filename}', f'listing-assets/icons/{filename}')
     for locale in [row['locale'] for row in coverage]:
@@ -207,7 +225,7 @@ def main():
         if name not in entries: add(row['log'], name)
     for name in ['amazon-rvs-layout-first-failed.log','amazon-rvs-layout-2026-11-04-first-failed.log','amazon-layout-retry-regression.log','amazon-rvs-layout-rerun.log','amazon-rvs-packaging-python-tests.log','amazon-rvs-current-screenshot-check.log']:
         add('deliverables/android/build-logs/'+name,'evidence/logs/'+name)
-    entries['READ-ME-FIRST.txt'] = b'BLOCKED - LOCAL REVIEW PACKAGE ONLY\nDo not upload QA APK or draft screenshots.\nRead audit.json and docs/AMAZON_OWNER_ACTIONS.md.\nEnglish candidate binary is unsigned; 22-locale screenshots are debug drafts, not approved release assets.\nNo Amazon console changes or submission were made.\n'
+    entries['READ-ME-FIRST.txt'] = b'BLOCKED - REVIEW PACKAGE; PUBLIC RELEASE NOT APPROVED\nDo not upload QA APK or draft screenshots as production assets.\nRead audit.json and docs/AMAZON_OWNER_ACTIONS.md.\nSupabase verifier deployed; Premium IAP submitted and approved for TEST ONLY at GBP4.99.\nEnglish standard candidate is unsigned and purchases-disabled; 22-locale screenshots need native approval.\nReal LAT purchases and other acceptance/security/legal/product gates remain open.\n'
     if not ui_complete:
         entries['READ-ME-FIRST.txt'] = b'BLOCKED - PARTIAL LOCAL REVIEW PACKAGE; UI QA INCOMPLETE\nRead audit.json and docs/RELEASE_READINESS.md. The last device run failed a locale UI test.\nThe subsequent test-only fix has not been executed; current screenshots and layout certification are omitted.\nThe candidate is unsigned and billing is not configured. No deployment or Amazon submission occurred.\n'
         if native_complete:

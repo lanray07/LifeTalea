@@ -249,7 +249,7 @@ INSTRUMENTATION_STATUS: test=foregroundRecordingPauseResumeAndPlayback
 INSTRUMENTATION_STATUS_CODE: 0
 INSTRUMENTATION_RESULT: stream=
 
-Time: 183.095
+Time: 182.529
 
 OK (17 tests)
 

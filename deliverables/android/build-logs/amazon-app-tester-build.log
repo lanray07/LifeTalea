@@ -1,0 +1,61 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preBillingQaBuild UP-TO-DATE
+> Task :app:mergeBillingQaNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateBillingQaBuildConfig
+> Task :app:generateBillingQaResValues
+> Task :app:checkBillingQaAarMetadata
+> Task :app:mapBillingQaSourceSetPaths
+> Task :app:generateBillingQaResources
+> Task :app:packageBillingQaResources
+> Task :app:parseBillingQaLocalResources
+> Task :app:createBillingQaCompatibleScreenManifests
+> Task :app:extractDeepLinksBillingQa
+> Task :app:mergeBillingQaResources
+> Task :app:processBillingQaMainManifest
+> Task :app:processBillingQaManifest
+> Task :app:processBillingQaManifestForPackage
+> Task :app:javaPreCompileBillingQa
+> Task :app:mergeBillingQaShaders
+> Task :app:compileBillingQaShaders NO-SOURCE
+> Task :app:generateBillingQaAssets UP-TO-DATE
+> Task :app:mergeBillingQaAssets
+> Task :app:compressBillingQaAssets
+> Task :app:desugarBillingQaFileDependencies
+> Task :app:checkBillingQaDuplicateClasses
+> Task :app:processBillingQaResources
+> Task :app:mergeExtDexBillingQa
+> Task :app:mergeLibDexBillingQa
+> Task :app:mergeBillingQaJniLibFolders
+> Task :app:mergeBillingQaNativeLibs
+
+> Task :app:stripBillingQaDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
+
+> Task :app:validateSigningBillingQa
+> Task :app:writeBillingQaAppMetadata
+> Task :app:writeBillingQaSigningConfigVersions
+> Task :app:kspBillingQaKotlin
+> Task :app:compileBillingQaKotlin
+> Task :app:compileBillingQaJavaWithJavac
+> Task :app:dexBuilderBillingQa
+> Task :app:mergeBillingQaGlobalSynthetics
+> Task :app:processBillingQaJavaRes
+> Task :app:mergeProjectDexBillingQa
+> Task :app:mergeBillingQaJavaResource
+> Task :app:packageBillingQa
+> Task :app:createBillingQaApkListingFileRedirect
+> Task :app:assembleBillingQa
+
+[Incubating] Problems report is available at: file:///D:/App%20Projects/LifeTalea/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 3m 1s
+38 actionable tasks: 38 executed

@@ -128,6 +128,10 @@ class AmazonBilling(private val context: Context, private val gateway: ReceiptGa
         if (response.requestStatus != PurchaseResponse.RequestStatus.SUCCESSFUL || response.userData.userId != request.first || receipt == null || receipt.sku != SKU || receipt.productType != ProductType.ENTITLED) {
             publish("purchase_failed"); return
         }
+        if (receipt.isCanceled) {
+            session.revoke(session.generation, request.first, receipt.receiptId)
+            publish("purchase_failed"); return
+        }
         if (session.user == request.first) verifyPurchase(session.generation, request.first, receipt.receiptId)
         else { pendingPurchase = request.first to receipt.receiptId; if (!refreshing) refresh() }
     }
@@ -158,13 +162,16 @@ class AmazonBilling(private val context: Context, private val gateway: ReceiptGa
         }
         response.receipts.filter { it.sku == SKU && it.productType == ProductType.ENTITLED }.forEach { history[it.receiptId] = it }
         if (++pages > 100 || history.size > 100) { refreshing = false; timeout?.cancel(); publish("billing_unavailable"); return }
+        history.values.filter { it.isCanceled }.forEach { session.revoke(request.first, user, it.receiptId); newPurchases.remove(it.receiptId) }
+        if (BuildConfig.BUILD_TYPE == "billingQa") android.util.Log.i("LifeTaleaBillingQa", "restore matching=${history.size} canceled=${history.values.count { it.isCanceled }}")
+        publish()
         if (response.hasMore()) {
             runCatching { updatesRequest = request.first to PurchasingService.getPurchaseUpdates(false); watch(request.first) }
                 .onFailure { refreshing = false; publish("billing_unavailable") }
             return
         }
         timeout?.cancel()
-        val receipts = history.keys.toList()
+        val receipts = history.values.filterNot { it.isCanceled }.map { it.receiptId }
         scope.launch {
             var unavailable = false
             try {

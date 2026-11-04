@@ -1,0 +1,16 @@
+{
+  "startedAt": "2026-11-04T09:38:45.050663+00:00",
+  "status": "SESSION_CLOSED_TEST_RESULTS_RECORDED_SEPARATELY",
+  "environment": "sandbox",
+  "productionStorageTouched": false,
+  "qaPowerSettings": {
+    "originalStayAwakeWhilePluggedIn": "0",
+    "restored": true
+  },
+  "billingQaApkSha256": "9d44d0ef9211e162bc3f6c44c2610cfbc4282088c83ee43453ae41d200f70b44",
+  "originalSdkMode": "none",
+  "originalCataloguePresent": true,
+  "stopReason": "operator",
+  "catalogueAndSdkModeRestored": true,
+  "finishedAt": "2026-11-04T09:52:39.591182+00:00"
+}

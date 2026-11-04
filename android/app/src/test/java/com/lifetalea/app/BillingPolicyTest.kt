@@ -32,6 +32,21 @@ class BillingPolicyTest {
         assertEquals("active",session.current!!.claims.receiptId)
         session.record(epoch,"alice",receipt("active",active=false)); assertNull(session.current)
     }
+    @Test fun canceledReceiptCannotBeRegrantedByALateActiveAssertion() {
+        val session=BillingSession(false,"production") { time };val epoch=session.beginIdentityCheck();session.identify(epoch,"alice",null)
+        session.record(epoch,"alice",receipt())
+        session.record(epoch,"alice",receipt(active=false))
+        assertFalse(session.record(epoch,"alice",receipt()))
+        assertNull(session.current)
+    }
+    @Test fun currentSdkCancellationRevokesOnlyItsBoundReceiptAndBlocksLateGrants() {
+        val session=BillingSession(false,"production") { time };val epoch=session.beginIdentityCheck();session.identify(epoch,"alice",receipt())
+        assertFalse(session.revoke(epoch,"bob","receipt"));assertNotNull(session.current)
+        assertFalse(session.revoke(epoch-1,"alice","receipt"));assertNotNull(session.current)
+        assertTrue(session.revoke(epoch,"alice","receipt"));assertNull(session.current)
+        assertFalse(session.record(epoch,"alice",receipt()));assertNull(session.current)
+        assertTrue(session.record(epoch,"alice",receipt("new-receipt")));assertNotNull(session.current)
+    }
     @Test fun completedRestoreRemovesAbsentReceiptsButNetworkFailureCanKeepSeenSignedCache() {
         val session = BillingSession(false,"production") { time }; val epoch = session.beginIdentityCheck(); session.identify(epoch,"alice",receipt())
         session.finishSnapshot(epoch,"alice",setOf("receipt")); assertNotNull(session.current)

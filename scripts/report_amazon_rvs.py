@@ -24,6 +24,9 @@ def main():
     node=(ROOT/row['log']).read_text(encoding='utf-8')
     node_count=int(re.search(r'^# tests (\d+)$',node,re.M)[1]);node_pass=int(re.search(r'^# pass (\d+)$',node,re.M)[1])
     if node_count!=node_pass or not re.search(r'^# fail 0$',node,re.M):raise SystemExit('Server tests failed')
+    edge_row=next(row for row in checks['checks'] if row['check']=='amazon-rvs-edge')
+    edge_log=(ROOT/edge_row['log']).read_text(encoding='utf-8')
+    if not all(re.search(pattern,edge_log,re.M) for pattern in [r'^# tests 3$',r'^# pass 3$',r'^# fail 0$']):raise SystemExit('Edge adapter tests incomplete')
     native=(ROOT/'deliverables/android/build-logs/instrumentation.log').read_text(encoding='utf-8')
     total=int(re.search(r'OK \((\d+) tests?\)',native)[1]) if complete else int(re.search(r'Tests run: (\d+)',native)[1])
     device_count=total if complete else len(re.findall(r'^INSTRUMENTATION_STATUS_CODE: 0$',native,re.M))
@@ -53,64 +56,44 @@ def main():
         'serverTests':{'status':'PASS','tests':node_count,'passed':node_pass,'log':row['log'],'scope':'Fictional Amazon responses; real crypto/local HTTP/executable/key-helper tests; not live Amazon RVS'},
         'androidReceiptContractTests':{'status':'PASS','passed':len(contract),'tests':sorted(contract),'scope':'Node-signed offline fixtures and actual Fire RSA/JSON/config behavior, not real SDK payment callbacks'},
         'kotlinUnitTestsPassed':units,'physicalDeviceTestsPassed':device_count,'physicalDeviceTestsRun':total,'physicalDeviceSuiteStatus':run['status'],'deviceSeconds':float(seconds),'lint':lint,'layoutSmokeStatus':layout['status'] if layout.get('debugApkSha256')==run['debugApkSha256'] else 'NOT_VERIFIED_ON_CURRENT_APP','currentScreenshotDraftsValidated':176 if captures_current and complete else 0,
-        'serverDeployed':False,'liveAmazonRvsTested':False,'livePurchaseTestsPassed':False,'dockerImageBuilt':False,'productionSigningIdentityCreated':False,
+        'serverDeployed':True,'liveAmazonRvsTested':'PRODUCTION_NEGATIVE_RECEIPT_ONLY','livePurchaseTestsPassed':False,'dockerImageBuilt':False,'productionSigningIdentityCreated':True,
+        'productionDeployment':read('deliverables/reports/amazon-supabase-deployment.json'),
+        'appTesterSandbox':read('deliverables/reports/amazon-billing-sandbox-tests.json'),
         'defaultReleaseConfiguration':inspection['generatedReleaseBillingConfiguration'],
         'serverSourceSha256':{name:sha(ROOT/f'server/receipt-verifier/{name}') for name in SERVER_FILES},
-        'remaining':'Deploy/configure a private HTTPS verifier and public app pin; create/approve IAP/prices; real Amazon transaction tests; independent security/privacy/legal/native and remaining product/device gates.'}
+        'remaining':'Execute configured Amazon LAT purchases against deployed verifier; complete independent security/privacy/legal/native and remaining product/device gates.'}
     (REPORTS/'amazon-rvs-verification.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
-    readiness=f'''# Release readiness — BLOCKED
+    deployment=result['productionDeployment']
+    assert deployment['status']==200 and deployment['signatureValid'] and deployment['payload']['active'] is False
+    assert result['appTesterSandbox']['catalogueSdkModeAndPowerRestored']
+    state='Current device and collateral checks passed.' if complete and layout_current else 'Current UI QA is incomplete.'
+    readiness=f'''# Release readiness â€” BLOCKED
 
-Updated 4 November 2026. [Current billing implementation](AMAZON_RVS_IMPLEMENTATION.md) and [remaining gates](AMAZON_OWNER_ACTIONS.md). The original 258-statement acceptance checklist remains in scope; no new completion percentage is inferred from test counts.
+Updated 4 November 2026. {state} The original acceptance requirements remain in scope.
 
-Server RVS and the signed Android client are implemented and tested locally. The default release still has no verifier endpoint/public pin and purchases are off. The server has not been deployed, no real Amazon secret/deployment signing identity was configured, and no real purchase/refund/restore/LAT result is claimed. The last console inspection found zero IAP products; no account fields, prices or uploads were changed during this local phase.
+The Supabase production verifier is deployed with server-only credentials and its own RSA signing identity. HTTPS health and a signed rejection of synthetic invalid receipt identifiers passed. This does not verify an actual production purchase. See AMAZON_SUPABASE_DEPLOYMENT.md and amazon-supabase-deployment.json.
 
-Current evidence: **{node_pass} server tests, {units} Kotlin unit tests, {device_count} physical Fire tests** passed; the Fire suite includes {len(contract)} receipt/signature/config tests. Lint: {lint['Error']} errors, {lint['Warning']} warnings. Portrait/landscape at 1.3× text and Wi-Fi-disabled home reopen passed, with all original QA settings restored. Resource/catalogue, website/type and metadata/editorial checks passed; native approvals remain zero. {screenshot_note}
+Amazon Premium was submitted to the TEST channel and is Approved, with the owner's Â£4.99 UK one-time price and Amazon-calculated marketplace prices. The public app and paid upgrade have not been published. The connected LAT candidate was uploaded and the test release is submitted; Amazon processing and actual purchase verification remain pending. The standard release remains purchases-disabled; the separate LAT candidate uses the deployed URL and public pin.
 
-Two RVS physical attempts passed the new receipt tests but failed the locale test with a detached Compose hierarchy, first at capture and then after opening a story. Both failed logs are retained. The corrected test adds bounded waits after destination navigation as well as before capture, and fixes the test orientation. These changes address observed readiness preconditions; broader device/test reliability remains open.
+Real App Tester sandbox tests exposed a canceled-receipt bug. The fixed QA build passed cancellation, purchase-dialog cancellation, fresh purchase, restore and cancellation of the new fulfilled receipt. SDK cancellations now revoke a receipt and prevent a late active response from reinstating it. The account-switch observation belongs to the earlier QA APK and is labelled accordingly. See amazon-billing-sandbox-tests.json.
 
-Remaining gates: real backend/credential/TLS/public-pin and Amazon product/price configuration plus actual purchase/refund/account/offline tests; real recorded-file transcription; native review/matching release assets; remaining product/streaming/crash recovery, device/accessibility/performance work; independent server/client security assessment and privacy/legal/export/signing approval. Docker image execution is not verified because no Docker CLI was available. The new identifier-processing flow also needs final questionnaire/legal review. No Amazon submission occurred.
+Current local evidence: {node_pass} Node core tests, three edge adapter tests, {units} Kotlin unit tests and {device_count}/{total} physical Fire tests. Lint: {lint['Error']} errors, {lint['Warning']} warnings. Layout/offline status: {layout['status']}. All original device settings, App Tester catalogue and SDK mode were restored. {screenshot_note}
+
+Remaining: deployed-server LAT purchase/restore/cancellation/account/offline tests;  recorded-file transcription; native approval and matching release assets; outstanding product, backup/crash recovery, accessibility/performance/device checks; independent server/client security and final privacy/legal/signing review. No public release readiness or Amazon public approval is claimed. See AMAZON_OWNER_ACTIONS.md.
 '''
     (ROOT/'docs/RELEASE_READINESS.md').write_text(readiness,encoding='utf-8')
-    text=f'''# Actual test report — Amazon RVS follow-up, 4 November 2026
+    text=readiness+f'''\nExecuted evidence:
 
-- Server: **{node_pass}/{node_count} passing** local contract/crypto/HTTP/startup/rate/timeout/key-helper tests. Actual TAP log: {row['log']}. No live Amazon call or real credential is used. The deployment package also runs this suite after extracting its verified contents into an isolated temporary directory; see package-index.json.
-- Android build: current amazon-rvs-build.log passed debug/release/test builds, unit tests and lint. Gradle can reuse unchanged tasks/results. Actual release inspection verifies package/version/API, non-debuggable unsigned state, existing Amazon public PEM, both Amazon visibility declarations and absence of test receipt fixtures in the release APK. Generated default release configuration has no verifier URL/pin and purchases off.
-- Kotlin: **{units} passing** tests, current JUnit XML under deliverables/reports/junit. Billing cases include account generations, stale responses, revocation/order, empty restore, expiry, environment/SKU/time bounds, invalid identities and monotonic time under wall-clock changes.
-- Physical KFTRWI / Fire HD 10 (2021), Fire OS 7/API 28: **{device_count} passing** tests in {seconds} seconds. This includes {len(contract)} receipt tests: Node-signed assertions on actual Android RSA/JSON, tampering/wrong signer/schema, sandbox/endpoint rejection and rejection of legacy Premium preferences. The other tests cover writing/organising, private media/preservation/backup/PDF, short real microphone recording/playback/seek and the 22-locale capture matrix. Raw microphone data is deleted.
-- Layout smoke: three passing home-screen cases, portrait/landscape at 1.3× text and Wi-Fi-disabled reopen. This does not certify all screens, font scales, assistive technology, prolonged offline operation or configured Premium's reboot/offline behavior. Power, rotation, font and Wi-Fi settings were restored; current provenance records the outer batch and inner restoration.
-- Collateral checks: all {len(checks['checks'])} groups passed, including Python tests, 22 × 191 app keys, release-locale isolation, authored-copy regression, metadata constraints, browser-locale/review-gate/static-export regressions, TypeScript, 352 exported pages and narrow source patterns. Native-language approval remains absent.
-- Lint: **{lint['Error']} errors, {lint['Warning']} warnings**. The independent security assessment is still pending; static patterns and these tests do not replace it.
+- Core Node contract/crypto/HTTP/startup/rate/timeout/key-helper tests: {node_pass}/{node_count}. These use fictional upstream responses; actual Amazon tests are reported separately.
+- Edge adapter tests: three passed (secrets fail closed, request bounds, quota, receipt delegation and error redaction).
+- Kotlin: {units} passed, including SDK revocation identity/epoch binding and rejection of late active responses after cancellation. The retained red regression log demonstrates the original bug.
+- Physical KFTRWI, Fire HD 10 (2021), Fire OS 7/API 28: {device_count}/{total} passed in {seconds} seconds, including {len(contract)} signed-receipt fixture tests, core writing/media/backup/PDF/short recording flows and the 22-locale capture matrix. This suite uses the standard debug APK; SDK App Tester uses a separate QA APK with its own hash.
+- Three home-screen layout checks: portrait/landscape at 1.3Ã— text and Wi-Fi-disabled reopen. Scope excludes full-screen accessibility and prolonged offline Premium behavior.
+- All {len(checks['checks'])} collateral groups passed: Python, locale resources/isolation, editorial regression, metadata, browser locale/review/static-export, TypeScript, website structure and narrow source patterns.
+- {176 if captures_current else 0} current-APK screenshot drafts byte-validated. Native approvals: zero. Five fresh visual samples were reviewed and their exact hashes recorded; this is not a complete visual or native-language review.
+- Supabase service-role-only quota RPC access verified; anon/authenticated execute denied; private quota RLS enabled. No customer identifiers are stored in that table. Security-advisor no-policy notice is intentional deny-all for normal roles. Existing project password warning was not changed.
 
-Two RVS device attempts each ran 17 tests and passed all four new receipt tests, but failed the locale test with No compose hierarchies, first at capture and then at the record control after navigation. Both failed logs are retained as amazon-rvs-device-first-failed.log and amazon-rvs-device-navigation-failed.log. The corrected test adds bounded destination/current-locale/root readiness waits and a stable landscape precondition; functional assertions still fail normally. Its incremental test-only build is recorded in amazon-rvs-test-readiness-build.log. Earlier pre-RVS startup timeout logs are retained and are not declared fixed by a successful retry.
-
-The first layout batch after the 17-test pass completed both larger-text orientations, then UI Automator returned an error while dumping the offline screen. The failed log/result are retained. The dump operation now participates in an eight-attempt readiness loop after repeated null roots were reproduced on 4 November in both dump modes; regression tests reproduce failure at the old three-attempt bound and recovery with a valid fourth tree. No missing tree or failed bounds assertion is accepted as a pass. Consult the current layout result for the executed device outcome. Five recorded visual samples are recorded in amazon-rvs-visual-samples.json; they are not native approval or a full visual audit.
-
-These results do not certify real Amazon RVS credentials, SDK transaction callbacks, deployed HTTPS behavior, marketplace products/prices, live purchase/refund/restore, LAT approval, native linguistic quality, a full device/security assessment or legal approval. See AMAZON_RVS_IMPLEMENTATION.md and AMAZON_OWNER_ACTIONS.md.
-'''
-    if not complete or not layout_current:
-        fire_note='All current instrumentation tests passed, including the corrected full 22-locale capture test.' if complete else 'The locale UI test failed, and the later test-only readiness update has not been executed.'
-        asset_note=screenshot_note if captures_current and complete else 'Current screenshot assets are omitted until the full capture run and byte validation pass.'
-        layout_note=f"The separate current-app layout smoke is {layout.get('status')}: {len(layout.get('cases',[]))} cases completed; failure: {layout.get('failure')}." if layout.get('debugApkSha256')==run['debugApkSha256'] else 'The layout smoke has not been verified on the current app.'
-        warning=f'''# Current RVS evidence — UI QA INCOMPLETE / release BLOCKED
-
-{node_pass} server tests and {units} unit tests passed. The last physical run on the current debug app passed {device_count}/{total}, including all {len(contract)} receipt tests. {fire_note} {layout_note} Original QA settings were restored.
-
-{asset_note} A fresh unlocked-device layout/offline check remains required. This report records incomplete QA; it does not waive a release gate.
-
-Server RVS/client implementation and local tests are complete enough to review; deployment, real credentials/TLS/public pin, product/prices, live Amazon transactions and independent security/privacy/legal/native/remaining product gates remain open. No deployment or submission occurred. See AMAZON_RVS_IMPLEMENTATION.md and amazon-rvs-verification.json for exact hashes and scope.
-'''
-        (ROOT/'docs/RELEASE_READINESS.md').write_text(warning,encoding='utf-8')
-        text=warning+f'''\n## Executed evidence
-
-- Node server: {node_pass}/{node_count} local contract/crypto/HTTP/startup/key-helper tests. No real Amazon receipts or credentials.
-- Kotlin unit tests: {units} passing, current JUnit XML retained.
-- Fire: {device_count}/{total} passed on the current debug app, including all {len(contract)} signed-receipt tests. {fire_note}
-- Android build: debug/release/test APKs and lint completed in amazon-rvs-build.log; the later test-only build is amazon-rvs-test-readiness-build.log. Lint: {lint['Error']} errors and {lint['Warning']} warnings. Release is unsigned, verifier URL/pin empty, and purchases off.
-- All {len(checks['checks'])} non-device collateral groups passed: server/Python tests, locale resources/isolation, authored-copy checks, metadata, browser locale/review/static-export regressions, TypeScript, exported website structure and narrow source patterns. These are not independent security or native linguistic approval.
-- Screenshots: {asset_note} The validator requires a passing current full run and per-capture byte hashes for a refresh. Native approvals remain zero.
-- Layout/offline: {layout_note}
-
-Current instrumentation evidence is in instrumentation.log. Historical locale failures are retained in amazon-rvs-device-first-failed.log and amazon-rvs-device-navigation-failed.log. The layout capture failure is retained in amazon-rvs-layout-first-failed.log. The follow-up locked-device preflight changed no settings; the corrected capture retry has not completed on the tablet. Original power/rotation/font/Wi-Fi settings from the executed runs were restored. Docker execution and independent security assessment remain unverified.
+Earlier failed locale/layout runs are retained as historical evidence. Their later success does not establish reliability on every device. Docker execution, an independent security audit, native-language review, legal certification and real LAT purchases remain unverified.
 '''
     (ROOT/'docs/TEST_REPORT.md').write_text(text,encoding='utf-8')
     print(json.dumps({key:result[key] for key in ['status','kotlinUnitTestsPassed','physicalDeviceTestsPassed','lint']}))

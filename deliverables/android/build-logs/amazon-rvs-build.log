@@ -64,8 +64,9 @@ Daemon will be stopped at the end of the build
 > Task :app:compileReleaseKotlin
 > Task :app:compileDebugJavaWithJavac UP-TO-DATE
 > Task :app:bundleDebugClassesToRuntimeJar
-> Task :app:processDebugJavaRes UP-TO-DATE
 > Task :app:bundleDebugClassesToCompileJar
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:kspDebugUnitTestKotlin
 > Task :app:dexBuilderDebug
 > Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
 > Task :app:mergeDebugJavaResource UP-TO-DATE
@@ -75,7 +76,6 @@ Daemon will be stopped at the end of the build
 > Task :app:assembleDebug
 > Task :app:javaPreCompileRelease UP-TO-DATE
 > Task :app:compileReleaseJavaWithJavac UP-TO-DATE
-> Task :app:kspDebugUnitTestKotlin
 > Task :app:dexBuilderRelease
 > Task :app:desugarReleaseFileDependencies UP-TO-DATE
 > Task :app:mergeReleaseStartupProfile UP-TO-DATE
@@ -83,7 +83,6 @@ Daemon will be stopped at the end of the build
 > Task :app:compileDebugUnitTestKotlin
 > Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
 > Task :app:processDebugUnitTestJavaRes UP-TO-DATE
-> Task :app:mergeDexRelease
 > Task :app:testDebugUnitTest
 > Task :app:mergeReleaseArtProfile UP-TO-DATE
 > Task :app:mergeReleaseGlobalSynthetics UP-TO-DATE
@@ -95,6 +94,7 @@ Daemon will be stopped at the end of the build
 > Task :app:extractReleaseVersionControlInfo UP-TO-DATE
 > Task :app:extractProguardFiles UP-TO-DATE
 > Task :app:generateReleaseLintVitalReportModel
+> Task :app:mergeDexRelease
 > Task :app:compileReleaseArtProfile
 > Task :app:processReleaseJavaRes UP-TO-DATE
 > Task :app:mergeReleaseJavaResource UP-TO-DATE
@@ -123,26 +123,26 @@ Daemon will be stopped at the end of the build
 > Task :app:mergeDebugAndroidTestAssets UP-TO-DATE
 > Task :app:compressDebugAndroidTestAssets UP-TO-DATE
 > Task :app:desugarDebugAndroidTestFileDependencies UP-TO-DATE
-> Task :app:dexBuilderDebugAndroidTest
+> Task :app:dexBuilderDebugAndroidTest UP-TO-DATE
 > Task :app:mergeDebugAndroidTestGlobalSynthetics UP-TO-DATE
 > Task :app:processDebugAndroidTestJavaRes UP-TO-DATE
-> Task :app:lintVitalReportRelease UP-TO-DATE
-> Task :app:lintVitalRelease
 > Task :app:mergeDebugAndroidTestJavaResource UP-TO-DATE
 > Task :app:checkDebugAndroidTestDuplicateClasses UP-TO-DATE
 > Task :app:mergeExtDexDebugAndroidTest UP-TO-DATE
 > Task :app:mergeLibDexDebugAndroidTest UP-TO-DATE
-> Task :app:mergeProjectDexDebugAndroidTest
+> Task :app:mergeProjectDexDebugAndroidTest UP-TO-DATE
 > Task :app:mergeDebugAndroidTestJniLibFolders UP-TO-DATE
 > Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
 > Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
 > Task :app:validateSigningDebugAndroidTest UP-TO-DATE
 > Task :app:writeDebugAndroidTestSigningConfigVersions UP-TO-DATE
-> Task :app:packageDebugAndroidTest
+> Task :app:packageDebugAndroidTest UP-TO-DATE
 > Task :app:createDebugAndroidTestApkListingFileRedirect UP-TO-DATE
-> Task :app:assembleDebugAndroidTest
+> Task :app:assembleDebugAndroidTest UP-TO-DATE
 > Task :app:generateDebugAndroidTestLintModel
+> Task :app:lintVitalReportRelease
 > Task :app:generateDebugLintReportModel
+> Task :app:lintVitalRelease
 > Task :app:generateDebugUnitTestLintModel
 > Task :app:packageRelease
 > Task :app:createReleaseApkListingFileRedirect UP-TO-DATE
@@ -150,8 +150,54 @@ Daemon will be stopped at the end of the build
 > Task :app:lintAnalyzeDebug
 > Task :app:lintAnalyzeDebugAndroidTest
 > Task :app:lintAnalyzeDebugUnitTest
-> Task :app:lintReportDebug UP-TO-DATE
+> Task :app:preBillingQaBuild UP-TO-DATE
+> Task :app:mergeBillingQaNativeDebugMetadata NO-SOURCE
+> Task :app:generateBillingQaBuildConfig UP-TO-DATE
+> Task :app:checkBillingQaAarMetadata UP-TO-DATE
+> Task :app:generateBillingQaResValues UP-TO-DATE
+> Task :app:mapBillingQaSourceSetPaths UP-TO-DATE
+> Task :app:generateBillingQaResources UP-TO-DATE
+> Task :app:mergeBillingQaResources UP-TO-DATE
+> Task :app:packageBillingQaResources UP-TO-DATE
+> Task :app:parseBillingQaLocalResources UP-TO-DATE
+> Task :app:createBillingQaCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksBillingQa UP-TO-DATE
+> Task :app:processBillingQaMainManifest UP-TO-DATE
+> Task :app:processBillingQaManifest UP-TO-DATE
+> Task :app:processBillingQaManifestForPackage UP-TO-DATE
+> Task :app:processBillingQaResources UP-TO-DATE
+> Task :app:kspBillingQaKotlin
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///D:/App%20Projects/LifeTalea/android/app/build/reports/lint-results-debug.html
+
 > Task :app:lintDebug
+> Task :app:javaPreCompileBillingQa UP-TO-DATE
+> Task :app:mergeBillingQaShaders UP-TO-DATE
+> Task :app:compileBillingQaShaders NO-SOURCE
+> Task :app:generateBillingQaAssets UP-TO-DATE
+> Task :app:mergeBillingQaAssets UP-TO-DATE
+> Task :app:compressBillingQaAssets UP-TO-DATE
+> Task :app:desugarBillingQaFileDependencies UP-TO-DATE
+> Task :app:checkBillingQaDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexBillingQa UP-TO-DATE
+> Task :app:mergeLibDexBillingQa UP-TO-DATE
+> Task :app:mergeBillingQaJniLibFolders UP-TO-DATE
+> Task :app:mergeBillingQaNativeLibs UP-TO-DATE
+> Task :app:stripBillingQaDebugSymbols UP-TO-DATE
+> Task :app:validateSigningBillingQa UP-TO-DATE
+> Task :app:writeBillingQaAppMetadata UP-TO-DATE
+> Task :app:writeBillingQaSigningConfigVersions UP-TO-DATE
+> Task :app:compileBillingQaKotlin
+> Task :app:compileBillingQaJavaWithJavac UP-TO-DATE
+> Task :app:dexBuilderBillingQa
+> Task :app:mergeBillingQaGlobalSynthetics UP-TO-DATE
+> Task :app:processBillingQaJavaRes UP-TO-DATE
+> Task :app:mergeBillingQaJavaResource UP-TO-DATE
+> Task :app:mergeProjectDexBillingQa
+> Task :app:packageBillingQa
+> Task :app:createBillingQaApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleBillingQa
 
 [Incubating] Problems report is available at: file:///D:/App%20Projects/LifeTalea/android/build/reports/problems/problems-report.html
 
@@ -161,5 +207,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 5m 36s
-132 actionable tasks: 31 executed, 101 up-to-date
+BUILD SUCCESSFUL in 6m 19s
+170 actionable tasks: 35 executed, 135 up-to-date

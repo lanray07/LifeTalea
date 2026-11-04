@@ -1,6 +1,6 @@
 {
   "observedAt": "2026-11-03T17:28:22.992494+00:00",
-  "method": "Read-only signed-in in-app browser review; no fields saved, uploads, account changes or submission",
+  "method": "Public app fields last fully inspected 3 November; IAP metadata/prices/test approval and LAT submission verified 4 November. Owner completed LAT export certification and confirmed tester consent. No public app release or public IAP promotion.",
   "appId": "amzn1.devportal.mobileapp.035a0c55782f4cd68dd2453e79fd420e",
   "releaseId": "amzn1.devportal.apprelease.103d2ab34c5f43a6b6ba6133db46f7c8",
   "title": "LifeTalea - Family Stories & Voice Journal",
@@ -13,7 +13,7 @@
   "languageSupport": [
     "English"
   ],
-  "inAppItems": 0,
+  "inAppItems": 1,
   "testingInstructionsCharacters": 0,
   "exportComplianceCertified": false,
   "selectedFireTablets": 12,
@@ -29,5 +29,82 @@
   "displayedScreenshotCount": 3,
   "publicAuthenticationPemDownloaded": true,
   "publicKeySha256": "056a8be292f26e52de2b81951b3b51c762c02879dd94fbd35ffad56e994ba40b",
-  "limitations": "Other listing locale variants, all device selections, privacy questionnaire and prices were not re-reviewed. Review page showed Compliance confirmation required. Native product acceptance gates remain independent."
+  "limitations": "Other listing locale variants, all device selections, privacy questionnaire and prices were not re-reviewed. Review page showed Compliance confirmation required. Native product acceptance gates remain independent.",
+  "appReviewObservedAt": "2026-11-03T17:28:22.992494+00:00",
+  "iapReviewObservedAt": "2026-11-04T10:28:34.324932+00:00",
+  "iapUpdate": {
+    "id": "amzn1.dex.title.521d5a972f4c42289a84931903c5cee9",
+    "sku": "com.lifetalea.premium",
+    "status": "Approved",
+    "paid": true,
+    "prices": {
+      "amazon.co.uk": {
+        "currency": "GBP",
+        "amount": "4.99"
+      },
+      "amazon.com": {
+        "currency": "USD",
+        "amount": "6.70"
+      },
+      "amazon.ca": {
+        "currency": "CAD",
+        "amount": "9.39"
+      },
+      "amazon.de": {
+        "currency": "EUR",
+        "amount": "5.98"
+      },
+      "amazon.fr": {
+        "currency": "EUR",
+        "amount": "5.98"
+      },
+      "amazon.it": {
+        "currency": "EUR",
+        "amount": "5.98"
+      },
+      "amazon.es": {
+        "currency": "EUR",
+        "amount": "5.98"
+      },
+      "amazon.in": {
+        "currency": "INR",
+        "amount": "635.12"
+      },
+      "amazon.co.jp": {
+        "currency": "JPY",
+        "amount": "1062"
+      },
+      "amazon.com.au": {
+        "currency": "AUD",
+        "amount": "9.62"
+      },
+      "amazon.com.mx": {
+        "currency": "MXN",
+        "amount": "126.17"
+      },
+      "amazon.com.br": {
+        "currency": "BRL",
+        "amount": "36.79"
+      }
+    },
+    "submitted": true,
+    "titleDescriptionAndIconsSaved": true,
+    "submissionChannel": "TEST_ONLY"
+  },
+  "latDraft": {
+    "releaseId": "amzn1.devportal.apprelease.de54bb337f6f494aa2a744e5d1b58b33",
+    "name": "LifeTalea billing verification 2026-11-04",
+    "submitted": true,
+    "exportCertificationChecked": true,
+    "testerGroupsSelected": 1,
+    "copiedOldBinaryNotTested": false,
+    "status": "Test submitted",
+    "exportCertificationPerformedByOwner": true,
+    "testerGroup": "LifeTalea billing LAT",
+    "uploadedApk": "app-amazonTest-unsigned.apk",
+    "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
+    "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
+    "realPurchaseTested": false
+  },
+  "latReviewObservedAt": "2026-11-04T10:39:58.635957+00:00"
 }

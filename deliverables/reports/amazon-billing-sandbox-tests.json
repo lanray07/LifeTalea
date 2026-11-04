@@ -1,0 +1,56 @@
+{
+  "observedAt": "2026-11-04T10:28:34.324932+00:00",
+  "status": "APP_TESTER_SANDBOX_CASES_PASS",
+  "scope": "Real Amazon App Tester SDK callbacks and Amazon RVS sandbox via loopback HTTPS, fictional prices, no payment. This is not LAT or production purchase verification.",
+  "cases": [
+    {
+      "case": "SDK canceled receipt leaves Free",
+      "status": "PASS",
+      "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+      "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/canceled-receipt-after-fix.png",
+      "evidenceSha256": "1e2e1db00d2870c9b7393e1b31a32e0b8be74d7d24250b7bd79ecc193d72cae3"
+    },
+    {
+      "case": "Cancel purchase dialog leaves Free",
+      "status": "PASS",
+      "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+      "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/cancel-dialog-fixed-free.png",
+      "evidenceSha256": "4967a6f8b233c61d4408458f3da535a30617ef9b522797137955a1ae8af02b2b"
+    },
+    {
+      "case": "Fresh purchase grants Premium",
+      "status": "PASS",
+      "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+      "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/purchase-fixed-active.png",
+      "evidenceSha256": "59f5966562f7aed351f6a99a4bc45131bbed435aba66fdf04baa9d48642df9af"
+    },
+    {
+      "case": "Restore grants Premium",
+      "status": "PASS",
+      "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+      "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/restore-fixed-active.png",
+      "evidenceSha256": "1c6d1797f02c6f6b8596a22f617db192df3e1a908136c7bbf7a420ad1574fc13"
+    },
+    {
+      "case": "Cancel fulfilled new receipt revokes Premium",
+      "status": "PASS",
+      "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+      "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/revoked-fixed-free.png",
+      "evidenceSha256": "c37b3826117045095d92a6bbc5035907cd103d6e5a7d72b72f6a7cd68d9f06c9"
+    }
+  ],
+  "historicalFailure": {
+    "case": "Canceled SDK receipt retained Premium before fix",
+    "status": "FAIL_REPRODUCED_THEN_FIXED",
+    "billingQaApkSha256": "9d44d0ef9211e162bc3f6c44c2610cfbc4282088c83ee43453ae41d200f70b44",
+    "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/canceled-receipt-before-fix.png"
+  },
+  "historicalAccountChange": {
+    "status": "PASS_ON_PRE_FIX_QA_BUILD_ONLY",
+    "billingQaApkSha256": "9d44d0ef9211e162bc3f6c44c2610cfbc4282088c83ee43453ae41d200f70b44",
+    "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/account-switched-free.png"
+  },
+  "originalAppTesterUserRestored": "Amazon User 1",
+  "catalogueSdkModeAndPowerRestored": true,
+  "productionStorageTouched": false
+}

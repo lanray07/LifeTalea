@@ -24,3 +24,4 @@ deliverables/amazon-submission/*.zip
 *.private.pem
 *.private.key
 **/.kotlin/
+supabase/.temp/

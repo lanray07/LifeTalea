@@ -2,7 +2,7 @@ test_all_fifteen_articles_are_authored_for_each_language (test_editorial_polish.
 test_english_commands_keep_boundaries_and_exact_supported_phrases (test_editorial_polish.EditorialPolishTest) ... ok
 test_every_language_has_complete_unique_app_corrections (test_editorial_polish.EditorialPolishTest) ... ok
 test_portuguese_regional_words_are_not_substring_replacements (test_editorial_polish.EditorialPolishTest) ... ok
-test_repeated_dump_failures_stop_after_three_attempts (test_fire_layout_capture.FireLayoutCaptureTest) ... ok
+test_repeated_dump_failures_stop_after_eight_attempts (test_fire_layout_capture.FireLayoutCaptureTest) ... ok
 test_transient_dump_failure_still_requires_a_valid_home_tree_and_bounds (test_fire_layout_capture.FireLayoutCaptureTest) ... ok
 test_approval_binds_both_catalogues_and_reviewer_identity (test_localization.LocalizationTest) ... ok
 test_extra_keys_empty_text_and_duplicate_placeholders_fail (test_localization.LocalizationTest) ... ok
@@ -11,7 +11,7 @@ test_locale_specific_plural_categories_validate_every_form (test_localization.Lo
 test_missing_plural_and_brand_reported (test_localization.LocalizationTest) ... ok
 test_source_change_invalidates_review (test_localization.LocalizationTest) ... ok
 test_unreviewed_generation_is_debug_only (test_localization.LocalizationTest) ... ok
-test_changed_capture_is_rejected_without_relabeling_historical_origin (test_screenshot_provenance.ScreenshotProvenanceTest) ... D:\App Projects\LifeTalea\scripts\validate_localized_screenshots.py:23: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\User\\AppData\\Local\\Temp\\tmp0ude2ai1\\deliverables\\store-assets\\screenshots\\localized-drafts\\manifest.csv' mode='r' encoding='utf-8-sig'>
+test_changed_capture_is_rejected_without_relabeling_historical_origin (test_screenshot_provenance.ScreenshotProvenanceTest) ... D:\App Projects\LifeTalea\scripts\validate_localized_screenshots.py:23: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\User\\AppData\\Local\\Temp\\tmpq98n2mky\\deliverables\\store-assets\\screenshots\\localized-drafts\\manifest.csv' mode='r' encoding='utf-8-sig'>
   rows=list(csv.DictReader((folder/'manifest.csv').open(encoding='utf-8-sig')))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
@@ -19,6 +19,6 @@ test_existing_assets_without_provenance_require_a_verified_refresh (test_screens
 test_failed_run_cannot_create_current_provenance (test_screenshot_provenance.ScreenshotProvenanceTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.169s
+Ran 16 tests in 1.669s
 
 OK

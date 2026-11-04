@@ -1,22 +1,73 @@
 {
-  "status": "DRAFT_NOT_CREATED_IN_AMAZON",
+  "status": "APPROVED_FOR_AMAZON_TEST_CHANNEL",
   "appId": "amzn1.devportal.mobileapp.035a0c55782f4cd68dd2453e79fd420e",
   "sku": "com.lifetalea.premium",
   "productType": "ENTITLED",
   "title": "LifeTalea Premium",
-  "description": "Planned one-time upgrade: additional albums, longer recordings, local PDF keepsake export and encrypted archive creation. Production purchase flow remains disabled pending verifier deployment/public pin, real account configuration and Amazon testing.",
-  "marketplacePrices": null,
-  "pricingApprovalRequired": true,
-  "testPriceHypothesisOnly": {
-    "currency": "GBP",
-    "amount": "4.99",
-    "notConfiguredOrApproved": true
+  "description": "One-time upgrade for unlimited albums, longer voice recordings, PDF keepsake exports and encrypted local backups. Keep your family stories, photos and recordings together on your device.",
+  "marketplacePrices": {
+    "amazon.co.uk": {
+      "currency": "GBP",
+      "amount": "4.99"
+    },
+    "amazon.com": {
+      "currency": "USD",
+      "amount": "6.70"
+    },
+    "amazon.ca": {
+      "currency": "CAD",
+      "amount": "9.39"
+    },
+    "amazon.de": {
+      "currency": "EUR",
+      "amount": "5.98"
+    },
+    "amazon.fr": {
+      "currency": "EUR",
+      "amount": "5.98"
+    },
+    "amazon.it": {
+      "currency": "EUR",
+      "amount": "5.98"
+    },
+    "amazon.es": {
+      "currency": "EUR",
+      "amount": "5.98"
+    },
+    "amazon.in": {
+      "currency": "INR",
+      "amount": "635.12"
+    },
+    "amazon.co.jp": {
+      "currency": "JPY",
+      "amount": "1062"
+    },
+    "amazon.com.au": {
+      "currency": "AUD",
+      "amount": "9.62"
+    },
+    "amazon.com.mx": {
+      "currency": "MXN",
+      "amount": "126.17"
+    },
+    "amazon.com.br": {
+      "currency": "BRL",
+      "amount": "36.79"
+    }
   },
+  "pricingApprovalRequired": false,
   "requiredBeforeSubmit": [
-    "Confirm SKU and benefits",
-    "Approve marketplace prices",
-    "Deploy the locally implemented server RVS with real credentials and trusted HTTPS; pin only the server public key in Android",
-    "Configure correct Amazon product and run device purchase/restore/refund/account-change tests",
-    "Native review of all intended product listing languages"
-  ]
+    "Execute deployed-verifier LAT purchases, restore, cancellation and account/offline cases",
+    "Complete public-release acceptance, native review and legal/security gates before promoting to live"
+  ],
+  "amazonIapId": "amzn1.dex.title.521d5a972f4c42289a84931903c5cee9",
+  "customerDisplayLocale": "en-US",
+  "paidEntitlement": true,
+  "submitted": true,
+  "observedAt": "2026-11-04T10:28:34.324932+00:00",
+  "iconsUploaded": {
+    "app-icon-512.png": "3ffa36fd187782001dcae270364d2c4d372d62ead43bed80db8e8addc398b7fc",
+    "app-icon-114.png": "f8efd72bcf28ac492d7aa3e4b4a3a6a39f7b289b39523d773877caeb2867a86d"
+  },
+  "submissionChannel": "TEST_ONLY"
 }

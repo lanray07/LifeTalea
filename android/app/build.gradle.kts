@@ -13,6 +13,8 @@ val receiptUrl = providers.gradleProperty("lifetaleaRvsUrl").getOrElse("")
 val receiptPublicKey = providers.gradleProperty("lifetaleaRvsPublicKey").getOrElse("")
 val receiptEnvironment = providers.gradleProperty("lifetaleaRvsEnvironment").getOrElse("production")
 val purchasesEnabled = providers.gradleProperty("lifetaleaPurchasesEnabled").getOrElse("false")
+val billingQaPublicKey = providers.gradleProperty("lifetaleaBillingQaPublicKey").getOrElse("")
+require(billingQaPublicKey.isEmpty() || (billingQaPublicKey.length <= 4096 && billingQaPublicKey.matches(Regex("[A-Za-z0-9+/=]+")))) { "Invalid public sandbox signing key" }
 require(receiptUrl.isEmpty() || (receiptUrl.length <= 512 && receiptUrl.matches(Regex("https://[A-Za-z0-9.-]+(?::[0-9]{1,5})?/[A-Za-z0-9/_-]*v1/verify")))) { "Use a public HTTPS verifier URL without credentials, query or fragment" }
 require(receiptEnvironment in listOf("production", "sandbox") && purchasesEnabled in listOf("true", "false")) { "Invalid public billing build configuration" }
 if (receiptPublicKey.isNotEmpty()) {
@@ -39,7 +41,25 @@ android {
     buildTypes {
         debug { applicationIdSuffix = ".debug"; buildConfigField("String", "RVS_ENVIRONMENT", "\"$receiptEnvironment\"") }
         release { isMinifyEnabled = false; buildConfigField("String", "RVS_ENVIRONMENT", "\"production\"") }
+        create("amazonTest") {
+            initWith(getByName("release"))
+            matchingFallbacks += listOf("release")
+            // Same application ID for Amazon LAT; unsigned until Amazon processes the upload.
+            // These public properties must be provided by build_amazon_test.py.
+            buildConfigField("boolean", "AMAZON_PURCHASES_ENABLED", "true")
+        }
+        create("billingQa") {
+            initWith(getByName("debug"))
+            applicationIdSuffix = ".billingqa"
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks += listOf("debug")
+            buildConfigField("String", "RVS_URL", "\"https://localhost:8443/v1/verify\"")
+            buildConfigField("String", "RVS_PUBLIC_KEY", "\"$billingQaPublicKey\"")
+            buildConfigField("String", "RVS_ENVIRONMENT", "\"sandbox\"")
+            buildConfigField("boolean", "AMAZON_PURCHASES_ENABLED", "true")
+        }
     }
+    sourceSets.getByName("billingQa").res.srcDir("build/generated/localBillingQa/res")
     packaging { resources.excludes += "/META-INF/{AL2.0,LGPL2.1}" }
     testOptions { unitTests.isReturnDefaultValues = true }
 }

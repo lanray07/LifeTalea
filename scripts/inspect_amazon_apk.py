@@ -16,9 +16,11 @@ def main():
     assert signing.returncode != 0 and 'DOES NOT VERIFY' in signing.stderr, 'Candidate signing state changed: review update identity'
     with zipfile.ZipFile(APK) as archive:
         test_fixture = any('rvs-contract.json' in name for name in archive.namelist())
+        test_trust = any('local_billing_qa_ca' in name or 'local_billing_network_security' in name for name in archive.namelist())
         key_present = any(name.endswith('/AppstoreAuthenticationKey.pem') for name in archive.namelist())
         key_hash = hashlib.sha256(archive.read('assets/AppstoreAuthenticationKey.pem')).hexdigest() if key_present else None
     assert not test_fixture, 'Test-only receipt fixtures must never enter the release APK'
+    assert not test_trust, 'Local sandbox TLS trust must never enter the release APK'
     manifest = subprocess.check_output([str(tools / ('aapt.exe' if os.name == 'nt' else 'aapt')), 'dump', 'xmltree', str(APK), 'AndroidManifest.xml'], text=True, encoding='utf-8')
     visibility = {name: name in manifest for name in ['com.amazon.venezia','com.amazon.sdktestclient']}
     assert all(visibility.values()), 'Amazon package visibility missing in the actual release manifest'
@@ -31,6 +33,7 @@ def main():
         'debuggable': 'application-debuggable' in badging, 'publicAuthenticationPemBundled': key_present, 'publicAuthenticationPemSha256': key_hash,
         'signing': 'UNSIGNED / apksigner verify rejected the candidate as expected',
         'testReceiptFixtureBundled': test_fixture, 'amazonVisibilityNamesInApkManifest': visibility,
+        'localSandboxTrustBundled': test_trust,
         'generatedReleaseBillingConfiguration': billing,
         'limitations': 'Badging and signing inspection do not verify runtime compatibility, Amazon DRM transformation or release approval.'
     }

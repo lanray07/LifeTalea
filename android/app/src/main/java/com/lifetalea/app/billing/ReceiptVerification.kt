@@ -42,8 +42,9 @@ class BillingSession(private val debug: Boolean, private val environment: String
     var generation = 0L; private set
     var user: String? = null; private set
     private val receipts = linkedMapOf<String, VerifiedReceipt>()
+    private val canceled = mutableSetOf<String>()
     val current: VerifiedReceipt? get() = user?.let { id -> receipts.values.filter { it.claims.active && BillingPolicy.valid(it.claims, id, debug, environment, now()) }.maxByOrNull { it.claims.issuedAt } }
-    fun beginIdentityCheck(): Long { generation++; user = null; receipts.clear(); return generation }
+    fun beginIdentityCheck(): Long { generation++; user = null; receipts.clear(); canceled.clear(); return generation }
     fun identify(epoch: Long, id: String, cached: VerifiedReceipt?): Boolean {
         if (epoch != generation || id.isBlank() || id.length > 256 || id.any { it.code !in 33..126 } || id in listOf(".", "..")) return false
         user = id
@@ -52,7 +53,16 @@ class BillingSession(private val debug: Boolean, private val environment: String
     }
     fun record(epoch: Long, id: String, receipt: VerifiedReceipt): Boolean {
         if (epoch != generation || user != id || !BillingPolicy.valid(receipt.claims, id, debug, environment, now())) return false
-        if (receipt.claims.active) receipts[receipt.claims.receiptId] = receipt else receipts.remove(receipt.claims.receiptId)
+        if (receipt.claims.active) {
+            if (receipt.claims.receiptId in canceled) return false
+            receipts[receipt.claims.receiptId] = receipt
+        } else revoke(epoch, id, receipt.claims.receiptId)
+        return true
+    }
+    /** Current-account SDK cancellation can deny access; it can never grant it. */
+    fun revoke(epoch: Long, id: String, receiptId: String): Boolean {
+        if (epoch != generation || user != id || receiptId.isBlank() || receiptId.length > 512) return false
+        canceled.add(receiptId); receipts.remove(receiptId)
         return true
     }
     fun finishSnapshot(epoch: Long, id: String, receiptIds: Set<String>) {

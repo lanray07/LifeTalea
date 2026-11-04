@@ -1,3 +1,5 @@
+Current update — 4 November 2026: the isolated Supabase verifier is deployed; Premium is Approved for TEST at GBP4.99 plus calculated prices; the configured billing LAT release is submitted. No real LAT purchase or public launch is verified. The older audit below remains historical. Current evidence and outstanding gates are in RELEASE_READINESS.md, AMAZON_SUPABASE_DEPLOYMENT.md and amazon-console-review.json.
+
 > Read-only recheck on 3 November: see deliverables/reports/amazon-console-review.json and AMAZON_PUBLIC_KEY.md. The public PEM is now bundled locally; the console still has zero IAP items, empty testing instructions and unchecked export certification. The historical saved draft below was not modified.
 
 # Amazon submission draft — 2 November 2026

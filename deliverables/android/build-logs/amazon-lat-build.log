@@ -1,0 +1,73 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preAmazonTestBuild UP-TO-DATE
+> Task :app:mergeAmazonTestJniLibFolders
+> Task :app:mergeAmazonTestNativeLibs
+> Task :app:mergeAmazonTestArtProfile
+> Task :app:desugarAmazonTestFileDependencies
+> Task :app:buildKotlinToolingMetadata UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+
+> Task :app:stripAmazonTestDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
+
+> Task :app:generateAmazonTestBuildConfig
+> Task :app:extractAmazonTestNativeSymbolTables
+> Task :app:mergeAmazonTestNativeDebugMetadata NO-SOURCE
+> Task :app:generateAmazonTestResValues
+> Task :app:checkAmazonTestAarMetadata
+> Task :app:mapAmazonTestSourceSetPaths
+> Task :app:generateAmazonTestResources
+> Task :app:mergeAmazonTestResources
+> Task :app:packageAmazonTestResources
+> Task :app:parseAmazonTestLocalResources
+> Task :app:createAmazonTestCompatibleScreenManifests
+> Task :app:extractDeepLinksAmazonTest
+> Task :app:processAmazonTestMainManifest
+> Task :app:processAmazonTestManifest
+> Task :app:processAmazonTestManifestForPackage
+> Task :app:javaPreCompileAmazonTest
+> Task :app:checkAmazonTestDuplicateClasses
+> Task :app:mergeAmazonTestStartupProfile
+> Task :app:processAmazonTestResources
+> Task :app:mergeExtDexAmazonTest
+> Task :app:mergeAmazonTestShaders
+> Task :app:compileAmazonTestShaders NO-SOURCE
+> Task :app:generateAmazonTestAssets UP-TO-DATE
+> Task :app:mergeAmazonTestAssets
+> Task :app:compressAmazonTestAssets
+> Task :app:extractAmazonTestVersionControlInfo
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:kspAmazonTestKotlin
+> Task :app:optimizeAmazonTestResources
+> Task :app:collectAmazonTestDependencies
+> Task :app:sdkAmazonTestDependencyData
+> Task :app:writeAmazonTestAppMetadata
+> Task :app:writeAmazonTestSigningConfigVersions
+> Task :app:compileAmazonTestKotlin
+> Task :app:compileAmazonTestJavaWithJavac
+> Task :app:dexBuilderAmazonTest
+> Task :app:mergeAmazonTestGlobalSynthetics
+> Task :app:generateAmazonTestLintVitalReportModel
+> Task :app:mergeDexAmazonTest
+> Task :app:compileAmazonTestArtProfile
+> Task :app:processAmazonTestJavaRes
+> Task :app:lintVitalAnalyzeAmazonTest
+> Task :app:mergeAmazonTestJavaResource
+> Task :app:lintVitalReportAmazonTest
+> Task :app:lintVitalAmazonTest
+> Task :app:packageAmazonTest
+> Task :app:createAmazonTestApkListingFileRedirect
+> Task :app:assembleAmazonTest
+
+[Incubating] Problems report is available at: file:///D:/App%20Projects/LifeTalea/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 7m 40s
+50 actionable tasks: 48 executed, 2 up-to-date

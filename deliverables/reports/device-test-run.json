@@ -1,7 +1,7 @@
 {
-  "executedAt": "2026-11-03T20:35:55.441548+00:00",
+  "executedAt": "2026-11-04T10:21:13.513831+00:00",
   "status": "PASS",
-  "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
+  "debugApkSha256": "16dab173edae40ff70ecade6e2faed3959ffc948a2790b8e3a5fa3ed299e1ac9",
   "testApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
   "evidenceFiles": 187,
   "qaPowerSettings": {
@@ -22,7 +22,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/es-ES-timeline.png",
-      "sha256": "4d029c8fd6aeec06f83eabe39e25868f0df32fab671817bedc9f2ae60b00bd3e"
+      "sha256": "5b8f3b6d409a62b20e24dea59f86d61a40a8c40b4cd841d9479275ff1171a8d1"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/it-IT-editor.png",
@@ -30,7 +30,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/sv-SE-timeline.png",
-      "sha256": "10ff3dc1655c3b078f8dbee8fc7feddcb3611f98a5d5fd32ed9aeff32fbcdc36"
+      "sha256": "4c8293f651c0f2c20676a3b003b1a7e15001ceaf7d31ee060444864afac4d89a"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hans-editor.png",
@@ -38,7 +38,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ko-KR-settings.png",
-      "sha256": "be84ce9483e1ebeb174023679a845a0b8e3159add4508b6bc3b56d5b3257e1f7"
+      "sha256": "29dd1e74c14a31c81f6f3b70a8dcece4f5f2a2a6a9ba17ed8d281b5e41f4f8fa"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/de-DE-albums.png",
@@ -46,7 +46,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/tr-TR-settings.png",
-      "sha256": "20e79247b352cd02f0ff13020756b5464fe6ba4492188ca97bf84f181ff0e995"
+      "sha256": "888447fb12a4a8ca306d3bac77ffc4d5c30990b8e1822ab36b6b1f58014d805f"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/it-IT-voice.png",
@@ -66,7 +66,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/fr-CA-settings.png",
-      "sha256": "5b0c20b4ea0dd3b968b92c8fadae704663eae95cd467a2ff6362d30eaefd17b1"
+      "sha256": "2c443cf12e17f61fb6d267ad4bf4e3abd37c27f9ece252e8decf113257207524"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ar-voice.png",
@@ -82,11 +82,11 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/id-ID-settings.png",
-      "sha256": "4f19e0e5e02133346a923449524d58a77d3ae6346df5e0922f730793a576056d"
+      "sha256": "381a037db83ff5e023af858d68cd3f9ab866fac9db6577b4f9e22d9eafa3f4ab"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/en-GB-timeline.png",
-      "sha256": "b6df4765402986aa4b0cbcc83a82ce41a6c7723bb25a116995a8ecfb9bf4dbfc"
+      "sha256": "b76f7cc6ce9548a8f48329519402dc9e48be32ff83a4a2a97f26b47c78285e2c"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pt-PT-voice.png",
@@ -150,11 +150,11 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/hi-IN-timeline.png",
-      "sha256": "2b1aa1f83c19cc93d77a8f882b3ffa22a1fb599ec5942b778222b43fb45cf6d2"
+      "sha256": "238a906486c032ad1dbfba74516856da8013939a2acbd05cacf8c04840be944a"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hans-timeline.png",
-      "sha256": "79b42e6cfcafb607d704aa152ba6d549422e09fd47081fb769a629b75720bf0f"
+      "sha256": "cec4d7953c94baf17bfcd6e6dd73cc1ec755823234660a70f9d551987a05d947"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/hi-IN-voice.png",
@@ -170,7 +170,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/nl-NL-settings.png",
-      "sha256": "d01c2b3ee91d2afd7c09d262ce2bb2a8a0283afe9bebcfb7cb8704ba871f92d8"
+      "sha256": "1b6c432cd1b7c58e17fc5456a3250da4e495c0469be176a52a7884be4feae11a"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/sv-SE-voice.png",
@@ -178,7 +178,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/fr-FR-settings.png",
-      "sha256": "7d5fa54b15522f9b04c6250f53e6dee36816b85b104067e099460bfc20a0cbf9"
+      "sha256": "9cd22adfc83e3ae64357f245993ec62e0e9dae7128724c47240257bbd3d7b268"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/result.json",
@@ -186,7 +186,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/en-AU-timeline.png",
-      "sha256": "144ac1d9f4374c611a8b9191344e16e2c7037ed7cfc59d80091c972cc0a04ede"
+      "sha256": "6e2c4adb501921359b844d4b0c0e3285f69aaeeb101201cb825b8169e56b7b86"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/nl-NL-home.png",
@@ -206,7 +206,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/de-DE-settings.png",
-      "sha256": "3575a9d4aac5e6fc133a0f08f376122eb2ad6714476a072b31bc183c60b9b430"
+      "sha256": "43d831a85e507613859427b7a743e79ea4cef744eca238e556bbd70321a15b87"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/it-IT-home.png",
@@ -218,7 +218,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pt-BR-settings.png",
-      "sha256": "3c7924ba96bc921dfca815c93f33c402e5975446af71746bff29302fbdd9f11b"
+      "sha256": "d5a79c94978e3b3c0a1da7564238632139804b3a447962e3a00db3aa9ab13d7e"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/hi-IN-home.png",
@@ -242,7 +242,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ja-JP-timeline.png",
-      "sha256": "d0bb204796aeb17e28c3f3a2a2ac146aa3c3b95ff87c82bb11c26007d17a7b6a"
+      "sha256": "eeb381edcfa587d68a1ae16beeff075248eb4dce9092e6d885b85694b5aaf240"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/it-IT-albums.png",
@@ -258,7 +258,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pl-PL-timeline.png",
-      "sha256": "82da6ea91492c4800132c3424f6ca8cb313bc4d72683659fd68554b923d18532"
+      "sha256": "c883af12b4001da08cf1c80f44bfbae8fae5e7b21ea335e49f90966402297636"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pt-BR-voice.png",
@@ -294,7 +294,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/es-ES-settings.png",
-      "sha256": "af44a0a8ef7b550e1d140cac4b4365e7e6e6f6aa03c026c9f547ae578b86c847"
+      "sha256": "daeb1e382630ffab9e27ec5272e7a559b93e94ca16c2f54b29f19ef017640f67"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/hi-IN-editor.png",
@@ -326,11 +326,11 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/it-IT-timeline.png",
-      "sha256": "cdb3e9344936fd5348fa6d292aa75de5e7bfe50a8b73ee1bd1f858f1aac19e91"
+      "sha256": "5f0f3b020682184e6de5cac8fbd001f97413253c7a833596118dd5212d5cf828"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/es-419-timeline.png",
-      "sha256": "f6d833cdbedb92fc47cc02f6b6dcf08f318a5ffc32821a3ad44483cadcac21d7"
+      "sha256": "5b8f3b6d409a62b20e24dea59f86d61a40a8c40b4cd841d9479275ff1171a8d1"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hans-albums.png",
@@ -338,7 +338,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/fr-FR-timeline.png",
-      "sha256": "367f47553458aedab2a9be9c456354e736c0c4ee084ee9cef3bd7aa3eabd96a5"
+      "sha256": "f4cd53c244529dfc833ae3f22a2e2dcdb1bdbd645d0320c615881f146e044cbb"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hant-home.png",
@@ -346,7 +346,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ja-JP-settings.png",
-      "sha256": "f2923c83e57e34f5463fdd3d5292fb53b571858f90e0b5f6b2dde1cd6abf2de3"
+      "sha256": "30847d91196b315d619c2de397d246fbd2d256ebcc8ed2eed93091dc134327af"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/de-DE-home.png",
@@ -378,7 +378,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pl-PL-settings.png",
-      "sha256": "d5f56a13d5e0f92479b13308d2032206f4ceeb6164d3d82e7f95a8ec38902503"
+      "sha256": "4f27beced00b44a59c5e4d615733e324c09ad2fdbc91a28285f960bb1b44579e"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/es-ES-voice.png",
@@ -386,7 +386,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hant-timeline.png",
-      "sha256": "fa96d462af043b45d2cc325f4c55fd9e1a1ae688246895ab4841b042d6f4552d"
+      "sha256": "42feac57dc8f56ee29577e21109bf897956e7258c6b586f7c4beae94e133d13b"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/sv-SE-home.png",
@@ -402,15 +402,15 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hans-settings.png",
-      "sha256": "8f43b9e38c242a7e8701d2f204e9127d67342c51882edf2624a5da46abe8cb6f"
+      "sha256": "d30ed659aa2003b3be86c504c694000a88475105cfd7b58df84f82d52b331431"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ja-JP-albums.png",
-      "sha256": "f819f5084b90c77d3c143f6f8d45492315a3fd74cb8665844c720ea532458377"
+      "sha256": "bcee1e413f4ab6a8209774f3842d410a389b31d7fe121f3e64272e903b4d0b9b"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/en-AU-settings.png",
-      "sha256": "53d7358b4486db873206c9f024fe1f4f92d138f42cc8eb4e332b0ce779c4a919"
+      "sha256": "6176f99969be38520ca94bf0eef4d0fc73b5b662c81e15dc2186566c94478e39"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/en-US-albums.png",
@@ -422,7 +422,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ar-albums.png",
-      "sha256": "3808ef38656517700092a779374fe44d4c7e62a9c15858a7343af375afdd63e8"
+      "sha256": "de728425d6aa47c3923ce43f811ce0ac054f7ff922e5c01a526e5d751490b44b"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hant-voice.png",
@@ -430,7 +430,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/id-ID-timeline.png",
-      "sha256": "3cdfdeda9183adb147a3dd1ed733811bb972c2e569fd9b2d4741fcb44953d8f1"
+      "sha256": "e019b701b1426290f05cb0ec40a1402dac0a397b39f59c4a3b2112438fba489d"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ja-JP-editor.png",
@@ -466,11 +466,11 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/es-419-albums.png",
-      "sha256": "f1db3e55382293d5b394640c78f341376af3e0b74f4d0c7c01c5ddf5d3c64783"
+      "sha256": "e164ab7aab1a226bed3d813f742ca14bbffa8bd92802e884a94a41d14f50eaf5"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/sv-SE-settings.png",
-      "sha256": "9fa3788f3376fc27f61517e22998893ccb18b5bf56ac6671946dfdb7d5586ca6"
+      "sha256": "e811bed2ecea73cc17dbe02c2859b4fd63af4ada22f6cda239b73bcaba4cd272"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/fr-FR-keepsakes.png",
@@ -490,15 +490,15 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/fr-CA-albums.png",
-      "sha256": "a2ceb50704d214dd908d8fcfd053e03a959e72e84450f3cb29a196179dc41ec9"
+      "sha256": "ef5219dcd2ad05cbc3f9cc6cb6b0ecf17ed46795e19a0df19849b50b1e238bb0"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/nl-NL-albums.png",
-      "sha256": "efa348fbf8b91dff3333f8a54a7ab823a188d61413a53752f2c28f7dc659eaab"
+      "sha256": "058f4556a61011a577f53e232c4779717dd90cc166773292e6c9d04912cf464c"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ar-settings.png",
-      "sha256": "054d44891129e122b317127645b468051baccb800585c219c8cec21ea886e736"
+      "sha256": "0800b089a870b6f64da94dabb597e341cadd36fe31c4983a6c0c73a97662f018"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ja-JP-home.png",
@@ -518,7 +518,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/hi-IN-settings.png",
-      "sha256": "82b811876964a2904891c6c4756031eba1094419d193cc8d9676734873edc294"
+      "sha256": "7927b1d235aee082143cdf404456796fba886480e002b48292098593665e4bbc"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/en-AU-albums.png",
@@ -526,7 +526,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/en-US-timeline.png",
-      "sha256": "119d56221c1fe1e0d7891f7cb1128aa087672561baf977f81aa6421c063245f4"
+      "sha256": "3cdfdeda9183adb147a3dd1ed733811bb972c2e569fd9b2d4741fcb44953d8f1"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pt-PT-editor.png",
@@ -574,7 +574,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/it-IT-settings.png",
-      "sha256": "a7438a4412bc9113b262d945f87eb5f3cda32c27ba0451343ade004c4e677d92"
+      "sha256": "701c4d525f8f3074bce1590de31dffcdabd69513a36a16211d73742c429f3500"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pl-PL-transcript.png",
@@ -582,15 +582,15 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/tr-TR-albums.png",
-      "sha256": "df6f6d5d70647ab6d0823090f63d55fd4705616106816e1de01e182e47fab080"
+      "sha256": "48415ff3bc34def81471e79330d20b9dcca952dfa0a84c9cd5574571ecbe3148"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hant-settings.png",
-      "sha256": "b256a9e7f76bac8a5724856c512af8cff857c959f0cec1b54ba2ef593470cd64"
+      "sha256": "5131f7769ad35f89fe750f14289099787399989afb21060b9394c88b6b66a7aa"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/fr-FR-albums.png",
-      "sha256": "41b42d21d8dd532eb30e3564be9288732b9c4aa3479da55a02768d4295dd6449"
+      "sha256": "ef5219dcd2ad05cbc3f9cc6cb6b0ecf17ed46795e19a0df19849b50b1e238bb0"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pt-PT-albums.png",
@@ -598,11 +598,11 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/ko-KR-timeline.png",
-      "sha256": "c3a6f5f1ab1bf034ed6ffec722d2f68c4a7dd8c7c9aa1a24e35a4d6e39c76be9"
+      "sha256": "47655195cd44aee4f68085a73273241dc2372cd5906e1c44ceacfef4b6cc6fb7"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/en-GB-keepsakes.png",
-      "sha256": "09fc51e51596c326a9edce69201a2eabdcb4184d39712f0e3c58ecb18fa36ac8"
+      "sha256": "b1af5d86286cc9d552f91e1ce193c5dc6c6613e8dd32423ab0b80c461f81f45e"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/sv-SE-keepsakes.png",
@@ -622,7 +622,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hant-albums.png",
-      "sha256": "81f6f34284d9e8ff4b1eb456a78c09cc881a42a86589af51b557635024034c78"
+      "sha256": "e4b75f71e6469af56607a9dd875b02528ac392d6256d7e567458125557f504dd"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/fr-CA-voice.png",
@@ -642,15 +642,15 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/nl-NL-timeline.png",
-      "sha256": "708ef7895a871507fcd5b1eeea86757b565c4a1f4fdc454efd049d43c6425dc3"
+      "sha256": "942eacab02eee9b659ced1a77743b2074f40204b8dc5628ac7a91217e0bed9e8"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pt-BR-timeline.png",
-      "sha256": "bea188d33843e2e15aad987d0def8b73cfe94cd996db402f13948b113710d257"
+      "sha256": "4d97548346c2b9b601777fe97f17cd01c3ceb0e2f3d4381fa4555058f6c77991"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/tr-TR-timeline.png",
-      "sha256": "7e20db5e7526491dc2c99fc4f1aa65d33466225fbd0223704f6fb7d9e3160c07"
+      "sha256": "3d09becf450f6fca48134986656343b8d5da2ec2dc502088284a9e38ebff577a"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/fr-CA-home.png",
@@ -658,7 +658,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/sv-SE-albums.png",
-      "sha256": "fbc6ba6cc5196a00ac2428ded3f649c4e664dd4891a13d0ea811cedc6993315c"
+      "sha256": "4acb9dc9209675cdd0e9869355a0fd9ad46d11bc24e8602861aaa7440f2f1343"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/en-GB-albums.png",
@@ -706,7 +706,7 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pt-PT-settings.png",
-      "sha256": "2047b098c10436579fc36b495874ad20e05813f76b5be18a6c23d1c9fe30ca58"
+      "sha256": "3d048a4e64e181433bafb00d04c5604cbdf93f9f17b5253a1e9e53c567bfa24f"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/zh-Hant-keepsakes.png",
@@ -722,15 +722,15 @@
     },
     {
       "path": "deliverables/reports/device-evidence/localization/pt-PT-timeline.png",
-      "sha256": "c6828731159e45a8c40499471b516047c2c48c93210351b635af0d39473133d1"
+      "sha256": "3ab68d823dd309a36e36f8409b64237bcd4a3590804af28f3c5de960571fa5f9"
     },
     {
       "path": "deliverables/reports/device-evidence/localization/en-US-settings.png",
-      "sha256": "618a5d86c876423980e96ccbfa004ff09e72a5370b5769766ca0ff176d21e1d3"
+      "sha256": "e2e2bbc58c1bf57f293f411455011a2e1efe1cce4c0c27c834a1d61354946a93"
     },
     {
       "path": "deliverables/reports/device-evidence/voice-device.json",
-      "sha256": "eedd0a1699622b1945315275c2d1cb310172898092673aad2f16fe5659479acc"
+      "sha256": "58b366e5d6b42d867eb53d505744674bb3c6906c7ce2bc6ae49eec0b0c1e9573"
     },
     {
       "path": "deliverables/reports/device-evidence/keepsake.pdf",
@@ -766,7 +766,7 @@
     }
   ],
   "qaBatchPowerSettings": {
-    "originalStayAwakeWhilePluggedIn": "0",
+    "originalStayAwakeWhilePluggedIn": "7",
     "restored": true
   }
 }

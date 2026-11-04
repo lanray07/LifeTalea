@@ -1,0 +1,24 @@
+{
+  "functionId": "e11a83d8-1737-4182-9244-6220b3741b86",
+  "functionName": "lifetalea-receipts",
+  "version": 3,
+  "status": "ACTIVE",
+  "bundleSha256": "d912e05f08608ab09982e287facb7dbe09194f8c5362e5c0277b99a6f9a601cd",
+  "verifyJwt": false,
+  "receiptAuthentication": "AMAZON_RVS_BEFORE_SIGNED_ENTITLEMENT",
+  "sourceComparison": [
+    {
+      "name": "supabase/index.ts",
+      "equivalentIgnoringLineEndingsAndTrailingWhitespace": true
+    },
+    {
+      "name": "supabase/handler.mjs",
+      "equivalentIgnoringLineEndingsAndTrailingWhitespace": true
+    },
+    {
+      "name": "src/verifier.mjs",
+      "equivalentIgnoringLineEndingsAndTrailingWhitespace": true
+    }
+  ],
+  "existingResourcesChanged": false
+}

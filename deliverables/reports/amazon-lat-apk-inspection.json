@@ -1,0 +1,14 @@
+{
+  "status": "INSPECTION_PASS_LAT_EXECUTION_PENDING",
+  "path": "android/app/build/outputs/apk/amazonTest/app-amazonTest-unsigned.apk",
+  "sha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
+  "package": "com.lifetalea.app",
+  "debuggable": false,
+  "signing": "UNSIGNED_AMAZON_UPLOAD_CANDIDATE",
+  "endpointConfigured": true,
+  "publicPinMatchesDeployedIdentity": true,
+  "purchasesEnabled": true,
+  "environment": "production",
+  "sandboxTrustOrFixturesBundled": false,
+  "realPurchaseTested": false
+}

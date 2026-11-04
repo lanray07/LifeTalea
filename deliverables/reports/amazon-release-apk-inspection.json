@@ -1,5 +1,5 @@
 {
-  "sha256": "8105c8c523d8c3f4c4fe829fa67d52a1f642bb08fefbb9def72db52775338481",
+  "sha256": "91ec3f6026aca9857d19fb0650a1e2de055dd1c492e7512e9ea32c66235ac89f",
   "package": "com.lifetalea.app",
   "versionCode": 1,
   "versionName": "0.1.0",
@@ -14,6 +14,7 @@
     "com.amazon.venezia": true,
     "com.amazon.sdktestclient": true
   },
+  "localSandboxTrustBundled": false,
   "generatedReleaseBillingConfiguration": {
     "endpointConfigured": false,
     "signingPublicKeyConfigured": false,

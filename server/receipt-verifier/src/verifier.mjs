@@ -1,4 +1,5 @@
 import {createPrivateKey, createPublicKey, sign} from 'node:crypto';
+import {Buffer} from 'node:buffer';
 
 export const SKU = 'com.lifetalea.premium';
 export const AUDIENCE = 'com.lifetalea.app';

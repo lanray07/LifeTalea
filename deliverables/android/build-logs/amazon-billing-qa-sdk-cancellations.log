@@ -1,0 +1,7 @@
+--------- beginning of crash
+--------- beginning of system
+--------- beginning of main
+11-04 10:03:55.177 16803 16803 I LifeTaleaBillingQa: restore matching=1 canceled=1
+11-04 10:05:15.614 16803 16803 I LifeTaleaBillingQa: restore matching=2 canceled=1
+11-04 10:05:49.466 16803 16803 I LifeTaleaBillingQa: restore matching=2 canceled=1
+11-04 10:08:51.535 16803 16803 I LifeTaleaBillingQa: restore matching=2 canceled=2

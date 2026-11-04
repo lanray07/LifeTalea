@@ -1,10 +1,10 @@
 # LifeTalea Amazon receipt verifier
 
-Local implementation and deployment candidate. No live Amazon receipts, hosting deployment, App Tester/DevTest/LAT purchase or production approval is claimed. Node 24 is required; there are no third-party runtime dependencies. Container execution remains unverified where Docker is unavailable.
+The Node implementation is packaged for portable hosting. Its Supabase edge adapter is now deployed with isolated LifeTalea names in the owner’s existing free project. Real App Tester sandbox cases and production HTTPS/signed invalid-receipt smoke passed. The configured Amazon LAT candidate is submitted; real LAT purchases and public launch approval remain pending. See [deployment details](../../docs/AMAZON_SUPABASE_DEPLOYMENT.md). Node 24 is required for local checks; no third-party runtime dependencies are used. Container execution remains unverified.
 
 `POST /v1/verify` accepts only `{ "userId": "Amazon SDK user ID", "receiptId": "Amazon SDK receipt ID" }`. The server fixes the Amazon host, environment and LifeTalea ENTITLED SKU. It validates Amazon's response and returns `{ "assertion": "base64url-payload.base64url-RSA-signature" }`. Invalid/canceled/user-mismatched receipts produce a signed inactive result. Upstream configuration errors, redirects, timeouts and malformed responses produce a generic 503; no URL or secret is returned.
 
-Assertions bind the Amazon user, receipt, SKU, canonical app audience, environment and active status. They last six hours. Android verifies RSA SHA-256 with a separately pinned public key, rejects expired/mismatched assertions and sandbox assertions in release builds, and only acknowledges fulfillment after verification. The app never receives the Amazon developer shared secret or server private signing key. Local stories remain accessible when billing is unavailable.
+Assertions bind the Amazon user, receipt, SKU, canonical app audience, environment and active status. The standalone Node configuration defaults to six hours; the Supabase adapter currently issues assertions for at most 24 hours. Android verifies RSA SHA-256 with a separately pinned public key, rejects expired/mismatched assertions and sandbox assertions in release builds, and only acknowledges fulfillment after verification. The app never receives the Amazon developer shared secret or server private signing key. Local stories remain accessible when billing is unavailable.
 
 ## Run local checks
 

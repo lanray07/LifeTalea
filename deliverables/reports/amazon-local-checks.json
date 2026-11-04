@@ -1,5 +1,5 @@
 {
-  "executedAt": "2026-11-03T20:40:16.433555+00:00",
+  "executedAt": "2026-11-04T10:30:51.877388+00:00",
   "status": "PASS",
   "checks": [
     {
@@ -13,6 +13,18 @@
         "server/receipt-verifier/test/verifier.test.mjs"
       ],
       "log": "deliverables/android/build-logs/amazon-check-amazon-rvs-server.log"
+    },
+    {
+      "check": "amazon-rvs-edge",
+      "status": "PASS",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "--test",
+        "--test-reporter=tap",
+        "server/receipt-verifier/test/edge.test.mjs"
+      ],
+      "log": "deliverables/android/build-logs/amazon-check-amazon-rvs-edge.log"
     },
     {
       "check": "python-tests",

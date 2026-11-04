@@ -1,12 +1,12 @@
 {
-  "executedAt": "2026-11-04T08:15:52.141177+00:00",
+  "executedAt": "2026-11-04T10:41:50.651759+00:00",
   "status": "LOCAL_CHECKS_PASS_RELEASE_BLOCKED",
   "uiChecksComplete": true,
-  "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
+  "debugApkSha256": "16dab173edae40ff70ecade6e2faed3959ffc948a2790b8e3a5fa3ed299e1ac9",
   "testApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
   "lastExecutedTestApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
   "currentTestApkExecuted": true,
-  "releaseApkSha256": "8105c8c523d8c3f4c4fe829fa67d52a1f642bb08fefbb9def72db52775338481",
+  "releaseApkSha256": "91ec3f6026aca9857d19fb0650a1e2de055dd1c492e7512e9ea32c66235ac89f",
   "serverTests": {
     "status": "PASS",
     "tests": 20,
@@ -25,22 +25,99 @@
     ],
     "scope": "Node-signed offline fixtures and actual Fire RSA/JSON/config behavior, not real SDK payment callbacks"
   },
-  "kotlinUnitTestsPassed": 18,
+  "kotlinUnitTestsPassed": 20,
   "physicalDeviceTestsPassed": 17,
   "physicalDeviceTestsRun": 17,
   "physicalDeviceSuiteStatus": "PASS",
-  "deviceSeconds": 183.095,
+  "deviceSeconds": 182.529,
   "lint": {
     "Error": 0,
-    "Warning": 260
+    "Warning": 258
   },
   "layoutSmokeStatus": "PASS",
   "currentScreenshotDraftsValidated": 176,
-  "serverDeployed": false,
-  "liveAmazonRvsTested": false,
+  "serverDeployed": true,
+  "liveAmazonRvsTested": "PRODUCTION_NEGATIVE_RECEIPT_ONLY",
   "livePurchaseTestsPassed": false,
   "dockerImageBuilt": false,
-  "productionSigningIdentityCreated": false,
+  "productionSigningIdentityCreated": true,
+  "productionDeployment": {
+    "observedAt": "2026-11-04T10:39:10.041Z",
+    "endpoint": "https://guigiqacxpvcxrnajvlz.supabase.co/functions/v1/lifetalea-receipts/v1/verify",
+    "healthStatus": 200,
+    "status": 200,
+    "signatureValid": true,
+    "payload": {
+      "v": 1,
+      "iss": "lifetalea-amazon-rvs",
+      "aud": "com.lifetalea.app",
+      "sku": "com.lifetalea.premium",
+      "environment": "production",
+      "active": false,
+      "reason": "invalid_receipt",
+      "testTransaction": false,
+      "betaProduct": false,
+      "iat": 1793788750057,
+      "exp": 1793875150057
+    },
+    "scope": "Synthetic invalid identifiers against production Amazon RVS; no purchase, LAT or real customer receipt tested"
+  },
+  "appTesterSandbox": {
+    "observedAt": "2026-11-04T10:28:34.324932+00:00",
+    "status": "APP_TESTER_SANDBOX_CASES_PASS",
+    "scope": "Real Amazon App Tester SDK callbacks and Amazon RVS sandbox via loopback HTTPS, fictional prices, no payment. This is not LAT or production purchase verification.",
+    "cases": [
+      {
+        "case": "SDK canceled receipt leaves Free",
+        "status": "PASS",
+        "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+        "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/canceled-receipt-after-fix.png",
+        "evidenceSha256": "1e2e1db00d2870c9b7393e1b31a32e0b8be74d7d24250b7bd79ecc193d72cae3"
+      },
+      {
+        "case": "Cancel purchase dialog leaves Free",
+        "status": "PASS",
+        "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+        "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/cancel-dialog-fixed-free.png",
+        "evidenceSha256": "4967a6f8b233c61d4408458f3da535a30617ef9b522797137955a1ae8af02b2b"
+      },
+      {
+        "case": "Fresh purchase grants Premium",
+        "status": "PASS",
+        "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+        "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/purchase-fixed-active.png",
+        "evidenceSha256": "59f5966562f7aed351f6a99a4bc45131bbed435aba66fdf04baa9d48642df9af"
+      },
+      {
+        "case": "Restore grants Premium",
+        "status": "PASS",
+        "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+        "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/restore-fixed-active.png",
+        "evidenceSha256": "1c6d1797f02c6f6b8596a22f617db192df3e1a908136c7bbf7a420ad1574fc13"
+      },
+      {
+        "case": "Cancel fulfilled new receipt revokes Premium",
+        "status": "PASS",
+        "billingQaApkSha256": "732d01eea2cabf60af1bf9f0a57685b7921ca825bda763f5ce7f68e747cc3999",
+        "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/revoked-fixed-free.png",
+        "evidenceSha256": "c37b3826117045095d92a6bbc5035907cd103d6e5a7d72b72f6a7cd68d9f06c9"
+      }
+    ],
+    "historicalFailure": {
+      "case": "Canceled SDK receipt retained Premium before fix",
+      "status": "FAIL_REPRODUCED_THEN_FIXED",
+      "billingQaApkSha256": "9d44d0ef9211e162bc3f6c44c2610cfbc4282088c83ee43453ae41d200f70b44",
+      "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/canceled-receipt-before-fix.png"
+    },
+    "historicalAccountChange": {
+      "status": "PASS_ON_PRE_FIX_QA_BUILD_ONLY",
+      "billingQaApkSha256": "9d44d0ef9211e162bc3f6c44c2610cfbc4282088c83ee43453ae41d200f70b44",
+      "evidence": "deliverables/reports/device-evidence/amazon-billing-sandbox/account-switched-free.png"
+    },
+    "originalAppTesterUserRestored": "Amazon User 1",
+    "catalogueSdkModeAndPowerRestored": true,
+    "productionStorageTouched": false
+  },
   "defaultReleaseConfiguration": {
     "endpointConfigured": false,
     "signingPublicKeyConfigured": false,
@@ -52,13 +129,18 @@
     "Dockerfile": "bad583bce8f91b3766b2cba56b5b5143b30eb2646df00db0624749801ea612b3",
     ".dockerignore": "3845ada8733f5a074f54ef5ee040fa30294affb4bdcfff9550889737b38831f2",
     ".env.example": "1459d0f02190a57ea7fa17a5a3acad487fb258f51fe753852d4242a251f21be6",
-    "README.md": "f94e4a27fae61a75dbe85b7b016dc2c59dfdbfa0e3c5fb361a2e152fc852fb10",
+    "README.md": "40b46271d3ed4e9de52443f4e3628ff5e2be5da0bd3a14656d123b436812e151",
     "src/main.mjs": "943e9d1704665b5bc35647e2e4fd062e7dad4fae05afc457a876445a321ab26b",
     "src/http.mjs": "49c67f9c44c9d331092dc287b554ec63c9e2525e3d14f3d4c1c1d22b88d017c4",
-    "src/verifier.mjs": "9ae05bd80092e4e98e47c8ecb45ca06a3c38a707887c9d4bc0f0ab2fc1c50c06",
+    "src/verifier.mjs": "544c079e57af5d77517b4ba1aabfc09098fbecbe6f0d55b6d4225d5b5bd30687",
     "scripts/generate-signing-key.mjs": "d8c131bd6f4c6b2398b0380b784a7e6e16462bdcb3edce8133b964a5117a6aa4",
     "test/verifier.test.mjs": "819560de68e91d2a24fd74b08ed26658748cdd79e8f6304dd7ed2a813fcf00c4",
-    "test/export-contract-fixture.mjs": "7c67a41644dba2836080ecb9309becf39dc734702a125a64b01d1b3f5aad4ae0"
+    "test/export-contract-fixture.mjs": "7c67a41644dba2836080ecb9309becf39dc734702a125a64b01d1b3f5aad4ae0",
+    "supabase/index.ts": "2d5c31f8359f1d7b49b2117cbb557abef88081151a909d6c2795f554f0243c26",
+    "supabase/handler.mjs": "f0b9487a9009e344e15bc89d687ba68c8db5808a9bd68d4e689692bea8046f86",
+    "supabase/deno.json": "f76cb3a4d50feb17e32476f23bc949badbe9d2b3f37ce5898f839c6f2d2f181e",
+    "supabase/public-signing-key.json": "6b66c589460e8401da4c0e9f47002d0826d41af0a83331d0c4a26e67b57f5509",
+    "test/edge.test.mjs": "df992807d543d26dff1c9cbf483f6226a20d169b65f17419be6055ec387a2d51"
   },
-  "remaining": "Deploy/configure a private HTTPS verifier and public app pin; create/approve IAP/prices; real Amazon transaction tests; independent security/privacy/legal/native and remaining product/device gates."
+  "remaining": "Execute configured Amazon LAT purchases against deployed verifier; complete independent security/privacy/legal/native and remaining product/device gates."
 }

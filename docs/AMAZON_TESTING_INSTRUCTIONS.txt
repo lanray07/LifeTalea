@@ -1,24 +1,26 @@
-LifeTalea 0.1.0 (version code 1) — DEVELOPMENT REVIEW ONLY / NOT READY TO SUBMIT
-Publisher: O.Bankole
-Support: banksmi@mail.com
-Package: com.lifetalea.app (unsigned candidate)
+LifeTalea 0.1.0 / version code 1 — development review and billing test notes
+Publisher: O.Bankole | Support: banksmi@mail.com | Package: com.lifetalea.app
 
-No LifeTalea login is required. Use fictional demonstration content on a dedicated Fire tablet. Microphone permission is requested only after choosing to record. The application has touch and text alternatives to installed speech services.
+The standard unsigned release candidate is purchases-disabled. A separate unsigned amazonTest candidate connects to the deployed Supabase production verifier and is intended only for Amazon Live App Testing. Do not publish a QA/debug APK. The LAT upload SHA and Amazon test status are recorded in amazon-lat-apk-inspection.json and amazon-console-review.json.
+
+No LifeTalea login is required. Use fictional content on a dedicated Fire tablet. Microphone permission is requested only when recording is chosen. Touch and text alternatives are available.
 
 Core walkthrough:
-1. Open LifeTalea. Complete or skip onboarding. Add a memory with a title and written story; optionally enter tags, location and a year/month/day/unknown date. Save, reopen and edit it.
-2. Import a photograph with the system file picker. Create an album and add the memory. Search its story/tags/manual transcript, mark it as a favourite and find it in the timeline.
-3. Open the memory and choose Record. Review the microphone notice, grant permission, record a short fictional story, pause/resume and stop. Play it and use the seek control. Free recordings are limited to three minutes. Do not record private conversations for testing.
-4. Edit the transcript manually. Automatic recorded-file transcription is NOT configured. Installed speech recognition and spoken playback vary by device; command phrases currently support English only.
-5. Duplicate the memory. The copy should have independent photograph/audio files and the same album membership. Deleting the original must leave the copy playable/readable.
-6. Create a keepsake draft, add a memory, reorder pages and edit a caption. Premium PDF export is not available to production users in this candidate.
-7. In Settings, create an unencrypted backup to a location you control, explicitly selecting whether to include photos/audio. Preview and restore it. Existing memories/books are retained. The importer is bounded to 32 MiB total, 16 MiB per attachment and 8 MiB manifest; exports can fail above those limits. This is not a streaming large-library implementation.
-8. Close and reopen the app and confirm saved content. Delete test records through the app and delete any exported copies separately.
+1. Complete or skip onboarding. Add a memory with a title/story, tags, location and approximate or exact date. Save, reopen and edit.
+2. Import a photograph with the system picker. Create an album, add the memory, search story/tags/manual transcript, favourite it and inspect the timeline.
+3. Record a short fictional voice story. Pause/resume/stop, play it and seek. Free recordings are limited to three minutes. Avoid private recordings.
+4. Edit the transcript manually. Automatic recorded-file transcription is not configured. Installed speech/TTS services vary by device; command phrases currently support English only.
+5. Duplicate a memory. Delete the original and verify the duplicate retains independent photo/audio and album membership.
+6. Create a keepsake draft, add/reorder memories and edit a caption.
+7. Export a basic backup with explicitly selected media. Preview and restore it. Existing content is retained. Current importer limits: 32 MiB total, 16 MiB per attachment, 8 MiB manifest. Large-library streaming is incomplete.
+8. Reopen offline and check saved content. Delete test records and exported copies separately.
 
-Billing / release caveat:
-Production purchases are disabled, with the correct public app key now bundled, until the locally implemented verifier is deployed, its public URL/signing pin are configured and real Amazon transaction tests pass. SDK-only callbacks never grant access; sandbox assertions are accepted only in the separate debug package. No account credentials, live payment, sandbox result, LAT approval or Premium activation code is supplied or claimed. The live console contains zero in-app products. Configure and test the real Amazon ENTITLED product before submission; do not submit these incomplete billing instructions as a successful monetization test.
+LAT billing checklist (only after Amazon publishes this test):
+- Use the assigned Amazon tester account and the Amazon-processed LAT install. Check the device shows a test transaction before proceeding; do not make a real-money purchase.
+- Purchase com.lifetalea.premium. A successful SDK callback alone must not grant access: the app must receive a valid signed active receipt result from the deployed verifier before fulfillment.
+- Verify Premium album/long-recording/PDF/encrypted-backup benefits, restore, canceled-dialog behavior, failure/retry, account changes, cancellation/refund and offline/reboot recovery.
+- Record exact processed APK hash, device/OS, result and redacted evidence. Never publish user IDs, receipts or secrets.
 
-Language / screenshots:
-The unsigned candidate contains English source UI. The separate debug QA APK supports 22 draft locales. The 176 localized compositions come from that debug package on KFTRWI, landscape 1920x1200. They require native and visual approval and matching release captures before publication. Do not upload a debug/test APK as the store binary.
+Executed evidence: real App Tester sandbox purchase/restore/cancellation passed after fixing SDK-canceled receipt precedence; five fixed-build cases are retained. The deployed production service passed HTTPS health and signed rejection of synthetic invalid identifiers. No LAT purchase result is claimed yet.
 
-See AMAZON_RVS_IMPLEMENTATION.md, AMAZON_OWNER_ACTIONS.md and audit.json for the full blocker list and the exact local verification scope. These instructions are prepared locally; the console was rechecked and its testing-instructions field is currently empty (0/4000). No form was saved.
+Languages: the standard release and LAT candidate are English. The separate debug package has 22 draft locales and 176 current-APK screenshot compositions, with zero native release approvals. Wider product, device, accessibility, security/privacy/legal and transcription gates remain open. See RELEASE_READINESS.md and AMAZON_OWNER_ACTIONS.md.

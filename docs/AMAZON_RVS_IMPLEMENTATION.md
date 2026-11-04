@@ -1,6 +1,6 @@
-# Amazon billing and server verification — local implementation
+# Amazon billing and server verification â€” local implementation
 
-**Release remains BLOCKED.** The private verifier and signed-entitlement client now exist; deployment, real account configuration and live Amazon transaction testing are not complete. The publisher chose local implementation and deployment packaging first. No host, paid service, product, price or account setting was created or changed.
+**Public release remains BLOCKED.** The Supabase verifier is deployed with server-only credentials and a separate RSA identity. Production HTTPS/signature/invalid-receipt smoke passed; real App Tester sandbox purchase, restore and cancellation passed after fixing SDK cancellation precedence. Premium is Approved for TEST at the approved GBP4.99 price. Actual LAT purchases and remaining acceptance gates are pending. See AMAZON_SUPABASE_DEPLOYMENT.md.
 
 ```mermaid
 sequenceDiagram
@@ -29,13 +29,8 @@ Local engineering completed:
 
 The exact executed counts and current APK hashes belong to `deliverables/reports/amazon-rvs-verification.json`, `device-test-run.json`, current JUnit files and `amazon-local-checks.json`. Those reports distinguish local contracts from live Amazon behavior; an older passing device run does not verify a rebuilt APK. Historical startup timeouts remain documented unless a specific cause/fix is demonstrated.
 
-Deployment candidate: `deliverables/amazon-submission/LifeTalea-Amazon-RVS-server-2026-11-04.zip`. It contains only allowlisted source, runtime templates, tests and public fixtures. The package builder extracts its own checksum-verified ZIP into an isolated temporary folder and executes the server tests there. No private signing key, Amazon secret, filled env file or real receipt is included. The full updated review ZIP is `LifeTalea-0.1.0-Amazon-RVS-review-2026-11-04.zip`; neither archive is permission to submit or deploy. Docker execution is not claimed where Docker is unavailable.
+Current packages: `LifeTalea-Amazon-Supabase-server-2026-11-04.zip` and `LifeTalea-0.1.0-Amazon-billing-review-2026-11-04.zip`. Their manifests validate every included byte. The server archive runs its core and edge tests after extraction. It contains no shared secret, private signing key, filled environment file or real receipt.
 
-Next integration gates:
-
-1. Approve a private hosting destination and real credentials outside chat/source control; configure trusted HTTPS, gateway limits, operational logs/alerts and separate production/sandbox signing identities. Pin the matching public key in the app. See [service setup](../server/receipt-verifier/README.md).
-2. Approve/create the ENTITLED product and marketplace prices, and configure App Tester/DevTest/LAT as appropriate. Decide the server policy for Amazon's production publishing/LAT test transactions; a production test flag is distinct from a sandbox environment.
-3. Test real purchase, pending/failure, restoration, refund, account switching, lifecycle/interruption and offline/reboot scenarios before enabling purchases. Local fixtures do not certify SDK callback timing, Amazon credentials, TLS deployment or real entitlements.
-4. Review the new identifier-processing disclosure and revise the saved Amazon privacy questionnaire for the actual host/data handling. Complete independent security, legal/export/signing, native-language, remaining product and device gates. No full security assessment, legal certification or production approval is claimed.
+Next gates: execute the configured LAT candidate against the deployed verifier, including purchase, failures, restore, cancellation, account changes, interruptions and offline/reboot. App Tester sandbox success does not verify LAT or the production device TLS path. Assess the hosted identifier-processing disclosures, in-app privacy wording and Amazon questionnaire. Finish independent security, native-language, product/device, legal/export and signing gates before public promotion.
 
 Official contract references: [RVS](https://developer.amazon.com/docs/in-app-purchasing/iap-rvs-for-android-apps.html), [SDK integration](https://developer.amazon.com/docs/in-app-purchasing/iap-implement-iap.html), [RVS sandbox](https://www.developer.amazon.com/docs/in-app-purchasing/rvs-cloud-sandbox.html).
