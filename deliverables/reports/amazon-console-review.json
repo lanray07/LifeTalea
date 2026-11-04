@@ -98,13 +98,15 @@
     "exportCertificationChecked": true,
     "testerGroupsSelected": 1,
     "copiedOldBinaryNotTested": false,
-    "status": "Test submitted",
+    "status": "Test in-progress",
     "exportCertificationPerformedByOwner": true,
     "testerGroup": "LifeTalea billing LAT",
     "uploadedApk": "app-amazonTest-unsigned.apk",
     "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
     "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
-    "realPurchaseTested": false
+    "realPurchaseTested": false,
+    "invitationStatus": "Delivered",
+    "latInstallationVerified": false
   },
-  "latReviewObservedAt": "2026-11-04T10:39:58.635957+00:00"
+  "latReviewObservedAt": "2026-11-04T16:43:48.613995+00:00"
 }

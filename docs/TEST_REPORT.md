@@ -1,10 +1,10 @@
-# Release readiness â€” BLOCKED
+# Release readiness — BLOCKED
 
 Updated 4 November 2026. Current device and collateral checks passed. The original acceptance requirements remain in scope.
 
 The Supabase production verifier is deployed with server-only credentials and its own RSA signing identity. HTTPS health and a signed rejection of synthetic invalid receipt identifiers passed. This does not verify an actual production purchase. See AMAZON_SUPABASE_DEPLOYMENT.md and amazon-supabase-deployment.json.
 
-Amazon Premium was submitted to the TEST channel and is Approved, with the owner's Â£4.99 UK one-time price and Amazon-calculated marketplace prices. The public app and paid upgrade have not been published. The connected LAT candidate was uploaded and the test release is submitted; Amazon processing and actual purchase verification remain pending. The standard release remains purchases-disabled; the separate LAT candidate uses the deployed URL and public pin.
+Amazon Premium was submitted to the TEST channel and is Approved, with the owner's £4.99 UK one-time price and Amazon-calculated marketplace prices. The public app and paid upgrade have not been published. The connected LAT candidate was uploaded and Amazon now reports Test in-progress and the tester invitation Delivered. Invitation redemption/installation and actual purchase verification remain pending. The standard release remains purchases-disabled; the separate LAT candidate uses the deployed URL and public pin.
 
 Real App Tester sandbox tests exposed a canceled-receipt bug. The fixed QA build passed cancellation, purchase-dialog cancellation, fresh purchase, restore and cancellation of the new fulfilled receipt. SDK cancellations now revoke a receipt and prevent a late active response from reinstating it. The account-switch observation belongs to the earlier QA APK and is labelled accordingly. See amazon-billing-sandbox-tests.json.
 
@@ -18,7 +18,7 @@ Executed evidence:
 - Edge adapter tests: three passed (secrets fail closed, request bounds, quota, receipt delegation and error redaction).
 - Kotlin: 20 passed, including SDK revocation identity/epoch binding and rejection of late active responses after cancellation. The retained red regression log demonstrates the original bug.
 - Physical KFTRWI, Fire HD 10 (2021), Fire OS 7/API 28: 17/17 passed in 182.529 seconds, including 4 signed-receipt fixture tests, core writing/media/backup/PDF/short recording flows and the 22-locale capture matrix. This suite uses the standard debug APK; SDK App Tester uses a separate QA APK with its own hash.
-- Three home-screen layout checks: portrait/landscape at 1.3Ã— text and Wi-Fi-disabled reopen. Scope excludes full-screen accessibility and prolonged offline Premium behavior.
+- Three home-screen layout checks: portrait/landscape at 1.3× text and Wi-Fi-disabled reopen. Scope excludes full-screen accessibility and prolonged offline Premium behavior.
 - All 13 collateral groups passed: Python, locale resources/isolation, editorial regression, metadata, browser locale/review/static-export, TypeScript, website structure and narrow source patterns.
 - 176 current-APK screenshot drafts byte-validated. Native approvals: zero. Five fresh visual samples were reviewed and their exact hashes recorded; this is not a complete visual or native-language review.
 - Supabase service-role-only quota RPC access verified; anon/authenticated execute denied; private quota RLS enabled. No customer identifiers are stored in that table. Security-advisor no-policy notice is intentional deny-all for normal roles. Existing project password warning was not changed.

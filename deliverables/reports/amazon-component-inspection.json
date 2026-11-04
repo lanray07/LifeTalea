@@ -1,0 +1,83 @@
+{
+  "observedAt": "2026-11-04T16:48:01.790721+00:00",
+  "status": "PASS_UNSIGNED_ARTIFACT_ALLOWLIST",
+  "artifacts": [
+    {
+      "apk": "android/app/build/outputs/apk/release/app-release-unsigned.apk",
+      "sha256": "91ec3f6026aca9857d19fb0650a1e2de055dd1c492e7512e9ea32c66235ac89f",
+      "components": [
+        {
+          "type": "activity",
+          "name": "com.lifetalea.app.MainActivity",
+          "exported": true
+        },
+        {
+          "type": "service",
+          "name": "androidx.appcompat.app.AppLocalesMetadataHolderService",
+          "exported": false
+        },
+        {
+          "type": "receiver",
+          "name": "com.amazon.device.iap.ResponseReceiver",
+          "permission": "com.amazon.inapp.purchasing.Permission.NOTIFY",
+          "exported": true
+        },
+        {
+          "type": "provider",
+          "name": "androidx.startup.InitializationProvider",
+          "exported": false
+        },
+        {
+          "type": "service",
+          "name": "androidx.room.MultiInstanceInvalidationService",
+          "exported": false
+        },
+        {
+          "type": "receiver",
+          "name": "androidx.profileinstaller.ProfileInstallReceiver",
+          "permission": "android.permission.DUMP",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "apk": "android/app/build/outputs/apk/amazonTest/app-amazonTest-unsigned.apk",
+      "sha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
+      "components": [
+        {
+          "type": "activity",
+          "name": "com.lifetalea.app.MainActivity",
+          "exported": true
+        },
+        {
+          "type": "service",
+          "name": "androidx.appcompat.app.AppLocalesMetadataHolderService",
+          "exported": false
+        },
+        {
+          "type": "receiver",
+          "name": "com.amazon.device.iap.ResponseReceiver",
+          "permission": "com.amazon.inapp.purchasing.Permission.NOTIFY",
+          "exported": true
+        },
+        {
+          "type": "provider",
+          "name": "androidx.startup.InitializationProvider",
+          "exported": false
+        },
+        {
+          "type": "service",
+          "name": "androidx.room.MultiInstanceInvalidationService",
+          "exported": false
+        },
+        {
+          "type": "receiver",
+          "name": "androidx.profileinstaller.ProfileInstallReceiver",
+          "permission": "android.permission.DUMP",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "scope": "Actual merged manifests: launcher and permission-guarded SDK/profile receivers only. Not an independent audit, runtime permission-grant assessment, or inspection of Amazon DRM-processed output."
+}

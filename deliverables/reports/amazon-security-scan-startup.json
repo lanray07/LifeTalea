@@ -1,0 +1,12 @@
+{
+  "observedAt": "2026-11-04T16:43:48.613995+00:00",
+  "status": "STARTUP_FAILED",
+  "tool": "start_codex_security_prompt_only_scan",
+  "mode": "standard",
+  "target": "D:/App Projects/LifeTalea",
+  "scope": ".",
+  "error": "Command failed: workbench_db.py start-prompt-only-scan",
+  "scanIdReturned": false,
+  "independentAuditCompleted": false,
+  "recovery": "No replacement scan or terminal fallback was started, in accordance with the desktop scan instructions."
+}

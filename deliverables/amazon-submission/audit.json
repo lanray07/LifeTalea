@@ -1,9 +1,9 @@
 {
   "releaseStatus": "BLOCKED",
   "packagePurpose": "LOCAL_REVIEW_ONLY_NOT_FOR_SUBMISSION",
-  "generatedAt": "2026-11-04T10:45:41.367794+00:00",
-  "baseCommit": "1acb581f9ff2ac0c67bcc1fff21eadf86d4145db",
-  "workingTreeDirty": false,
+  "generatedAt": "2026-11-04T16:49:09.924333+00:00",
+  "baseCommit": "0aa37e128d55bca1813f71510b641b65ddc4368c",
+  "workingTreeDirty": true,
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "package": "com.lifetalea.app",
@@ -802,16 +802,18 @@
     "exportCertificationChecked": true,
     "testerGroupsSelected": 1,
     "copiedOldBinaryNotTested": false,
-    "status": "Test submitted",
+    "status": "Test in-progress",
     "exportCertificationPerformedByOwner": true,
     "testerGroup": "LifeTalea billing LAT",
     "uploadedApk": "app-amazonTest-unsigned.apk",
     "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
     "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
-    "realPurchaseTested": false
+    "realPurchaseTested": false,
+    "invitationStatus": "Delivered",
+    "latInstallationVerified": false
   },
   "receiptVerification": {
-    "executedAt": "2026-11-04T10:41:50.651759+00:00",
+    "executedAt": "2026-11-04T16:49:09.035259+00:00",
     "status": "LOCAL_CHECKS_PASS_RELEASE_BLOCKED",
     "uiChecksComplete": true,
     "debugApkSha256": "16dab173edae40ff70ecade6e2faed3959ffc948a2790b8e3a5fa3ed299e1ac9",
@@ -854,7 +856,7 @@
     "dockerImageBuilt": false,
     "productionSigningIdentityCreated": true,
     "productionDeployment": {
-      "observedAt": "2026-11-04T10:39:10.041Z",
+      "observedAt": "2026-11-04T16:40:11.725Z",
       "endpoint": "https://guigiqacxpvcxrnajvlz.supabase.co/functions/v1/lifetalea-receipts/v1/verify",
       "healthStatus": 200,
       "status": 200,
@@ -869,8 +871,8 @@
         "reason": "invalid_receipt",
         "testTransaction": false,
         "betaProduct": false,
-        "iat": 1793788750057,
-        "exp": 1793875150057
+        "iat": 1793810412636,
+        "exp": 1793896812636
       },
       "scope": "Synthetic invalid identifiers against production Amazon RVS; no purchase, LAT or real customer receipt tested"
     },
@@ -929,6 +931,62 @@
       "originalAppTesterUserRestored": "Amazon User 1",
       "catalogueSdkModeAndPowerRestored": true,
       "productionStorageTouched": false
+    },
+    "amazonLat": {
+      "releaseId": "amzn1.devportal.apprelease.de54bb337f6f494aa2a744e5d1b58b33",
+      "name": "LifeTalea billing verification 2026-11-04",
+      "submitted": true,
+      "exportCertificationChecked": true,
+      "testerGroupsSelected": 1,
+      "copiedOldBinaryNotTested": false,
+      "status": "Test in-progress",
+      "exportCertificationPerformedByOwner": true,
+      "testerGroup": "LifeTalea billing LAT",
+      "uploadedApk": "app-amazonTest-unsigned.apk",
+      "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
+      "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
+      "realPurchaseTested": false,
+      "invitationStatus": "Delivered",
+      "latInstallationVerified": false
+    },
+    "latPurchaseTests": {
+      "observedAt": "2026-11-04T16:43:48.613995+00:00",
+      "status": "BLOCKED_LAT_INSTALLATION_PENDING",
+      "latStatus": "Test in-progress",
+      "invitationStatus": "Delivered",
+      "deviceAuthorization": "USB authorized; device unlocked",
+      "installedProductionPackage": false,
+      "sdkSandboxMode": "none",
+      "productionContentTouched": false,
+      "purchaseAttempted": false,
+      "realMoneyCharged": false,
+      "tests": [
+        {
+          "case": "purchase and server-side verification",
+          "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        },
+        {
+          "case": "restore",
+          "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        },
+        {
+          "case": "canceled purchase dialog",
+          "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        },
+        {
+          "case": "canceled receipt",
+          "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        },
+        {
+          "case": "account switching",
+          "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        },
+        {
+          "case": "offline and reboot recovery",
+          "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        }
+      ],
+      "nextAction": "Tester must redeem the invitation for the Fire tablet, then verify the Amazon-distributed install and run zero-cost LAT transactions. Do not substitute the local unsigned or App Tester build."
     },
     "defaultReleaseConfiguration": {
       "endpointConfigured": false,
@@ -1058,15 +1116,17 @@
       "exportCertificationChecked": true,
       "testerGroupsSelected": 1,
       "copiedOldBinaryNotTested": false,
-      "status": "Test submitted",
+      "status": "Test in-progress",
       "exportCertificationPerformedByOwner": true,
       "testerGroup": "LifeTalea billing LAT",
       "uploadedApk": "app-amazonTest-unsigned.apk",
       "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
       "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
-      "realPurchaseTested": false
+      "realPurchaseTested": false,
+      "invitationStatus": "Delivered",
+      "latInstallationVerified": false
     },
-    "latReviewObservedAt": "2026-11-04T10:39:58.635957+00:00"
+    "latReviewObservedAt": "2026-11-04T16:43:48.613995+00:00"
   },
   "layoutSmoke": {
     "executedAt": "2026-11-04T10:22:04.309733+00:00",
@@ -1111,7 +1171,7 @@
     }
   },
   "localChecks": {
-    "executedAt": "2026-11-04T10:30:51.877388+00:00",
+    "executedAt": "2026-11-04T16:45:58.783888+00:00",
     "status": "PASS",
     "checks": [
       {
@@ -1270,7 +1330,7 @@
   "serverSourceFingerprint": "bc549bac8b9c02cb83a68bf2dc26acfeb584e5c7f929e6075cf652d7922adb32",
   "serverDeploymentPackage": {
     "path": "deliverables/amazon-submission/LifeTalea-Amazon-Supabase-server-2026-11-04.zip",
-    "sha256": "8496c973ad9570aa67cadb5b6c983e435e7879f253ce8bf5eefba3c1d6c88223",
+    "sha256": "3a925034231a1923cc9bbc52424a95949b2c5dd5b367856353d9589f219afbe5",
     "bytes": 26453,
     "entriesVerified": 21,
     "extractedSelfTests": "PASS",

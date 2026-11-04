@@ -1,4 +1,4 @@
-# Amazon billing and server verification â€” local implementation
+# Amazon billing and server verification — local implementation
 
 **Public release remains BLOCKED.** The Supabase verifier is deployed with server-only credentials and a separate RSA identity. Production HTTPS/signature/invalid-receipt smoke passed; real App Tester sandbox purchase, restore and cancellation passed after fixing SDK cancellation precedence. Premium is Approved for TEST at the approved GBP4.99 price. Actual LAT purchases and remaining acceptance gates are pending. See AMAZON_SUPABASE_DEPLOYMENT.md.
 
@@ -29,7 +29,7 @@ Local engineering completed:
 
 The exact executed counts and current APK hashes belong to `deliverables/reports/amazon-rvs-verification.json`, `device-test-run.json`, current JUnit files and `amazon-local-checks.json`. Those reports distinguish local contracts from live Amazon behavior; an older passing device run does not verify a rebuilt APK. Historical startup timeouts remain documented unless a specific cause/fix is demonstrated.
 
-Current packages: `LifeTalea-Amazon-Supabase-server-2026-11-04.zip` and `LifeTalea-0.1.0-Amazon-billing-review-2026-11-04.zip`. Their manifests validate every included byte. The server archive runs its core and edge tests after extraction. It contains no shared secret, private signing key, filled environment file or real receipt.
+Current packages: `LifeTalea-Amazon-Supabase-server-2026-11-04.zip` and `LifeTalea-0.1.0-Amazon-LAT-review-2026-11-04.zip`. Their manifests validate every included byte. The server archive runs its core and edge tests after extraction. It contains no shared secret, private signing key, filled environment file or real receipt.
 
 Next gates: execute the configured LAT candidate against the deployed verifier, including purchase, failures, restore, cancellation, account changes, interruptions and offline/reboot. App Tester sandbox success does not verify LAT or the production device TLS path. Assess the hosted identifier-processing disclosures, in-app privacy wording and Amazon questionnaire. Finish independent security, native-language, product/device, legal/export and signing gates before public promotion.
 

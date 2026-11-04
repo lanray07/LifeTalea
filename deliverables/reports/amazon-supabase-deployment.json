@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-11-04T10:39:10.041Z",
+  "observedAt": "2026-11-04T16:40:11.725Z",
   "endpoint": "https://guigiqacxpvcxrnajvlz.supabase.co/functions/v1/lifetalea-receipts/v1/verify",
   "healthStatus": 200,
   "status": 200,
@@ -14,8 +14,8 @@
     "reason": "invalid_receipt",
     "testTransaction": false,
     "betaProduct": false,
-    "iat": 1793788750057,
-    "exp": 1793875150057
+    "iat": 1793810412636,
+    "exp": 1793896812636
   },
   "scope": "Synthetic invalid identifiers against production Amazon RVS; no purchase, LAT or real customer receipt tested"
 }

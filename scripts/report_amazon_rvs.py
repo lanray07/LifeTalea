@@ -59,6 +59,8 @@ def main():
         'serverDeployed':True,'liveAmazonRvsTested':'PRODUCTION_NEGATIVE_RECEIPT_ONLY','livePurchaseTestsPassed':False,'dockerImageBuilt':False,'productionSigningIdentityCreated':True,
         'productionDeployment':read('deliverables/reports/amazon-supabase-deployment.json'),
         'appTesterSandbox':read('deliverables/reports/amazon-billing-sandbox-tests.json'),
+        'amazonLat':read('deliverables/reports/amazon-console-review.json').get('latDraft'),
+        'latPurchaseTests':read('deliverables/reports/amazon-lat-purchase-tests.json'),
         'defaultReleaseConfiguration':inspection['generatedReleaseBillingConfiguration'],
         'serverSourceSha256':{name:sha(ROOT/f'server/receipt-verifier/{name}') for name in SERVER_FILES},
         'remaining':'Execute configured Amazon LAT purchases against deployed verifier; complete independent security/privacy/legal/native and remaining product/device gates.'}
@@ -67,13 +69,13 @@ def main():
     assert deployment['status']==200 and deployment['signatureValid'] and deployment['payload']['active'] is False
     assert result['appTesterSandbox']['catalogueSdkModeAndPowerRestored']
     state='Current device and collateral checks passed.' if complete and layout_current else 'Current UI QA is incomplete.'
-    readiness=f'''# Release readiness â€” BLOCKED
+    readiness=f'''# Release readiness — BLOCKED
 
 Updated 4 November 2026. {state} The original acceptance requirements remain in scope.
 
 The Supabase production verifier is deployed with server-only credentials and its own RSA signing identity. HTTPS health and a signed rejection of synthetic invalid receipt identifiers passed. This does not verify an actual production purchase. See AMAZON_SUPABASE_DEPLOYMENT.md and amazon-supabase-deployment.json.
 
-Amazon Premium was submitted to the TEST channel and is Approved, with the owner's Â£4.99 UK one-time price and Amazon-calculated marketplace prices. The public app and paid upgrade have not been published. The connected LAT candidate was uploaded and the test release is submitted; Amazon processing and actual purchase verification remain pending. The standard release remains purchases-disabled; the separate LAT candidate uses the deployed URL and public pin.
+Amazon Premium was submitted to the TEST channel and is Approved, with the owner's £4.99 UK one-time price and Amazon-calculated marketplace prices. The public app and paid upgrade have not been published. The connected LAT candidate was uploaded and Amazon now reports Test in-progress and the tester invitation Delivered. Invitation redemption/installation and actual purchase verification remain pending. The standard release remains purchases-disabled; the separate LAT candidate uses the deployed URL and public pin.
 
 Real App Tester sandbox tests exposed a canceled-receipt bug. The fixed QA build passed cancellation, purchase-dialog cancellation, fresh purchase, restore and cancellation of the new fulfilled receipt. SDK cancellations now revoke a receipt and prevent a late active response from reinstating it. The account-switch observation belongs to the earlier QA APK and is labelled accordingly. See amazon-billing-sandbox-tests.json.
 
@@ -88,7 +90,7 @@ Remaining: deployed-server LAT purchase/restore/cancellation/account/offline tes
 - Edge adapter tests: three passed (secrets fail closed, request bounds, quota, receipt delegation and error redaction).
 - Kotlin: {units} passed, including SDK revocation identity/epoch binding and rejection of late active responses after cancellation. The retained red regression log demonstrates the original bug.
 - Physical KFTRWI, Fire HD 10 (2021), Fire OS 7/API 28: {device_count}/{total} passed in {seconds} seconds, including {len(contract)} signed-receipt fixture tests, core writing/media/backup/PDF/short recording flows and the 22-locale capture matrix. This suite uses the standard debug APK; SDK App Tester uses a separate QA APK with its own hash.
-- Three home-screen layout checks: portrait/landscape at 1.3Ã— text and Wi-Fi-disabled reopen. Scope excludes full-screen accessibility and prolonged offline Premium behavior.
+- Three home-screen layout checks: portrait/landscape at 1.3× text and Wi-Fi-disabled reopen. Scope excludes full-screen accessibility and prolonged offline Premium behavior.
 - All {len(checks['checks'])} collateral groups passed: Python, locale resources/isolation, editorial regression, metadata, browser locale/review/static-export, TypeScript, website structure and narrow source patterns.
 - {176 if captures_current else 0} current-APK screenshot drafts byte-validated. Native approvals: zero. Five fresh visual samples were reviewed and their exact hashes recorded; this is not a complete visual or native-language review.
 - Supabase service-role-only quota RPC access verified; anon/authenticated execute denied; private quota RLS enabled. No customer identifiers are stored in that table. Security-advisor no-policy notice is intentional deny-all for normal roles. Existing project password warning was not changed.

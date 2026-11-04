@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'deliverables/amazon-submission'
-NAME = 'LifeTalea-0.1.0-Amazon-billing-review-2026-11-04.zip'
+NAME = 'LifeTalea-0.1.0-Amazon-LAT-review-2026-11-04.zip'
 BUILD = 'deliverables/android/build-logs/amazon-rvs-build.log'
 SERVER_FILES = ['package.json','Dockerfile','.dockerignore','.env.example','README.md','src/main.mjs','src/http.mjs','src/verifier.mjs','scripts/generate-signing-key.mjs','test/verifier.test.mjs','test/export-contract-fixture.mjs']
 SERVER_FILES += ['supabase/index.ts','supabase/handler.mjs','supabase/deno.json','supabase/public-signing-key.json','test/edge.test.mjs']
@@ -176,15 +176,22 @@ def main():
     add('android/app/src/androidTest/assets/rvs-contract.json')
     add('docs/AMAZON_RVS_IMPLEMENTATION.md')
     add('docs/AMAZON_SUPABASE_DEPLOYMENT.md')
+    add('docs/AMAZON_LAT_STATUS.md')
+    add('scripts/lat_qa_session.py')
+    add('scripts/inspect_android_components.py')
+    add('deliverables/reports/amazon-component-inspection.json','evidence/amazon-component-inspection.json')
+    add('deliverables/reports/amazon-lat-live.png','evidence/amazon-lat-live.png')
     for name in ['setup_billing_qa.py','local_billing_qa_session.py','setup_production_rvs_identity.py','build_amazon_test.py','inspect_amazon_test.py','check_deployed_rvs.mjs','billing-qa-requirements.txt']:
         add('scripts/'+name)
     add('server/receipt-verifier/scripts/local-sandbox-server.mjs')
     for path in sorted((ROOT/'deliverables/reports/device-evidence/amazon-billing-sandbox').glob('*')):
         if path.suffix in {'.png','.json'}:add(path.relative_to(ROOT).as_posix(),'evidence/amazon-billing-sandbox/'+path.name)
-    for name in ['amazon-billing-sandbox-tests.json','amazon-app-tester-session.json','amazon-supabase-deployment.json','amazon-supabase-source-verification.json','amazon-lat-apk-inspection.json','amazon-iap-premium-pricing.png','amazon-iap-test-submitted.png','amazon-lat-test-submitted.png']:
+    for name in ['amazon-billing-sandbox-tests.json','amazon-app-tester-session.json','amazon-supabase-deployment.json','amazon-supabase-source-verification.json','amazon-lat-apk-inspection.json','amazon-lat-purchase-tests.json','amazon-lat-device-session.json','amazon-security-scan-startup.json','amazon-iap-premium-pricing.png','amazon-iap-test-submitted.png','amazon-lat-test-submitted.png']:
         add('deliverables/reports/'+name,'evidence/'+name)
     lat=read('deliverables/reports/amazon-lat-apk-inspection.json')
     assert lat['sha256']==sha((ROOT/lat['path']).read_bytes())
+    lat_session=read('deliverables/reports/amazon-lat-device-session.json')
+    assert lat_session.get('power',{}).get('restored') and lat_session.get('sdkModeUnchanged'), 'Close the LAT device session and restore original settings before packaging'
     add(lat['path'],'amazon-lat-only/LifeTalea-0.1.0-amazonTest-unsigned.apk')
     for name in ['amazon-lat-build.log','amazon-billing-qa-sdk-cancellations.log','amazon-cancellation-regression-red.log','amazon-fire-post-cancellation.log']:
         add('deliverables/android/build-logs/'+name,'evidence/logs/'+name)

@@ -1,0 +1,39 @@
+{
+  "observedAt": "2026-11-04T16:43:48.613995+00:00",
+  "status": "BLOCKED_LAT_INSTALLATION_PENDING",
+  "latStatus": "Test in-progress",
+  "invitationStatus": "Delivered",
+  "deviceAuthorization": "USB authorized; device unlocked",
+  "installedProductionPackage": false,
+  "sdkSandboxMode": "none",
+  "productionContentTouched": false,
+  "purchaseAttempted": false,
+  "realMoneyCharged": false,
+  "tests": [
+    {
+      "case": "purchase and server-side verification",
+      "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+    },
+    {
+      "case": "restore",
+      "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+    },
+    {
+      "case": "canceled purchase dialog",
+      "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+    },
+    {
+      "case": "canceled receipt",
+      "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+    },
+    {
+      "case": "account switching",
+      "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+    },
+    {
+      "case": "offline and reboot recovery",
+      "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+    }
+  ],
+  "nextAction": "Tester must redeem the invitation for the Fire tablet, then verify the Amazon-distributed install and run zero-cost LAT transactions. Do not substitute the local unsigned or App Tester build."
+}
