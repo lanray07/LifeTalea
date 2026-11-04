@@ -1,8 +1,8 @@
 {
   "releaseStatus": "BLOCKED",
   "packagePurpose": "LOCAL_REVIEW_ONLY_NOT_FOR_SUBMISSION",
-  "generatedAt": "2026-11-03T20:42:30.822467+00:00",
-  "baseCommit": "20d3f3d2ffd74431569d40677f7abe11fb74c114",
+  "generatedAt": "2026-11-04T08:17:20.017600+00:00",
+  "baseCommit": "30f634252e22c5c78e715237109f568b4852dda1",
   "workingTreeDirty": true,
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
@@ -13,7 +13,7 @@
   "signing": "UNSIGNED; Amazon distribution signing/update identity unverified",
   "kotlinUnitTestsPassed": 18,
   "physicalDeviceTestsPassed": 17,
-  "uiChecksComplete": false,
+  "uiChecksComplete": true,
   "currentTestApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
   "currentTestApkExecuted": true,
   "deviceRun": {
@@ -796,9 +796,9 @@
   "screenshotSource": "Current debug APK, one physical tablet; release screenshot approval pending",
   "productionBilling": "IMPLEMENTED_LOCALLY_NOT_CONFIGURED: signed server RVS and Android client; endpoint/pin unset and purchases off in default build. Deployment, real credentials, IAP product/prices and live Amazon transaction tests remain required.",
   "receiptVerification": {
-    "executedAt": "2026-11-03T20:40:26.391354+00:00",
-    "status": "BILLING_EVIDENCE_PRESENT_UI_QA_INCOMPLETE_RELEASE_BLOCKED",
-    "uiChecksComplete": false,
+    "executedAt": "2026-11-04T08:15:52.141177+00:00",
+    "status": "LOCAL_CHECKS_PASS_RELEASE_BLOCKED",
+    "uiChecksComplete": true,
     "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
     "testApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
     "lastExecutedTestApkSha256": "c417e526dc3ac548a8091c48bcbe3762ff4402629d41a379a367f506ffb9c3cb",
@@ -831,7 +831,7 @@
       "Error": 0,
       "Warning": 260
     },
-    "layoutSmokeStatus": "INCOMPLETE",
+    "layoutSmokeStatus": "PASS",
     "currentScreenshotDraftsValidated": 176,
     "serverDeployed": false,
     "liveAmazonRvsTested": false,
@@ -895,7 +895,8 @@
     "limitations": "Other listing locale variants, all device selections, privacy questionnaire and prices were not re-reviewed. Review page showed Compliance confirmation required. Native product acceptance gates remain independent."
   },
   "layoutSmoke": {
-    "status": "INCOMPLETE",
+    "executedAt": "2026-11-04T08:15:03.316523+00:00",
+    "status": "PASS",
     "debugApkSha256": "ba2fbdc45e1106135485cd1ad7ededb3008f34a7435975a57d238166fe83387f",
     "originalSettingsRestored": true,
     "originalSettings": {
@@ -904,7 +905,7 @@
       "font_scale": "1.0"
     },
     "originalWifiState": "1",
-    "failure": "RuntimeError: ADB operation failed: ('shell', 'uiautomator', 'dump')",
+    "failure": null,
     "cases": [
       {
         "case": "rotation-0-font-1.3",
@@ -917,10 +918,16 @@
         "width": 1920,
         "height": 1200,
         "homeActionInAccessibilityTreeAndWithinDisplay": true
+      },
+      {
+        "case": "wifi-disabled-reopen",
+        "width": 1920,
+        "height": 1200,
+        "homeActionInAccessibilityTreeAndWithinDisplay": true
       }
     ],
     "scope": "Home action accessibility bounds and launch only; manual screenshot inspection separate. Wi-Fi disabled does not certify prolonged offline use, every screen, all font scales or assistive technology.",
-    "qaBatchPowerSettings": {
+    "qaPowerSettings": {
       "originalStayAwakeWhilePluggedIn": "0",
       "restored": true
     }
@@ -1072,8 +1079,8 @@
   "androidSourceFingerprintMethod": "SHA-256 of the encoded per-file working-tree byte hashes, including local line endings; not a cross-platform reproducible-build claim.",
   "serverSourceFingerprint": "0d683d0e7ad9557aac94142647ca1a23fd2f63097220207bdf3aecc21830f68e",
   "serverDeploymentPackage": {
-    "path": "deliverables/amazon-submission/LifeTalea-Amazon-RVS-server-2026-11-03.zip",
-    "sha256": "f502c098d48cc7eef2bba85525481adf4fc8899270d70be788252c43f1ae018b",
+    "path": "deliverables/amazon-submission/LifeTalea-Amazon-RVS-server-2026-11-04.zip",
+    "sha256": "8c47f00afe87b6634b5856d0c2cc2af7b920787e4f9c55330f081309a90464dc",
     "bytes": 18956,
     "entriesVerified": 14,
     "extractedSelfTests": "PASS",
