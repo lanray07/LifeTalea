@@ -2,121 +2,121 @@ TAP version 13
 # Subtest: real RSA signature binds active entitlement, identity, receipt, SKU, environment and expiry
 ok 1 - real RSA signature binds active entitlement, identity, receipt, SKU, environment and expiry
   ---
-  duration_ms: 26.7595
+  duration_ms: 21.7417
   type: 'test'
   ...
 # Subtest: sandbox has a fixed distinct upstream and signed environment
 ok 2 - sandbox has a fixed distinct upstream and signed environment
   ---
-  duration_ms: 5.9064
+  duration_ms: 3.1841
   type: 'test'
   ...
 # Subtest: cancelDate, including zero, revokes entitlement
 ok 3 - cancelDate, including zero, revokes entitlement
   ---
-  duration_ms: 10.0085
+  duration_ms: 5.5263
   type: 'test'
   ...
 # Subtest: Amazon invalid, canceled and mismatched-user statuses produce signed inactive decisions
 ok 4 - Amazon invalid, canceled and mismatched-user statuses produce signed inactive decisions
   ---
-  duration_ms: 15.2355
+  duration_ms: 8.0649
   type: 'test'
   ...
 # Subtest: throttling, secret failure, server errors and redirects fail closed without leaking upstream errors
 ok 5 - throttling, secret failure, server errors and redirects fail closed without leaking upstream errors
   ---
-  duration_ms: 5.6865
+  duration_ms: 8.0485
   type: 'test'
   ...
 # Subtest: wrong receipt, SKU/type, malformed cancellation, missing flags and future purchase cannot grant
 ok 6 - wrong receipt, SKU/type, malformed cancellation, missing flags and future purchase cannot grant
   ---
-  duration_ms: 9.0431
+  duration_ms: 10.7832
   type: 'test'
   ...
 # Subtest: production publishing/LAT test receipts require explicit server opt-in; sandbox is still distinct
 ok 7 - production publishing/LAT test receipts require explicit server opt-in; sandbox is still distinct
   ---
-  duration_ms: 6.8738
+  duration_ms: 6.0108
   type: 'test'
   ...
 # Subtest: oversized, absent and malformed Amazon JSON is rejected
 ok 8 - oversized, absent and malformed Amazon JSON is rejected
   ---
-  duration_ms: 4.2605
+  duration_ms: 5.0721
   type: 'test'
   ...
 # Subtest: transport exceptions are redacted; cancellation signal is propagated
 ok 9 - transport exceptions are redacted; cancellation signal is propagated
   ---
-  duration_ms: 1.6238
+  duration_ms: 2.1642
   type: 'test'
   ...
 # Subtest: request cannot select environment, SKU, upstream host or secret; path-dot and whitespace rejected
 ok 10 - request cannot select environment, SKU, upstream host or secret; path-dot and whitespace rejected
   ---
-  duration_ms: 0.664
+  duration_ms: 0.9643
   type: 'test'
   ...
 # Subtest: assertion lifetime and missing configuration are bounded
 ok 11 - assertion lifetime and missing configuration are bounded
   ---
-  duration_ms: 1.3065
+  duration_ms: 1.772
   type: 'test'
   ...
 # Subtest: global and per-client quotas are bounded and refill; forwarded headers are not trusted
 ok 12 - global and per-client quotas are bounded and refill; forwarded headers are not trusted
   ---
-  duration_ms: 0.6858
+  duration_ms: 0.9919
   type: 'test'
   ...
 # Subtest: HTTP boundary verifies real JSON requests and returns a signed token with no-store headers
 ok 13 - HTTP boundary verifies real JSON requests and returns a signed token with no-store headers
   ---
-  duration_ms: 166.41
+  duration_ms: 280.2568
   type: 'test'
   ...
 # Subtest: HTTP quota prevents upstream verification
 ok 14 - HTTP quota prevents upstream verification
   ---
-  duration_ms: 12.551
+  duration_ms: 12.0523
   type: 'test'
   ...
 # Subtest: committed Android contract fixtures have valid Node signatures and no private key
 ok 15 - committed Android contract fixtures have valid Node signatures and no private key
   ---
-  duration_ms: 5.2513
+  duration_ms: 4.5049
   type: 'test'
   ...
 # Subtest: upstream timeout aborts an actual pending verification
 ok 16 - upstream timeout aborts an actual pending verification
   ---
-  duration_ms: 29.5625
+  duration_ms: 38.5374
   type: 'test'
   ...
 # Subtest: HTTP concurrency cap rejects extra work while an upstream request is pending
 ok 17 - HTTP concurrency cap rejects extra work while an upstream request is pending
   ---
-  duration_ms: 14.4188
+  duration_ms: 54.1345
   type: 'test'
   ...
 # Subtest: executable rejects missing or invalid secret/key/bind configuration without printing secrets
 ok 18 - executable rejects missing or invalid secret/key/bind configuration without printing secrets
   ---
-  duration_ms: 1152.007
+  duration_ms: 1155.5786
   type: 'test'
   ...
 # Subtest: configured executable starts a real local readiness endpoint
 ok 19 - configured executable starts a real local readiness endpoint
   ---
-  duration_ms: 212.5351
+  duration_ms: 176.64
   type: 'test'
   ...
 # Subtest: signing-key helper writes a matching public pair and refuses to replace an existing identity
 ok 20 - signing-key helper writes a matching public pair and refuses to replace an existing identity
   ---
-  duration_ms: 603.0613
+  duration_ms: 748.3163
   type: 'test'
   ...
 1..20
@@ -127,4 +127,4 @@ ok 20 - signing-key helper writes a matching public pair and refuses to replace 
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 2743.8063
+# duration_ms 2865.1876

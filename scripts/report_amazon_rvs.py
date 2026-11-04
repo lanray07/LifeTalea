@@ -56,14 +56,14 @@ def main():
         'serverTests':{'status':'PASS','tests':node_count,'passed':node_pass,'log':row['log'],'scope':'Fictional Amazon responses; real crypto/local HTTP/executable/key-helper tests; not live Amazon RVS'},
         'androidReceiptContractTests':{'status':'PASS','passed':len(contract),'tests':sorted(contract),'scope':'Node-signed offline fixtures and actual Fire RSA/JSON/config behavior, not real SDK payment callbacks'},
         'kotlinUnitTestsPassed':units,'physicalDeviceTestsPassed':device_count,'physicalDeviceTestsRun':total,'physicalDeviceSuiteStatus':run['status'],'deviceSeconds':float(seconds),'lint':lint,'layoutSmokeStatus':layout['status'] if layout.get('debugApkSha256')==run['debugApkSha256'] else 'NOT_VERIFIED_ON_CURRENT_APP','currentScreenshotDraftsValidated':176 if captures_current and complete else 0,
-        'serverDeployed':True,'liveAmazonRvsTested':'PRODUCTION_NEGATIVE_RECEIPT_ONLY','livePurchaseTestsPassed':False,'dockerImageBuilt':False,'productionSigningIdentityCreated':True,
+        'serverDeployed':True,'liveAmazonRvsTested':'LAT_POSITIVE_PURCHASE_AND_PRODUCTION_NEGATIVE_RECEIPT','livePurchaseTestsPassed':False,'livePurchaseActivationPassed':read('deliverables/reports/amazon-lat-purchase-tests.json').get('purchaseCompleted') is True,'dockerImageBuilt':False,'productionSigningIdentityCreated':True,
         'productionDeployment':read('deliverables/reports/amazon-supabase-deployment.json'),
         'appTesterSandbox':read('deliverables/reports/amazon-billing-sandbox-tests.json'),
         'amazonLat':read('deliverables/reports/amazon-console-review.json').get('latDraft'),
         'latPurchaseTests':read('deliverables/reports/amazon-lat-purchase-tests.json'),
         'defaultReleaseConfiguration':inspection['generatedReleaseBillingConfiguration'],
         'serverSourceSha256':{name:sha(ROOT/f'server/receipt-verifier/{name}') for name in SERVER_FILES},
-        'remaining':'Execute configured Amazon LAT purchases against deployed verifier; complete independent security/privacy/legal/native and remaining product/device gates.'}
+        'remaining':'Investigate first-launch confirmation delay; complete fresh restore, LAT revocation/account/offline/reboot tests; complete independent security/privacy/legal/native and remaining product/device gates.'}
     (REPORTS/'amazon-rvs-verification.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     deployment=result['productionDeployment']
     assert deployment['status']==200 and deployment['signatureValid'] and deployment['payload']['active'] is False
@@ -73,15 +73,15 @@ def main():
 
 Updated 4 November 2026. {state} The original acceptance requirements remain in scope.
 
-The Supabase production verifier is deployed with server-only credentials and its own RSA signing identity. HTTPS health and a signed rejection of synthetic invalid receipt identifiers passed. This does not verify an actual production purchase. See AMAZON_SUPABASE_DEPLOYMENT.md and amazon-supabase-deployment.json.
+The Supabase production verifier is deployed with server-only credentials and its own RSA signing identity. HTTPS health and a signed rejection of synthetic invalid receipt identifiers passed. Separately, one Amazon-distributed LAT purchase activated Premium through the signed verification path; this is not a public retail launch test. See AMAZON_SUPABASE_DEPLOYMENT.md and amazon-supabase-deployment.json.
 
-Amazon Premium was submitted to the TEST channel and is Approved, with the owner's £4.99 UK one-time price and Amazon-calculated marketplace prices. The public app and paid upgrade have not been published. The connected LAT candidate was uploaded and Amazon now reports Test in-progress and the corrected tester invitation Pending (inbox receipt unconfirmed). Invitation redemption/installation and actual purchase verification remain pending. The standard release remains purchases-disabled; the separate LAT candidate uses the deployed URL and public pin.
+Amazon Premium was submitted to the TEST channel and is Approved, with the owner's £4.99 UK one-time price and Amazon-calculated marketplace prices. The public app and paid upgrade have not been published. Amazon reports Test in-progress. The corrected invitation was redeemed and the Amazon-distributed app installed. One authorized purchase activated Premium; restore retained the active entitlement and canceling the earlier confirmation retained Free. The actual final charge is unconfirmed. Initial confirmation needed app resume; fresh restore and LAT revocation/account/offline/reboot cases remain open. See AMAZON_LAT_STATUS.md and amazon-lat-purchase-tests.json. The standard release remains purchases-disabled; the separate LAT candidate uses the deployed URL and public pin.
 
 Real App Tester sandbox tests exposed a canceled-receipt bug. The fixed QA build passed cancellation, purchase-dialog cancellation, fresh purchase, restore and cancellation of the new fulfilled receipt. SDK cancellations now revoke a receipt and prevent a late active response from reinstating it. The account-switch observation belongs to the earlier QA APK and is labelled accordingly. See amazon-billing-sandbox-tests.json.
 
 Current local evidence: {node_pass} Node core tests, three edge adapter tests, {units} Kotlin unit tests and {device_count}/{total} physical Fire tests. Lint: {lint['Error']} errors, {lint['Warning']} warnings. Layout/offline status: {layout['status']}. All original device settings, App Tester catalogue and SDK mode were restored. {screenshot_note}
 
-Remaining: deployed-server LAT purchase/restore/cancellation/account/offline tests;  recorded-file transcription; native approval and matching release assets; outstanding product, backup/crash recovery, accessibility/performance/device checks; independent server/client security and final privacy/legal/signing review. No public release readiness or Amazon public approval is claimed. See AMAZON_OWNER_ACTIONS.md.
+Remaining: first-launch confirmation delay, fresh restore and LAT revocation/account/offline/reboot tests;  recorded-file transcription; native approval and matching release assets; outstanding product, backup/crash recovery, accessibility/performance/device checks; independent server/client security and final privacy/legal/signing review. No public release readiness or Amazon public approval is claimed. See AMAZON_OWNER_ACTIONS.md.
 '''
     (ROOT/'docs/RELEASE_READINESS.md').write_text(readiness,encoding='utf-8')
     text=readiness+f'''\nExecuted evidence:
@@ -95,7 +95,7 @@ Remaining: deployed-server LAT purchase/restore/cancellation/account/offline tes
 - {176 if captures_current else 0} current-APK screenshot drafts byte-validated. Native approvals: zero. Five fresh visual samples were reviewed and their exact hashes recorded; this is not a complete visual or native-language review.
 - Supabase service-role-only quota RPC access verified; anon/authenticated execute denied; private quota RLS enabled. No customer identifiers are stored in that table. Security-advisor no-policy notice is intentional deny-all for normal roles. Existing project password warning was not changed.
 
-Earlier failed locale/layout runs are retained as historical evidence. Their later success does not establish reliability on every device. Docker execution, an independent security audit, native-language review, legal certification and real LAT purchases remain unverified.
+Earlier failed locale/layout runs are retained as historical evidence. Their later success does not establish reliability on every device. Docker execution, an independent security audit, native-language review, legal review and the remaining LAT recovery/revocation/account matrix remain unverified. One LAT purchase activated Premium; no further payment was attempted.
 '''
     (ROOT/'docs/TEST_REPORT.md').write_text(text,encoding='utf-8')
     print(json.dumps({key:result[key] for key in ['status','kotlinUnitTestsPassed','physicalDeviceTestsPassed','lint']}))

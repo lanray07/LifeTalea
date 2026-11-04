@@ -102,14 +102,16 @@
     "exportCertificationPerformedByOwner": true,
     "uploadedApk": "app-amazonTest-unsigned.apk",
     "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
-    "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
-    "realPurchaseTested": false,
-    "invitationStatus": "Pending",
-    "latInstallationVerified": false,
+    "amazonProcessedApkSha256": "520f9eb047802364d50a9f427c80930d67f73ca24a877c52091629a070ad3ec8",
+    "realPurchaseTested": true,
+    "invitationStatus": "Redeemed; installed from Amazon",
+    "latInstallationVerified": true,
     "invitationAddressCorrected": true,
-    "invitationReceiptConfirmed": false,
+    "invitationReceiptConfirmed": true,
     "mistypedTesterRemovedFromLat": true,
-    "testerAssignment": "Existing corrected tester profile, selected individually"
+    "testerAssignment": "Existing corrected tester profile, selected individually",
+    "allPurchaseTestsPassed": false
   },
-  "latReviewObservedAt": "2026-11-04T17:20:47.090272+00:00"
+  "latReviewObservedAt": "2026-11-04T17:20:47.090272+00:00",
+  "latDeviceObservedAt": "2026-11-04T18:11:37.853464+00:00"
 }

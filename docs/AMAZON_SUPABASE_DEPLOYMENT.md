@@ -21,3 +21,5 @@ Re-deploy the files in `server/receipt-verifier/supabase/` and `src/verifier.mjs
 Run `node --test server/receipt-verifier/test/edge.test.mjs server/receipt-verifier/test/verifier.test.mjs` before deployment. Build the separate unsigned LAT APK with `python scripts/build_amazon_test.py`. The standard release remains purchases-disabled until testing and release gates pass. Do not install the LAT app over user data without preserving the correct Amazon signing/update identity.
 
 Supabase's [November 2026 TLS change](https://supabase.com/changelog/cbc-tls-ciphers-deprecated) removes older CBC suites. A real Fire-to-deployed-server TLS check remains required; never bypass certificate validation to make it pass.
+
+4 November LAT follow-up: the Amazon-distributed app activated Premium after one authorized purchase through the production signed-verification path. Restore retained the active entitlement; this does not prove cleared-cache regrant or complete the LAT matrix. See AMAZON_LAT_STATUS.md and amazon-lat-purchase-tests.json. Final charge amount is unconfirmed.

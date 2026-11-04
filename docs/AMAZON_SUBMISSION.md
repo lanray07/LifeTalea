@@ -1,3 +1,5 @@
+> Latest LAT follow-up, 4 November 2026: invitation redeemed, Amazon-signed distribution inspected, one authorized Premium purchase activated through signed verification. Restore retained Premium and dialog cancellation retained Free. Final charge unconfirmed. First-launch confirmation delay and remaining LAT/acceptance gates stay open; public release remains BLOCKED. See AMAZON_LAT_STATUS.md. Earlier observations below are historical.
+
 Current update — 4 November 2026: the isolated Supabase verifier is deployed; Premium is Approved for TEST at GBP4.99 plus calculated prices; the configured billing LAT release is submitted. No real LAT purchase or public launch is verified. The older audit below remains historical. Current evidence and outstanding gates are in RELEASE_READINESS.md, AMAZON_SUPABASE_DEPLOYMENT.md and amazon-console-review.json.
 
 # Amazon submission preparation

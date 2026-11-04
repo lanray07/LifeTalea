@@ -1,6 +1,6 @@
 # Amazon billing and server verification — local implementation
 
-**Public release remains BLOCKED.** The Supabase verifier is deployed with server-only credentials and a separate RSA identity. Production HTTPS/signature/invalid-receipt smoke passed; real App Tester sandbox purchase, restore and cancellation passed after fixing SDK cancellation precedence. Premium is Approved for TEST at the approved GBP4.99 price. Actual LAT purchases and remaining acceptance gates are pending. See AMAZON_SUPABASE_DEPLOYMENT.md.
+**Public release remains BLOCKED.** The Supabase verifier is deployed with server-only credentials and a separate RSA identity. Production HTTPS/signature/invalid-receipt smoke passed; real App Tester sandbox purchase, restore and cancellation passed after fixing SDK cancellation precedence. Premium is Approved for TEST at the approved GBP4.99 price. One actual Amazon-distributed LAT purchase activated Premium through signed verification. Restore retained it and dialog cancellation retained Free; first-launch confirmation delay and the remaining LAT/acceptance gates are open. Final charge is unconfirmed. See AMAZON_LAT_STATUS.md. See AMAZON_SUPABASE_DEPLOYMENT.md.
 
 ```mermaid
 sequenceDiagram

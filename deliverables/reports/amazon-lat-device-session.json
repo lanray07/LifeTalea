@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-11-04T16:39:15.373901+00:00",
+  "startedAt": "2026-11-04T17:54:01.786440+00:00",
   "status": "CLOSED_RESULTS_RECORDED_SEPARATELY",
   "sdkMode": "none",
   "sandboxModeChanged": false,
@@ -8,6 +8,6 @@
     "restored": true
   },
   "stopReason": "operator",
-  "finishedAt": "2026-11-04T16:49:07.228379+00:00",
+  "finishedAt": "2026-11-04T18:10:57.654619+00:00",
   "sdkModeUnchanged": true
 }

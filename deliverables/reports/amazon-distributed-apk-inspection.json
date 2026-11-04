@@ -1,0 +1,69 @@
+{
+  "status": "AMAZON_DISTRIBUTED_APK_INSPECTION_PASS",
+  "sha256": "520f9eb047802364d50a9f427c80930d67f73ca24a877c52091629a070ad3ec8",
+  "package": "com.lifetalea.app",
+  "versionCode": 1,
+  "debuggable": false,
+  "signatureVerified": true,
+  "signerCertificateSha256": "8e35b165d5a1dc14c10820cee25ed2c24e9c543ceb2f059b9f5bc93baa672297",
+  "productionEndpointPresent": true,
+  "publicPinMatchesDeployedIdentity": true,
+  "amazonAuthenticationPemSha256": "056a8be292f26e52de2b81951b3b51c762c02879dd94fbd35ffad56e994ba40b",
+  "sandboxTrustOrFixtureBundled": false,
+  "components": [
+    {
+      "type": "activity",
+      "name": "com.lifetalea.app.MainActivity",
+      "exported": true
+    },
+    {
+      "type": "service",
+      "name": "androidx.appcompat.app.AppLocalesMetadataHolderService",
+      "exported": false
+    },
+    {
+      "type": "receiver",
+      "name": "com.amazon.device.iap.ResponseReceiver",
+      "permission": "com.amazon.inapp.purchasing.Permission.NOTIFY",
+      "exported": true
+    },
+    {
+      "type": "provider",
+      "name": "androidx.startup.InitializationProvider",
+      "exported": false
+    },
+    {
+      "type": "service",
+      "name": "androidx.room.MultiInstanceInvalidationService",
+      "exported": false
+    },
+    {
+      "type": "receiver",
+      "name": "androidx.profileinstaller.ProfileInstallReceiver",
+      "permission": "android.permission.DUMP",
+      "exported": true
+    }
+  ],
+  "distribution": "Amazon Appstore TEST 1 via redeemed LAT invitation",
+  "privateDeviceStorageRead": false,
+  "scope": "Installed binary, cryptographic signing and static configuration only; runtime billing results recorded separately.",
+  "dexComparisonToUploadedCandidate": [
+    {
+      "entry": "classes.dex",
+      "matchesUploadedCandidate": true,
+      "sha256": "e76946fdddfd2d62af36577d2b18925a91e9f6503d202354cad2a464292b4b28"
+    },
+    {
+      "entry": "classes2.dex",
+      "matchesUploadedCandidate": true,
+      "sha256": "cc1350d2a52e028a1a166c8f514d87742bd05a688d4eb01b973f6d2e7e087c66"
+    },
+    {
+      "entry": "classes3.dex",
+      "matchesUploadedCandidate": true,
+      "sha256": "d79d2141a93d77d751a8e27086e0651cc67c5f1622324aa8cba34ee29199ae63"
+    }
+  ],
+  "allCandidateDexFilesUnchanged": true,
+  "runtimePurchaseResult": "Premium activated after one authorized transaction; full LAT matrix incomplete"
+}

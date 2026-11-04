@@ -1,5 +1,5 @@
 {
-  "executedAt": "2026-11-04T17:20:47.780264+00:00",
+  "executedAt": "2026-11-04T18:14:09.602457+00:00",
   "status": "LOCAL_CHECKS_PASS_RELEASE_BLOCKED",
   "uiChecksComplete": true,
   "debugApkSha256": "16dab173edae40ff70ecade6e2faed3959ffc948a2790b8e3a5fa3ed299e1ac9",
@@ -37,8 +37,9 @@
   "layoutSmokeStatus": "PASS",
   "currentScreenshotDraftsValidated": 176,
   "serverDeployed": true,
-  "liveAmazonRvsTested": "PRODUCTION_NEGATIVE_RECEIPT_ONLY",
+  "liveAmazonRvsTested": "LAT_POSITIVE_PURCHASE_AND_PRODUCTION_NEGATIVE_RECEIPT",
   "livePurchaseTestsPassed": false,
+  "livePurchaseActivationPassed": true,
   "dockerImageBuilt": false,
   "productionSigningIdentityCreated": true,
   "productionDeployment": {
@@ -129,55 +130,106 @@
     "exportCertificationPerformedByOwner": true,
     "uploadedApk": "app-amazonTest-unsigned.apk",
     "uploadedSourceApkSha256": "804806112634b01a896f4f0ad1dc4015bc962a73c404bf8c25c3bca5191db84f",
-    "amazonProcessedApkSha256": "NOT_YET_DOWNLOADED",
-    "realPurchaseTested": false,
-    "invitationStatus": "Pending",
-    "latInstallationVerified": false,
+    "amazonProcessedApkSha256": "520f9eb047802364d50a9f427c80930d67f73ca24a877c52091629a070ad3ec8",
+    "realPurchaseTested": true,
+    "invitationStatus": "Redeemed; installed from Amazon",
+    "latInstallationVerified": true,
     "invitationAddressCorrected": true,
-    "invitationReceiptConfirmed": false,
+    "invitationReceiptConfirmed": true,
     "mistypedTesterRemovedFromLat": true,
-    "testerAssignment": "Existing corrected tester profile, selected individually"
+    "testerAssignment": "Existing corrected tester profile, selected individually",
+    "allPurchaseTestsPassed": false
   },
   "latPurchaseTests": {
-    "observedAt": "2026-11-04T17:20:47.090272+00:00",
-    "status": "BLOCKED_LAT_INSTALLATION_PENDING",
+    "observedAt": "2026-11-04T18:11:37.816137+00:00",
+    "status": "LAT_PURCHASE_PASS_REMAINING_CASES_OPEN",
     "latStatus": "Test in-progress",
-    "invitationStatus": "Pending",
+    "invitationStatus": "Redeemed; Amazon app installed",
     "deviceAuthorization": "USB authorized; device unlocked",
-    "installedProductionPackage": false,
+    "installedProductionPackage": true,
     "sdkSandboxMode": "none",
     "productionContentTouched": false,
-    "purchaseAttempted": false,
-    "realMoneyCharged": false,
+    "purchaseAttempted": true,
+    "realMoneyCharged": null,
     "tests": [
       {
         "case": "purchase and server-side verification",
-        "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        "status": "PASS",
+        "scope": "One authorized Verify and Pay submission in Amazon-distributed LAT app; Free became Premium is active. Inspected byte-identical code grants this only after validating the deployed verifier signed assertion. No raw receipt or backend log captured.",
+        "evidence": "purchase-premium-active.png"
       },
       {
-        "case": "restore",
-        "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        "case": "restore with existing active entitlement",
+        "status": "PASS_RETAINED_ACTIVE",
+        "scope": "Tapped Restore purchases after activation; Premium remained active. Fresh-install or cleared-cache regrant not tested.",
+        "evidence": "restore-premium-active.png"
       },
       {
         "case": "canceled purchase dialog",
-        "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        "status": "PASS",
+        "scope": "First Amazon confirmation canceled using Back; Free remained and Get Premium reenabled. No payment submitted on canceled attempt.",
+        "evidence": "canceled-confirmation-free-tier.png"
+      },
+      {
+        "case": "first-launch purchase confirmation",
+        "status": "ISSUE_OBSERVED",
+        "scope": "Initial request did not display Amazon confirmation for several minutes; Home/reopen displayed it. Later attempt displayed promptly. Cause not established; fresh first-launch retest required."
       },
       {
         "case": "canceled receipt",
-        "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        "status": "NOT_RUN_LAT",
+        "scope": "Separate App Tester cancellation regression passed; not repeated on live LAT entitlement."
       },
       {
         "case": "account switching",
-        "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        "status": "NOT_RUN_LAT",
+        "scope": "No device account changes made."
       },
       {
         "case": "offline and reboot recovery",
-        "status": "NOT_RUN_LAT_APP_NOT_INSTALLED"
+        "status": "INCOMPLETE",
+        "scope": "Wi-Fi disabled and cached Premium observed before refresh. Foreground changed to another app during subsequent refresh; no reliable refresh/reboot result. Wi-Fi restored enabled; no reboot performed."
       }
     ],
-    "nextAction": "Wait for the corrected-account LAT invitation, redeem it for the Fire tablet, then verify the Amazon-distributed install and run zero-cost LAT transactions. The earlier delivery indicator belonged to a mistyped address and was not inbox confirmation.",
+    "nextAction": "Investigate first-launch prompt delay; verify fresh restore, LAT revocation/account and offline/reboot recovery. No further payment is authorized. Final charge remains unconfirmed; public release remains blocked.",
     "invitationAddressCorrected": true,
-    "invitationReceiptConfirmed": false
+    "invitationReceiptConfirmed": true,
+    "invitationRedeemed": true,
+    "latInstallationVerified": true,
+    "installedApkSha256": "520f9eb047802364d50a9f427c80930d67f73ca24a877c52091629a070ad3ec8",
+    "installationSource": "com.amazon.venezia",
+    "amazonProcessedSignatureVerified": true,
+    "purchaseCompleted": true,
+    "confirmationPriceDisplayed": {
+      "currency": "GBP",
+      "amount": "4.99"
+    },
+    "initialConfirmationNeededAppResume": true,
+    "purchaseConfirmationSubmitted": true,
+    "actualChargeConfirmed": false,
+    "purchaseConfirmationCount": 1,
+    "purchaseAuthorizationMaximumGBP": "4.99",
+    "wifiRestoredEnabled": true,
+    "offlineRefreshVerified": false,
+    "allLatCasesPassed": false,
+    "evidence": [
+      {
+        "path": "deliverables/reports/device-evidence/amazon-lat/canceled-confirmation-free-tier.png",
+        "sha256": "a224f06af701f8a50245bf970be315751fae28cba63416d21ae48959818b1c87"
+      },
+      {
+        "path": "deliverables/reports/device-evidence/amazon-lat/initial-free-tier.png",
+        "sha256": "065c8a949788d41057e0861f4681481227bf2647980c2c0202bac94aeb9d94cb"
+      },
+      {
+        "path": "deliverables/reports/device-evidence/amazon-lat/purchase-premium-active.png",
+        "sha256": "5c4613c3d0e24377deacc31cb9402d5669a3451d06c5894fc34fcd8bc2d6d6b5"
+      },
+      {
+        "path": "deliverables/reports/device-evidence/amazon-lat/restore-premium-active.png",
+        "sha256": "c97a84c0d8029c5df856e9f0161dec1b3c14ecaf8c884de038f9b44ac753c76b"
+      }
+    ]
   },
   "defaultReleaseConfiguration": {
     "endpointConfigured": false,
@@ -203,5 +255,5 @@
     "supabase/public-signing-key.json": "6b66c589460e8401da4c0e9f47002d0826d41af0a83331d0c4a26e67b57f5509",
     "test/edge.test.mjs": "df992807d543d26dff1c9cbf483f6226a20d169b65f17419be6055ec387a2d51"
   },
-  "remaining": "Execute configured Amazon LAT purchases against deployed verifier; complete independent security/privacy/legal/native and remaining product/device gates."
+  "remaining": "Investigate first-launch confirmation delay; complete fresh restore, LAT revocation/account/offline/reboot tests; complete independent security/privacy/legal/native and remaining product/device gates."
 }
