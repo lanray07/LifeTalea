@@ -1,0 +1,54 @@
+{
+  "status": "PASS_LAT_SMOKE",
+  "versionCode": 3,
+  "installer": "com.amazon.venezia",
+  "deviceModel": "KFTRWI",
+  "uploadSha256": "4e0e94c22fcd3054eb1aa2975f5424c91900be7fba98364f94b6e67ac40be2b2",
+  "installedApkSha256": "442d5c408021880cc2a633a19f0e49dd619e6890a664b333da0f6e9565247793",
+  "signerCertificateSha256": "8e35b165d5a1dc14c10820cee25ed2c24e9c543ceb2f059b9f5bc93baa672297",
+  "matchingDexFiles": 3,
+  "results": {
+    "appstoreUpdateFromV2": "PASS",
+    "launchFromAppstore": "PASS",
+    "purchasePromptVisibleByMs": 4333,
+    "timingScope": "Elapsed to screenshot observation including tool overhead",
+    "cancel": "FREE_TIER_GET_PREMIUM_ENABLED",
+    "restoreAfterPriorTesterReset": "FREE_TIER",
+    "paymentsSubmitted": 0
+  },
+  "deviceSession": {
+    "startedAt": "2026-11-05T16:27:27.028748+00:00",
+    "status": "CLOSED_RESULTS_RECORDED_SEPARATELY",
+    "sdkMode": "",
+    "sandboxModeChanged": false,
+    "power": {
+      "originalStayAwakeWhilePluggedIn": "0",
+      "restored": true
+    },
+    "stopReason": "operator",
+    "finishedAt": "2026-11-05T16:30:49.697122+00:00",
+    "sdkModeUnchanged": true
+  },
+  "evidence": [
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v3/amazon-confirmation.png",
+      "sha256": "a3a4cf88f37bf58d9ad1cff32003b193f3c3bd43c3b4e720a4a93bebbea52b1b"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v3/appstore-launch.png",
+      "sha256": "01bc39ab4f2196227194e532e91f9fe1de784dd6639866fa083394902029dcdf"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v3/free-after-cancel.png",
+      "sha256": "02c78195c28c87e5d85dad234e4d1ac288981cffea1398e777076797db757571"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v3/free-after-restore.png",
+      "sha256": "0f9b4887ba85921992b8cd8df02ccf93359de3500e4180f3dc907fa627dd064f"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v3/free-before-prompt.png",
+      "sha256": "d4b9f43ab31007c9ad971088c5ea3f5f0cf84ff54298b3849c144a2468bd6879"
+    }
+  ]
+}
