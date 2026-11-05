@@ -1,6 +1,6 @@
 # Amazon LAT status - 4 November 2026
 
-5 November Amazon submission. Version code 2 was uploaded and submitted as **LifeTalea billing lifecycle v2** on the existing **Test 1** track. Amazon showed **Test submitted** while version 1 remained **Test in-progress**. The Fire tablet still reported Amazon-installed version code 1. Device verification of the new distribution is pending. See `deliverables/reports/amazon-lat-v2-submitted.png`.
+5 November Amazon submission. Version code 2 was uploaded and submitted as **LifeTalea billing lifecycle v2** on the existing **Test 1** track. Amazon moved it from **Test submitted** to **Test in-progress**. The locked Fire tablet still reported Amazon-installed version code 1 at that point. Appstore update and device verification are pending. See `deliverables/reports/amazon-lat-v2-live.png`.
 
 5 November Fire QA. All 17 instrumentation tests passed on the rebuilt debug app in 229.98 seconds. Debug APK SHA-256 `7ca9a1a631865b58aebab668a689d2950782f6de1dd5b0232897e075edbffdca`. Power and rotation settings were restored. The local `LifeTalea-LAT-v2-Fire-debug-QA.zip` holds the run log, provenance and 187 captured files. ZIP SHA-256 `33ac57636c6851ebba75e82ed4f535b3658fe58399b5fb1f15864417283a47a1`. This run covers the debug APK. The Amazon-distributed version 2 purchase prompt and Premium recovery cases still need LAT testing.
 
