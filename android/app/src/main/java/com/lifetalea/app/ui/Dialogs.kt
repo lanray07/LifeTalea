@@ -5,19 +5,23 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.lifetalea.app.LibraryViewModel
+import com.lifetalea.app.data.StoryPurpose
 import com.lifetalea.app.voice.VoiceAssistant
 import java.util.Locale
 
-@Composable fun Onboarding(onDone: () -> Unit) {
-    var purpose by rememberSaveable { mutableStateOf("family") }
+@Composable fun Onboarding(onDone: (StoryPurpose?) -> Unit) {
+    var purpose by rememberSaveable { mutableStateOf(StoryPurpose.FAMILY) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().statusBarsPadding().navigationBarsPadding().verticalScroll(rememberScrollState()).padding(32.dp), verticalArrangement = Arrangement.spacedBy(20.dp)) {
             Text("LifeTalea", style = MaterialTheme.typography.headlineMedium)
@@ -25,8 +29,22 @@ import java.util.Locale
             Text(tr("language"), style = MaterialTheme.typography.titleLarge); Text(tr("language_note"))
             LanguagePicker()
             Text(tr("purpose"), style = MaterialTheme.typography.titleLarge)
-            listOf("family", "personal", "childhood", "history", "travel", "legacy").forEach { key -> Row(verticalAlignment = Alignment.CenterVertically) { RadioButton(purpose == key, { purpose = key }); Text(tr(key)) } }
-            Button(onClick = onDone) { Text(tr("get_started")) }; TextButton(onClick = onDone) { Text(tr("skip")) }
+            Column(Modifier.selectableGroup()) {
+                StoryPurpose.entries.forEach { option ->
+                    Row(
+                        Modifier.fillMaxWidth().heightIn(min = 48.dp)
+                            .selectable(purpose == option, role = Role.RadioButton) { purpose = option }
+                            .padding(horizontal = 8.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    ) {
+                        RadioButton(purpose == option, onClick = null)
+                        Text(tr(option.label))
+                    }
+                }
+            }
+            Button(onClick = { onDone(purpose) }) { Text(tr("get_started")) }
+            TextButton(onClick = { onDone(null) }) { Text(tr("skip")) }
         }
     }
 }

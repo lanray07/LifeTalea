@@ -11,4 +11,12 @@ class VoiceTest {
         assertEquals(VoiceIntent.UNKNOWN, CommandParser.parse("Delete all memories", Locale.UK).intent)
         assertEquals(VoiceIntent.UNKNOWN, CommandParser.parse("Start recording", Locale.FRANCE).intent)
     }
+
+    @Test fun namedAlbumAndYearCommandsCarryOnlyTheirTarget() {
+        assertEquals(VoiceCommand(VoiceIntent.ALBUMS, "family album"), CommandParser.parse("Open family album.", Locale.UK))
+        assertEquals(VoiceCommand(VoiceIntent.ALBUMS, "family history"), CommandParser.parse("Open album Family History!", Locale.UK))
+        assertEquals(VoiceCommand(VoiceIntent.ALBUMS), CommandParser.parse("Open albums", Locale.UK))
+        assertEquals(VoiceCommand(VoiceIntent.SEARCH, "last year"), CommandParser.parse("Show memories from last year", Locale.UK))
+        assertEquals(VoiceIntent.UNKNOWN, CommandParser.parse("Show memories from yesterday", Locale.UK).intent)
+    }
 }

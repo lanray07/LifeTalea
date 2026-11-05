@@ -91,12 +91,34 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
             VoiceIntent.STOP_RECORDING -> vm.stopRecording()
             VoiceIntent.TIMELINE -> navigate("timeline")
             VoiceIntent.ALBUMS -> {
-                val name = text.lowercase(locale).trim().removePrefix("open ").removeSuffix(".").removeSuffix(" album")
-                val found = albums.firstOrNull { it.title.lowercase(locale) == name || it.title.lowercase(locale) == "$name album" }
-                if (found == null) navigate("albums") else { navigate("memories"); albumFilter = found.id }
+                if (recording.active) { message("finish_recording"); return }
+                val name = result.query
+                val exact = albums.filter { it.title.trim().lowercase(Locale.ENGLISH) == name }
+                val found = when {
+                    name.isEmpty() -> null
+                    exact.isNotEmpty() -> exact.singleOrNull()
+                    name.endsWith(" album") -> albums.singleOrNull {
+                        it.title.trim().lowercase(Locale.ENGLISH) == name.removeSuffix(" album")
+                    }
+                    else -> null
+                }
+                if (found == null) navigate("albums") else {
+                    navigate("memories")
+                    query = ""
+                    year = ""
+                    favourites = false
+                    albumFilter = found.id
+                }
             }
             VoiceIntent.KEEPSAKE -> navigate("keepsakes")
-            VoiceIntent.SEARCH -> { navigate("timeline"); year = if (result.query == "last year") (java.time.Year.now().value - 1).toString() else result.query }
+            VoiceIntent.SEARCH -> {
+                if (recording.active) { message("finish_recording"); return }
+                navigate("timeline")
+                query = ""
+                albumFilter = null
+                favourites = false
+                year = if (result.query == "last year") (java.time.Year.now().value - 1).toString() else result.query
+            }
             VoiceIntent.READ_STORY -> {
                 val memory = memories.find { it.id == selected } ?: memories.firstOrNull()
                 if (memory == null) message("no_story") else assistant.speak(memory.story, locale) { message("tts_unavailable") }
@@ -105,7 +127,10 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
         }
         if (preferences.spoken && result.intent != VoiceIntent.UNKNOWN && result.intent != VoiceIntent.READ_STORY) assistant.speak(context.getString(R.string.done), locale) { message("tts_unavailable") }
     }
-    if (!preferences.onboarded) { Onboarding { vm.run { vm.settings.onboard() } }; return }
+    if (!preferences.onboarded) {
+        Onboarding { purpose -> vm.run { vm.settings.onboard(purpose) } }
+        return
+    }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         BoxWithConstraints {
             val wide = maxWidth >= 760.dp
@@ -160,7 +185,16 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
                                     }
                                     if (filtered.isEmpty()) item { EmptyState(if (memories.isEmpty()) tr("empty_title") else tr("no_results"), if (memories.isEmpty()) tr("empty_body") else null) }
                                     items(filtered, key = { it.id }) { m -> MemoryCard(m, media.firstOrNull { it.memoryId == m.id && it.kind == "photo" }, vm, { openMemory(m.id) }) }
-                                    item { OutlinedCard(Modifier.fillMaxWidth()) { Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) { Text(tr("prompt"), style = MaterialTheme.typography.titleLarge); val prompt = tr("prompt_childhood"); Text(prompt); TextButton(onClick = { newMemory(prompt + "\n\n") }) { Text(tr("answer_prompt")) } } } }
+                                    item {
+                                        OutlinedCard(Modifier.fillMaxWidth()) {
+                                            Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                                                Text(tr("prompt"), style = MaterialTheme.typography.titleLarge)
+                                                val prompt = tr(preferences.purpose?.prompt ?: "prompt_childhood")
+                                                Text(prompt)
+                                                TextButton(onClick = { newMemory(prompt + "\n\n") }) { Text(tr("answer_prompt")) }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

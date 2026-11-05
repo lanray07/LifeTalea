@@ -62,10 +62,19 @@ class StoryRecorder(private val context: Context) {
 enum class VoiceIntent { NEW_MEMORY, START_RECORDING, STOP_RECORDING, TIMELINE, ALBUMS, KEEPSAKE, READ_STORY, SEARCH, UNKNOWN }
 data class VoiceCommand(val intent: VoiceIntent, val query: String = "")
 object CommandParser {
+    private val namedAlbum = Regex("open (?:the )?(?:album (.+)|(.+ album))")
+    private val memoriesFromYear = Regex("show memories from (last year|[0-9]{4})")
+
     // Locale dictionaries are separate from content. Only reviewed dictionaries are enabled.
     fun parse(input: String, locale: Locale): VoiceCommand {
         if (locale.language != "en") return VoiceCommand(VoiceIntent.UNKNOWN)
         val s = input.lowercase(locale).trim().trimEnd('.', '!', '?')
+        namedAlbum.matchEntire(s)?.let { match ->
+            return VoiceCommand(VoiceIntent.ALBUMS, match.groupValues[1].ifEmpty { match.groupValues[2] })
+        }
+        memoriesFromYear.matchEntire(s)?.let { match ->
+            return VoiceCommand(VoiceIntent.SEARCH, match.groupValues[1])
+        }
         val intent = when {
             s.matches(Regex("(create|add)( a)? new memory|new memory")) -> VoiceIntent.NEW_MEMORY
             s.matches(Regex("(start|begin) recording")) -> VoiceIntent.START_RECORDING
@@ -73,11 +82,10 @@ object CommandParser {
             s.contains("timeline") -> VoiceIntent.TIMELINE
             s.contains("keepsake") -> VoiceIntent.KEEPSAKE
             s.startsWith("read ") -> VoiceIntent.READ_STORY
-            s.startsWith("open ") && s.contains("album") -> VoiceIntent.ALBUMS
-            s.startsWith("show memories from ") -> VoiceIntent.SEARCH
+            s in setOf("open album", "open albums", "open the albums") -> VoiceIntent.ALBUMS
             else -> VoiceIntent.UNKNOWN
         }
-        return VoiceCommand(intent, if (intent == VoiceIntent.SEARCH) s.removePrefix("show memories from ") else s)
+        return VoiceCommand(intent)
     }
 }
 
