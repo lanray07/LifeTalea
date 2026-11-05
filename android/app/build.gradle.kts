@@ -64,6 +64,10 @@ android {
     testOptions { unitTests.isReturnDefaultValues = true }
 }
 androidComponents {
+    onVariants(selector().withBuildType("release")) { variant ->
+        // Keep the public candidate ahead of the Amazon-distributed LAT version.
+        variant.outputs.forEach { it.versionCode.set(3) }
+    }
     onVariants(selector().withBuildType("amazonTest")) { variant ->
         // The installed Amazon LAT build has version code 1.
         variant.outputs.forEach { it.versionCode.set(2) }

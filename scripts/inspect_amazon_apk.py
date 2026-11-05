@@ -1,5 +1,6 @@
 """Inspect the actual release APK with Android SDK tools; no signing or uploading."""
 from pathlib import Path
+import argparse
 import hashlib, json, os, re, subprocess, zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -7,6 +8,9 @@ SDK = Path(os.environ.get('ANDROID_HOME', str(Path.home() / 'AppData/Local/Andro
 APK = ROOT / 'android/app/build/outputs/apk/release/app-release-unsigned.apk'
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--report', type=Path, default=ROOT / 'deliverables/reports/amazon-release-apk-inspection.json')
+    args = parser.parse_args()
     tools = SDK / 'build-tools/35.0.0'
     badging = subprocess.check_output([str(tools / ('aapt.exe' if os.name == 'nt' else 'aapt')), 'dump', 'badging', str(APK)], text=True, encoding='utf-8')
     identity = re.search(r"package: name='([^']+)' versionCode='([^']+)' versionName='([^']+)'", badging)
@@ -37,9 +41,8 @@ def main():
         'generatedReleaseBillingConfiguration': billing,
         'limitations': 'Badging and signing inspection do not verify runtime compatibility, Amazon DRM transformation or release approval.'
     }
-    assert report['package'] == 'com.lifetalea.app' and report['versionCode'] == 1 and report['versionName'] == '0.1.0' and not report['debuggable']
-    destination = ROOT / 'deliverables/reports/amazon-release-apk-inspection.json'
-    destination.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+    assert report['package'] == 'com.lifetalea.app' and report['versionCode'] == 3 and report['versionName'] == '0.1.0' and not report['debuggable']
+    args.report.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report))
 
 if __name__ == '__main__': main()

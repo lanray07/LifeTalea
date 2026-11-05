@@ -1,0 +1,10 @@
+LifeTalea is a private family journal for Fire tablets. No LifeTalea account or sample credentials are required. Please use fictional content during review.
+
+1. Complete or skip onboarding. Add a memory with a title, story, tags, and a date. Save it and reopen it for editing.
+2. Attach a photo through the system picker. Add the memory to an album, mark it as a favorite, search by title or tag, and find it on the timeline.
+3. Choose to record a short voice story. Allow microphone access when prompted, then record, stop, and play it. Enter a transcript manually if you want to test transcript search.
+4. Create a keepsake draft, add the memory, and edit a caption.
+5. Create a basic local backup, choose whether to include media, then open its restore preview. Test restore with fictional content only.
+6. Reopen the journal with Wi-Fi off and check that the saved memory is accessible.
+
+The journal can be reviewed using touch and text. Voice commands and spoken playback depend on the Fire tablet's installed speech services. Contact banksmi@mail.com if you need help reviewing the app.

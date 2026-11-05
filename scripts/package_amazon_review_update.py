@@ -54,13 +54,22 @@ def main():
         'amazon-lat-only/LifeTalea-0.1.0-LAT-v2-unsigned.apk')
     add('deliverables/amazon-submission/LifeTalea-LAT-v2-Fire-debug-QA.zip',
         '33ac57636c6851ebba75e82ed4f535b3658fe58399b5fb1f15864417283a47a1')
+    public_report = 'deliverables/reports/amazon-public-v3-apk-inspection.json'
+    public = read(public_report)
+    assert public['versionCode'] == 3 and public['exportedComponentAllowlist'] == 'PASS'
+    add(public_report)
+    add('deliverables/amazon-submission/LifeTalea-0.1.0-public-v3-unsigned.apk', public['sha256'],
+        'public-draft/LifeTalea-0.1.0-public-v3-unsigned.apk')
     for path in ('docs/AMAZON_RELEASE_REVIEW_2026-11-05.md', 'docs/AMAZON_LAT_STATUS.md',
                  'docs/KNOWN_LIMITATIONS.md', 'deliverables/reports/amazon-lat-v2-live.png',
+                 'docs/AMAZON_PUBLIC_STORE_COPY_EN_US.md', 'docs/AMAZON_PUBLIC_REVIEWER_INSTRUCTIONS.txt',
+                 'deliverables/reports/amazon-public-v3-draft-saved.png',
                  'deliverables/reports/amazon-supabase-deployment.json'):
         add(path)
     entries['READ-ME-FIRST.txt'] = (
         b'PUBLIC SUBMISSION BLOCKED. Read docs/AMAZON_RELEASE_REVIEW_2026-11-05.md.\n'
-        b'The version 2 APK is for Amazon Live App Testing. Historical archives retain their original evidence.\n'
+        b'Version 3 is the public draft candidate. Version 2 is for Amazon Live App Testing.\n'
+        b'Historical archives retain their original evidence.\n'
     )
     entries['manifest.json'] = encoded({'releaseStatus': 'BLOCKED', 'files': [
         {'path': name, 'bytes': len(data), 'sha256': sha(data)} for name, data in sorted(entries.items())
