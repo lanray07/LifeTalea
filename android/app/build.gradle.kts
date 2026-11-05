@@ -63,6 +63,12 @@ android {
     packaging { resources.excludes += "/META-INF/{AL2.0,LGPL2.1}" }
     testOptions { unitTests.isReturnDefaultValues = true }
 }
+androidComponents {
+    onVariants(selector().withBuildType("amazonTest")) { variant ->
+        // The installed Amazon LAT build has version code 1.
+        variant.outputs.forEach { it.versionCode.set(2) }
+    }
+}
 ksp { arg("room.schemaLocation", "$projectDir/schemas") }
 dependencies {
     implementation(platform("androidx.compose:compose-bom:2025.04.01"))

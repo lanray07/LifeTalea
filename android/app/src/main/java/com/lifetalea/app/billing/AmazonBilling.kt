@@ -66,7 +66,7 @@ class AmazonBilling(private val context: Context, private val gateway: ReceiptGa
         if (active != null) expiry = scope.launch { delay((active.claims.expiresAt - clock.now).coerceIn(1, 30000)); publish() }
     }
     fun initialize() {
-        if (!publicKeyPresent || !gateway.configured) return
+        if (initialized || !publicKeyPresent || !gateway.configured) return
         runCatching {
             PurchasingService.registerListener(context.applicationContext, this)
             initialized = true
