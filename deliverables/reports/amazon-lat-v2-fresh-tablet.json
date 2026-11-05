@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "versionCode": 2,
+  "deviceModel": "KFTRWI",
+  "installation": "Direct install of verified Amazon-distributed Test 1 APK",
+  "apkSha256": "5d4e8868e6b071deb81620f4dec7c3da08a3e8a500c1b084b4f42cb352c4f3fc",
+  "freshInstallAutoRestore": "ACTIVE",
+  "manualRestore": "RETAINED_ACTIVE",
+  "testerEntitlementReset": "AMAZON_CONFIRMED_ONE_SELECTED_TESTER",
+  "postResetColdLaunch": "FREE_TIER",
+  "processAbsentBeforeRelaunch": true,
+  "firstPromptVisibleByMs": 4271,
+  "timingScope": "Elapsed time from starting the tap to observing the screenshot; upper bound, includes tool overhead",
+  "resumedToTriggerPrompt": false,
+  "canceled": "FREE_TIER_AND_GET_PREMIUM_ENABLED",
+  "paymentsSubmitted": 0,
+  "deviceSession": {
+    "startedAt": "2026-11-05T11:05:49.893103+00:00",
+    "status": "CLOSED_RESULTS_RECORDED_SEPARATELY",
+    "sdkMode": "",
+    "sandboxModeChanged": false,
+    "power": {
+      "originalStayAwakeWhilePluggedIn": "0",
+      "restored": true
+    },
+    "stopReason": "operator",
+    "finishedAt": "2026-11-05T11:09:31.670871+00:00",
+    "sdkModeUnchanged": true
+  },
+  "evidence": [
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/fresh-tablet-auto-restore.png",
+      "sha256": "b0328fc7e6c663390ba5f51e25af6a3773d170d1b53adfd4f473aea87ed91d1d"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/fresh-tablet-first-purchase-prompt.png",
+      "sha256": "a8122d1eece23123b6c060d827e2397f93643ad4e85efc2750ef5531f51ca386"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/fresh-tablet-free-after-cancel.png",
+      "sha256": "0a5fe28489959481b8a2189c43f95c77eaa2c0328dd48fac544c629a9a97530e"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/fresh-tablet-free-after-reset.png",
+      "sha256": "1cc0d6ad1f2a7ea8cb3674baa3aca043daa023086ed5ccf638005a154dc3f046"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/fresh-tablet-manual-restore.png",
+      "sha256": "5544cdca684c5834fa5406c4ae0b38ba641492c4bc778f7fe4aaad52befd6735"
+    }
+  ]
+}
