@@ -1,0 +1,58 @@
+{
+  "versionCode": 2,
+  "package": "com.lifetalea.app",
+  "installer": "com.amazon.venezia",
+  "status": "UPDATE_AND_EXISTING_ENTITLEMENT_PASS",
+  "installedApkSha256": "5d4e8868e6b071deb81620f4dec7c3da08a3e8a500c1b084b4f42cb352c4f3fc",
+  "signerCertificateSha256": "8e35b165d5a1dc14c10820cee25ed2c24e9c543ceb2f059b9f5bc93baa672297",
+  "sameSigningCertificateAsV1": true,
+  "dexFilesMatchingUpload": 3,
+  "results": {
+    "inPlaceUpdateFromV1": "PASS",
+    "premiumAfterUpdate": "ACTIVE",
+    "restoreWithExistingEntitlement": "RETAINED_ACTIVE",
+    "sameSessionWifiOffRefresh": "RETAINED_ACTIVE",
+    "wifiReconnect": "RETAINED_ACTIVE",
+    "firstLaunchPurchasePrompt": "NOT_RUN_ALREADY_ENTITLED",
+    "freshRestore": "NOT_RUN",
+    "rebootRecovery": "NOT_RUN",
+    "accountSwitchOrRevocation": "NOT_RUN"
+  },
+  "paymentsSubmitted": 0,
+  "wifiRestoredEnabled": true,
+  "deviceSession": {
+    "startedAt": "2026-11-05T10:35:21.900012+00:00",
+    "status": "CLOSED_RESULTS_RECORDED_SEPARATELY",
+    "sdkMode": "none",
+    "sandboxModeChanged": false,
+    "power": {
+      "originalStayAwakeWhilePluggedIn": "0",
+      "restored": true
+    },
+    "stopReason": "operator",
+    "finishedAt": "2026-11-05T10:41:28.515175+00:00",
+    "sdkModeUnchanged": true
+  },
+  "evidence": [
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/premium-after-reconnect.png",
+      "sha256": "71c4ef7228ca0134181f3730f6e48418e30a0a5a786a05e480714f6fab371cf5"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/premium-after-restore.png",
+      "sha256": "30d4989f610fd2325e662ac95dbd15226d37150f2ac63e1535c30b24c4833919"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/premium-after-update.png",
+      "sha256": "fb37e587aa3b6c0d32746ec8a6b1b29d942ee741fe4c788332dbbc62a2b28039"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/premium-wifi-off-after-refresh.png",
+      "sha256": "12987fcc0ae357264eeaee3cf1a3c861aa448d65935e3281a428545d9691b0d1"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/amazon-lat-v2/premium-wifi-off-before-refresh.png",
+      "sha256": "af935d2c971905ba2b6e2d11bee81ec2f17e0fdaf6091ea72ed8dacaf477c8c4"
+    }
+  ]
+}
