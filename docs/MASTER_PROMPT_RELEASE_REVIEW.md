@@ -1,5 +1,9 @@
 # Master prompt release review
 
+Latest: see `AMAZON_TRANSCRIPTION_RELEASE_REVIEW_2026-11-07.md`. The bundled recorded-file engine passed the 22-test Wi-Fi-disabled suite, correction/save checks, a real process restart and failure-preservation checks. Version 4 is a local configured candidate. Current catalogs have 199 keys; lint has zero errors and 267 warnings. Native approvals, other-language accuracy, the independent audit and the remaining release gates are still open.
+
+The following records the earlier onboarding/search pass; its artifact and test counts remain historical.
+
 **Blocked under section 30 of the master prompt.** Public submission requires all mandatory acceptance criteria to pass. The public Amazon draft still has the previously tested version 3. The current product changes have separate development-build evidence and have not replaced the Amazon-distributed candidate. See `AMAZON_RELEASE_REVIEW_2026-11-07.md`.
 
 This pass connected the onboarding purpose to the localized story prompt and made the full option row selectable. The choice is stored on device with onboarding completion. Skipping or opening an older installation preserves the generic prompt. English album and year commands now carry explicit targets. The app gives an exact album title priority, avoids arbitrary matches for duplicate titles, and clears unrelated filters when opening an album or year. The changes do not enable additional speech-recognition languages.
@@ -9,7 +13,7 @@ Debug, unsigned release and instrumentation APKs built successfully. All 21 Andr
 | Acceptance scope | Remaining work |
 | --- | --- |
 | AC-01–03, AC-06–09 | Changed-build evidence is recorded separately. Complete recording interruption, low-storage, restart and full offline tests, plus scrapbook layout and PDF visual checks. |
-| AC-04–05 | Implement and verify additional language dictionaries and speech capabilities. Recorded-file transcription still needs a working engine, tested language support and a processing workflow. |
+| AC-04–05 | Additional command dictionaries and speech capabilities remain. Recorded-file transcription now has an offline engine and reviewed-draft workflow; other-language accuracy, long/low-memory/background cases and complete processing/error-state UI checks remain. |
 | AC-10–12, AC-14–16 | Obtain native locale approvals. Validate store assets against actual release screens and complete visual and accessibility review. Validate translation-provider configuration and the public website. |
 | AC-13 | Version 3 passed the Test 1 update, prompt, cancellation and reset-account restore checks. Public Premium is still marked TEST. Reboot recovery and account switching remain open. |
 | AC-17–21 | Complete independent security and publisher privacy review, large backup and interruption tests, accessibility and performance measurements, and representative Fire model coverage. |

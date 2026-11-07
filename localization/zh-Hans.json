@@ -191,5 +191,13 @@
   "search_year_hint": "请输入YYYY；留空可显示所有年份",
   "memory_count": {
     "other": "回忆 %1$d 条"
-  }
+  },
+  "transcription_notice": "在设备上根据此录音生成文字草稿。不会上传任何音频。请选择录音中使用的语言，然后确认。支持最长十分钟的录音。处理可能较慢，保存前请检查文字是否有误。",
+  "transcription_working": "正在设备上转写…",
+  "transcription_failed": "无法转写此录音。请重试或手动输入文字。",
+  "transcription_empty": "未检测到清晰的语音。请使用更清晰的录音或手动输入文字。",
+  "transcription_review": "检查转写草稿",
+  "transcription_apply": "追加到已保存的转写文本",
+  "transcription_limit": "转写支持最长十分钟的录音。更长的录音仍会安全保留，您可以手动输入转写文本。",
+  "transcription_consent_required": "开始转写前，请确认在设备上处理录音。"
 }

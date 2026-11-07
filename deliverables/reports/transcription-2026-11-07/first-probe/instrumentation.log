@@ -1,0 +1,3 @@
+Performing Streamed Install
+adb.exe: failed to install D:\App Projects\LifeTalea\android\app\build\transcription-dev\first-app-debug.apk: Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]
+

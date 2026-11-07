@@ -130,7 +130,6 @@ sealed interface TranscriptionResult {
     data class Success(val text: String) : TranscriptionResult
     data class Unavailable(val reason: String) : TranscriptionResult
 }
-interface TranscriptionEngine { suspend fun transcribe(file: File, language: String, consent: Boolean): TranscriptionResult }
-class UnconfiguredTranscription : TranscriptionEngine {
-    override suspend fun transcribe(file: File, language: String, consent: Boolean) = TranscriptionResult.Unavailable("engine_not_configured")
+interface TranscriptionEngine {
+    suspend fun transcribe(file: File, language: String, consent: Boolean, progress: (Int) -> Unit = {}): TranscriptionResult
 }

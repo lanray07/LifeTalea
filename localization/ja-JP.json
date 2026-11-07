@@ -191,5 +191,13 @@
   "search_year_hint": "YYYY。すべての年を表示するには空欄にしてください",
   "memory_count": {
     "other": "%1$d 件の思い出"
-  }
+  },
+  "transcription_notice": "この録音から端末上で文字起こしの下書きを作成します。音声はアップロードされません。録音で話されている言語を選び、確認してください。10分以内の録音に対応しています。処理に時間がかかる場合があります。保存前に内容を確認してください。",
+  "transcription_working": "端末上で文字起こし中…",
+  "transcription_failed": "この録音を文字起こしできませんでした。もう一度試すか、手動で入力してください。",
+  "transcription_empty": "明瞭な音声を検出できませんでした。より明瞭な録音を使うか、手動で入力してください。",
+  "transcription_review": "文字起こしの下書きを確認",
+  "transcription_apply": "保存済みの文字起こしに追記",
+  "transcription_limit": "文字起こしは10分以内の録音に対応しています。長い録音も保存されたままで、手動で文字起こしを入力できます。",
+  "transcription_consent_required": "文字起こしを開始する前に、端末上での処理を確認してください。"
 }

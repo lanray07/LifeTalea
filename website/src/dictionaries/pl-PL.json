@@ -99,15 +99,15 @@
     },
     "voice-transcription": {
       "title": "Dodaj słowa do nagranych wspomnień",
-      "summary": "Automatyczna transkrypcja nie jest skonfigurowana w tej wersji LifeTalea. Dostępne są nagrania i ręczna edycja transkrypcji.",
+      "summary": "Utwórz szkic tekstu z tego nagrania na swoim urządzeniu. Dźwięk nie jest wysyłany. Wybierz język nagrania i potwierdź. Obsługiwane są nagrania do dziesięciu minut. Przetwarzanie może potrwać; sprawdź tekst przed zapisaniem.",
       "sections": [
         {
           "title": "Co działa już teraz",
           "body": "Otwórz wspomnienie i wpisz lub wklej transkrypcję. Zmiany są przechowywane lokalnie obok oryginalnego nagrania."
         },
         {
-          "title": "Przed publikacją",
-          "body": "Potrzebny jest zgodny silnik i testy językowe. LifeTalea nie wymyśla transkrypcji ani nie wysyła nagrań do dostawcy chmury."
+          "title": "Sprawdź szkic transkrypcji",
+          "body": "Transkrypcja obsługuje nagrania do dziesięciu minut. Dłuższe nagrania pozostają zapisane i można je przepisać ręcznie."
         },
         {
           "title": "Dwie różne funkcje",
@@ -179,7 +179,7 @@
         },
         {
           "title": "Poznaj ograniczenia",
-          "body": "Zakupy wymagają Amazon. Rozpoznawanie mowy może potrzebować internetu. Automatyczna transkrypcja i synchronizacja w chmurze są niedostępne."
+          "body": "Funkcja naciśnij i mów korzysta z usługi rozpoznawania mowy urządzenia. Może ona wymagać Internetu i przetwarzać mowę poza urządzeniem. Kontynuuj tylko, jeśli wyrażasz zgodę. LifeTalea nie zapisuje nagrań poleceń. Polecenia są obecnie obsługiwane tylko w języku angielskim. Utwórz szkic tekstu z tego nagrania na swoim urządzeniu. Dźwięk nie jest wysyłany. Wybierz język nagrania i potwierdź. Obsługiwane są nagrania do dziesięciu minut. Przetwarzanie może potrwać; sprawdź tekst przed zapisaniem."
         },
         {
           "title": "Wybierz miejsce kopii",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Czy mogę transkrybować nagrania?",
-          "body": "Automatyczna transkrypcja jest niedostępna. Możesz ręcznie dodać i edytować transkrypcję."
+          "body": "Utwórz szkic tekstu z tego nagrania na swoim urządzeniu. Dźwięk nie jest wysyłany. Wybierz język nagrania i potwierdź. Obsługiwane są nagrania do dziesięciu minut. Przetwarzanie może potrwać; sprawdź tekst przed zapisaniem."
         },
         {
           "title": "Czy LifeTalea synchronizuje urządzenia?",

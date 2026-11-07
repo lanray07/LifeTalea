@@ -99,15 +99,15 @@
     },
     "voice-transcription": {
       "title": "Woorden naast je gesproken herinnering",
-      "summary": "Automatische transcriptie is niet ingesteld in deze LifeTalea-versie. Opnemen en handmatig transcripties bewerken kan wel.",
+      "summary": "Maak op je apparaat een tekstconcept van deze opname. Er wordt geen audio geüpload. Kies de gesproken taal en bevestig. Opnamen mogen maximaal tien minuten duren. De verwerking kan traag zijn; controleer de tekst voordat je deze opslaat.",
       "sections": [
         {
           "title": "Wat nu werkt",
           "body": "Open een herinnering en typ of plak de transcriptie. Wijzigingen blijven lokaal bij de oorspronkelijke opname bewaard."
         },
         {
-          "title": "Voor de openbare release",
-          "body": "Een geschikte dienst en taaltests zijn nog nodig. LifeTalea verzint geen transcripties en stuurt opnamen niet naar een cloudaanbieder."
+          "title": "Tekstconcept controleren",
+          "body": "Opnamen tot tien minuten kunnen worden uitgeschreven. Langere opnamen blijven bewaard en kunnen handmatig worden uitgeschreven."
         },
         {
           "title": "Verschillende functies",
@@ -179,7 +179,7 @@
         },
         {
           "title": "Ken de grenzen",
-          "body": "Aankopen vereisen Amazon. Spraakherkenning kan internet nodig hebben. Automatische transcriptie en cloudsynchronisatie zijn niet beschikbaar."
+          "body": "Drukken om te spreken gebruikt de spraakdienst van je apparaat. Die kan internet nodig hebben en spraak buiten het apparaat verwerken. Ga alleen verder als je hiermee instemt. LifeTalea slaat geen audiocommando’s op. Spraakcommando’s zijn momenteel alleen beschikbaar in het Engels. Maak op je apparaat een tekstconcept van deze opname. Er wordt geen audio geüpload. Kies de gesproken taal en bevestig. Opnamen mogen maximaal tien minuten duren. De verwerking kan traag zijn; controleer de tekst voordat je deze opslaat."
         },
         {
           "title": "Kies je back-uplocatie",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Kan ik opnamen transcriberen?",
-          "body": "Automatische transcriptie is niet beschikbaar. Je kunt een transcriptie handmatig toevoegen en bewerken."
+          "body": "Maak op je apparaat een tekstconcept van deze opname. Er wordt geen audio geüpload. Kies de gesproken taal en bevestig. Opnamen mogen maximaal tien minuten duren. De verwerking kan traag zijn; controleer de tekst voordat je deze opslaat."
         },
         {
           "title": "Synchroniseert LifeTalea apparaten?",

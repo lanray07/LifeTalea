@@ -16,6 +16,8 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--reset-qa',action='store_true',help='Delete only the dedicated .debug QA app data before testing. Never targets production.')
     parser.add_argument('--test-class', help='Optional instrumentation class or class#method')
     parser.add_argument('--output-dir', help='Separate workspace evidence directory; preserves historical release reports')
+    parser.add_argument('--app-apk', default='android/app/build/outputs/apk/debug/app-debug.apk')
+    parser.add_argument('--test-apk', default='android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk')
     args=parser.parse_args()
     if args.test_class and not re.fullmatch(r'[A-Za-z0-9_.]+(?:#[A-Za-z0-9_]+)?',args.test_class):parser.error('Invalid test class')
     output=(ROOT/args.output_dir).resolve() if args.output_dir else ROOT/'deliverables/reports'
@@ -24,11 +26,19 @@ def main():
     report=output/'device-test-run.json'
     log_path=output/'instrumentation.log' if args.output_dir else LOG
     report.write_text(json.dumps({'status':'RUNNING','startedAt':datetime.now(timezone.utc).isoformat()}),encoding='utf-8')
+    apks=[(ROOT/path).resolve() for path in (args.app_apk,args.test_apk)]
+    for apk,package in zip(apks,('com.lifetalea.app.debug','com.lifetalea.app.debug.test')):
+        if not apk.is_relative_to(ROOT.resolve()):parser.error('QA APK must stay inside workspace')
+        aapt=SDK/'build-tools/35.0.0'/('aapt.exe' if os.name=='nt' else 'aapt')
+        badging=subprocess.check_output([str(aapt),'dump','badging',str(apk)],text=True,encoding='utf-8')
+        if re.search(r"package: name='([^']+)'",badging)[1]!=package:parser.error('Refusing to install an APK outside the dedicated debug QA packages')
     with awake_device(ADB) as qa_power, landscape_device(ADB) as qa_rotation, log_path.open('w',encoding='utf-8') as log:
-        for apk in ['android/app/build/outputs/apk/debug/app-debug.apk','android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk']:
-            result=subprocess.run([str(ADB),'install','-r',str(ROOT/apk)],capture_output=True,text=True,timeout=120)
+        for apk in apks:
+            result=subprocess.run([str(ADB),'install','-r','-t',str(apk)],capture_output=True,text=True,timeout=120)
             log.write(result.stdout+result.stderr);log.flush()
-            if result.returncode:raise RuntimeError('QA install failed; see instrumentation.log')
+            if result.returncode:
+                report.write_text(json.dumps({'status':'SETUP_FAILED','reason':'QA install failed','apk':apk.relative_to(ROOT).as_posix()}),encoding='utf-8')
+                raise RuntimeError('QA install failed; see instrumentation.log')
         if args.reset_qa:
             reset=subprocess.run([str(ADB),'shell','pm','clear','com.lifetalea.app.debug'],capture_output=True,text=True)
             log.write('Reset dedicated debug QA fixtures only:\n'+reset.stdout+reset.stderr);log.flush()
@@ -51,7 +61,8 @@ def main():
                 if member.size>20*1024*1024:raise RuntimeError('Unexpected diagnostic size')
                 target.write_bytes(tar.extractfile(member).read());count+=1
                 evidence.append({'path':target.relative_to(ROOT).as_posix(),'sha256':hashlib.sha256(target.read_bytes()).hexdigest()})
-    provenance={'executedAt':datetime.now(timezone.utc).isoformat(),'status':'PASS' if passed else 'FAIL','debugApkSha256':hashlib.sha256((ROOT/'android/app/build/outputs/apk/debug/app-debug.apk').read_bytes()).hexdigest(),'testApkSha256':hashlib.sha256((ROOT/'android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk').read_bytes()).hexdigest(),'evidenceFiles':count,'qaPowerSettings':qa_power,'qaRotationSettings':qa_rotation}
+    provenance={'executedAt':datetime.now(timezone.utc).isoformat(),'status':'PASS' if passed else 'FAIL','debugApkSha256':hashlib.sha256(apks[0].read_bytes()).hexdigest(),'testApkSha256':hashlib.sha256(apks[1].read_bytes()).hexdigest(),'evidenceFiles':count,'qaPowerSettings':qa_power,'qaRotationSettings':qa_rotation}
+    provenance['apkSources']=[path.relative_to(ROOT).as_posix() for path in apks]
     provenance['evidence']=evidence
     provenance['testSelection']=args.test_class or 'all'
     report.write_text(json.dumps(provenance,indent=2),encoding='utf-8')

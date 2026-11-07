@@ -193,4 +193,12 @@
 <item quantity="one">%1$d anı</item>
 <item quantity="other">%1$d anı</item>
 </plurals>
+<string name="transcription_notice">Bu kayıttan cihazınızda bir metin taslağı oluşturun. Ses yüklenmez. Konuşulan dili seçip onaylayın. En fazla on dakikalık kayıtlar desteklenir. İşlem yavaş olabilir; kaydetmeden önce metni kontrol edin.</string>
+<string name="transcription_working">Cihazınızda metne dönüştürülüyor…</string>
+<string name="transcription_failed">Bu kayıt metne dönüştürülemedi. Tekrar deneyin veya metni kendiniz girin.</string>
+<string name="transcription_empty">Anlaşılır konuşma algılanmadı. Daha net bir kayıt deneyin veya metni kendiniz girin.</string>
+<string name="transcription_review">Metin taslağını incele</string>
+<string name="transcription_apply">Kayıtlı metne ekle</string>
+<string name="transcription_limit">En fazla on dakikalık kayıtlar metne dönüştürülebilir. Daha uzun kayıtlar korunur ve metinlerini kendiniz girebilirsiniz.</string>
+<string name="transcription_consent_required">Metne dönüştürmeden önce cihazınızda işlem yapılmasını onaylayın.</string>
 </resources>

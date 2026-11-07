@@ -192,4 +192,12 @@
 <plurals name="memory_count">
 <item quantity="other">%1$d kenangan</item>
 </plurals>
+<string name="transcription_notice">Buat draf teks dari rekaman ini di perangkat Anda. Tidak ada audio yang diunggah. Pilih bahasa yang diucapkan, lalu konfirmasi. Rekaman hingga sepuluh menit didukung. Pemrosesan mungkin lambat; periksa teks sebelum menyimpannya.</string>
+<string name="transcription_working">Mentranskripsikan di perangkat Anda…</string>
+<string name="transcription_failed">Rekaman ini tidak dapat ditranskripsikan. Coba lagi atau ketik teksnya sendiri.</string>
+<string name="transcription_empty">Tidak ada ucapan yang jelas terdeteksi. Coba rekaman yang lebih jernih atau ketik teksnya sendiri.</string>
+<string name="transcription_review">Tinjau draf transkrip</string>
+<string name="transcription_apply">Tambahkan ke transkrip tersimpan</string>
+<string name="transcription_limit">Transkripsi mendukung rekaman hingga sepuluh menit. Rekaman yang lebih panjang tetap tersimpan dan dapat ditranskripsikan secara manual.</string>
+<string name="transcription_consent_required">Konfirmasikan pemrosesan di perangkat sebelum memulai transkripsi.</string>
 </resources>

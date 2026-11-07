@@ -191,5 +191,13 @@
   "search_year_hint": "YYYY, atau kosongkan untuk menampilkan semua tahun",
   "memory_count": {
     "other": "%1$d kenangan"
-  }
+  },
+  "transcription_notice": "Buat draf teks dari rekaman ini di perangkat Anda. Tidak ada audio yang diunggah. Pilih bahasa yang diucapkan, lalu konfirmasi. Rekaman hingga sepuluh menit didukung. Pemrosesan mungkin lambat; periksa teks sebelum menyimpannya.",
+  "transcription_working": "Mentranskripsikan di perangkat Anda…",
+  "transcription_failed": "Rekaman ini tidak dapat ditranskripsikan. Coba lagi atau ketik teksnya sendiri.",
+  "transcription_empty": "Tidak ada ucapan yang jelas terdeteksi. Coba rekaman yang lebih jernih atau ketik teksnya sendiri.",
+  "transcription_review": "Tinjau draf transkrip",
+  "transcription_apply": "Tambahkan ke transkrip tersimpan",
+  "transcription_limit": "Transkripsi mendukung rekaman hingga sepuluh menit. Rekaman yang lebih panjang tetap tersimpan dan dapat ditranskripsikan secara manual.",
+  "transcription_consent_required": "Konfirmasikan pemrosesan di perangkat sebelum memulai transkripsi."
 }

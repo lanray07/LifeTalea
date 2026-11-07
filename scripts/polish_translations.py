@@ -6,6 +6,7 @@ No API calls, personal content, model inference or invented reviewer identities.
 import argparse
 import copy
 import re
+from datetime import datetime, timezone
 from functools import lru_cache
 from localize import ROOT, LOC, TARGETS, read, write, extract, issues, source_hash, generate, configure_locales, report
 from translate_collateral import flatten, file_hash, FIELDS
@@ -55,6 +56,12 @@ def article_overrides(language,locale):
         values=[adapt(value,locale) for value in values]
         result[slug]={'title':values[0],'summary':values[1],'sections':[{'title':values[i],'body':values[i+1]} for i in range(2,len(values),2)]}
     if set(result)!=set(source):raise ValueError(f'{file}: missing articles {set(source)-set(result)}')
+    app_locale=locale if (LOC/f'{locale}.json').exists() else next(tag for tag in TARGETS if tag.split('-')[0]==language)
+    app=read(LOC/f'{app_locale}.json')
+    result['voice-transcription']['summary']=app['transcription_notice']
+    result['voice-transcription']['sections'][1]={'title':app['transcription_review'],'body':app['transcription_limit']}
+    result['offline-memory-journal']['sections'][1]['body']=app['voice_notice']+' '+app['transcription_notice']
+    result['faq']['sections'][3]['body']=app['transcription_notice']
     return result
 
 def main():
@@ -107,7 +114,7 @@ def main():
             if locale.startswith('en'):continue
             web_reviews[locale].update({'status':'DRAFT_PENDING_NATIVE_REVIEW','sourceHash':file_hash(ROOT/'website/src/dictionaries/en-GB.json'),'targetHash':file_hash(ROOT/f'website/src/dictionaries/{locale}.json'),'reviewer':'','reviewedAt':'','editorialCorrections':'Authored complete article and store draft polish 2026-11-03; not native approval'})
         write(web_reviews_path,web_reviews)
-    write(ROOT/'deliverables/localization/polish-changes.json',{'date':'2026-11-03','status':'DRAFT_PENDING_NATIVE_REVIEW','changedFields':len(changes),'changes':changes})
+    write(ROOT/'deliverables/localization/polish-changes.json',{'date':datetime.now(timezone.utc).date().isoformat(),'editorialBaseDate':'2026-11-03','status':'DRAFT_PENDING_NATIVE_REVIEW','changedFields':len(changes),'changes':changes})
     report(source);print(f'{len(changes)} editorial changes applied; zero approvals added')
 
 if __name__=='__main__':main()

@@ -1,0 +1,49 @@
+{
+  "releaseStatus": "BLOCKED",
+  "deviceSuite": {
+    "status": "PASS",
+    "tests": 22,
+    "evidenceFiles": 193,
+    "wifiDisabled": true,
+    "debugApkSha256": "2d5bc7483c5cb055bddf6748f4880c10d0d52e9b7801548eb2c0b79870bc5ded",
+    "testApkSha256": "d9acf49efc92322b72ad942ca9ae008d71091e816b3db0d626f2ff23bb4d2045"
+  },
+  "supplementaryChecks": {
+    "realProcessRestart": "PASS",
+    "failureSourcePreservation": "PASS"
+  },
+  "unitTests": {
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 267
+  },
+  "pythonTestsPassed": 16,
+  "catalogs": {
+    "keys": 199,
+    "draftLocales": 22,
+    "nativeApprovals": 0
+  },
+  "qaArchive": {
+    "path": "deliverables/amazon-submission/LifeTalea-transcription-Fire-QA-2026-11-07.zip",
+    "sha256": "ed6ad2203b7f512a0fd34b53cfebf1e8a4f2f7c1e1177fd5e450ae3de3f66320",
+    "bytes": 115013279,
+    "entriesVerified": 252
+  },
+  "candidate": {
+    "path": "deliverables/amazon-submission/LifeTalea-0.1.0-public-v4-unsigned.apk",
+    "sha256": "d83967ef4f65acb0249688b438eeef616a7809271efeb6fde11df5e6f2de122b",
+    "versionCode": 4,
+    "amazonProcessed": false,
+    "submitted": false
+  },
+  "proof": {
+    "path": "deliverables/reports/device-evidence/master-prompt/transcription-review-2026-11-07.png",
+    "sha256": "c96a268af909c4a48d451a8843c454da7002812e279647e79b8ebfa6cd829bc8"
+  }
+}

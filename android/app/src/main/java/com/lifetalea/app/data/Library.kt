@@ -51,6 +51,8 @@ interface LibraryDao {
     @Upsert suspend fun save(book: Scrapbook)
     @Upsert suspend fun save(page: BookPage)
     @Upsert suspend fun save(attachment: Attachment)
+    @Query("UPDATE memories SET transcript = CASE WHEN transcript = '' THEN :draft ELSE transcript || char(10) || char(10) || :draft END, updatedAt = :now WHERE id = :id AND length(transcript) + length(:draft) + CASE WHEN transcript = '' THEN 0 ELSE 2 END <= 1000000")
+    suspend fun appendTranscript(id: String, draft: String, now: Long): Int
     @Insert(onConflict = OnConflictStrategy.IGNORE) suspend fun link(link: AlbumMemory)
     @Query("DELETE FROM album_memories WHERE memoryId = :id") suspend fun unlink(id: String)
     @Query("DELETE FROM memories WHERE id = :id") suspend fun deleteMemory(id: String)

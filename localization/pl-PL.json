@@ -194,5 +194,13 @@
     "few": "%1$d wspomnienia",
     "many": "%1$d wspomnień",
     "other": "%1$d wspomnienia"
-  }
+  },
+  "transcription_notice": "Utwórz szkic tekstu z tego nagrania na swoim urządzeniu. Dźwięk nie jest wysyłany. Wybierz język nagrania i potwierdź. Obsługiwane są nagrania do dziesięciu minut. Przetwarzanie może potrwać; sprawdź tekst przed zapisaniem.",
+  "transcription_working": "Transkrypcja na urządzeniu…",
+  "transcription_failed": "Nie udało się wykonać transkrypcji. Spróbuj ponownie lub wpisz tekst samodzielnie.",
+  "transcription_empty": "Nie wykryto wyraźnej mowy. Spróbuj użyć wyraźniejszego nagrania lub wpisz tekst.",
+  "transcription_review": "Sprawdź szkic transkrypcji",
+  "transcription_apply": "Dodaj do zapisanej transkrypcji",
+  "transcription_limit": "Transkrypcja obsługuje nagrania do dziesięciu minut. Dłuższe nagrania pozostają zapisane i można je przepisać ręcznie.",
+  "transcription_consent_required": "Potwierdź przetwarzanie na urządzeniu przed rozpoczęciem transkrypcji."
 }

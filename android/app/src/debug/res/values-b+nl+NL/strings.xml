@@ -193,4 +193,12 @@
 <item quantity="one">%1$d herinnering</item>
 <item quantity="other">%1$d herinneringen</item>
 </plurals>
+<string name="transcription_notice">Maak op je apparaat een tekstconcept van deze opname. Er wordt geen audio geüpload. Kies de gesproken taal en bevestig. Opnamen mogen maximaal tien minuten duren. De verwerking kan traag zijn; controleer de tekst voordat je deze opslaat.</string>
+<string name="transcription_working">Wordt op je apparaat uitgeschreven…</string>
+<string name="transcription_failed">Deze opname kon niet worden uitgeschreven. Probeer het opnieuw of voer de tekst zelf in.</string>
+<string name="transcription_empty">Geen duidelijke spraak gevonden. Probeer een duidelijkere opname of voer de tekst zelf in.</string>
+<string name="transcription_review">Tekstconcept controleren</string>
+<string name="transcription_apply">Toevoegen aan opgeslagen transcript</string>
+<string name="transcription_limit">Opnamen tot tien minuten kunnen worden uitgeschreven. Langere opnamen blijven bewaard en kunnen handmatig worden uitgeschreven.</string>
+<string name="transcription_consent_required">Bevestig verwerking op je apparaat voordat je begint met uitschrijven.</string>
 </resources>

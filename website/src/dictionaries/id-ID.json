@@ -117,15 +117,15 @@
     },
     "voice-transcription": {
       "title": "Tambahkan tulisan pada kenangan suara",
-      "summary": "Transkripsi otomatis belum dikonfigurasi dalam versi LifeTalea ini. Perekaman dan penyuntingan transkrip manual tersedia.",
+      "summary": "Buat draf teks dari rekaman ini di perangkat Anda. Tidak ada audio yang diunggah. Pilih bahasa yang diucapkan, lalu konfirmasi. Rekaman hingga sepuluh menit didukung. Pemrosesan mungkin lambat; periksa teks sebelum menyimpannya.",
       "sections": [
         {
           "title": "Yang tersedia sekarang",
           "body": "Buka kenangan lalu ketik atau tempel transkrip. Perubahan tersimpan lokal bersama rekaman asli."
         },
         {
-          "title": "Sebelum peluncuran",
-          "body": "Masih dibutuhkan mesin kompatibel dan pengujian per bahasa. LifeTalea tidak mengarang transkrip atau mengirim rekaman ke penyedia cloud."
+          "title": "Tinjau draf transkrip",
+          "body": "Transkripsi mendukung rekaman hingga sepuluh menit. Rekaman yang lebih panjang tetap tersimpan dan dapat ditranskripsikan secara manual."
         },
         {
           "title": "Fungsi yang berbeda",
@@ -197,7 +197,7 @@
         },
         {
           "title": "Kenali batasnya",
-          "body": "Pembelian membutuhkan Amazon. Pengenalan ucapan mungkin memerlukan internet. Transkripsi otomatis dan sinkronisasi cloud belum tersedia."
+          "body": "Fitur tekan untuk bicara menggunakan layanan suara perangkat Anda. Layanan ini mungkin memerlukan internet dan memproses ucapan di luar perangkat. Lanjutkan hanya jika Anda setuju. LifeTalea tidak menyimpan rekaman perintah suara. Saat ini, perintah hanya didukung dalam bahasa Inggris. Buat draf teks dari rekaman ini di perangkat Anda. Tidak ada audio yang diunggah. Pilih bahasa yang diucapkan, lalu konfirmasi. Rekaman hingga sepuluh menit didukung. Pemrosesan mungkin lambat; periksa teks sebelum menyimpannya."
         },
         {
           "title": "Pilih tempat cadangan",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Bisakah mentranskripsikan rekaman?",
-          "body": "Transkripsi otomatis belum tersedia. Anda dapat menambah dan menyunting transkrip secara manual."
+          "body": "Buat draf teks dari rekaman ini di perangkat Anda. Tidak ada audio yang diunggah. Pilih bahasa yang diucapkan, lalu konfirmasi. Rekaman hingga sepuluh menit didukung. Pemrosesan mungkin lambat; periksa teks sebelum menyimpannya."
         },
         {
           "title": "Apakah LifeTalea menyinkronkan perangkat?",

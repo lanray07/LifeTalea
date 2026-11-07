@@ -1,6 +1,6 @@
 # LifeTalea development privacy notice
 
-Publisher: O.Bankole. Contact: banksmi@mail.com. Effective draft: 4 November 2026. Source: https://github.com/lanray07/LifeTalea.
+Publisher: O.Bankole. Contact: banksmi@mail.com. Effective draft: 7 November 2026. Source: https://github.com/lanray07/LifeTalea.
 
 LifeTalea is in development. This notice describes current implementation and needs legal review against the final release. It is not a claim of compliance certification.
 
@@ -10,7 +10,7 @@ Microphone access is requested for user-initiated recording or push-to-talk. Sav
 
 The Amazon Appstore SDK may contact Amazon when the app opens to initialise licensing and refresh account/product information, as well as during a purchase or restore. Amazon purchasing uses Amazon account/product/receipt information to determine Premium access. A receipt verifier is deployed on Supabase. The standard app build still disables initiating purchases pending release testing; the separate Amazon LAT candidate uses that verifier. When configured, LifeTalea sends the Amazon app-specific user ID and receipt ID over HTTPS to its private verifier, which checks them with Amazon and returns a signed, expiring entitlement. No memories, recordings or photos are accepted by that service. The app caches the signed receipt assertion in private storage. The verifier has no customer-content database; the Supabase adapter stores only a shared quota counter and timestamp, without customer/receipt/IP identifiers. Supabase and its infrastructure may process connection metadata and operational logs. Final logging, retention, regional processing and provider disclosures still require assessment before public launch. Amazon retains its transaction records under its own policies. Memories and media are not sent as part of purchasing.
 
-Automatic file transcription and cloud sync are not configured. LifeTalea does not currently upload stories to a transcription provider.
+The new development build offers on-device transcription of saved recordings using a bundled Whisper model. You select the recording language and confirm processing. Neither the recording nor the generated text is uploaded to a transcription provider. The generated text is an editable draft; it is added to your local memory only when you choose to save it. The original recording is preserved. Canceling or leaving the app stops processing. Recognition can make mistakes and requires your review. Cloud sync is not configured. The previously distributed Amazon version 3 does not include this new transcription implementation.
 
 When you export a PDF or backup you choose the destination through Android's document picker. If that destination is a cloud provider, that provider handles the selected export under its policies. Unencrypted archives contain readable personal content. Optional passphrase encryption protects selected archives, not the separately stored local database. Keep passphrases and backup copies safe. No end-to-end encryption claim is made.
 

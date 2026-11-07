@@ -192,5 +192,13 @@
   "memory_count": {
     "one": "%1$d anı",
     "other": "%1$d anı"
-  }
+  },
+  "transcription_notice": "Bu kayıttan cihazınızda bir metin taslağı oluşturun. Ses yüklenmez. Konuşulan dili seçip onaylayın. En fazla on dakikalık kayıtlar desteklenir. İşlem yavaş olabilir; kaydetmeden önce metni kontrol edin.",
+  "transcription_working": "Cihazınızda metne dönüştürülüyor…",
+  "transcription_failed": "Bu kayıt metne dönüştürülemedi. Tekrar deneyin veya metni kendiniz girin.",
+  "transcription_empty": "Anlaşılır konuşma algılanmadı. Daha net bir kayıt deneyin veya metni kendiniz girin.",
+  "transcription_review": "Metin taslağını incele",
+  "transcription_apply": "Kayıtlı metne ekle",
+  "transcription_limit": "En fazla on dakikalık kayıtlar metne dönüştürülebilir. Daha uzun kayıtlar korunur ve metinlerini kendiniz girebilirsiniz.",
+  "transcription_consent_required": "Metne dönüştürmeden önce cihazınızda işlem yapılmasını onaylayın."
 }

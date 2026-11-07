@@ -1,0 +1,33 @@
+{
+  "executedAt": "2026-11-07T14:21:29.851617+00:00",
+  "status": "FAIL",
+  "debugApkSha256": "fdc45003c4b7336396ead9f5ee9ab0cb966ac1806baab759d0a491897d939ccd",
+  "testApkSha256": "a35420e93fa419f5b1159cd41cfd3cf0bb899bd266923845768d223c192ce151",
+  "evidenceFiles": 2,
+  "qaPowerSettings": {
+    "originalStayAwakeWhilePluggedIn": "7",
+    "restored": true
+  },
+  "qaRotationSettings": {
+    "original": {
+      "accelerometer_rotation": "1",
+      "user_rotation": "0"
+    },
+    "restored": true
+  },
+  "apkSources": [
+    "android/app/build/transcription-dev/first-app-debug.apk",
+    "android/app/build/transcription-dev/first-test.apk"
+  ],
+  "evidence": [
+    {
+      "path": "deliverables/reports/transcription-2026-11-07/first-native/device-evidence/transcription/cancel-and-retry.json",
+      "sha256": "b20274dfc5ba2a62af79c676f84cd462186891923e625f8b199f008215fb405c"
+    },
+    {
+      "path": "deliverables/reports/transcription-2026-11-07/first-native/device-evidence/transcription/failure-fallbacks.json",
+      "sha256": "1219db203d685c611e1f08c3e8f59f2d1431cc8e0e0ab1be4b04ec9001e2bbfa"
+    }
+  ],
+  "testSelection": "com.lifetalea.app.TranscriptionDeviceTest"
+}

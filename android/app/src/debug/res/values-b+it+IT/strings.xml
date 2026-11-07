@@ -193,4 +193,12 @@
 <item quantity="one">%1$d ricordo</item>
 <item quantity="other">%1$d ricordi</item>
 </plurals>
+<string name="transcription_notice">Crea una bozza da questa registrazione sul tuo dispositivo. Nessun audio viene caricato. Scegli la lingua parlata e conferma. Sono supportate registrazioni fino a dieci minuti. L’elaborazione può essere lenta: controlla il testo prima di salvarlo.</string>
+<string name="transcription_working">Trascrizione sul dispositivo…</string>
+<string name="transcription_failed">Impossibile trascrivere questa registrazione. Riprova o inserisci il testo manualmente.</string>
+<string name="transcription_empty">Non è stato rilevato un parlato chiaro. Prova con una registrazione più nitida o inserisci il testo.</string>
+<string name="transcription_review">Rivedi la bozza</string>
+<string name="transcription_apply">Aggiungi alla trascrizione salvata</string>
+<string name="transcription_limit">La trascrizione supporta registrazioni fino a dieci minuti. Quelle più lunghe restano salvate e possono essere trascritte manualmente.</string>
+<string name="transcription_consent_required">Conferma l’elaborazione sul dispositivo prima di avviare la trascrizione.</string>
 </resources>

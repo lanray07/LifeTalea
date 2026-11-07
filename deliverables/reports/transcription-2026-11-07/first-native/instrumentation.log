@@ -1,0 +1,158 @@
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+Reset dedicated debug QA fixtures only:
+Success
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.TranscriptionDeviceTest:
+INSTRUMENTATION_STATUS: test=cancellationDuringNativeInferenceReleasesTheWorkerForRetry
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=cancellationDuringNativeInferenceReleasesTheWorkerForRetry
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=silenceBadAudioLimitsAndMissingConsentNeverProduceInventedWords
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=silenceBadAudioLimitsAndMissingConsentNeverProduceInventedWords
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=savedAacProducesAReviewedDraftWithoutReplacingExistingWords
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'apple' (ignoreCase: true) as substring)
+Reason: Expected exactly '1' node but found '2' nodes that satisfy: (Text + InputText + EditableText contains 'Editable transcript' (ignoreCase: false))
+Nodes found:
+1) Node #266 at (l=348.0, t=1158.0, r=645.0, b=1200.0)px
+Text = '[Editable transcript]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+Has 17 siblings
+2) Node #304 at (l=36.0, t=264.0, r=804.0, b=444.0)px
+ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+EditableText = 'We planted an apple tree in the garden. My grandmother told us stories every summer.'
+Focused = 'false'
+ImeAction = 'Default'
+InputText = 'We planted an apple tree in the garden. My grandmother told us stories every summer.'
+IsEditable = 'true'
+Text = '[Editable transcript]'
+TextSelectionRange = 'TextRange(0, 0)'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, InsertTextAtCursor, OnAutofillText, OnClick, OnLongClick, PasteText, PerformImeAction, RequestFocus, SetSelection, SetText, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+Has 2 siblings
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:258)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:250)
+	at androidx.compose.ui.test.AssertionsKt.assertTextContains(Assertions.kt:204)
+	at com.lifetalea.app.TranscriptionDeviceTest.savedAacProducesAReviewedDraftWithoutReplacingExistingWords(TranscriptionDeviceTest.kt:59)
+
+INSTRUMENTATION_STATUS: stream=
+Error in savedAacProducesAReviewedDraftWithoutReplacingExistingWords(com.lifetalea.app.TranscriptionDeviceTest):
+java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'apple' (ignoreCase: true) as substring)
+Reason: Expected exactly '1' node but found '2' nodes that satisfy: (Text + InputText + EditableText contains 'Editable transcript' (ignoreCase: false))
+Nodes found:
+1) Node #266 at (l=348.0, t=1158.0, r=645.0, b=1200.0)px
+Text = '[Editable transcript]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+Has 17 siblings
+2) Node #304 at (l=36.0, t=264.0, r=804.0, b=444.0)px
+ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+EditableText = 'We planted an apple tree in the garden. My grandmother told us stories every summer.'
+Focused = 'false'
+ImeAction = 'Default'
+InputText = 'We planted an apple tree in the garden. My grandmother told us stories every summer.'
+IsEditable = 'true'
+Text = '[Editable transcript]'
+TextSelectionRange = 'TextRange(0, 0)'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, InsertTextAtCursor, OnAutofillText, OnClick, OnLongClick, PasteText, PerformImeAction, RequestFocus, SetSelection, SetText, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+Has 2 siblings
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:258)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:250)
+	at androidx.compose.ui.test.AssertionsKt.assertTextContains(Assertions.kt:204)
+	at com.lifetalea.app.TranscriptionDeviceTest.savedAacProducesAReviewedDraftWithoutReplacingExistingWords(TranscriptionDeviceTest.kt:59)
+
+INSTRUMENTATION_STATUS: test=savedAacProducesAReviewedDraftWithoutReplacingExistingWords
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=appendingTranscriptIsAtomicAndCannotResurrectADeletedMemory
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=appendingTranscriptIsAtomicAndCannotResurrectADeletedMemory
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 62.69
+There was 1 failure:
+1) savedAacProducesAReviewedDraftWithoutReplacingExistingWords(com.lifetalea.app.TranscriptionDeviceTest)
+java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'apple' (ignoreCase: true) as substring)
+Reason: Expected exactly '1' node but found '2' nodes that satisfy: (Text + InputText + EditableText contains 'Editable transcript' (ignoreCase: false))
+Nodes found:
+1) Node #266 at (l=348.0, t=1158.0, r=645.0, b=1200.0)px
+Text = '[Editable transcript]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+Has 17 siblings
+2) Node #304 at (l=36.0, t=264.0, r=804.0, b=444.0)px
+ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+EditableText = 'We planted an apple tree in the garden. My grandmother told us stories every summer.'
+Focused = 'false'
+ImeAction = 'Default'
+InputText = 'We planted an apple tree in the garden. My grandmother told us stories every summer.'
+IsEditable = 'true'
+Text = '[Editable transcript]'
+TextSelectionRange = 'TextRange(0, 0)'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, InsertTextAtCursor, OnAutofillText, OnClick, OnLongClick, PasteText, PerformImeAction, RequestFocus, SetSelection, SetText, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+Has 2 siblings
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:258)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:250)
+	at androidx.compose.ui.test.AssertionsKt.assertTextContains(Assertions.kt:204)
+	at com.lifetalea.app.TranscriptionDeviceTest.savedAacProducesAReviewedDraftWithoutReplacingExistingWords(TranscriptionDeviceTest.kt:59)
+
+FAILURES!!!
+Tests run: 4,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

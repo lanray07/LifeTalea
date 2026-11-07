@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "consentGate": true,
+  "invalidAudio": true,
+  "unsupportedLanguage": true,
+  "silenceNoTranscript": true,
+  "tenMinuteLimit": true
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-07",
+  "originalWifiOn": true,
+  "wifiValueBeforeSuite": "0",
+  "wifiValueAfterSuite": "0",
+  "restoredWifiValue": "1",
+  "method": "CUA quick-settings toggle; adb settings get global wifi_on before and after the full physical suite",
+  "scope": "Wi-Fi disabled; no claim of packet capture or multilingual recognition accuracy"
+}

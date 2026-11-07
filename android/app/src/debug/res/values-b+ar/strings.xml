@@ -197,4 +197,12 @@
 <item quantity="many">%1$d ذكرى</item>
 <item quantity="other">%1$d ذكرى</item>
 </plurals>
+<string name="transcription_notice">أنشئ مسودة نصية من هذا التسجيل على جهازك. لا يُرفع أي صوت. اختر اللغة المنطوقة ثم أكّد. تدعم الميزة تسجيلات تصل إلى عشر دقائق. قد تستغرق المعالجة وقتًا؛ راجع النص قبل حفظه.</string>
+<string name="transcription_working">جارٍ تحويل التسجيل إلى نص على جهازك…</string>
+<string name="transcription_failed">تعذّر تحويل هذا التسجيل إلى نص. حاول مجددًا أو اكتب النص بنفسك.</string>
+<string name="transcription_empty">لم يُكتشف كلام واضح. جرّب تسجيلًا أوضح أو اكتب النص بنفسك.</string>
+<string name="transcription_review">مراجعة مسودة النص</string>
+<string name="transcription_apply">إضافة إلى النص المحفوظ</string>
+<string name="transcription_limit">يمكن تحويل التسجيلات التي لا تتجاوز عشر دقائق إلى نص. تبقى التسجيلات الأطول محفوظة ويمكنك كتابة نصها يدويًا.</string>
+<string name="transcription_consent_required">أكّد المعالجة على جهازك قبل بدء تحويل التسجيل إلى نص.</string>
 </resources>

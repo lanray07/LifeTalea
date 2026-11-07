@@ -1,0 +1,4 @@
+{
+  "status": "SETUP_FAILED",
+  "reason": "IDE test-only debug APK rejected without install -t; no device tests ran in this attempt"
+}

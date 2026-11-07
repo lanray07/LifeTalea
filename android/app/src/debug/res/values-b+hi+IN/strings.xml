@@ -193,4 +193,12 @@
 <item quantity="one">%1$d याद</item>
 <item quantity="other">%1$d यादें</item>
 </plurals>
+<string name="transcription_notice">इस रिकॉर्डिंग से अपने डिवाइस पर पाठ का मसौदा बनाएं। कोई ऑडियो अपलोड नहीं होता। बोली गई भाषा चुनें और पुष्टि करें। दस मिनट तक की रिकॉर्डिंग समर्थित हैं। प्रक्रिया धीमी हो सकती है; सहेजने से पहले पाठ की जाँच करें।</string>
+<string name="transcription_working">आपके डिवाइस पर ऑडियो को पाठ में बदला जा रहा है…</string>
+<string name="transcription_failed">इस रिकॉर्डिंग को पाठ में नहीं बदला जा सका। फिर से कोशिश करें या पाठ स्वयं लिखें।</string>
+<string name="transcription_empty">स्पष्ट बोली नहीं मिली। अधिक स्पष्ट रिकॉर्डिंग का उपयोग करें या पाठ स्वयं लिखें।</string>
+<string name="transcription_review">पाठ के मसौदे की समीक्षा करें</string>
+<string name="transcription_apply">सहेजे गए पाठ में जोड़ें</string>
+<string name="transcription_limit">दस मिनट तक की रिकॉर्डिंग को पाठ में बदला जा सकता है। लंबी रिकॉर्डिंग सुरक्षित रहती हैं और उनका पाठ आप स्वयं लिख सकते हैं।</string>
+<string name="transcription_consent_required">शुरू करने से पहले अपने डिवाइस पर ऑडियो को पाठ में बदलने की पुष्टि करें।</string>
 </resources>

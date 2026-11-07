@@ -5,6 +5,7 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from polish_translations import APP_KEYS,EXTRA_KEYS,blocks,adapt,article_overrides
 from localize import LOC,read,issues
+from translate_collateral import flatten
 
 class EditorialPolishTest(unittest.TestCase):
     def test_every_language_has_complete_unique_app_corrections(self):
@@ -35,7 +36,8 @@ class EditorialPolishTest(unittest.TestCase):
         for language in blocks(LOC/'polish/app.txt'):
             articles=article_overrides(language,language)
             self.assertEqual(len(articles),15,language)
-            self.assertIn('LifeTalea',articles['voice-transcription']['summary'])
+            source=read(LOC.parent/'website/src/dictionaries/en-GB.json')['articles']
+            self.assertEqual(issues(flatten(source),flatten(articles)),[],language)
             self.assertIn('banksmi@mail.com',articles['contact']['summary'])
             self.assertEqual(len(articles['privacy']['sections']),4)
 

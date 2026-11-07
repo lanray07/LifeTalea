@@ -99,15 +99,15 @@
     },
     "voice-transcription": {
       "title": "Sesli anılara yazılı bir eşlikçi",
-      "summary": "Bu LifeTalea sürümünde otomatik ses dökümü yapılandırılmamıştır. Kayıt ve elle döküm düzenleme kullanılabilir.",
+      "summary": "Bu kayıttan cihazınızda bir metin taslağı oluşturun. Ses yüklenmez. Konuşulan dili seçip onaylayın. En fazla on dakikalık kayıtlar desteklenir. İşlem yavaş olabilir; kaydetmeden önce metni kontrol edin.",
       "sections": [
         {
           "title": "Bugün kullanılabilenler",
           "body": "Bir anıyı açıp dökümünü yazın veya yapıştırın. Değişiklikler asıl kaydın yanında cihazda tutulur."
         },
         {
-          "title": "Yayımdan önce gerekenler",
-          "body": "Uyumlu bir motor ve dil testleri hâlâ gereklidir. LifeTalea uydurma döküm üretmez ve kayıtları bulut sağlayıcısına göndermez."
+          "title": "Metin taslağını incele",
+          "body": "En fazla on dakikalık kayıtlar metne dönüştürülebilir. Daha uzun kayıtlar korunur ve metinlerini kendiniz girebilirsiniz."
         },
         {
           "title": "Ayrı işlevler",
@@ -179,7 +179,7 @@
         },
         {
           "title": "Sınırları bilin",
-          "body": "Satın alımlar Amazon gerektirir. Konuşma tanıma internet isteyebilir. Otomatik döküm ve bulut eşitleme sunulmamaktadır."
+          "body": "Bas konuş özelliği cihazınızın konuşma hizmetini kullanır. Bu hizmet internete ihtiyaç duyabilir ve konuşmayı cihaz dışında işleyebilir. Yalnızca kabul ediyorsanız devam edin. LifeTalea sesli komut kayıtlarını saklamaz. Komutlar şu anda yalnızca İngilizce olarak desteklenmektedir. Bu kayıttan cihazınızda bir metin taslağı oluşturun. Ses yüklenmez. Konuşulan dili seçip onaylayın. En fazla on dakikalık kayıtlar desteklenir. İşlem yavaş olabilir; kaydetmeden önce metni kontrol edin."
         },
         {
           "title": "Yedek yerini siz seçin",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Kayıtların dökümünü çıkarabilir miyim?",
-          "body": "Otomatik döküm mevcut değildir. Metni elle ekleyebilir ve düzenleyebilirsiniz."
+          "body": "Bu kayıttan cihazınızda bir metin taslağı oluşturun. Ses yüklenmez. Konuşulan dili seçip onaylayın. En fazla on dakikalık kayıtlar desteklenir. İşlem yavaş olabilir; kaydetmeden önce metni kontrol edin."
         },
         {
           "title": "LifeTalea cihazları eşitler mi?",

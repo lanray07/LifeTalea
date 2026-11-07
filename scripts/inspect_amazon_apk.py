@@ -10,6 +10,7 @@ APK = ROOT / 'android/app/build/outputs/apk/release/app-release-unsigned.apk'
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--report', type=Path, default=ROOT / 'deliverables/reports/amazon-release-apk-inspection.json')
+    parser.add_argument('--expected-version', type=int, default=3)
     args = parser.parse_args()
     tools = SDK / 'build-tools/35.0.0'
     badging = subprocess.check_output([str(tools / ('aapt.exe' if os.name == 'nt' else 'aapt')), 'dump', 'badging', str(APK)], text=True, encoding='utf-8')
@@ -23,6 +24,14 @@ def main():
         test_trust = any('local_billing_qa_ca' in name or 'local_billing_network_security' in name for name in archive.namelist())
         key_present = any(name.endswith('/AppstoreAuthenticationKey.pem') for name in archive.namelist())
         key_hash = hashlib.sha256(archive.read('assets/AppstoreAuthenticationKey.pem')).hexdigest() if key_present else None
+        model_name = 'assets/transcription/ggml-tiny.bin'
+        model_hash = hashlib.sha256(archive.read(model_name)).hexdigest() if model_name in archive.namelist() else None
+        native_abis = sorted(name.split('/')[1] for name in archive.namelist() if name.endswith('/liblifetalea_whisper.so'))
+        audio_fixtures = any(name.startswith('assets/transcription/') and name.endswith(('.m4a', '.wav')) for name in archive.namelist())
+        assert not audio_fixtures, 'Development speech fixtures must not enter release APKs'
+        if model_hash:
+            assert model_hash == 'be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21'
+            assert native_abis == ['arm64-v8a', 'armeabi-v7a']
     assert not test_fixture, 'Test-only receipt fixtures must never enter the release APK'
     assert not test_trust, 'Local sandbox TLS trust must never enter the release APK'
     manifest = subprocess.check_output([str(tools / ('aapt.exe' if os.name == 'nt' else 'aapt')), 'dump', 'xmltree', str(APK), 'AndroidManifest.xml'], text=True, encoding='utf-8')
@@ -38,10 +47,11 @@ def main():
         'signing': 'UNSIGNED / apksigner verify rejected the candidate as expected',
         'testReceiptFixtureBundled': test_fixture, 'amazonVisibilityNamesInApkManifest': visibility,
         'localSandboxTrustBundled': test_trust,
+        'transcriptionModelSha256': model_hash, 'transcriptionNativeAbis': native_abis, 'testAudioFixtureBundled': audio_fixtures,
         'generatedReleaseBillingConfiguration': billing,
         'limitations': 'Badging and signing inspection do not verify runtime compatibility, Amazon DRM transformation or release approval.'
     }
-    assert report['package'] == 'com.lifetalea.app' and report['versionCode'] == 3 and report['versionName'] == '0.1.0' and not report['debuggable']
+    assert report['package'] == 'com.lifetalea.app' and report['versionCode'] == args.expected_version and report['versionName'] == '0.1.0' and not report['debuggable']
     args.report.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report))
 

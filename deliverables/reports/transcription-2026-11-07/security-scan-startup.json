@@ -1,0 +1,9 @@
+{
+  "status": "BLOCKED_NO_SCAN_ID",
+  "date": "2026-11-07",
+  "tool": "start_codex_security_prompt_only_scan",
+  "scope": ".",
+  "error": "Could not inspect local file: android\\app\\.cxx\\Release\\6n545e1e\\armeabi-v7a\\_deps\\ex-whisper-populate1234",
+  "auditCompleted": false,
+  "replacementScanStarted": false
+}

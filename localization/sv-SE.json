@@ -192,5 +192,13 @@
   "memory_count": {
     "one": "%1$d minne",
     "other": "%1$d minnen"
-  }
+  },
+  "transcription_notice": "Skapa ett textutkast från inspelningen på din enhet. Inget ljud laddas upp. Välj det talade språket och bekräfta. Inspelningar på högst tio minuter stöds. Bearbetningen kan ta tid; kontrollera texten innan du sparar.",
+  "transcription_working": "Transkriberar på din enhet…",
+  "transcription_failed": "Det gick inte att transkribera inspelningen. Försök igen eller skriv in texten själv.",
+  "transcription_empty": "Inget tydligt tal hittades. Prova en tydligare inspelning eller skriv in texten själv.",
+  "transcription_review": "Granska textutkastet",
+  "transcription_apply": "Lägg till i sparad transkription",
+  "transcription_limit": "Inspelningar på högst tio minuter kan transkriberas. Längre inspelningar finns kvar och kan skrivas av manuellt.",
+  "transcription_consent_required": "Bekräfta bearbetning på din enhet innan transkriptionen startar."
 }

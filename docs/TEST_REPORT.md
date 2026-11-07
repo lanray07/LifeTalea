@@ -1,5 +1,9 @@
 # Release readiness — BLOCKED
 
+Latest transcription update: all 22 physical tests passed with Wi-Fi disabled, plus separate process-restart and failure-preservation checks. All 21 Kotlin unit tests and 16 Python tests passed. Lint: zero errors, 267 warnings. Website build and collateral checks passed; 199 keys across 22 drafts, zero native approvals. See `AMAZON_TRANSCRIPTION_RELEASE_REVIEW_2026-11-07.md` and `deliverables/reports/transcription-2026-11-07/`. The version 4 candidate remains local; no public submission or new payment occurred.
+
+Earlier search-pass evidence follows; its counts and artifact hashes remain historical.
+
 Current update, 7 November 2026: debug, unsigned release and instrumentation builds succeeded; all 21 Kotlin unit tests and all 23 verifier tests passed. Lint has zero errors and 258 warnings. Locale structure checks cover 191 keys and 22 complete drafts with zero native approvals. Six website review-gate cases and static-export regression passed. The search/draft defect was reproduced before its fix. Current physical results, APK identities and the development QA archive are recorded in `deliverables/reports/release-2026-11-07/checks.json`. The public Amazon draft remains version 3, and its Test 1 release remains in progress. No new payment or public submission was made. See `AMAZON_RELEASE_REVIEW_2026-11-07.md` for remaining gates.
 
 The current physical suite passed all 18 tests in 189.875 seconds with 189 evidence files. Power and rotation settings were restored and Amazon SDK mode remained unchanged. This debug suite does not establish public-channel billing behavior.

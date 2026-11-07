@@ -192,5 +192,13 @@
   "memory_count": {
     "one": "%1$d recuerdo",
     "other": "%1$d recuerdos"
-  }
+  },
+  "transcription_notice": "Crea un borrador de esta grabación en tu dispositivo. No se envía ningún audio. Elige el idioma hablado y confirma. La duración máxima es de diez minutos. El proceso puede ser lento; revisa el texto antes de guardarlo.",
+  "transcription_working": "Transcribiendo en tu dispositivo…",
+  "transcription_failed": "No se pudo transcribir esta grabación. Inténtalo de nuevo o escribe el texto.",
+  "transcription_empty": "No se detectó voz clara. Prueba con una grabación más nítida o escribe el texto.",
+  "transcription_review": "Revisar borrador",
+  "transcription_apply": "Añadir a la transcripción guardada",
+  "transcription_limit": "La transcripción admite grabaciones de hasta diez minutos. Las más largas se conservan y puedes transcribirlas manualmente.",
+  "transcription_consent_required": "Confirma el procesamiento en tu dispositivo antes de iniciar la transcripción."
 }

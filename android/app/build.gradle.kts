@@ -2,6 +2,11 @@ import java.security.KeyFactory
 import java.security.interfaces.RSAPublicKey
 import java.security.spec.X509EncodedKeySpec
 import java.util.Base64
+import java.security.MessageDigest
+import java.io.File
+import java.net.URI
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
 
 plugins {
     id("com.android.application")
@@ -24,6 +29,7 @@ if (receiptPublicKey.isNotEmpty()) {
 android {
     namespace = "com.lifetalea.app"
     compileSdk = 35
+    ndkVersion = "28.2.13676358"
     defaultConfig {
         applicationId = "com.lifetalea.app"
         minSdk = 26
@@ -31,6 +37,8 @@ android {
         versionCode = 1
         versionName = "0.1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
+        externalNativeBuild { cmake { arguments += listOf("-DCMAKE_BUILD_TYPE=Release") } }
         buildConfigField("String", "RVS_URL", "\"$receiptUrl\"")
         buildConfigField("String", "RVS_PUBLIC_KEY", "\"$receiptPublicKey\"")
         buildConfigField("boolean", "AMAZON_PURCHASES_ENABLED", purchasesEnabled)
@@ -59,18 +67,48 @@ android {
             buildConfigField("boolean", "AMAZON_PURCHASES_ENABLED", "true")
         }
     }
+    externalNativeBuild { cmake { path = file("src/main/cpp/CMakeLists.txt"); version = "3.31.6" } }
+    androidResources { noCompress += "bin" }
+    sourceSets.getByName("main").assets.srcDir("build/generated/transcription/assets")
     sourceSets.getByName("billingQa").res.srcDir("build/generated/localBillingQa/res")
     packaging { resources.excludes += "/META-INF/{AL2.0,LGPL2.1}" }
     testOptions { unitTests.isReturnDefaultValues = true }
 }
+val prepareTranscriptionModel by tasks.registering {
+    val model = layout.buildDirectory.file("generated/transcription/assets/transcription/ggml-tiny.bin")
+    outputs.file(model)
+    val expected = "be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21"
+    inputs.property("sha256", expected)
+    doLast {
+        val target = model.get().asFile
+        target.parentFile.mkdirs()
+        val temporary = File(target.parentFile, "model.download")
+        try {
+            val connection = URI("https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-tiny.bin").toURL().openConnection()
+            connection.connectTimeout = 30000; connection.readTimeout = 60000
+            val digest = MessageDigest.getInstance("SHA-256")
+            var total = 0L
+            connection.getInputStream().use { input -> temporary.outputStream().use { output ->
+                val buffer = ByteArray(65536)
+                while (true) {
+                    val size = input.read(buffer); if (size < 0) break
+                    total += size; check(total <= 77691713L) { "Unexpected transcription model size" }
+                    digest.update(buffer, 0, size); output.write(buffer, 0, size)
+                }
+            } }
+            check(total == 77691713L && digest.digest().joinToString("") { "%02x".format(it) } == expected) { "Transcription model checksum mismatch" }
+            Files.move(temporary.toPath(), target.toPath(), StandardCopyOption.REPLACE_EXISTING)
+        } finally { temporary.delete() }
+    }
+}
+tasks.named("preBuild").configure { dependsOn(prepareTranscriptionModel) }
 androidComponents {
     onVariants(selector().withBuildType("release")) { variant ->
-        // Keep the public candidate ahead of the Amazon-distributed LAT version.
-        variant.outputs.forEach { it.versionCode.set(3) }
+        // Version 3 is already distributed through Amazon LAT.
+        variant.outputs.forEach { it.versionCode.set(4) }
     }
     onVariants(selector().withBuildType("amazonTest")) { variant ->
-        // The installed Amazon LAT build has version code 1.
-        variant.outputs.forEach { it.versionCode.set(2) }
+        variant.outputs.forEach { it.versionCode.set(4) }
     }
 }
 ksp { arg("room.schemaLocation", "$projectDir/schemas") }

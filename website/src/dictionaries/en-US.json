@@ -99,15 +99,15 @@
     },
     "voice-transcription": {
       "title": "A written companion to a spoken memory",
-      "summary": "Transcription is not configured in the current LifeTalea build. Audio recording and manual transcript editing remain available.",
+      "summary": "Create a draft from this recording on your device. No audio is uploaded. Choose the spoken language, then confirm. Recordings up to ten minutes are supported. Processing may be slow; check the draft for mistakes before saving.",
       "sections": [
         {
           "title": "What works today",
           "body": "Open a memory and edit its transcript field. You can type a transcript or paste text you already have. Corrections are stored locally beside the original recording."
         },
         {
-          "title": "What remains before release",
-          "body": "Recorded-file transcription needs a compatible engine, supported-language verification and end-to-end testing. LifeTalea does not present invented text as a transcript and does not send recordings to a cloud provider."
+          "title": "Review transcript draft",
+          "body": "Transcribe recordings up to ten minutes long. Longer recordings are safe and can have a manually entered transcript."
         },
         {
           "title": "Separate services",
@@ -179,7 +179,7 @@
         },
         {
           "title": "Know the boundaries",
-          "body": "Purchasing requires Amazon services. Device speech recognition may require internet. Saved-file transcription is unavailable in this build. No cloud synchronisation is implemented."
+          "body": "Push to talk uses your device’s speech service, which may need internet and process speech externally. Only continue if you agree. Audio commands are not saved by LifeTalea. Command phrases currently support English. Create a draft from this recording on your device. No audio is uploaded. Choose the spoken language, then confirm. Recordings up to ten minutes are supported. Processing may be slow; check the draft for mistakes before saving."
         },
         {
           "title": "Backups are your choice",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Can I transcribe recordings?",
-          "body": "Automatic saved-file transcription is unavailable in the current build. You can add and edit a transcript manually."
+          "body": "Create a draft from this recording on your device. No audio is uploaded. Choose the spoken language, then confirm. Recordings up to ten minutes are supported. Processing may be slow; check the draft for mistakes before saving."
         },
         {
           "title": "Does LifeTalea sync between devices?",

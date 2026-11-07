@@ -193,4 +193,12 @@
 <item quantity="one">%1$d souvenir</item>
 <item quantity="other">%1$d souvenirs</item>
 </plurals>
+<string name="transcription_notice">Créez un brouillon à partir de cet enregistrement sur votre appareil. Aucun fichier audio n’est envoyé. Choisissez la langue parlée, puis confirmez. Durée maximale : dix minutes. Le traitement peut être lent ; vérifiez le texte avant de l’enregistrer.</string>
+<string name="transcription_working">Transcription sur votre appareil…</string>
+<string name="transcription_failed">Impossible de transcrire cet enregistrement. Réessayez ou saisissez le texte vous-même.</string>
+<string name="transcription_empty">Aucune parole claire détectée. Essayez un enregistrement plus net ou saisissez le texte.</string>
+<string name="transcription_review">Relire le brouillon</string>
+<string name="transcription_apply">Ajouter à la transcription enregistrée</string>
+<string name="transcription_limit">La transcription est limitée à dix minutes. Les enregistrements plus longs sont conservés ; vous pouvez saisir leur transcription.</string>
+<string name="transcription_consent_required">Confirmez le traitement sur votre appareil avant de lancer la transcription.</string>
 </resources>

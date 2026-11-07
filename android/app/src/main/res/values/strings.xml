@@ -64,6 +64,14 @@
     <string name="rename">Rename</string>
     <string name="transcription">Transcription</string>
     <string name="transcription_unavailable">Audio transcription is not configured in this build. Your recording is safe. You can type or paste a transcript below.</string>
+    <string name="transcription_notice">Create a draft from this recording on your device. No audio is uploaded. Choose the spoken language, then confirm. Recordings up to ten minutes are supported. Processing may be slow; check the draft for mistakes before saving.</string>
+    <string name="transcription_working">Transcribing on your device…</string>
+    <string name="transcription_failed">This recording could not be transcribed. Try again, or enter a transcript yourself.</string>
+    <string name="transcription_empty">No clear speech was detected. Try a clearer recording or enter the words yourself.</string>
+    <string name="transcription_review">Review transcript draft</string>
+    <string name="transcription_apply">Append to saved transcript</string>
+    <string name="transcription_limit">Transcribe recordings up to ten minutes long. Longer recordings are safe and can have a manually entered transcript.</string>
+    <string name="transcription_consent_required">Confirm on-device processing before starting transcription.</string>
     <string name="voice_commands">Voice commands</string>
     <string name="voice_notice">Push to talk uses your device’s speech service, which may need internet and process speech externally. Only continue if you agree. Audio commands are not saved by LifeTalea. Command phrases currently support English.</string>
     <string name="listen">Push to talk</string>

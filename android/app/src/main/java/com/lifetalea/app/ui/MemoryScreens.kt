@@ -80,7 +80,7 @@ import java.util.Locale
     val photoPicker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri -> uri?.let { vm.importPhoto(memory.id, it) } }
     val recording by vm.recorder.state.collectAsStateWithLifecycle()
     var elapsed by remember { mutableLongStateOf(0) }
-    var transcription by remember { mutableStateOf(false) }
+    var transcription by remember { mutableStateOf<Attachment?>(null) }
     var rename by remember { mutableStateOf<Attachment?>(null) }
     var name by remember { mutableStateOf("") }
     LaunchedEffect(recording.active, recording.paused) { while(recording.active) { elapsed = vm.recorder.elapsed(); delay(250) } }
@@ -108,12 +108,12 @@ import java.util.Locale
         } else Button(onClick = onRecord) { Icon(Icons.Outlined.Mic, null); Text(tr("record")) }
         attachments.filter { it.kind == "audio" }.forEach { a ->
             AudioPlayer(vm.repo.file(a.filename).path, a.name)
-            Row { TextButton(onClick = { rename = a; name = a.name }) { Text(tr("rename")) }; TextButton(onClick = { onRemoveAttachment(a) }) { Text(tr("delete")) }; TextButton(onClick = { transcription = true }) { Text(tr("transcription")) } }
+            Row { TextButton(onClick = { rename = a; name = a.name }) { Text(tr("rename")) }; TextButton(onClick = { onRemoveAttachment(a) }) { Text(tr("delete")) }; TextButton(enabled = !recording.active, onClick = { transcription = a }) { Text(tr("transcription")) } }
         }
         if (memory.transcript.isNotBlank()) { Text(tr("transcript"), style = MaterialTheme.typography.titleLarge); Text(memory.transcript) }
         Row { TextButton(enabled = !recording.active, onClick = { vm.run { vm.repo.duplicate(memory.id); vm.error.value = "saved" } }) { Text(tr("duplicate")) }; TextButton(onClick = onDelete, enabled = !recording.active) { Text(tr("delete"), color = MaterialTheme.colorScheme.error) } }
     }
-    if (transcription) AlertDialog(onDismissRequest = { transcription = false }, title = { Text(tr("transcription")) }, text = { Text(tr("transcription_unavailable")) }, confirmButton = { TextButton(onClick = { transcription = false; onEdit() }) { Text(tr("edit")) } })
+    transcription?.let { attachment -> TranscriptionDialog(vm, memory.id, attachment, onDismiss = { transcription = null }, onManualEdit = { transcription = null; onEdit() }) }
     rename?.let { a -> AlertDialog(onDismissRequest = { rename = null }, title = { Text(tr("rename")) }, text = { Field("title", name, { name = it.take(200) }) }, confirmButton = { TextButton(enabled = name.isNotBlank(), onClick = { vm.run { vm.repo.dao.save(a.copy(name = name)) }; rename = null }) { Text(tr("save")) } }) }
 }
 fun duration(ms: Long, locale: Locale = Locale.ROOT): String = "%02d:%02d".format(locale, ms / 60000, ms / 1000 % 60)

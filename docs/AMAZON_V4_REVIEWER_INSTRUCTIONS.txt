@@ -1,0 +1,11 @@
+LifeTalea requires no LifeTalea login. Please use fictional stories and recordings.
+
+Complete or skip onboarding. Add and save a memory with a title, story, approximate date and tags. Reopen and edit it, add a photograph, create an album and check the timeline. Create a scrapbook draft and add a memory. Basic local backup and restore are available in Settings.
+
+On a saved memory, record a short fictional English sentence, then choose Stop and save. Check playback. Choose Transcription beside that recording, select English and confirm on-device processing. The bundled model works without Wi-Fi and does not upload audio. Processing can take time. Review the draft, correct a word and choose Append to saved transcript. Existing transcript text and original audio should remain intact. Reopen the app and check the saved correction. The initial transcription limit is ten minutes; longer recordings can have manually entered transcripts. Recognition accuracy varies. Leaving the app or locking the device stops processing; the recording remains safe.
+
+Command recognition and spoken playback depend on installed device speech services. Touch controls and typed English commands remain available. Saved-file transcription uses its own bundled engine.
+
+Premium is a one-time Amazon purchase. Purchase and restore use the Amazon account registered on the device, not LifeTalea credentials. Core stored stories remain available without Premium. Verify the public store item and local price before submission.
+
+Support: banksmi@mail.com

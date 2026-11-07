@@ -99,15 +99,15 @@
     },
     "voice-transcription": {
       "title": "Ord bredvid det inspelade minnet",
-      "summary": "Automatisk transkription är inte konfigurerad i den här versionen av LifeTalea. Inspelning och manuell redigering av transkriptioner fungerar.",
+      "summary": "Skapa ett textutkast från inspelningen på din enhet. Inget ljud laddas upp. Välj det talade språket och bekräfta. Inspelningar på högst tio minuter stöds. Bearbetningen kan ta tid; kontrollera texten innan du sparar.",
       "sections": [
         {
           "title": "Det som fungerar nu",
           "body": "Öppna ett minne och skriv eller klistra in transkriptionen. Ändringarna sparas lokalt bredvid originalinspelningen."
         },
         {
-          "title": "Före lanseringen",
-          "body": "En kompatibel tjänst och språktester behövs fortfarande. LifeTalea hittar inte på transkriptioner och skickar inte inspelningar till en molnleverantör."
+          "title": "Granska textutkastet",
+          "body": "Inspelningar på högst tio minuter kan transkriberas. Längre inspelningar finns kvar och kan skrivas av manuellt."
         },
         {
           "title": "Olika funktioner",
@@ -179,7 +179,7 @@
         },
         {
           "title": "Känn till gränserna",
-          "body": "Köp kräver Amazon. Taligenkänning kan behöva internet. Automatisk transkription och molnsynkronisering är inte tillgängliga."
+          "body": "Tryck för att tala använder enhetens taltjänst. Den kan behöva internet och behandla tal utanför enheten. Fortsätt bara om du samtycker. LifeTalea sparar inte ljud från kommandon. Röstkommandon stöds för närvarande endast på engelska. Skapa ett textutkast från inspelningen på din enhet. Inget ljud laddas upp. Välj det talade språket och bekräfta. Inspelningar på högst tio minuter stöds. Bearbetningen kan ta tid; kontrollera texten innan du sparar."
         },
         {
           "title": "Välj var kopian sparas",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Kan jag transkribera inspelningar?",
-          "body": "Automatisk transkription är inte tillgänglig. Du kan lägga till och redigera en transkription manuellt."
+          "body": "Skapa ett textutkast från inspelningen på din enhet. Inget ljud laddas upp. Välj det talade språket och bekräfta. Inspelningar på högst tio minuter stöds. Bearbetningen kan ta tid; kontrollera texten innan du sparar."
         },
         {
           "title": "Synkroniserar LifeTalea mellan enheter?",

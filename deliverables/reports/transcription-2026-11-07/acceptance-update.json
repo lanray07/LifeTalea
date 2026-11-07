@@ -1,0 +1,13 @@
+{
+  "scope": "Evidence inventory with mixed historical build dates; not a complete version 4 retest",
+  "totalMandatoryCriteria": 258,
+  "counts": {
+    "PASS": 48,
+    "NOT TESTED": 155,
+    "BLOCKED": 55
+  },
+  "verifiedAcceptanceRatePercent": 18.6,
+  "allCriteriaReexecuted": false,
+  "transcriptionPassed": 9,
+  "transcriptionTotal": 11
+}

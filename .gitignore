@@ -24,5 +24,7 @@ deliverables/amazon-submission/*.zip
 *.private.pem
 *.private.key
 **/.kotlin/
+**/.cxx/
 supabase/.temp/
 deliverables/reports/release-*/green/device-evidence/
+deliverables/reports/transcription-*/offline/device-evidence/

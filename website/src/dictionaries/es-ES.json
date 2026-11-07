@@ -99,15 +99,15 @@
     },
     "voice-transcription": {
       "title": "Añade palabras a tus recuerdos de voz",
-      "summary": "La transcripción automática no está configurada en esta versión de LifeTalea. Puedes grabar audio y editar transcripciones manualmente.",
+      "summary": "Crea un borrador de esta grabación en tu dispositivo. No se envía ningún audio. Elige el idioma hablado y confirma. La duración máxima es de diez minutos. El proceso puede ser lento; revisa el texto antes de guardarlo.",
       "sections": [
         {
           "title": "Qué puedes hacer ahora",
           "body": "Abre un recuerdo para escribir o pegar su transcripción. Los cambios se guardan localmente junto a la grabación original."
         },
         {
-          "title": "Qué falta antes del lanzamiento",
-          "body": "Hace falta un motor compatible y pruebas por idioma. LifeTalea no inventa transcripciones ni envía las grabaciones a un proveedor en la nube."
+          "title": "Revisar borrador",
+          "body": "La transcripción admite grabaciones de hasta diez minutos. Las más largas se conservan y puedes transcribirlas manualmente."
         },
         {
           "title": "Funciones distintas",
@@ -179,7 +179,7 @@
         },
         {
           "title": "Conoce los límites",
-          "body": "Las compras requieren Amazon. El reconocimiento de voz puede necesitar Internet. Esta versión no ofrece transcripción automática ni sincronización en la nube."
+          "body": "La función pulsar para hablar usa el servicio de voz del dispositivo, que puede necesitar Internet y procesar la voz fuera del dispositivo. Continúa solo si estás de acuerdo. LifeTalea no guarda el audio de los comandos. Actualmente, los comandos solo están disponibles en inglés. Crea un borrador de esta grabación en tu dispositivo. No se envía ningún audio. Elige el idioma hablado y confirma. La duración máxima es de diez minutos. El proceso puede ser lento; revisa el texto antes de guardarlo."
         },
         {
           "title": "Elige dónde guardar la copia",
@@ -259,7 +259,7 @@
         },
         {
           "title": "¿Puedo transcribir grabaciones?",
-          "body": "Esta versión no ofrece transcripción automática. Puedes añadir y editar una transcripción manualmente."
+          "body": "Crea un borrador de esta grabación en tu dispositivo. No se envía ningún audio. Elige el idioma hablado y confirma. La duración máxima es de diez minutos. El proceso puede ser lento; revisa el texto antes de guardarlo."
         },
         {
           "title": "¿LifeTalea sincroniza dispositivos?",

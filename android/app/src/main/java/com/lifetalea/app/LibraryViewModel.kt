@@ -24,6 +24,7 @@ class LibraryViewModel(app: Application) : AndroidViewModel(app) {
     val error = MutableStateFlow<String?>(null)
     val busy = MutableStateFlow(false)
     val recorder = StoryRecorder(app)
+    val transcriptionEngine: TranscriptionEngine by lazy { OfflineTranscription(app) }
     val billing = AmazonBilling(app)
     private var recordingMemoryId: String? = null
     init { recorder.onAutomaticStop = { stopRecording() } }

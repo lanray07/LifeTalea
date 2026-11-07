@@ -8,7 +8,7 @@ import zipfile
 from prepare_amazon_submission import OUT, ROOT, check_bundle, encoded, read, sha
 
 
-PACKAGE = OUT / 'LifeTalea-Amazon-review-update-2026-11-07.zip'
+PACKAGE = OUT / 'LifeTalea-Amazon-review-transcription-2026-11-07.zip'
 INDEX = OUT / 'review-update-index.json'
 
 
@@ -85,10 +85,22 @@ def main():
                  'docs/MASTER_PROMPT_RELEASE_REVIEW.md', 'docs/TEST_REPORT.md',
                  'docs/ARCHITECTURE.md', 'deliverables/DELIVERABLES_MANIFEST.csv'):
         add(path)
+    path = 'deliverables/reports/transcription-2026-11-07/checks.json'
+    transcription = read(path)
+    assert transcription['deviceSuite']['status'] == 'PASS'
+    add(path)
+    add(transcription['qaArchive']['path'], transcription['qaArchive']['sha256'])
+    add(transcription['candidate']['path'], transcription['candidate']['sha256'])
+    add(transcription['proof']['path'], transcription['proof']['sha256'])
+    for path in ('docs/AMAZON_TRANSCRIPTION_RELEASE_REVIEW_2026-11-07.md', 'docs/ON_DEVICE_TRANSCRIPTION.md',
+                 'docs/AMAZON_V4_REVIEWER_INSTRUCTIONS.txt', 'docs/AMAZON_V4_STORE_COPY_EN_US.md',
+                 'docs/PRIVACY_POLICY.md', 'docs/VOICE_COMPATIBILITY.md',
+                 'deliverables/reports/ACCEPTANCE_TEST_RESULTS.csv'):
+        add(path)
     entries['READ-ME-FIRST.txt'] = (
-        b'PUBLIC SUBMISSION BLOCKED. Read docs/AMAZON_RELEASE_REVIEW_2026-11-07.md.\n'
+        b'PUBLIC SUBMISSION BLOCKED. Read docs/AMAZON_TRANSCRIPTION_RELEASE_REVIEW_2026-11-07.md.\n'
         b'Version 3 is the public draft candidate and was tested through Amazon Test 1.\n'
-        b'Newer development QA is separate; it has not replaced the public candidate.\n'
+        b'Version 4 is a LOCAL unsigned candidate with on-device transcription; not Amazon-processed.\n'
         b'Historical archives retain their original evidence.\n'
     )
     entries['manifest.json'] = encoded({'releaseStatus': 'BLOCKED', 'files': [

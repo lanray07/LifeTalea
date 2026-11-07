@@ -99,15 +99,15 @@
     },
     "voice-transcription": {
       "title": "Ajoutez du texte à vos souvenirs audio",
-      "summary": "La transcription automatique n’est pas configurée dans cette version de LifeTalea. Vous pouvez enregistrer de l’audio et modifier une transcription manuellement.",
+      "summary": "Créez un brouillon à partir de cet enregistrement sur votre appareil. Aucun fichier audio n’est envoyé. Choisissez la langue parlée, puis confirmez. Durée maximale : dix minutes. Le traitement peut être lent ; vérifiez le texte avant de l’enregistrer.",
       "sections": [
         {
           "title": "Ce qui est disponible",
           "body": "Ouvrez un souvenir pour saisir ou coller sa transcription. Les corrections sont conservées sur l’appareil, à côté de l’enregistrement original."
         },
         {
-          "title": "Avant la sortie publique",
-          "body": "Un moteur compatible et des tests par langue sont encore nécessaires. LifeTalea n’invente pas de transcriptions et n’envoie pas les enregistrements à un fournisseur cloud."
+          "title": "Relire le brouillon",
+          "body": "La transcription est limitée à dix minutes. Les enregistrements plus longs sont conservés ; vous pouvez saisir leur transcription."
         },
         {
           "title": "Deux fonctions distinctes",
@@ -179,7 +179,7 @@
         },
         {
           "title": "Connaissez les limites",
-          "body": "Les achats nécessitent Amazon. La reconnaissance vocale peut demander Internet. La transcription automatique et la synchronisation cloud ne sont pas disponibles dans cette version."
+          "body": "Le mode appuyer pour parler utilise le service vocal de votre appareil. Ce service peut nécessiter Internet et traiter votre voix en dehors de l’appareil. Continuez uniquement si vous êtes d’accord. LifeTalea n’enregistre pas les commandes audio. Les commandes sont actuellement disponibles uniquement en anglais. Créez un brouillon à partir de cet enregistrement sur votre appareil. Aucun fichier audio n’est envoyé. Choisissez la langue parlée, puis confirmez. Durée maximale : dix minutes. Le traitement peut être lent ; vérifiez le texte avant de l’enregistrer."
         },
         {
           "title": "Choisissez votre sauvegarde",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Puis-je transcrire un enregistrement ?",
-          "body": "La transcription automatique n’est pas disponible dans cette version. Vous pouvez saisir et modifier une transcription manuellement."
+          "body": "Créez un brouillon à partir de cet enregistrement sur votre appareil. Aucun fichier audio n’est envoyé. Choisissez la langue parlée, puis confirmez. Durée maximale : dix minutes. Le traitement peut être lent ; vérifiez le texte avant de l’enregistrer."
         },
         {
           "title": "LifeTalea synchronise-t-il les appareils ?",

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "processChanged": true,
+  "correctedTranscriptPersisted": true,
+  "existingTranscriptPreserved": true,
+  "originalAudioUnchanged": true,
+  "debugApkSha256": "2d5bc7483c5cb055bddf6748f4880c10d0d52e9b7801548eb2c0b79870bc5ded",
+  "testApkSha256": "3a2bc29551b99dd9e3c3a41b5a4100d4b560b7a732ed1386c3c31a91058d1ba4"
+}

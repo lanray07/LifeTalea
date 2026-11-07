@@ -1,0 +1,77 @@
+Performing Streamed Install
+Success
+
+PHASE prepare
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionRestartTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.TranscriptionRestartTest:
+INSTRUMENTATION_STATUS: test=reviewedTranscriptSurvivesRestart
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionRestartTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=reviewedTranscriptSurvivesRestart
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 8.084
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+
+PHASE verify
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionRestartTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.TranscriptionRestartTest:
+INSTRUMENTATION_STATUS: test=reviewedTranscriptSurvivesRestart
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionRestartTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=reviewedTranscriptSurvivesRestart
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 0.492
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+
+PHASE errors
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.TranscriptionDeviceTest:
+INSTRUMENTATION_STATUS: test=silenceBadAudioLimitsAndMissingConsentNeverProduceInventedWords
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.TranscriptionDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=silenceBadAudioLimitsAndMissingConsentNeverProduceInventedWords
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 3.543
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1

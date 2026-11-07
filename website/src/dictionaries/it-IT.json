@@ -99,15 +99,15 @@
     },
     "voice-transcription": {
       "title": "Aggiungi parole ai ricordi audio",
-      "summary": "La trascrizione automatica non è configurata in questa versione di LifeTalea. Registrazioni e trascrizioni manuali sono disponibili.",
+      "summary": "Crea una bozza da questa registrazione sul tuo dispositivo. Nessun audio viene caricato. Scegli la lingua parlata e conferma. Sono supportate registrazioni fino a dieci minuti. L’elaborazione può essere lenta: controlla il testo prima di salvarlo.",
       "sections": [
         {
           "title": "Cosa puoi fare oggi",
           "body": "Apri un ricordo e digita o incolla la trascrizione. Le modifiche vengono conservate localmente accanto alla registrazione originale."
         },
         {
-          "title": "Prima del lancio",
-          "body": "Servono un motore compatibile e verifiche per lingua. LifeTalea non inventa trascrizioni e non invia le registrazioni a un fornitore cloud."
+          "title": "Rivedi la bozza",
+          "body": "La trascrizione supporta registrazioni fino a dieci minuti. Quelle più lunghe restano salvate e possono essere trascritte manualmente."
         },
         {
           "title": "Funzioni diverse",
@@ -179,7 +179,7 @@
         },
         {
           "title": "Conosci i limiti",
-          "body": "Gli acquisti richiedono Amazon. Il riconoscimento vocale può richiedere Internet. Trascrizione automatica e sincronizzazione cloud non sono disponibili."
+          "body": "La funzione premi per parlare usa il servizio vocale del dispositivo, che potrebbe richiedere Internet ed elaborare la voce al di fuori del dispositivo. Continua solo se acconsenti. LifeTalea non salva l’audio dei comandi. Al momento i comandi sono supportati solo in inglese. Crea una bozza da questa registrazione sul tuo dispositivo. Nessun audio viene caricato. Scegli la lingua parlata e conferma. Sono supportate registrazioni fino a dieci minuti. L’elaborazione può essere lenta: controlla il testo prima di salvarlo."
         },
         {
           "title": "Scegli dove salvare",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Posso trascrivere le registrazioni?",
-          "body": "La trascrizione automatica non è disponibile. Puoi aggiungere e modificare una trascrizione manualmente."
+          "body": "Crea una bozza da questa registrazione sul tuo dispositivo. Nessun audio viene caricato. Scegli la lingua parlata e conferma. Sono supportate registrazioni fino a dieci minuti. L’elaborazione può essere lenta: controlla il testo prima di salvarlo."
         },
         {
           "title": "LifeTalea sincronizza più dispositivi?",

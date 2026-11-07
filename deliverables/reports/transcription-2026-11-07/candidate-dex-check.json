@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "apkSha256": "d83967ef4f65acb0249688b438eeef616a7809271efeb6fde11df5e6f2de122b",
+  "productionEndpointInDex": true,
+  "publicSigningPinInDex": true
+}

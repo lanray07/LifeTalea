@@ -192,5 +192,13 @@
   "memory_count": {
     "one": "%1$d Erinnerung",
     "other": "%1$d Erinnerungen"
-  }
+  },
+  "transcription_notice": "Erstelle auf deinem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wähle die gesprochene Sprache und bestätige. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfe den Text vor dem Speichern.",
+  "transcription_working": "Wird auf deinem Gerät transkribiert…",
+  "transcription_failed": "Diese Aufnahme konnte nicht transkribiert werden. Versuche es erneut oder gib den Text selbst ein.",
+  "transcription_empty": "Keine deutliche Sprache erkannt. Versuche eine klarere Aufnahme oder gib den Text selbst ein.",
+  "transcription_review": "Textentwurf prüfen",
+  "transcription_apply": "An gespeichertes Transkript anhängen",
+  "transcription_limit": "Die Transkription unterstützt Aufnahmen bis zu zehn Minuten. Längere Aufnahmen bleiben erhalten und können manuell transkribiert werden.",
+  "transcription_consent_required": "Bestätige die Verarbeitung auf deinem Gerät, bevor du die Transkription startest."
 }

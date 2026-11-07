@@ -195,4 +195,12 @@
 <item quantity="many">%1$d wspomnień</item>
 <item quantity="other">%1$d wspomnienia</item>
 </plurals>
+<string name="transcription_notice">Utwórz szkic tekstu z tego nagrania na swoim urządzeniu. Dźwięk nie jest wysyłany. Wybierz język nagrania i potwierdź. Obsługiwane są nagrania do dziesięciu minut. Przetwarzanie może potrwać; sprawdź tekst przed zapisaniem.</string>
+<string name="transcription_working">Transkrypcja na urządzeniu…</string>
+<string name="transcription_failed">Nie udało się wykonać transkrypcji. Spróbuj ponownie lub wpisz tekst samodzielnie.</string>
+<string name="transcription_empty">Nie wykryto wyraźnej mowy. Spróbuj użyć wyraźniejszego nagrania lub wpisz tekst.</string>
+<string name="transcription_review">Sprawdź szkic transkrypcji</string>
+<string name="transcription_apply">Dodaj do zapisanej transkrypcji</string>
+<string name="transcription_limit">Transkrypcja obsługuje nagrania do dziesięciu minut. Dłuższe nagrania pozostają zapisane i można je przepisać ręcznie.</string>
+<string name="transcription_consent_required">Potwierdź przetwarzanie na urządzeniu przed rozpoczęciem transkrypcji.</string>
 </resources>

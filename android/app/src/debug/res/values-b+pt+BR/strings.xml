@@ -193,4 +193,12 @@
 <item quantity="one">%1$d memória</item>
 <item quantity="other">%1$d memórias</item>
 </plurals>
+<string name="transcription_notice">Crie um rascunho desta gravação no seu dispositivo. Nenhum áudio é enviado. Escolha o idioma falado e confirme. São aceitas gravações de até dez minutos. O processamento pode ser lento; revise o texto antes de salvar.</string>
+<string name="transcription_working">Transcrevendo no dispositivo…</string>
+<string name="transcription_failed">Não foi possível transcrever esta gravação. Tente novamente ou digite o texto.</string>
+<string name="transcription_empty">Não foi detectada fala clara. Tente uma gravação mais nítida ou digite o texto.</string>
+<string name="transcription_review">Revisar rascunho</string>
+<string name="transcription_apply">Adicionar à transcrição salva</string>
+<string name="transcription_limit">A transcrição aceita gravações de até dez minutos. Gravações mais longas são preservadas e podem ser transcritas manualmente.</string>
+<string name="transcription_consent_required">Confirme o processamento no dispositivo antes de iniciar a transcrição.</string>
 </resources>

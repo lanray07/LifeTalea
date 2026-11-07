@@ -99,15 +99,15 @@
     },
     "voice-transcription": {
       "title": "Ein geschriebener Begleiter zur Aufnahme",
-      "summary": "Automatische Transkription ist in dieser LifeTalea-Version nicht eingerichtet. Audioaufnahmen und manuelle Transkripte sind möglich.",
+      "summary": "Erstelle auf deinem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wähle die gesprochene Sprache und bestätige. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfe den Text vor dem Speichern.",
       "sections": [
         {
           "title": "Heute verfügbar",
           "body": "Öffnen Sie eine Erinnerung und schreiben oder kopieren Sie das Transkript in das Textfeld. Änderungen bleiben lokal bei der Originalaufnahme."
         },
         {
-          "title": "Vor der Veröffentlichung",
-          "body": "Ein kompatibler Dienst und Sprachtests fehlen noch. LifeTalea erfindet keine Transkripte und sendet Aufnahmen nicht an einen Cloud-Anbieter."
+          "title": "Textentwurf prüfen",
+          "body": "Die Transkription unterstützt Aufnahmen bis zu zehn Minuten. Längere Aufnahmen bleiben erhalten und können manuell transkribiert werden."
         },
         {
           "title": "Unterschiedliche Funktionen",
@@ -179,7 +179,7 @@
         },
         {
           "title": "Die Grenzen kennen",
-          "body": "Käufe benötigen Amazon. Spracherkennung kann Internet benötigen. Automatische Transkription und Cloud-Synchronisierung sind nicht verfügbar."
+          "body": "Zum Sprechen gedrückt halten verwendet den Sprachdienst deines Geräts. Dieser kann Internet benötigen und Sprache außerhalb des Geräts verarbeiten. Fahre nur fort, wenn du damit einverstanden bist. LifeTalea speichert keine Audiobefehle. Sprachbefehle werden derzeit nur auf Englisch unterstützt. Erstelle auf deinem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wähle die gesprochene Sprache und bestätige. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfe den Text vor dem Speichern."
         },
         {
           "title": "Sicherung selbst wählen",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Kann ich Aufnahmen transkribieren?",
-          "body": "Automatische Transkription ist derzeit nicht verfügbar. Transkripte können manuell eingegeben und bearbeitet werden."
+          "body": "Erstelle auf deinem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wähle die gesprochene Sprache und bestätige. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfe den Text vor dem Speichern."
         },
         {
           "title": "Synchronisiert LifeTalea mehrere Geräte?",

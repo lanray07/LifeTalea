@@ -193,4 +193,12 @@
 <item quantity="one">%1$d minne</item>
 <item quantity="other">%1$d minnen</item>
 </plurals>
+<string name="transcription_notice">Skapa ett textutkast från inspelningen på din enhet. Inget ljud laddas upp. Välj det talade språket och bekräfta. Inspelningar på högst tio minuter stöds. Bearbetningen kan ta tid; kontrollera texten innan du sparar.</string>
+<string name="transcription_working">Transkriberar på din enhet…</string>
+<string name="transcription_failed">Det gick inte att transkribera inspelningen. Försök igen eller skriv in texten själv.</string>
+<string name="transcription_empty">Inget tydligt tal hittades. Prova en tydligare inspelning eller skriv in texten själv.</string>
+<string name="transcription_review">Granska textutkastet</string>
+<string name="transcription_apply">Lägg till i sparad transkription</string>
+<string name="transcription_limit">Inspelningar på högst tio minuter kan transkriberas. Längre inspelningar finns kvar och kan skrivas av manuellt.</string>
+<string name="transcription_consent_required">Bekräfta bearbetning på din enhet innan transkriptionen startar.</string>
 </resources>

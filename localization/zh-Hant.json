@@ -191,5 +191,13 @@
   "search_year_hint": "請輸入YYYY；留空可顯示所有年份",
   "memory_count": {
     "other": "%1$d 則回憶"
-  }
+  },
+  "transcription_notice": "在裝置上根據此錄音生成文字草稿。不會上傳任何音訊。請選擇錄音中使用的語言，然後確認。支持最長十分鐘的錄音。處理可能較慢，保存前請檢查文字是否有誤。",
+  "transcription_working": "正在裝置上轉寫…",
+  "transcription_failed": "無法轉寫此錄音。請重試或手動輸入文字。",
+  "transcription_empty": "未檢測到清晰的語音。請使用更清晰的錄音或手動輸入文字。",
+  "transcription_review": "檢查轉寫草稿",
+  "transcription_apply": "追加到已保存的轉寫文字",
+  "transcription_limit": "轉寫支持最長十分鐘的錄音。更長的錄音仍會安全保留，您可以手動輸入轉寫文字。",
+  "transcription_consent_required": "開始轉寫前，請確認在裝置上處理錄音。"
 }

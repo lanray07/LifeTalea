@@ -192,5 +192,13 @@
   "memory_count": {
     "one": "%1$d memória",
     "other": "%1$d memórias"
-  }
+  },
+  "transcription_notice": "Crie um rascunho desta gravação no seu dispositivo. Nenhum áudio é enviado. Escolha o idioma falado e confirme. São aceites gravações de até dez minutos. O processamento pode ser lento; reveja o texto antes de guardar.",
+  "transcription_working": "A transcrever no dispositivo…",
+  "transcription_failed": "Não foi possível transcrever esta gravação. Tente novamente ou escreva o texto.",
+  "transcription_empty": "Não foi detectada fala clara. Tente uma gravação mais nítida ou escreva o texto.",
+  "transcription_review": "Rever rascunho",
+  "transcription_apply": "Adicionar à transcrição guardada",
+  "transcription_limit": "A transcrição aceita gravações de até dez minutos. Gravações mais longas são preservadas e podem ser transcritas manualmente.",
+  "transcription_consent_required": "Confirme o processamento no dispositivo antes de iniciar a transcrição."
 }
