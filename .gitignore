@@ -25,3 +25,4 @@ deliverables/amazon-submission/*.zip
 *.private.key
 **/.kotlin/
 supabase/.temp/
+deliverables/reports/release-*/green/device-evidence/

@@ -52,6 +52,7 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
     var albumDialog by remember { mutableStateOf<Album?>(null) }
     var albumName by rememberSaveable { mutableStateOf("") }
     var query by rememberSaveable { mutableStateOf("") }
+    var draftStory by rememberSaveable { mutableStateOf("") }
     var year by rememberSaveable { mutableStateOf("") }
     var albumFilter by rememberSaveable { mutableStateOf<String?>(null) }
     var favourites by rememberSaveable { mutableStateOf(false) }
@@ -66,7 +67,7 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
     fun message(key: String) { vm.error.value = key }
     fun newMemory(story: String = "") {
         if (recording.active) { message("finish_recording"); return }
-        selected = java.util.UUID.randomUUID().toString(); query = story; screen = "editor"
+        selected = java.util.UUID.randomUUID().toString(); draftStory = story; screen = "editor"
     }
     fun openMemory(id: String) { if (recording.active) { message("finish_recording"); return }; selected = id; screen = "detail" }
     fun navigate(next: String) { if (recording.active) { message("finish_recording"); return }; selected = null; bookId = null; screen = next }
@@ -156,7 +157,7 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
                     Box(Modifier.weight(1f).fillMaxWidth()) {
                         val memory = memories.find { it.id == selected }
                         when (screen) {
-                            "editor" -> MemoryEditor(vm, memory ?: Memory(id = selected ?: java.util.UUID.randomUUID().toString(), story = query), links.filter { it.memoryId == selected }.map { it.albumId }.toSet(), albums, onCancel = { screen = if (memory == null) "memories" else "detail" }, onSaved = { query = ""; screen = "detail" })
+                            "editor" -> MemoryEditor(vm, memory ?: Memory(id = selected ?: java.util.UUID.randomUUID().toString(), story = draftStory), links.filter { it.memoryId == selected }.map { it.albumId }.toSet(), albums, onCancel = { draftStory = ""; screen = if (memory == null) "memories" else "detail" }, onSaved = { draftStory = ""; query = ""; screen = "detail" })
                             "detail" -> memory?.let { m -> MemoryDetail(vm, m, media.filter { it.memoryId == m.id }, onBack = { navigate("memories") }, onEdit = { screen = "editor" }, onRecord = { record() }, onDelete = { deletion = "delete_memory" to { vm.run { vm.repo.removeMemory(m.id); navigate("memories") } } }, onRead = { assistant.speak(m.story, locale) { message("tts_unavailable") } }, onStopRead = { assistant.stop() }, onRemoveAttachment = { a -> deletion = "delete_attachment" to { vm.run { vm.repo.removeMedia(a) } } }) }
                             "albums" -> LazyColumn(Modifier.fillMaxSize().padding(horizontal = 24.dp), verticalArrangement = Arrangement.spacedBy(16.dp), contentPadding = PaddingValues(bottom = 32.dp)) {
                                 item { Heading(tr("albums"), tr("no_albums")); Button(onClick = { if (albums.size >= 3 && !vm.billing.state.value.premium) { showPremium = true; message("album_limit") } else { albumDialog = Album(title = ""); albumName = "" } }) { Icon(Icons.Outlined.Add, null); Text(tr("new_album")) } }

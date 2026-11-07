@@ -1,7 +1,7 @@
 Deliverable ID,Deliverable name,File path,Status,Verification method,Evidence path,Remaining blocker
-D01,Android source,android/app/src,IMPLEMENTED,Gradle and device tests,deliverables/android/build-logs/build-tested.log,Some release gates remain
-D02,Build artifacts,deliverables/android/artifacts.json,VERIFIED,Build log / hashes,deliverables/android/build-logs/build-tested.log,Production signing pending
-D03,Functional application,android/app/src/main/java,PARTIALLY_VERIFIED,Instrumented journeys,deliverables/android/build-logs/instrumentation.log,Remaining acceptance checks
+D01,Android source,android/app/src,IMPLEMENTED,Gradle and device tests,deliverables/reports/release-2026-11-07/checks.json,Some release gates remain
+D02,Build artifacts,deliverables/amazon-submission/review-update-index.json,PARTIALLY_VERIFIED,Build log / hashes,deliverables/reports/release-2026-11-07/checks.json,New development QA is separate from public v3; final configured candidate and Amazon update verification pending
+D03,Functional application,android/app/src/main/java,PARTIALLY_VERIFIED,Instrumented journeys,deliverables/reports/release-2026-11-07/checks.json,Remaining acceptance checks
 D04,Voice and transcription,docs/VOICE_COMPATIBILITY.md,PARTIAL,Device diagnostic,deliverables/reports/VOICE_TEST_REPORT.md,Transcription engine and multilingual speech tests
 D05,Localisation,localization,BLOCKED,Strict coverage validator,deliverables/localization/coverage.json,22 structurally complete draft locales and zero native approvals
 D06,Localised screenshots,deliverables/store-assets/manifests/required-screenshots.csv,BLOCKED,Manifest and capture provenance validation,deliverables/store-assets/screenshots/localized-drafts/provenance.json,Refresh for release candidate and complete native and visual review
@@ -10,7 +10,7 @@ D08,Amazon listing,docs/AMAZON_PUBLIC_STORE_COPY_EN_US.md,DRAFT,Public draft rev
 D09,Marketing website,website,ENGLISH_PREVIEW,Production build / browser / links,deliverables/reports/website-checks.json,Localisation / final domain / deployment
 D10,Amazon billing,android/app/src/main/java/com/lifetalea/app/billing,PARTIALLY_VERIFIED,Amazon Test 1 and signed receipt tests,deliverables/reports/amazon-lat-v3-device-verification.json,Public item and remaining recovery and account tests
 D11,Privacy and backup,docs/BACKUP_AND_RESTORE.md,PARTIALLY_VERIFIED,Small-fixture tests,deliverables/reports/BACKUP_RESTORE_TEST_REPORT.md,Large-library/crash/security review
-D12,Tests,deliverables/reports/junit,PARTIALLY_VERIFIED,Executed logs and XML,docs/TEST_REPORT.md,Remaining device/provider scenarios
+D12,Tests,deliverables/reports/junit,PARTIALLY_VERIFIED,"Current build, Kotlin, verifier, physical and collateral checks",deliverables/reports/release-2026-11-07/checks.json,"Remaining master-prompt device, provider, security and review gates"
 D13,Fire compatibility,deliverables/reports/FIRE_DEVICE_COMPATIBILITY.md,PARTIAL,Two Fire HD 10 tablets with Test 1,deliverables/reports/amazon-lat-v3-device-verification.json,Broader Fire models and accessibility and performance matrix
 D14,Documentation,docs,IMPLEMENTED,File inventory,README.md,Update as gates are completed
-D15,Deliverables manifest,deliverables/DELIVERABLES_MANIFEST.csv,IMPLEMENTED,Generated current inventory,scripts/collect_reports.py,Never interpret inventory as release approval
+D15,Deliverables manifest,deliverables/DELIVERABLES_MANIFEST.csv,IMPLEMENTED,Dated evidence inventory,docs/AMAZON_RELEASE_REVIEW_2026-11-07.md,Never interpret inventory as release approval

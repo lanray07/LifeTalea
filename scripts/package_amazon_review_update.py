@@ -8,7 +8,7 @@ import zipfile
 from prepare_amazon_submission import OUT, ROOT, check_bundle, encoded, read, sha
 
 
-PACKAGE = OUT / 'LifeTalea-Amazon-review-update-2026-11-05.zip'
+PACKAGE = OUT / 'LifeTalea-Amazon-review-update-2026-11-07.zip'
 INDEX = OUT / 'review-update-index.json'
 
 
@@ -73,9 +73,22 @@ def main():
                  'deliverables/reports/amazon-public-v3-draft-saved.png',
                  'deliverables/reports/amazon-supabase-deployment.json'):
         add(path)
+    current_path = 'deliverables/reports/release-2026-11-07/checks.json'
+    current = read(current_path)
+    assert current['releaseStatus'] == 'BLOCKED'
+    assert current['deviceSuite']['status'] == 'PASS'
+    add(current_path)
+    add(current['qaArchive']['path'], current['qaArchive']['sha256'])
+    for evidence in current['walkthroughEvidence']:
+        add(evidence['path'], evidence['sha256'])
+    for path in ('docs/AMAZON_RELEASE_REVIEW_2026-11-07.md',
+                 'docs/MASTER_PROMPT_RELEASE_REVIEW.md', 'docs/TEST_REPORT.md',
+                 'docs/ARCHITECTURE.md', 'deliverables/DELIVERABLES_MANIFEST.csv'):
+        add(path)
     entries['READ-ME-FIRST.txt'] = (
-        b'PUBLIC SUBMISSION BLOCKED. Read docs/AMAZON_RELEASE_REVIEW_2026-11-05.md.\n'
+        b'PUBLIC SUBMISSION BLOCKED. Read docs/AMAZON_RELEASE_REVIEW_2026-11-07.md.\n'
         b'Version 3 is the public draft candidate and was tested through Amazon Test 1.\n'
+        b'Newer development QA is separate; it has not replaced the public candidate.\n'
         b'Historical archives retain their original evidence.\n'
     )
     entries['manifest.json'] = encoded({'releaseStatus': 'BLOCKED', 'files': [

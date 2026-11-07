@@ -1,0 +1,25 @@
+{
+  "executedAt": "2026-11-07T13:51:02.186127+00:00",
+  "status": "FAIL",
+  "debugApkSha256": "3755af95f5c3b818ab51180214c55f44f4a9f69fef0438ce44cc1dbe74be5b18",
+  "testApkSha256": "fbed66c7e5ef0cb20db0b6ddd997c0cdb0f662218369647c379c3373367cbf10",
+  "evidenceFiles": 1,
+  "qaPowerSettings": {
+    "originalStayAwakeWhilePluggedIn": "7",
+    "restored": true
+  },
+  "qaRotationSettings": {
+    "original": {
+      "accelerometer_rotation": "1",
+      "user_rotation": "0"
+    },
+    "restored": true
+  },
+  "evidence": [
+    {
+      "path": "deliverables/reports/release-2026-11-07/red/device-evidence/screenshots/en-GB/qa-last-state.png",
+      "sha256": "26bac8d4c333da30754cbdfec1294a4a6f18f53ed1dbf337724fe1204867ef21"
+    }
+  ],
+  "testSelection": "com.lifetalea.app.JourneyTest#promptedDraftKeepsLibrarySearchSeparate"
+}

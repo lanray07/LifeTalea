@@ -6,8 +6,6 @@ import subprocess
 def awake_device(adb):
     def shell(*args):
         return subprocess.check_output([str(adb),'shell',*args],text=True,encoding='utf-8',errors='replace',timeout=30).strip()
-    shell('input','keyevent','KEYCODE_WAKEUP')
-    shell('wm','dismiss-keyguard')
     if 'isStatusBarKeyguard=true' in shell('dumpsys','window','policy'):
         raise RuntimeError('Unlock the connected QA tablet on the device, then rerun. Never send or script its PIN.')
     original=shell('settings','get','global','stay_on_while_plugged_in')

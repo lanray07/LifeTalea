@@ -1,5 +1,11 @@
 # Release readiness — BLOCKED
 
+Current update, 7 November 2026: debug, unsigned release and instrumentation builds succeeded; all 21 Kotlin unit tests and all 23 verifier tests passed. Lint has zero errors and 258 warnings. Locale structure checks cover 191 keys and 22 complete drafts with zero native approvals. Six website review-gate cases and static-export regression passed. The search/draft defect was reproduced before its fix. Current physical results, APK identities and the development QA archive are recorded in `deliverables/reports/release-2026-11-07/checks.json`. The public Amazon draft remains version 3, and its Test 1 release remains in progress. No new payment or public submission was made. See `AMAZON_RELEASE_REVIEW_2026-11-07.md` for remaining gates.
+
+The current physical suite passed all 18 tests in 189.875 seconds with 189 evidence files. Power and rotation settings were restored and Amazon SDK mode remained unchanged. This debug suite does not establish public-channel billing behavior.
+
+The following section is retained as historical 4 November evidence; its remaining-test list is superseded by the dated reviews.
+
 Updated 4 November 2026. Current device and collateral checks passed. The original acceptance requirements remain in scope.
 
 The Supabase production verifier is deployed with server-only credentials and its own RSA signing identity. HTTPS health and a signed rejection of synthetic invalid receipt identifiers passed. Separately, one Amazon-distributed LAT purchase activated Premium through the signed verification path; this is not a public retail launch test. See AMAZON_SUPABASE_DEPLOYMENT.md and amazon-supabase-deployment.json.

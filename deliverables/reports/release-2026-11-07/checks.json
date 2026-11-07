@@ -1,0 +1,94 @@
+{
+  "recordedAt": "2026-11-07T14:00:54.109167+00:00",
+  "releaseStatus": "BLOCKED",
+  "scope": "Development source checks; public Amazon version 3 remains unchanged",
+  "deviceSuite": {
+    "status": "PASS",
+    "tests": 18,
+    "device": "Fire HD 10 (2021), API 28",
+    "report": "deliverables/reports/release-2026-11-07/green/device-test-run.json"
+  },
+  "unitTests": {
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 258,
+    "Information": 0
+  },
+  "verifierTests": {
+    "passed": 23,
+    "failed": 0
+  },
+  "collateralChecks": {
+    "localeKeys": 191,
+    "completeDraftLocales": 22,
+    "releaseApprovedLocales": 0,
+    "websiteReviewGateCasesPassed": 6,
+    "staticExportRegression": "PASS"
+  },
+  "regression": {
+    "beforeFix": "FAIL: prompted draft replaced orchard search",
+    "afterFix": "PASS",
+    "coverage": [
+      "Cancel",
+      "direct navigation to Memories",
+      "next blank draft"
+    ]
+  },
+  "debugApkSha256": "c8844216cb58d9dffb4f3088c8b35a668bfff48acfb7b26f9ab7cb64d13df6d4",
+  "testApkSha256": "f8701995f1e038880911d4202c578a46845b1ac72e90871b96f5d7703f4cfc46",
+  "qaArchive": {
+    "path": "deliverables/amazon-submission/LifeTalea-development-Fire-QA-2026-11-07.zip",
+    "sha256": "fe5a004cf7a0a88ccd92ea884680f5f3a833f35962d4104a88f6faebe2055181",
+    "bytes": 39737239,
+    "entriesVerified": 213
+  },
+  "walkthroughEvidence": [
+    {
+      "path": "deliverables/reports/device-evidence/master-prompt/personalized-prompt.png",
+      "sha256": "66b8556282f5b07c449adb520bd1772b913216412409176e7e01ac8f525de0e9",
+      "capturedDate": "2026-11-05"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/master-prompt/prefilled-editor.png",
+      "sha256": "58d5044226a762bcfd798180495d3adb8615534fddaef2b3af9c1203419980b7",
+      "capturedDate": "2026-11-05"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/master-prompt/prompt-cancel-search-preserved-2026-11-07.png",
+      "sha256": "5598ed5b063ceae8396c9d216458ab4011af179bcd61830818876733b878e300",
+      "capturedDate": "2026-11-07"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/master-prompt/prompt-navigation-search-preserved-2026-11-07.png",
+      "sha256": "d667b72de2e4c08d7924097768c0ddf950c31450bcd4c482d4e7dd4d63a06b87",
+      "capturedDate": "2026-11-07"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/master-prompt/purpose-selected.png",
+      "sha256": "a04c4380f26beb9cd8bbb6f25ae429d208e718d0d4ab6cebe569b1b5173c15f0",
+      "capturedDate": "2026-11-05"
+    },
+    {
+      "path": "deliverables/reports/device-evidence/master-prompt/typed-year-filter.png",
+      "sha256": "2aa609cee7ccfec1fbbfb67ddd035b350547b9ce9c8fc5da9f9062f90c79a99e",
+      "capturedDate": "2026-11-05"
+    }
+  ],
+  "amazonConsoleObserved": {
+    "date": "2026-11-07",
+    "test1": "v3 Test in-progress",
+    "publicDraft": "v3 Ready to Submit; not submitted"
+  },
+  "limitations": [
+    "No new Amazon purchase or public-channel test",
+    "No automatic transcription engine",
+    "No native locale approvals",
+    "Remaining master-prompt product, security, privacy and device gates"
+  ]
+}

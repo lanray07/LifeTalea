@@ -1,0 +1,110 @@
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+Reset dedicated debug QA fixtures only:
+Success
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.JourneyTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.lifetalea.app.JourneyTest:
+INSTRUMENTATION_STATUS: test=promptedDraftKeepsLibrarySearchSeparate
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.lifetalea.app.JourneyTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'orchard' (ignoreCase: false))
+Semantics of the node:
+Node #231 at (l=360.0, t=723.0, r=1872.0, b=819.0)px
+ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+EditableText = 'What childhood memory still makes you smile?
+
+'
+Focused = 'false'
+ImeAction = 'Default'
+InputText = 'What childhood memory still makes you smile?
+
+'
+IsEditable = 'true'
+Text = '[Search stories, tags, transcripts…]'
+TextSelectionRange = 'TextRange(0, 0)'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, InsertTextAtCursor, OnAutofillText, OnClick, OnLongClick, PasteText, PerformImeAction, RequestFocus, SetSelection, SetText, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+Has 5 siblings
+Selector used: (Text + InputText + EditableText contains 'Search stories, tags, transcripts…' (ignoreCase: false))
+
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:260)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:250)
+	at androidx.compose.ui.test.AssertionsKt.assertTextContains(Assertions.kt:204)
+	at androidx.compose.ui.test.AssertionsKt.assertTextContains$default(Assertions.kt:200)
+	at com.lifetalea.app.JourneyTest.promptedDraftKeepsLibrarySearchSeparate(JourneyTest.kt:46)
+
+INSTRUMENTATION_STATUS: stream=
+Error in promptedDraftKeepsLibrarySearchSeparate(com.lifetalea.app.JourneyTest):
+java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'orchard' (ignoreCase: false))
+Semantics of the node:
+Node #231 at (l=360.0, t=723.0, r=1872.0, b=819.0)px
+ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+EditableText = 'What childhood memory still makes you smile?
+
+'
+Focused = 'false'
+ImeAction = 'Default'
+InputText = 'What childhood memory still makes you smile?
+
+'
+IsEditable = 'true'
+Text = '[Search stories, tags, transcripts…]'
+TextSelectionRange = 'TextRange(0, 0)'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, InsertTextAtCursor, OnAutofillText, OnClick, OnLongClick, PasteText, PerformImeAction, RequestFocus, SetSelection, SetText, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+Has 5 siblings
+Selector used: (Text + InputText + EditableText contains 'Search stories, tags, transcripts…' (ignoreCase: false))
+
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:260)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:250)
+	at androidx.compose.ui.test.AssertionsKt.assertTextContains(Assertions.kt:204)
+	at androidx.compose.ui.test.AssertionsKt.assertTextContains$default(Assertions.kt:200)
+	at com.lifetalea.app.JourneyTest.promptedDraftKeepsLibrarySearchSeparate(JourneyTest.kt:46)
+
+INSTRUMENTATION_STATUS: test=promptedDraftKeepsLibrarySearchSeparate
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 8.719
+There was 1 failure:
+1) promptedDraftKeepsLibrarySearchSeparate(com.lifetalea.app.JourneyTest)
+java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'orchard' (ignoreCase: false))
+Semantics of the node:
+Node #231 at (l=360.0, t=723.0, r=1872.0, b=819.0)px
+ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+EditableText = 'What childhood memory still makes you smile?
+
+'
+Focused = 'false'
+ImeAction = 'Default'
+InputText = 'What childhood memory still makes you smile?
+
+'
+IsEditable = 'true'
+Text = '[Search stories, tags, transcripts…]'
+TextSelectionRange = 'TextRange(0, 0)'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, InsertTextAtCursor, OnAutofillText, OnClick, OnLongClick, PasteText, PerformImeAction, RequestFocus, SetSelection, SetText, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+Has 5 siblings
+Selector used: (Text + InputText + EditableText contains 'Search stories, tags, transcripts…' (ignoreCase: false))
+
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:260)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:250)
+	at androidx.compose.ui.test.AssertionsKt.assertTextContains(Assertions.kt:204)
+	at androidx.compose.ui.test.AssertionsKt.assertTextContains$default(Assertions.kt:200)
+	at com.lifetalea.app.JourneyTest.promptedDraftKeepsLibrarySearchSeparate(JourneyTest.kt:46)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

@@ -4,6 +4,7 @@ import android.graphics.Bitmap
 import androidx.compose.ui.graphics.asAndroidBitmap
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import org.junit.Rule
@@ -22,6 +23,40 @@ class JourneyTest {
         compose.onRoot().captureToImage().asAndroidBitmap().let { image -> File(folder, "$name.png").outputStream().use { image.compress(Bitmap.CompressFormat.PNG, 100, it) } }
     }
     @After fun captureFinalState() { runCatching { capture("qa-last-state") } }
+    @Test fun promptedDraftKeepsLibrarySearchSeparate() {
+        compose.waitUntil(20000) { runCatching {
+            compose.onAllNodesWithText("Skip for now").fetchSemanticsNodes().isNotEmpty() ||
+                compose.onAllNodesWithText("Add a memory").fetchSemanticsNodes().isNotEmpty()
+        }.getOrDefault(false) }
+        if (compose.onAllNodesWithText("Skip for now").fetchSemanticsNodes().isNotEmpty())
+            compose.onNodeWithText("Skip for now").performScrollTo().performClick()
+        compose.waitUntil(15000) { compose.onAllNodesWithText("Add a memory").fetchSemanticsNodes().isNotEmpty() }
+        val search = "Search stories, tags, transcripts…"
+        compose.onNodeWithText(search).performTextInput("orchard")
+        compose.runOnIdle {
+            (compose.activity.getSystemService(android.content.Context.INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager)
+                .hideSoftInputFromWindow(compose.activity.window.decorView.windowToken, 0)
+        }
+        compose.onNode(hasScrollToIndexAction()).performScrollToNode(hasText("Tell this story"))
+        compose.onNodeWithText("Tell this story").performClick()
+        org.junit.Assert.assertTrue("A prompted draft must contain the story question",
+            compose.onNodeWithText("Your story").fetchSemanticsNode().config[SemanticsProperties.EditableText].text.isNotBlank())
+        compose.onNodeWithText("Cancel").performScrollTo().performClick()
+        compose.onNode(hasScrollToIndexAction()).performScrollToNode(hasText(search))
+        compose.onNodeWithText(search).assertTextContains("orchard")
+        capture("prompt-cancel-search-preserved")
+        compose.onNode(hasScrollToIndexAction()).performScrollToNode(hasText("Tell this story"))
+        compose.onNodeWithText("Tell this story").performClick()
+        compose.onNodeWithText("Memories", useUnmergedTree = true).performClick()
+        compose.onNode(hasScrollToIndexAction()).performScrollToNode(hasText(search))
+        compose.onNodeWithText(search).assertTextContains("orchard")
+        capture("prompt-navigation-search-preserved")
+        compose.onNodeWithText(search).performTextClearance()
+        compose.onNode(hasScrollToIndexAction()).performScrollToNode(hasText("Add a memory"))
+        compose.onNodeWithText("Add a memory").performClick()
+        compose.onNodeWithText("Your story").assertTextEquals("Your story", "")
+        compose.onNodeWithText("Cancel").performScrollTo().performClick()
+    }
     @Test fun writeFindEditAndOrganiseAFictionalStory() {
         compose.waitUntil(20000) { runCatching { compose.onRoot().fetchSemanticsNode() }.isSuccess }
         compose.waitUntil(20000) { runCatching { compose.onAllNodesWithText("Skip for now").fetchSemanticsNodes().isNotEmpty() || compose.onAllNodesWithText("Add a memory").fetchSemanticsNodes().isNotEmpty() }.getOrDefault(false) }

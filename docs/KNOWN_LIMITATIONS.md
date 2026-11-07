@@ -2,6 +2,8 @@
 
 This is a development build. Release readiness is BLOCKED independently of whether a source component compiles.
 
+Latest evidence: `AMAZON_RELEASE_REVIEW_2026-11-07.md` and `deliverables/reports/release-2026-11-07/checks.json`. The new search/draft fix has development-build evidence separate from the existing Amazon version 3 upload; it is not yet a new Amazon-distributed candidate.
+
 - Automatic recorded-file transcription has an unavailable adapter only. It needs a real engine, consent/status/retry workflow and tested languages.
 - App, website and store drafts cover 22 locales. All 191 app keys pass structural validation. An authored editorial pass corrected app wording, rewrote the complete non-English article set and aligned store copy; native approval remains absent. Draft app resources are debug-only. Landscape tablet screenshots exist; other device sizes, native review and full visual/accessibility checks remain incomplete. See TRANSLATION_POLISH.md for current checks.
 - English voice commands accept an album name or a year and clear unrelated filters when opening that view. Other command dictionaries are pending. Recognition and spoken playback depend on installed services and require locale-specific tests. Audio seek, focus interruptions, permission denial and long recordings need broader tests.
