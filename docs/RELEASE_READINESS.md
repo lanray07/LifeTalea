@@ -1,5 +1,11 @@
 # Release readiness — BLOCKED
 
+Current public draft: verified version 4, revised English copy and transcription reviewer instructions saved and read back on 10 November. Not submitted.
+
+10 November: version 4 is live on Amazon Test 1 and installed through the Appstore over version 3. The Amazon signing identity, all DEX files, both native transcription libraries and model were verified. Fictional English processing/review/edit/append, invalid-audio/manual fallback, reset-account restore and unpaid purchase cancellation passed. Only the three owner-approved QA packages were removed to free space; the regular app was retained. See AMAZON_RELEASE_REVIEW_2026-11-10.md. Public submission remains blocked by the remaining release gates.
+
+Earlier reports below retain their dates and scope.
+
 Updated 4 November 2026. Current device and collateral checks passed. The original acceptance requirements remain in scope.
 
 The Supabase production verifier is deployed with server-only credentials and its own RSA signing identity. HTTPS health and a signed rejection of synthetic invalid receipt identifiers passed. Separately, one Amazon-distributed LAT purchase activated Premium through the signed verification path; this is not a public retail launch test. See AMAZON_SUPABASE_DEPLOYMENT.md and amazon-supabase-deployment.json.

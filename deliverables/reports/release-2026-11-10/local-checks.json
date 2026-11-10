@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-10",
+  "pythonUnitTests": {
+    "passed": 16,
+    "failed": 0,
+    "warning": "ResourceWarning in existing screenshot validator"
+  },
+  "collateralValidation": {
+    "status": "PASS",
+    "locales": 22,
+    "errors": 0
+  },
+  "localeValidation": {
+    "status": "PASS",
+    "keys": 199,
+    "locales": 22,
+    "releaseApproved": 0
+  },
+  "changeScope": "Distribution verification, report metadata, public draft copy and package scripts; no Android binary rebuilt",
+  "deviceChecks": "v4-device-checks.json",
+  "priorBuildChecks": "transcription-2026-11-07; historical separate provenance"
+}

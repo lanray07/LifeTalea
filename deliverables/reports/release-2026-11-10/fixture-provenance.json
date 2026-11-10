@@ -1,0 +1,10 @@
+{
+  "kind": "Synthetic development fixture; no personal audio",
+  "path": "deliverables/reports/release-2026-11-10/LifeTalea-v4-fictional-QA.lta",
+  "sha256": "b3f6ad11b803e068282629e0650313078349fe0763aa37a69442cd7176190163",
+  "memories": 2,
+  "audioFixtures": 2,
+  "speechSource": "Windows synthesized English from androidTest garden fixture",
+  "speechDurationMs": 7045,
+  "restorePolicy": "Additive import with fresh UUIDs; keep existing records"
+}

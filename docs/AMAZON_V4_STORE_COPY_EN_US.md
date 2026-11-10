@@ -1,6 +1,6 @@
 # Version 4 English store draft
 
-Prepared locally; this has not replaced the public version 3 draft. Final billing configuration and release approval remain pending.
+English copy for the version 4 public draft. Public submission remains blocked by the release gates documented in AMAZON_RELEASE_REVIEW_2026-11-10.md.
 
 **Title:** LifeTalea - Family Stories & Voice Journal
 
@@ -18,4 +18,12 @@ Create an on-device transcript draft from a saved recording. Choose its spoken l
 
 LifeTalea requires no account. Your journal is stored on your device. Create a local backup and choose whether it includes photographs and recordings. Command recognition and spoken playback depend on installed speech services; touch and text alternatives remain available.
 
-Premium copy must be finalized after public Amazon billing verification. No cloud sync or universal speech accuracy is claimed.
+Optional Premium is a one-time purchase for unlimited albums, longer recordings, keepsake PDF exports and encrypted local backups. Amazon displays the local price before purchase. Existing memories remain accessible without Premium. Restore purchases uses the Amazon account registered on the device.
+
+**Feature bullets:**
+
+- Keep written stories, photographs and voice recordings together.
+- Organize albums, favorites and a family timeline.
+- Review and correct on-device transcript drafts before saving.
+- Create scrapbook drafts and local backups you control.
+- Use touch and text alternatives when device speech services are unavailable.

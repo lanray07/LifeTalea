@@ -6,6 +6,6 @@ On a saved memory, record a short fictional English sentence, then choose Stop a
 
 Command recognition and spoken playback depend on installed device speech services. Touch controls and typed English commands remain available. Saved-file transcription uses its own bundled engine.
 
-Premium is a one-time Amazon purchase. Purchase and restore use the Amazon account registered on the device, not LifeTalea credentials. Core stored stories remain available without Premium. Verify the public store item and local price before submission.
+Premium is a one-time Amazon purchase. Purchase and restore use the Amazon account registered on the device, not LifeTalea credentials. Core stored stories remain available without Premium. The paywall shows the local Amazon price and Restore purchases. Canceling the Amazon confirmation must return to the prior entitlement without granting Premium.
 
 Support: banksmi@mail.com

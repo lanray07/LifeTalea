@@ -18,8 +18,10 @@ def main():
     args = parser.parse_args()
     if args.check:
         index = json.loads(INDEX.read_bytes())
-        assert sha(PACKAGE.read_bytes()) == index['sha256']
-        assert check_bundle(PACKAGE) == index['entriesVerified']
+        target = (ROOT / index['path']).resolve()
+        assert target.parent == OUT.resolve() and not target.is_symlink()
+        assert sha(target.read_bytes()) == index['sha256']
+        assert check_bundle(target) == index['entriesVerified']
         print(f"Verified {index['entriesVerified']} entries")
         return
 

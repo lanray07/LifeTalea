@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-10",
+  "releaseName": "LifeTalea v4 offline transcription verification",
+  "releaseId": "amzn1.devportal.apprelease.f2219d412a384104bf24d6ef440d3f9a",
+  "track": "Test 1",
+  "amazonStatus": "TEST_IN_PROGRESS",
+  "uploadVersionCode": 4,
+  "uploadSha256": "d83967ef4f65acb0249688b438eeef616a7809271efeb6fde11df5e6f2de122b",
+  "drmApplied": true,
+  "selectedFireTablets": 12,
+  "installedVersionCode": 4,
+  "installedBy": "com.amazon.venezia",
+  "v4DistributedBinaryInspected": true,
+  "v4DeviceChecks": "PASS_SCOPED_FICTIONAL_TRANSCRIPTION_AND_NONPAYING_BILLING",
+  "blocker": "Public release gates remain: native locale approvals/assets, independent security/privacy review, product/device/billing recovery checks",
+  "dataAvailableKiB": 904296,
+  "cleanupApproval": "APPROVED_AND_COMPLETED",
+  "cleanupProposedPackages": [
+    "com.lifetalea.app.debug",
+    "com.lifetalea.app.debug.test",
+    "com.lifetalea.app.billingqa"
+  ],
+  "publicDraftVersionCode": 4,
+  "publicSubmission": "NOT_SUBMITTED",
+  "purchaseAttempts": 1,
+  "evidence": [
+    {
+      "path": "deliverables/reports/release-2026-11-10/acceptance-update.json",
+      "sha256": "7f738ea0d72f1bb1942f02da9c866c5b909d8814da554891066cccb9e46f3dfa"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/amazon-v4-installed-binary.json",
+      "sha256": "e89c37129f2fb014eb43b523c74bbfd015ef21fb302abd41e5d315dbcfe485f7"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/amazon-v4-test-live.png",
+      "sha256": "5652ec88d3bd486aea17328172b5bbfff46f338be6d0a179395ab347b224684a"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/amazon-v4-test-submitted.png",
+      "sha256": "dc9fcb8082317f60166c41d117ea455d8b4352c6cf49d84a0d33bc13820b3448"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/appstore-storage-blocker.png",
+      "sha256": "3f1f6b89edf6e595ab23cd22bdff787fb4d785de3520a7de2e71e3ab92232e18"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/billing-canceled-free.png",
+      "sha256": "1286b7bb1163a9fec5b39acd31a1a15a02cd50e7325b002d4a3d31740e974db3"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/billing-prompt-unpaid.png",
+      "sha256": "c42d46f5096b52bbaec529d86dd4c36bf23cdadd2bb63146116dcc364171310d"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/billing-restore-free.png",
+      "sha256": "0df5358fa47f01f75e5365da8f2be29758af7dcf45b5da1d5a4ffbe043f557b8"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/device-session-v4-tests.json",
+      "sha256": "edfe509c3047d14db8035e5065accc5bef021bfff5535baadf6d14b64bc12879"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/device-session.json",
+      "sha256": "6172b437a00084a00c582139a25e8d33933649f89c988389ca54481b3bb1d405"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/fixture-provenance.json",
+      "sha256": "0957339ce5804181d0e52ae1b16825231f5977cc8323988d6c544d5e4607574a"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/LifeTalea-v4-fictional-QA.lta",
+      "sha256": "b3f6ad11b803e068282629e0650313078349fe0763aa37a69442cd7176190163"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/local-checks.json",
+      "sha256": "c250763e850481ff8ae5535c06569f6232f59455f2c7e9cde7ae9e4b656c5d22"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/manual-fallback-saved.png",
+      "sha256": "3b86ea82cd8e377e030396979fdfd3b772c5fe44fb04c401915950fcba0a953e"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/public-v4-draft-saved.png",
+      "sha256": "8620eb52434a10c3f6430793e5732c8be48882dba7015fb0bd87d75df315da18"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/qa-cleanup.json",
+      "sha256": "f5f015bc09388e008ddedc0e7199cc9cf68d8ae3cebb866ba86abd021b073892"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/transcription-error.png",
+      "sha256": "121c5d0fbc29c65ff95158aebaece14ff3c301486483b2e244bff8eb3301b024"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/transcription-processing.png",
+      "sha256": "a0304c56e50fba5831781a758ef466b4877b4e69e274420855eb1900b7d04f61"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/transcription-review.png",
+      "sha256": "eca2f71f6a46501da673a75d080577c68b4525b124b4cd2ca08dae39df90635f"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/transcription-saved.png",
+      "sha256": "8c35ab9b702891573fe466ca68bb9a60e2404ee03335a2fa5de9799238d313d8"
+    },
+    {
+      "path": "deliverables/reports/release-2026-11-10/v4-device-checks.json",
+      "sha256": "dcc14a5f07ebca38d21e40a714835ced47e8e227e277e626672f2fa063abd80c"
+    }
+  ],
+  "dataAvailableKiBAfterCleanup": 1168904,
+  "paymentsSubmitted": 0,
+  "publicDraftCopy": "EN_US_V4_SAVED_AND_READ_BACK",
+  "publicDraftReviewerInstructions": "V4_SAVED_AND_READ_BACK"
+}

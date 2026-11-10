@@ -1,5 +1,11 @@
 # Release readiness — BLOCKED
 
+Current public draft: verified version 4, revised English copy and transcription reviewer instructions saved and read back on 10 November. Not submitted.
+
+10 November: version 4 is live on Amazon Test 1 and installed through the Appstore over version 3. The Amazon signing identity, all DEX files, both native transcription libraries and model were verified. Fictional English processing/review/edit/append, invalid-audio/manual fallback, reset-account restore and unpaid purchase cancellation passed. Only the three owner-approved QA packages were removed to free space; the regular app was retained. See AMAZON_RELEASE_REVIEW_2026-11-10.md. Public submission remains blocked by the remaining release gates.
+
+Earlier reports below retain their dates and scope.
+
 Latest transcription update: all 22 physical tests passed with Wi-Fi disabled, plus separate process-restart and failure-preservation checks. All 21 Kotlin unit tests and 16 Python tests passed. Lint: zero errors, 267 warnings. Website build and collateral checks passed; 199 keys across 22 drafts, zero native approvals. See `AMAZON_TRANSCRIPTION_RELEASE_REVIEW_2026-11-07.md` and `deliverables/reports/transcription-2026-11-07/`. The version 4 candidate remains local; no public submission or new payment occurred.
 
 Earlier search-pass evidence follows; its counts and artifact hashes remain historical.

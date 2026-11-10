@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-10",
+  "authorization": "User: Remove only those QA apps",
+  "removedPackages": [
+    "com.lifetalea.app.debug",
+    "com.lifetalea.app.debug.test",
+    "com.lifetalea.app.billingqa"
+  ],
+  "results": [
+    "Success",
+    "Success",
+    "Success"
+  ],
+  "retainedPackage": "com.lifetalea.app",
+  "dataAvailableKiBBefore": 904296,
+  "dataAvailableKiBAfter": 1168904,
+  "recoveredKiB": 264608,
+  "scope": "Only named QA packages and their local test data; APKs, source and prior evidence retained on host"
+}

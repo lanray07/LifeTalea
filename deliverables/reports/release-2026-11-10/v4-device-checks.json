@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-10",
+  "package": "com.lifetalea.app",
+  "versionCode": 4,
+  "distribution": "Amazon Appstore Test 1",
+  "fixture": "LifeTalea-v4-fictional-QA.lta",
+  "checks": {
+    "additiveRestore": "PASS: two fictional memories and two audio attachments imported",
+    "processingUI": "PASS: progress bar and Transcribing on your device displayed",
+    "speechDraft": "PASS: exact short English fixture words recognized",
+    "reviewEditAppend": "PASS: qa reviewed. appended in review; saved alongside Existing QA notes.",
+    "invalidAudioError": "PASS: clear error with retry and Edit fallback",
+    "manualFallback": "PASS: manual fallback qa transcript. saved",
+    "restoreResetAccount": "PASS: Free tier retained after Restore purchases",
+    "purchasePrompt": "PASS: Amazon GBP4.99 Verify and Pay displayed",
+    "cancelPurchase": "PASS: Back canceled; Free tier and enabled Get Premium returned"
+  },
+  "paymentsSubmitted": 0,
+  "entitlementReset": false,
+  "wifiChanged": false,
+  "limitations": [
+    "Short synthesized English AAC only; no language/accuracy certification",
+    "No new paid purchase or Premium regrant tested",
+    "No v4 offline network test; prior debug offline results retain their dates",
+    "QA memories remain on device; regular app and data were not uninstalled"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "PASS": 50,
+    "NOT TESTED": 153,
+    "BLOCKED": 55
+  },
+  "total": 258,
+  "updatedCriteria": [
+    "AC-05.09",
+    "AC-05.10"
+  ],
+  "scope": "Mixed historical inventory; not a complete v4 retest"
+}

@@ -1,5 +1,9 @@
 # Master prompt release review
 
+Current public draft: verified version 4, revised English copy and transcription reviewer instructions saved and read back on 10 November. Not submitted.
+
+10 November: version 4 is live on Amazon Test 1 and installed through the Appstore over version 3. The Amazon signing identity, all DEX files, both native transcription libraries and model were verified. Fictional English processing/review/edit/append, invalid-audio/manual fallback, reset-account restore and unpaid purchase cancellation passed. Only the three owner-approved QA packages were removed to free space; the regular app was retained. See AMAZON_RELEASE_REVIEW_2026-11-10.md. Public submission remains blocked by the remaining release gates.
+
 Latest: see `AMAZON_TRANSCRIPTION_RELEASE_REVIEW_2026-11-07.md`. The bundled recorded-file engine passed the 22-test Wi-Fi-disabled suite, correction/save checks, a real process restart and failure-preservation checks. Version 4 is a local configured candidate. Current catalogs have 199 keys; lint has zero errors and 267 warnings. Native approvals, other-language accuracy, the independent audit and the remaining release gates are still open.
 
 The following records the earlier onboarding/search pass; its artifact and test counts remain historical.

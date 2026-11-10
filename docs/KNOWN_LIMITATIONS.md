@@ -2,7 +2,7 @@
 
 This is a development build. Release readiness is BLOCKED independently of whether a source component compiles.
 
-Latest evidence: `AMAZON_TRANSCRIPTION_RELEASE_REVIEW_2026-11-07.md` and `deliverables/reports/transcription-2026-11-07/`. Version 4 is a local candidate, separate from Amazon version 3; it is not yet an Amazon-distributed build.
+10 November: version 4 is live on Amazon Test 1 and installed through the Appstore over version 3. The Amazon signing identity, all DEX files, both native transcription libraries and model were verified. Fictional English processing/review/edit/append, invalid-audio/manual fallback, reset-account restore and unpaid purchase cancellation passed. Only the three owner-approved QA packages were removed to free space; the regular app was retained. See AMAZON_RELEASE_REVIEW_2026-11-10.md. Public submission remains blocked by the remaining release gates.
 
 - Recorded-file transcription now uses a bundled Whisper model with editable review and append. Short English AAC, cancellation/retry, source preservation on failure and an actual process restart passed on Fire. Other-language accuracy, long-running/low-memory/background behavior and broader device coverage remain unverified. The ten-minute guard is an implementation limit.
 - App, website and store drafts cover 22 locales. All 199 app keys pass structural validation. An authored editorial pass corrected app wording, rewrote the complete non-English article set and aligned store copy; native approval remains absent. Draft app resources are debug-only. Landscape tablet screenshots exist; other device sizes, native review and full visual/accessibility checks remain incomplete. See TRANSLATION_POLISH.md for current checks.
