@@ -1,0 +1,13 @@
+{
+  "path": "deliverables/amazon-submission/LifeTalea-v6-review-2026-11-10.zip",
+  "sha256": "c27585c021b168b7ec5c312851088bb83b171a8c053a108213a916fc96b6cf81",
+  "bytes": 289424116,
+  "entriesVerified": 322,
+  "releaseStatus": "BLOCKED",
+  "candidateVersionCode": 6,
+  "amazonPublicDraftVersionCode": 5,
+  "amazonLiveLatVersionCode": 5,
+  "amazonLatDraftVersionCode": 6,
+  "amazonLatDraftSubmitted": false,
+  "sourceCommit": "bbeb0160f6c5e62b90fc5b67c065a48d325a016d"
+}
