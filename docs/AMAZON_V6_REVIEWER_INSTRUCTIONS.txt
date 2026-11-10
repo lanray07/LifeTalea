@@ -1,3 +1,5 @@
+Amazon Test 1 now serves version 6. The final QA APK passed its 26-test automated physical batch; this does not certify successful app-lock authentication or the Amazon-processed binary. No new paid purchase is authorised.
+
 LifeTalea version 6 is a test candidate, not a verified public release. Its unsigned upload SHA-256 is eed8f1dbcb683205abc2f76a323ff5ae37f4f3d33a94cab69ccaea46e2ab8929. No LifeTalea login is required. Use fictional content only. Do not make a new paid purchase.
 
 The candidate includes 22 interface locales with AI editorial approval at the owner's request. Change language in Settings and verify actual screen layout, including Arabic RTL. Voice commands remain English-only and require an installed recognition service; TTS depends on installed voices. Saved-recording transcription is local, but accuracy across all languages has not been qualified.

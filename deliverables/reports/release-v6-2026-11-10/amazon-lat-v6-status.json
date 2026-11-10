@@ -1,0 +1,25 @@
+{
+  "observedAt": "2026-11-10T18:32:33.045004+00:00",
+  "amazonStatus": "TEST_IN_PROGRESS",
+  "releaseId": "amzn1.devportal.apprelease.68c3a6f23eb24e4baa576b5e641e633f",
+  "releaseName": "LifeTalea v6 language and device-lock verification",
+  "uploadVersionCode": 6,
+  "uploadSha256": "eed8f1dbcb683205abc2f76a323ff5ae37f4f3d33a94cab69ccaea46e2ab8929",
+  "submitted": true,
+  "liveObserved": true,
+  "installedAmazonVersionCode": 5,
+  "publicDraftVersionCode": 5,
+  "publicSubmissionMade": false,
+  "newPayments": 0,
+  "newLegalAttestationsMade": false,
+  "exportCertification": "Previously checked owner certification retained",
+  "testerGroup": "LifeTalea billing LAT",
+  "evidence": [
+    "lat-v6-submitted.png",
+    "lat-v6-live.jpg"
+  ],
+  "deviceVerification": "PENDING_DEVICE_UNLOCK_AND_AMAZON_UPDATE",
+  "installedVersionMetadataRechecked": true,
+  "installedAmazonTargetSdk": 35,
+  "deviceLockedOnMetadataRecheck": true
+}

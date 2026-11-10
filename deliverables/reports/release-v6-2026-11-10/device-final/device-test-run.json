@@ -1,0 +1,813 @@
+{
+  "executedAt": "2026-11-10T18:22:55.869869+00:00",
+  "status": "PASS",
+  "debugApkSha256": "54fc7a943d6e44354e48986086ff626aba59666715ec5524bf93927b3122fb5e",
+  "testApkSha256": "cc9abb62d473fefc4b9387e80438ae5b7c9d9fdb3d033c76b5261b1a8841be9a",
+  "evidenceFiles": 197,
+  "qaPowerSettings": {
+    "originalStayAwakeWhilePluggedIn": "0",
+    "restored": true
+  },
+  "qaRotationSettings": {
+    "original": {
+      "accelerometer_rotation": "1",
+      "user_rotation": "0"
+    },
+    "restored": true
+  },
+  "apkSources": [
+    "android/app/build/outputs/apk/debug/app-debug.apk",
+    "android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk"
+  ],
+  "evidence": [
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/id-ID-voice.png",
+      "sha256": "723fcdf1bc7cdc4e947e0a437a6b6b4f11325c9d578e7f525ae1e93028287133"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-ES-timeline.png",
+      "sha256": "512672a0eb3e5419fa65b317778a1b466966ff54e1dc165a49dd56546f055a33"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/it-IT-editor.png",
+      "sha256": "4b279450b810ac0ea92c81bb46489fb0411c80adaaad2cf97bcbf8ca4c3a394c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/sv-SE-timeline.png",
+      "sha256": "ef2ecd14b874e22040069d563fa5a1ecd1cec0ef0732c29ed073a688df062d2d"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hans-editor.png",
+      "sha256": "913d49c3773629c6a062fda52f04540b903fbe7024b6f7457e5018e1007b0afc"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ko-KR-settings.png",
+      "sha256": "c7a705b249e9094e2ec6915a179ddee205e83c1e94b0a8d80ca9cdcecad8bf4d"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/de-DE-albums.png",
+      "sha256": "a81ddcd4ea29530363f7d4c9fc3e3b5fe531f3c763768517829c403902660877"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/tr-TR-settings.png",
+      "sha256": "611817e85b0aa56ae97318f42a8f17eecec15a530790d17cdafdde93c960f06c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/it-IT-voice.png",
+      "sha256": "35d88bcd03444a586d0c20cf89d7dc0edf9d0516394fd7b1e1651f3346f35b01"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-ES-editor.png",
+      "sha256": "9f42ab8b336c4baf206ec96ad4a502cf7aa1acc877446077f52c8dc100682b42"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-419-settings.png",
+      "sha256": "a42d8f4a943ed593e84c0540fc57e41154dc79fc65e9b497e123331013cf27a4"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-BR-keepsakes.png",
+      "sha256": "9d73e4f9cd8e24d75363f3f7a39a881a4a3fd54926db497ec9d499a890994f47"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-CA-settings.png",
+      "sha256": "30ecf4ff74f5a877b12181904227c65c042c1d53956b1c60f915a6c32eeb0b9c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ar-voice.png",
+      "sha256": "40e5974faf7903d49b6e40aa1758e53377629c8bb9188300497d9720306b4629"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-419-voice.png",
+      "sha256": "107122ba4d3c703ae42db0b012902c17cf09a4d4583db2db46443775466acc24"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-CA-keepsakes.png",
+      "sha256": "521fb81e3e784bc4490547997093f124f0b3f67aed3ffb9b7cd3b95f2240171c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/id-ID-settings.png",
+      "sha256": "3959a00ed02f36c558c96450d20ea749061c85716dedc258683b1fa77180575c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-GB-timeline.png",
+      "sha256": "e77b6230c9d531a181606e8e6988a5f89e66884be18f7c310ad2a7ae013e4f77"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-PT-voice.png",
+      "sha256": "065b13d928a9beabc5767b6242cd216b015009e6a5d2f7a4470c29a0caad5f0f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-419-editor.png",
+      "sha256": "e4e505c704c7cd7864cc24109cdd4c61360a4446bdd5e5b1a5e670b6b6681d45"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-BR-albums.png",
+      "sha256": "df6b1f85eb0e3decc58827214382ce3c7afd1ac5657047d4a2ec3763b2180cab"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-GB-settings.png",
+      "sha256": "438744357aeb0dc099935279bb79b68c8de5819865829ef42ec39754e19905b2"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-US-transcript.png",
+      "sha256": "40a5599413406eeed58c592fcf96cf90f3e0e23062c8a3dbea5aa43e1adb6302"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-CA-editor.png",
+      "sha256": "05cd60c1e66bc1e1668518639a1788fa0f4d514b6d3fed03a120ced288b768ff"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-AU-voice.png",
+      "sha256": "723fcdf1bc7cdc4e947e0a437a6b6b4f11325c9d578e7f525ae1e93028287133"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hant-transcript.png",
+      "sha256": "7513ef84b97f37c17687bb2abec947047acc9938455fdca016e075bce00e4a17"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ar-keepsakes.png",
+      "sha256": "602e4c2cbda557f8ead88408677a8a64ec5a054c1652f47faf8697c0cbce624e"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-419-home.png",
+      "sha256": "b970dff55b2618fcc1a45c01171af75d9a58b692d4fd8aaa30c89eb6c168e394"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-ES-keepsakes.png",
+      "sha256": "69b6e3b27317c46b5025403f33cfcb6eba0d5d595eebb7c6ab785fc92b7935bb"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-PT-keepsakes.png",
+      "sha256": "f40a509cc0855ed9b25dc1fa98d29ce6458851da8e26447efb3ddfea6e65a224"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pl-PL-keepsakes.png",
+      "sha256": "fd7056407de65cb18706adddd5262def389104df979a9e9e4f49a0fefa74ca04"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-US-home.png",
+      "sha256": "e0bce8155848fd603e3c10d17e61babbe91f17adb4f785ee269d3d3cb6dac58f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ja-JP-transcript.png",
+      "sha256": "a1e07f3768944356a711ca78fe02be38d3478ff637029a9c592018c602a77a87"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/hi-IN-timeline.png",
+      "sha256": "c921347747e9127ada20ac38366e9665a4a782b58886de2b45723f4e41dcb9be"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hans-timeline.png",
+      "sha256": "216789904d5f780efd6be472458a458d9a846844fad37874614cfa816d04fcb8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/hi-IN-voice.png",
+      "sha256": "92f6308f8fb3cb3c57d55c3ffcde05bbc5370724ebd60b26ad8c3d0fd8eed86b"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ko-KR-keepsakes.png",
+      "sha256": "40830fe4ccf2658d860b55e624963c8b11ef107d92deac96441020229c5f2076"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-AU-transcript.png",
+      "sha256": "40a5599413406eeed58c592fcf96cf90f3e0e23062c8a3dbea5aa43e1adb6302"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/nl-NL-settings.png",
+      "sha256": "81d0475394f9cb576be99df73a903f9dc1e988d928a594fc0c341391daa37d93"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/sv-SE-voice.png",
+      "sha256": "48af4d0daac1af91a9ae5d9f50b1d87f7bee3ebd12567fc3b42cb1d6f9a18a15"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-FR-settings.png",
+      "sha256": "5b90439402993ed233728dbae8dea734420fa347816d6f1f75d0f72d7ee3ad2b"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/result.json",
+      "sha256": "616866cc128bf9060b08cfe07073d059f5ea054a2bbcdebb0acbe742a397f57c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-AU-timeline.png",
+      "sha256": "3e3091ef096713fc390197a21e75c4972d2fc8ce0a75f3178ac0c7f4287b8ba0"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/nl-NL-home.png",
+      "sha256": "231f14157f55f1bc79840b3b2004576bf9e26ff4106197372fd16fcb836f400b"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-AU-editor.png",
+      "sha256": "41e42a8a3585126e20a9cd3ba7502d5a32aca12c628903fb29de683d5618128f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/hi-IN-keepsakes.png",
+      "sha256": "426be0a012e3cafb892d4de05d6a4f9609989ac037dc441e20fc4545b1ff6c7b"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-US-editor.png",
+      "sha256": "41e42a8a3585126e20a9cd3ba7502d5a32aca12c628903fb29de683d5618128f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/de-DE-settings.png",
+      "sha256": "a5c72eae5db4fae9b7302b584f3bc8c331e5d8fe9fb0e5eb4d3bb6edc3b35c6d"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/it-IT-home.png",
+      "sha256": "9f2c9f4966f7af9d7ce419558d882ec47d1a99851ba7a652e5696ed6f71fcbe7"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/id-ID-keepsakes.png",
+      "sha256": "09fc51e51596c326a9edce69201a2eabdcb4184d39712f0e3c58ecb18fa36ac8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-BR-settings.png",
+      "sha256": "f7753e4dcfa4f1044df4b6860e5e97e6840a04f142abc57d29f6d9e829d5f879"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/hi-IN-home.png",
+      "sha256": "4a7ee4905449b4f2868dddd435c24d0b8bbe14051153f7669705c9818521311c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ja-JP-voice.png",
+      "sha256": "5abca9597abcd1598673dec613aa6d86873481c87bd8529db95b12f25d389556"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ko-KR-albums.png",
+      "sha256": "0593cb7d68a19942e4fa2bae5ebaaf036b218f4c85a62a2c5ba9fb91e324b145"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-CA-transcript.png",
+      "sha256": "de2bf4c331534df7c64e6ac853299efac7e90ac4a0a3bb70e03e359b192e5870"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/hi-IN-transcript.png",
+      "sha256": "c7e22f58b81cafacc2fd2375240c4a407cd459dafa549ca64fdfb526bd320a4e"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ja-JP-timeline.png",
+      "sha256": "b1b1998629c327c965f661b14cc20209808466d3bc5743795baff871ce75bb7f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/it-IT-albums.png",
+      "sha256": "ecd7bb8de0982327b8b5ffa2f5482dd0997465c5e491f76f24d9dce0b54f34ba"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ko-KR-transcript.png",
+      "sha256": "d57a6a49a592038cbc14238668c128d115753e216f44698e05a4b12cc66b5667"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/de-DE-keepsakes.png",
+      "sha256": "83de697f29fd00b936f45e7690fb7f1c77e824401e90a3088527234a2905c433"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pl-PL-timeline.png",
+      "sha256": "fecfd9e5c470ceafc28ba15e79c3b8c6ad8be5c70882552f849bbe9bd6a156ee"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-BR-voice.png",
+      "sha256": "94a3d0ec410a3d9d3fb5d9073777d2f574db6a0229d4d6a6d596157fa0df57fc"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/nl-NL-editor.png",
+      "sha256": "ed605a863ed2225e2996d5e7804c5f86f004409e463c83d2982b1532a0719514"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-BR-editor.png",
+      "sha256": "ea05b3c5704a7cdc824dff79aff8e93f50f40b774432c1d0ae1b6ddd01331e79"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-PT-home.png",
+      "sha256": "5784241c787a0323e20e6e4bd8496a271e1ffc67336e2eee132dc9e82945de29"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/it-IT-transcript.png",
+      "sha256": "4b3a67505d533f6a9a9dd2dd626abbf700c859579db21091c3c8d9e4e0a51c88"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-PT-transcript.png",
+      "sha256": "2edcf496f20ab41acd108059611da4c47b0ded49d78a047a85c36503c67ff873"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/sv-SE-editor.png",
+      "sha256": "9d641484e5a7bc7eed395f92a1d024aa4d47ca61b1c13186f778ed1c8aab0e67"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/nl-NL-keepsakes.png",
+      "sha256": "55c319bf2f6cf5818d423771da5d2dfff259a65f1a9e4ee181901424fef7a710"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-ES-settings.png",
+      "sha256": "73b561af8c6a58c72a7895ee91439dbbe28f581a314d397fa689683191558221"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/hi-IN-editor.png",
+      "sha256": "b6226ee97a6a9e9aeb36058233ab2981390c9e246ad11c8925a5414294be5ef8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/tr-TR-transcript.png",
+      "sha256": "63f003343c7238737a82ad870ba04d672cd2ca53c3a66d0bba915ff0e00b0b45"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/de-DE-voice.png",
+      "sha256": "0d43abdd7ddabef706cdd44c27351d533986da6c2c6adabb797db3ba38bfdf6f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/tr-TR-keepsakes.png",
+      "sha256": "3c72e8a61fcafefde8f6881a3b105fe7b8a825cff64ba7a3789c07de53398118"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-BR-transcript.png",
+      "sha256": "3017c9736f75ba12b807d73fd7c1f8a13a4865c7e6dbfba9fa6566d13666cd13"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-419-transcript.png",
+      "sha256": "273e303490cab00e228b567ac35803dc726ea9daf51fd7ff4e51e16176816d25"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pl-PL-editor.png",
+      "sha256": "3edfa7b0696fe00ee96f735d31bcacd0d6cd7379058077e88bbb298ed08010ab"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/it-IT-timeline.png",
+      "sha256": "e0c3f49154d1036c7c205ff4243d37bbd847770e04e06c040ed1a2905667448e"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-419-timeline.png",
+      "sha256": "eff3601d78884e85cbb439e776899744c2c877659cdec4ce24179507689090d8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hans-albums.png",
+      "sha256": "51feb9832a66d657331c3727f24c44042fbdd1f75b697bac25f32fbdd6d00980"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-FR-timeline.png",
+      "sha256": "ce8861d1accdecca0f84135754a45a59164c4f8aa0035d06466a0e7cfc1bc6e8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hant-home.png",
+      "sha256": "14d7e42e278c2595a2955924725fe196b58afe0269449bb6733d1591ef27359a"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ja-JP-settings.png",
+      "sha256": "4fb5a8b8590387808b11781a0e412e920bb645421122066dbeea957d25f81ff2"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/de-DE-home.png",
+      "sha256": "22a04c7e31e7bd65fc95c118c1856e84a0a34a6a14f967a4d91cc9cf1ba373be"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ar-transcript.png",
+      "sha256": "cb0a5117412addd706460947e71a2f17450306496198f7747f204ebccff2ff41"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ko-KR-editor.png",
+      "sha256": "4478505b7dfc2e17684aee7779d7ee1464027228ba6b79371d19a602703e2869"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-ES-transcript.png",
+      "sha256": "273e303490cab00e228b567ac35803dc726ea9daf51fd7ff4e51e16176816d25"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-GB-home.png",
+      "sha256": "079fd939ea554b5a0ab40e64e7f18d4469d071984a4556850dd3446043390753"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/sv-SE-transcript.png",
+      "sha256": "0cd171cc785becc6c823398e57960907fa3a65307fda5c8aa0cea5d863465bec"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/de-DE-transcript.png",
+      "sha256": "c76d898b9c09e6bacf7000fd4d823c7f712979721df3df387592c08f6015a8b3"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pl-PL-settings.png",
+      "sha256": "4ac42e11546398c3966fbf29a91f58bdde853f106186afacbdd25f0bb8e68046"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-ES-voice.png",
+      "sha256": "107122ba4d3c703ae42db0b012902c17cf09a4d4583db2db46443775466acc24"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hant-timeline.png",
+      "sha256": "58986137ba9bf37406e95d5c6a441fbf6bc41f67d1d8ed1644043040d3e6099e"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/sv-SE-home.png",
+      "sha256": "6386245022c22fd037ebcfb534e90c01423cd8409f610adbdea51b326658fccd"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pl-PL-home.png",
+      "sha256": "caf82415bcb95a67c280760b5577019894ad96cea423167a0f1a1a457def7311"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-GB-editor.png",
+      "sha256": "41e42a8a3585126e20a9cd3ba7502d5a32aca12c628903fb29de683d5618128f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hans-settings.png",
+      "sha256": "82bb723bdefc9c5d6c60bd89ce033fbb107d859214ffa3bea3d799423f922162"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ja-JP-albums.png",
+      "sha256": "3b87314c8687936159ff2b79e405e6360209006c073841aa08ddbd70f4b6ba01"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-AU-settings.png",
+      "sha256": "dec9e0e5c26287f912a78d0bec313f8b228fb3064dc49457a35ee9c482aea81a"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-US-albums.png",
+      "sha256": "8d4005b6a191dd641a72659cb0bc1155391bc3c139573d8d997bfd4a5272965d"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-US-voice.png",
+      "sha256": "723fcdf1bc7cdc4e947e0a437a6b6b4f11325c9d578e7f525ae1e93028287133"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ar-albums.png",
+      "sha256": "cc5c9574edbdbabf724eb093dc849dd6ff85b331389145c5616d15a89ac8dadd"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hant-voice.png",
+      "sha256": "7844768169b4bccb600c041997917c4695d17063c1f324ef0c4464f29dd0dfc1"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/id-ID-timeline.png",
+      "sha256": "ed63431f7cb49deceb5bb76d3dbbaf747a13449096741a7e07bc8bc979a9aa3e"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ja-JP-editor.png",
+      "sha256": "b1d994887c1c81fdb647be9dfb6695eed6bbd5ab112a3c8fea557d9e976e811b"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hans-voice.png",
+      "sha256": "ae2b6c7ba2a59fcc9b2c5fdaa0aa6e5549c6dd93ad202df064e263b73ea5c4f2"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ar-timeline.png",
+      "sha256": "a4b3ce2299ce6ac20b31c31f8ae78a82da01bf86cdb9a776c4c7d0002e783aa7"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pl-PL-voice.png",
+      "sha256": "1a7dc8913609295ad91e4e290cb35d36067bb137500a1fad428c3afab4440c76"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-419-keepsakes.png",
+      "sha256": "69b6e3b27317c46b5025403f33cfcb6eba0d5d595eebb7c6ab785fc92b7935bb"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-FR-voice.png",
+      "sha256": "54020600c07c7306ddfe098aaecf7c68187cef8ca167b14945307e5a030845f1"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ko-KR-voice.png",
+      "sha256": "b660cff9b4b9e7d83db78fb4f21543578263153fd72121e02c3e705c7c995311"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/nl-NL-transcript.png",
+      "sha256": "ee2b1773ca5c9c8164477cb790dca68450987dfda93eaffd38c0f0aa01c5eabc"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-419-albums.png",
+      "sha256": "f1db3e55382293d5b394640c78f341376af3e0b74f4d0c7c01c5ddf5d3c64783"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/sv-SE-settings.png",
+      "sha256": "789fc1b69cc305a9d57bd6cfb2085752c2d91f00674ecd40c32a1a0f63179648"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-FR-keepsakes.png",
+      "sha256": "521fb81e3e784bc4490547997093f124f0b3f67aed3ffb9b7cd3b95f2240171c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ko-KR-home.png",
+      "sha256": "2cf4a8df427439a8dc0754323ca540c6dad124dfbe475cc4430fd9399e9e693c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/tr-TR-editor.png",
+      "sha256": "b64bfd361fc64b8dd73330dadb0a0f826e926996b4caa9cac01660d0d824eeb7"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-GB-transcript.png",
+      "sha256": "40a5599413406eeed58c592fcf96cf90f3e0e23062c8a3dbea5aa43e1adb6302"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-CA-albums.png",
+      "sha256": "2c08f7fa80668a3a8b5b419e9b21332fd947669c310cbc3b819ffbcf34ce3ab8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/nl-NL-albums.png",
+      "sha256": "efa348fbf8b91dff3333f8a54a7ab823a188d61413a53752f2c28f7dc659eaab"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ar-settings.png",
+      "sha256": "17adfb026e954f38d6a8a66ee3a8713ff17aaaab39c5b931649b47b9a0a8bca7"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ja-JP-home.png",
+      "sha256": "af1553341e9f943728524b981dd5428bec0ccb6eeae0b8e4cf4cd4e9ec0d28cc"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ja-JP-keepsakes.png",
+      "sha256": "a9dc90d7034588f4dbbb8b1d670a759c7023c4f5ba52708290e356fd22ec22b6"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/tr-TR-home.png",
+      "sha256": "d3b7b77d127e998ce1bc86574169ccd10f94e603a2cd057f32ce13d035654595"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-FR-editor.png",
+      "sha256": "05cd60c1e66bc1e1668518639a1788fa0f4d514b6d3fed03a120ced288b768ff"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/hi-IN-settings.png",
+      "sha256": "6d37c9d6195648d16c01d1ce4d444e91945c21dbc68efa7591355c7a8d8847af"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-AU-albums.png",
+      "sha256": "8d4005b6a191dd641a72659cb0bc1155391bc3c139573d8d997bfd4a5272965d"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-US-timeline.png",
+      "sha256": "de8ca0fade25693541591c32872a2d5b626ac696d0dac197a46b7024bd5456bc"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-PT-editor.png",
+      "sha256": "371a44328d62ad39685996f323e1e8efdee91df06302e501db454434cdea453b"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/de-DE-editor.png",
+      "sha256": "b0bd3cc2326a610721e6aa9f26e02765977d30634536cf3ecdeb3ca4c4c4a64f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ar-home.png",
+      "sha256": "08ae71f8549a71693f03a2398f9c1d9a9026f1ab54633570255f0e3b456a0fa1"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hans-keepsakes.png",
+      "sha256": "52162eaa4ecf29d1995f2fa4fac53544877de4557160b09fff6e9fb4ea58d150"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/nl-NL-voice.png",
+      "sha256": "a2f2e5b624c201019ebcfb02e5c5a382bd961bd73c3ad201111464f7bc9123ab"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/it-IT-keepsakes.png",
+      "sha256": "c300d571dd34ae0e0a939d88416e2176df71a4c8389d07795ff3485dfeefcd4c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-ES-home.png",
+      "sha256": "b970dff55b2618fcc1a45c01171af75d9a58b692d4fd8aaa30c89eb6c168e394"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-BR-home.png",
+      "sha256": "a1375c7a0e3bd7004792ba4341f0759375a1171ec49f36c0309d0701cdd6def7"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/tr-TR-voice.png",
+      "sha256": "7c5f1d9bbda3deb972f0778e7ebc3cdbd6f67b54fd16a99d1cffbc70d445b846"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-FR-transcript.png",
+      "sha256": "de2bf4c331534df7c64e6ac853299efac7e90ac4a0a3bb70e03e359b192e5870"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/id-ID-albums.png",
+      "sha256": "8d4005b6a191dd641a72659cb0bc1155391bc3c139573d8d997bfd4a5272965d"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/it-IT-settings.png",
+      "sha256": "ee5243647fefc63c104b1ee949be9d8a4f7eaf1595be815ef65ec8751359ae5c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pl-PL-transcript.png",
+      "sha256": "446e7e9be4c855dbb97817d7e6e773e29f410f8dc6b49ca43c51c27d7534a60e"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/tr-TR-albums.png",
+      "sha256": "48415ff3bc34def81471e79330d20b9dcca952dfa0a84c9cd5574571ecbe3148"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hant-settings.png",
+      "sha256": "05a730e8d5fc09bf266854a76af70732c80330b7b60ba8bd59a0003361c1b77e"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-FR-albums.png",
+      "sha256": "a2ceb50704d214dd908d8fcfd053e03a959e72e84450f3cb29a196179dc41ec9"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-PT-albums.png",
+      "sha256": "690f94a8092151a75725ddf4bca8d9aa3c5b2ea9c84a22446fb7ca618a5cebcb"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ko-KR-timeline.png",
+      "sha256": "1e352b4e69ed4169663ee8590d0d5b3cd4521c1eab76c6ca54553267ff3c8976"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-GB-keepsakes.png",
+      "sha256": "09fc51e51596c326a9edce69201a2eabdcb4184d39712f0e3c58ecb18fa36ac8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/sv-SE-keepsakes.png",
+      "sha256": "d0a176a3c2008a2252533b01ca94a2da0de1a4b53c21cc138542f522faa8e0fd"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/id-ID-editor.png",
+      "sha256": "41e42a8a3585126e20a9cd3ba7502d5a32aca12c628903fb29de683d5618128f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pl-PL-albums.png",
+      "sha256": "f44819f863a826619cacb203ee0e97e1d9610959db5f1d5d8a8296504513aca6"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-FR-home.png",
+      "sha256": "b105f19c733e5da01e010f7261e68f44ab74a58bff6dbe11bad356aefd0612b5"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hant-albums.png",
+      "sha256": "de45c20c18f021ed2dab8ca830c5d8294c74fb6ec1beb25455a9de01fe80eeb4"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-CA-voice.png",
+      "sha256": "54020600c07c7306ddfe098aaecf7c68187cef8ca167b14945307e5a030845f1"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hans-home.png",
+      "sha256": "79a861fb4cf0d4b4af3e1c77d4df959161d04b831dd547765e59cd7f07afd30e"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hans-transcript.png",
+      "sha256": "4032a6c63e7a9abb685f615e44e8c24102805a2a67c3550ab647fbdae92f64b8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/id-ID-transcript.png",
+      "sha256": "40a5599413406eeed58c592fcf96cf90f3e0e23062c8a3dbea5aa43e1adb6302"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/nl-NL-timeline.png",
+      "sha256": "734cab39a550cff59aa266ae725f8e33c31a5fa31961e69f6e33a4667630ff18"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-BR-timeline.png",
+      "sha256": "2dace30ee7c4fd58dc5c7e9111acee66803eaf68337cc98f7120284730ca1f4a"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/tr-TR-timeline.png",
+      "sha256": "f932926af1f6fc3b8057b44b9d4361e7610b57ea99909289365a53368bada185"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-CA-home.png",
+      "sha256": "b105f19c733e5da01e010f7261e68f44ab74a58bff6dbe11bad356aefd0612b5"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/sv-SE-albums.png",
+      "sha256": "4acb9dc9209675cdd0e9869355a0fd9ad46d11bc24e8602861aaa7440f2f1343"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-GB-albums.png",
+      "sha256": "8d4005b6a191dd641a72659cb0bc1155391bc3c139573d8d997bfd4a5272965d"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hant-editor.png",
+      "sha256": "14d502c50de4b4ce3cb66a6d02e2291c45128e18e83f3bdb1c39495ccf126b98"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/fr-CA-timeline.png",
+      "sha256": "955edc9708b666e0a3ff9a140cb7f14d3fd5c049d33b66300e22438a19ccabcd"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/hi-IN-albums.png",
+      "sha256": "29d1876156f90eab4998798c7f89597fc3de96a2fab61dfa943e59b4c1e9b310"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/ar-editor.png",
+      "sha256": "8992ebae5659e5de417de09d8576f5fc5c84dc824eda041979b9bec1d6592ce4"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-AU-keepsakes.png",
+      "sha256": "09fc51e51596c326a9edce69201a2eabdcb4184d39712f0e3c58ecb18fa36ac8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-US-keepsakes.png",
+      "sha256": "09fc51e51596c326a9edce69201a2eabdcb4184d39712f0e3c58ecb18fa36ac8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-AU-home.png",
+      "sha256": "079fd939ea554b5a0ab40e64e7f18d4469d071984a4556850dd3446043390753"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/es-ES-albums.png",
+      "sha256": "f1db3e55382293d5b394640c78f341376af3e0b74f4d0c7c01c5ddf5d3c64783"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-GB-voice.png",
+      "sha256": "723fcdf1bc7cdc4e947e0a437a6b6b4f11325c9d578e7f525ae1e93028287133"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/diagnostic-last-state.png",
+      "sha256": "14d7e42e278c2595a2955924725fe196b58afe0269449bb6733d1591ef27359a"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-PT-settings.png",
+      "sha256": "29a61baf7d6c825f5aa0529b9b86659280ad44ba37c0643a29332b1f10f2922b"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/zh-Hant-keepsakes.png",
+      "sha256": "2f2979728ef7b75630ffe6afb1448b6ad949ec57a60a99c2dac224fd84d4f25c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/id-ID-home.png",
+      "sha256": "079fd939ea554b5a0ab40e64e7f18d4469d071984a4556850dd3446043390753"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/de-DE-timeline.png",
+      "sha256": "8388bd54c9b5de8d62ebc090cd6398d646cf86a14b43d706820952004ba65ff8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/pt-PT-timeline.png",
+      "sha256": "d9b577d7d2e2c897e685f2fabdc6fa4761c7c8f5ebb56799285c37c8f626c48c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/localization/en-US-settings.png",
+      "sha256": "712a1554e938a7092d4298b453fd21f173a578d60acbca38b60262b737793d12"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/transcription/review-draft.png",
+      "sha256": "c96a268af909c4a48d451a8843c454da7002812e279647e79b8ebfa6cd829bc8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/transcription/cancel-and-retry.json",
+      "sha256": "b20274dfc5ba2a62af79c676f84cd462186891923e625f8b199f008215fb405c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/transcription/failure-fallbacks.json",
+      "sha256": "4528326f208e8f23bfe3312b169e59cc2f42f99914699cb802f8d5f6b29f7e27"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/transcription/process-restart.json",
+      "sha256": "8ec6c22976f0d1349bcc450f2d34a18280715d62bd1fb53f786a5d7997ff8889"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/transcription/review-and-persistence.json",
+      "sha256": "b68d77ad8c53427a591cbb71a62d1e34e128dcf8546cd9736876a0493bab01b8"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/voice-device.json",
+      "sha256": "6d2911e0be8a89b709629a6e7dc56fd4f97f386b2a718a040d7bf0c6cdb57278"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/release-gaps/transcript-filter.png",
+      "sha256": "67e89e6be4f5dff7f8e4466d088dfc744b385cbbe3b0e647e282c302b4ad034c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/release-gaps/reminder-enabled.png",
+      "sha256": "b5868364c2575d7561aa42655a638a0576d53fee22b6a6e62298623dc9b24b6c"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/release-gaps/privacy-disclosure.png",
+      "sha256": "f8d419c7da053486f8eb6394bf2793bc114700535df630ec1857ff69efdd7dcd"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/keepsake.pdf",
+      "sha256": "6880c0e444d890fef8330b36103515cc0df7183c95e7bfea089fda22e81696c3"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/screenshots/en-GB/qa-last-state.png",
+      "sha256": "3af6b31656bb81db57f21b94d85e443865fca29e62b611117a6514be30387070"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/screenshots/en-GB/05-timeline.png",
+      "sha256": "6295367232cf000d45b834cbd907daec268a6e2576396e6fd9dcccd5dc72fe79"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/screenshots/en-GB/02-albums.png",
+      "sha256": "9228883a4323bc43415c5662b7bf15cbb2e2340ea326be076db0ab18a43d475f"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/screenshots/en-GB/prompt-navigation-search-preserved.png",
+      "sha256": "52c1b78b03f02cd1d9356eb2c0303d0ed1dfae7298a68df84e069a81ea677ea4"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/screenshots/en-GB/03-story.png",
+      "sha256": "b8c3173efc005e25fc4a23bfce912dc622bdf8fd1776de97ed2ce05794af2762"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/screenshots/en-GB/06-scrapbook.png",
+      "sha256": "3af6b31656bb81db57f21b94d85e443865fca29e62b611117a6514be30387070"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/screenshots/en-GB/prompt-cancel-search-preserved.png",
+      "sha256": "0d691b5f8e389ff91f1bd02944573fff62283c05e903b5b0dc64333d1a47eced"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/screenshots/en-GB/04-manual-transcript.png",
+      "sha256": "e962eb776810f3b1f26e65bce3b997eb7cb797170c75950e827cadf20cfd25f7"
+    },
+    {
+      "path": "deliverables/reports/release-v6-2026-11-10/device-final/device-evidence/screenshots/en-GB/01-home.png",
+      "sha256": "1d33708e34d5e674336e59ba7aef684f63de901b2a429d380442f2ac27efea70"
+    }
+  ],
+  "testSelection": "all"
+}

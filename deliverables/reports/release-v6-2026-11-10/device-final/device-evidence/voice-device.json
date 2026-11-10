@@ -1,0 +1,13 @@
+{
+  "device": "KFTRWI",
+  "sdk": 28,
+  "recordedDurationMs": 2401,
+  "encodedDurationMs": 2331,
+  "playbackCompleted": true,
+  "rawAudioRetained": false,
+  "speechRecognitionAvailable": false,
+  "seekCallbackCompleted": true,
+  "playbackPauseResume": true,
+  "recognitionServices": "",
+  "ttsServices": "com.ivona.tts.oem,com.svox.pico"
+}

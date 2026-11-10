@@ -1,0 +1,19 @@
+{
+  "status": "AUTOMATED_EXPORT_VALIDATION_PASS_VISUAL_REVIEW_PARTIAL",
+  "count": 176,
+  "dimensions": [
+    1920,
+    1200
+  ],
+  "deviceRun": "54fc7a943d6e44354e48986086ff626aba59666715ec5524bf93927b3122fb5e",
+  "earlierExportFailures": [
+    "Viewport screenshots were 1529 pixels wide despite a reported 1920-pixel viewport; rejected before use.",
+    "Full-page RTL-root captures were blank; rejected. The export canvas now uses LTR geometry with an explicitly RTL header and the unchanged actual RTL app capture."
+  ],
+  "finalMethod": "Browser full-page JPEG capture; nonblank, dimension, pixel-preservation, current-headline and capture/build hash checks passed for all 176.",
+  "visualSamples": [
+    "English home: layout and actual capture checked",
+    "Arabic settings: full exported image inspected; RTL navigation, text direction and backup controls present. Scroll boundary cuts an earlier section above the backup feature; no complete visual approval claimed."
+  ],
+  "nativeSpeakerCertification": false
+}

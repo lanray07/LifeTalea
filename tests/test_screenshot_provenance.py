@@ -32,6 +32,12 @@ class ScreenshotProvenanceTest(unittest.TestCase):
             self.invoke('--refresh')
         self.assertFalse((self.folder/'provenance.json').exists())
 
+    def test_partial_passing_run_cannot_relabel_old_captures(self):
+        self.run.write_text(json.dumps({'status':'PASS','testSelection':'com.lifetalea.app.LocalizationTest'}))
+        with self.assertRaisesRegex(RuntimeError,'passing full device run'):
+            self.invoke('--refresh')
+        self.assertFalse((self.folder/'provenance.json').exists())
+
     def test_existing_assets_without_provenance_require_a_verified_refresh(self):
         with self.assertRaisesRegex(RuntimeError,'No previous provenance'):
             self.invoke()

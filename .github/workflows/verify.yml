@@ -63,5 +63,5 @@ jobs:
       - run: python scripts/localize.py check-release
       - run: python scripts/validate_collateral.py
       - run: python scripts/polish_translations.py --check
-      - run: python scripts/validate_localized_screenshots.py
+      - run: python scripts/validate_localized_screenshots.py --folder deliverables/store-assets/screenshots/localized-v6 --device-report deliverables/reports/release-v6-2026-11-10/device-final/device-test-run.json
       - run: python scripts/check_website.py

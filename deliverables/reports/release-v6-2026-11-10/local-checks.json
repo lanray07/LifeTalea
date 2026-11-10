@@ -66,5 +66,35 @@
       "exitCode": 0,
       "log": "deliverables/reports/release-v6-2026-11-10/final-check-7.log"
     }
-  ]
+  ],
+  "postRegressionChecks": {
+    "executedAt": "2026-11-10T18:34:56.317879+00:00",
+    "status": "PASS",
+    "checks": [
+      {
+        "command": [
+          "python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests"
+        ],
+        "exitCode": 0,
+        "log": "deliverables/reports/release-v6-2026-11-10/post-regression-python.log"
+      },
+      {
+        "command": [
+          "python",
+          "scripts/validate_localized_screenshots.py",
+          "--folder",
+          "deliverables/store-assets/screenshots/localized-v6",
+          "--device-report",
+          "deliverables/reports/release-v6-2026-11-10/device-final/device-test-run.json"
+        ],
+        "exitCode": 0,
+        "log": "deliverables/reports/release-v6-2026-11-10/post-regression-screenshots.log"
+      }
+    ]
+  }
 }

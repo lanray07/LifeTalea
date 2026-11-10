@@ -47,10 +47,13 @@
   },
   "debugBuild": "PASS",
   "physicalRegression": {
-    "status": "PASS_INITIAL_CANDIDATE",
+    "status": "PASS_FINAL_DEBUG",
     "tests": 26,
-    "debugApkSha256": "35286b099f7c526df06c35851c50b0e36aec72934ea9bd52758caa345475fece",
-    "finalDebugOverlayRebuild": "PASS_BUILD_DEVICE_RETEST_PENDING_MANUAL_AUTH_HANDOFF"
+    "evidenceFiles": 197,
+    "debugApkSha256": "54fc7a943d6e44354e48986086ff626aba59666715ec5524bf93927b3122fb5e",
+    "testApkSha256": "cc9abb62d473fefc4b9387e80438ae5b7c9d9fdb3d033c76b5261b1a8841be9a",
+    "report": "deliverables/reports/release-v6-2026-11-10/device-final/device-test-run.json",
+    "scope": "Automated full QA suite; successful device-credential authentication and Amazon-distributed v6 checks are separate."
   },
   "amazonCandidate": {
     "status": "BUILD_AND_INSPECTION_PASS",
@@ -63,11 +66,11 @@
     "locales": 22
   },
   "amazonPublicDraftVersionCode": 5,
-  "amazonLatVersionCode": 5,
+  "amazonLatVersionCode": 6,
   "newPayments": 0,
   "pythonTests": {
     "status": "PASS",
-    "tests": 18
+    "tests": 19
   },
   "receiptVerifierTests": {
     "status": "PASS",
@@ -83,16 +86,28 @@
   },
   "iapStatus": "APPROVED_PRODUCTION_CATALOGUE",
   "amazonLatDraftVersionCode": 6,
-  "amazonLatDraftSubmitted": false,
+  "amazonLatDraftSubmitted": true,
   "blockingGates": [
     "Manual device-credential app-lock check pending owner input; no authentication dialog automated",
-    "Final debug-overlay rebuild requires its own device regression and asset provenance",
-    "Version 6 not yet Amazon-distributed or installed; live LAT/public draft remain verified version 5",
-    "Current localized screenshot render/visual checks and marketplace mapping remain pending",
+    "Version 6 is live in LAT but not yet installed and verified through Amazon on the tablet",
+    "176 current locale exports validated; complete visual approval, marketplace mapping and remaining device sizes still pending",
     "Existing Codex Security startup returned no authoritative scan ID; audit recovery required",
     "Large-library streaming backup and process-death recovery remain engineering gaps",
     "Remaining billing recovery, device/accessibility/performance and provider/privacy assessments"
   ],
   "finalDebugApkSha256": "54fc7a943d6e44354e48986086ff626aba59666715ec5524bf93927b3122fb5e",
-  "finalTestApkSha256": "cc9abb62d473fefc4b9387e80438ae5b7c9d9fdb3d033c76b5261b1a8841be9a"
+  "finalTestApkSha256": "cc9abb62d473fefc4b9387e80438ae5b7c9d9fdb3d033c76b5261b1a8841be9a",
+  "amazonLatStatus": "TEST_IN_PROGRESS",
+  "installedAmazonVersionCode": 5,
+  "localizedScreenshotExports": {
+    "status": "PASS_BYTE_AND_DIMENSION_VALIDATION",
+    "count": 176,
+    "dimensions": [
+      1920,
+      1200
+    ],
+    "localeCount": 22,
+    "provenance": "deliverables/store-assets/screenshots/localized-v6/provenance.json",
+    "visualReview": "Partial samples only; full visual approval and other device sizes remain separate."
+  }
 }

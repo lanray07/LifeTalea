@@ -1,3 +1,5 @@
+> Current update: version 6 is live in Test 1 after its final QA APK passed 26 physical tests. All 176 current screenshot exports pass automated dimension, pixel and provenance checks. Amazon-installed version 6, manual app-lock authentication and remaining release gates are pending. The public draft remains version 5 and has not been submitted. See [RELEASE_V6_REVIEW_2026-11-10.md](RELEASE_V6_REVIEW_2026-11-10.md). Older dated results below retain their scope.
+
 # Amazon LAT status - 4 November 2026
 
 Latest LAT update (10 November 2026): Amazon-installed version 5 passed scoped checks for binary identity, filters, reminder registration/cancellation, privacy link, offline English transcription and restart persistence, invalid-audio fallback, Free restore and unpaid purchase cancellation, plus a small fictional-audio backup duplicate restore. Public draft version 5, revised English copy and reviewer instructions are saved. Public submission remains BLOCKED. Reminder timed delivery is unverified (18-hour platform window). See AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md.
