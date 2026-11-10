@@ -56,6 +56,9 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
     var year by rememberSaveable { mutableStateOf("") }
     var albumFilter by rememberSaveable { mutableStateOf<String?>(null) }
     var favourites by rememberSaveable { mutableStateOf(false) }
+    var advancedFilters by rememberSaveable { mutableStateOf(false) }
+    var attachmentFilter by rememberSaveable { mutableStateOf("all") }
+    var transcriptOnly by rememberSaveable { mutableStateOf(false) }
     val assistant = remember { VoiceAssistant(context) }
     DisposableEffect(Unit) { onDispose { assistant.close() } }
     val lifecycle = androidx.lifecycle.compose.LocalLifecycleOwner.current
@@ -108,6 +111,8 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
                     query = ""
                     year = ""
                     favourites = false
+                    attachmentFilter = "all"
+                    transcriptOnly = false
                     albumFilter = found.id
                 }
             }
@@ -118,6 +123,8 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
                 query = ""
                 albumFilter = null
                 favourites = false
+                attachmentFilter = "all"
+                transcriptOnly = false
                 year = if (result.query == "last year") (java.time.Year.now().value - 1).toString() else result.query
             }
             VoiceIntent.READ_STORY -> {
@@ -175,14 +182,28 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
                             "settings" -> SettingsScreen(vm, onPremium = { showPremium = true }, onDelete = { deletion = "delete_all" to { vm.run { vm.repo.clearAll() } } })
                             else -> {
                                 val isTimeline = screen == "timeline"
-                                var filtered = memories.filter { MemoryRules.matches(it, query) && (!favourites || it.favourite) && (year.isBlank() || it.date.startsWith(year)) && (albumFilter == null || links.any { link -> link.memoryId == it.id && link.albumId == albumFilter }) }
+                                var filtered = MemoryRules.filtered(memories, media, links, query, year, favourites, albumFilter, attachmentFilter, transcriptOnly)
                                 if (isTimeline) filtered = MemoryRules.timeline(filtered)
                                 LazyColumn(Modifier.fillMaxSize().padding(horizontal = if (wide) 32.dp else 20.dp), verticalArrangement = Arrangement.spacedBy(16.dp), contentPadding = PaddingValues(bottom = 32.dp)) {
                                     item { if (isTimeline) Heading(tr("timeline")) else { Heading(tr("hero_title"), tr("hero_body")); Button(onClick = { newMemory() }, contentPadding = PaddingValues(horizontal = 24.dp, vertical = 14.dp)) { Icon(Icons.Outlined.Add, null); Spacer(Modifier.width(8.dp)); Text(tr("add_memory")) }; if (memories.isEmpty()) HeroArtwork() } }
                                     item { OutlinedTextField(query, { query = it }, label = { Text(tr("search")) }, leadingIcon = { Icon(Icons.Outlined.Search, null) }, modifier = Modifier.fillMaxWidth(), singleLine = true)
                                         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                             Choice(!favourites, tr("all")) { favourites = false }; Choice(favourites, tr("favourites")) { favourites = true }; Choice(albumFilter == null, tr("album_filter") + ": " + tr("all")) { albumFilter = null }; albums.forEach { a -> Choice(albumFilter == a.id, a.title) { albumFilter = a.id } }
-                                        }; if (isTimeline) Field("year_filter", year, { input -> val digits = MemoryRules.normaliseDateDigits(input); if (digits.length <= 4 && digits.all(Char::isDigit)) year = digits })
+                                        }
+                                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                            Choice(advancedFilters, tr("search_filters")) { advancedFilters = !advancedFilters }
+                                            if (query.isNotBlank() || year.isNotBlank() || favourites || albumFilter != null || attachmentFilter != "all" || transcriptOnly)
+                                                TextButton(onClick = { query = ""; year = ""; favourites = false; albumFilter = null; attachmentFilter = "all"; transcriptOnly = false }) { Text(tr("clear_filters")) }
+                                        }
+                                        if (isTimeline || advancedFilters) {
+                                            Field("year_filter", year, { input -> val digits = MemoryRules.normaliseDateDigits(input); if (digits.length <= 4 && digits.all(Char::isDigit)) year = digits })
+                                            Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                                Choice(attachmentFilter == "all", tr("any_media")) { attachmentFilter = "all" }
+                                                Choice(attachmentFilter == "photo", tr("with_photos")) { attachmentFilter = "photo" }
+                                                Choice(attachmentFilter == "audio", tr("with_audio")) { attachmentFilter = "audio" }
+                                            }
+                                            Choice(transcriptOnly, tr("with_transcript")) { transcriptOnly = !transcriptOnly }
+                                        }
                                     }
                                     if (filtered.isEmpty()) item { EmptyState(if (memories.isEmpty()) tr("empty_title") else tr("no_results"), if (memories.isEmpty()) tr("empty_body") else null) }
                                     items(filtered, key = { it.id }) { m -> MemoryCard(m, media.firstOrNull { it.memoryId == m.id && it.kind == "photo" }, vm, { openMemory(m.id) }) }

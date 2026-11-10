@@ -1,0 +1,7 @@
+{
+  "apkSha256": "6d0f548a91642de13d92a58e5e59de9b5ac61a950d6795187381fabc493ed582",
+  "productionEndpointInDex": true,
+  "publicSigningPinInDex": true,
+  "privateTlsFixtureAbsent": true,
+  "versionCode": 5
+}

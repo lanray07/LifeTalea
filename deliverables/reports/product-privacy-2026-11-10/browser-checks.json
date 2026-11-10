@@ -1,0 +1,25 @@
+{
+  "browser": "Built-in IAB via CUA; dedicated Browser plugin absent; host computer-use rules require CUA",
+  "url": "http://127.0.0.1:3000/en-GB/privacy/",
+  "interaction": "Language combobox en-GB to ar; navigated to /ar/privacy/",
+  "checks": {
+    "identity": "PASS",
+    "notBlank": "PASS",
+    "frameworkOverlayAbsent": "PASS",
+    "consoleErrorsWarnings": [],
+    "screenshots": "PASS",
+    "languageInteraction": "PASS"
+  },
+  "arabicMobile": {
+    "requestedViewport": [
+      390,
+      844
+    ],
+    "clientWidth": 375,
+    "scrollWidth": 375,
+    "dir": "rtl",
+    "providerDisclosurePresent": true
+  },
+  "captureNote": "Full-page RTL screenshot capture clipped content; replaced by accurate viewport captures after checking DOM bounds and visible rendering. No app CSS change was needed.",
+  "limitations": "Only English desktop and Arabic mobile rendered checks; other locales structurally validated, not native approved"
+}

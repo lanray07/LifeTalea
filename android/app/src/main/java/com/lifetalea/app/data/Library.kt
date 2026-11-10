@@ -78,6 +78,21 @@ abstract class LifeDatabase : RoomDatabase() {
 }
 
 object MemoryRules {
+    /** All selected filters intersect; attachments must belong to this memory. */
+    fun filtered(memories: List<Memory>, media: List<Attachment>, links: List<AlbumMemory>,
+                 query: String = "", year: String = "", favourites: Boolean = false,
+                 album: String? = null, attachment: String = "all", transcriptOnly: Boolean = false): List<Memory> {
+        val attached = media.filter { attachment == "all" || it.kind == attachment }.map { it.memoryId }.toSet()
+        val members = links.filter { it.albumId == album }.map { it.memoryId }.toSet()
+        val date = normaliseDateDigits(year.trim())
+        return memories.filter { memory ->
+            matches(memory, query) && (!favourites || memory.favourite) &&
+                (date.isEmpty() || memory.date.startsWith(date)) &&
+                (album == null || memory.id in members) &&
+                (attachment == "all" || memory.id in attached) &&
+                (!transcriptOnly || memory.transcript.isNotBlank())
+        }
+    }
     fun formattedDate(memory: Memory, locale: java.util.Locale): String = runCatching {
         val decimal = java.time.format.DecimalStyle.of(locale)
         when (memory.precision) {

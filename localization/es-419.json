@@ -200,5 +200,15 @@
   "transcription_review": "Revisar borrador",
   "transcription_apply": "Añadir a la transcripción guardada",
   "transcription_limit": "La transcripción admite grabaciones de hasta diez minutos. Las más largas se conservan y puedes transcribirlas manualmente.",
-  "transcription_consent_required": "Confirma el procesamiento en tu dispositivo antes de iniciar la transcripción."
+  "transcription_consent_required": "Confirma el procesamiento en tu dispositivo antes de iniciar la transcripción.",
+  "search_filters": "Filtros de búsqueda",
+  "clear_filters": "Borrar filtros",
+  "any_media": "Cualquier contenido",
+  "with_photos": "Con fotos",
+  "with_audio": "Con audio",
+  "with_transcript": "Con transcripción",
+  "privacy_notice": "Aviso de privacidad completo",
+  "purchase_privacy": "Las compras de Amazon envían los identificadores de usuario de Amazon específicos de la aplicación y los recibos al verificador de LifeTalea alojado en Supabase y a Amazon. Los proveedores pueden conservar registros de solicitudes y conexiones. No se envían historias, fotos ni grabaciones para verificar compras. Las grabaciones se transcriben en este dispositivo. Los archivos exportados deben eliminarse por separado.",
+  "reminder_notice": "Recordatorio diario opcional hacia las 20:00, hora local. La configuración del dispositivo puede retrasarlo. La notificación no contiene historias. Desactivado de forma predeterminada.",
+  "reminder_unavailable": "Las notificaciones no están disponibles. Revisa los permisos y el canal de notificaciones de esta aplicación en los ajustes del dispositivo."
 }

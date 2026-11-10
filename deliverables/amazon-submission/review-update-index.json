@@ -1,10 +1,9 @@
 {
-  "path": "deliverables/amazon-submission/LifeTalea-Amazon-LAT-v4-update-2026-11-10.zip",
-  "sha256": "ec748690fa62528da49288e5c8f8b2327309bf5d1bafb68f12f9899ccddacd19",
-  "bytes": 372111712,
-  "entriesVerified": 38,
+  "path": "deliverables/amazon-submission/LifeTalea-product-privacy-v5-2026-11-10.zip",
+  "sha256": "7921b0ff3f3c7e58e249e6a39de2df0461a0a823b4c959eb7c3623b3922b20ad",
+  "bytes": 219515987,
+  "entriesVerified": 438,
   "releaseStatus": "BLOCKED",
-  "amazonTestStatus": "V4_TEST_IN_PROGRESS",
-  "deviceStatus": "V4_SCOPED_CHECKS_PASSED",
-  "publicDraftVersionCode": 4
+  "candidateVersionCode": 5,
+  "amazonDraftVersionCode": 4
 }

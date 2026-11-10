@@ -205,4 +205,14 @@
 <string name="transcription_apply">إضافة إلى النص المحفوظ</string>
 <string name="transcription_limit">يمكن تحويل التسجيلات التي لا تتجاوز عشر دقائق إلى نص. تبقى التسجيلات الأطول محفوظة ويمكنك كتابة نصها يدويًا.</string>
 <string name="transcription_consent_required">أكّد المعالجة على جهازك قبل بدء تحويل التسجيل إلى نص.</string>
+<string name="search_filters">مرشحات البحث</string>
+<string name="clear_filters">مسح المرشحات</string>
+<string name="any_media">جميع الوسائط</string>
+<string name="with_photos">تتضمن صورًا</string>
+<string name="with_audio">تتضمن صوتًا</string>
+<string name="with_transcript">تتضمن نصًا مفرغًا</string>
+<string name="privacy_notice">إشعار الخصوصية الكامل</string>
+<string name="purchase_privacy">ترسل مشتريات Amazon معرّف مستخدم Amazon الخاص بالتطبيق ومعرّفات الإيصالات إلى خدمة التحقق من LifeTalea المستضافة على Supabase وإلى Amazon. قد يحتفظ المزوّدون بسجلات الطلبات والاتصالات. لا تُرسل القصص أو الصور أو التسجيلات للتحقق. يُجرى تفريغ التسجيلات المحفوظة على هذا الجهاز. يجب حذف الملفات المُصدَّرة بشكل منفصل.</string>
+<string name="reminder_notice">تذكير يومي اختياري نحو الساعة 20:00 بالتوقيت المحلي. قد تؤخر إعدادات الجهاز وصوله. لا تتضمن الإشعارات محتوى القصص. معطّل افتراضيًا.</string>
+<string name="reminder_unavailable">الإشعارات غير متاحة. تحقق من إذن الإشعارات وقناتها لهذا التطبيق في إعدادات الجهاز.</string>
 </resources>

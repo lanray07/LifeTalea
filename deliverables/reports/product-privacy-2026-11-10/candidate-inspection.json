@@ -1,0 +1,31 @@
+{
+  "sha256": "6d0f548a91642de13d92a58e5e59de9b5ac61a950d6795187381fabc493ed582",
+  "package": "com.lifetalea.app",
+  "versionCode": 5,
+  "versionName": "0.1.0",
+  "minSdk": 26,
+  "targetSdk": 35,
+  "debuggable": false,
+  "publicAuthenticationPemBundled": true,
+  "publicAuthenticationPemSha256": "056a8be292f26e52de2b81951b3b51c762c02879dd94fbd35ffad56e994ba40b",
+  "signing": "UNSIGNED / apksigner verify rejected the candidate as expected",
+  "testReceiptFixtureBundled": false,
+  "amazonVisibilityNamesInApkManifest": {
+    "com.amazon.venezia": true,
+    "com.amazon.sdktestclient": true
+  },
+  "localSandboxTrustBundled": false,
+  "transcriptionModelSha256": "be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21",
+  "transcriptionNativeAbis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "testAudioFixtureBundled": false,
+  "generatedReleaseBillingConfiguration": {
+    "endpointConfigured": true,
+    "signingPublicKeyConfigured": true,
+    "environment": "production",
+    "purchasesEnabled": true
+  },
+  "limitations": "Badging and signing inspection do not verify runtime compatibility, Amazon DRM transformation or release approval."
+}

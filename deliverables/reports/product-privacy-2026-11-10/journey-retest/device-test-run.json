@@ -1,0 +1,61 @@
+{
+  "executedAt": "2026-11-10T16:38:53.833537+00:00",
+  "status": "PASS",
+  "debugApkSha256": "9f2f4e9d255153441db365fbd5d57fff61076866649801c27ba80781b74d9d1a",
+  "testApkSha256": "cc9abb62d473fefc4b9387e80438ae5b7c9d9fdb3d033c76b5261b1a8841be9a",
+  "evidenceFiles": 9,
+  "qaPowerSettings": {
+    "originalStayAwakeWhilePluggedIn": "7",
+    "restored": true
+  },
+  "qaRotationSettings": {
+    "original": {
+      "accelerometer_rotation": "1",
+      "user_rotation": "0"
+    },
+    "restored": true
+  },
+  "apkSources": [
+    "android/app/build/outputs/apk/debug/app-debug.apk",
+    "android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk"
+  ],
+  "evidence": [
+    {
+      "path": "deliverables/reports/product-privacy-2026-11-10/journey-retest/device-evidence/screenshots/en-GB/qa-last-state.png",
+      "sha256": "3af6b31656bb81db57f21b94d85e443865fca29e62b611117a6514be30387070"
+    },
+    {
+      "path": "deliverables/reports/product-privacy-2026-11-10/journey-retest/device-evidence/screenshots/en-GB/05-timeline.png",
+      "sha256": "6295367232cf000d45b834cbd907daec268a6e2576396e6fd9dcccd5dc72fe79"
+    },
+    {
+      "path": "deliverables/reports/product-privacy-2026-11-10/journey-retest/device-evidence/screenshots/en-GB/02-albums.png",
+      "sha256": "9228883a4323bc43415c5662b7bf15cbb2e2340ea326be076db0ab18a43d475f"
+    },
+    {
+      "path": "deliverables/reports/product-privacy-2026-11-10/journey-retest/device-evidence/screenshots/en-GB/prompt-navigation-search-preserved.png",
+      "sha256": "fc04ffde65c8f0357d566e4bf0936de51ca62b547ac3d91e5c77adc31e0357b7"
+    },
+    {
+      "path": "deliverables/reports/product-privacy-2026-11-10/journey-retest/device-evidence/screenshots/en-GB/03-story.png",
+      "sha256": "b8c3173efc005e25fc4a23bfce912dc622bdf8fd1776de97ed2ce05794af2762"
+    },
+    {
+      "path": "deliverables/reports/product-privacy-2026-11-10/journey-retest/device-evidence/screenshots/en-GB/06-scrapbook.png",
+      "sha256": "3af6b31656bb81db57f21b94d85e443865fca29e62b611117a6514be30387070"
+    },
+    {
+      "path": "deliverables/reports/product-privacy-2026-11-10/journey-retest/device-evidence/screenshots/en-GB/prompt-cancel-search-preserved.png",
+      "sha256": "0d691b5f8e389ff91f1bd02944573fff62283c05e903b5b0dc64333d1a47eced"
+    },
+    {
+      "path": "deliverables/reports/product-privacy-2026-11-10/journey-retest/device-evidence/screenshots/en-GB/04-manual-transcript.png",
+      "sha256": "e962eb776810f3b1f26e65bce3b997eb7cb797170c75950e827cadf20cfd25f7"
+    },
+    {
+      "path": "deliverables/reports/product-privacy-2026-11-10/journey-retest/device-evidence/screenshots/en-GB/01-home.png",
+      "sha256": "1d33708e34d5e674336e59ba7aef684f63de901b2a429d380442f2ac27efea70"
+    }
+  ],
+  "testSelection": "com.lifetalea.app.JourneyTest"
+}

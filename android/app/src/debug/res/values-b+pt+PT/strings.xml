@@ -201,4 +201,14 @@
 <string name="transcription_apply">Adicionar à transcrição guardada</string>
 <string name="transcription_limit">A transcrição aceita gravações de até dez minutos. Gravações mais longas são preservadas e podem ser transcritas manualmente.</string>
 <string name="transcription_consent_required">Confirme o processamento no dispositivo antes de iniciar a transcrição.</string>
+<string name="search_filters">Filtros de pesquisa</string>
+<string name="clear_filters">Limpar filtros</string>
+<string name="any_media">Qualquer multimédia</string>
+<string name="with_photos">Com fotos</string>
+<string name="with_audio">Com áudio</string>
+<string name="with_transcript">Com transcrição</string>
+<string name="privacy_notice">Aviso de privacidade completo</string>
+<string name="purchase_privacy">As compras na Amazon enviam o identificador de utilizador da Amazon específico do aplicação e os identificadores dos recibos ao serviço de verificação do LifeTalea hospedado no Supabase e à Amazon. Os fornecedores podem manter registos de solicitações e conexões. Histórias, fotos e gravações não são enviadas para verificação. As gravações são transcritas neste dispositivo. Os ficheiros exportados devem ser eliminados separadamente.</string>
+<string name="reminder_notice">Lembrete diário opcional por volta das 20h, no horário local. As configurações do dispositivo podem atrasar a entrega. As notificações não contêm histórias. Desativado por padrão.</string>
+<string name="reminder_unavailable">Notificações indisponíveis. Verifique a permissão e o canal de notificações deste aplicação nas configurações do dispositivo.</string>
 </resources>

@@ -277,7 +277,7 @@
         },
         {
           "title": "Externe Dienste",
-          "body": "Der installierte Sprachdienst kann Sprache online verarbeiten; die Aktivierung erfolgt ausdrücklich nach einem Hinweis. Käufe kommunizieren mit Amazon. Ein Cloud-Export übergibt dem Anbieter das gewählte Archiv."
+          "body": "Der installierte Sprachdienst kann Sprache online verarbeiten; die Aktivierung erfolgt ausdrücklich nach einem Hinweis. Käufe kommunizieren mit Amazon. Ein Cloud-Export übergibt dem Anbieter das gewählte Archiv.\n\nBei Amazon-Käufen werden die appbezogene Amazon-Nutzerkennung und Belegkennungen an den bei Supabase gehosteten Prüfdienst von LifeTalea und an Amazon gesendet. Die Anbieter können Anfrage- und Verbindungsprotokolle speichern. Geschichten, Fotos und Aufnahmen werden nicht zur Prüfung gesendet. Gespeicherte Aufnahmen werden auf diesem Gerät transkribiert. Exportierte Dateien müssen separat gelöscht werden.\n\nOptional tägliche Erinnerung gegen 20 Uhr Ortszeit. Geräteeinstellungen können die Zustellung verzögern. Benachrichtigungen enthalten keine Geschichten. Standardmäßig deaktiviert."
         },
         {
           "title": "Löschen und Aufbewahren",

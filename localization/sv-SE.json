@@ -200,5 +200,15 @@
   "transcription_review": "Granska textutkastet",
   "transcription_apply": "Lägg till i sparad transkription",
   "transcription_limit": "Inspelningar på högst tio minuter kan transkriberas. Längre inspelningar finns kvar och kan skrivas av manuellt.",
-  "transcription_consent_required": "Bekräfta bearbetning på din enhet innan transkriptionen startar."
+  "transcription_consent_required": "Bekräfta bearbetning på din enhet innan transkriptionen startar.",
+  "search_filters": "Sökfilter",
+  "clear_filters": "Rensa filter",
+  "any_media": "Alla medier",
+  "with_photos": "Med foton",
+  "with_audio": "Med ljud",
+  "with_transcript": "Med transkription",
+  "privacy_notice": "Fullständig integritetsinformation",
+  "purchase_privacy": "Amazon-köp skickar appens Amazon-användar-ID och kvitto-ID till LifeTaleas verifieringstjänst hos Supabase och till Amazon. Leverantörerna kan spara begärande- och anslutningsloggar. Berättelser, foton och inspelningar skickas inte för verifiering. Inspelningar transkriberas på den här enheten. Exporterade filer måste tas bort separat.",
+  "reminder_notice": "Valfri daglig påminnelse omkring kl. 20 lokal tid. Enhetens inställningar kan fördröja leveransen. Aviseringar innehåller inga berättelser. Avstängd som standard.",
+  "reminder_unavailable": "Aviseringar är inte tillgängliga. Kontrollera appens aviseringsbehörighet och aviseringskanal i enhetens inställningar."
 }

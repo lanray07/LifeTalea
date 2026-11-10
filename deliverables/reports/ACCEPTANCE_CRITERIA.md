@@ -1,3 +1,5 @@
+Product/privacy update (10 November 2026): 51 PASS, 152 NOT TESTED, 55 BLOCKED out of 258. Mixed historical inventory; not a full version 5 retest. See product-privacy-2026-11-10/acceptance-update.json.
+
 Current update (10 November 2026): Amazon version 4 processing and unavailable-audio UI checks passed. Inventory: 55 BLOCKED, 153 NOT TESTED, 50 PASS out of 258. This mixes historical evidence and is not a full v4 retest. See release-2026-11-10/acceptance-update.json.
 
 Current transcription update (7 November 2026): the CSV inventory now records 48 PASS, 155 NOT TESTED and 55 BLOCKED out of 258 mandatory criteria (18.60%). This mixes historical build dates and is not a complete version 4 retest. Nine of eleven transcription criteria have new evidence; processing/error-state UI coverage remains open. See transcription-2026-11-07/acceptance-update.json.

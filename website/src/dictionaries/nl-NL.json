@@ -277,7 +277,7 @@
         },
         {
           "title": "Externe diensten",
-          "body": "De geïnstalleerde spraakdienst kan spraak online verwerken, na uitdrukkelijke activering met uitleg. Aankopen communiceren met Amazon. Een cloudexport geeft het gekozen archief aan die aanbieder."
+          "body": "De geïnstalleerde spraakdienst kan spraak online verwerken, na uitdrukkelijke activering met uitleg. Aankopen communiceren met Amazon. Een cloudexport geeft het gekozen archief aan die aanbieder.\n\nBij Amazon-aankopen worden de appgebonden Amazon-gebruikers-ID en ontvangstbewijs-ID’s naar de door Supabase gehoste verificatiedienst van LifeTalea en naar Amazon gestuurd. Aanbieders kunnen aanvraag- en verbindingslogboeken bewaren. Verhalen, foto’s en opnamen worden niet voor verificatie verstuurd. Opnamen worden op dit apparaat getranscribeerd. Geëxporteerde bestanden moeten apart worden verwijderd.\n\nOptionele dagelijkse herinnering rond 20.00 uur lokale tijd. Apparaatinstellingen kunnen de melding vertragen. Meldingen bevatten geen verhalen. Standaard uitgeschakeld."
         },
         {
           "title": "Verwijderen en bewaren",

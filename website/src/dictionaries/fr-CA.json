@@ -277,7 +277,7 @@
         },
         {
           "title": "Les services externes",
-          "body": "La reconnaissance vocale peut traiter la voix en ligne via le service installé, après activation et information. Les achats passent par Amazon. Un export vers un fournisseur cloud lui transmet l’archive choisie."
+          "body": "La reconnaissance vocale peut traiter la voix en ligne via le service installé, après activation et information. Les achats passent par Amazon. Un export vers un fournisseur cloud lui transmet l’archive choisie.\n\nLes achats Amazon transmettent les identifiants Amazon propres à l’application et les identifiants de reçus au service de vérification de LifeTalea, hébergé par Supabase, et à Amazon. Ces prestataires peuvent conserver des journaux de requêtes et de connexion. Les récits, photos et enregistrements ne sont pas envoyés pour vérification. La transcription des enregistrements s’effectue sur cet appareil. Les fichiers exportés doivent être supprimés séparément.\n\nRappel quotidien facultatif vers 20 h, heure locale. Les réglages de l’appareil peuvent retarder sa réception. Aucun récit ne figure dans la notification. Désactivé par défaut."
         },
         {
           "title": "Suppression et conservation",

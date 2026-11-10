@@ -199,5 +199,15 @@
   "transcription_review": "文字起こしの下書きを確認",
   "transcription_apply": "保存済みの文字起こしに追記",
   "transcription_limit": "文字起こしは10分以内の録音に対応しています。長い録音も保存されたままで、手動で文字起こしを入力できます。",
-  "transcription_consent_required": "文字起こしを開始する前に、端末上での処理を確認してください。"
+  "transcription_consent_required": "文字起こしを開始する前に、端末上での処理を確認してください。",
+  "search_filters": "検索フィルター",
+  "clear_filters": "フィルターを解除",
+  "any_media": "すべてのメディア",
+  "with_photos": "写真あり",
+  "with_audio": "音声あり",
+  "with_transcript": "文字起こしあり",
+  "privacy_notice": "プライバシー通知の全文",
+  "purchase_privacy": "Amazonでの購入時には、アプリ固有のAmazonユーザーIDとレシートIDが、Supabase上のLifeTaleaの検証サービスおよびAmazonに送信されます。提供事業者はリクエストや接続のログを保存する場合があります。ストーリー、写真、録音は購入の検証には送信されません。保存した録音の文字起こしはこの端末で行われます。書き出したファイルは別途削除してください。",
+  "reminder_notice": "毎日20時ごろ（現地時間）のリマインダーを任意で設定できます。端末の設定により通知が遅れることがあります。通知にストーリーの内容は含まれません。初期設定はオフです。",
+  "reminder_unavailable": "通知を利用できません。端末の設定で、このアプリの通知権限と通知チャンネルを確認してください。"
 }

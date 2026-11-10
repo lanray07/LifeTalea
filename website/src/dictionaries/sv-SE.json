@@ -277,7 +277,7 @@
         },
         {
           "title": "Externa tjänster",
-          "body": "Installerad taligenkänning kan behandla tal online efter uttrycklig aktivering med information. Köp kommunicerar med Amazon. Molnexport lämnar det valda arkivet till leverantören."
+          "body": "Installerad taligenkänning kan behandla tal online efter uttrycklig aktivering med information. Köp kommunicerar med Amazon. Molnexport lämnar det valda arkivet till leverantören.\n\nAmazon-köp skickar appens Amazon-användar-ID och kvitto-ID till LifeTaleas verifieringstjänst hos Supabase och till Amazon. Leverantörerna kan spara begärande- och anslutningsloggar. Berättelser, foton och inspelningar skickas inte för verifiering. Inspelningar transkriberas på den här enheten. Exporterade filer måste tas bort separat.\n\nValfri daglig påminnelse omkring kl. 20 lokal tid. Enhetens inställningar kan fördröja leveransen. Aviseringar innehåller inga berättelser. Avstängd som standard."
         },
         {
           "title": "Radering och lagring",

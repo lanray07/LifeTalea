@@ -200,5 +200,15 @@
   "transcription_review": "Textentwurf prüfen",
   "transcription_apply": "An gespeichertes Transkript anhängen",
   "transcription_limit": "Die Transkription unterstützt Aufnahmen bis zu zehn Minuten. Längere Aufnahmen bleiben erhalten und können manuell transkribiert werden.",
-  "transcription_consent_required": "Bestätige die Verarbeitung auf deinem Gerät, bevor du die Transkription startest."
+  "transcription_consent_required": "Bestätige die Verarbeitung auf deinem Gerät, bevor du die Transkription startest.",
+  "search_filters": "Suchfilter",
+  "clear_filters": "Filter zurücksetzen",
+  "any_media": "Alle Medien",
+  "with_photos": "Mit Fotos",
+  "with_audio": "Mit Audio",
+  "with_transcript": "Mit Transkript",
+  "privacy_notice": "Vollständige Datenschutzhinweise",
+  "purchase_privacy": "Bei Amazon-Käufen werden die appbezogene Amazon-Nutzerkennung und Belegkennungen an den bei Supabase gehosteten Prüfdienst von LifeTalea und an Amazon gesendet. Die Anbieter können Anfrage- und Verbindungsprotokolle speichern. Geschichten, Fotos und Aufnahmen werden nicht zur Prüfung gesendet. Gespeicherte Aufnahmen werden auf diesem Gerät transkribiert. Exportierte Dateien müssen separat gelöscht werden.",
+  "reminder_notice": "Optional tägliche Erinnerung gegen 20 Uhr Ortszeit. Geräteeinstellungen können die Zustellung verzögern. Benachrichtigungen enthalten keine Geschichten. Standardmäßig deaktiviert.",
+  "reminder_unavailable": "Benachrichtigungen sind nicht verfügbar. Prüfe die Berechtigung und den Benachrichtigungskanal dieser App in den Geräteeinstellungen."
 }

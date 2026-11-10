@@ -201,4 +201,14 @@
 <string name="transcription_apply">Toevoegen aan opgeslagen transcript</string>
 <string name="transcription_limit">Opnamen tot tien minuten kunnen worden uitgeschreven. Langere opnamen blijven bewaard en kunnen handmatig worden uitgeschreven.</string>
 <string name="transcription_consent_required">Bevestig verwerking op je apparaat voordat je begint met uitschrijven.</string>
+<string name="search_filters">Zoekfilters</string>
+<string name="clear_filters">Filters wissen</string>
+<string name="any_media">Alle media</string>
+<string name="with_photos">Met foto’s</string>
+<string name="with_audio">Met audio</string>
+<string name="with_transcript">Met transcript</string>
+<string name="privacy_notice">Volledige privacyverklaring</string>
+<string name="purchase_privacy">Bij Amazon-aankopen worden de appgebonden Amazon-gebruikers-ID en ontvangstbewijs-ID’s naar de door Supabase gehoste verificatiedienst van LifeTalea en naar Amazon gestuurd. Aanbieders kunnen aanvraag- en verbindingslogboeken bewaren. Verhalen, foto’s en opnamen worden niet voor verificatie verstuurd. Opnamen worden op dit apparaat getranscribeerd. Geëxporteerde bestanden moeten apart worden verwijderd.</string>
+<string name="reminder_notice">Optionele dagelijkse herinnering rond 20.00 uur lokale tijd. Apparaatinstellingen kunnen de melding vertragen. Meldingen bevatten geen verhalen. Standaard uitgeschakeld.</string>
+<string name="reminder_unavailable">Meldingen zijn niet beschikbaar. Controleer de toestemming en het meldingskanaal van deze app in de apparaatinstellingen.</string>
 </resources>

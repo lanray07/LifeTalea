@@ -1,0 +1,9 @@
+{
+  "counts": {
+    "PASS": 51,
+    "NOT TESTED": 152,
+    "BLOCKED": 55
+  },
+  "total": 258,
+  "scope": "Mixed historical inventory, not a complete v5 acceptance run"
+}

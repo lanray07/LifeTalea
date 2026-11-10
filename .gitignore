@@ -28,3 +28,6 @@ deliverables/amazon-submission/*.zip
 supabase/.temp/
 deliverables/reports/release-*/green/device-evidence/
 deliverables/reports/transcription-*/offline/device-evidence/
+deliverables/reports/product-privacy-*/device/device-evidence/
+deliverables/reports/product-privacy-*/retest/device-evidence/
+deliverables/reports/product-privacy-*/journey-retest/device-evidence/

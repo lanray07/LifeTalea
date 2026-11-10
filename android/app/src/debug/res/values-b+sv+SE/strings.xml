@@ -201,4 +201,14 @@
 <string name="transcription_apply">Lägg till i sparad transkription</string>
 <string name="transcription_limit">Inspelningar på högst tio minuter kan transkriberas. Längre inspelningar finns kvar och kan skrivas av manuellt.</string>
 <string name="transcription_consent_required">Bekräfta bearbetning på din enhet innan transkriptionen startar.</string>
+<string name="search_filters">Sökfilter</string>
+<string name="clear_filters">Rensa filter</string>
+<string name="any_media">Alla medier</string>
+<string name="with_photos">Med foton</string>
+<string name="with_audio">Med ljud</string>
+<string name="with_transcript">Med transkription</string>
+<string name="privacy_notice">Fullständig integritetsinformation</string>
+<string name="purchase_privacy">Amazon-köp skickar appens Amazon-användar-ID och kvitto-ID till LifeTaleas verifieringstjänst hos Supabase och till Amazon. Leverantörerna kan spara begärande- och anslutningsloggar. Berättelser, foton och inspelningar skickas inte för verifiering. Inspelningar transkriberas på den här enheten. Exporterade filer måste tas bort separat.</string>
+<string name="reminder_notice">Valfri daglig påminnelse omkring kl. 20 lokal tid. Enhetens inställningar kan fördröja leveransen. Aviseringar innehåller inga berättelser. Avstängd som standard.</string>
+<string name="reminder_unavailable">Aviseringar är inte tillgängliga. Kontrollera appens aviseringsbehörighet och aviseringskanal i enhetens inställningar.</string>
 </resources>

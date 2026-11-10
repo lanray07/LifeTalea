@@ -277,7 +277,7 @@
         },
         {
           "title": "Choices that involve other services",
-          "body": "Speech recognition uses your installed speech service, which may process speech over a network. It is activated only through push-to-talk with a disclosure. Amazon purchasing communicates with Amazon. Exporting to a cloud document provider shares the selected archive with that provider."
+          "body": "Speech recognition uses your installed speech service, which may process speech over a network. It is activated only through push-to-talk with a disclosure. Amazon purchasing communicates with Amazon. Exporting to a cloud document provider shares the selected archive with that provider.\n\nAmazon purchases send app-specific Amazon user and receipt identifiers to LifeTalea’s Supabase-hosted verifier and Amazon. Providers may retain request and connection logs. Stories, photos and recordings are not sent for verification. Saved-recording transcription runs on this device. Exported files must be deleted separately.\n\nOptional daily reminder around 20:00 local time. Delivery may be delayed by device settings. Notifications contain no story content. Off by default."
         },
         {
           "title": "Deletion and retention",

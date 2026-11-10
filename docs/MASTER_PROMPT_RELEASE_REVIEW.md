@@ -1,5 +1,9 @@
 # Master prompt release review
 
+Latest product/privacy update (10 November 2026): version 5 is a local candidate with combined filters, optional reminders and expanded disclosures. Amazon remains version 4; public submission is BLOCKED. See PRODUCT_PRIVACY_RELEASE_REVIEW_2026-11-10.md for exact test scope and remaining gates.
+
+Earlier dated evidence follows.
+
 Current public draft: verified version 4, revised English copy and transcription reviewer instructions saved and read back on 10 November. Not submitted.
 
 10 November: version 4 is live on Amazon Test 1 and installed through the Appstore over version 3. The Amazon signing identity, all DEX files, both native transcription libraries and model were verified. Fictional English processing/review/edit/append, invalid-audio/manual fallback, reset-account restore and unpaid purchase cancellation passed. Only the three owner-approved QA packages were removed to free space; the regular app was retained. See AMAZON_RELEASE_REVIEW_2026-11-10.md. Public submission remains blocked by the remaining release gates.

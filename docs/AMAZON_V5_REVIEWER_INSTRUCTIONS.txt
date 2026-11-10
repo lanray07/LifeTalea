@@ -1,0 +1,13 @@
+LifeTalea version 5 is a local candidate, not yet verified after Amazon processing. No LifeTalea login is required. Use fictional content only.
+
+Create two memories: one with a short audio recording and transcript, and one written memory with a different year. Open Search filters. Combine the year, album, favourites, media and transcript controls, then Clear filters. All saved memories should remain accessible after clearing filters.
+
+Settings includes the Supabase-hosted receipt verifier disclosure and a link to the full privacy notice. Saved-recording transcription stays on device; installed command recognition and TTS services may use their providers' networks. Purchase identifiers are sent for verification; stories, photos and recordings are not sent for purchase verification.
+
+Optional reminders are off by default. Enable them in Settings to request a generic daily prompt around 20:00 local time; operating-system power settings can delay delivery. No journal content appears in the notification. Android 13 and later request notification permission only when enabling reminders. Disabling cancels the reminder. Reboot, time-zone changes and Android 13 permission branches still need additional device verification.
+
+For saved-recording transcription, choose English, confirm local processing, review and correct the draft, then append. Existing transcript text and original audio must remain. Test invalid audio using fictional fixtures only; the Edit fallback permits manual transcripts. Accuracy beyond the short English fixture remains unqualified.
+
+Premium is a one-time Amazon purchase. Do not make a paid transaction for this QA pass. Restore and cancellation may be reviewed with the existing test account; public billing promotion and remaining recovery checks are separate release gates.
+
+Support: banksmi@mail.com

@@ -277,7 +277,7 @@
         },
         {
           "title": "Dış hizmetler",
-          "body": "Kurulu konuşma hizmeti, açıklama sonrası açıkça etkinleştirildiğinde sesi ağ üzerinden işleyebilir. Satın alımlar Amazon ile iletişim kurar. Bulut dışa aktarımı seçili arşivi sağlayıcıya verir."
+          "body": "Kurulu konuşma hizmeti, açıklama sonrası açıkça etkinleştirildiğinde sesi ağ üzerinden işleyebilir. Satın alımlar Amazon ile iletişim kurar. Bulut dışa aktarımı seçili arşivi sağlayıcıya verir.\n\nAmazon satın alımları, uygulamaya özel Amazon kullanıcı kimliğini ve makbuz kimliklerini Supabase üzerinde barındırılan LifeTalea doğrulama hizmetine ve Amazon’a gönderir. Sağlayıcılar istek ve bağlantı günlüklerini saklayabilir. Hikâyeler, fotoğraflar ve kayıtlar doğrulama için gönderilmez. Kayıtların dökümü bu cihazda oluşturulur. Dışa aktarılan dosyalar ayrıca silinmelidir.\n\nYerel saatle 20.00 civarında isteğe bağlı günlük hatırlatıcı. Cihaz ayarları bildirimi geciktirebilir. Bildirimler hikâye içeriği içermez. Varsayılan olarak kapalıdır."
         },
         {
           "title": "Silme ve saklama",

@@ -201,4 +201,14 @@
 <string name="transcription_apply">An gespeichertes Transkript anhängen</string>
 <string name="transcription_limit">Die Transkription unterstützt Aufnahmen bis zu zehn Minuten. Längere Aufnahmen bleiben erhalten und können manuell transkribiert werden.</string>
 <string name="transcription_consent_required">Bestätige die Verarbeitung auf deinem Gerät, bevor du die Transkription startest.</string>
+<string name="search_filters">Suchfilter</string>
+<string name="clear_filters">Filter zurücksetzen</string>
+<string name="any_media">Alle Medien</string>
+<string name="with_photos">Mit Fotos</string>
+<string name="with_audio">Mit Audio</string>
+<string name="with_transcript">Mit Transkript</string>
+<string name="privacy_notice">Vollständige Datenschutzhinweise</string>
+<string name="purchase_privacy">Bei Amazon-Käufen werden die appbezogene Amazon-Nutzerkennung und Belegkennungen an den bei Supabase gehosteten Prüfdienst von LifeTalea und an Amazon gesendet. Die Anbieter können Anfrage- und Verbindungsprotokolle speichern. Geschichten, Fotos und Aufnahmen werden nicht zur Prüfung gesendet. Gespeicherte Aufnahmen werden auf diesem Gerät transkribiert. Exportierte Dateien müssen separat gelöscht werden.</string>
+<string name="reminder_notice">Optional tägliche Erinnerung gegen 20 Uhr Ortszeit. Geräteeinstellungen können die Zustellung verzögern. Benachrichtigungen enthalten keine Geschichten. Standardmäßig deaktiviert.</string>
+<string name="reminder_unavailable">Benachrichtigungen sind nicht verfügbar. Prüfe die Berechtigung und den Benachrichtigungskanal dieser App in den Geräteeinstellungen.</string>
 </resources>

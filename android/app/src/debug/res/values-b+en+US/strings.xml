@@ -201,4 +201,14 @@
 <item quantity="one">%1$d memory</item>
 <item quantity="other">%1$d memories</item>
 </plurals>
+<string name="search_filters">Search filters</string>
+<string name="clear_filters">Clear filters</string>
+<string name="any_media">Any media</string>
+<string name="with_photos">With photos</string>
+<string name="with_audio">With audio</string>
+<string name="with_transcript">With a transcript</string>
+<string name="privacy_notice">Full privacy notice</string>
+<string name="purchase_privacy">Amazon purchases send app-specific Amazon user and receipt identifiers to LifeTalea’s Supabase-hosted verifier and Amazon. Providers may retain request and connection logs. Stories, photos and recordings are not sent for verification. Saved-recording transcription runs on this device. Exported files must be deleted separately.</string>
+<string name="reminder_notice">Optional daily reminder around 20:00 local time. Delivery may be delayed by device settings. Notifications contain no story content. Off by default.</string>
+<string name="reminder_unavailable">Notifications are unavailable. Check this app’s notification permission and channel in device settings.</string>
 </resources>

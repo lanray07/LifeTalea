@@ -277,7 +277,7 @@
         },
         {
           "title": "Layanan eksternal",
-          "body": "Layanan ucapan terpasang dapat memproses suara melalui jaringan setelah diaktifkan dengan pemberitahuan. Pembelian berkomunikasi dengan Amazon. Ekspor cloud menyerahkan arsip pilihan kepada penyedia."
+          "body": "Layanan ucapan terpasang dapat memproses suara melalui jaringan setelah diaktifkan dengan pemberitahuan. Pembelian berkomunikasi dengan Amazon. Ekspor cloud menyerahkan arsip pilihan kepada penyedia.\n\nPembelian Amazon mengirim ID pengguna Amazon khusus aplikasi dan ID tanda terima ke layanan verifikasi LifeTalea yang dihosting di Supabase serta ke Amazon. Penyedia dapat menyimpan log permintaan dan koneksi. Cerita, foto, dan rekaman tidak dikirim untuk verifikasi. Transkripsi rekaman tersimpan dilakukan di perangkat ini. File yang diekspor harus dihapus secara terpisah.\n\nPengingat harian opsional sekitar pukul 20.00 waktu setempat. Pengaturan perangkat dapat menunda pengiriman. Notifikasi tidak memuat isi cerita. Nonaktif secara default."
         },
         {
           "title": "Penghapusan dan penyimpanan",

@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         model.billing.initialize()
+        com.lifetalea.app.features.StoryReminders(this).reschedule()
         setContent {
             val preferences = model.preferences.collectAsStateWithLifecycle().value
             LifeTheme(preferences.theme) { LifeApp(model) }

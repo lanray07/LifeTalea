@@ -200,4 +200,14 @@
 <string name="transcription_apply">Tambahkan ke transkrip tersimpan</string>
 <string name="transcription_limit">Transkripsi mendukung rekaman hingga sepuluh menit. Rekaman yang lebih panjang tetap tersimpan dan dapat ditranskripsikan secara manual.</string>
 <string name="transcription_consent_required">Konfirmasikan pemrosesan di perangkat sebelum memulai transkripsi.</string>
+<string name="search_filters">Filter pencarian</string>
+<string name="clear_filters">Hapus filter</string>
+<string name="any_media">Semua media</string>
+<string name="with_photos">Dengan foto</string>
+<string name="with_audio">Dengan audio</string>
+<string name="with_transcript">Dengan transkrip</string>
+<string name="privacy_notice">Pemberitahuan privasi lengkap</string>
+<string name="purchase_privacy">Pembelian Amazon mengirim ID pengguna Amazon khusus aplikasi dan ID tanda terima ke layanan verifikasi LifeTalea yang dihosting di Supabase serta ke Amazon. Penyedia dapat menyimpan log permintaan dan koneksi. Cerita, foto, dan rekaman tidak dikirim untuk verifikasi. Transkripsi rekaman tersimpan dilakukan di perangkat ini. File yang diekspor harus dihapus secara terpisah.</string>
+<string name="reminder_notice">Pengingat harian opsional sekitar pukul 20.00 waktu setempat. Pengaturan perangkat dapat menunda pengiriman. Notifikasi tidak memuat isi cerita. Nonaktif secara default.</string>
+<string name="reminder_unavailable">Notifikasi tidak tersedia. Periksa izin dan saluran notifikasi aplikasi ini di pengaturan perangkat.</string>
 </resources>

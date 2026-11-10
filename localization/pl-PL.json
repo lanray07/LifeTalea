@@ -202,5 +202,15 @@
   "transcription_review": "Sprawdź szkic transkrypcji",
   "transcription_apply": "Dodaj do zapisanej transkrypcji",
   "transcription_limit": "Transkrypcja obsługuje nagrania do dziesięciu minut. Dłuższe nagrania pozostają zapisane i można je przepisać ręcznie.",
-  "transcription_consent_required": "Potwierdź przetwarzanie na urządzeniu przed rozpoczęciem transkrypcji."
+  "transcription_consent_required": "Potwierdź przetwarzanie na urządzeniu przed rozpoczęciem transkrypcji.",
+  "search_filters": "Filtry wyszukiwania",
+  "clear_filters": "Wyczyść filtry",
+  "any_media": "Wszystkie multimedia",
+  "with_photos": "Ze zdjęciami",
+  "with_audio": "Z nagraniami",
+  "with_transcript": "Z transkrypcją",
+  "privacy_notice": "Pełna informacja o prywatności",
+  "purchase_privacy": "Zakupy Amazon przesyłają identyfikator użytkownika Amazon właściwy dla aplikacji i identyfikatory paragonów do usługi weryfikacji LifeTalea w Supabase oraz do Amazon. Dostawcy mogą zachowywać dzienniki żądań i połączeń. Historie, zdjęcia i nagrania nie są wysyłane do weryfikacji. Transkrypcja nagrań odbywa się na tym urządzeniu. Wyeksportowane pliki należy usunąć osobno.",
+  "reminder_notice": "Opcjonalne codzienne przypomnienie około 20:00 czasu lokalnego. Ustawienia urządzenia mogą opóźnić dostarczenie. Powiadomienia nie zawierają historii. Domyślnie wyłączone.",
+  "reminder_unavailable": "Powiadomienia są niedostępne. Sprawdź uprawnienia i kanał powiadomień tej aplikacji w ustawieniach urządzenia."
 }

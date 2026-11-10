@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "minimal_declared_permissions",
+      "status": "PASS",
+      "scope": [
+        "android.permission.INTERNET",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    {
+      "check": "local_reminder_receiver_private",
+      "status": "PASS",
+      "scope": "Opt-in inexact local reminder; no exact-alarm permission"
+    },
+    {
+      "check": "system_backup_disabled",
+      "status": "PASS",
+      "scope": "Manifest"
+    },
+    {
+      "check": "cleartext_disabled",
+      "status": "PASS",
+      "scope": "App-owned network traffic"
+    },
+    {
+      "check": "rtl_declared",
+      "status": "PASS",
+      "scope": "Declaration only; layout review still required"
+    },
+    {
+      "check": "no_play_billing_or_ad_analytics_dependencies",
+      "status": "PASS",
+      "scope": "Direct Gradle dependencies only"
+    },
+    {
+      "check": "literal_resource_references_resolve",
+      "status": "PASS",
+      "scope": {
+        "referenced": 115,
+        "missing": [],
+        "note": "Dynamic keys are reviewed separately"
+      }
+    },
+    {
+      "check": "no_recognised_embedded_private_keys",
+      "status": "PASS",
+      "scope": []
+    },
+    {
+      "check": "literal_public_url_allowlist",
+      "status": "PASS",
+      "scope": {
+        "urls": [
+          "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md"
+        ],
+        "note": "Only the owner-provided public privacy notice may be literal. Billing uses BuildConfig. Not a networking/data-flow audit."
+      }
+    }
+  ],
+  "limitations": "Static source patterns do not prove absence of vulnerabilities or legal compliance."
+}

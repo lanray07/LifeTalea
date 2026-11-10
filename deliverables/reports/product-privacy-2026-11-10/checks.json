@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-10",
+  "releaseStatus": "BLOCKED",
+  "candidateVersionCode": 5,
+  "candidateSha256": "6d0f548a91642de13d92a58e5e59de9b5ac61a950d6795187381fabc493ed582",
+  "amazonTestVersionCode": 4,
+  "amazonDraftVersionCode": 4,
+  "candidateAmazonProcessed": false,
+  "unit": {
+    "tests": 23,
+    "failures": 0,
+    "errors": 0,
+    "lint": {
+      "Error": 0,
+      "Warning": 277
+    }
+  },
+  "pythonTestsPassed": 16,
+  "verifierTestsPassed": 23,
+  "websiteReviewGateCasesPassed": 6,
+  "websiteHtmlChecked": 352,
+  "locales": 22,
+  "keys": 209,
+  "nativeApprovals": 0,
+  "initialDeviceBatch": {
+    "tests": 26,
+    "failures": 3,
+    "status": "FAIL"
+  },
+  "deviceRerun": {
+    "tests": 26,
+    "failures": 1,
+    "status": "FAIL"
+  },
+  "finalJourneyRetest": {
+    "tests": 2,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "combinedDeviceCasesCleared": true,
+  "scope": "Separate batches and APK identities retained; no claim of a single green full rerun unless its report is PASS",
+  "payments": 0,
+  "productionBackendChanged": false
+}

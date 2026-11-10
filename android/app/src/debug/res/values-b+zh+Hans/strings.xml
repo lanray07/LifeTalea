@@ -200,4 +200,14 @@
 <string name="transcription_apply">追加到已保存的转写文本</string>
 <string name="transcription_limit">转写支持最长十分钟的录音。更长的录音仍会安全保留，您可以手动输入转写文本。</string>
 <string name="transcription_consent_required">开始转写前，请确认在设备上处理录音。</string>
+<string name="search_filters">搜索筛选</string>
+<string name="clear_filters">清除筛选</string>
+<string name="any_media">所有媒体</string>
+<string name="with_photos">含照片</string>
+<string name="with_audio">含音频</string>
+<string name="with_transcript">含转录文本</string>
+<string name="privacy_notice">完整隐私声明</string>
+<string name="purchase_privacy">Amazon 购买会将应用专属的 Amazon 用户标识和收据标识发送至由 Supabase 托管的 LifeTalea 验证服务及 Amazon。服务提供商可能保留请求和连接日志。故事、照片和录音不会发送用于购买验证。已保存录音的转录在此设备上进行。导出的文件需要单独删除。</string>
+<string name="reminder_notice">可选的每日提醒会在当地时间约20:00发送。设备设置可能导致延迟。通知不包含故事内容。默认关闭。</string>
+<string name="reminder_unavailable">通知不可用。请在设备设置中检查此应用的通知权限和通知渠道。</string>
 </resources>

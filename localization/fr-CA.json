@@ -200,5 +200,15 @@
   "transcription_review": "Relire le brouillon",
   "transcription_apply": "Ajouter à la transcription enregistrée",
   "transcription_limit": "La transcription est limitée à dix minutes. Les enregistrements plus longs sont conservés ; vous pouvez saisir leur transcription.",
-  "transcription_consent_required": "Confirmez le traitement sur votre appareil avant de lancer la transcription."
+  "transcription_consent_required": "Confirmez le traitement sur votre appareil avant de lancer la transcription.",
+  "search_filters": "Filtres de recherche",
+  "clear_filters": "Effacer les filtres",
+  "any_media": "Tous les médias",
+  "with_photos": "Avec photos",
+  "with_audio": "Avec audio",
+  "with_transcript": "Avec transcription",
+  "privacy_notice": "Notice de confidentialité complète",
+  "purchase_privacy": "Les achats Amazon transmettent les identifiants Amazon propres à l’application et les identifiants de reçus au service de vérification de LifeTalea, hébergé par Supabase, et à Amazon. Ces prestataires peuvent conserver des journaux de requêtes et de connexion. Les récits, photos et enregistrements ne sont pas envoyés pour vérification. La transcription des enregistrements s’effectue sur cet appareil. Les fichiers exportés doivent être supprimés séparément.",
+  "reminder_notice": "Rappel quotidien facultatif vers 20 h, heure locale. Les réglages de l’appareil peuvent retarder sa réception. Aucun récit ne figure dans la notification. Désactivé par défaut.",
+  "reminder_unavailable": "Notifications indisponibles. Vérifiez les autorisations et le canal de notification de cette application dans les réglages de l’appareil."
 }

@@ -62,6 +62,7 @@ def article_overrides(language,locale):
     result['voice-transcription']['sections'][1]={'title':app['transcription_review'],'body':app['transcription_limit']}
     result['offline-memory-journal']['sections'][1]['body']=app['voice_notice']+' '+app['transcription_notice']
     result['faq']['sections'][3]['body']=app['transcription_notice']
+    result['privacy']['sections'][1]['body'] += '\n\n' + app['purchase_privacy'] + '\n\n' + app['reminder_notice']
     return result
 
 def main():
@@ -94,7 +95,7 @@ def main():
         a=web['articles']
         listing['shortDescription']=a['features']['summary']
         listing['featureBullets']=[a[slug]['summary'] for slug in ['family-memory-journal','voice-story-recording','digital-scrapbook','family-timeline']]+[a['fire-tablet-compatibility']['sections'][2]['body']]
-        listing['longDescription']='\n\n'.join([web['home']['subtitle'],a['features']['sections'][0]['body'],a['features']['sections'][1]['body'],app['recording_notice'],app['voice_notice'],a['pricing']['sections'][1]['body'],app['backup_notice'],web['home']['releaseNote'],a['voice-transcription']['summary'],web['ui']['previewNotice'],'O.Bankole · banksmi@mail.com'])
+        listing['longDescription']='\n\n'.join([web['home']['subtitle'],a['features']['sections'][0]['body'],a['features']['sections'][1]['body'],app['recording_notice'],app['voice_notice'],a['pricing']['sections'][1]['body'],app['backup_notice'],web['home']['releaseNote'],a['voice-transcription']['summary'],app['reminder_notice'],web['ui']['previewNotice'],'O.Bankole · banksmi@mail.com'])
         listing['keywords']=[app[key] for key in ['family','voice_story','history','keepsakes','timeline','personal']]
         listing['releaseNotes']=web['ui']['previewNotice']+' '+web['home']['releaseNote']
         listing['status']='DRAFT_NOT_SUBMISSION_READY';listing['targetHash']=source_hash({key:listing[key] for key in [*FIELDS,'screenshotHeadlines']})

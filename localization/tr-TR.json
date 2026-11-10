@@ -200,5 +200,15 @@
   "transcription_review": "Metin taslağını incele",
   "transcription_apply": "Kayıtlı metne ekle",
   "transcription_limit": "En fazla on dakikalık kayıtlar metne dönüştürülebilir. Daha uzun kayıtlar korunur ve metinlerini kendiniz girebilirsiniz.",
-  "transcription_consent_required": "Metne dönüştürmeden önce cihazınızda işlem yapılmasını onaylayın."
+  "transcription_consent_required": "Metne dönüştürmeden önce cihazınızda işlem yapılmasını onaylayın.",
+  "search_filters": "Arama filtreleri",
+  "clear_filters": "Filtreleri temizle",
+  "any_media": "Tüm medya",
+  "with_photos": "Fotoğraflı",
+  "with_audio": "Ses kayıtlı",
+  "with_transcript": "Döküm içeren",
+  "privacy_notice": "Gizlilik bildiriminin tamamı",
+  "purchase_privacy": "Amazon satın alımları, uygulamaya özel Amazon kullanıcı kimliğini ve makbuz kimliklerini Supabase üzerinde barındırılan LifeTalea doğrulama hizmetine ve Amazon’a gönderir. Sağlayıcılar istek ve bağlantı günlüklerini saklayabilir. Hikâyeler, fotoğraflar ve kayıtlar doğrulama için gönderilmez. Kayıtların dökümü bu cihazda oluşturulur. Dışa aktarılan dosyalar ayrıca silinmelidir.",
+  "reminder_notice": "Yerel saatle 20.00 civarında isteğe bağlı günlük hatırlatıcı. Cihaz ayarları bildirimi geciktirebilir. Bildirimler hikâye içeriği içermez. Varsayılan olarak kapalıdır.",
+  "reminder_unavailable": "Bildirimler kullanılamıyor. Cihaz ayarlarında bu uygulamanın bildirim iznini ve kanalını kontrol edin."
 }

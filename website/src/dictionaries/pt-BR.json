@@ -277,7 +277,7 @@
         },
         {
           "title": "Serviços externos",
-          "body": "O serviço de voz instalado pode processar áudio pela rede, após ativação explícita com aviso. Compras se comunicam com a Amazon. Exportar para a nuvem entrega o arquivo escolhido ao provedor."
+          "body": "O serviço de voz instalado pode processar áudio pela rede, após ativação explícita com aviso. Compras se comunicam com a Amazon. Exportar para a nuvem entrega o arquivo escolhido ao provedor.\n\nAs compras na Amazon enviam o identificador de usuário da Amazon específico do aplicativo e os identificadores dos recibos ao serviço de verificação do LifeTalea hospedado no Supabase e à Amazon. Os fornecedores podem manter registros de solicitações e conexões. Histórias, fotos e gravações não são enviadas para verificação. As gravações são transcritas neste dispositivo. Os arquivos exportados devem ser excluídos separadamente.\n\nLembrete diário opcional por volta das 20h, no horário local. As configurações do dispositivo podem atrasar a entrega. As notificações não contêm histórias. Desativado por padrão."
         },
         {
           "title": "Exclusão e retenção",

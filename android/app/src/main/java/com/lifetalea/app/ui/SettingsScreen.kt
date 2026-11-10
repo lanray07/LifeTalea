@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -15,17 +16,27 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.semantics.Role
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.lifetalea.app.LibraryViewModel
 import com.lifetalea.app.data.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-@Composable fun Toggle(key: String, checked: Boolean, change: (Boolean) -> Unit) { Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) { Text(tr(key), Modifier.weight(1f)); Switch(checked, change) } }
+@Composable fun Toggle(key: String, checked: Boolean, change: (Boolean) -> Unit) { Row(Modifier.fillMaxWidth().toggleable(value = checked, role = Role.Switch, onValueChange = change).padding(vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) { Text(tr(key), Modifier.weight(1f)); Switch(checked, null) } }
 @Composable fun SettingsScreen(vm: LibraryViewModel, onPremium: () -> Unit, onDelete: () -> Unit) {
     val context = LocalContext.current
     val preferences by vm.preferences.collectAsStateWithLifecycle()
     val busy by vm.busy.collectAsStateWithLifecycle()
+    val reminders = remember { com.lifetalea.app.features.StoryReminders(context) }
+    var reminderEnabled by remember { mutableStateOf(reminders.enabled) }
+    fun enableReminder(value: Boolean) {
+        if (reminders.setEnabled(value)) reminderEnabled = reminders.enabled
+        else vm.error.value = "reminder_unavailable"
+    }
+    val notificationPermission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
+        if (granted) enableReminder(true) else vm.error.value = "reminder_unavailable"
+    }
     var includePhotos by rememberSaveable { mutableStateOf(false) }; var includeAudio by rememberSaveable { mutableStateOf(false) }
     var password by remember { mutableStateOf("") }
     var archive by remember { mutableStateOf<ValidatedArchive?>(null) }
@@ -42,7 +53,18 @@ import kotlinx.coroutines.withContext
         Text(tr("language"), style = MaterialTheme.typography.titleLarge); Text(tr("language_note"))
         LanguagePicker()
         Toggle("spoken_feedback", preferences.spoken) { vm.run { vm.settings.spoken(it) } }
-        HorizontalDivider(); Text(tr("privacy"), style = MaterialTheme.typography.titleLarge); Text(tr("privacy_body"))
+        HorizontalDivider()
+        Toggle("reminders", reminderEnabled) { value ->
+            if (value && android.os.Build.VERSION.SDK_INT >= 33 && androidx.core.content.ContextCompat.checkSelfPermission(context, android.Manifest.permission.POST_NOTIFICATIONS) != android.content.pm.PackageManager.PERMISSION_GRANTED)
+                notificationPermission.launch(android.Manifest.permission.POST_NOTIFICATIONS)
+            else enableReminder(value)
+        }
+        Text(tr("reminder_notice"))
+        HorizontalDivider(); Text(tr("privacy"), style = MaterialTheme.typography.titleLarge); Text(tr("privacy_body")); Text(tr("purchase_privacy"))
+        TextButton(onClick = {
+            runCatching { context.startActivity(android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse("https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md"))) }
+                .onFailure { vm.error.value = "operation_failed" }
+        }) { Text(tr("privacy_notice")) }
         HorizontalDivider(); Text(tr("backup"), style = MaterialTheme.typography.titleLarge); Text(tr("backup_notice"))
         Toggle("include_photos", includePhotos) { includePhotos = it }; Toggle("include_audio", includeAudio) { includeAudio = it }
         OutlinedTextField(password, { password = it.take(200) }, label = { Text(tr("password")) }, supportingText = { Text(tr("password_hint")) }, visualTransformation = PasswordVisualTransformation(), modifier = Modifier.fillMaxWidth(), singleLine = true)

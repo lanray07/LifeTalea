@@ -277,7 +277,7 @@
         },
         {
           "title": "Usługi zewnętrzne",
-          "body": "Zainstalowana usługa mowy może przetwarzać głos online po świadomym włączeniu. Zakupy komunikują się z Amazon. Eksport do chmury przekazuje wybrane archiwum dostawcy."
+          "body": "Zainstalowana usługa mowy może przetwarzać głos online po świadomym włączeniu. Zakupy komunikują się z Amazon. Eksport do chmury przekazuje wybrane archiwum dostawcy.\n\nZakupy Amazon przesyłają identyfikator użytkownika Amazon właściwy dla aplikacji i identyfikatory paragonów do usługi weryfikacji LifeTalea w Supabase oraz do Amazon. Dostawcy mogą zachowywać dzienniki żądań i połączeń. Historie, zdjęcia i nagrania nie są wysyłane do weryfikacji. Transkrypcja nagrań odbywa się na tym urządzeniu. Wyeksportowane pliki należy usunąć osobno.\n\nOpcjonalne codzienne przypomnienie około 20:00 czasu lokalnego. Ustawienia urządzenia mogą opóźnić dostarczenie. Powiadomienia nie zawierają historii. Domyślnie wyłączone."
         },
         {
           "title": "Usuwanie i przechowywanie",

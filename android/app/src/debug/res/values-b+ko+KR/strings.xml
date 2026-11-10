@@ -200,4 +200,14 @@
 <string name="transcription_apply">저장된 텍스트에 추가</string>
 <string name="transcription_limit">텍스트 변환은 최대 10분 길이의 녹음을 지원합니다. 더 긴 녹음도 안전하게 보관되며 텍스트를 직접 입력할 수 있습니다.</string>
 <string name="transcription_consent_required">텍스트 변환을 시작하기 전에 기기 내 처리를 확인하세요.</string>
+<string name="search_filters">검색 필터</string>
+<string name="clear_filters">필터 초기화</string>
+<string name="any_media">모든 미디어</string>
+<string name="with_photos">사진 있음</string>
+<string name="with_audio">오디오 있음</string>
+<string name="with_transcript">전사문 있음</string>
+<string name="privacy_notice">개인정보 처리 안내 전문</string>
+<string name="purchase_privacy">Amazon 구매 시 앱 전용 Amazon 사용자 ID와 영수증 ID가 Supabase에서 호스팅되는 LifeTalea 확인 서비스 및 Amazon으로 전송됩니다. 제공업체는 요청 및 연결 로그를 보관할 수 있습니다. 이야기, 사진, 녹음은 구매 확인을 위해 전송되지 않습니다. 저장된 녹음의 전사는 이 기기에서 처리됩니다. 내보낸 파일은 별도로 삭제해야 합니다.</string>
+<string name="reminder_notice">매일 현지 시간 약 20시에 알림을 받도록 선택할 수 있습니다. 기기 설정에 따라 전달이 지연될 수 있습니다. 알림에는 이야기 내용이 포함되지 않습니다. 기본값은 꺼짐입니다.</string>
+<string name="reminder_unavailable">알림을 사용할 수 없습니다. 기기 설정에서 이 앱의 알림 권한과 알림 채널을 확인하세요.</string>
 </resources>

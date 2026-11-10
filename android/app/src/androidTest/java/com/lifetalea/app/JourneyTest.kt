@@ -87,9 +87,15 @@ class JourneyTest {
         compose.waitForIdle()
         compose.onNodeWithText("Back", useUnmergedTree = true).performScrollTo().performClick()
         compose.onNodeWithText("Search stories, tags, transcripts…").performTextInput("orchard")
+        compose.runOnIdle {
+            (compose.activity.getSystemService(android.content.Context.INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager)
+                .hideSoftInputFromWindow(compose.activity.window.decorView.windowToken, 0)
+        }
+        compose.onNode(hasScrollToIndexAction()).performScrollToNode(hasText("The orchard picnic — fictional demo"))
         compose.onNodeWithText("The orchard picnic — fictional demo").assertExists()
         compose.onNodeWithText("Search stories, tags, transcripts…").performTextClearance()
         compose.onNodeWithText("Timeline", useUnmergedTree = true).performClick()
+        compose.onNode(hasScrollToIndexAction()).performScrollToNode(hasText("The orchard picnic — fictional demo"))
         compose.onNodeWithText("The orchard picnic — fictional demo").assertExists()
         capture("05-timeline")
         compose.onNodeWithText("Albums", useUnmergedTree = true).performClick()

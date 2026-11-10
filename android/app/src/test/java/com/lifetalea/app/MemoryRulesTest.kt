@@ -3,6 +3,17 @@ import com.lifetalea.app.data.*
 import org.junit.Assert.*
 import org.junit.Test
 class MemoryRulesTest {
+    @Test fun compoundFiltersUseOnlyTheSelectedMemoryAttachmentsAndAlbum() {
+        val a = Memory(id="a", title="Garden", date="1994", precision="YEAR", favourite=true, transcript="Apple tree")
+        val b = Memory(id="b", title="Garden", date="1994", precision="YEAR", favourite=true, transcript="Apple tree")
+        val c = Memory(id="c", title="Garden", date="2001", precision="YEAR")
+        val media = listOf(Attachment(memoryId="a",filename="a.m4a",kind="audio",name="Voice"), Attachment(memoryId="b",filename="b.photo",kind="photo",name="Photo"))
+        val links = listOf(AlbumMemory("family","a"), AlbumMemory("other","b"))
+        assertEquals(listOf(a),MemoryRules.filtered(listOf(a,b,c),media,links,query="apple",year="١٩٩٤",favourites=true,album="family",attachment="audio",transcriptOnly=true))
+        assertTrue(MemoryRules.filtered(listOf(a,b,c),media,links,album="family",attachment="photo").isEmpty())
+        assertEquals(listOf(a,b,c),MemoryRules.filtered(listOf(a,b,c),media,links))
+        assertEquals(listOf(a,b),MemoryRules.filtered(listOf(a,b,c),media,links,transcriptOnly=true))
+    }
     @Test fun localizedDatesPreservePrecision() {
         val year=Memory(date="1994",precision="YEAR")
         assertEquals("١٩٩٤",MemoryRules.formattedDate(year,java.util.Locale.forLanguageTag("ar")))

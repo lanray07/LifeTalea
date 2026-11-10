@@ -1,6 +1,6 @@
 Deliverable ID,Deliverable name,File path,Status,Verification method,Evidence path,Remaining blocker
 D01,Android source,android/app/src,IMPLEMENTED,Gradle and device tests,deliverables/reports/transcription-2026-11-07/checks.json,Some release gates remain
-D02,Build artifacts,deliverables/amazon-submission/LifeTalea-0.1.0-public-v4-unsigned.apk,PARTIALLY_VERIFIED,Build log / hashes,deliverables/reports/release-2026-11-10/amazon-v4-lat-status.json,Amazon version 4 installed and scoped transcription/nonpaying billing checks passed; public release gates remain
+D02,Build artifacts,deliverables/amazon-submission/LifeTalea-0.1.0-public-v5-unsigned.apk,PARTIALLY_VERIFIED,Build log / hashes,deliverables/reports/product-privacy-2026-11-10/checks.json,Local candidate 5 built and scoped checks passed; Amazon remains version 4; public release gates remain
 D03,Functional application,android/app/src/main/java,PARTIALLY_VERIFIED,Instrumented journeys,deliverables/reports/transcription-2026-11-07/checks.json,Remaining acceptance checks
 D04,Voice and transcription,docs/VOICE_COMPATIBILITY.md,PARTIALLY_VERIFIED,Device diagnostic,deliverables/reports/transcription-2026-11-07/checks.json,"Short English offline transcription and restart passed; other-language accuracy, long/background/device cases and multilingual commands remain"
 D05,Localisation,localization,BLOCKED,Strict coverage validator,deliverables/localization/coverage.json,22 structurally complete draft locales and zero native approvals

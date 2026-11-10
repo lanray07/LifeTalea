@@ -277,7 +277,7 @@
         },
         {
           "title": "Servizi esterni",
-          "body": "Il servizio vocale installato può elaborare la voce online, dopo attivazione esplicita con informativa. Gli acquisti comunicano con Amazon. Esportare nel cloud consegna l’archivio al fornitore scelto."
+          "body": "Il servizio vocale installato può elaborare la voce online, dopo attivazione esplicita con informativa. Gli acquisti comunicano con Amazon. Esportare nel cloud consegna l’archivio al fornitore scelto.\n\nGli acquisti Amazon inviano l’identificativo utente Amazon specifico dell’app e gli identificativi delle ricevute al servizio di verifica di LifeTalea ospitato su Supabase e ad Amazon. I fornitori possono conservare registri delle richieste e delle connessioni. Storie, foto e registrazioni non vengono inviate per la verifica. Le registrazioni vengono trascritte su questo dispositivo. I file esportati devono essere eliminati separatamente.\n\nPromemoria giornaliero facoltativo verso le 20:00, ora locale. Le impostazioni del dispositivo possono ritardarlo. Le notifiche non contengono storie. Disattivato per impostazione predefinita."
         },
         {
           "title": "Eliminazione e conservazione",
