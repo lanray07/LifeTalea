@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-10",
+  "projectRegion": "eu-central-1",
+  "projectStatus": "ACTIVE_HEALTHY",
+  "functionSlug": "lifetalea-receipts",
+  "functionVersion": 3,
+  "functionStatus": "ACTIVE",
+  "sourceComparison": [
+    {
+      "path": "supabase/index.ts",
+      "exactMatch": false,
+      "normalizedLineEndingMatch": false,
+      "matchIgnoringLineEndingsAndFinalBlankLines": true,
+      "difference": "The deployed file has one extra final newline."
+    },
+    {
+      "path": "supabase/handler.mjs",
+      "exactMatch": false,
+      "normalizedLineEndingMatch": false,
+      "matchIgnoringLineEndingsAndFinalBlankLines": true,
+      "difference": "The deployed file has one extra final newline."
+    },
+    {
+      "path": "src/verifier.mjs",
+      "exactMatch": false,
+      "normalizedLineEndingMatch": false,
+      "matchIgnoringLineEndingsAndFinalBlankLines": true,
+      "difference": "The deployed file has one extra final newline."
+    }
+  ],
+  "scope": "Read-only deployment metadata and three public source files; no secrets or customer logs read. Project region does not establish the execution region of every edge invocation."
+}

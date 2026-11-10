@@ -1,0 +1,7 @@
+{
+  "status": "STARTUP_REQUEST_STOPPED_WITHOUT_CONTEXT",
+  "targetCommit": "56a89eb2aa7467d9613b3515bc1e84a5da52d80d",
+  "scanIdReturned": false,
+  "independentAuditCompleted": false,
+  "recovery": "The single stalled startup request was terminated without an authoritative scan context. No replacement scan, invented scan ownership or terminal audit fallback was started."
+}

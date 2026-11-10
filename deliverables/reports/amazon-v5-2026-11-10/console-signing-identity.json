@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-10",
+  "source": "Amazon Appstore Certificate Hashes dialog on version 5 LAT form",
+  "sha256": "8e35b165d5a1dc14c10820cee25ed2c24e9c543ceb2f059b9f5bc93baa672297",
+  "matchesPreviousInstalledAmazonCertificate": true,
+  "scope": "Console identity only; version 5 installed APK has not yet been inspected."
+}

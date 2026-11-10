@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-10",
+  "releaseName": "LifeTalea v5 product and privacy verification",
+  "releaseId": "amzn1.devportal.apprelease.4d97054e1cd6403581311e1ca8b018e3",
+  "channel": "Test 1",
+  "amazonStatus": "TEST_IN_PROGRESS",
+  "uploadVersionCode": 5,
+  "uploadSha256": "6d0f548a91642de13d92a58e5e59de9b5ac61a950d6795187381fabc493ed582",
+  "drmApplied": true,
+  "selectedFireTablets": 12,
+  "installedVersionCode": 4,
+  "deviceVerification": "WAITING_FOR_UNLOCK",
+  "publicDraftVersionCode": 4,
+  "publicSubmission": "NOT_SUBMITTED",
+  "paymentsSubmitted": 0
+}

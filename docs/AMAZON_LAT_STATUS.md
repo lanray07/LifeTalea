@@ -1,5 +1,7 @@
 # Amazon LAT status - 4 November 2026
 
+Latest LAT update (10 November 2026): version 5 is live on Amazon Test 1. Tablet verification is waiting for PIN unlock; the installed app and public draft remain version 4. See AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md. Public submission remains BLOCKED.
+
 Latest product/privacy update (10 November 2026): version 5 is a local candidate with combined filters, optional reminders and expanded disclosures. Amazon remains version 4; public submission is BLOCKED. See PRODUCT_PRIVACY_RELEASE_REVIEW_2026-11-10.md for exact test scope and remaining gates.
 
 Earlier dated evidence follows.

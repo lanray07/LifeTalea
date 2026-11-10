@@ -1,5 +1,7 @@
 # Known limitations and remaining engineering
 
+Latest LAT update (10 November 2026): version 5 is live on Amazon Test 1. Tablet verification is waiting for PIN unlock; the installed app and public draft remain version 4. See AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md. Public submission remains BLOCKED.
+
 Latest source: local candidate version 5; Amazon remains version 4. See PRODUCT_PRIVACY_RELEASE_REVIEW_2026-11-10.md.
 
 This is a development build. Release readiness is BLOCKED independently of whether a source component compiles.

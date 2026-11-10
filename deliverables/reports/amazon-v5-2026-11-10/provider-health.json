@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-10",
+  "status": 200,
+  "service": "lifetalea-amazon-rvs",
+  "ready": true,
+  "environment": "production",
+  "observedHealthInvocationRegion": "eu-west-2",
+  "scope": "One public health request only. Not receipt validity, not every invocation region, not a legal assessment."
+}

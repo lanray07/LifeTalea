@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-10",
+  "scope": "Repeated cleanup limited to the three previously owner-approved QA package names; only two were installed. Regular Amazon app retained. QA APKs and evidence retained in the prior local package.",
+  "removed": [
+    {
+      "package": "com.lifetalea.app.debug",
+      "result": "Success"
+    },
+    {
+      "package": "com.lifetalea.app.debug.test",
+      "result": "Success"
+    }
+  ],
+  "before": "Filesystem            1K-blocks     Used Available Use% Mounted on\n/dev/block/mmcblk0p21  25176392 24033564    995372  97% /data",
+  "after": "Filesystem            1K-blocks     Used Available Use% Mounted on\n/dev/block/mmcblk0p21  25176392 23929720   1099216  96% /data"
+}
