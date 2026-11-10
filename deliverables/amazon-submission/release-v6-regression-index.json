@@ -1,0 +1,14 @@
+{
+  "path": "deliverables/amazon-submission/LifeTalea-v6-regression-review-2026-11-10.zip",
+  "sha256": "0e60ced1f7da34009fe49fa8dc7788e3e0a1766f8cd48b1ff1c7179265f66961",
+  "bytes": 322619033,
+  "entriesVerified": 882,
+  "releaseStatus": "BLOCKED",
+  "candidateVersionCode": 6,
+  "amazonPublicDraftVersionCode": 5,
+  "amazonLiveLatVersionCode": 6,
+  "amazonLatDraftVersionCode": 6,
+  "amazonLatDraftSubmitted": true,
+  "installedAmazonVersionCode": 5,
+  "sourceCommit": "b21d787fdeb782266f7f3cf3241a19021951988b"
+}
