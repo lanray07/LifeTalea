@@ -1,3 +1,20 @@
+# Current release gates - 10 November 2026
+
+Submission is authorized but remains blocked by acceptance requirements. Version 5 is live on Test 1, Appstore-installed and checked on one Fire tablet. The public draft contains the same version 5 upload with revised English copy and reviewer instructions. See AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md for current evidence; older tables below are historical.
+
+| Gate | Next concrete action |
+|---|---|
+| Localization and store assets | Obtain native reviews for the 22 draft locales, bind approvals to the current catalogues, then generate and review matching release screenshots. Zero native approvals are recorded. |
+| Independent security | Resolve the stalled scan-service startup through its supported workflow. No authoritative scan context was returned; no audit completed and no replacement scan was started. |
+| Privacy and provider assessment | Confirm actual hosted log retention, processing terms and cross-border assessment; complete final store privacy assessment. Current disclosures distinguish the project base region from globally routed edge execution. |
+| Remaining product work | Implement and test the scoped app lock, sorting and premium theme requirements. Preserve v5; any app-code change needs a new version and regression pass. |
+| Reliability and accessibility | Complete larger-library backup/restore and interruption/crash recovery, broader device/performance/accessibility cases and reminder timed/reboot/time-zone cases. Fire OS gave the v5 repeating reminder an 18-hour window. |
+| Billing release transition | Verify public-channel IAP configuration and remaining active-entitlement recovery/revocation cases. Current v5 checks cover reset-account Free restore and unpaid prompt cancellation only; do not make another payment without authorization. |
+
+Recorded-file transcription is implemented. Short fictional English offline processing, draft correction/append, process-restart persistence and invalid-audio fallback passed in the Amazon-installed build; accuracy for other languages and longer/noisy recordings remains unqualified. The small fictional backup duplicate-conflict restore also passed. None of these narrow checks replaces the outstanding gates above.
+
+---
+
 # Amazon release gates — 4 November 2026
 
 **Public release remains BLOCKED. The owner has authorised submission; technical, native and legal acceptance gates still apply. Premium has been approved for the Amazon test channel.** Current technical results are generated in `deliverables/amazon-submission/audit.json`. Historical acceptance percentages are not a current readiness score.

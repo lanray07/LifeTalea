@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-10",
+  "scope": "Two fictional records only; unencrypted small archive with recordings; existing-memory conflict path. No large-library/crash/encryption guarantee.",
+  "memories": 2,
+  "audioAttachments": 2,
+  "recordingHashesUnchanged": true,
+  "savedOfflineTranscriptPresent": true,
+  "archiveSha256": "8e0b4f85b325631d3bee28ee39511907faca39dd4ab5cbb5e574a628f22b5957",
+  "restorePreviewExistingMemoriesKept": 2,
+  "restoreCompletedVisually": true
+}

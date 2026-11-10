@@ -1,0 +1,13 @@
+{
+  "phase": "enabled",
+  "alarms": [
+    {
+      "type": "RTC_WAKEUP",
+      "tag": "com.lifetalea.app.STORY_REMINDER",
+      "scheduledLocalTime": "2026-11-10 20:00:00.000",
+      "repeatIntervalMs": 86400000,
+      "platformWindow": "+18h0m0s0ms"
+    }
+  ],
+  "scope": "Only LifeTalea alarm fields retained. Scheduling is observed, not actual timed delivery."
+}

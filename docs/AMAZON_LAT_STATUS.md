@@ -1,12 +1,12 @@
 # Amazon LAT status - 4 November 2026
 
-Latest LAT update (10 November 2026): version 5 is live on Amazon Test 1. Tablet verification is waiting for PIN unlock; the installed app and public draft remain version 4. See AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md. Public submission remains BLOCKED.
+Latest LAT update (10 November 2026): Amazon-installed version 5 passed scoped checks for binary identity, filters, reminder registration/cancellation, privacy link, offline English transcription and restart persistence, invalid-audio fallback, Free restore and unpaid purchase cancellation, plus a small fictional-audio backup duplicate restore. Public draft version 5, revised English copy and reviewer instructions are saved. Public submission remains BLOCKED. Reminder timed delivery is unverified (18-hour platform window). See AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md.
 
-Latest product/privacy update (10 November 2026): version 5 is a local candidate with combined filters, optional reminders and expanded disclosures. Amazon remains version 4; public submission is BLOCKED. See PRODUCT_PRIVACY_RELEASE_REVIEW_2026-11-10.md for exact test scope and remaining gates.
+Historical local product/privacy build evidence: PRODUCT_PRIVACY_RELEASE_REVIEW_2026-11-10.md. Current Amazon distribution evidence is in the version 5 LAT review above.
 
 Earlier dated evidence follows.
 
-Current public draft: verified version 4, revised English copy and transcription reviewer instructions saved and read back on 10 November. Not submitted.
+Earlier version 4 public-draft evidence follows; version 5 supersedes it. Not submitted.
 
 10 November: version 4 is live on Amazon Test 1 and installed through the Appstore over version 3. The Amazon signing identity, all DEX files, both native transcription libraries and model were verified. Fictional English processing/review/edit/append, invalid-audio/manual fallback, reset-account restore and unpaid purchase cancellation passed. Only the three owner-approved QA packages were removed to free space; the regular app was retained. See AMAZON_RELEASE_REVIEW_2026-11-10.md. Public submission remains blocked by the remaining release gates.
 

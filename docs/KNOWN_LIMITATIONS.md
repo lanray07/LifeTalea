@@ -1,8 +1,8 @@
 # Known limitations and remaining engineering
 
-Latest LAT update (10 November 2026): version 5 is live on Amazon Test 1. Tablet verification is waiting for PIN unlock; the installed app and public draft remain version 4. See AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md. Public submission remains BLOCKED.
+Latest LAT update (10 November 2026): Amazon-installed version 5 passed scoped checks for binary identity, filters, reminder registration/cancellation, privacy link, offline English transcription and restart persistence, invalid-audio fallback, Free restore and unpaid purchase cancellation, plus a small fictional-audio backup duplicate restore. Public draft version 5, revised English copy and reviewer instructions are saved. Public submission remains BLOCKED. Reminder timed delivery is unverified (18-hour platform window). See AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md.
 
-Latest source: local candidate version 5; Amazon remains version 4. See PRODUCT_PRIVACY_RELEASE_REVIEW_2026-11-10.md.
+Current source and Amazon candidate: version 5. Historical local-build evidence: PRODUCT_PRIVACY_RELEASE_REVIEW_2026-11-10.md.
 
 This is a development build. Release readiness is BLOCKED independently of whether a source component compiles.
 

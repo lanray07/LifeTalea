@@ -8,9 +8,10 @@
   "uploadSha256": "6d0f548a91642de13d92a58e5e59de9b5ac61a950d6795187381fabc493ed582",
   "drmApplied": true,
   "selectedFireTablets": 12,
-  "installedVersionCode": 4,
-  "deviceVerification": "WAITING_FOR_UNLOCK",
-  "publicDraftVersionCode": 4,
+  "installedVersionCode": 5,
+  "deviceVerification": "AMAZON_INSTALLED_SCOPED_CHECKS_PASSED",
+  "publicDraftVersionCode": 5,
   "publicSubmission": "NOT_SUBMITTED",
-  "paymentsSubmitted": 0
+  "paymentsSubmitted": 0,
+  "publicDraftCopyAndReviewerInstructions": "V5_SAVED_READ_BACK"
 }

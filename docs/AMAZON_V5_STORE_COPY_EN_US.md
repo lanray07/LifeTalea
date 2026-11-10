@@ -1,6 +1,6 @@
 # Version 5 English store draft
 
-Local candidate only. Do not replace the Amazon version 4 draft until version 5 has passed Amazon distribution checks and the remaining release gates.
+Amazon distribution and scoped version 5 device checks passed. Prepared public draft copy; public submission remains blocked by the remaining release gates.
 
 **Title:** LifeTalea - Family Stories & Voice Journal
 

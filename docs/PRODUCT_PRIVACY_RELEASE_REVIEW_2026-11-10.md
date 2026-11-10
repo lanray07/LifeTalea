@@ -1,5 +1,7 @@
 # Product and privacy release review — 10 November 2026
 
+Historical local-build report. Subsequent version 5 Amazon distribution, scoped tablet verification and public draft update are recorded in AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md; statements below describe the earlier build stage.
+
 Version 5 adds combined search filters, opt-in local reminders, an in-app verifier disclosure and a full-policy link. The privacy policy and all 22 website drafts explain purchase identifiers, hosted logging, local saved-recording transcription and separate export deletion. Store drafts include the reminder notice. New text remains unapproved translation drafts; no native approval was added.
 
 The local unsigned candidate built and passed inspection. SHA-256: `6d0f548a91642de13d92a58e5e59de9b5ac61a950d6795187381fabc493ed582`. Its DEX includes the production verifier URL and public signing pin. Both native ABIs and the model checksum match expectations; sandbox trust, receipt fixtures and test audio are absent. Amazon Test 1 and the public draft remain version 4. Version 5 has not been uploaded, Amazon-processed or Appstore-installed.

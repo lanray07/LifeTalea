@@ -1,0 +1,5 @@
+{
+  "phase": "disabled",
+  "lifeTaleaAlarmPresent": false,
+  "scope": "Actual alarm registration canceled after the UI toggle; original off preference restored."
+}

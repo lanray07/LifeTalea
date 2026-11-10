@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-10",
+  "publicDraftVersionCode": 5,
+  "binaryFile": "LifeTalea-0.1.0-public-v5-unsigned.apk",
+  "uploadSha256": "6d0f548a91642de13d92a58e5e59de9b5ac61a950d6795187381fabc493ed582",
+  "drmApplied": true,
+  "languageSupport": [
+    "English"
+  ],
+  "fireTabletsSelected": 12,
+  "storeCopy": "docs/AMAZON_V5_STORE_COPY_EN_US.md",
+  "reviewerInstructions": "docs/AMAZON_V5_REVIEWER_INSTRUCTIONS.txt",
+  "savedAndReadBackAfterReload": true,
+  "existingExportCertificationLeftUnchanged": true,
+  "publicAppSubmitted": false,
+  "remainingAssetReview": "Existing three English screenshot assets retained; current release asset validation remains open."
+}

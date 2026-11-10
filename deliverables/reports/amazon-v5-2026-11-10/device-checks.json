@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-10",
+  "versionCode": 5,
+  "source": "Amazon Appstore regular app update over version 4",
+  "fictionalRecordsOnly": true,
+  "checks": {
+    "installedBinaryAndCertificate": "PASS",
+    "updateRetainsExistingRecords": "PASS",
+    "yearAndMediaFiltersAndClear": "PASS",
+    "reminderRegisterAndCancel": "PASS",
+    "inAppPrivacyAndPublicNoticeLink": "PASS",
+    "offlineEnglishTranscribeReviewEditAppend": "PASS",
+    "offlineProcessRestartPersistence": "PASS",
+    "invalidAudioManualFallbackPreserved": "PASS",
+    "restoreFreeEntitlement": "PASS",
+    "purchasePromptCancellationReturnsFree": "PASS",
+    "smallAudioBackupExportAndDuplicateRestore": "PASS"
+  },
+  "paymentsSubmitted": 0,
+  "settingsRestored": {
+    "wifi": true,
+    "remindersOff": true,
+    "includeRecordingsOff": true,
+    "originalPowerSetting": true,
+    "sdkModeUnchanged": true
+  },
+  "limits": [
+    "Reminder timed delivery not tested; platform scheduled an 18-hour window",
+    "Restore used reset test-account Free state; no active Premium restore or new purchase",
+    "Short fictional English transcription only",
+    "Backup only two existing fictional memories and two audio attachments; no encryption/large-library/crash recovery test",
+    "No new native-language approval, independent security clearance, broad accessibility/performance/device sign-off"
+  ],
+  "publicReleaseStatus": "BLOCKED"
+}

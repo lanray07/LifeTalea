@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-10",
+  "pythonUnittest": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 16,
+    "failed": 0,
+    "warning": "ResourceWarning from screenshot manifest reader; tests passed"
+  },
+  "receiptVerifier": {
+    "command": "npm test",
+    "cwd": "server/receipt-verifier",
+    "passed": 23,
+    "failed": 0
+  },
+  "scope": "Documentation, evidence and inspection/package tooling changed. Android application code and immutable v5 artifact unchanged; earlier Android test batches retain dates and scope."
+}

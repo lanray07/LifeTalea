@@ -1,11 +1,11 @@
 {
   "path": "deliverables/amazon-submission/LifeTalea-Amazon-LAT-v5-update-2026-11-10.zip",
-  "sha256": "16c995580eb01e835ace589cbcfcdeb81f025a3edf7fb4c1fa666c4ed03ce255",
-  "bytes": 219645581,
-  "entriesVerified": 19,
+  "sha256": "da02df6514de9ca577be131c03a7e69585a73470135fdd7c4bf2fd1b8c6ea5bd",
+  "bytes": 220409777,
+  "entriesVerified": 54,
   "releaseStatus": "BLOCKED",
   "amazonTestStatus": "V5_TEST_IN_PROGRESS",
-  "deviceStatus": "WAITING_FOR_UNLOCK",
-  "installedVersionCode": 4,
-  "publicDraftVersionCode": 4
+  "deviceStatus": "AMAZON_INSTALLED_SCOPED_CHECKS_PASSED",
+  "installedVersionCode": 5,
+  "publicDraftVersionCode": 5
 }

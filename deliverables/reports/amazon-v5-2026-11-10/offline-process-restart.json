@@ -1,0 +1,9 @@
+{
+  "oldPid": 19799,
+  "forceStopVerified": true,
+  "wifiOnSettingBeforeRestart": "0",
+  "scope": "Regular app process stopped after saving; no app data cleared. Relaunch and visual persistence checked through the UI.",
+  "newPid": 20613,
+  "processChanged": true,
+  "visualTranscriptPersistenceVerified": true
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-10",
+  "phase": "during_transcription",
+  "wifiOnSetting": "0",
+  "amazonSdkMode": "none",
+  "scope": "Settings read only. Wi-Fi was toggled through the tablet UI; restoration recorded at session end.",
+  "originalWifiOnSetting": "1",
+  "restoredWifiOnSetting": "1",
+  "restored": true
+}
