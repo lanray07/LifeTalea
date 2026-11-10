@@ -3,42 +3,48 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Aile hikâyeleri ve anılar",
-  "shortDescription": "LifeTalea geliştirme sürümünü keşfedin: yazılı anılar, özel fotoğraflar, ses kayıtları, albümler ve anı kitapları.",
-  "longDescription": "Fotoğraflar, sesler ve aile hikâyeleri için özel bir alan.\n\nBaşlık, birkaç satır ve kesin, yaklaşık ya da bilinmeyen bir tarih ekleyin. Hikâyeleri etiketler, favoriler ve albümlerle bulun.\n\nBelge seçiciyle fotoğraf alın ve sesli hikâye kaydedin. Dosyalar uygulamanın özel depolama alanına kopyalanır.\n\nKayıt bu cihazda kalır. Uygulamadan çıktığınızda kayıt durdurulur ve kaydedilir. Ücretsiz kayıtlar en fazla üç dakika olabilir.\n\nBas konuş özelliği cihazınızın konuşma hizmetini kullanır. Bu hizmet internete ihtiyaç duyabilir ve konuşmayı cihaz dışında işleyebilir. Yalnızca kabul ediyorsanız devam edin. LifeTalea sesli komut kayıtlarını saklamaz. Komutlar şu anda yalnızca İngilizce olarak desteklenmektedir.\n\nPlanlanan tek seferlik satın alım: sınırsız albüm, uzun kayıtlar, PDF ve şifreli yerel yedekler. Önerilen Birleşik Krallık test fiyatı £4.99’dur; yapılandırma sonrası gerçek yerel fiyatı Amazon sağlar.\n\nHikâyeler, konuşma metinleri, albümler ve kitap taslakları dahildir. Fotoğraf ve kayıtlar yalnızca seçildiğinde eklenir. Şifrelenmemiş dışa aktarmalar okunabilir özel bilgiler içerir. Parolanızı güvenli saklayın; geri alınamaz. Güncel sınırlar: arşiv başına 32 MiB ve ek başına 16 MiB. Daha büyük kitaplıklar için gelecekteki bir sürüm gereklidir.\n\nHenüz yayımlanmadı. Cihaz testleri, ana dil incelemesi ve Amazon satın alma doğrulaması sürüyor.\n\nBu kayıttan cihazınızda bir metin taslağı oluşturun. Ses yüklenmez. Konuşulan dili seçip onaylayın. En fazla on dakikalık kayıtlar desteklenir. İşlem yavaş olabilir; kaydetmeden önce metni kontrol edin.\n\nÇeviri taslağı. Ana dil incelemesi bekleniyor.\n\nO.Bankole · banksmi@mail.com\n\nYerel saatle 20.00 civarında isteğe bağlı günlük hatırlatıcı. Cihaz ayarları bildirimi geciktirebilir. Bildirimler hikâye içeriği içermez. Varsayılan olarak kapalıdır.",
+  "shortDescription": "Fotoğraflar, sesler ve aile hikâyeleri için özel bir alan.",
+  "longDescription": "Anları koruyun. Sesleri hatırlayın.\n\nFotoğraflar, sesler ve aile hikâyeleri için özel bir alan.\n\nBaşlık, birkaç satır ve kesin, yaklaşık ya da bilinmeyen bir tarih ekleyin. Hikâyeleri etiketler, favoriler ve albümlerle bulun.\n\nBelge seçiciyle fotoğraf alın ve sesli hikâye kaydedin. Dosyalar uygulamanın özel depolama alanına kopyalanır.\n\nKayıt bu cihazda kalır. Uygulamadan çıktığınızda kayıt durdurulur ve kaydedilir. Ücretsiz kayıtlar en fazla üç dakika olabilir.\n\nBu kayıttan cihazınızda bir metin taslağı oluşturun. Ses yüklenmez. Konuşulan dili seçip onaylayın. En fazla on dakikalık kayıtlar desteklenir. İşlem yavaş olabilir; kaydetmeden önce metni kontrol edin.\n\nBas konuş özelliği cihazınızın konuşma hizmetini kullanır. Bu hizmet internete ihtiyaç duyabilir ve konuşmayı cihaz dışında işleyebilir. Yalnızca kabul ediyorsanız devam edin. LifeTalea sesli komut kayıtlarını saklamaz. Komutlar şu anda yalnızca İngilizce olarak desteklenmektedir.\n\nSınırsız albüm, uzun kayıtlar, PDF dışa aktarma ve şifreli yerel yedekler için tek seferlik satın alım. Mevcut anılarınız erişilebilir kalır.\n\nHikâyeler, konuşma metinleri, albümler ve kitap taslakları dahildir. Fotoğraf ve kayıtlar yalnızca seçildiğinde eklenir. Şifrelenmemiş dışa aktarmalar okunabilir özel bilgiler içerir. Parolanızı güvenli saklayın; geri alınamaz. Güncel sınırlar: arşiv başına 32 MiB ve ek başına 16 MiB. Daha büyük kitaplıklar için gelecekteki bir sürüm gereklidir.\n\nAmazon satın alımları, uygulamaya özel Amazon kullanıcı kimliğini ve makbuz kimliklerini Supabase üzerinde barındırılan LifeTalea doğrulama hizmetine ve Amazon’a gönderir. Sağlayıcılar istek ve bağlantı günlüklerini saklayabilir. Hikâyeler, fotoğraflar ve kayıtlar doğrulama için gönderilmez. Kayıtların dökümü bu cihazda oluşturulur. Dışa aktarılan dosyalar ayrıca silinmelidir.\n\nYerel saatle 20.00 civarında isteğe bağlı günlük hatırlatıcı. Cihaz ayarları bildirimi geciktirebilir. Bildirimler hikâye içeriği içermez. Varsayılan olarak kapalıdır.\n\nUygulamadan çıktıktan sonra LifeTalea’yı açmak için cihazınızın ekran kilidini kullanın. Önce cihazda ekran kilidi ayarlayın. Dışa aktarılan dosyalar ayrı tutulur.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
     "Aile günlüğü fotoğraflara bağlam katar: orada kim vardı, ne oldu ve o an neden önemliydi?",
     "Yazının her zaman aktaramadığı duraksamaları, kahkahaları ve tanıdık ifadeleri saklayın.",
     "Hikâyeleri ve fotoğrafları cihazda saklanan kitap taslaklarında birleştirin.",
     "Yaklaşık veya bilinmeyen tarihliler dâhil, anıları tarih sırasıyla keşfedin.",
-    "Kayıt mikrofon ve izin gerektirir. Tanıma ve sesli okuma uyumlu hizmetlere bağlıdır. Dokunmatik ve metin alternatifleri mevcuttur."
+    "Çevrimdışı kullanılabilir"
   ],
   "keywords": [
     "Aile anıları",
     "Sesli hikâye",
-    "Aile Tarihi",
+    "Aile tarihi",
     "Anı kitapları",
     "Zaman çizelgesi",
-    "Hayat Dergisi"
+    "Hayat günlüğüm"
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Çeviri taslağı. Ana dil incelemesi bekleniyor. Henüz yayımlanmadı. Cihaz testleri, ana dil incelemesi ve Amazon satın alma doğrulaması sürüyor.",
+  "releaseNotes": "Henüz yayımlanmadı. Yayım öncesi kontroller sürüyor.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
   "screenshotHeadlines": {
-    "home": "Değer verdiğiniz anları saklayın",
-    "albums": "Her bölüm için bir koleksiyon",
-    "timeline": "Ailenizin zaman içindeki hikâyesini izleyin",
-    "keepsakes": "Hikâyeleri bir anı kitabında birleştirin",
-    "settings": "Kontrolü sizde olan bir kopya saklayın",
-    "editor": "Fotoğrafın ardındaki hikâyeyi yazın",
+    "home": "Her hikâye bir yeri hak eder.",
+    "albums": "Her bölüm için bir koleksiyon.",
+    "timeline": "Bölümler arasındaki bağı keşfedin",
+    "keepsakes": "Saklanacak bir anı kitabı.",
+    "settings": "Yedekleme ve geri yükleme",
+    "editor": "Bir anla başlayın",
     "voice": "Sevdiklerinizin sesine yer açın",
-    "transcript": "Kayıt metinlerini kendi sözlerinizle ekleyin"
+    "transcript": "Sesli anılara yazılı bir eşlikçi"
   },
   "locale": "tr-TR",
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "57ef70d1f34020c6c612bd059fd55602022688f47b6946aa08fc71b88ca34c6d"
+  "targetHash": "28c5aca84c29848a3b7cbd59a304f4ca0c56e6d5110b97b0e5197b6c614d3d5e",
+  "linguisticReview": {
+    "status": "APPROVED",
+    "reviewType": "AI_EDITORIAL",
+    "reviewer": "Codex (AI)",
+    "nativeSpeakerReview": false
+  }
 }

@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-10",
+  "sku": "com.lifetalea.premium",
+  "action": "Promote Test IAP",
+  "before": "TEST / Live",
+  "after": "Approved; TEST label removed",
+  "observedBasePrice": "GBP 4.99",
+  "existingMarketplacePricesRetained": true,
+  "publicAppSubmitted": false,
+  "payments": 0,
+  "scope": "Observed Amazon console state after authorized test-IAP promotion. No public retail purchase is claimed."
+}

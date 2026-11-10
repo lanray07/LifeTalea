@@ -1,0 +1,98 @@
+{
+  "candidateVersionCode": 6,
+  "releaseStatus": "BLOCKED_PENDING_RELEASE_GATES",
+  "aiEditorialReviews": {
+    "appLocales": 22,
+    "appKeys": 212,
+    "websiteLocales": 22,
+    "storeDraftLocales": 22,
+    "nativeSpeakerCertifications": 0,
+    "ownerAuthorizedAiReview": true
+  },
+  "androidUnitTests": [
+    {
+      "suite": "com.lifetalea.app.MemoryRulesTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "suite": "com.lifetalea.app.BillingPolicyTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "suite": "com.lifetalea.app.CryptoTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "suite": "com.lifetalea.app.VoiceTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "suite": "com.lifetalea.app.ReminderTimeTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0
+    }
+  ],
+  "androidUnitTestCount": 24,
+  "lintCounts": {
+    "Warning": 245
+  },
+  "debugBuild": "PASS",
+  "physicalRegression": {
+    "status": "PASS_INITIAL_CANDIDATE",
+    "tests": 26,
+    "debugApkSha256": "35286b099f7c526df06c35851c50b0e36aec72934ea9bd52758caa345475fece",
+    "finalDebugOverlayRebuild": "PASS_BUILD_DEVICE_RETEST_PENDING_MANUAL_AUTH_HANDOFF"
+  },
+  "amazonCandidate": {
+    "status": "BUILD_AND_INSPECTION_PASS",
+    "versionCode": 6,
+    "sha256": "eed8f1dbcb683205abc2f76a323ff5ae37f4f3d33a94cab69ccaea46e2ab8929"
+  },
+  "websiteExport": {
+    "status": "PASS",
+    "contentPagesChecked": 352,
+    "locales": 22
+  },
+  "amazonPublicDraftVersionCode": 5,
+  "amazonLatVersionCode": 5,
+  "newPayments": 0,
+  "pythonTests": {
+    "status": "PASS",
+    "tests": 18
+  },
+  "receiptVerifierTests": {
+    "status": "PASS",
+    "tests": 23
+  },
+  "websiteReviewGateTests": {
+    "status": "PASS",
+    "tests": 7
+  },
+  "localeMatcherTests": {
+    "status": "PASS",
+    "tests": 17
+  },
+  "iapStatus": "APPROVED_PRODUCTION_CATALOGUE",
+  "amazonLatDraftVersionCode": 6,
+  "amazonLatDraftSubmitted": false,
+  "blockingGates": [
+    "Manual device-credential app-lock check pending owner input; no authentication dialog automated",
+    "Final debug-overlay rebuild requires its own device regression and asset provenance",
+    "Version 6 not yet Amazon-distributed or installed; live LAT/public draft remain verified version 5",
+    "Current localized screenshot render/visual checks and marketplace mapping remain pending",
+    "Existing Codex Security startup returned no authoritative scan ID; audit recovery required",
+    "Large-library streaming backup and process-death recovery remain engineering gaps",
+    "Remaining billing recovery, device/accessibility/performance and provider/privacy assessments"
+  ],
+  "finalDebugApkSha256": "54fc7a943d6e44354e48986086ff626aba59666715ec5524bf93927b3122fb5e",
+  "finalTestApkSha256": "cc9abb62d473fefc4b9387e80438ae5b7c9d9fdb3d033c76b5261b1a8841be9a"
+}

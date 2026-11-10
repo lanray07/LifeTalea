@@ -20,11 +20,18 @@ val Ivory = Color(0xFFFAF7F1)
     val id = context.resources.getIdentifier(key, "string", context.packageName)
     return context.getString(if (id == 0) R.string.operation_failed else id)
 }
-@Composable fun LifeTheme(theme: String, content: @Composable () -> Unit) {
+@Composable fun LifeTheme(theme: String, palette: String = "forest", content: @Composable () -> Unit) {
     val dark = theme == "dark" || (theme == "system" && isSystemInDarkTheme())
     val colors = if (dark) darkColorScheme(primary = Color(0xFFAFD0BC), background = Color(0xFF1D2621), surface = Color(0xFF26322C), secondary = Color(0xFFE3C28E), primaryContainer = Color(0xFF304C3C), onPrimaryContainer = Color(0xFFE0EADF), secondaryContainer = Color(0xFF514029), tertiaryContainer = Color(0xFF5D3439))
         else lightColorScheme(primary = Forest, background = Ivory, surface = Color(0xFFFFFCF7), secondary = Gold, surfaceVariant = Color(0xFFEEE8DE), onBackground = Color(0xFF302F2D), onSurface = Color(0xFF302F2D), primaryContainer = Color(0xFFDDE7DD), onPrimaryContainer = Forest, secondaryContainer = Color(0xFFF1E3CA), onSecondaryContainer = Color(0xFF4B3820), tertiaryContainer = Color(0xFFF0DDDA), onTertiaryContainer = Color(0xFF573336), outline = Color(0xFF7C8277), outlineVariant = Color(0xFFC9C4B9))
-    MaterialTheme(colorScheme = colors, typography = Typography(
+    val themedColors = when (palette) {
+        "rose" -> if (dark) colors.copy(primary = Color(0xFFF0B8C2), primaryContainer = Color(0xFF59323E), onPrimaryContainer = Color(0xFFFFD9E0), secondary = Color(0xFFE2C3A4))
+                  else colors.copy(primary = Color(0xFF813E50), primaryContainer = Color(0xFFFFD9E0), onPrimaryContainer = Color(0xFF3C1321), secondary = Color(0xFF77553B))
+        "paper" -> if (dark) colors.copy(primary = Color(0xFFE1C9A5), primaryContainer = Color(0xFF50412C), onPrimaryContainer = Color(0xFFFFE5BF), secondary = Color(0xFFC4C9B1))
+                   else colors.copy(primary = Color(0xFF695035), primaryContainer = Color(0xFFF0E1CA), onPrimaryContainer = Color(0xFF302316), secondary = Color(0xFF536044))
+        else -> colors
+    }
+    MaterialTheme(colorScheme = themedColors, typography = Typography(
         displaySmall = MaterialTheme.typography.displaySmall.copy(fontFamily = FontFamily.Serif, fontSize = 36.sp),
         headlineLarge = MaterialTheme.typography.headlineLarge.copy(fontFamily = FontFamily.Serif),
         headlineMedium = MaterialTheme.typography.headlineMedium.copy(fontFamily = FontFamily.Serif),

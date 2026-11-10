@@ -14,9 +14,9 @@
     "footerNote": "In Entwicklung. Kein Konto erforderlich.",
     "brandNotice": "Vorläufiger Markenname; Prüfung steht aus",
     "related": "Entdecken Sie das nächste Kapitel",
-    "previewNotice": "Übersetzungsentwurf. Muttersprachliche Prüfung ausstehend.",
+    "previewNotice": "Entwicklungsvorschau",
     "chooseLanguage": "Wählen Sie Ihre Sprache",
-    "home": "Zuhause"
+    "home": "Startseite"
   },
   "home": {
     "titleFirst": "Die kleinen Momente.",
@@ -24,23 +24,23 @@
     "subtitle": "Ein privater Ort für Fotos, Stimmen und Familiengeschichten.",
     "explore": "LifeTalea entdecken",
     "imageAlt": "Ein offenes Erinnerungsbuch mit goldenem Lesezeichen und Olivenzweig",
-    "waysLabel": "So bewahrst du Erinnerungen",
-    "personalTitle": "Dein ganz persönliches Tagebuch",
-    "personalBody": "Sammle Fotos, Aufnahmen und Geschichten in einem privaten Familientagebuch.",
-    "personalLink": "Beginne mit einer Erinnerung",
-    "voiceTitle": "Gib ihren Stimmen einen Platz",
-    "voiceBody": "Bewahre Stimmen, Erinnerungen und die kleinen Details, die Geschichten lebendig machen.",
+    "waysLabel": "So bewahren Sie Erinnerungen",
+    "personalTitle": "Ihr ganz persönliches Tagebuch",
+    "personalBody": "Sammeln Sie Fotos, Aufnahmen und Geschichten in einem privaten Familientagebuch.",
+    "personalLink": "Beginnen Sie mit einer Erinnerung",
+    "voiceTitle": "Geben Sie ihren Stimmen einen Platz",
+    "voiceBody": "Bewahren Sie Stimmen, Erinnerungen und die kleinen Details, die Geschichten lebendig machen.",
     "voiceLink": "Aufgenommene Geschichten entdecken",
     "keepsakeTitle": "Ein Erinnerungsbuch zum Bewahren",
-    "keepsakeBody": "Sammle die Geschichten deiner Familie, um sie heute und in den kommenden Jahren wiederzuentdecken.",
+    "keepsakeBody": "Sammeln Sie die Geschichten Ihrer Familie, um sie heute und in den kommenden Jahren wiederzuentdecken.",
     "keepsakeLink": "Erinnerungsbücher entdecken",
-    "privacyTitle": "Manche Geschichten gehören nur dir.",
-    "privacyBody": "Kein öffentlicher Feed. Kein Pflichtkonto. Deine Erinnerungen bleiben auf deinem Gerät, solange du sie nicht selbst exportierst.",
+    "privacyTitle": "Manche Geschichten gehören nur Ihnen.",
+    "privacyBody": "Kein öffentlicher Feed. Kein Pflichtkonto. Ihre Erinnerungen bleiben auf Ihrem Gerät, solange Sie sie nicht selbst exportieren.",
     "privacyLink": "Unser Ansatz zum Datenschutz",
     "storeLink": "Im Amazon Appstore ansehen",
-    "releaseNote": "Noch nicht veröffentlicht. Gerätetests, muttersprachliche Prüfung und die Überprüfung der Amazon-Käufe laufen noch.",
+    "releaseNote": "Noch nicht veröffentlicht. Die Prüfungen vor der Veröffentlichung laufen.",
     "metaTitle": "LifeTalea - Familiengeschichten und Erinnerungen",
-    "metaDescription": "Ein privater Ort für Fotos, Stimmen und Familiengeschichten. Entdecke die Entwicklungsversion von LifeTalea."
+    "metaDescription": "Ein privater Ort für Fotos, Stimmen und Familiengeschichten. Entdecken Sie die Entwicklungsversion von LifeTalea."
   },
   "articles": {
     "features": {
@@ -57,7 +57,7 @@
         },
         {
           "title": "Ein eigenes Buch gestalten",
-          "body": "Ordnen Sie Seiten und Bildunterschriften und prüfen Sie die Vorschau. PDF-Export erfordert Premium; Amazon-Käufe müssen noch in der Testumgebung geprüft werden."
+          "body": "Ein Einmalkauf für unbegrenzte Alben, längere Aufnahmen, PDF-Export und verschlüsselte lokale Sicherungen. Vorhandene Erinnerungen bleiben zugänglich."
         }
       ]
     },
@@ -99,7 +99,7 @@
     },
     "voice-transcription": {
       "title": "Ein geschriebener Begleiter zur Aufnahme",
-      "summary": "Erstelle auf deinem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wähle die gesprochene Sprache und bestätige. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfe den Text vor dem Speichern.",
+      "summary": "Erstellen Sie auf Ihrem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wählen Sie die gesprochene Sprache und bestätigen Sie. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfen Sie den Text vor dem Speichern.",
       "sections": [
         {
           "title": "Heute verfügbar",
@@ -165,7 +165,7 @@
         },
         {
           "title": "Entwicklungsstand",
-          "body": "Die PDF-Erstellung wird auf Geräten geprüft. Der Export erfordert eine bestätigte Amazon-Premium-Berechtigung. Echte Käufe sind noch nicht verifiziert."
+          "body": "Diese Funktion erfordert LifeTalea Premium. Die PDF-Datei wird auf Ihrem Gerät erstellt. Prüfen Sie sie vor dem Teilen. Audioaufnahmen werden nicht in gedruckte Erinnerungsbücher eingebettet."
         }
       ]
     },
@@ -179,7 +179,7 @@
         },
         {
           "title": "Die Grenzen kennen",
-          "body": "Zum Sprechen gedrückt halten verwendet den Sprachdienst deines Geräts. Dieser kann Internet benötigen und Sprache außerhalb des Geräts verarbeiten. Fahre nur fort, wenn du damit einverstanden bist. LifeTalea speichert keine Audiobefehle. Sprachbefehle werden derzeit nur auf Englisch unterstützt. Erstelle auf deinem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wähle die gesprochene Sprache und bestätige. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfe den Text vor dem Speichern."
+          "body": "Die Sprachfunktion verwendet den Sprachdienst Ihres Geräts. Dieser kann Internet benötigen und Sprache außerhalb des Geräts verarbeiten. Fahren Sie nur fort, wenn Sie damit einverstanden sind. LifeTalea speichert keine Audiobefehle. Sprachbefehle werden derzeit nur auf Englisch unterstützt. Erstellen Sie auf Ihrem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wählen Sie die gesprochene Sprache und bestätigen Sie. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfen Sie den Text vor dem Speichern."
         },
         {
           "title": "Sicherung selbst wählen",
@@ -207,7 +207,7 @@
     },
     "languages": {
       "title": "Ein Tagebuch in Ihrer Sprache",
-      "summary": "Die Entwicklungs-App umfasst 22 regionale Varianten für 17 priorisierte Sprachen. Muttersprachliche Prüfung steht aus.",
+      "summary": "Wählen Sie eine Sprache oder die Geräteeinstellung. Ihre Geschichten werden nicht übersetzt.",
       "sections": [
         {
           "title": "Geplante Sprachen",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Erinnerungen behalten. Extras wählen.",
-      "summary": "Ein kostenloses Tagebuch mit optionalem einmaligem Premium-Kauf. Käufe sind in dieser Entwicklungsversion nicht aktiv.",
+      "summary": "Kostenlos: drei Alben, Fotos, Geschichten, Zeitleiste und Aufnahmen bis drei Minuten. Die Anzahl gespeicherter geschriebener Erinnerungen ist unbegrenzt.",
       "sections": [
         {
           "title": "Kostenlos",
@@ -233,7 +233,7 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Geplanter Einmalkauf: unbegrenzte Alben, längere Aufnahmen, PDF-Export und verschlüsselte lokale Sicherungen. Der vorgeschlagene britische Testpreis beträgt 4,99 £; Amazon liefert nach Einrichtung den tatsächlichen lokalen Preis."
+          "body": "Ein Einmalkauf für unbegrenzte Alben, längere Aufnahmen, PDF-Export und verschlüsselte lokale Sicherungen. Vorhandene Erinnerungen bleiben zugänglich."
         },
         {
           "title": "Vorhandene Geschichten bleiben zugänglich",
@@ -259,7 +259,7 @@
         },
         {
           "title": "Kann ich Aufnahmen transkribieren?",
-          "body": "Erstelle auf deinem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wähle die gesprochene Sprache und bestätige. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfe den Text vor dem Speichern."
+          "body": "Erstellen Sie auf Ihrem Gerät einen Textentwurf aus dieser Aufnahme. Es wird kein Audio hochgeladen. Wählen Sie die gesprochene Sprache und bestätigen Sie. Aufnahmen dürfen höchstens zehn Minuten lang sein. Die Verarbeitung kann dauern; prüfen Sie den Text vor dem Speichern."
         },
         {
           "title": "Synchronisiert LifeTalea mehrere Geräte?",

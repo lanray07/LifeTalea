@@ -14,9 +14,9 @@
     "footerNote": "Geliştirme aşamasında. Hesap gerekmez.",
     "brandNotice": "Geçici marka adı; hak incelemesi bekleniyor",
     "related": "Bir sonraki bölümü keşfedin",
-    "previewNotice": "Çeviri taslağı. Ana dil incelemesi bekleniyor.",
-    "chooseLanguage": "Dilini seçin",
-    "home": "Evde"
+    "previewNotice": "Geliştirme önizlemesi",
+    "chooseLanguage": "Dilinizi seçin",
+    "home": "Ana sayfa"
   },
   "home": {
     "titleFirst": "Küçük anlar.",
@@ -38,7 +38,7 @@
     "privacyBody": "Herkese açık akış veya zorunlu hesap yoktur. Siz dışa aktarmayı seçmedikçe anılarınız cihazınızda kalır.",
     "privacyLink": "Gizlilik yaklaşımımız",
     "storeLink": "Amazon Appstore’da görüntüle",
-    "releaseNote": "Henüz yayımlanmadı. Cihaz testleri, ana dil incelemesi ve Amazon satın alma doğrulaması sürüyor.",
+    "releaseNote": "Henüz yayımlanmadı. Yayım öncesi kontroller sürüyor.",
     "metaTitle": "LifeTalea - Aile hikâyeleri ve anılar",
     "metaDescription": "Fotoğraflar, sesler ve aile hikâyeleri için özel bir alan. LifeTalea’nın geliştirme sürümünü keşfedin."
   },
@@ -57,7 +57,7 @@
         },
         {
           "title": "Kendi kitabınızı oluşturun",
-          "body": "Sayfaları ve açıklamaları düzenleyip önizlemeyi kontrol edin. PDF dışa aktarma Premium gerektirir; Amazon satın alımlarının test doğrulaması henüz tamamlanmamıştır."
+          "body": "Sınırsız albüm, uzun kayıtlar, PDF dışa aktarma ve şifreli yerel yedekler için tek seferlik satın alım. Mevcut anılarınız erişilebilir kalır."
         }
       ]
     },
@@ -75,7 +75,7 @@
         },
         {
           "title": "İkinci bir kopya saklayın",
-          "body": "Cihaz kaybolabilir. Kontrol ettiğiniz bir yere yedek aktarın ve aslı silmeden önce yedeği kontrol edin."
+          "body": "Cihaz kaybolabilir. Kontrol ettiğiniz bir yere yedek aktarın ve aslını silmeden önce yedeği kontrol edin."
         }
       ]
     },
@@ -165,7 +165,7 @@
         },
         {
           "title": "Geliştirme durumu",
-          "body": "PDF oluşturma cihazlarda doğrulanıyor. Dışa aktarma, doğrulanmış Amazon Premium hakkı gerektirir. Gerçek satın alımlar henüz doğrulanmamıştır."
+          "body": "Bu özellik için LifeTalea Premium gerekir. PDF cihazınızda oluşturulur. Paylaşmadan önce kontrol edin. Basılı anı kitapları ses kayıtlarını içermez."
         }
       ]
     },
@@ -207,7 +207,7 @@
     },
     "languages": {
       "title": "Kendi dilinizde bir günlük",
-      "summary": "Geliştirme uygulamasında 17 öncelikli dil için 22 bölgesel seçenek bulunur. Ana dili konuşanların incelemesi gereklidir.",
+      "summary": "Bir dil seçin veya cihaz dilini kullanın. Hikâyeleriniz çevrilmez.",
       "sections": [
         {
           "title": "Planlanan diller",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Anıları koruyun. Ekstraları seçin.",
-      "summary": "İsteğe bağlı, tek seferlik Premium satın alımı olan ücretsiz günlük. Geliştirme sürümünde satın alımlar etkin değildir.",
+      "summary": "Ücretsiz: üç albüm, fotoğraflar, hikâyeler, zaman çizelgesi ve üç dakikaya kadar kayıt. Kaydedilen yazılı anıların sayısı sınırsızdır.",
       "sections": [
         {
           "title": "Ücretsiz",
@@ -233,7 +233,7 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Planlanan tek seferlik satın alım: sınırsız albüm, uzun kayıtlar, PDF ve şifreli yerel yedekler. Önerilen Birleşik Krallık test fiyatı £4.99’dur; yapılandırma sonrası gerçek yerel fiyatı Amazon sağlar."
+          "body": "Sınırsız albüm, uzun kayıtlar, PDF dışa aktarma ve şifreli yerel yedekler için tek seferlik satın alım. Mevcut anılarınız erişilebilir kalır."
         },
         {
           "title": "Mevcut hikâyeler erişilebilir kalır",

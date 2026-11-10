@@ -32,7 +32,9 @@ class StoryReminders(private val context: Context) {
             context.getSystemService(NotificationManager::class.java).cancel(ID)
             return
         }
-        manager.setInexactRepeating(AlarmManager.RTC_WAKEUP, nextTime(ZonedDateTime.now()).toInstant().toEpochMilli(), AlarmManager.INTERVAL_DAY, alarm()!!)
+        // Repeating alarms can receive an interval-sized delivery window on Fire OS.
+        // A fresh local-time alarm each day also follows DST instead of drifting by 24h.
+        manager.setWindow(AlarmManager.RTC_WAKEUP, nextTime(ZonedDateTime.now()).toInstant().toEpochMilli(), WINDOW_MS, alarm()!!)
     }
     @android.annotation.SuppressLint("MissingPermission") // permitted() checks runtime permission; notify also handles a concurrent revocation.
     fun deliver() {
@@ -51,6 +53,7 @@ class StoryReminders(private val context: Context) {
     companion object {
         const val ID = 4817
         const val ACTION = "com.lifetalea.app.STORY_REMINDER"
+        const val WINDOW_MS = 30 * 60 * 1000L
         private const val CHANNEL = "story_reminders"
         fun nextTime(now: ZonedDateTime): ZonedDateTime = now.withHour(20).withMinute(0).withSecond(0).withNano(0).let { if (it.isAfter(now)) it else it.plusDays(1) }
     }
@@ -60,7 +63,9 @@ class StoryReminderReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         val reminders = StoryReminders(context)
         when (intent.action) {
-            StoryReminders.ACTION -> reminders.deliver()
+            StoryReminders.ACTION -> {
+                try { reminders.deliver() } finally { reminders.reschedule() }
+            }
             Intent.ACTION_BOOT_COMPLETED, Intent.ACTION_TIME_CHANGED, Intent.ACTION_TIMEZONE_CHANGED -> reminders.reschedule()
         }
     }

@@ -21,11 +21,12 @@ function evaluate({preview=false,record=null,changedTarget=false}={}) {
   vm.runInNewContext(compiled,{exports:exportsObject,require:load,process:{cwd:()=>path.join(root,'website'),env:preview?{}:{SITE_URL:'https://example.com'}}});
   return Array.from(exportsObject.locales);
 }
-assert.deepEqual(evaluate(),['en-GB']);
+assert.deepEqual(evaluate({record:{}}),['en-GB']);
+assert.equal(evaluate().length,22, 'Every currently approved real catalogue must pass its hash-bound gate');
 assert.equal(evaluate({preview:true}).length,22);
 const fixture={status:'APPROVED',sourceHash:digest(fs.readFileSync(dictionary('en-GB'))),targetHash:digest(fs.readFileSync(dictionary('fr-FR'))),reviewer:'Test fixture only',reviewedAt:'Test fixture only'};
 assert.deepEqual(evaluate({record:fixture}),['en-GB','fr-FR']);
 assert.deepEqual(evaluate({record:fixture,changedTarget:true}),['en-GB']);
 assert.deepEqual(evaluate({record:{...fixture,sourceHash:'outdated'}}),['en-GB']);
 assert.deepEqual(evaluate({record:{...fixture,reviewer:''}}),['en-GB']);
-console.log('6 website review-gate cases passed; real review files unchanged');
+console.log('7 website review-gate cases passed; missing, stale and anonymous approvals remain blocked; real review files unchanged');

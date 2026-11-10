@@ -14,7 +14,7 @@
     "footerNote": "In development. No account required.",
     "brandNotice": "Working brand pending clearance",
     "related": "Explore the next chapter",
-    "previewNotice": "Translation draft. Native-language review pending.",
+    "previewNotice": "Development preview",
     "chooseLanguage": "Choose your language",
     "home": "Home"
   },
@@ -38,7 +38,7 @@
     "privacyBody": "No public feed. No required account. Memories stay on your device unless you choose to export them.",
     "privacyLink": "Read our privacy approach",
     "storeLink": "View on Amazon Appstore",
-    "releaseNote": "Not yet published. Device validation, native-language review and Amazon purchasing verification are in progress.",
+    "releaseNote": "Not yet published. Release checks are in progress.",
     "metaTitle": "LifeTalea — Family stories and voice memories",
     "metaDescription": "A private place for photographs, voices and family stories. Explore the LifeTalea development preview."
   },
@@ -57,7 +57,7 @@
         },
         {
           "title": "Make a collection your own",
-          "body": "Create scrapbook drafts from saved memories. Arrange pages, add captions and preview your collection. PDF export is a Premium feature; purchasing still needs Amazon test verification."
+          "body": "One purchase for unlimited albums, longer recordings, keepsake PDF exports and encrypted local backups. Your existing memories always stay accessible."
         }
       ]
     },
@@ -165,7 +165,7 @@
         },
         {
           "title": "Development status",
-          "body": "PDF generation is implemented and under device validation. The Premium export control requires a verified Amazon entitlement. Live billing is not yet verified."
+          "body": "This feature requires LifeTalea Premium. PDF generation happens on your device. Review the file before sharing. Recordings are not embedded in printed keepsakes."
         }
       ]
     },
@@ -207,7 +207,7 @@
     },
     "languages": {
       "title": "A journal that can feel like home",
-      "summary": "The development app has a 22-locale translation matrix covering 17 priority languages. Native-language review is still required.",
+      "summary": "Choose a language or follow your device settings. Your stories are not translated.",
       "sections": [
         {
           "title": "The language plan",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Keep the memories. Choose the extras.",
-      "summary": "A free journal with an optional one-time Premium purchase. Purchasing is not live in this development preview.",
+      "summary": "Free: three albums, photographs, written stories, timeline and recordings up to three minutes. No limit on saved written memories.",
       "sections": [
         {
           "title": "Free",
@@ -233,7 +233,7 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Planned one-time entitlement: unlimited albums, longer voice recordings, PDF keepsake exports and encrypted local backup. The proposed UK test price is £4.99; the app will show the actual local price from Amazon when configured."
+          "body": "One purchase for unlimited albums, longer recordings, keepsake PDF exports and encrypted local backups. Your existing memories always stay accessible."
         },
         {
           "title": "Your existing stories remain accessible",

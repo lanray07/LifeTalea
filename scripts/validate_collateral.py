@@ -1,7 +1,18 @@
 """Check draft completeness and metadata limits without approving language quality."""
 import json
-from localize import ROOT, LOC, TARGETS, read, write, issues
+import hashlib
+from localize import ROOT, LOC, TARGETS, read, write, issues, source_hash
 from translate_collateral import flatten, FIELDS, HEADLINES
+
+def editorial_approval(area,locale):
+    records=read(ROOT/('website/localization/reviews.json' if area=='website' else 'localization/store-reviews.json'),{})
+    def digest(tag):
+        if area=='website':return hashlib.sha256((ROOT/f'website/src/dictionaries/{tag}.json').read_bytes()).hexdigest()
+        listing=read(ROOT/f'deliverables/store-assets/metadata/{tag}/listing.json',{})
+        return source_hash({key:listing.get(key) for key in [*FIELDS,'screenshotHeadlines']})
+    review=records.get(locale,{})
+    valid=(review.get('status')=='APPROVED' and review.get('sourceHash')==digest('en-GB') and review.get('targetHash')==digest(locale) and review.get('reviewer') and review.get('reviewedAt'))
+    return review.get('reviewType','EDITORIAL') if valid else 'PENDING_OR_STALE'
 
 def main():
     source_web=read(ROOT/'website/src/dictionaries/en-GB.json')
@@ -20,9 +31,9 @@ def main():
         if not isinstance(listing.get('featureBullets'),list) or not 3<=len(listing['featureBullets'])<=5:store_errors.append('featureBullets: expected 3 to 5')
         headline=read(ROOT/'deliverables/store-assets/metadata/en-GB/screenshot-headlines.json',{}) if locale=='en-GB' else listing.get('screenshotHeadlines',{})
         headline_errors=issues(HEADLINES,headline)
-        rows.append({'locale':locale,'websiteKeys':len(flatten(web)),'websiteIssues':web_errors,'storeIssues':store_errors,'screenshotHeadlineIssues':headline_errors,'nativeApproval':False})
+        rows.append({'locale':locale,'websiteKeys':len(flatten(web)),'websiteIssues':web_errors,'storeIssues':store_errors,'screenshotHeadlineIssues':headline_errors,'websiteEditorialReview':editorial_approval('website',locale),'storeEditorialReview':editorial_approval('store',locale),'nativeApproval':False})
         failures.extend(f'{locale}: {message}' for message in [*web_errors,*store_errors,*headline_errors])
-    write(ROOT/'deliverables/localization/collateral-validation.json',{'status':'FAIL' if failures else 'PASS','rows':rows,'errors':failures,'scope':'Structural checks and current Amazon form lengths; regional, legal, keyword and native-language review remain pending.'})
+    write(ROOT/'deliverables/localization/collateral-validation.json',{'status':'FAIL' if failures else 'PASS','rows':rows,'errors':failures,'scope':'Structure and Amazon draft lengths checked. Editorial approval requires current hash-bound records and is labelled separately; screenshot layout and legal assessments are separate.'})
     print(json.dumps({'status':'FAIL' if failures else 'PASS','locales':len(rows),'errors':failures},ensure_ascii=False))
     if failures:raise SystemExit(1)
 

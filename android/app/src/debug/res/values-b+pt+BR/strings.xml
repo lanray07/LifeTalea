@@ -32,7 +32,7 @@
 <string name="tags">Etiquetas (separadas por vírgulas)</string>
 <string name="transcript">Transcrição editável</string>
 <string name="favourite">Favorito</string>
-<string name="duplicate">Duplicado</string>
+<string name="duplicate">Duplicar</string>
 <string name="search">Buscar relatos, etiquetas e transcrições…</string>
 <string name="all">Todas</string>
 <string name="favourites">Favoritos</string>
@@ -67,7 +67,7 @@
 <string name="voice_commands">Comandos de voz</string>
 <string name="voice_notice">A função pressionar para falar usa o serviço de voz do dispositivo, que pode precisar de Internet e processar a fala fora do dispositivo. Continue apenas se concordar. O LifeTalea não salva o áudio dos comandos. Atualmente, os comandos só estão disponíveis em inglês.</string>
 <string name="listen">Pressione para falar</string>
-<string name="listening">Ouçando...</string>
+<string name="listening">Ouvindo…</string>
 <string name="voice_unavailable">O reconhecimento de voz não está disponível neste dispositivo. Use os controles de toque ou digite um comando.</string>
 <string name="voice_error">O comando de voz não foi reconhecido. Tente novamente ou digite-o no campo de texto.</string>
 <string name="command">Digite um comando</string>
@@ -89,8 +89,8 @@
 <string name="book_title">Título da capa</string>
 <string name="no_books">Um livro de memórias para guardar.</string>
 <string name="no_books_body">Reúna suas memórias em um livro. Organize as páginas, adicione legendas e salve o rascunho.</string>
-<string name="select_memories">Escolha Memórias</string>
-<string name="theme">Temática</string>
+<string name="select_memories">Selecionar memórias</string>
+<string name="theme">Tema</string>
 <string name="forest">Floresta</string>
 <string name="rose">Rosa</string>
 <string name="paper">Papel</string>
@@ -117,13 +117,13 @@
 <string name="skip">Pular por enquanto</string>
 <string name="language">Idioma</string>
 <string name="device_language">Usar o idioma do dispositivo</string>
-<string name="language_note">Escolha um idioma ou siga o dispositivo. As traduções de desenvolvimento precisam de revisão por falantes nativos. Seus relatos não são traduzidos.</string>
+<string name="language_note">Escolha um idioma ou use o do dispositivo. Seus relatos não são traduzidos.</string>
 <string name="purpose">O que você gostaria de preservar\?</string>
 <string name="family">Memórias da família</string>
-<string name="personal">Meu Diário da Vida</string>
+<string name="personal">Meu diário de vida</string>
 <string name="childhood">Marcos da infância</string>
-<string name="history">História da Família</string>
-<string name="travel">Memórias de Viagem</string>
+<string name="history">História da família</string>
+<string name="travel">Memórias de viagem</string>
 <string name="legacy">Histórias para transmitir</string>
 <string name="appearance">Aparência</string>
 <string name="system">Configuração do dispositivo</string>
@@ -135,13 +135,13 @@
 <string name="backup">Cópia de segurança e restauração</string>
 <string name="create_backup">Criar backup</string>
 <string name="restore_backup">Restaurar backup</string>
-<string name="include_photos">Incluindo fotos</string>
-<string name="include_audio">Inclui gravações</string>
+<string name="include_photos">Incluir fotos</string>
+<string name="include_audio">Incluir gravações</string>
 <string name="password">Frase secreta do backup (opcional)</string>
 <string name="password_hint">Pelo menos 10 caracteres para criptografar</string>
 <string name="backup_notice">Histórias, transcrições, álbuns e rascunhos de livros estão incluídos. Fotos e gravações são incluídas apenas quando selecionadas. Exportações sem criptografia contêm informações privadas legíveis. Guarde sua frase secreta: ela não pode ser recuperada. Limites atuais: 32 MiB por arquivo de backup e 16 MiB por anexo. Bibliotecas maiores exigem uma versão futura.</string>
 <string name="restore_notice">Escolha uma cópia do LifeTalea. A frase secreta só é necessária em arquivos criptografados. Em conflitos, memórias e rascunhos existentes são preservados.</string>
-<string name="restore_preview">Revisão de backup antes da restauração</string>
+<string name="restore_preview">Revisar backup antes de restaurar</string>
 <string name="restore_counts">Memórias: %1$d · Álbuns: %2$d · Anexos: %3$d · Livros: %4$d · Memórias existentes preservadas: %5$d</string>
 <string name="restore_now">Restaurar arquivo selecionado</string>
 <string name="backup_saved">Cópia de segurança salva</string>
@@ -154,7 +154,7 @@
 <string name="free_limits">Grátis: três álbuns, fotos, relatos, linha do tempo e gravações até três minutos. Sem limite na quantidade de memórias escritas salvas.</string>
 <string name="one_time">Compra única</string>
 <string name="upgrade">Obter Premium</string>
-<string name="restore_purchases">Restauração de compras</string>
+<string name="restore_purchases">Restaurar compras</string>
 <string name="premium_active">Premium está ativo</string>
 <string name="billing_unconfigured">Compras indisponíveis: autenticação Amazon e produto não configurados. Nenhum pagamento será cobrado.</string>
 <string name="billing_unavailable">Os detalhes do produto Amazon estão indisponíveis. Tente novamente mais tarde.</string>
@@ -172,7 +172,7 @@
 <string name="finish_recording">Encerre a gravação em andamento antes de mudar de memória.</string>
 <string name="backup_busy">Aguarde a conclusão da operação atual.</string>
 <string name="draft">Rascunho</string>
-<string name="export">Exportação</string>
+<string name="export">Exportar</string>
 <string name="select_all">Selecionar tudo</string>
 <string name="view_memory">Ver memória</string>
 <string name="new_memory">Nova memória</string>
@@ -211,4 +211,7 @@
 <string name="purchase_privacy">As compras na Amazon enviam o identificador de usuário da Amazon específico do aplicativo e os identificadores dos recibos ao serviço de verificação do LifeTalea hospedado no Supabase e à Amazon. Os fornecedores podem manter registros de solicitações e conexões. Histórias, fotos e gravações não são enviadas para verificação. As gravações são transcritas neste dispositivo. Os arquivos exportados devem ser excluídos separadamente.</string>
 <string name="reminder_notice">Lembrete diário opcional por volta das 20h, no horário local. As configurações do dispositivo podem atrasar a entrega. As notificações não contêm histórias. Desativado por padrão.</string>
 <string name="reminder_unavailable">Notificações indisponíveis. Verifique a permissão e o canal de notificações deste aplicativo nas configurações do dispositivo.</string>
+<string name="app_lock">Bloqueio do aplicativo</string>
+<string name="app_lock_notice">Use o bloqueio de tela do dispositivo para desbloquear o LifeTalea após sair do aplicativo. Configure primeiro um bloqueio de tela. Os arquivos exportados são separados.</string>
+<string name="unlock">Desbloquear</string>
 </resources>

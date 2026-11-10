@@ -1,6 +1,6 @@
 # Privacy implementation review — 10 November 2026
 
-This is a technical data map for candidate version 5, not a legal approval or a submitted store questionnaire.
+This is a technical data map for candidate version 6, not a legal approval or a submitted store questionnaire. The optional app lock uses Android's existing device-credential confirmation; LifeTalea stores only its local enabled preference, receives a success/cancellation result, and never receives the credential. It adds a screen gate and screenshot protection, not database encryption. Runtime authentication verification is recorded separately.
 
 | Data / action | Destination and purpose | Retention / deletion |
 | --- | --- | --- |

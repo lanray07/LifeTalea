@@ -14,9 +14,9 @@
     "footerNote": "Wersja w rozwoju. Konto nie jest wymagane.",
     "brandNotice": "Tymczasowa nazwa marki, oczekuje na weryfikację",
     "related": "Odkryj kolejny rozdział",
-    "previewNotice": "Wersja robocza tłumaczenia. Oczekuje na weryfikację językową.",
+    "previewNotice": "Wersja rozwojowa",
     "chooseLanguage": "Wybierz swój język",
-    "home": "Domy"
+    "home": "Strona główna"
   },
   "home": {
     "titleFirst": "Małe chwile.",
@@ -38,7 +38,7 @@
     "privacyBody": "Bez publicznych wpisów i obowiązkowego konta. Wspomnienia pozostają na urządzeniu, chyba że zdecydujesz się je wyeksportować.",
     "privacyLink": "Nasze podejście do prywatności",
     "storeLink": "Zobacz w Amazon Appstore",
-    "releaseNote": "Aplikacja nie została jeszcze opublikowana. Trwają testy urządzeń, weryfikacja językowa i sprawdzanie zakupów Amazon.",
+    "releaseNote": "Aplikacja nie została jeszcze opublikowana. Trwają kontrole przed wydaniem.",
     "metaTitle": "LifeTalea - Rodzinne historie i wspomnienia",
     "metaDescription": "Prywatne miejsce na zdjęcia, głosy i rodzinne opowieści. Poznaj rozwojową wersję LifeTalea."
   },
@@ -57,7 +57,7 @@
         },
         {
           "title": "Stwórz własną książkę",
-          "body": "Uporządkuj strony i podpisy, a potem sprawdź podgląd. Eksport PDF wymaga Premium; zakupy Amazon nadal wymagają weryfikacji w środowisku testowym."
+          "body": "Jednorazowy zakup: nielimitowane albumy, dłuższe nagrania, eksport PDF i szyfrowane kopie lokalne. Istniejące wspomnienia pozostają dostępne."
         }
       ]
     },
@@ -70,7 +70,7 @@
           "body": "Zacznij od posiłku, podróży lub miejsca. Krótka odpowiedź wystarczy. Niech rozmówca sam wybierze, co chce opowiedzieć."
         },
         {
-          "title": "Zachowaj niepewne daty",
+          "title": "Podawaj daty zgodnie z tym, co wiesz",
           "body": "LifeTalea pozwala podać rok, miesiąc, dokładną lub nieznaną datę. Miejsce możesz wpisać bez udzielania dostępu do lokalizacji."
         },
         {
@@ -165,7 +165,7 @@
         },
         {
           "title": "Stan prac",
-          "body": "Tworzenie PDF jest testowane na urządzeniach. Eksport wymaga zweryfikowanego uprawnienia Premium Amazon. Rzeczywiste zakupy nie zostały jeszcze zweryfikowane."
+          "body": "Ta funkcja wymaga LifeTalea Premium. PDF powstaje na Twoim urządzeniu. Sprawdź plik przed udostępnieniem. Nagrania nie są osadzane w drukowanych książkach wspomnień."
         }
       ]
     },
@@ -207,7 +207,7 @@
     },
     "languages": {
       "title": "Pamiętnik w Twoim języku",
-      "summary": "Wersja rozwojowa obejmuje 22 warianty regionalne dla 17 priorytetowych języków. Weryfikacja przez rodzimych użytkowników pozostaje konieczna.",
+      "summary": "Wybierz język lub użyj języka urządzenia. Twoje opowieści nie są tłumaczone.",
       "sections": [
         {
           "title": "Planowane języki",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Zachowaj wspomnienia. Wybierz dodatki.",
-      "summary": "Bezpłatny pamiętnik z opcjonalnym jednorazowym zakupem Premium. Zakupy nie są aktywne w wersji rozwojowej.",
+      "summary": "Bezpłatnie: trzy albumy, zdjęcia, opowieści, oś czasu i nagrania do trzech minut. Bez limitu liczby zapisanych pisanych wspomnień.",
       "sections": [
         {
           "title": "Wersja bezpłatna",
@@ -233,7 +233,7 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Planowany zakup jednorazowy: nielimitowane albumy, dłuższe nagrania, eksport PDF i szyfrowane kopie lokalne. Proponowana brytyjska cena testowa to 4,99 £; po konfiguracji Amazon poda rzeczywistą cenę lokalną."
+          "body": "Jednorazowy zakup: nielimitowane albumy, dłuższe nagrania, eksport PDF i szyfrowane kopie lokalne. Istniejące wspomnienia pozostają dostępne."
         },
         {
           "title": "Historie pozostają dostępne",

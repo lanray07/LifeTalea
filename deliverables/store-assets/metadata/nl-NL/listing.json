@@ -3,42 +3,48 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Familieherinneringen en verhalen",
-  "shortDescription": "Ontdek de ontwikkelversie van LifeTalea: verhalen, privéfoto’s, opnamen, albums en herinneringsboeken.",
-  "longDescription": "Een privéplek voor foto’s, stemmen en familieverhalen.\n\nVoeg een titel, tekst en een exacte, geschatte of onbekende datum toe. Vind verhalen terug met tags, favorieten en albums.\n\nImporteer foto’s via de bestandskiezer en neem een verhaal op. De bestanden worden naar de privéopslag van de app gekopieerd.\n\nDe opname blijft op dit apparaat. Als je de app verlaat, wordt de opname gestopt en opgeslagen. Gratis opnamen duren maximaal drie minuten.\n\nDrukken om te spreken gebruikt de spraakdienst van je apparaat. Die kan internet nodig hebben en spraak buiten het apparaat verwerken. Ga alleen verder als je hiermee instemt. LifeTalea slaat geen audiocommando’s op. Spraakcommando’s zijn momenteel alleen beschikbaar in het Engels.\n\nGeplande eenmalige aankoop: onbeperkte albums, langere opnamen, PDF-export en versleutelde lokale back-ups. De voorgestelde Britse testprijs is £4,99; Amazon levert na configuratie de echte lokale prijs.\n\nVerhalen, transcripties, albums en boekconcepten worden opgenomen. Foto’s en opnamen worden alleen opgenomen als je ze selecteert. Onversleutelde exports bevatten leesbare privégegevens. Bewaar je wachtzin veilig: deze kan niet worden hersteld. Huidige limieten: 32 MiB per archief en 16 MiB per bijlage. Grotere bibliotheken vereisen een toekomstige versie.\n\nNog niet gepubliceerd. Apparaattests, taalcontrole en verificatie van Amazon-aankopen lopen nog.\n\nMaak op je apparaat een tekstconcept van deze opname. Er wordt geen audio geüpload. Kies de gesproken taal en bevestig. Opnamen mogen maximaal tien minuten duren. De verwerking kan traag zijn; controleer de tekst voordat je deze opslaat.\n\nVertaalconcept. Controle door moedertaalsprekers volgt.\n\nO.Bankole · banksmi@mail.com\n\nOptionele dagelijkse herinnering rond 20.00 uur lokale tijd. Apparaatinstellingen kunnen de melding vertragen. Meldingen bevatten geen verhalen. Standaard uitgeschakeld.",
+  "shortDescription": "Een privéplek voor foto’s, stemmen en familieverhalen.",
+  "longDescription": "Bewaar de momenten. Herinner je de stemmen.\n\nEen privéplek voor foto’s, stemmen en familieverhalen.\n\nVoeg een titel, tekst en een exacte, geschatte of onbekende datum toe. Vind verhalen terug met tags, favorieten en albums.\n\nImporteer foto’s via de bestandskiezer en neem een verhaal op. De bestanden worden naar de privéopslag van de app gekopieerd.\n\nDe opname blijft op dit apparaat. Als je de app verlaat, wordt de opname gestopt en opgeslagen. Gratis opnamen duren maximaal drie minuten.\n\nMaak op je apparaat een tekstconcept van deze opname. Er wordt geen audio geüpload. Kies de gesproken taal en bevestig. Opnamen mogen maximaal tien minuten duren. De verwerking kan traag zijn; controleer de tekst voordat je deze opslaat.\n\nDrukken om te spreken gebruikt de spraakdienst van je apparaat. Die kan internet nodig hebben en spraak buiten het apparaat verwerken. Ga alleen verder als je hiermee instemt. LifeTalea slaat geen audiocommando’s op. Spraakcommando’s zijn momenteel alleen beschikbaar in het Engels.\n\nEén aankoop voor onbeperkte albums, langere opnamen, PDF-export en versleutelde lokale back-ups. Bestaande herinneringen blijven toegankelijk.\n\nVerhalen, transcripties, albums en boekconcepten worden opgenomen. Foto’s en opnamen worden alleen opgenomen als je ze selecteert. Onversleutelde exports bevatten leesbare privégegevens. Bewaar je wachtzin veilig: deze kan niet worden hersteld. Huidige limieten: 32 MiB per archief en 16 MiB per bijlage. Grotere bibliotheken vereisen een toekomstige versie.\n\nBij Amazon-aankopen worden de appgebonden Amazon-gebruikers-ID en ontvangstbewijs-ID’s naar de door Supabase gehoste verificatiedienst van LifeTalea en naar Amazon gestuurd. Aanbieders kunnen aanvraag- en verbindingslogboeken bewaren. Verhalen, foto’s en opnamen worden niet voor verificatie verstuurd. Opnamen worden op dit apparaat getranscribeerd. Geëxporteerde bestanden moeten apart worden verwijderd.\n\nOptionele dagelijkse herinnering rond 20.00 uur lokale tijd. Apparaatinstellingen kunnen de melding vertragen. Meldingen bevatten geen verhalen. Standaard uitgeschakeld.\n\nOntgrendel LifeTalea na het verlaten van de app met de schermvergrendeling van je apparaat. Stel eerst een schermvergrendeling in. Geëxporteerde bestanden staan hier los van.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
     "Een familiedagboek vertelt wie er op de foto staat, wat er gebeurde en waarom het moment belangrijk was.",
     "Leg pauzes, gelach en vertrouwde uitdrukkingen vast die geschreven tekst niet altijd kan overbrengen.",
     "Breng verhalen en foto’s samen in lokaal opgeslagen boekconcepten.",
     "Bekijk herinneringen op datum, ook bij geschatte of onbekende datums.",
-    "Opnemen vereist een werkende microfoon en toestemming. Herkenning en voorlezen vereisen geschikte diensten. Aanraak- en tekstalternatieven blijven onderdeel van de app."
+    "Offline beschikbaar"
   ],
   "keywords": [
     "Familieherinneringen",
     "Gesproken verhaal",
-    "Familie geschiedenis",
+    "Familiegeschiedenis",
     "Herinneringsboeken",
     "Tijdlijn",
     "Mijn levensdagboek"
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Vertaalconcept. Controle door moedertaalsprekers volgt. Nog niet gepubliceerd. Apparaattests, taalcontrole en verificatie van Amazon-aankopen lopen nog.",
+  "releaseNotes": "Nog niet gepubliceerd. De controles voor de release zijn in uitvoering.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
   "screenshotHeadlines": {
-    "home": "Bewaar de momenten die ertoe doen",
-    "albums": "Een verzameling voor elk hoofdstuk",
-    "timeline": "Volg de geschiedenis van je familie",
-    "keepsakes": "Bundel verhalen in een herinneringsboek",
-    "settings": "Bewaar een kopie waar jij over beslist",
-    "editor": "Vertel het verhaal achter de foto",
-    "voice": "Geef hun stemmen een plek",
-    "transcript": "Voeg transcripties toe in je eigen woorden"
+    "home": "Elk verhaal verdient een plek.",
+    "albums": "Een collectie voor elk hoofdstuk.",
+    "timeline": "Volg de rode draad van je verhaal",
+    "keepsakes": "Een herinneringsboek om te bewaren.",
+    "settings": "Back-up en herstel",
+    "editor": "Begin met één moment",
+    "voice": "Bewaar hun vertrouwde stem",
+    "transcript": "Woorden naast je gesproken herinnering"
   },
   "locale": "nl-NL",
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "755b744c8b8d586d908081cef3ac09be81ea1423d0bbf0832f21fa8a427462b4"
+  "targetHash": "2db0674d16d73e49dfa9cd86b67c055221236f61dbcb5323b26bf044fcdc1d90",
+  "linguisticReview": {
+    "status": "APPROVED",
+    "reviewType": "AI_EDITORIAL",
+    "reviewer": "Codex (AI)",
+    "nativeSpeakerReview": false
+  }
 }

@@ -8,7 +8,7 @@ import copy
 import re
 from datetime import datetime, timezone
 from functools import lru_cache
-from localize import ROOT, LOC, TARGETS, read, write, extract, issues, source_hash, generate, configure_locales, report
+from localize import ROOT, LOC, TARGETS, read, write, extract, issues, source_hash, generate, configure_locales, report, approved
 from translate_collateral import flatten, file_hash, FIELDS
 
 APP_KEYS='recent_memories confirm date precision unknown month location tags search all delete_memory delete_album delete_attachment delete_book voice_story recording_notice microphone_notice microphone_denied recording_failed operation_failed seek transcription_unavailable voice_unavailable voice_error command run_command unknown_command read_story tts_unavailable stop_speaking prompt_lesson answer_prompt no_results no_books_body pdf_note missing_memory spoken_feedback year_filter album_filter finish_recording backup_busy view_memory saved_locally record_first no_story save_first reminders_pending search_year_hint'.split()
@@ -63,6 +63,8 @@ def article_overrides(language,locale):
     result['offline-memory-journal']['sections'][1]['body']=app['voice_notice']+' '+app['transcription_notice']
     result['faq']['sections'][3]['body']=app['transcription_notice']
     result['privacy']['sections'][1]['body'] += '\n\n' + app['purchase_privacy'] + '\n\n' + app['reminder_notice']
+    # Dynamic product notices follow the reviewed app, rather than old preview seeds.
+    result['keepsake-books']['sections'][2]['body']=app['premium_required']+' '+app['pdf_note']
     return result
 
 def main():
@@ -73,16 +75,26 @@ def main():
         if locale.startswith('en'):continue
         language=locale.split('-')[0];lines=app_drafts[language]
         if len(lines)!=len(APP_KEYS):raise ValueError(f'{language}: expected {len(APP_KEYS)} app values, got {len(lines)}')
-        if not args.check and (reviews.get(locale,{}).get('status')=='APPROVED' or web_reviews.get(locale,{}).get('status')=='APPROVED'):raise RuntimeError(f'Refusing to overwrite native-approved copy: {locale}')
+        if not args.check and web_reviews.get(locale,{}).get('status')=='APPROVED':raise RuntimeError(f'Refusing to overwrite reviewed website copy: {locale}')
         app_file=LOC/f'{locale}.json';app=read(app_file);before=copy.deepcopy(app)
         app.update({key:adapt(value,locale) for key,value in zip(APP_KEYS,lines)})
         if len(extra_drafts[language])!=len(EXTRA_KEYS):raise ValueError(f'{language}: expected {len(EXTRA_KEYS)} extra app values, got {len(extra_drafts[language])}')
         app.update({key:adapt(value,locale) for key,value in zip(EXTRA_KEYS,extra_drafts[language])})
+        reviewed = reviews.get(locale,{}).get('status') == 'APPROVED'
+        if reviewed:
+            if not approved(locale,source,before):raise RuntimeError(f'Stale editorial approval: {locale}; review changed catalogues before regenerating')
+            # Legacy seeds must never roll back later hash-bound editorial work.
+            app = before
         if issues(source,app):raise ValueError(f'{locale}: {issues(source,app)}')
         changes.extend({'locale':locale,'area':'app','key':key,'before':before[key],'after':value} for key,value in app.items() if value!=before[key])
         pending.append((app_file,app))
-        reviews[locale].update({'status':'DRAFT_PENDING_NATIVE_REVIEW','sourceHash':source_hash(source),'targetHash':source_hash(app),'reviewer':'','reviewedAt':'','editorialCorrections':'Authored editorial polish 2026-11-03; not native approval'})
+        if not reviewed: reviews[locale].update({'status':'DRAFT_PENDING_NATIVE_REVIEW','sourceHash':source_hash(source),'targetHash':source_hash(app),'reviewer':'','reviewedAt':'','editorialCorrections':'Authored editorial polish 2026-11-03; not native approval'})
         if args.app_only:continue
+        web_review=web_reviews.get(locale,{})
+        if args.check and web_review.get('status')=='APPROVED':
+            if web_review.get('sourceHash')!=file_hash(ROOT/'website/src/dictionaries/en-GB.json') or web_review.get('targetHash')!=file_hash(ROOT/f'website/src/dictionaries/{locale}.json'):
+                raise RuntimeError(f'Stale website editorial approval: {locale}')
+            continue
         web_file=ROOT/f'website/src/dictionaries/{locale}.json';web=read(web_file);old_web=flatten(web)
         web['articles']=article_overrides(language,locale)
         if language=='de':web['ui']['related']='Entdecken Sie das nächste Kapitel'
@@ -104,7 +116,7 @@ def main():
         pending.append((listing_file,listing))
     if args.check:
         if changes:raise RuntimeError(f'Authored polish is stale: {len(changes)} fields differ; run polish_translations.py')
-        print('Editorial draft regression check: PASS (native review remains pending)');return
+        print('Editorial regression check: PASS (review provenance retained)');return
     for path,value in pending:write(path,value)
     write(LOC/'reviews.json',reviews)
     for locale in TARGETS[1:]:

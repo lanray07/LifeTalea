@@ -3,42 +3,48 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Familjens berättelser och minnen",
-  "shortDescription": "Upptäck utvecklingsversionen av LifeTalea: berättelser, privata foton, inspelningar, album och minnesböcker.",
-  "longDescription": "En privat plats för foton, röster och familjeberättelser.\n\nLägg till titel, text och ett exakt, ungefärligt eller okänt datum. Hitta berättelser med taggar, favoriter och album.\n\nImportera foton med dokumentväljaren och spela in en berättelse. Filerna kopieras till appens privata lagring.\n\nInspelningen stannar på den här enheten. När du lämnar appen stoppas och sparas den. Gratis inspelningar kan vara upp till tre minuter långa.\n\nTryck för att tala använder enhetens taltjänst. Den kan behöva internet och behandla tal utanför enheten. Fortsätt bara om du samtycker. LifeTalea sparar inte ljud från kommandon. Röstkommandon stöds för närvarande endast på engelska.\n\nPlanerat engångsköp: obegränsade album, längre inspelningar, PDF-export och krypterade lokala säkerhetskopior. Föreslaget brittiskt testpris är 4,99 £; Amazon visar det riktiga lokala priset efter konfiguration.\n\nBerättelser, transkriptioner, album och bokutkast ingår. Foton och inspelningar tas bara med om du väljer dem. Okrypterade exporter innehåller läsbara privata uppgifter. Förvara din lösenfras säkert: den kan inte återställas. Nuvarande gränser: 32 MiB per arkiv och 16 MiB per bilaga. Större bibliotek kräver en framtida version.\n\nÄnnu inte publicerad. Enhetstester, språkgranskning och verifiering av Amazon-köp pågår.\n\nSkapa ett textutkast från inspelningen på din enhet. Inget ljud laddas upp. Välj det talade språket och bekräfta. Inspelningar på högst tio minuter stöds. Bearbetningen kan ta tid; kontrollera texten innan du sparar.\n\nÖversättningsutkast. Språkgranskning återstår.\n\nO.Bankole · banksmi@mail.com\n\nValfri daglig påminnelse omkring kl. 20 lokal tid. Enhetens inställningar kan fördröja leveransen. Aviseringar innehåller inga berättelser. Avstängd som standard.",
+  "shortDescription": "En privat plats för foton, röster och familjeberättelser.",
+  "longDescription": "Bevara ögonblicken. Minns rösterna.\n\nEn privat plats för foton, röster och familjeberättelser.\n\nLägg till titel, text och ett exakt, ungefärligt eller okänt datum. Hitta berättelser med taggar, favoriter och album.\n\nImportera foton med dokumentväljaren och spela in en berättelse. Filerna kopieras till appens privata lagring.\n\nInspelningen stannar på den här enheten. När du lämnar appen stoppas och sparas den. Gratis inspelningar kan vara upp till tre minuter långa.\n\nSkapa ett textutkast från inspelningen på din enhet. Inget ljud laddas upp. Välj det talade språket och bekräfta. Inspelningar på högst tio minuter stöds. Bearbetningen kan ta tid; kontrollera texten innan du sparar.\n\nTryck för att tala använder enhetens taltjänst. Den kan behöva internet och behandla tal utanför enheten. Fortsätt bara om du samtycker. LifeTalea sparar inte ljud från kommandon. Röstkommandon stöds för närvarande endast på engelska.\n\nEtt engångsköp för obegränsade album, längre inspelningar, PDF-export och krypterade lokala säkerhetskopior. Befintliga minnen förblir tillgängliga.\n\nBerättelser, transkriptioner, album och bokutkast ingår. Foton och inspelningar tas bara med om du väljer dem. Okrypterade exporter innehåller läsbara privata uppgifter. Förvara din lösenfras säkert: den kan inte återställas. Nuvarande gränser: 32 MiB per arkiv och 16 MiB per bilaga. Större bibliotek kräver en framtida version.\n\nAmazon-köp skickar appens Amazon-användar-ID och kvitto-ID till LifeTaleas verifieringstjänst hos Supabase och till Amazon. Leverantörerna kan spara begärande- och anslutningsloggar. Berättelser, foton och inspelningar skickas inte för verifiering. Inspelningar transkriberas på den här enheten. Exporterade filer måste tas bort separat.\n\nValfri daglig påminnelse omkring kl. 20 lokal tid. Enhetens inställningar kan fördröja leveransen. Aviseringar innehåller inga berättelser. Avstängd som standard.\n\nLås upp LifeTalea med enhetens skärmlås efter att du lämnat appen. Ställ först in ett skärmlås på enheten. Exporterade filer är separata.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
     "En familjedagbok ger foton sammanhang: vilka som var där, vad som hände och varför stunden var viktig.",
     "Fånga pauser, skratt och uttryck som en skriven berättelse inte alltid kan förmedla.",
     "Samla berättelser och foton i lokalt sparade bokutkast.",
     "Utforska minnen i datumordning, även med ungefärliga eller okända datum.",
-    "Inspelning kräver fungerande mikrofon och behörighet. Igenkänning och uppläsning behöver kompatibla tjänster. Pek- och textalternativ finns med i designen."
+    "Tillgängligt offline"
   ],
   "keywords": [
     "Familjeminnen",
     "Inspelad berättelse",
-    "Familjhistoria",
+    "Familjehistoria",
     "Minnesböcker",
     "Tidslinje",
-    "Min livstidning"
+    "Min livsdagbok"
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Översättningsutkast. Språkgranskning återstår. Ännu inte publicerad. Enhetstester, språkgranskning och verifiering av Amazon-köp pågår.",
+  "releaseNotes": "Ännu inte publicerad. Kontroller inför lanseringen pågår.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
   "screenshotHeadlines": {
-    "home": "Bevara stunderna som betyder något",
-    "albums": "En samling för varje kapitel",
-    "timeline": "Följ din familjs historia",
-    "keepsakes": "Samla berättelser i en minnesbok",
-    "settings": "Spara en kopia som du själv styr över",
-    "editor": "Berätta historien bakom fotot",
-    "voice": "Ge deras röster en plats",
-    "transcript": "Lägg till transkriptioner med egna ord"
+    "home": "Varje berättelse förtjänar en plats.",
+    "albums": "En samling för varje kapitel.",
+    "timeline": "Se hur kapitlen hänger ihop",
+    "keepsakes": "En minnesbok att behålla.",
+    "settings": "Säkerhetskopiering och återställning",
+    "editor": "Börja med ett ögonblick",
+    "voice": "Bevara deras välbekanta röster",
+    "transcript": "Ord bredvid det inspelade minnet"
   },
   "locale": "sv-SE",
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "132d56bdbb1da8fff2a43a79a469062aa91337ea4075ff6b7e46b30f279f2b90"
+  "targetHash": "0e7ac81d0283da0cac723e2c9e9e1e26761b7d07eb49dce301294813edb083f8",
+  "linguisticReview": {
+    "status": "APPROVED",
+    "reviewType": "AI_EDITORIAL",
+    "reviewer": "Codex (AI)",
+    "nativeSpeakerReview": false
+  }
 }

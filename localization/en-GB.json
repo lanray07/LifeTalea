@@ -125,7 +125,7 @@
   "skip": "Skip for now",
   "language": "Language",
   "device_language": "Use device language",
-  "language_note": "Choose a language or follow your device settings. Development translations still need native-language review. Your stories are not translated.",
+  "language_note": "Choose a language or follow your device settings. Your stories are not translated.",
   "purpose": "What would you like to preserve?",
   "family": "Family memories",
   "personal": "My life journal",
@@ -210,5 +210,8 @@
   "privacy_notice": "Full privacy notice",
   "purchase_privacy": "Amazon purchases send app-specific Amazon user and receipt identifiers to LifeTalea’s Supabase-hosted verifier and Amazon. Providers may retain request and connection logs. Stories, photos and recordings are not sent for verification. Saved-recording transcription runs on this device. Exported files must be deleted separately.",
   "reminder_notice": "Optional daily reminder around 20:00 local time. Delivery may be delayed by device settings. Notifications contain no story content. Off by default.",
-  "reminder_unavailable": "Notifications are unavailable. Check this app’s notification permission and channel in device settings."
+  "reminder_unavailable": "Notifications are unavailable. Check this app’s notification permission and channel in device settings.",
+  "app_lock": "App lock",
+  "app_lock_notice": "Use your device screen lock to unlock LifeTalea after leaving the app. Set up a device screen lock first. Exported files are separate.",
+  "unlock": "Unlock"
 }

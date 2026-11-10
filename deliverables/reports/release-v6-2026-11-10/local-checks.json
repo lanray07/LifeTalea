@@ -1,0 +1,70 @@
+{
+  "executedAt": "2026-11-10T18:07:16.936417+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "exitCode": 0,
+      "log": "deliverables/reports/release-v6-2026-11-10/final-check-1.log"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/localize.py",
+        "check-release"
+      ],
+      "exitCode": 0,
+      "log": "deliverables/reports/release-v6-2026-11-10/final-check-2.log"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/polish_translations.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "deliverables/reports/release-v6-2026-11-10/final-check-3.log"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/validate_collateral.py"
+      ],
+      "exitCode": 0,
+      "log": "deliverables/reports/release-v6-2026-11-10/final-check-4.log"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/test_website_review_gate.cjs"
+      ],
+      "exitCode": 0,
+      "log": "deliverables/reports/release-v6-2026-11-10/final-check-5.log"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/test_locale_match.cjs"
+      ],
+      "exitCode": 0,
+      "log": "deliverables/reports/release-v6-2026-11-10/final-check-6.log"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "server/receipt-verifier/test/verifier.test.mjs",
+        "server/receipt-verifier/test/edge.test.mjs"
+      ],
+      "exitCode": 0,
+      "log": "deliverables/reports/release-v6-2026-11-10/final-check-7.log"
+    }
+  ]
+}

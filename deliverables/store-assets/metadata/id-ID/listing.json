@@ -3,14 +3,14 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Kisah dan kenangan keluarga",
-  "shortDescription": "Kenali versi pengembangan LifeTalea: cerita, foto pribadi, rekaman, album, dan buku kenangan.",
-  "longDescription": "Ruang pribadi untuk foto, suara, dan kisah keluarga.\n\nTambahkan judul, teks, serta tanggal pasti, perkiraan, atau tidak diketahui. Temukan cerita dengan tag, favorit, dan album.\n\nImpor foto melalui pemilih dokumen dan rekam cerita suara. Berkas disalin ke penyimpanan pribadi aplikasi.\n\nRekaman tetap tersimpan di perangkat ini. Saat Anda meninggalkan aplikasi, rekaman dihentikan dan disimpan. Rekaman gratis dibatasi hingga tiga menit.\n\nFitur tekan untuk bicara menggunakan layanan suara perangkat Anda. Layanan ini mungkin memerlukan internet dan memproses ucapan di luar perangkat. Lanjutkan hanya jika Anda setuju. LifeTalea tidak menyimpan rekaman perintah suara. Saat ini, perintah hanya didukung dalam bahasa Inggris.\n\nRencana pembelian satu kali: album tak terbatas, rekaman lebih panjang, ekspor PDF, dan cadangan lokal terenkripsi. Usulan harga uji Inggris £4.99; Amazon akan memberikan harga lokal sebenarnya setelah konfigurasi.\n\nKisah, transkrip, album, dan draf buku disertakan. Foto dan rekaman hanya disertakan jika dipilih. Ekspor yang tidak dienkripsi berisi informasi pribadi yang dapat dibaca. Simpan frasa sandi Anda dengan aman karena tidak dapat dipulihkan. Batas saat ini: 32 MiB per arsip dan 16 MiB per lampiran. Pustaka yang lebih besar memerlukan versi mendatang.\n\nBelum diterbitkan. Pengujian perangkat, tinjauan penutur asli, dan verifikasi pembelian Amazon masih berlangsung.\n\nBuat draf teks dari rekaman ini di perangkat Anda. Tidak ada audio yang diunggah. Pilih bahasa yang diucapkan, lalu konfirmasi. Rekaman hingga sepuluh menit didukung. Pemrosesan mungkin lambat; periksa teks sebelum menyimpannya.\n\nDraf terjemahan. Masih menunggu tinjauan penutur asli.\n\nO.Bankole · banksmi@mail.com\n\nPengingat harian opsional sekitar pukul 20.00 waktu setempat. Pengaturan perangkat dapat menunda pengiriman. Notifikasi tidak memuat isi cerita. Nonaktif secara default.",
+  "shortDescription": "Ruang pribadi untuk foto, suara, dan kisah keluarga.",
+  "longDescription": "Abadikan momen. Kenang suara mereka.\n\nRuang pribadi untuk foto, suara, dan kisah keluarga.\n\nTambahkan judul, teks, serta tanggal pasti, perkiraan, atau tidak diketahui. Temukan cerita dengan tag, favorit, dan album.\n\nImpor foto melalui pemilih dokumen dan rekam cerita suara. Berkas disalin ke penyimpanan pribadi aplikasi.\n\nRekaman tetap tersimpan di perangkat ini. Saat Anda meninggalkan aplikasi, rekaman dihentikan dan disimpan. Rekaman gratis dibatasi hingga tiga menit.\n\nBuat draf teks dari rekaman ini di perangkat Anda. Tidak ada audio yang diunggah. Pilih bahasa yang diucapkan, lalu konfirmasi. Rekaman hingga sepuluh menit didukung. Pemrosesan mungkin lambat; periksa teks sebelum menyimpannya.\n\nFitur tekan untuk bicara menggunakan layanan suara perangkat Anda. Layanan ini mungkin memerlukan internet dan memproses ucapan di luar perangkat. Lanjutkan hanya jika Anda setuju. LifeTalea tidak menyimpan rekaman perintah suara. Saat ini, perintah hanya didukung dalam bahasa Inggris.\n\nSatu pembelian untuk album tak terbatas, rekaman lebih panjang, ekspor PDF, dan cadangan lokal terenkripsi. Kenangan yang sudah ada tetap dapat diakses.\n\nKisah, transkrip, album, dan draf buku disertakan. Foto dan rekaman hanya disertakan jika dipilih. Ekspor yang tidak dienkripsi berisi informasi pribadi yang dapat dibaca. Simpan frasa sandi Anda dengan aman karena tidak dapat dipulihkan. Batas saat ini: 32 MiB per arsip dan 16 MiB per lampiran. Pustaka yang lebih besar memerlukan versi mendatang.\n\nPembelian Amazon mengirim ID pengguna Amazon khusus aplikasi dan ID tanda terima ke layanan verifikasi LifeTalea yang dihosting di Supabase serta ke Amazon. Penyedia dapat menyimpan log permintaan dan koneksi. Cerita, foto, dan rekaman tidak dikirim untuk verifikasi. Transkripsi rekaman tersimpan dilakukan di perangkat ini. File yang diekspor harus dihapus secara terpisah.\n\nPengingat harian opsional sekitar pukul 20.00 waktu setempat. Pengaturan perangkat dapat menunda pengiriman. Notifikasi tidak memuat isi cerita. Nonaktif secara default.\n\nGunakan kunci layar perangkat untuk membuka LifeTalea setelah meninggalkan aplikasi. Atur kunci layar perangkat terlebih dahulu. File yang diekspor dikelola terpisah.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
     "Jurnal keluarga memberi konteks pada foto: siapa yang hadir, apa yang terjadi, dan mengapa momen itu berarti.",
     "Abadikan jeda, tawa, dan ungkapan akrab yang tidak selalu tersampaikan lewat tulisan.",
     "Satukan cerita dan foto dalam draf buku yang tersimpan di perangkat.",
     "Jelajahi kenangan menurut tanggal, termasuk tanggal perkiraan dan yang tidak diketahui.",
-    "Merekam membutuhkan mikrofon dan izin. Pengenalan serta pembacaan suara membutuhkan layanan kompatibel. Alternatif sentuh dan teks tetap tersedia."
+    "Tersedia offline"
   ],
   "keywords": [
     "Kenangan keluarga",
@@ -18,27 +18,33 @@
     "Sejarah keluarga",
     "Buku kenangan",
     "Linimasa",
-    "Jurnal Kehidupan Saya"
+    "Jurnal hidup saya"
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Draf terjemahan. Masih menunggu tinjauan penutur asli. Belum diterbitkan. Pengujian perangkat, tinjauan penutur asli, dan verifikasi pembelian Amazon masih berlangsung.",
+  "releaseNotes": "Belum diterbitkan. Pemeriksaan sebelum rilis sedang berlangsung.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
   "screenshotHeadlines": {
-    "home": "Simpan momen yang berarti",
-    "albums": "Koleksi untuk setiap bab kehidupan",
-    "timeline": "Telusuri perjalanan kisah keluarga",
-    "keepsakes": "Satukan kisah dalam buku kenangan",
-    "settings": "Simpan salinan yang Anda kendalikan",
-    "editor": "Tulis kisah di balik foto",
+    "home": "Setiap kisah layak mendapat tempat.",
+    "albums": "Koleksi untuk setiap bab.",
+    "timeline": "Ikuti hubungan setiap bab",
+    "keepsakes": "Buku kenangan untuk disimpan.",
+    "settings": "Cadangan dan pemulihan",
+    "editor": "Mulai dari satu momen",
     "voice": "Simpan suara orang tersayang",
-    "transcript": "Tambahkan transkrip dengan kata-kata sendiri"
+    "transcript": "Tambahkan tulisan pada kenangan suara"
   },
   "locale": "id-ID",
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "f5d660a73eebdcf547143942b67f2341cd429645a84fe55f61880fa201d35257"
+  "targetHash": "7cc082270f1700792bd4195b8bbddf24bc7fb130780c817451e0b825db6cc8fc",
+  "linguisticReview": {
+    "status": "APPROVED",
+    "reviewType": "AI_EDITORIAL",
+    "reviewer": "Codex (AI)",
+    "nativeSpeakerReview": false
+  }
 }

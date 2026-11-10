@@ -14,9 +14,9 @@
     "footerNote": "In ontwikkeling. Geen account nodig.",
     "brandNotice": "Voorlopige merknaam, controle volgt",
     "related": "Ontdek het volgende hoofdstuk",
-    "previewNotice": "Vertaalconcept. Controle door moedertaalsprekers volgt.",
-    "chooseLanguage": "Kies uw taal",
-    "home": "Huis"
+    "previewNotice": "Ontwikkelversie",
+    "chooseLanguage": "Kies je taal",
+    "home": "Home"
   },
   "home": {
     "titleFirst": "De kleine momenten.",
@@ -38,7 +38,7 @@
     "privacyBody": "Geen openbare tijdlijn. Geen verplicht account. Je herinneringen blijven op je apparaat, tenzij je ze zelf exporteert.",
     "privacyLink": "Onze aanpak voor privacy",
     "storeLink": "Bekijk in de Amazon Appstore",
-    "releaseNote": "Nog niet gepubliceerd. Apparaattests, taalcontrole en verificatie van Amazon-aankopen lopen nog.",
+    "releaseNote": "Nog niet gepubliceerd. De controles voor de release zijn in uitvoering.",
     "metaTitle": "LifeTalea - Familieherinneringen en verhalen",
     "metaDescription": "Een privéplek voor foto’s, stemmen en familieverhalen. Ontdek de ontwikkelversie van LifeTalea."
   },
@@ -57,7 +57,7 @@
         },
         {
           "title": "Maak er je eigen boek van",
-          "body": "Orden pagina’s en bijschriften en bekijk het voorbeeld. PDF-export vereist Premium; Amazon-aankopen moeten nog in de testomgeving worden gecontroleerd."
+          "body": "Eén aankoop voor onbeperkte albums, langere opnamen, PDF-export en versleutelde lokale back-ups. Bestaande herinneringen blijven toegankelijk."
         }
       ]
     },
@@ -165,7 +165,7 @@
         },
         {
           "title": "Ontwikkelstatus",
-          "body": "PDF-aanmaak wordt op apparaten getest. Export vereist een gecontroleerd Amazon-Premium-recht. Echte aankopen zijn nog niet geverifieerd."
+          "body": "Deze functie vereist LifeTalea Premium. De PDF wordt op je apparaat gemaakt. Controleer het bestand voordat je het deelt. Audio-opnamen worden niet opgenomen in gedrukte herinneringsboeken."
         }
       ]
     },
@@ -207,7 +207,7 @@
     },
     "languages": {
       "title": "Een dagboek in jouw taal",
-      "summary": "De ontwikkelapp bevat 22 regionale varianten voor 17 prioriteitstalen. Controle door moedertaalsprekers blijft nodig.",
+      "summary": "Kies een taal of gebruik de apparaattaal. Je verhalen worden niet vertaald.",
       "sections": [
         {
           "title": "Geplande talen",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Bewaar de herinneringen. Kies de extra’s.",
-      "summary": "Een gratis dagboek met een optionele eenmalige Premium-aankoop. Aankopen zijn niet actief in deze ontwikkelversie.",
+      "summary": "Gratis: drie albums, foto’s, verhalen, tijdlijn en opnamen tot drie minuten. Geen limiet op het aantal opgeslagen geschreven herinneringen.",
       "sections": [
         {
           "title": "Gratis",
@@ -233,7 +233,7 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Geplande eenmalige aankoop: onbeperkte albums, langere opnamen, PDF-export en versleutelde lokale back-ups. De voorgestelde Britse testprijs is £4,99; Amazon levert na configuratie de echte lokale prijs."
+          "body": "Eén aankoop voor onbeperkte albums, langere opnamen, PDF-export en versleutelde lokale back-ups. Bestaande herinneringen blijven toegankelijk."
         },
         {
           "title": "Bestaande verhalen blijven toegankelijk",

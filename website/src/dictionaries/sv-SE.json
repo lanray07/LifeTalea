@@ -14,9 +14,9 @@
     "footerNote": "Under utveckling. Inget konto krävs.",
     "brandNotice": "Preliminärt varumärkesnamn, granskning återstår",
     "related": "Upptäck nästa kapitel",
-    "previewNotice": "Översättningsutkast. Språkgranskning återstår.",
+    "previewNotice": "Utvecklingsversion",
     "chooseLanguage": "Välj ditt språk",
-    "home": "Hemma"
+    "home": "Startsida"
   },
   "home": {
     "titleFirst": "De små stunderna.",
@@ -38,7 +38,7 @@
     "privacyBody": "Inget offentligt flöde. Inget obligatoriskt konto. Minnena stannar på din enhet om du inte väljer att exportera dem.",
     "privacyLink": "Så tänker vi kring integritet",
     "storeLink": "Visa i Amazon Appstore",
-    "releaseNote": "Ännu inte publicerad. Enhetstester, språkgranskning och verifiering av Amazon-köp pågår.",
+    "releaseNote": "Ännu inte publicerad. Kontroller inför lanseringen pågår.",
     "metaTitle": "LifeTalea - Familjens berättelser och minnen",
     "metaDescription": "En privat plats för foton, röster och familjeberättelser. Upptäck utvecklingsversionen av LifeTalea."
   },
@@ -57,7 +57,7 @@
         },
         {
           "title": "Gör boken till din egen",
-          "body": "Ordna sidor och bildtexter och granska förhandsvisningen. PDF-export kräver Premium; Amazon-köp behöver fortfarande verifieras i testmiljö."
+          "body": "Ett engångsköp för obegränsade album, längre inspelningar, PDF-export och krypterade lokala säkerhetskopior. Befintliga minnen förblir tillgängliga."
         }
       ]
     },
@@ -165,7 +165,7 @@
         },
         {
           "title": "Utvecklingsstatus",
-          "body": "PDF-funktionen valideras på enheter. Export kräver verifierad Amazon-Premium-behörighet. Riktiga köp är ännu inte verifierade."
+          "body": "Denna funktion kräver LifeTalea Premium. PDF-filen skapas på din enhet. Granska den innan du delar den. Ljudinspelningar ingår inte i tryckta minnesböcker."
         }
       ]
     },
@@ -207,7 +207,7 @@
     },
     "languages": {
       "title": "En dagbok på ditt språk",
-      "summary": "Utvecklingsappen omfattar 22 regionala varianter för 17 prioriterade språk. Granskning av modersmålstalare behövs fortfarande.",
+      "summary": "Välj ett språk eller använd enhetens språk. Dina berättelser översätts inte.",
       "sections": [
         {
           "title": "Planerade språk",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Behåll minnena. Välj tilläggen.",
-      "summary": "En gratis dagbok med ett valfritt engångsköp av Premium. Köp är inte aktiva i utvecklingsversionen.",
+      "summary": "Gratis: tre album, foton, berättelser, tidslinje och inspelningar upp till tre minuter. Ingen gräns för antalet sparade skrivna minnen.",
       "sections": [
         {
           "title": "Gratis",
@@ -233,7 +233,7 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Planerat engångsköp: obegränsade album, längre inspelningar, PDF-export och krypterade lokala säkerhetskopior. Föreslaget brittiskt testpris är 4,99 £; Amazon visar det riktiga lokala priset efter konfiguration."
+          "body": "Ett engångsköp för obegränsade album, längre inspelningar, PDF-export och krypterade lokala säkerhetskopior. Befintliga minnen förblir tillgängliga."
         },
         {
           "title": "Befintliga berättelser förblir tillgängliga",
@@ -285,7 +285,7 @@
         },
         {
           "title": "Säkerhetsgränser",
-          "body": "Privat lagring bygger på enhetens skydd; databasen har ingen separat appkrypteringsnyckel. Arkiv kan krypteras med lösenfras. Ingen totalsträckskryptering eller färdig juridisk bedömning hävdas."
+          "body": "Privat lagring bygger på enhetens skydd; databasen har ingen separat krypteringsnyckel för appen. Arkiv kan krypteras med en lösenfras. Ingen ändpunktskryptering eller slutförd juridisk bedömning utlovas."
         }
       ]
     },

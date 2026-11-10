@@ -1,0 +1,31 @@
+✔ edge fails closed without secrets and never invokes quota (41.0401ms)
+✔ edge validates body before quota and authenticates receipts through verifier (8.5871ms)
+✔ edge enforces shared quota, length, content type and hides internal exceptions (5.0138ms)
+✔ real RSA signature binds active entitlement, identity, receipt, SKU, environment and expiry (16.6549ms)
+✔ sandbox has a fixed distinct upstream and signed environment (3.4619ms)
+✔ cancelDate, including zero, revokes entitlement (6.0468ms)
+✔ Amazon invalid, canceled and mismatched-user statuses produce signed inactive decisions (7.9892ms)
+✔ throttling, secret failure, server errors and redirects fail closed without leaking upstream errors (4.1818ms)
+✔ wrong receipt, SKU/type, malformed cancellation, missing flags and future purchase cannot grant (9.2637ms)
+✔ production publishing/LAT test receipts require explicit server opt-in; sandbox is still distinct (5.456ms)
+✔ oversized, absent and malformed Amazon JSON is rejected (3.5504ms)
+✔ transport exceptions are redacted; cancellation signal is propagated (1.4831ms)
+✔ request cannot select environment, SKU, upstream host or secret; path-dot and whitespace rejected (0.5563ms)
+✔ assertion lifetime and missing configuration are bounded (0.8917ms)
+✔ global and per-client quotas are bounded and refill; forwarded headers are not trusted (0.5751ms)
+✔ HTTP boundary verifies real JSON requests and returns a signed token with no-store headers (129.9197ms)
+✔ HTTP quota prevents upstream verification (12.8724ms)
+✔ committed Android contract fixtures have valid Node signatures and no private key (4.2555ms)
+✔ upstream timeout aborts an actual pending verification (28.5381ms)
+✔ HTTP concurrency cap rejects extra work while an upstream request is pending (16.7427ms)
+✔ executable rejects missing or invalid secret/key/bind configuration without printing secrets (920.0893ms)
+✔ configured executable starts a real local readiness endpoint (193.1956ms)
+✔ signing-key helper writes a matching public pair and refuses to replace an existing identity (800.6451ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2484.8524

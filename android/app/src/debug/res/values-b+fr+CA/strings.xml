@@ -7,7 +7,7 @@
 <string name="settings">Paramètres</string>
 <string name="add_memory">Ajouter un souvenir</string>
 <string name="hero_title">Chaque histoire mérite sa place.</string>
-<string name="hero_body">Rappelez-vous les moments, souvenez-vous des voix.</string>
+<string name="hero_body">Gardez les instants. Retrouvez les voix.</string>
 <string name="recent_memories">Souvenirs récents</string>
 <string name="empty_title">Votre histoire commence ici.</string>
 <string name="empty_body">Ajoutez un souvenir pour commencer votre journal familial.</string>
@@ -46,7 +46,7 @@
 <string name="delete_book">Supprimer ce brouillon de livre \? Vos souvenirs seront conservés.</string>
 <string name="delete_all">Supprimer tous les souvenirs, albums, enregistrements et brouillons de livres stockés sur cet appareil \? Cette action est irréversible.</string>
 <string name="photos">Photographies</string>
-<string name="add_photo">Ajoutez une photo</string>
+<string name="add_photo">Ajouter une photo</string>
 <string name="voice_story">Récit audio</string>
 <string name="record">Enregistrer un récit</string>
 <string name="pause">Mettre en pause</string>
@@ -67,7 +67,7 @@
 <string name="voice_commands">Commandes vocales</string>
 <string name="voice_notice">Le mode appuyer pour parler utilise le service vocal de votre appareil. Ce service peut nécessiter Internet et traiter votre voix en dehors de l’appareil. Continuez uniquement si vous êtes d’accord. LifeTalea n’enregistre pas les commandes audio. Les commandes sont actuellement disponibles uniquement en anglais.</string>
 <string name="listen">Appuyez pour parler</string>
-<string name="listening">Écouter...</string>
+<string name="listening">Écoute en cours…</string>
 <string name="voice_unavailable">La reconnaissance vocale n’est pas disponible sur cet appareil. Utilisez les commandes tactiles ou saisissez une commande.</string>
 <string name="voice_error">Votre commande vocale n’a pas été reconnue. Réessayez ou saisissez-la dans le champ de texte.</string>
 <string name="command">Saisir une commande</string>
@@ -101,7 +101,7 @@
 <string name="move_up">Monter la page</string>
 <string name="move_down">Descendre la page</string>
 <string name="remove_page">Supprimer la page</string>
-<string name="add_page">Ajouter page</string>
+<string name="add_page">Ajouter une page</string>
 <string name="preview">Aperçu</string>
 <string name="export_pdf">Exporter en PDF</string>
 <string name="pdf_options">Exporter le livre</string>
@@ -117,13 +117,13 @@
 <string name="skip">Passer pour le moment</string>
 <string name="language">Langue</string>
 <string name="device_language">Utiliser la langue de l’appareil</string>
-<string name="language_note">Choisissez une langue ou utilisez celle de l’appareil. Les traductions de développement nécessitent une révision par des locuteurs natifs. Vos récits ne sont pas traduits.</string>
+<string name="language_note">Choisissez une langue ou utilisez celle de l’appareil. Vos récits ne sont pas traduits.</string>
 <string name="purpose">Qu’est-ce que vous aimeriez préserver \?</string>
 <string name="family">Souvenirs de famille</string>
 <string name="personal">Mon journal de vie</string>
 <string name="childhood">Étapes de l’enfance</string>
 <string name="history">Histoire de la famille</string>
-<string name="travel">Les souvenirs de voyage</string>
+<string name="travel">Souvenirs de voyage</string>
 <string name="legacy">Histoires à transmettre</string>
 <string name="appearance">Apparence</string>
 <string name="system">Réglage de l’appareil</string>
@@ -163,12 +163,12 @@
 <string name="premium_required">Cette fonction nécessite LifeTalea Premium.</string>
 <string name="refresh">Actualiser</string>
 <string name="saved">Enregistré</string>
-<string name="invalid_form">Ajouter un titre et une date valide correspondant à la précision sélectionnée.</string>
+<string name="invalid_form">Ajoutez un titre et une date valide correspondant à la précision sélectionnée.</string>
 <string name="support">Assistance</string>
 <string name="support_body">Éditeur : O.Bankole · Assistance : banksmi\@mail.com · Version de développement 0.1.0. Exportez une sauvegarde avant la désinstallation. Vérifiez les autorisations en cas de problème de microphone. Source : github.com/lanray07/LifeTalea</string>
 <string name="year_filter">Filtrer par année</string>
 <string name="album_filter">Filtrer par album</string>
-<string name="loading">Le chargement...</string>
+<string name="loading">Chargement…</string>
 <string name="finish_recording">Arrêtez l’enregistrement en cours avant de changer de souvenir.</string>
 <string name="backup_busy">Veuillez attendre la fin de l’opération en cours.</string>
 <string name="draft">Brouillon</string>
@@ -211,4 +211,7 @@
 <string name="purchase_privacy">Les achats Amazon transmettent les identifiants Amazon propres à l’application et les identifiants de reçus au service de vérification de LifeTalea, hébergé par Supabase, et à Amazon. Ces prestataires peuvent conserver des journaux de requêtes et de connexion. Les récits, photos et enregistrements ne sont pas envoyés pour vérification. La transcription des enregistrements s’effectue sur cet appareil. Les fichiers exportés doivent être supprimés séparément.</string>
 <string name="reminder_notice">Rappel quotidien facultatif vers 20 h, heure locale. Les réglages de l’appareil peuvent retarder sa réception. Aucun récit ne figure dans la notification. Désactivé par défaut.</string>
 <string name="reminder_unavailable">Notifications indisponibles. Vérifiez les autorisations et le canal de notification de cette application dans les réglages de l’appareil.</string>
+<string name="app_lock">Verrouillage de l’application</string>
+<string name="app_lock_notice">Utilisez le verrouillage de votre appareil pour déverrouiller LifeTalea après avoir quitté l’application. Configurez d’abord un verrouillage de l’écran. Les fichiers exportés restent séparés.</string>
+<string name="unlock">Déverrouiller</string>
 </resources>

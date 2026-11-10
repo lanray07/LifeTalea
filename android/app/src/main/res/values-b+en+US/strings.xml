@@ -31,11 +31,11 @@
 <string name="location">Location (optional)</string>
 <string name="tags">Tags (comma separated)</string>
 <string name="transcript">Editable transcript</string>
-<string name="favourite">Favourite</string>
+<string name="favourite">Favorite</string>
 <string name="duplicate">Duplicate</string>
 <string name="search">Search stories, tags, transcripts…</string>
 <string name="all">All</string>
-<string name="favourites">Favourites</string>
+<string name="favourites">Favorites</string>
 <string name="new_album">New album</string>
 <string name="album_title">Album title</string>
 <string name="no_albums">A collection for every chapter.</string>
@@ -77,7 +77,7 @@
 <string name="listen">Push to talk</string>
 <string name="listening">Listening…</string>
 <string name="voice_unavailable">Speech recognition is unavailable on this device. Use the touch controls or type a command.</string>
-<string name="voice_error">Speech was not recognised. Try again or use the text command field.</string>
+<string name="voice_error">Speech was not recognized. Try again or use the text command field.</string>
 <string name="command">Type a command</string>
 <string name="run_command">Run command</string>
 <string name="unknown_command">Try: Create a new memory, Open my timeline, or Create a keepsake book.</string>
@@ -125,7 +125,7 @@
 <string name="skip">Skip for now</string>
 <string name="language">Language</string>
 <string name="device_language">Use device language</string>
-<string name="language_note">Choose a language or follow your device settings. Development translations still need native-language review. Your stories are not translated.</string>
+<string name="language_note">Choose a language or follow your device settings. Your stories are not translated.</string>
 <string name="purpose">What would you like to preserve\?</string>
 <string name="family">Family memories</string>
 <string name="personal">My life journal</string>
@@ -211,4 +211,7 @@
 <string name="purchase_privacy">Amazon purchases send app-specific Amazon user and receipt identifiers to LifeTalea’s Supabase-hosted verifier and Amazon. Providers may retain request and connection logs. Stories, photos and recordings are not sent for verification. Saved-recording transcription runs on this device. Exported files must be deleted separately.</string>
 <string name="reminder_notice">Optional daily reminder around 20:00 local time. Delivery may be delayed by device settings. Notifications contain no story content. Off by default.</string>
 <string name="reminder_unavailable">Notifications are unavailable. Check this app’s notification permission and channel in device settings.</string>
+<string name="app_lock">App lock</string>
+<string name="app_lock_notice">Use your device screen lock to unlock LifeTalea after leaving the app. Set up a device screen lock first. Exported files are separate.</string>
+<string name="unlock">Unlock</string>
 </resources>

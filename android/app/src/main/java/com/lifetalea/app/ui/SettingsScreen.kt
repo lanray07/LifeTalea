@@ -28,6 +28,7 @@ import kotlinx.coroutines.withContext
     val context = LocalContext.current
     val preferences by vm.preferences.collectAsStateWithLifecycle()
     val busy by vm.busy.collectAsStateWithLifecycle()
+    val billing by vm.billing.state.collectAsStateWithLifecycle()
     val reminders = remember { com.lifetalea.app.features.StoryReminders(context) }
     var reminderEnabled by remember { mutableStateOf(reminders.enabled) }
     fun enableReminder(value: Boolean) {
@@ -50,8 +51,20 @@ import kotlinx.coroutines.withContext
         Heading(tr("settings"))
         Text(tr("appearance"), style = MaterialTheme.typography.titleLarge)
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) { listOf("system", "light", "dark").forEach { theme -> Choice(preferences.theme == theme, tr(theme)) { vm.run { vm.settings.theme(theme) } } } }
+        Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            listOf("forest", "rose", "paper").forEach { palette ->
+                Choice((if (billing.premium) preferences.palette else "forest") == palette, tr(palette)) {
+                    if (palette != "forest" && !billing.premium) onPremium() else vm.run { vm.settings.palette(palette) }
+                }
+            }
+        }
         Text(tr("language"), style = MaterialTheme.typography.titleLarge); Text(tr("language_note"))
         LanguagePicker()
+        val activity = context as? com.lifetalea.app.MainActivity
+        activity?.let { host ->
+            Toggle("app_lock", host.appLockEnabled) { host.authenticateLock(it) }
+            Text(tr("app_lock_notice"))
+        }
         Toggle("spoken_feedback", preferences.spoken) { vm.run { vm.settings.spoken(it) } }
         HorizontalDivider()
         Toggle("reminders", reminderEnabled) { value ->

@@ -126,7 +126,7 @@
     <string name="skip">Skip for now</string>
     <string name="language">Language</string>
     <string name="device_language">Use device language</string>
-    <string name="language_note">Choose a language or follow your device settings. Development translations still need native-language review. Your stories are not translated.</string>
+    <string name="language_note">Choose a language or follow your device settings. Your stories are not translated.</string>
     <string name="purpose">What would you like to preserve?</string>
     <string name="family">Family memories</string>
     <string name="personal">My life journal</string>
@@ -212,4 +212,7 @@
     <string name="purchase_privacy">Amazon purchases send app-specific Amazon user and receipt identifiers to LifeTalea’s Supabase-hosted verifier and Amazon. Providers may retain request and connection logs. Stories, photos and recordings are not sent for verification. Saved-recording transcription runs on this device. Exported files must be deleted separately.</string>
     <string name="reminder_notice">Optional daily reminder around 20:00 local time. Delivery may be delayed by device settings. Notifications contain no story content. Off by default.</string>
     <string name="reminder_unavailable">Notifications are unavailable. Check this app’s notification permission and channel in device settings.</string>
+    <string name="app_lock">App lock</string>
+    <string name="app_lock_notice">Use your device screen lock to unlock LifeTalea after leaving the app. Set up a device screen lock first. Exported files are separate.</string>
+    <string name="unlock">Unlock</string>
 </resources>

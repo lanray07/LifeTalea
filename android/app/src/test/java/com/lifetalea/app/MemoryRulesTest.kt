@@ -3,6 +3,17 @@ import com.lifetalea.app.data.*
 import org.junit.Assert.*
 import org.junit.Test
 class MemoryRulesTest {
+    @Test fun sortingRespectsLocaleAndHasStableTiesWithoutChangingTheLibrary() {
+        val first = Memory(id="a", title="Zebra", date="1990", precision="YEAR", createdAt=2)
+        val second = Memory(id="b", title="Äpple", date="2000", precision="YEAR", createdAt=1)
+        val unknown = Memory(id="c", title="Zebra", createdAt=2)
+        val source = listOf(unknown, second, first)
+        assertEquals(listOf("a","c","b"), MemoryRules.sorted(source,"recent",java.util.Locale.US).map { it.id })
+        assertEquals(listOf("b","a","c"), MemoryRules.sorted(source,"date",java.util.Locale.US).map { it.id })
+        assertEquals(listOf("b","a","c"), MemoryRules.sorted(source,"title",java.util.Locale.GERMAN).map { it.id })
+        assertEquals(listOf("a","c","b"), MemoryRules.sorted(source,"title",java.util.Locale.forLanguageTag("sv-SE")).map { it.id })
+        assertEquals(listOf(unknown,second,first),source)
+    }
     @Test fun compoundFiltersUseOnlyTheSelectedMemoryAttachmentsAndAlbum() {
         val a = Memory(id="a", title="Garden", date="1994", precision="YEAR", favourite=true, transcript="Apple tree")
         val b = Memory(id="b", title="Garden", date="1994", precision="YEAR", favourite=true, transcript="Apple tree")

@@ -1,10 +1,29 @@
 import sys,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from localize import issues, source_hash, approved, generate, write
+from localize import issues, source_hash, approved, generate, write, check_debug_resources, resource_xml
 from unittest.mock import patch
 from tempfile import TemporaryDirectory
 class LocalizationTest(unittest.TestCase):
+    def test_catalogue_writer_preserves_portable_review_hash_bytes(self):
+        with TemporaryDirectory() as directory:
+            file=Path(directory)/'catalogue.json'
+            write(file,{'save':'Enregistrer'})
+            self.assertNotIn(b'\r',file.read_bytes())
+            self.assertTrue(file.read_bytes().endswith(b'\n'))
+    def test_stale_debug_overlay_cannot_shadow_current_source(self):
+        with TemporaryDirectory() as directory:
+            root=Path(directory);catalogues=root/'localization'
+            source={'save':'Save'}
+            write(catalogues/'en-GB.json',source)
+            overlay=root/'android/app/src/debug/res/values-b+en+GB/strings.xml'
+            overlay.parent.mkdir(parents=True)
+            overlay.write_text(resource_xml({'save':'Obsolete copy'}),encoding='utf-8')
+            with patch('localize.ROOT',root),patch('localize.LOC',catalogues):
+                with self.assertRaisesRegex(RuntimeError,'Stale debug'):
+                    check_debug_resources(source)
+                overlay.write_text(resource_xml(source),encoding='utf-8')
+                check_debug_resources(source)
     def test_format_specifiers_preserved(self):
         self.assertEqual([],issues({'count':'%1$d memories'},{'count':'%1$d souvenirs'}))
         self.assertTrue(issues({'count':'%1$d memories'},{'count':'%s souvenirs'}))
@@ -34,7 +53,7 @@ class LocalizationTest(unittest.TestCase):
             source={'save':'Save'};target={'save':'Enregistrer'}
             write(catalogues/'fr-FR.json',target)
             with patch('localize.ROOT',root),patch('localize.LOC',catalogues):
-                with self.assertRaisesRegex(RuntimeError,'native review'):
+                with self.assertRaisesRegex(RuntimeError,'editorial review'):
                     generate('fr-FR',source)
                 generate('fr-FR',source,draft=True)
                 self.assertTrue((root/'android/app/src/debug/res/values-b+fr+FR/strings.xml').exists())

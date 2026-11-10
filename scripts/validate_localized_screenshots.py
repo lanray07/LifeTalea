@@ -20,7 +20,8 @@ def main():
         fresh={row['path']:row['sha256'] for row in run.get('evidence',[])}
     elif not previous.get('debugApkSha256'):
         raise RuntimeError('No previous provenance exists; use --refresh after a complete device run')
-    rows=list(csv.DictReader((folder/'manifest.csv').open(encoding='utf-8-sig')))
+    with (folder/'manifest.csv').open(encoding='utf-8-sig') as stream:
+        rows=list(csv.DictReader(stream))
     provenance=[]
     for row in rows:
         for key in ['asset','actualCapture','composition']:row[key]=row[key].replace('\\','/')

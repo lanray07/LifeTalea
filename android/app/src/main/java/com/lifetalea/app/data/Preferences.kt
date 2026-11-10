@@ -21,6 +21,8 @@ data class Preferences(
     val onboarded: Boolean = false,
     val theme: String = "system",
     val spoken: Boolean = false,
+    val palette: String = "forest",
+    val sort: String = "recent",
     val purpose: StoryPurpose? = null,
 )
 class Settings(private val context: Context) {
@@ -30,6 +32,8 @@ class Settings(private val context: Context) {
             onboarded = it[booleanPreferencesKey("onboarded")] ?: false,
             theme = it[stringPreferencesKey("theme")] ?: "system",
             spoken = it[booleanPreferencesKey("spoken")] ?: false,
+            palette = it[stringPreferencesKey("palette")] ?: "forest",
+            sort = it[stringPreferencesKey("sort")] ?: "recent",
             purpose = StoryPurpose.fromLabel(it[purposeKey]),
         )
     }
@@ -41,4 +45,6 @@ class Settings(private val context: Context) {
     }
     suspend fun theme(value: String) { context.settings.edit { it[stringPreferencesKey("theme")] = value } }
     suspend fun spoken(value: Boolean) { context.settings.edit { it[booleanPreferencesKey("spoken")] = value } }
+    suspend fun palette(value: String) { require(value in listOf("forest", "rose", "paper")); context.settings.edit { it[stringPreferencesKey("palette")] = value } }
+    suspend fun sort(value: String) { require(value in listOf("recent", "date", "title")); context.settings.edit { it[stringPreferencesKey("sort")] = value } }
 }

@@ -1,0 +1,91 @@
+{
+  "fr-FR": {
+    "ui.home": "Accueil"
+  },
+  "fr-CA": {
+    "ui.home": "Accueil"
+  },
+  "es-ES": {
+    "ui.home": "Inicio",
+    "ui.chooseLanguage": "Elige tu idioma"
+  },
+  "es-419": {
+    "ui.home": "Inicio",
+    "ui.chooseLanguage": "Elige tu idioma"
+  },
+  "it-IT": {
+    "ui.home": "Home"
+  },
+  "pt-BR": {
+    "ui.home": "Início",
+    "ui.chooseLanguage": "Escolha seu idioma"
+  },
+  "pt-PT": {
+    "ui.home": "Início",
+    "ui.chooseLanguage": "Escolha o seu idioma",
+    "articles.features.sections.1.body": "Importe fotografias pelo seletor de documentos e grave um relato. Os ficheiros são copiados para o armazenamento privado da aplicação.",
+    "articles.voice-story-recording.sections.0.body": "Peça consentimento e faça um teste num local silencioso. Guarde a memória antes de gravar. Pode pausar e retomar a gravação.",
+    "articles.voice-story-recording.sections.1.body": "O LifeTalea guarda áudio AAC em ficheiros M4A privados. Sair da aplicação interrompe e guarda a gravação. O limite gratuito é de três minutos; o Premium permite gravações mais longas, consoante o espaço disponível.",
+    "articles.fire-tablet-compatibility.summary": "Uma aplicação nativa em Kotlin e Jetpack Compose, sem necessidade dos serviços do Google Play.",
+    "articles.pricing.sections.2.body": "A disponibilidade do Premium não bloqueia as memórias existentes. A cópia de segurança e o restauro básicos continuam disponíveis. Não se promete transcrição na nuvem com custos recorrentes.",
+    "articles.privacy.sections.2.body": "Elimine elementos ou toda a biblioteca nas definições. Desinstalar a aplicação elimina os dados locais. Os ficheiros exportados são cópias separadas sob o seu controlo; a Amazon conserva registos de compras de acordo com as suas políticas.",
+    "articles.privacy.sections.3.body": "O armazenamento privado depende da proteção do dispositivo; a base de dados local não tem uma chave de encriptação própria. Os arquivos podem ser encriptados com uma frase-passe. Não se declara encriptação ponto a ponto nem uma avaliação jurídica completa.",
+    "articles.support.sections.1.body": "Nas definições, escolha se pretende incluir fotografias e áudio e crie a cópia de segurança. Guarde-a num local seguro. O restauro valida o ficheiro e apresenta uma pré-visualização antes da importação.",
+    "articles.contact.sections.0.body": "Indique o dispositivo, o sistema, a versão da aplicação e os passos que originam o problema. Não envie relatos privados, fotografias, gravações ou frases-passe das cópias de segurança."
+  },
+  "de-DE": {
+    "ui.home": "Startseite",
+    "home.waysLabel": "So bewahren Sie Erinnerungen",
+    "home.personalTitle": "Ihr ganz persönliches Tagebuch",
+    "home.personalBody": "Sammeln Sie Fotos, Aufnahmen und Geschichten in einem privaten Familientagebuch.",
+    "home.personalLink": "Beginnen Sie mit einer Erinnerung",
+    "home.voiceTitle": "Geben Sie ihren Stimmen einen Platz",
+    "home.voiceBody": "Bewahren Sie Stimmen, Erinnerungen und die kleinen Details, die Geschichten lebendig machen.",
+    "home.keepsakeBody": "Sammeln Sie die Geschichten Ihrer Familie, um sie heute und in den kommenden Jahren wiederzuentdecken.",
+    "home.privacyTitle": "Manche Geschichten gehören nur Ihnen.",
+    "home.privacyBody": "Kein öffentlicher Feed. Kein Pflichtkonto. Ihre Erinnerungen bleiben auf Ihrem Gerät, solange Sie sie nicht selbst exportieren.",
+    "home.metaDescription": "Ein privater Ort für Fotos, Stimmen und Familiengeschichten. Entdecken Sie die Entwicklungsversion von LifeTalea."
+  },
+  "nl-NL": {
+    "ui.home": "Home",
+    "ui.chooseLanguage": "Kies je taal"
+  },
+  "sv-SE": {
+    "ui.home": "Startsida",
+    "articles.privacy.sections.3.body": "Privat lagring bygger på enhetens skydd; databasen har ingen separat krypteringsnyckel för appen. Arkiv kan krypteras med en lösenfras. Ingen ändpunktskryptering eller slutförd juridisk bedömning utlovas."
+  },
+  "pl-PL": {
+    "ui.home": "Strona główna",
+    "articles.family-memory-journal.sections.1.title": "Podawaj daty zgodnie z tym, co wiesz"
+  },
+  "tr-TR": {
+    "ui.home": "Ana sayfa",
+    "ui.chooseLanguage": "Dilinizi seçin",
+    "articles.family-memory-journal.sections.2.body": "Cihaz kaybolabilir. Kontrol ettiğiniz bir yere yedek aktarın ve aslını silmeden önce yedeği kontrol edin."
+  },
+  "id-ID": {
+    "ui.home": "Beranda",
+    "ui.chooseLanguage": "Pilih bahasa Anda",
+    "articles.languages.sections.0.body": "Inggris, Spanyol, Prancis, Portugis, Jerman, Italia, Belanda, Polandia, Swedia, Jepang, Hindi, Arab, Turki, Indonesia, Korea, serta bahasa Tionghoa dengan aksara sederhana dan tradisional."
+  },
+  "ja-JP": {
+    "ui.home": "ホーム",
+    "ui.chooseLanguage": "言語を選択"
+  },
+  "ko-KR": {
+    "ui.home": "홈",
+    "ui.chooseLanguage": "언어 선택"
+  },
+  "zh-Hans": {
+    "ui.home": "首页"
+  },
+  "zh-Hant": {
+    "ui.home": "首頁"
+  },
+  "hi-IN": {
+    "ui.home": "मुखपृष्ठ"
+  },
+  "ar": {
+    "ui.home": "الرئيسية"
+  }
+}

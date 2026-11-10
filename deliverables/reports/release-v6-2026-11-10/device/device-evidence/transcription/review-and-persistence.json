@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "inferenceAndUiMs": 9958,
+  "existingTranscriptPreserved": true,
+  "manualCorrectionPersisted": true,
+  "originalAudioUnchanged": true,
+  "speechFixture": "Fictional synthesized English, AAC 44100 Hz stereo",
+  "audioUploaded": false,
+  "languageAccuracyVerified": "en"
+}

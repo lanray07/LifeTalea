@@ -1,6 +1,6 @@
 """Development-only translation pipeline. No provider key or unreviewed website copy ships.
 Usage: extract | translate --locale fr-FR | validate | generate --locale fr-FR
-Review localization/reviews.json after native review; generation requires approval.
+Review localization/reviews.json for hash-bound editorial approval and its reviewer type.
 """
 import argparse, hashlib, json, os, re, sys, urllib.request
 from pathlib import Path
@@ -12,7 +12,7 @@ LOC = ROOT / 'localization'
 TARGETS = ['en-GB','en-US','en-AU','es-ES','es-419','fr-FR','fr-CA','de-DE','it-IT','pt-BR','pt-PT','nl-NL','pl-PL','sv-SE','ja-JP','hi-IN','ar','tr-TR','id-ID','ko-KR','zh-Hans','zh-Hant']
 PLACEHOLDER = re.compile(r'%(?:\d+\$)?[-+# 0,(]*\d*(?:\.\d+)?[a-zA-Z]|\{[a-zA-Z_][\w.]*\}')
 def read(path, fallback=None): return json.loads(path.read_text(encoding='utf-8')) if path.exists() else fallback
-def write(path, value): path.parent.mkdir(parents=True,exist_ok=True); path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+def write(path, value): path.parent.mkdir(parents=True,exist_ok=True); path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 def source_hash(source): return hashlib.sha256(json.dumps(source,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
 def extract():
     tree = ET.parse(ROOT/'android/app/src/main/res/values/strings.xml')
@@ -83,12 +83,13 @@ def resource_xml(target):
 def generate(locale,source,draft=False):
     target=read(LOC/f'{locale}.json',{}); errors=issues(source,target)
     if errors: raise RuntimeError('BLOCKED: incomplete translation: '+'; '.join(errors[:10]))
-    if not draft and not approved(locale,source,target): raise RuntimeError('BLOCKED: native review for the current source and target hashes is required')
+    if not draft and not approved(locale,source,target): raise RuntimeError('BLOCKED: current editorial review for the source and target hashes is required')
     qualifier='values-b+'+'+'.join(locale.split('-'))
     folder=ROOT/f'android/app/src/{"debug" if draft else "main"}/res'/qualifier; folder.mkdir(exist_ok=True,parents=True)
     (folder/'strings.xml').write_text(resource_xml(target),encoding='utf-8')
 
 def check_release(source):
+    check_debug_resources(source)
     root=ROOT/'android/app/src/main/res'
     expected=['en-GB']
     for folder in root.glob('values-*'):
@@ -105,6 +106,14 @@ def check_release(source):
     if set(actual)!=set(expected) or set(declared)!=set(expected):raise RuntimeError('Release language picker/configuration does not match reviewed resources')
     print('Release locale isolation: PASS')
 
+def check_debug_resources(source):
+    # Debug overlays can otherwise silently shadow a later reviewed release string.
+    for file in (ROOT/'android/app/src/debug/res').glob('values-*/strings.xml'):
+        locale=file.parent.name.removeprefix('values-b+').replace('+','-')
+        target=read(LOC/f'{locale}.json',{})
+        if locale not in TARGETS or issues(source,target) or file.read_text(encoding='utf-8')!=resource_xml(target):
+            raise RuntimeError(f'Stale debug translation overlay: {locale}')
+
 def configure_locales(source):
     for variant in ['main','debug']:
         enabled=['en-GB']
@@ -117,14 +126,15 @@ def configure_locales(source):
         (root/'xml/locales_config.xml').write_text('<locale-config xmlns:android="http://schemas.android.com/apk/res/android">\n'+''.join(f'  <locale android:name="{tag}" />\n' for tag in enabled)+'</locale-config>\n',encoding='utf-8')
         (root/'values/locales.xml').write_text('<resources>\n<string-array name="supported_locale_tags" translatable="false">\n'+''.join(f'  <item>{tag}</item>\n' for tag in enabled)+'</string-array>\n</resources>\n',encoding='utf-8')
 def report(source):
+    from validate_collateral import editorial_approval
     reviews=read(LOC/'reviews.json',{}); rows=[]
     for locale in TARGETS:
         target=read(LOC/f'{locale}.json',{}); errors=issues(source,target); invalid={e.split(':')[0].split('.')[0] for e in errors}; count=sum(key not in invalid for key in source)
         assets=ROOT/f'deliverables/store-assets/screenshots/localized-drafts/{locale}'
-        rows.append({'locale':locale,'translatedKeys':count,'totalKeys':len(source),'coverage':round(count/len(source)*100,2),'review':reviews.get(locale,{}).get('status','SOURCE' if locale=='en-GB' else 'PENDING'),'releaseApproved':approved(locale,source,target),'debugResource':(ROOT/'android/app/src/debug/res'/('values-b+'+'+'.join(locale.split('-')))/'strings.xml').exists(),'issues':errors,'rtl':locale=='ar','voiceRecognition':'ENGLISH_COMMANDS_ONLY_DEVICE_DEPENDENT','tts':'DEVICE_DEPENDENT_NOT_TESTED','transcription':'ON_DEVICE_ENGINE_LANGUAGE_ACCURACY_PENDING','storeListing':'DRAFT_PENDING_NATIVE_REVIEW' if (ROOT/f'deliverables/store-assets/metadata/{locale}/listing.json').exists() else 'MISSING','distributionCountries':'PENDING_PUBLISHER_SELECTION','screenshots':len(list(assets.glob('*.jpg'))),'screenshotReview':'DRAFT_PENDING_NATIVE_REVIEW','website':'DRAFT_PREVIEW' if (ROOT/f'website/src/dictionaries/{locale}.json').exists() else 'MISSING'})
+        rows.append({'locale':locale,'translatedKeys':count,'totalKeys':len(source),'coverage':round(count/len(source)*100,2),'review':reviews.get(locale,{}).get('status','SOURCE' if locale=='en-GB' else 'PENDING'),'releaseApproved':approved(locale,source,target),'debugResource':(ROOT/'android/app/src/debug/res'/('values-b+'+'+'.join(locale.split('-')))/'strings.xml').exists(),'issues':errors,'rtl':locale=='ar','voiceRecognition':'ENGLISH_COMMANDS_ONLY_DEVICE_DEPENDENT','tts':'DEVICE_DEPENDENT_NOT_TESTED','transcription':'ON_DEVICE_ENGINE_LANGUAGE_ACCURACY_PENDING','storeListing':'DRAFT_COPY_'+editorial_approval('store',locale) if (ROOT/f'deliverables/store-assets/metadata/{locale}/listing.json').exists() else 'MISSING','distributionCountries':'PENDING_PUBLISHER_SELECTION','screenshots':len(list(assets.glob('*.jpg'))),'screenshotReview':'CURRENT_CANDIDATE_ASSET_REVIEW_PENDING','website':'COPY_'+editorial_approval('website',locale) if (ROOT/f'website/src/dictionaries/{locale}.json').exists() else 'MISSING'})
     write(ROOT/'deliverables/localization/coverage.json',rows)
     report=ROOT/'deliverables/reports/LOCALIZATION_TEST_REPORT.md'
-    report.write_text('# Localisation validation\n\nStructural coverage is measured separately from linguistic approval. Draft resources are debug-only. Native review is not implied by coverage.\n\n|Locale|Keys|Coverage|Review|\n|---|---:|---:|---|\n'+'\n'.join(f"|{r['locale']}|{r['translatedKeys']}/{r['totalKeys']}|{r['coverage']}%|{r['review']}|" for r in rows)+'\n\nDevice evidence and limitations: docs/LOCALIZATION.md.\n',encoding='utf-8')
+    report.write_text('# Localisation validation\n\nStructural coverage is measured separately from linguistic approval. Release resources require current source/target hashes and reviewer identity. AI editorial approval is labelled in localization/reviews.json; it does not certify native review or device layout.\n\n|Locale|Keys|Coverage|Review|\n|---|---:|---:|---|\n'+'\n'.join(f"|{r['locale']}|{r['translatedKeys']}/{r['totalKeys']}|{r['coverage']}%|{r['review']}|" for r in rows)+'\n\nDevice evidence and limitations: docs/LOCALIZATION.md.\n',encoding='utf-8')
     print(json.dumps({'sourceKeys':len(source),'targets':len(TARGETS),'fullyTranslated':sum(r['coverage']==100 for r in rows),'releaseApproved':sum(r['releaseApproved'] and r['coverage']==100 for r in rows)}))
 def main():
     parser=argparse.ArgumentParser(); parser.add_argument('action',choices=['extract','translate','validate','generate','check-release']); parser.add_argument('--locale',choices=TARGETS); parser.add_argument('--draft',action='store_true',help='Generate debug-only resources without claiming release approval'); parser.add_argument('--strict',action='store_true',help='Fail if any target catalogue has structural errors'); args=parser.parse_args()

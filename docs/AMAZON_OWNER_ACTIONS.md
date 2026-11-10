@@ -1,3 +1,5 @@
+> Current candidate update (10 November 2026): version 6 adds 22 reviewed release locales, sorting, Premium palettes, device-credential app lock and revised reminder scheduling. All 22 app, website and store-copy sets have owner-authorised AI editorial approval, not native certification. Current local checks and remaining gates are in [RELEASE_V6_REVIEW_2026-11-10.md](RELEASE_V6_REVIEW_2026-11-10.md). Version 5 remains the verified live LAT/public draft until the newer candidate passes its own distribution checks. Older dated results below retain their historical scope. Public submission remains blocked.
+
 # Current release gates - 10 November 2026
 
 Submission is authorized but remains blocked by acceptance requirements. Version 5 is live on Test 1, Appstore-installed and checked on one Fire tablet. The public draft contains the same version 5 upload with revised English copy and reviewer instructions. See AMAZON_V5_LAT_RELEASE_REVIEW_2026-11-10.md for current evidence; older tables below are historical.

@@ -14,9 +14,9 @@
     "footerNote": "Em desenvolvimento. Não é preciso criar uma conta.",
     "brandNotice": "Nome de marca provisório, sujeito a verificação",
     "related": "Explore o próximo capítulo",
-    "previewNotice": "Tradução provisória. Revisão por falantes nativos pendente.",
-    "chooseLanguage": "Escolha sua língua",
-    "home": "casa"
+    "previewNotice": "Pré-visualização de desenvolvimento",
+    "chooseLanguage": "Escolha o seu idioma",
+    "home": "Início"
   },
   "home": {
     "titleFirst": "Os pequenos momentos.",
@@ -38,7 +38,7 @@
     "privacyBody": "Sem publicações públicas nem conta obrigatória. Suas memórias ficam no dispositivo, a menos que você escolha exportá-las.",
     "privacyLink": "Nossa abordagem de privacidade",
     "storeLink": "Ver na Amazon Appstore",
-    "releaseNote": "Ainda não publicado. Os testes de dispositivos, a revisão por falantes nativos e a verificação de compras da Amazon estão em andamento.",
+    "releaseNote": "Ainda não publicado. As verificações antes do lançamento estão em curso.",
     "metaTitle": "LifeTalea - Histórias e memórias da família",
     "metaDescription": "Um espaço privado para fotos, vozes e histórias de família. Conheça a versão de desenvolvimento do LifeTalea."
   },
@@ -53,11 +53,11 @@
         },
         {
           "title": "Fotos e vozes, juntas",
-          "body": "Importe fotos pelo seletor de documentos e grave um relato. Os ficheiros são copiados para o armazenamento privado do aplicação."
+          "body": "Importe fotografias pelo seletor de documentos e grave um relato. Os ficheiros são copiados para o armazenamento privado da aplicação."
         },
         {
           "title": "Crie um livro do seu jeito",
-          "body": "Organize páginas e legendas e confira a pré-visualização. A exportação PDF exige Premium; as compras Amazon ainda precisam de verificação em testes."
+          "body": "Uma compra única para álbuns ilimitados, gravações mais longas, exportação PDF e cópias locais encriptadas. Suas memórias existentes continuam acessíveis."
         }
       ]
     },
@@ -85,11 +85,11 @@
       "sections": [
         {
           "title": "Grave com cuidado",
-          "body": "Peça consentimento e faça um teste em um lugar silencioso. Guarde a memória antes de gravar. É possível pausar e retomar a gravação."
+          "body": "Peça consentimento e faça um teste num local silencioso. Guarde a memória antes de gravar. Pode pausar e retomar a gravação."
         },
         {
           "title": "No seu dispositivo",
-          "body": "O LifeTalea guardada áudio AAC em ficheiros M4A privados. Sair do aplicação encerra e guardada a gravação. O limite gratuito é três minutos; Premium amplia esse limite conforme o espaço disponível."
+          "body": "O LifeTalea guarda áudio AAC em ficheiros M4A privados. Sair da aplicação interrompe e guarda a gravação. O limite gratuito é de três minutos; o Premium permite gravações mais longas, consoante o espaço disponível."
         },
         {
           "title": "Confira o tablet",
@@ -165,7 +165,7 @@
         },
         {
           "title": "Estado do desenvolvimento",
-          "body": "A criação de PDF está em validação nos dispositivos. A exportação exige um direito Premium Amazon verificado. Compras reais ainda não foram verificadas."
+          "body": "Esta função requer LifeTalea Premium. O PDF é criado no dispositivo. Revise-o antes de compartilhar. As gravações de áudio não são incluídas nos livros impressos."
         }
       ]
     },
@@ -189,7 +189,7 @@
     },
     "fire-tablet-compatibility": {
       "title": "Pensado para tablets Fire",
-      "summary": "Um aplicação nativo em Kotlin e Jetpack Compose, sem exigir os serviços do Google Play.",
+      "summary": "Uma aplicação nativa em Kotlin e Jetpack Compose, sem necessidade dos serviços do Google Play.",
       "sections": [
         {
           "title": "Plataforma prevista",
@@ -207,7 +207,7 @@
     },
     "languages": {
       "title": "Um diário no seu idioma",
-      "summary": "O aplicação de desenvolvimento inclui 22 variantes regionais de 17 idiomas prioritários. A revisão por falantes nativos continua necessária.",
+      "summary": "Escolha um idioma ou utilize o do dispositivo. Os seus relatos não são traduzidos.",
       "sections": [
         {
           "title": "Idiomas previstos",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Guarde as memórias. Escolha os extras.",
-      "summary": "Um diário gratuito com compra Premium única e opcional. As compras não estão ativas nesta versão de desenvolvimento.",
+      "summary": "Grátis: três álbuns, fotografias, relatos, cronologia e gravações até três minutos. Sem limite para o número de memórias escritas guardadas.",
       "sections": [
         {
           "title": "Versão gratuita",
@@ -233,11 +233,11 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Compra única prevista: álbuns ilimitados, gravações mais longas, exportação PDF e cópias locais encriptadas. O preço de teste britânico proposto é £4,99; a Amazon fornecerá o preço local real após a configuração."
+          "body": "Uma compra única para álbuns ilimitados, gravações mais longas, exportação PDF e cópias locais encriptadas. Suas memórias existentes continuam acessíveis."
         },
         {
           "title": "Seus relatos continuam acessíveis",
-          "body": "A disponibilidade de Premium não bloqueia memórias existentes. Cópia e restauro básicas continuam disponíveis. Não se promete transcrição em nuvem com custos recorrentes."
+          "body": "A disponibilidade do Premium não bloqueia as memórias existentes. A cópia de segurança e o restauro básicos continuam disponíveis. Não se promete transcrição na nuvem com custos recorrentes."
         }
       ]
     },
@@ -277,15 +277,15 @@
         },
         {
           "title": "Serviços externos",
-          "body": "O serviço de voz instalado pode processar áudio pela rede, após ativação explícita com aviso. Compras se comunicam com a Amazon. Exportar para a nuvem entrega o ficheiro escolhido ao provedor.\n\nAs compras na Amazon enviam o identificador de utilizador da Amazon específico do aplicação e os identificadores dos recibos ao serviço de verificação do LifeTalea hospedado no Supabase e à Amazon. Os fornecedores podem manter registos de solicitações e conexões. Histórias, fotos e gravações não são enviadas para verificação. As gravações são transcritas neste dispositivo. Os ficheiros exportados devem ser eliminados separadamente.\n\nLembrete diário opcional por volta das 20h, no horário local. As configurações do dispositivo podem atrasar a entrega. As notificações não contêm histórias. Desativado por padrão."
+          "body": "O serviço de voz instalado pode processar áudio pela rede, após ativação explícita e apresentação de um aviso. As compras comunicam com a Amazon. Exportar para a nuvem entrega o arquivo escolhido ao fornecedor.\n\nAs compras na Amazon enviam o identificador de utilizador da Amazon específico da aplicação e os identificadores dos recibos ao serviço de verificação do LifeTalea, alojado no Supabase, e à Amazon. Os fornecedores podem conservar registos de pedidos e ligações. Os relatos, as fotografias e as gravações não são enviados para verificação. As gravações são transcritas neste dispositivo. Os ficheiros exportados têm de ser eliminados separadamente.\n\nLembrete diário opcional por volta das 20h, no horário local. As configurações do dispositivo podem atrasar a entrega. As notificações não contêm histórias. Desativado por padrão."
         },
         {
           "title": "Exclusão e retenção",
-          "body": "Exclua itens ou toda a biblioteca nas definições. Desinstalar remove dados locais. Os ficheiros exportados são cópias separadas sob seu controle; a Amazon retém registros de compra conforme suas políticas."
+          "body": "Elimine elementos ou toda a biblioteca nas definições. Desinstalar a aplicação elimina os dados locais. Os ficheiros exportados são cópias separadas sob o seu controlo; a Amazon conserva registos de compras de acordo com as suas políticas."
         },
         {
           "title": "Limites de segurança",
-          "body": "O armazenamento privado depende da proteção do dispositivo; o banco local não tem chave própria de encriptação. Arquivos podem ser encriptados com frase secreta. Não se declara encriptação de ponta a ponta nem avaliação jurídica completa."
+          "body": "O armazenamento privado depende da proteção do dispositivo; a base de dados local não tem uma chave de encriptação própria. Os arquivos podem ser encriptados com uma frase-passe. Não se declara encriptação ponto a ponto nem uma avaliação jurídica completa."
         }
       ]
     },
@@ -299,7 +299,7 @@
         },
         {
           "title": "Mantenha uma cópia segura",
-          "body": "Nas definições, escolha se deseja incluir fotos e áudio e crie a cópia de segurança. Guarde-a em local seguro. A restauro valida o ficheiro e mostra uma pré-visualização antes da importação."
+          "body": "Nas definições, escolha se pretende incluir fotografias e áudio e crie a cópia de segurança. Guarde-a num local seguro. O restauro valida o ficheiro e apresenta uma pré-visualização antes da importação."
         },
         {
           "title": "O PDF ou ficheiro não é guardado",
@@ -313,7 +313,7 @@
       "sections": [
         {
           "title": "Proteja a privacidade da família",
-          "body": "Informe dispositivo, sistema, versão do aplicação e passos do problema. Não envie relatos privados, fotos, gravações ou frases secretas de cópias de segurança."
+          "body": "Indique o dispositivo, o sistema, a versão da aplicação e os passos que originam o problema. Não envie relatos privados, fotografias, gravações ou frases-passe das cópias de segurança."
         },
         {
           "title": "Fale com o suporte",

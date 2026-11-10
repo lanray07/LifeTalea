@@ -14,9 +14,9 @@
     "footerNote": "Dalam pengembangan. Tidak memerlukan akun.",
     "brandNotice": "Nama merek sementara, masih perlu pemeriksaan hak",
     "related": "Jelajahi bab berikutnya",
-    "previewNotice": "Draf terjemahan. Masih menunggu tinjauan penutur asli.",
-    "chooseLanguage": "Pilih Bahasa Anda",
-    "home": "rumah"
+    "previewNotice": "Pratinjau pengembangan",
+    "chooseLanguage": "Pilih bahasa Anda",
+    "home": "Beranda"
   },
   "home": {
     "titleFirst": "Momen-momen kecil.",
@@ -38,7 +38,7 @@
     "privacyBody": "Tanpa linimasa publik atau akun wajib. Kenangan tetap di perangkat Anda kecuali Anda memilih untuk mengekspornya.",
     "privacyLink": "Pendekatan privasi kami",
     "storeLink": "Lihat di Amazon Appstore",
-    "releaseNote": "Belum diterbitkan. Pengujian perangkat, tinjauan penutur asli, dan verifikasi pembelian Amazon masih berlangsung.",
+    "releaseNote": "Belum diterbitkan. Pemeriksaan sebelum rilis sedang berlangsung.",
     "metaTitle": "LifeTalea - Kisah dan kenangan keluarga",
     "metaDescription": "Ruang pribadi untuk foto, suara, dan kisah keluarga. Jelajahi versi pengembangan LifeTalea."
   },
@@ -57,7 +57,7 @@
         },
         {
           "title": "Buat buku Anda sendiri",
-          "body": "Atur halaman dan keterangan, lalu periksa pratinjau. Ekspor PDF memerlukan Premium; pembelian Amazon masih perlu diverifikasi dalam pengujian."
+          "body": "Satu pembelian untuk album tak terbatas, rekaman lebih panjang, ekspor PDF, dan cadangan lokal terenkripsi. Kenangan yang sudah ada tetap dapat diakses."
         }
       ]
     },
@@ -183,7 +183,7 @@
         },
         {
           "title": "Status pengembangan",
-          "body": "Pembuatan PDF sedang divalidasi pada perangkat. Ekspor memerlukan hak Premium Amazon yang terverifikasi. Pembelian nyata belum diverifikasi."
+          "body": "Fitur ini membutuhkan LifeTalea Premium. PDF dibuat di perangkat Anda. Periksa sebelum dibagikan. Buku cetak tidak menyertakan rekaman suara."
         }
       ]
     },
@@ -207,11 +207,11 @@
     },
     "languages": {
       "title": "Jurnal dalam bahasa Anda",
-      "summary": "Aplikasi pengembangan mencakup 22 varian regional untuk 17 bahasa prioritas. Peninjauan oleh penutur asli masih diperlukan.",
+      "summary": "Pilih bahasa atau gunakan bahasa perangkat. Cerita Anda tidak diterjemahkan.",
       "sections": [
         {
           "title": "Bahasa yang direncanakan",
-          "body": "Inggris, Spanyol, Prancis, Portugis, Jerman, Italia, Belanda, Polandia, Swedia, Jepang, Hindi, Arab, Turki, Indonesia, Korea, serta Mandarin sederhana dan tradisional."
+          "body": "Inggris, Spanyol, Prancis, Portugis, Jerman, Italia, Belanda, Polandia, Swedia, Jepang, Hindi, Arab, Turki, Indonesia, Korea, serta bahasa Tionghoa dengan aksara sederhana dan tradisional."
         },
         {
           "title": "Kualitas sebelum terbit",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Simpan kenangannya. Pilih tambahannya.",
-      "summary": "Jurnal gratis dengan pembelian Premium satu kali yang opsional. Pembelian belum aktif dalam versi pengembangan ini.",
+      "summary": "Gratis: tiga album, foto, cerita, linimasa, dan rekaman hingga tiga menit. Jumlah kenangan tertulis yang tersimpan tidak dibatasi.",
       "sections": [
         {
           "title": "Gratis",
@@ -233,7 +233,7 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Rencana pembelian satu kali: album tak terbatas, rekaman lebih panjang, ekspor PDF, dan cadangan lokal terenkripsi. Usulan harga uji Inggris £4.99; Amazon akan memberikan harga lokal sebenarnya setelah konfigurasi."
+          "body": "Satu pembelian untuk album tak terbatas, rekaman lebih panjang, ekspor PDF, dan cadangan lokal terenkripsi. Kenangan yang sudah ada tetap dapat diakses."
         },
         {
           "title": "Cerita tetap dapat diakses",

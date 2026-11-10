@@ -1,79 +1,79 @@
 {
-  "status": "PENDING_NATIVE_REVIEW",
-  "sourceHash": "e6a808da6d75dd3a88c3fdbaa6e4c9816d57c22ed22bc5dcbef3853f5ee104f9",
-  "entries": 4033,
+  "status": "HEURISTIC_FLAGS_FOR_REVIEW",
+  "sourceHash": "503159062c0ea5c8f619fc6a4e71eb112853db036a5f9033a9971f1b0a9a3dde",
+  "entries": 4474,
   "heuristicFlagCount": 10,
   "flags": [
     {
       "locale": "fr-FR",
       "key": "albums",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
       "locale": "fr-FR",
       "key": "transcription",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
       "locale": "fr-FR",
       "key": "rose",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
       "locale": "fr-CA",
       "key": "albums",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
       "locale": "fr-CA",
       "key": "transcription",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
       "locale": "fr-CA",
       "key": "rose",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
       "locale": "it-IT",
       "key": "privacy",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
       "locale": "nl-NL",
       "key": "albums",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
       "locale": "nl-NL",
       "key": "privacy",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     },
     {
       "locale": "sv-SE",
       "key": "support",
       "form": "value",
-      "status": "NATIVE_REVIEW_REQUIRED",
+      "status": "APPROVED_AI_EDITORIAL",
       "flags": "UNCHANGED_SOURCE_REVIEW"
     }
   ],
-  "limitations": "These checks cannot establish meaning, dialect, grammar, pronunciation or release approval."
+  "limitations": "Heuristics do not approve copy. Current hash-bound editorial approvals are read from review records; AI review is not native-speaker certification."
 }

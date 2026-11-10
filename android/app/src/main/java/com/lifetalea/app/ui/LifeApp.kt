@@ -183,7 +183,7 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
                             else -> {
                                 val isTimeline = screen == "timeline"
                                 var filtered = MemoryRules.filtered(memories, media, links, query, year, favourites, albumFilter, attachmentFilter, transcriptOnly)
-                                if (isTimeline) filtered = MemoryRules.timeline(filtered)
+                                filtered = if (isTimeline) MemoryRules.timeline(filtered) else MemoryRules.sorted(filtered, preferences.sort, locale)
                                 LazyColumn(Modifier.fillMaxSize().padding(horizontal = if (wide) 32.dp else 20.dp), verticalArrangement = Arrangement.spacedBy(16.dp), contentPadding = PaddingValues(bottom = 32.dp)) {
                                     item { if (isTimeline) Heading(tr("timeline")) else { Heading(tr("hero_title"), tr("hero_body")); Button(onClick = { newMemory() }, contentPadding = PaddingValues(horizontal = 24.dp, vertical = 14.dp)) { Icon(Icons.Outlined.Add, null); Spacer(Modifier.width(8.dp)); Text(tr("add_memory")) }; if (memories.isEmpty()) HeroArtwork() } }
                                     item { OutlinedTextField(query, { query = it }, label = { Text(tr("search")) }, leadingIcon = { Icon(Icons.Outlined.Search, null) }, modifier = Modifier.fillMaxWidth(), singleLine = true)
@@ -196,6 +196,11 @@ private val destinations = listOf("memories" to Icons.Outlined.AutoStories, "alb
                                                 TextButton(onClick = { query = ""; year = ""; favourites = false; albumFilter = null; attachmentFilter = "all"; transcriptOnly = false }) { Text(tr("clear_filters")) }
                                         }
                                         if (isTimeline || advancedFilters) {
+                                            if (!isTimeline) Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                                listOf("recent" to "recent_memories", "date" to "date", "title" to "title").forEach { (mode, label) ->
+                                                    Choice(preferences.sort == mode, tr(label)) { vm.run { vm.settings.sort(mode) } }
+                                                }
+                                            }
                                             Field("year_filter", year, { input -> val digits = MemoryRules.normaliseDateDigits(input); if (digits.length <= 4 && digits.all(Char::isDigit)) year = digits })
                                             Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                                 Choice(attachmentFilter == "all", tr("any_media")) { attachmentFilter = "all" }

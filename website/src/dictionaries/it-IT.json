@@ -14,9 +14,9 @@
     "footerNote": "In sviluppo. Nessun account richiesto.",
     "brandNotice": "Nome del marchio provvisorio, in attesa di verifica",
     "related": "Scopri il prossimo capitolo",
-    "previewNotice": "Bozza di traduzione. Revisione madrelingua in attesa.",
+    "previewNotice": "Anteprima di sviluppo",
     "chooseLanguage": "Scegli la tua lingua",
-    "home": "Home →"
+    "home": "Home"
   },
   "home": {
     "titleFirst": "I piccoli momenti.",
@@ -38,7 +38,7 @@
     "privacyBody": "Nessun feed pubblico. Nessun account obbligatorio. I ricordi restano sul tuo dispositivo, a meno che tu non scelga di esportarli.",
     "privacyLink": "Il nostro approccio alla privacy",
     "storeLink": "Vedi su Amazon Appstore",
-    "releaseNote": "Non ancora pubblicata. I test dei dispositivi, la revisione madrelingua e la verifica degli acquisti Amazon sono in corso.",
+    "releaseNote": "Non ancora pubblicata. Le verifiche prima del lancio sono in corso.",
     "metaTitle": "LifeTalea - Storie e ricordi di famiglia",
     "metaDescription": "Uno spazio privato per fotografie, voci e storie di famiglia. Scopri la versione di sviluppo di LifeTalea."
   },
@@ -57,7 +57,7 @@
         },
         {
           "title": "Crea un libro tutto tuo",
-          "body": "Ordina pagine e didascalie e controlla l’anteprima. L’esportazione PDF richiede Premium; gli acquisti Amazon devono ancora essere verificati in ambiente di prova."
+          "body": "Un acquisto unico per album illimitati, registrazioni più lunghe, esportazione PDF e backup locali cifrati. I ricordi esistenti restano accessibili."
         }
       ]
     },
@@ -165,7 +165,7 @@
         },
         {
           "title": "Stato dello sviluppo",
-          "body": "La creazione di PDF è in fase di verifica sui dispositivi. L’esportazione richiede un diritto Premium Amazon verificato. Gli acquisti reali non sono ancora convalidati."
+          "body": "Questa caratteristica richiede LifeTalea Premium. Il PDF viene creato sul dispositivo. Controllalo prima di condividerlo. Le registrazioni audio non sono incluse nei libri stampati."
         }
       ]
     },
@@ -207,7 +207,7 @@
     },
     "languages": {
       "title": "Un diario nella tua lingua",
-      "summary": "L’app di sviluppo include 22 varianti regionali per 17 lingue prioritarie. La revisione madrelingua è ancora necessaria.",
+      "summary": "Scegli una lingua o usa quella del dispositivo. I tuoi racconti non vengono tradotti.",
       "sections": [
         {
           "title": "Le lingue previste",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Conserva i ricordi. Scegli gli extra.",
-      "summary": "Un diario gratuito con acquisto Premium unico facoltativo. Gli acquisti non sono attivi nella versione di sviluppo.",
+      "summary": "Gratis: tre album, foto, racconti, cronologia e registrazioni fino a tre minuti. Nessun limite al numero di ricordi scritti salvati.",
       "sections": [
         {
           "title": "Versione gratuita",
@@ -233,7 +233,7 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Acquisto unico previsto: album illimitati, registrazioni più lunghe, esportazione PDF e backup locali cifrati. Il prezzo di prova britannico proposto è 4,99 £; Amazon fornirà il prezzo locale effettivo dopo la configurazione."
+          "body": "Un acquisto unico per album illimitati, registrazioni più lunghe, esportazione PDF e backup locali cifrati. I ricordi esistenti restano accessibili."
         },
         {
           "title": "I racconti restano accessibili",

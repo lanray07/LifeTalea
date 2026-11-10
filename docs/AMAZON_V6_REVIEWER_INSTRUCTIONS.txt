@@ -1,0 +1,19 @@
+LifeTalea version 6 is a test candidate, not a verified public release. Its unsigned upload SHA-256 is eed8f1dbcb683205abc2f76a323ff5ae37f4f3d33a94cab69ccaea46e2ab8929. No LifeTalea login is required. Use fictional content only. Do not make a new paid purchase.
+
+The candidate includes 22 interface locales with AI editorial approval at the owner's request. Change language in Settings and verify actual screen layout, including Arabic RTL. Voice commands remain English-only and require an installed recognition service; TTS depends on installed voices. Saved-recording transcription is local, but accuracy across all languages has not been qualified.
+
+Create written and recorded memories with different dates and titles. In Search filters, choose recent, event-date or title sorting. Title order follows the selected locale. Restart and check that the selection persists. Clear filters without deleting memories.
+
+Optional app lock is off by default. On a device already protected by a screen lock, enable it in Settings and authenticate on the operating system screen. Leave and return: the library must require Unlock. Cancel must leave it locked. Authenticate, then disable the lock and authenticate again. LifeTalea never handles the device credential. Exported files remain separate; this is not database encryption. Successful OS credential entry must be performed by the tester, not automation.
+
+Forest is free. Rose and Paper are Premium palette choices. A Free account must see the paywall when selecting either paid palette. Existing active Premium may select the palettes; test light and dark modes without buying again. If entitlement is inactive, the rendered palette falls back to Forest. A new transaction is not authorised for this pass.
+
+Optional reminders use a one-shot 30-minute scheduling window around 20:00 local time and schedule the next local day after delivery. Delivery may be delayed by Fire OS power management. Verify registration/cancellation, actual timed delivery, reboot and time-zone changes; Android 13 notification permission needs a supported device. Notifications contain no story content.
+
+Saved-recording transcription: select language, confirm local processing, review/edit, then append. Preserve original audio and existing transcript. Invalid audio must permit manual entry. The existing short English fixture is not broad accuracy certification.
+
+Purchase verification sends Amazon app-specific user and receipt identifiers to the Supabase-hosted verifier and Amazon; it does not send stories, photos or recordings. Read the in-app disclosure and public privacy notice. Provider logging/retention and final privacy assessment remain release gates.
+
+Backups currently have 32 MiB archive and 16 MiB attachment limits. Use a small fictional library, confirm encrypted and unencrypted round trips and duplicate handling. Large-library streaming and process-death recovery remain engineering gaps. Separately exported files require separate deletion.
+
+Support: banksmi@mail.com

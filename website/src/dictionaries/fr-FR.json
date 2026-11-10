@@ -14,9 +14,9 @@
     "footerNote": "En cours de développement. Aucun compte requis.",
     "brandNotice": "Nom de marque provisoire, sous réserve de vérification",
     "related": "Le prochain chapitre",
-    "previewNotice": "Brouillon de traduction. Révision par des locuteurs natifs en attente.",
+    "previewNotice": "Aperçu de développement",
     "chooseLanguage": "Choisissez votre langue",
-    "home": "Maison"
+    "home": "Accueil"
   },
   "home": {
     "titleFirst": "Les petits instants.",
@@ -38,7 +38,7 @@
     "privacyBody": "Pas de fil d’actualité public. Pas de compte obligatoire. Vos souvenirs restent sur votre appareil, sauf si vous choisissez de les exporter.",
     "privacyLink": "Notre démarche de confidentialité",
     "storeLink": "Voir sur Amazon Appstore",
-    "releaseNote": "Pas encore publiée. Les tests des appareils, la révision linguistique et la vérification des achats Amazon sont en cours.",
+    "releaseNote": "Application non publiée. Les vérifications avant lancement se poursuivent.",
     "metaTitle": "LifeTalea - Histoires de famille",
     "metaDescription": "Un espace privé pour les photos, les voix et les histoires de famille. Découvrez la version de développement de LifeTalea."
   },
@@ -57,7 +57,7 @@
         },
         {
           "title": "Créez un livre à votre image",
-          "body": "Organisez les pages et leurs légendes, puis prévisualisez votre livre. L’export PDF nécessite Premium ; les achats Amazon doivent encore être vérifiés en environnement de test."
+          "body": "Un achat unique pour des albums illimités, des enregistrements plus longs, l’export PDF et les sauvegardes locales chiffrées. Vos souvenirs existants restent accessibles."
         }
       ]
     },
@@ -165,7 +165,7 @@
         },
         {
           "title": "État du développement",
-          "body": "La création de PDF est en cours de validation sur appareil. L’export nécessite un droit Premium Amazon vérifié. Les achats réels ne sont pas encore validés."
+          "body": "Cette fonction nécessite LifeTalea Premium. Le PDF est créé sur votre appareil. Vérifiez-le avant de le partager. Les enregistrements audio ne sont pas intégrés au livre imprimé."
         }
       ]
     },
@@ -207,7 +207,7 @@
     },
     "languages": {
       "title": "Un journal dans votre langue",
-      "summary": "L’application de développement comprend 22 variantes régionales couvrant 17 langues prioritaires. La révision par des locuteurs natifs reste nécessaire.",
+      "summary": "Choisissez une langue ou utilisez celle de l’appareil. Vos récits ne sont pas traduits.",
       "sections": [
         {
           "title": "Les langues prévues",
@@ -225,7 +225,7 @@
     },
     "pricing": {
       "title": "Gardez les souvenirs. Choisissez les options.",
-      "summary": "Un journal gratuit avec un achat Premium unique en option. Les achats ne sont pas actifs dans cette version de développement.",
+      "summary": "Gratuit : trois albums, photos, récits, chronologie et enregistrements de trois minutes maximum. Le nombre de récits écrits enregistrés est illimité.",
       "sections": [
         {
           "title": "Version gratuite",
@@ -233,7 +233,7 @@
         },
         {
           "title": "LifeTalea Premium",
-          "body": "Achat unique prévu : albums illimités, enregistrements plus longs, export PDF et sauvegardes locales chiffrées. Le prix de test britannique proposé est de 4,99 £ ; Amazon fournira le prix local réel après configuration."
+          "body": "Un achat unique pour des albums illimités, des enregistrements plus longs, l’export PDF et les sauvegardes locales chiffrées. Vos souvenirs existants restent accessibles."
         },
         {
           "title": "Vos récits restent accessibles",

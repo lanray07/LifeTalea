@@ -3,14 +3,14 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - Histoires de famille",
-  "shortDescription": "Découvrez la version de développement de LifeTalea : récits, photos privées, enregistrements, albums et livres de souvenirs.",
-  "longDescription": "Un espace privé pour les photos, les voix et les histoires de votre famille.\n\nAjoutez un titre, quelques lignes et une date précise, approximative ou inconnue. Retrouvez vos récits grâce aux étiquettes, aux favoris et aux albums.\n\nImportez des photos avec le sélecteur de documents de l’appareil et enregistrez un récit audio. Les fichiers sont copiés dans le stockage privé de l’application.\n\nL’enregistrement reste sur cet appareil. Si vous quittez l’application, il est arrêté et enregistré. La version gratuite permet des enregistrements de trois minutes maximum.\n\nLe mode appuyer pour parler utilise le service vocal de votre appareil. Ce service peut nécessiter Internet et traiter votre voix en dehors de l’appareil. Continuez uniquement si vous êtes d’accord. LifeTalea n’enregistre pas les commandes audio. Les commandes sont actuellement disponibles uniquement en anglais.\n\nAchat unique prévu : albums illimités, enregistrements plus longs, export PDF et sauvegardes locales chiffrées. Le prix de test britannique proposé est de 4,99 £ ; Amazon fournira le prix local réel après configuration.\n\nLes récits, transcriptions, albums et brouillons de livres sont inclus. Les photos et les enregistrements sont inclus uniquement si vous les sélectionnez. Les exports non chiffrés contiennent des informations privées lisibles. Conservez votre phrase secrète : elle ne peut pas être récupérée. Limites actuelles : 32 MiB par archive et 16 MiB par pièce jointe. Les bibliothèques plus volumineuses nécessitent une future version.\n\nPas encore publiée. Les tests des appareils, la révision linguistique et la vérification des achats Amazon sont en cours.\n\nCréez un brouillon à partir de cet enregistrement sur votre appareil. Aucun fichier audio n’est envoyé. Choisissez la langue parlée, puis confirmez. Durée maximale : dix minutes. Le traitement peut être lent ; vérifiez le texte avant de l’enregistrer.\n\nBrouillon de traduction. Révision par des locuteurs natifs en attente.\n\nO.Bankole · banksmi@mail.com\n\nRappel quotidien facultatif vers 20 h, heure locale. Les réglages de l’appareil peuvent retarder sa réception. Aucun récit ne figure dans la notification. Désactivé par défaut.",
+  "shortDescription": "Un espace privé pour les photos, les voix et les histoires de votre famille.",
+  "longDescription": "Gardez les instants. Retrouvez les voix.\n\nUn espace privé pour les photos, les voix et les histoires de votre famille.\n\nAjoutez un titre, quelques lignes et une date précise, approximative ou inconnue. Retrouvez vos récits grâce aux étiquettes, aux favoris et aux albums.\n\nImportez des photos avec le sélecteur de documents de l’appareil et enregistrez un récit audio. Les fichiers sont copiés dans le stockage privé de l’application.\n\nL’enregistrement reste sur cet appareil. Si vous quittez l’application, il est arrêté et enregistré. La version gratuite permet des enregistrements de trois minutes maximum.\n\nCréez un brouillon à partir de cet enregistrement sur votre appareil. Aucun fichier audio n’est envoyé. Choisissez la langue parlée, puis confirmez. Durée maximale : dix minutes. Le traitement peut être lent ; vérifiez le texte avant de l’enregistrer.\n\nLe mode appuyer pour parler utilise le service vocal de votre appareil. Ce service peut nécessiter Internet et traiter votre voix en dehors de l’appareil. Continuez uniquement si vous êtes d’accord. LifeTalea n’enregistre pas les commandes audio. Les commandes sont actuellement disponibles uniquement en anglais.\n\nUn achat unique pour des albums illimités, des enregistrements plus longs, l’export PDF et les sauvegardes locales chiffrées. Vos souvenirs existants restent accessibles.\n\nLes récits, transcriptions, albums et brouillons de livres sont inclus. Les photos et les enregistrements sont inclus uniquement si vous les sélectionnez. Les exports non chiffrés contiennent des informations privées lisibles. Conservez votre phrase secrète : elle ne peut pas être récupérée. Limites actuelles : 32 MiB par archive et 16 MiB par pièce jointe. Les bibliothèques plus volumineuses nécessitent une future version.\n\nLes achats Amazon transmettent les identifiants Amazon propres à l’application et les identifiants de reçus au service de vérification de LifeTalea, hébergé par Supabase, et à Amazon. Ces prestataires peuvent conserver des journaux de requêtes et de connexion. Les récits, photos et enregistrements ne sont pas envoyés pour vérification. La transcription des enregistrements s’effectue sur cet appareil. Les fichiers exportés doivent être supprimés séparément.\n\nRappel quotidien facultatif vers 20 h, heure locale. Les réglages de l’appareil peuvent retarder sa réception. Aucun récit ne figure dans la notification. Désactivé par défaut.\n\nUtilisez le verrouillage de votre appareil pour déverrouiller LifeTalea après avoir quitté l’application. Configurez d’abord un verrouillage de l’écran. Les fichiers exportés restent séparés.\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
     "Un journal familial raconte ce que les photos ne disent pas : les personnes présentes, les événements et leur importance.",
     "Préservez les rires, les silences et les expressions familières qu’un texte ne peut pas toujours transmettre.",
     "Rassemblez vos récits et vos photos dans des brouillons de livres conservés sur votre appareil.",
     "Parcourez vos souvenirs dans l’ordre des dates, y compris ceux dont la date est approximative ou inconnue.",
-    "L’enregistrement nécessite un microphone autorisé et fonctionnel. Reconnaissance et lecture vocales exigent des services compatibles. Des alternatives tactiles et textuelles sont prévues."
+    "Disponible hors ligne"
   ],
   "keywords": [
     "Souvenirs de famille",
@@ -22,23 +22,29 @@
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "Brouillon de traduction. Révision par des locuteurs natifs en attente. Pas encore publiée. Les tests des appareils, la révision linguistique et la vérification des achats Amazon sont en cours.",
+  "releaseNotes": "Application non publiée. Les vérifications avant lancement se poursuivent.",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
   "screenshotHeadlines": {
-    "home": "Gardez les moments qui comptent",
-    "albums": "Une collection pour chaque chapitre",
-    "timeline": "Retrouvez le fil de votre histoire familiale",
-    "keepsakes": "Réunissez vos récits dans un livre de souvenirs",
-    "settings": "Gardez une copie que vous contrôlez",
-    "editor": "Racontez l’histoire derrière la photo",
-    "voice": "Faites une place à leur voix",
-    "transcript": "Ajoutez une transcription avec vos propres mots"
+    "home": "Chaque histoire mérite sa place.",
+    "albums": "Une collection pour chaque chapitre.",
+    "timeline": "Retrouvez le fil de votre histoire",
+    "keepsakes": "Un livre de souvenirs à garder.",
+    "settings": "Sauvegarde et restauration",
+    "editor": "Commencez par un instant",
+    "voice": "Gardez une place pour leur voix",
+    "transcript": "Ajoutez du texte à vos souvenirs audio"
   },
   "locale": "fr-CA",
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "ab905ee52906e59a3f8dde1a460d100c32d3532b8c2480d67af28320f5e99994"
+  "targetHash": "c2c2d3af7edc2c5915de002b34453320d4f5c74828312612f3d178eda1205abe",
+  "linguisticReview": {
+    "status": "APPROVED",
+    "reviewType": "AI_EDITORIAL",
+    "reviewer": "Codex (AI)",
+    "nativeSpeakerReview": false
+  }
 }

@@ -104,11 +104,11 @@ val prepareTranscriptionModel by tasks.registering {
 tasks.named("preBuild").configure { dependsOn(prepareTranscriptionModel) }
 androidComponents {
     onVariants(selector().withBuildType("release")) { variant ->
-        // Version 4 is already distributed through Amazon LAT.
-        variant.outputs.forEach { it.versionCode.set(5) }
+        // Preserve the verified v5 upload; further product/localization changes use v6.
+        variant.outputs.forEach { it.versionCode.set(6) }
     }
     onVariants(selector().withBuildType("amazonTest")) { variant ->
-        variant.outputs.forEach { it.versionCode.set(5) }
+        variant.outputs.forEach { it.versionCode.set(6) }
     }
 }
 ksp { arg("room.schemaLocation", "$projectDir/schemas") }

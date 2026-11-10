@@ -3,14 +3,14 @@
   "publisher": "O.Bankole",
   "supportEmail": "banksmi@mail.com",
   "title": "LifeTalea - 家庭故事与回忆",
-  "shortDescription": "了解LifeTalea开发预览版：文字回忆、私人照片、语音故事、相册和回忆册。",
-  "longDescription": "为家庭照片、熟悉的声音和珍贵的故事，留一处私密空间。\n\n写下标题和故事，选择准确、大致或未知日期。用标签、收藏和相册找回回忆。\n\n通过设备的文件选择器导入照片，也可以录下故事。文件会复制到应用的私有存储空间。\n\n录音保存在此设备上。离开应用时，录音会停止并保存。免费版每段录音最长三分钟。\n\n按住说话功能使用设备的语音服务。该服务可能需要互联网连接，并在设备外部处理语音。仅在同意的情况下继续。LifeTalea 不保存语音命令的录音。目前仅支持英语命令。\n\n计划以一次性购买提供：不限数量的相册、更长录音、PDF导出和加密本地备份。英国测试建议价为£4.99；配置完成后以Amazon提供的实际当地价格为准。\n\n备份包含故事、转写文本、相册和回忆册草稿。只有选中时才包含照片和录音。未加密的导出文件包含可读取的私人信息。请妥善保管密码短语，丢失后无法找回。目前每个备份包的总大小上限为 32 MiB，每个附件上限为 16 MiB。更大的资料库需要等待未来版本支持。\n\n应用尚未发布。设备测试、母语审校和 Amazon 购买验证仍在进行。\n\n在设备上根据此录音生成文字草稿。不会上传任何音频。请选择录音中使用的语言，然后确认。支持最长十分钟的录音。处理可能较慢，保存前请检查文字是否有误。\n\n翻译草稿，尚待母语审校。\n\nO.Bankole · banksmi@mail.com\n\n可选的每日提醒会在当地时间约20:00发送。设备设置可能导致延迟。通知不包含故事内容。默认关闭。",
+  "shortDescription": "为家庭照片、熟悉的声音和珍贵的故事，留一处私密空间。",
+  "longDescription": "珍藏时光，留住声音。\n\n为家庭照片、熟悉的声音和珍贵的故事，留一处私密空间。\n\n写下标题和故事，选择准确、大致或未知日期。用标签、收藏和相册找回回忆。\n\n通过设备的文件选择器导入照片，也可以录下故事。文件会复制到应用的私有存储空间。\n\n录音保存在此设备上。离开应用时，录音会停止并保存。免费版每段录音最长三分钟。\n\n在设备上根据此录音生成文字草稿。不会上传任何音频。请选择录音中使用的语言，然后确认。支持最长十分钟的录音。处理可能较慢，保存前请检查文字是否有误。\n\n按住说话功能使用设备的语音服务。该服务可能需要互联网连接，并在设备外部处理语音。仅在同意的情况下继续。LifeTalea 不保存语音命令的录音。目前仅支持英语命令。\n\n一次购买，即可使用不限数量的相册、更长录音、PDF导出和加密本地备份。现有回忆始终可读。\n\n备份包含故事、转写文本、相册和回忆册草稿。只有选中时才包含照片和录音。未加密的导出文件包含可读取的私人信息。请妥善保管密码短语，丢失后无法找回。目前每个备份包的总大小上限为 32 MiB，每个附件上限为 16 MiB。更大的资料库需要等待未来版本支持。\n\nAmazon 购买会将应用专属的 Amazon 用户标识和收据标识发送至由 Supabase 托管的 LifeTalea 验证服务及 Amazon。服务提供商可能保留请求和连接日志。故事、照片和录音不会发送用于购买验证。已保存录音的转录在此设备上进行。导出的文件需要单独删除。\n\n可选的每日提醒会在当地时间约20:00发送。设备设置可能导致延迟。通知不包含故事内容。默认关闭。\n\n离开应用后，使用设备的屏幕锁解锁 LifeTalea。请先在设备上设置屏幕锁。导出的文件单独管理。\n\nO.Bankole · banksmi@mail.com",
   "featureBullets": [
     "家庭日记为照片补上背景：当时有谁、发生了什么，以及那个瞬间为何重要。",
     "记录停顿、笑声和熟悉的说话方式，留下文字不一定能传达的细节。",
     "把文字故事和照片整理成保存在设备上的回忆册草稿。",
     "按日期浏览回忆，包括大致日期和未知日期的记录。",
-    "录音需要麦克风和权限；识别与朗读需要兼容服务。应用也提供触控和文字替代方式。"
+    "可离线使用"
   ],
   "keywords": [
     "家族回忆",
@@ -22,23 +22,29 @@
   ],
   "keywordEvidence": "Intent hypotheses only; no search volume, rankings or conversion data obtained.",
   "categoryRecommendation": "Lifestyle > Diaries",
-  "releaseNotes": "翻译草稿，尚待母语审校。 应用尚未发布。设备测试、母语审校和 Amazon 购买验证仍在进行。",
+  "releaseNotes": "应用尚未发布，正在进行发布前检查。",
   "privacyUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/PRIVACY_POLICY.md",
   "supportUrl": "https://github.com/lanray07/LifeTalea/blob/main/docs/SUPPORT.md",
   "liveDownloadUrl": null,
   "screenshotHeadlines": {
-    "home": "珍藏每个重要时刻",
-    "albums": "为每段人生留一本相册",
-    "timeline": "沿时间线重温家庭故事",
-    "keepsakes": "把故事收进回忆册",
-    "settings": "留一份由自己掌控的备份",
-    "editor": "写下照片背后的故事",
-    "voice": "留住亲人的声音",
-    "transcript": "用自己的话添加转写文本"
+    "home": "每个故事，都值得珍藏。",
+    "albums": "为人生的每个篇章建立相册。",
+    "timeline": "沿着时间，串起家族故事",
+    "keepsakes": "一本值得珍藏的回忆册。",
+    "settings": "备份与恢复",
+    "editor": "从一个瞬间开始",
+    "voice": "留住熟悉的声音",
+    "transcript": "为语音回忆配上文字"
   },
   "locale": "zh-Hans",
   "translationStatus": "DRAFT_PENDING_NATIVE_REVIEW",
   "storeLocaleMapping": "PENDING_AMAZON_CONSOLE_LANGUAGE_SUPPORT",
   "sourceHash": "4ebfed48627ead204336ca1a3da83e3ce583ebe3590189e10d911227f1b02983",
-  "targetHash": "b57432652e3d5a5a44a0473211b868437e0cbe63872e30cdddf29cf2cc31baf0"
+  "targetHash": "eb0174dc891e0bf28391a2abc881cc700592cee969cdb454510bd03763416a6a",
+  "linguisticReview": {
+    "status": "APPROVED",
+    "reviewType": "AI_EDITORIAL",
+    "reviewer": "Codex (AI)",
+    "nativeSpeakerReview": false
+  }
 }

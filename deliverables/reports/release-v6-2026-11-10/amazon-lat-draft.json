@@ -1,0 +1,44 @@
+{
+  "amazonStatus": "DRAFT_SAVED_NOT_SUBMITTED",
+  "draftReleaseId": "amzn1.devportal.apprelease.68c3a6f23eb24e4baa576b5e641e633f",
+  "name": "LifeTalea v6 language and device-lock verification",
+  "uploadedVersionCode": 6,
+  "uploadSha256": "eed8f1dbcb683205abc2f76a323ff5ae37f4f3d33a94cab69ccaea46e2ab8929",
+  "persistedAfterReload": true,
+  "tabletDeviceSelectionsRetained": 12,
+  "tvDeviceSelections": 0,
+  "automotiveDeviceSelections": 0,
+  "lifeTaleaTesterGroupOnly": true,
+  "languageLabelsSelected": [
+    "Arabic",
+    "Chinese",
+    "Dutch",
+    "English",
+    "French",
+    "German",
+    "Hindi",
+    "Italian",
+    "Japanese",
+    "Korean",
+    "Polish",
+    "Portuguese",
+    "Spanish"
+  ],
+  "appLocales": 22,
+  "languageLabelsNotOfferedInThisForm": [
+    "Swedish",
+    "Turkish",
+    "Indonesian"
+  ],
+  "priorOwnerExportCertificationPreserved": true,
+  "newLegalAttestationsMade": false,
+  "publicSubmissionMade": false,
+  "newPayments": 0,
+  "liveLatVersionCode": 5,
+  "publicDraftVersionCode": 5,
+  "deviceVerification": "VERSION_6_NOT_YET_AMAZON_DISTRIBUTED",
+  "consoleWarnings": [
+    "Binary larger than 50 MB",
+    "Minimum target API warning disables multiple devices; retained existing 12-device selection. App source targetSdk is 35, minSdk 26."
+  ]
+}

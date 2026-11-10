@@ -120,6 +120,14 @@ object MemoryRules {
         listOf(m.title, m.story, m.tags, m.transcript, m.location, m.date).any { it.lowercase().contains(q) }
     }
     fun timeline(memories: List<Memory>) = memories.sortedWith(compareByDescending<Memory> { it.date.ifEmpty { "0000" } }.thenByDescending { it.createdAt })
+    fun sorted(memories: List<Memory>, mode: String, locale: java.util.Locale): List<Memory> = when (mode) {
+        "date" -> timeline(memories)
+        "title" -> {
+            val collator = java.text.Collator.getInstance(locale)
+            memories.sortedWith { a, b -> collator.compare(a.title, b.title).takeIf { it != 0 } ?: a.id.compareTo(b.id) }
+        }
+        else -> memories.sortedWith(compareByDescending<Memory> { it.createdAt }.thenBy { it.id })
+    }
 }
 
 class LibraryRepository(val context: Context, val db: LifeDatabase) {
