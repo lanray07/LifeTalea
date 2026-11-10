@@ -1,6 +1,6 @@
 # Privacy implementation review — 10 November 2026
 
-This is a technical data map for candidate version 6, not a legal approval or a submitted store questionnaire. The optional app lock uses Android's existing device-credential confirmation; LifeTalea stores only its local enabled preference, receives a success/cancellation result, and never receives the credential. It adds a screen gate and screenshot protection, not database encryption. Runtime authentication verification is recorded separately.
+This is a technical data map for candidate version 6, not a legal approval or a submitted store questionnaire. The optional app lock uses Android's existing device-credential confirmation; LifeTalea stores only its local enabled preference, receives a success/cancellation result, and never receives the credential. It adds a screen gate and requests platform screenshot/Recent-app protection, not database encryption. A blank Recent-app preview was observed; trusted debug mirroring still displayed the foreground app. Runtime authentication verification is recorded separately.
 
 | Data / action | Destination and purpose | Retention / deletion |
 | --- | --- | --- |
@@ -23,3 +23,5 @@ Read-only hosting follow-up: the project's base region is `eu-central-1` (Frankf
 Remaining publisher checks: actual hosted logging/retention across relevant providers and invocations; provider contracts and international-transfer assessment; final store question wording and declarations; age/audience and rights requests. No consent to purchase, export compliance certification or legal declaration was made on the publisher's behalf in this pass.
 
 Provider references checked: [Supabase logging](https://supabase.com/docs/guides/functions/logging), [Android inexact alarms](https://developer.android.com/develop/background-work/services/alarms), [Android notification permission](https://developer.android.com/develop/ui/compose/notifications/notification-permission). The Supabase changelog Markdown endpoint could not be rendered by the web tool; no Supabase API or deployment was changed.
+
+Version 6 provider follow-up: the existing project is ACTIVE_HEALTHY on Free. Public pricing/help documentation describes one day of dashboard-accessible API/database log history; this does not establish deletion of all provider-held copies or all service logs. Function invocation metadata is separate from intentional body logging. The public DPA does not complete the publisher-specific contract or transfer assessment. See `release-v6-2026-11-10/provider-review-v6.json`. No provider configuration, customer data or logs were changed/read in this follow-up. The previously unavailable changelog Markdown was readable during this follow-up.

@@ -1,0 +1,42 @@
+{
+  "recordedAt": "2026-11-10T21:00:36.762221+00:00",
+  "versionCode": 6,
+  "package": "com.lifetalea.app",
+  "device": "KFTRWI / Android 9",
+  "publicSubmissionMade": false,
+  "newPayments": 0,
+  "checks": {
+    "amazonUpdate": "PASS: installed in-place through Appstore; code, resources, native libraries and model match upload",
+    "existingContent": "PASS: existing fictional stories visible; no app reset",
+    "appLock": "PASS: owner reports cancel stayed locked, successful unlock and disable; ON/OFF states, blank Recent preview and return gate observed; cold restart after disabling opened without gate",
+    "appLockCaptureLimitation": "SECURE window flag observed, but trusted debug mirror still showed foreground Settings; no universal capture-blocking claim",
+    "sortPersistence": "PASS: Title survived process restart; Recent restored",
+    "freePaletteGate": "PASS: Rose opened Premium paywall",
+    "restore": "SCOPED PASS: restore remained Free; active-receipt recovery not established",
+    "purchaseCancellation": "PASS: GBP4.99 confirmation canceled before Verify and Pay; remained Free",
+    "reminderRegistration": "PASS: one-shot 30-minute window registered and removed when disabled; no actual timed-delivery claim",
+    "scalePreservation": "PASS: two isolated headless tests, 1000 memories; not process-death or UI performance qualification"
+  },
+  "restoredSettings": {
+    "appLock": "OFF (owner restored)",
+    "reminders": "OFF",
+    "sort": "Recent",
+    "stayAwake": 0,
+    "sdkMode": "unchanged"
+  },
+  "evidence": [
+    "amazon-installed-v6.json",
+    "amazon-v6-resource-comparison.json",
+    "amazon-v6-device-session.json",
+    "amazon-v6-reminder-registration.json",
+    "scale-preservation/result.json"
+  ],
+  "stillOpen": [
+    "Active-Premium palettes and additional billing recovery",
+    "Actual timed reminder delivery, reboot/time-zone and API33 permission branches",
+    "Broader accessibility/device/performance checks",
+    "Store image visual review and public localized upload",
+    "Security audit and final provider/privacy assessment",
+    "Larger byte-size backup and process-death recovery engineering"
+  ]
+}

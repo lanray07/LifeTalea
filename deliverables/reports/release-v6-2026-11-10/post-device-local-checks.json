@@ -1,0 +1,26 @@
+{
+  "recordedAt": "2026-11-10T21:01:57.096351+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "exitCode": 0,
+      "tests": 19
+    },
+    {
+      "command": "node --test server/receipt-verifier/test/verifier.test.mjs server/receipt-verifier/test/edge.test.mjs",
+      "exitCode": 0,
+      "tests": 23
+    },
+    {
+      "command": "python scripts/validate_localized_screenshots.py --folder deliverables/store-assets/screenshots/localized-v6 --device-report deliverables/reports/release-v6-2026-11-10/device-final/device-test-run.json",
+      "exitCode": 0,
+      "compositions": 176
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "scope": "Post-device local regression and asset validation. Not a security audit, complete visual approval or new Android full-suite run."
+}

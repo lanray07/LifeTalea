@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-11-10T20:18:06.502181+00:00",
+  "status": "CLOSED_RESULTS_RECORDED_SEPARATELY",
+  "sdkMode": "none",
+  "sandboxModeChanged": false,
+  "power": {
+    "originalStayAwakeWhilePluggedIn": "0",
+    "restored": true
+  },
+  "stopReason": "watchdog",
+  "finishedAt": "2026-11-10T20:48:07.594893+00:00",
+  "sdkModeUnchanged": true
+}

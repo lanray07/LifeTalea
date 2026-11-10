@@ -65,7 +65,7 @@
     "contentPagesChecked": 352,
     "locales": 22
   },
-  "amazonPublicDraftVersionCode": 5,
+  "amazonPublicDraftVersionCode": 6,
   "amazonLatVersionCode": 6,
   "newPayments": 0,
   "pythonTests": {
@@ -88,17 +88,16 @@
   "amazonLatDraftVersionCode": 6,
   "amazonLatDraftSubmitted": true,
   "blockingGates": [
-    "Manual device-credential app-lock check pending owner input; no authentication dialog automated",
-    "Version 6 is live in LAT but not yet installed and verified through Amazon on the tablet",
-    "176 current locale exports validated; complete visual approval, marketplace mapping and remaining device sizes still pending",
-    "Existing Codex Security startup returned no authoritative scan ID; audit recovery required",
-    "Large-library streaming backup and process-death recovery remain engineering gaps",
-    "Remaining billing recovery, device/accessibility/performance and provider/privacy assessments"
+    "Current screenshots require full visual review, stronger content examples, marketplace mapping and public localized upload",
+    "Security scan has no authoritative ID; explicit approval for a new scan is pending",
+    "Large-byte backup and process-death recovery gaps remain; 1000-memory fixture preservation passed",
+    "Remaining active-Premium/billing recovery, timed reminders, accessibility/device/performance checks",
+    "Final provider retention/contract/transfer assessment and store privacy declarations"
   ],
   "finalDebugApkSha256": "54fc7a943d6e44354e48986086ff626aba59666715ec5524bf93927b3122fb5e",
   "finalTestApkSha256": "cc9abb62d473fefc4b9387e80438ae5b7c9d9fdb3d033c76b5261b1a8841be9a",
   "amazonLatStatus": "TEST_IN_PROGRESS",
-  "installedAmazonVersionCode": 5,
+  "installedAmazonVersionCode": 6,
   "localizedScreenshotExports": {
     "status": "PASS_BYTE_AND_DIMENSION_VALIDATION",
     "count": 176,
@@ -109,5 +108,11 @@
     "localeCount": 22,
     "provenance": "deliverables/store-assets/screenshots/localized-v6/provenance.json",
     "visualReview": "Partial samples only; full visual approval and other device sizes remain separate."
+  },
+  "amazonDistributedRuntimeReview": "deliverables/reports/release-v6-2026-11-10/amazon-v6-runtime-review.json",
+  "focusedScaleTests": {
+    "status": "PASS",
+    "tests": 2,
+    "report": "deliverables/reports/release-v6-2026-11-10/scale-preservation/result.json"
   }
 }

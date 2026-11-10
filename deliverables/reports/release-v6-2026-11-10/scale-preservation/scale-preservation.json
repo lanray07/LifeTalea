@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "memories": 1000,
+  "albums": 5,
+  "photos": 100,
+  "binaryAudioFixtures": 20,
+  "books": 5,
+  "pages": 25,
+  "encryptedArchiveBytes": 112131,
+  "exportMs": 3905,
+  "validateAndRestoreMs": 3806,
+  "scope": "Isolated fictional library within published archive limits; exact records\/media, duplicate restore, interrupted input and database reopen. These timings are observations, not established UI performance budgets or process-death recovery."
+}

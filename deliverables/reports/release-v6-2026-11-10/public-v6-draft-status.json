@@ -1,0 +1,16 @@
+{
+  "recordedAt": "2026-11-10T21:00:36.762221+00:00",
+  "versionCode": 6,
+  "releaseId": "amzn1.devportal.apprelease.103d2ab34c5f43a6b6ba6133db46f7c8",
+  "reviewerInstructionsPersistedAfterReload": true,
+  "reviewerInstructionsSha256": "f8125c3dc691d7ca3498d1f4ea0fd73225b77119599b7b4ae643b2c3976d044a",
+  "descriptionLocalesPersisted": 14,
+  "appLanguageLabels": 13,
+  "targetedTablets": 12,
+  "targetedTvDevices": 0,
+  "targetedAutomotiveDevices": 0,
+  "ownerExportCertification": "Previously checked, unchanged",
+  "publicSubmissionMade": false,
+  "media": "Three older English-US screenshots still present; current localized media not uploaded",
+  "proof": "public-v6-review-saved.jpg"
+}

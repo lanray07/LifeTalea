@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-10",
+  "versionCode": 6,
+  "installer": "com.amazon.venezia",
+  "uploadSha256": "eed8f1dbcb683205abc2f76a323ff5ae37f4f3d33a94cab69ccaea46e2ab8929",
+  "distributedApkSha256": "fb7106e9be6321900f16584b70fe3fb9486612053503a3adcd46be90138fb302",
+  "certificateSha256": "8e35b165d5a1dc14c10820cee25ed2c24e9c543ceb2f059b9f5bc93baa672297",
+  "matchesPreviousAmazonCertificate": true,
+  "contentMatchesUpload": {
+    "classes.dex": true,
+    "classes2.dex": true,
+    "classes3.dex": true,
+    "lib/arm64-v8a/liblifetalea_whisper.so": true,
+    "lib/armeabi-v7a/liblifetalea_whisper.so": true,
+    "assets/transcription/ggml-tiny.bin": true
+  },
+  "allContentMatches": true,
+  "modelSha256": "be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21",
+  "scope": "Actual Appstore update; regular package was not uninstalled. Runtime checks recorded separately."
+}

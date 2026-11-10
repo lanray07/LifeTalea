@@ -1,0 +1,36 @@
+{
+  "observedAt": "2026-11-10T20:27:21.478684+00:00",
+  "project": "guigiqacxpvcxrnajvlz",
+  "projectState": "ACTIVE_HEALTHY",
+  "baseRegion": "eu-central-1",
+  "organizationPlan": "free",
+  "metadataSource": "Read-only Supabase get_project and get_organization tools",
+  "readLogsOrCustomerData": false,
+  "configurationChanged": false,
+  "technicalFacts": [
+    {
+      "fact": "Current pricing and knowledge-base documentation describe one day of dashboard-accessible API/database log history on Free. This is not a guarantee that all provider-held copies or all service logs are deleted after one day.",
+      "sources": [
+        "https://supabase.com/pricing",
+        "https://supabase.com/kb/troubleshooting/check-usage-for-monthly-active-users-mau-MwZaBs"
+      ]
+    },
+    {
+      "fact": "Edge Function invocation logs and request metadata are distinct from intentional application-body logging; account-level audit logging is also separate.",
+      "source": "https://supabase.com/docs/guides/functions/logging"
+    },
+    {
+      "fact": "The public DPA describes covered data and processing arrangements; publisher-specific contract and transfer assessment has not been completed by this technical check.",
+      "source": "https://supabase.com/legal/customer-resources/data-processing-addendum"
+    },
+    {
+      "fact": "The changelog schedules removal of four old TLS 1.2 CBC cipher suites from HTTP APIs from 10 November 2026 at the earliest; TLS 1.3 and modern TLS 1.2 GCM/ChaCha suites remain. No TLS restrictions were weakened.",
+      "source": "https://supabase.com/changelog/cbc-tls-ciphers-deprecated"
+    }
+  ],
+  "stillOpen": [
+    "Actual log content/retention and provider contracts for this deployed receipt service",
+    "Publisher transfer/lawful-processing assessment and final store declarations",
+    "Current Fire receipt-verifier network recovery checks"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "REGISTRATION_AND_CANCELLATION_PASS",
+  "oneShot": true,
+  "windowMinutes": 30,
+  "scopedAlarmMetadata": "    RTC_WAKEUP #15: Alarm{b0f9aea type 0 when 1794427200000 com.lifetalea.app}\n      tag=*walarm*:com.lifetalea.app.STORY_REMINDER\n      type=0 expectedWhenElapsed=+23h10m4s479ms expectedMaxWhenElapsed=+23h40m4s479ms whenElapsed=+23h10m4s479ms maxWhenElapsed=+23h40m4s479ms when=2026-11-11 20:00:00.000\n      window=+30m0s0ms repeatInterval=0 count=0 flags=0x0\n      operation=PendingIntent{1d471db: PendingIntentRecord{c876478 com.lifetalea.app broadcastIntent}}",
+  "actualTimedDeliveryTested": false,
+  "originalEnabled": false,
+  "alarmAbsentAfterDisable": true,
+  "originalStateRestored": true
+}

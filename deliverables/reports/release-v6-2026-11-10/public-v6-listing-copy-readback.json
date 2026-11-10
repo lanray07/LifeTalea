@@ -1,0 +1,176 @@
+{
+  "status": "COPY_PERSISTENCE_PASS",
+  "releaseId": "amzn1.devportal.apprelease.103d2ab34c5f43a6b6ba6133db46f7c8",
+  "count": 14,
+  "locales": [
+    {
+      "consoleLocale": "en-US",
+      "sourceLocale": "en-US",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "de-DE",
+      "sourceLocale": "de-DE",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "en-AU",
+      "sourceLocale": "en-AU",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "en-GB",
+      "sourceLocale": "en-GB",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "es-ES",
+      "sourceLocale": "es-ES",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "es-MX",
+      "sourceLocale": "es-419",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "fr-FR",
+      "sourceLocale": "fr-FR",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "it-IT",
+      "sourceLocale": "it-IT",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "ja-JP",
+      "sourceLocale": "ja-JP",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "nl-NL",
+      "sourceLocale": "nl-NL",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "pl-PL",
+      "sourceLocale": "pl-PL",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "pt-BR",
+      "sourceLocale": "pt-BR",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "pt-PT",
+      "sourceLocale": "pt-PT",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    },
+    {
+      "consoleLocale": "sv-SE",
+      "sourceLocale": "sv-SE",
+      "persistedAfterReload": true,
+      "matches": {
+        "description_display_title": true,
+        "description_short_description": true,
+        "longDescription": true,
+        "description_product_features": true,
+        "keywordTokens": true
+      }
+    }
+  ],
+  "limitations": "Description copy only. Localized media, marketplace-specific visual review and final public submission remain separate. Spanish Mexico uses the reviewed generic Latin American Spanish catalogue."
+}

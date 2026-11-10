@@ -1,0 +1,11 @@
+{
+  "reason": "Amazon refused version 6 update with Device storage low",
+  "authorization": "Prior explicit owner permission to remove only these separate QA packages; disposable QA workflow",
+  "removedPackages": [
+    "com.lifetalea.app.debug.test",
+    "com.lifetalea.app.debug"
+  ],
+  "regularPackageRetained": true,
+  "qaEvidenceHashVerifiedBeforeRemoval": true,
+  "storageAfter": "Filesystem            1K-blocks     Used Available Use% Mounted on\n/dev/block/mmcblk0p21  25176392 24174860    854076  97% /data\n"
+}

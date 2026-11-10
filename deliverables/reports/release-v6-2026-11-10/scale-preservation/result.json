@@ -1,0 +1,13 @@
+{
+  "executedAt": "2026-11-10T20:35:38.138443+00:00",
+  "status": "PASS",
+  "tests": 2,
+  "testSelection": "com.lifetalea.app.ScalePreservationTest",
+  "headless": true,
+  "debugApkSha256": "54fc7a943d6e44354e48986086ff626aba59666715ec5524bf93927b3122fb5e",
+  "testApkSha256": "041e61921e86447cf8a29b0060d5cad9b2fc61170e1f5d7524900408e543da81",
+  "rotationChanged": false,
+  "powerSettingsChanged": false,
+  "scope": "Separate QA package, isolated fictional databases and media; no activity launched, regular app data or device credentials accessed. Not a complete device regression or process-death test.",
+  "evidenceSha256": "c5e24a028e86a753254e314be1cece406013ba74fb84bd083720e4c564e887ad"
+}
