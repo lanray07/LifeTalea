@@ -1,0 +1,14 @@
+{
+  "path": "deliverables/amazon-submission/LifeTalea-v6-device-review-2026-11-10.zip",
+  "sha256": "66e88508786b5328a4d310535cb677dfe3ce4cf3f23c1f97d00fdae4ad6199c7",
+  "bytes": 325930371,
+  "entriesVerified": 60,
+  "sourceCommit": "0a506e0977d1d560eb7814a376a89e72109f1f4b",
+  "releaseStatus": "BLOCKED",
+  "candidateVersionCode": 6,
+  "installedAmazonVersionCode": 6,
+  "amazonPublicDraftVersionCode": 6,
+  "publicSubmissionMade": false,
+  "newPayments": 0,
+  "nestedRegressionSha256": "0e60ced1f7da34009fe49fa8dc7788e3e0a1766f8cd48b1ff1c7179265f66961"
+}
