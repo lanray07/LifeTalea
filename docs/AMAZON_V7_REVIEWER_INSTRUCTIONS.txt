@@ -1,0 +1,13 @@
+LifeTalea 0.1.0, version code 7. No LifeTalea account is required. Use fictional journal entries, photographs and recordings for review.
+
+Create a written memory, attach a photograph and record a short voice story. Try the search filters, event-date and title sorting, albums and keepsakes. Saved recording transcription runs on the device. Select the spoken language, review the draft and append it without replacing the original recording. Voice commands support English through the installed recognition service. Spoken playback requires an installed voice that the engine marks as available offline.
+
+App lock is optional and uses the existing Android device credential. Enable it in Settings. Leave and reopen LifeTalea, cancel the credential prompt and confirm the journal remains gated. Complete authentication and verify you can disable App lock with your device credential. Test opening the app from another existing task where supported. LifeTalea stores the lock preference and never receives the device credential.
+
+Use the Amazon review or test billing account. Select Premium, verify the one-time Amazon price and cancel the confirmation. For an existing entitlement, choose Restore purchases and confirm the enabled Premium features. The application sends only Amazon's app-specific user and receipt identifiers for entitlement verification. Amazon and the hosted verifier do not receive journal content from this flow.
+
+With Premium, choose a passphrase of at least ten characters and create a backup. Return from the Android file picker after a configuration change and confirm the resulting archive requires its passphrase. If Android killed the app and the pending request was lost, start a new export. For an intentional unencrypted backup, leave the passphrase blank. Test restore preview and verify existing stories are retained when an archive is rejected or a duplicate is imported.
+
+Optional reminders are off by default. Enabling reminders schedules a generic prompt around 20:00 local time. Delivery is subject to device scheduling and power settings. The notice contains no journal content.
+
+Support: banksmi@mail.com
