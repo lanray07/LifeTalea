@@ -19,6 +19,7 @@ def main():
         APK, ROOT / 'docs/AMAZON_V7_REVIEWER_INSTRUCTIONS.txt',
         ROOT / 'docs/PRIVACY_POLICY.md', ROOT / 'docs/AMAZON_SUPABASE_DEPLOYMENT.md',
         REPORTS / 'final-candidate-inspection.json', REPORTS / 'final-build.log',
+        REPORTS / 'final-backup-tests.log', REPORTS / 'final-qa-apk-hashes.json',
         REPORTS / 'receipt-verifier-smoke.json', REPORTS / 'release-status.json',
     ]
     entries = {path.relative_to(ROOT).as_posix(): path.read_bytes() for path in files}
