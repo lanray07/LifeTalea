@@ -21,6 +21,7 @@ def main():
         REPORTS / 'final-candidate-inspection.json', REPORTS / 'final-build.log',
         REPORTS / 'final-backup-tests.log', REPORTS / 'final-qa-apk-hashes.json',
         REPORTS / 'receipt-verifier-smoke.json', REPORTS / 'release-status.json',
+        REPORTS / 'amazon-v7-draft.jpg',
     ]
     entries = {path.relative_to(ROOT).as_posix(): path.read_bytes() for path in files}
     entries['README.txt'] = (

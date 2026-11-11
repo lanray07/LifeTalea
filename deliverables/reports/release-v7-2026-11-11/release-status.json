@@ -1,0 +1,42 @@
+{
+  "recordedAt": "2026-11-11T07:10:39.562260+00:00",
+  "sourcePatchCommit": "d4e4e94",
+  "securityScanId": "35cb3e65-df69-41c7-aba3-4824a325ff9f",
+  "versionCode": 7,
+  "apkSha256": "fd8eae329fa402adee12701018d819ce1aaf82e8cced85646247f62cf7f44727",
+  "publicSubmissionMade": false,
+  "sourceChanges": {
+    "backup": "Immutable in-memory export request, fail-closed result handling and background provider I/O",
+    "appLock": "Preference revisions synchronize across activities and credential request metadata survives recreation",
+    "speech": "Select an installed offline voice and invalidate pending speech when stopped",
+    "receiptVerifier": "Hosted source budget before global quota, same receipt and signature validation",
+    "qa": "Bounded portable evidence extraction, fresh outputs and synthetic capture gating",
+    "signer": "Restrictive POSIX permissions and atomic key publication"
+  },
+  "passed": {
+    "androidUnitTests": 24,
+    "androidFireBackupAndPreservationTests": 13,
+    "pythonUnitTests": 19,
+    "nodeVerifierTests": 25,
+    "syntheticEvidenceRoundTrip": true,
+    "productionVerifierSignedInactiveSmoke": true,
+    "supabaseQuotaServiceRoleOnly": true
+  },
+  "hostedVerifierVersion": 4,
+  "remainingVerification": [
+    "Amazon-processed v7 install and active-entitlement restore on a Fire tablet",
+    "App-lock credential recreation and installed offline TTS behavior on final v7",
+    "Previously deferred backup parser resource check",
+    "Current localized store images and outstanding provider disclosure review"
+  ],
+  "limits": [
+    "Device tests used the dedicated QA packages. No real purchase or receipt was used.",
+    "POSIX signer changes were checked statically on the Windows workstation.",
+    "The hosted smoke confirms normal ingress and signed invalid-receipt handling. It does not exercise sustained quotas, shared-network congestion or distributed traffic."
+  ],
+  "publicDraftVersionCode": 7,
+  "reviewerInstructionsPersisted": true,
+  "targetedFireTablets": 12,
+  "draftProof": "amazon-v7-draft.jpg",
+  "deadlineMet": false
+}
