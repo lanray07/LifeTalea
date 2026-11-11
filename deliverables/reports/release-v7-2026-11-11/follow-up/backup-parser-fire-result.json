@@ -1,0 +1,16 @@
+{
+  "testedAt": "2026-11-11T09:31:52.704710+00:00",
+  "device": "KFTRWI, Android 9",
+  "newQaApkSha256": [
+    "639ce2ea0991694d2b3f88f672257dfa5900106cc58f9dc7ef9208b019b5aff7",
+    "12aa954ef85a7bbc08ac5c3061aac4bad95d5826399dc7588e555c7400d02ee6"
+  ],
+  "originalV7QaApkSha256": [
+    "8ef1c1eeb14f616427f054d1470d9e5df4ecc890c444106e83bb4657b063aa9d",
+    "0b63442f27e11eebdeb807307405492f7cb2804a010cde55bafb38b804c83d65"
+  ],
+  "status": "PASS",
+  "priorV7Restored": true,
+  "regularAmazonAppChanged": false,
+  "tests": 15
+}

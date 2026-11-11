@@ -1,0 +1,36 @@
+{
+  "observedAt": "2026-11-11T09:36:57.939299+00:00",
+  "device": "KFTRWI, Fire HD 10, Android 9",
+  "regularAmazonAppVersionCode": 6,
+  "amazonVersion7Status": "SUBMITTED",
+  "exactV7QaApkSha256": "8ef1c1eeb14f616427f054d1470d9e5df4ecc890c444106e83bb4657b063aa9d",
+  "offlinePlayback": {
+    "status": "PASS",
+    "source": "Read story aloud on fictional QA memory",
+    "wifiDuringPlayback": 0,
+    "defaultNetworkDuringPlayback": "none",
+    "engine": "com.ivona.tts.oem",
+    "speechTrackId": 1127,
+    "speechTrackStartedLocal": "09:35:25.732",
+    "stopReleasedTrackLocal": "09:35:39.197",
+    "wifiRestored": 1,
+    "scope": "Observed OS media speech playback and stop on original v7 QA APK"
+  },
+  "appLock": {
+    "status": "PENDING_OWNER_CREDENTIAL_CHECK",
+    "qaSettingsReady": true,
+    "switchObserved": "OFF",
+    "scope": "No credential prompt or successful credential result observed in this follow-up"
+  },
+  "premiumRestore": {
+    "status": "PENDING_AMAZON_V7_AND_ACTIVE_ENTITLEMENT",
+    "qaReceiptContractTestsPassed": 4,
+    "scope": "Synthetic signed receipts, account and expiry binding, sandbox rejection, and legacy preference denial. No actual active purchase was restored."
+  },
+  "backupParser": {
+    "status": "PASS_FOLLOW_UP_BUILD",
+    "tests": 15,
+    "evidence": "backup-parser-fire-result.json",
+    "scope": "Strict streaming parser fix verified on Fire. The already-submitted Amazon v7 APK does not contain the follow-up patch."
+  }
+}

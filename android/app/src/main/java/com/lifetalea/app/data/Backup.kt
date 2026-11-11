@@ -39,7 +39,10 @@ class BackupService(private val repo: LibraryRepository) {
     // Keep bounded working copies within tablet heaps. Larger libraries need a streaming format.
     companion object { const val MAX_ARCHIVE = 32 * 1024 * 1024; const val MAX_ITEM = 16 * 1024 * 1024; const val MAX_MANIFEST = 8 * 1024 * 1024 }
     private fun hash(bytes: ByteArray) = MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
-    private fun <T> array(items: List<T>, transform: (T) -> JSONObject) = JSONArray().also { a -> items.forEach { a.put(transform(it)) } }
+    private fun <T> array(items: List<T>, transform: (T) -> JSONObject): JSONArray {
+        require(items.size <= BackupManifest.MAX_RECORDS)
+        return JSONArray().also { a -> items.forEach { a.put(transform(it)) } }
+    }
     suspend fun create(includePhotos: Boolean, includeAudio: Boolean, password: CharArray = charArrayOf()): ByteArray = withContext(Dispatchers.IO) {
         val dao = repo.dao
         val manifest = JSONObject().put("format", "lifetalea").put("version", 1)
@@ -60,7 +63,6 @@ class BackupService(private val repo: LibraryRepository) {
         // Never export an archive that our own importer will refuse.
         val manifestBytes = manifest.toString().toByteArray(Charsets.UTF_8)
         require(manifestBytes.size <= MAX_MANIFEST)
-        listOf("memories", "albums", "links", "books", "pages", "media").forEach { objects(manifest, it) }
         val result = ByteArrayOutputStream().also { buffer -> ZipOutputStream(buffer).use { zip ->
             zip.putNextEntry(ZipEntry("manifest.json")); zip.write(manifestBytes); zip.closeEntry()
             blobs.forEach { (name, bytes) -> zip.putNextEntry(ZipEntry("media/$name")); zip.write(bytes); zip.closeEntry() }
@@ -68,24 +70,33 @@ class BackupService(private val repo: LibraryRepository) {
         require(result.size <= MAX_ARCHIVE - if (password.isNotEmpty()) 52 else 0)
         if (password.isNotEmpty()) ArchiveCrypto.encrypt(result, password) else result
     }
-    private fun objects(m: JSONObject, key: String): List<JSONObject> = m.getJSONArray(key).let { a -> require(a.length() <= 10000); (0 until a.length()).map { a.getJSONObject(it) } }
+    private fun objects(m: JSONObject, key: String): List<JSONObject> = m.getJSONArray(key).let { a -> require(a.length() <= BackupManifest.MAX_RECORDS); (0 until a.length()).map { a.getJSONObject(it) } }
     suspend fun validate(input: InputStream, password: CharArray = charArrayOf()): ValidatedArchive = withContext(Dispatchers.IO) {
         val raw = input.use { readLimited(it, MAX_ARCHIVE) }
         val bytes = if (ArchiveCrypto.encrypted(raw)) ArchiveCrypto.decrypt(raw, password) else raw
-        val entries = linkedMapOf<String, ByteArray>(); var size = 0L
+        val entries = linkedMapOf<String, ByteArray>()
+        var manifest: JSONObject? = null
+        var size = 0
         ZipInputStream(ByteArrayInputStream(bytes)).use { zip ->
             while (true) {
                 val entry = zip.nextEntry ?: break
-                require(entries.size < 10001 && !entry.isDirectory)
+                require(!entry.isDirectory)
                 require(entry.name == "manifest.json" || entry.name.matches(Regex("media/[a-zA-Z0-9._-]{1,100}")))
-                require(!entries.containsKey(entry.name))
-                val data = readLimited(zip, if (entry.name == "manifest.json") MAX_MANIFEST else MAX_ITEM)
-                size += data.size; require(size <= MAX_ARCHIVE); entries[entry.name] = data
+                if (entry.name == "manifest.json") {
+                    require(manifest == null)
+                    val manifestEntry = ManifestEntry(zip, minOf(MAX_MANIFEST, MAX_ARCHIVE - size))
+                    manifest = BackupManifest.read(manifestEntry)
+                    size += manifestEntry.count
+                } else {
+                    require(entries.size < BackupManifest.MAX_RECORDS && !entries.containsKey(entry.name))
+                    val data = readLimited(zip, minOf(MAX_ITEM, MAX_ARCHIVE - size))
+                    size += data.size
+                    entries[entry.name] = data
+                }
             }
         }
-        val manifest = JSONObject(String(entries["manifest.json"] ?: error("No manifest"), Charsets.UTF_8))
-        require(manifest.getString("format") == "lifetalea" && manifest.getInt("version") == 1)
-        val memories = objects(manifest, "memories"); val albums = objects(manifest, "albums"); val media = objects(manifest, "media"); val books = objects(manifest, "books"); val pages = objects(manifest, "pages"); val links = objects(manifest, "links")
+        val validatedManifest = requireNotNull(manifest) { "No manifest" }
+        val memories = objects(validatedManifest, "memories"); val albums = objects(validatedManifest, "albums"); val media = objects(validatedManifest, "media"); val books = objects(validatedManifest, "books"); val pages = objects(validatedManifest, "pages"); val links = objects(validatedManifest, "links")
         fun ids(items: List<JSONObject>): Set<String> = items.map { it.getString("id").also { id -> require(UUID.fromString(id).toString() == id) } }.toSet().also { require(it.size == items.size) }
         val memoryIds = ids(memories); val albumIds = ids(albums); val bookIds = ids(books); ids(media); ids(pages)
         memories.forEach { require(it.getString("title").isNotBlank() && it.getString("title").length <= 300); require(MemoryRules.validDate(it.getString("date"), it.getString("precision"))); require(it.getString("story").length <= 1000000 && it.getString("transcript").length <= 1000000) }
@@ -96,9 +107,9 @@ class BackupService(private val repo: LibraryRepository) {
             repo.file(it.getString("filename"))
             require(hash(entries["media/${it.getString("filename")}"] ?: error("Missing attachment")) == it.getString("sha256"))
         }
-        require(entries.size == media.size + 1 && media.map { it.getString("filename") }.toSet().size == media.size)
+        require(entries.size == media.size && media.map { it.getString("filename") }.toSet().size == media.size)
         val existing = repo.dao.allMemories().map { it.id }.toSet()
-        ValidatedArchive(manifest, entries, RestorePreview(memories.size, albums.size, media.size, books.size, memoryIds.count { it in existing }))
+        ValidatedArchive(validatedManifest, entries, RestorePreview(memories.size, albums.size, media.size, books.size, memoryIds.count { it in existing }))
     }
     // Conflict policy: keep existing records. All imports are validated before any mutation.
     suspend fun restore(archive: ValidatedArchive) = withContext(Dispatchers.IO) {
@@ -124,5 +135,21 @@ class BackupService(private val repo: LibraryRepository) {
         val out = ByteArrayOutputStream(); val buffer = ByteArray(8192); var total = 0
         while (true) { val n = input.read(buffer); if (n < 0) break; total += n; require(total <= limit); out.write(buffer, 0, n) }
         return out.toByteArray()
+    }
+
+    // The JSON reader owns its wrapper. The archive reader owns the ZIP stream.
+    private class ManifestEntry(private val input: InputStream, private val limit: Int) : InputStream() {
+        var count = 0
+            private set
+
+        override fun read(): Int = input.read().also { if (it != -1) record(1) }
+
+        override fun read(buffer: ByteArray, offset: Int, length: Int): Int =
+            input.read(buffer, offset, minOf(length, limit - count + 1)).also { if (it > 0) record(it) }
+
+        private fun record(bytes: Int) {
+            count += bytes
+            require(count <= limit) { "Backup manifest exceeds its byte budget" }
+        }
     }
 }

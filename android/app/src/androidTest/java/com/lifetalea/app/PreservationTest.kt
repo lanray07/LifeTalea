@@ -17,6 +17,8 @@ import org.junit.Assert.*
 import org.junit.runner.RunWith
 import java.io.*
 import java.util.UUID
+import java.util.zip.ZipEntry
+import java.util.zip.ZipOutputStream
 
 @RunWith(AndroidJUnit4::class)
 class PreservationTest {
@@ -31,6 +33,58 @@ class PreservationTest {
         repo = LibraryRepository(context, db)
     }
     @After fun close() { db.close(); root.deleteRecursively() }
+
+    @Test fun backupParserKeepsExactIntegersAndRejectsNonScalarFieldsBeforeRestore() = runBlocking {
+        val memory = Memory(title = "Fictional journal 📖", story = "お茶を飲みました。", updatedAt = Long.MAX_VALUE - 4)
+        repo.dao.save(memory)
+        val service = BackupService(repo)
+        val original = service.validate(ByteArrayInputStream(service.create(false, false)))
+        val row = original.manifest.getJSONArray("memories").getJSONObject(0)
+        assertEquals(memory.updatedAt, row.getLong("updatedAt"))
+        assertEquals(memory.story, row.getString("story"))
+        row.put("title", org.json.JSONObject().put("text", memory.title))
+        val invalid = ByteArrayOutputStream().also { output ->
+            ZipOutputStream(output).use { zip ->
+                zip.putNextEntry(ZipEntry("manifest.json"))
+                zip.write(original.manifest.toString().toByteArray(Charsets.UTF_8))
+                zip.closeEntry()
+            }
+        }.toByteArray()
+        try {
+            service.validate(ByteArrayInputStream(invalid))
+            fail("A title object was accepted as a v1 string")
+        } catch (_: IllegalArgumentException) { }
+        assertEquals(listOf(memory), repo.dao.allMemories())
+    }
+
+    @Test fun backupParserEnforcesItsCollectionLimitBeforeRestore() = runBlocking {
+        val service = BackupService(repo)
+        val manifest = service.validate(ByteArrayInputStream(service.create(false, false))).manifest
+        val albums = manifest.getJSONArray("albums")
+        repeat(10_000) { n ->
+            albums.put(org.json.JSONObject()
+                .put("id", UUID(0, n.toLong()).toString())
+                .put("title", "Fictional album ${n + 1}").put("theme", "forest"))
+        }
+        fun backup(): ByteArray = ByteArrayOutputStream().also { output ->
+            ZipOutputStream(output).use { zip ->
+                zip.putNextEntry(ZipEntry("manifest.json"))
+                zip.write(manifest.toString().toByteArray(Charsets.UTF_8))
+                zip.closeEntry()
+            }
+        }.toByteArray()
+        assertEquals(10_000, service.validate(ByteArrayInputStream(backup())).preview.albums)
+        albums.put(org.json.JSONObject().put("id", UUID(0, 10_000).toString())
+            .put("title", "Fictional album 10001").put("theme", "forest"))
+        try {
+            service.validate(ByteArrayInputStream(backup()))
+            fail("Collection above the v1 record limit was accepted")
+        } catch (error: IllegalArgumentException) {
+            assertEquals("Too many backup records", error.message)
+        }
+        assertTrue(repo.dao.allAlbums().isEmpty())
+    }
+
     @Test fun crudRelationshipsAndDeletion() = runBlocking {
         val memory = Memory(title = "A fictional picnic", date = "1994", precision = "YEAR", transcript = "A happy afternoon", tags = "summer")
         val album = Album(title = "Family")
