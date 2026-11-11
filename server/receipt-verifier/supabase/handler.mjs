@@ -1,5 +1,7 @@
 import {createVerifier, receiptRequest, VerificationError} from '../src/verifier.mjs';
 import {Buffer} from 'node:buffer';
+import {createHmac} from 'node:crypto';
+import {isIP} from 'node:net';
 
 const headers = {'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff','content-security-policy':"default-src 'none'"};
 const reply = (status, value) => new Response(JSON.stringify(value), {status,headers:{...headers,...(status===429?{'retry-after':'2'}:{})}});
@@ -34,12 +36,34 @@ export function edgeHandler({verifier, consumeQuota}) {
       } finally {deadline.removeEventListener('abort',abort); await reader.cancel().catch(()=>{});reader.releaseLock();}
       let input;
       try {input=receiptRequest(JSON.parse(Buffer.concat(chunks).toString('utf8')));} catch {return reply(400,{error:'invalid_request'});}
-      if(!await consumeQuota()) return reply(429,{error:'retry_later'});
+      if(!await consumeQuota(request)) return reply(429,{error:'retry_later'});
       return reply(200,await verifier.verify(input,request.signal));
     } catch(error) {
       return reply(error instanceof VerificationError?error.status:503,{error:error instanceof VerificationError?error.code:'verification_unavailable'});
     }
   };
+}
+
+// On the hosted Supabase domain this header is set by Cloudflare at ingress.
+// Never fall back to a caller-supplied forwarding chain or receipt identifier.
+export function sourceQuotaSlot(address, secret) {
+  const family = isIP(address ?? '');
+  if (!family || !secret) throw new VerificationError(503, 'verification_unavailable');
+  let source = address;
+  if (family === 6) {
+    const canonical = new URL('http://[' + address + ']').hostname.slice(1, -1);
+    const [left, right] = canonical.split('::');
+    const first = left ? left.split(':') : [];
+    const last = right ? right.split(':') : [];
+    const words = right === undefined ? first : [...first, ...Array(8 - first.length - last.length).fill('0'), ...last];
+    source = words.slice(0, 4).join(':');
+    // Fold IPv4-mapped addresses into the same source as their IPv4 spelling.
+    if (words.slice(0, 5).every(word => word === '0') && words[5] === 'ffff') {
+      source = words.slice(6).flatMap(word => [parseInt(word, 16) >> 8, parseInt(word, 16) & 255]).join('.');
+    }
+  }
+  const digest = createHmac('sha256', secret).update('lifetalea:rvs-source:v1:').update(source).digest();
+  return digest.readUInt16BE(0) % 4096;
 }
 
 export function productionVerifier(env) {

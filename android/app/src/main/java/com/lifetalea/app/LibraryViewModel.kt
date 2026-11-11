@@ -26,6 +26,40 @@ class LibraryViewModel(app: Application) : AndroidViewModel(app) {
     val recorder = StoryRecorder(app)
     val transcriptionEngine: TranscriptionEngine by lazy { OfflineTranscription(app) }
     val billing = AmazonBilling(app)
+    private class BackupRequest(val photos: Boolean, val audio: Boolean, val password: CharArray)
+    private var pendingBackup: BackupRequest? = null
+
+    fun prepareBackup(photos: Boolean, audio: Boolean, password: String): Boolean {
+        if (pendingBackup != null) return false
+        if (password.isNotEmpty() && (password.length < 10 || !billing.state.value.premium)) return false
+        pendingBackup = BackupRequest(photos, audio, password.toCharArray())
+        return true
+    }
+
+    fun finishBackup(uri: Uri?) {
+        val request = pendingBackup
+        pendingBackup = null
+        if (uri == null) {
+            request?.password?.fill('\u0000')
+            return
+        }
+        if (request == null) {
+            error.value = "operation_failed"
+            return
+        }
+        run {
+            try {
+                withContext(Dispatchers.IO) {
+                    val bytes = BackupService(repo).create(request.photos, request.audio, request.password)
+                    getApplication<Application>().contentResolver.openOutputStream(uri)?.use { it.write(bytes) }
+                        ?: error("No output")
+                }
+                error.value = "backup_saved"
+            } finally {
+                request.password.fill('\u0000')
+            }
+        }
+    }
     private var recordingMemoryId: String? = null
     init { recorder.onAutomaticStop = { stopRecording() } }
     fun run(action: suspend () -> Unit) = viewModelScope.launch {
@@ -44,5 +78,5 @@ class LibraryViewModel(app: Application) : AndroidViewModel(app) {
         else if (id != null) error.value = "recording_failed"
     }
     fun importPhoto(id: String, uri: Uri) = run { repo.importPhoto(id, uri) }
-    override fun onCleared() { stopRecording(); billing.close(); super.onCleared() }
+    override fun onCleared() { finishBackup(null); stopRecording(); billing.close(); super.onCleared() }
 }

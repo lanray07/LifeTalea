@@ -93,6 +93,9 @@ class VoiceAssistant(private val context: Context) {
     private var recognizer: SpeechRecognizer? = null
     private var tts: TextToSpeech? = null
     private var ttsReady = false
+    private var pendingSpeech: (() -> Unit)? = null
+    private var speechEngineGeneration = 0L
+    private val speechHandler = android.os.Handler(android.os.Looper.getMainLooper())
     fun available() = SpeechRecognizer.isRecognitionAvailable(context)
     fun listen(locale: Locale, onText: (String) -> Unit, onError: (Int) -> Unit) {
         if (!available()) { onError(SpeechRecognizer.ERROR_CLIENT); return }
@@ -114,16 +117,47 @@ class VoiceAssistant(private val context: Context) {
     }
     fun speak(text: String, locale: Locale, unavailable: () -> Unit) {
         fun utter() {
-            val result = tts?.setLanguage(locale) ?: TextToSpeech.LANG_NOT_SUPPORTED
-            if (result < TextToSpeech.LANG_AVAILABLE) unavailable()
-            else tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "lifetalea-story")
+            val engine = tts ?: return unavailable()
+            val voice = engine.voices.orEmpty().asSequence()
+                .filter { !it.isNetworkConnectionRequired && it.locale.language == locale.language && "notInstalled" !in it.features.orEmpty() }
+                .sortedWith(compareByDescending<android.speech.tts.Voice> { it.locale == locale }.thenByDescending { it.quality })
+                .firstOrNull() ?: return unavailable()
+            if (engine.setVoice(voice) != TextToSpeech.SUCCESS ||
+                engine.voice?.let { it.name != voice.name || it.isNetworkConnectionRequired } != false ||
+                engine.speak(text, TextToSpeech.QUEUE_FLUSH, null, "lifetalea-story") != TextToSpeech.SUCCESS
+            ) unavailable()
         }
-        if (ttsReady) utter() else {
-            tts = TextToSpeech(context) { status -> ttsReady = status == TextToSpeech.SUCCESS; if (ttsReady) utter() else unavailable() }
+        if (ttsReady) {
+            utter()
+            return
+        }
+        pendingSpeech = { if (ttsReady) utter() else unavailable() }
+        if (tts == null) {
+            val generation = ++speechEngineGeneration
+            tts = TextToSpeech(context) { status ->
+                speechHandler.post {
+                    if (generation != speechEngineGeneration) return@post
+                    ttsReady = status == TextToSpeech.SUCCESS
+                    if (!ttsReady) {
+                        tts?.shutdown()
+                        tts = null
+                    }
+                    val request = pendingSpeech
+                    pendingSpeech = null
+                    request?.invoke()
+                }
+            }
         }
     }
-    fun stop() { recognizer?.cancel(); tts?.stop() }
-    fun close() { recognizer?.destroy(); tts?.shutdown() }
+    fun stop() { pendingSpeech = null; recognizer?.cancel(); tts?.stop() }
+    fun close() {
+        pendingSpeech = null
+        speechEngineGeneration++
+        recognizer?.destroy()
+        tts?.shutdown()
+        tts = null
+        ttsReady = false
+    }
 }
 
 sealed interface TranscriptionResult {

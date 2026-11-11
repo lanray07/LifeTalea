@@ -42,11 +42,22 @@ import kotlinx.coroutines.withContext
     var password by remember { mutableStateOf("") }
     var archive by remember { mutableStateOf<ValidatedArchive?>(null) }
     val backup = remember { BackupService(vm.repo) }
-    val create = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/octet-stream")) { uri -> if (uri != null) vm.run {
-        val bytes = backup.create(includePhotos, includeAudio, password.toCharArray())
-        withContext(Dispatchers.IO) { context.contentResolver.openOutputStream(uri)?.use { it.write(bytes) } ?: error("No output") }; password = ""; vm.error.value = "backup_saved"
-    } }
-    val restore = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri -> if (uri != null) vm.run { archive = backup.validate(context.contentResolver.openInputStream(uri) ?: error("No input"), password.toCharArray()); password = "" } }
+    val restore = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri != null) {
+            val passphrase = password.toCharArray()
+            password = ""
+            vm.run {
+                try {
+                    archive = withContext(Dispatchers.IO) {
+                        val input = context.contentResolver.openInputStream(uri) ?: error("No input")
+                        input.use { backup.validate(it, passphrase) }
+                    }
+                } finally {
+                    passphrase.fill('\u0000')
+                }
+            }
+        }
+    }
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(24.dp), verticalArrangement = Arrangement.spacedBy(20.dp)) {
         Heading(tr("settings"))
         Text(tr("appearance"), style = MaterialTheme.typography.titleLarge)
@@ -81,7 +92,11 @@ import kotlinx.coroutines.withContext
         HorizontalDivider(); Text(tr("backup"), style = MaterialTheme.typography.titleLarge); Text(tr("backup_notice"))
         Toggle("include_photos", includePhotos) { includePhotos = it }; Toggle("include_audio", includeAudio) { includeAudio = it }
         OutlinedTextField(password, { password = it.take(200) }, label = { Text(tr("password")) }, supportingText = { Text(tr("password_hint")) }, visualTransformation = PasswordVisualTransformation(), modifier = Modifier.fillMaxWidth(), singleLine = true)
-        Button(enabled = !busy && (password.isEmpty() || password.length >= 10), onClick = { if (password.isNotEmpty() && !vm.billing.state.value.premium) onPremium() else create.launch("LifeTalea-backup.lta") }) { Text(tr("create_backup")) }
+        Button(enabled = !busy && (password.isEmpty() || password.length >= 10), onClick = {
+            if (password.isNotEmpty() && !billing.premium) onPremium()
+            else if (activity?.requestBackup(includePhotos, includeAudio, password) == true) password = ""
+            else vm.error.value = "operation_failed"
+        }) { Text(tr("create_backup")) }
         Text(tr("restore_notice")); OutlinedButton(enabled = !busy, onClick = { restore.launch(arrayOf("*/*")) }) { Text(tr("restore_backup")) }
         HorizontalDivider(); TextButton(onClick = onPremium) { Text(tr("premium")) }; TextButton(onClick = { vm.billing.restore() }) { Text(tr("restore_purchases")) }
         Text(tr("support"), style = MaterialTheme.typography.titleLarge); Text(tr("support_body"))
