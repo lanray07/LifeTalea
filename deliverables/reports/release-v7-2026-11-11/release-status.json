@@ -44,5 +44,22 @@
   "amazonStatusObservedAt": "2026-11-11T09:15:42.074046+00:00",
   "amazonEstimatedAppstoreDate": "2026-11-16 01:30 PST",
   "amazonReleaseId": "amzn1.devportal.apprelease.103d2ab34c5f43a6b6ba6133db46f7c8",
-  "submissionProof": "amazon-v7-submitted.jpg"
+  "submissionProof": "amazon-v7-submitted.jpg",
+  "priceCorrectionResubmission": {
+    "reviewReference": "44930808",
+    "rejectionReason": "Amazon reviewed a submitted USD 5.00 price while the paywall showed the USD 6.70 returned by the then-live Amazon catalogue.",
+    "sku": "com.lifetalea.premium",
+    "usPriceBeforeUsd": "6.70",
+    "usPriceAfterUsd": "5.00",
+    "ukPriceGbp": "4.99",
+    "pricingMode": "Manual marketplace prices with only the US amount changed",
+    "iapSubmissionStatus": "Approved",
+    "appResubmittedAt": "2026-11-12 02:10 PST",
+    "appSubmissionStatus": "SUBMITTED",
+    "amazonEstimatedAppstoreDate": "2026-11-17 02:30 PST",
+    "versionCode": 7,
+    "binaryReplaced": false,
+    "reviewerInstructionsUpdated": true,
+    "usCheckoutVerifiedOnDevice": false
+  }
 }
